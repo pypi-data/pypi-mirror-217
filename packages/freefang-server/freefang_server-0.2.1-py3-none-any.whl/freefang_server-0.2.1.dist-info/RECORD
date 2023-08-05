@@ -1,0 +1,15 @@
+freefang/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+freefang/example.py,sha256=6ZzhwY9klT0Qz18Mceon5wnw6rWMNtNILvF-JNZMS3I,406
+freefang/main.py,sha256=l_0vlHaSqzGGQmpnbxA90OkaInCboFoJ-OUNczjgxPU,5233
+freefang/models.py,sha256=HV9kzbibxkGHDvjL6z4bByVhVSQFOsgUFQVE3KYAFeE,9735
+freefang/net.py,sha256=YIfQcaBIwRzZhW8jZGjuBlwUNYNqmyYtciZFym3SH8Q,1101
+freefang/packets.py,sha256=t5KTOnPCvmV3vqkBMkZOWTkSKELjkhl2bIY0STT_sEA,3015
+freefang/roles.py,sha256=ao-htX1DxNrtD8RELqpadmVqnxqJgrX1v5LzUwUwTYo,4594
+freefang/utils.py,sha256=xFOhtVFHFJMlXvHRo1yrDvAX45XyE-iBxbKUkAGQsgs,551
+freefang/voting.py,sha256=X6fY18p0MmTg2vwHgmsojk_GjBz87_K8_8njSkcS234,1775
+freefang_server-0.2.1.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+freefang_server-0.2.1.dist-info/METADATA,sha256=cflEarIHJLkhZtSDQK_PmVYA8B7RcYnv2J9Lu2p_1EU,2415
+freefang_server-0.2.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+freefang_server-0.2.1.dist-info/entry_points.txt,sha256=yjp0qz_EpYYQs2nY8ppYmPGG6uklJTlXiB2nDFSiJxk,55
+freefang_server-0.2.1.dist-info/top_level.txt,sha256=ekuWTqXmCUKPuw7BqILo3KLP6sy4eYTu-Atyfy1_f7k,9
+freefang_server-0.2.1.dist-info/RECORD,,
