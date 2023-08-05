@@ -1,0 +1,14 @@
+djangocms_rawhtml/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djangocms_rawhtml/cms_plugins.py,sha256=RKu5kif25gpPA6pEqomrqDWfRYmSH6Pm5izZ2y8inp0,1228
+djangocms_rawhtml/models.py,sha256=FvFGbsQ4XOtEB7rwS5AJBVorKpRWX3d-s0I7A_l8TWQ,675
+djangocms_rawhtml/migrations/0001_rawhtmlplugindata.py,sha256=zmmJH9C4n3K6BkoUzDDgtuUEpzkTpTjCXofJOcDOSlM,925
+djangocms_rawhtml/migrations/0002_auto_20221216_1029.py,sha256=DgPePvUz30668oNqXcfrmM90WnCq6ukmGW9wBTiNPH0,586
+djangocms_rawhtml/migrations/0003_alter_rawhtmlplugindata_cmsplugin_ptr.py,sha256=zeCz131L5T2phT12dlgfuvSjjehHsB7zLm8jdu49fp8,783
+djangocms_rawhtml/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djangocms_rawhtml/templates/admin/djangocms_rawhtml/change_form.html,sha256=7Y3Ur5XZKTR5Mel7iaJsEMliRSGte368As-WdPPnoQM,1360
+djangocms_rawhtml/templates/djangocms_rawhtml/plugins/raw.html,sha256=YkQj5AwoGYmyVJwqL7rTQ6HShBfqPtuVqu5-bz38Wx8,64
+djangocms_rawhtml-1.3.0.dist-info/LICENSE,sha256=yQ01sirTvzRNYj6Mon-q1fiuyeu0HpwWVKcx8oVbAYU,1532
+djangocms_rawhtml-1.3.0.dist-info/METADATA,sha256=XRRL2eysR5rk5kTr7_snahdjP1mYY_wVygqgefTlcmI,2632
+djangocms_rawhtml-1.3.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+djangocms_rawhtml-1.3.0.dist-info/top_level.txt,sha256=V9IpMuR51hWcrRkWRvSgNDYpYPwnaE9WWszjmFgom7A,18
+djangocms_rawhtml-1.3.0.dist-info/RECORD,,
