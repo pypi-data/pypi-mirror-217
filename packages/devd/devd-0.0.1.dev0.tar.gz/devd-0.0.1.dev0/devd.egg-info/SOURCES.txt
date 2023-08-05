@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+dev/__init__.py
+dev/cli.py
+dev/version.py
+devd.egg-info/PKG-INFO
+devd.egg-info/SOURCES.txt
+devd.egg-info/dependency_links.txt
+devd.egg-info/entry_points.txt
+devd.egg-info/requires.txt
+devd.egg-info/top_level.txt
