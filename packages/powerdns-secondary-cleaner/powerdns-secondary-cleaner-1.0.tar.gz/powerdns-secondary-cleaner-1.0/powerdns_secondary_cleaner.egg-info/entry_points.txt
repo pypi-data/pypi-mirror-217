@@ -1,0 +1,3 @@
+[console_scripts]
+powerdns_secondary_cleaner = powerdns_secondary_cleaner.CLI:main
+
