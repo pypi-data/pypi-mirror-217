@@ -1,0 +1,10 @@
+--- a/license.txt	2023-06-30 00:00:00.000000000 +0000
++++ b/license.txt	2023-07-01 00:00:00.000000000 +0000
+@@ -1,5 +1,5 @@
+                          XIA Software LICENSE
+-                       Version 1, 30 June, 2023
++                       Version 1, 01 July, 2023
+
+ Copyright (C) 2023 https://x-i-a.com
+ All rights reserved
+\ No newline at end of file
