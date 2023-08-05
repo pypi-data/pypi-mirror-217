@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "effortlessHTML"
+version = "0.1.1"
+description = "Simple python templating engine for html"
+authors = ["Togo <TogoTheBlackDog@panther.com>"]
+readme = "README.md"
+packages = [{include = "effortlessHTML"}]
+
+[tool.poetry.group.dev.dependencies]
+ipython = "*"
+
+[tool.poetry.group.test.dependencies]
+pytest = "*"
+coverage = "*"
+
+[tool.poetry.group.lint.dependencies]
+autoflake = "*"
+isort = "*"
+black = "*"
+flake8 = "*"
+yamllint = "*"
+mypy = "*"
+
+[tool.poetry.group.publish.dependencies]
+twine = "*"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
