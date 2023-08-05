@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: vfx-pipeline-api
+Version: 0.0.1
+Requires-Dist: gazu (==0.9.4)
+Requires-Dist: pytest (==7.4.0)
+
