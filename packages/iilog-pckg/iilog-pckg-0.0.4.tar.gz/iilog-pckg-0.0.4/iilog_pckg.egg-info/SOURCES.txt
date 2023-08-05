@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+iilog/__c.py
+iilog/__init__.py
+iilog/__version__.py
+iilog/filters.py
+iilog/formatters.py
+iilog/handlers.py
+iilog/loggers.py
+iilog_pckg.egg-info/PKG-INFO
+iilog_pckg.egg-info/SOURCES.txt
+iilog_pckg.egg-info/dependency_links.txt
+iilog_pckg.egg-info/requires.txt
+iilog_pckg.egg-info/top_level.txt
