@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: aspose-ocr-cloud
+Version: 23.6.0.1
+Summary: Aspose OCR Cloud 5.0 API
+Home-page: https://pypi.org/project/aspose-ocr-cloud/
+Author: Aspose
+Author-email: team@openapitools.org
+License: License
+Keywords: OpenAPI,OpenAPI-Generator,Aspose OCR Cloud 5.0 API
+Requires-Python: >=3.7
+License-File: LICENSE
+
+    Aspose OCR Cloud 5.0 API  # noqa: E501
+    
