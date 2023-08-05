@@ -1,0 +1,11 @@
+cmeel.prefix/include/mpc.h,sha256=vKZB9MWfUwPTISZQzAD-wO4mWaIgBnU13ukCl2HoOEk,16949
+cmeel.prefix/lib/libmpc.3.dylib,sha256=n_N_wfjkz5ggbTeOGRaRYZCBUGFIycvK3afbZEdsKss,132096
+cmeel.prefix/lib/libmpc.a,sha256=h86nBBk5YI_FOuJelNA7ojf-4FmM589dBAyzZk1EcO4,202760
+cmeel.prefix/lib/libmpc.dylib,sha256=n_N_wfjkz5ggbTeOGRaRYZCBUGFIycvK3afbZEdsKss,132096
+cmeel.prefix/share/cmeel-mpc/README.md,sha256=jS16gh9BFePO3B97md9hLCCm3YtKgXpCpi3cLpMvp64,346
+cmeel.prefix/share/info/dir,sha256=9dBBxNHvghdjVRAljzhTsi6bRSDhW-8tatI3AcOo7OQ,603
+cmeel.prefix/share/info/mpc.info,sha256=MZ4OO4PhuNELkIKB1sfNPtgXlSZHK-iKNKXxVYMFzH0,113709
+cmeel_mpc-1.3.1.dist-info/METADATA,sha256=XzrzLVgLMdOhzYh6no3oLm4YZD3pnRKlMHFA87g7lMg,840
+cmeel_mpc-1.3.1.dist-info/WHEEL,sha256=cr9OELJdxk1BP_5FhtM_-7lAwJzXFvp336q4Y875ZeI,109
+cmeel_mpc-1.3.1.dist-info/top_level.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cmeel_mpc-1.3.1.dist-info/RECORD,,
