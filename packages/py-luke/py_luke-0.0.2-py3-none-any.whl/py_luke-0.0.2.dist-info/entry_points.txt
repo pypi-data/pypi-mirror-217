@@ -1,0 +1,2 @@
+[console_scripts]
+luke = luke.main:cli
