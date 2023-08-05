@@ -1,0 +1,10 @@
+README.md
+setup.py
+pyzjr/Z.py
+pyzjr/__init__.py
+pyzjr/utils.py
+pyzjr/video.py
+pyzjr.egg-info/PKG-INFO
+pyzjr.egg-info/SOURCES.txt
+pyzjr.egg-info/dependency_links.txt
+pyzjr.egg-info/top_level.txt
