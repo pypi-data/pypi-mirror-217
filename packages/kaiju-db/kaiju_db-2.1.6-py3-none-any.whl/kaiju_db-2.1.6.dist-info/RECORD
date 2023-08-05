@@ -1,0 +1,12 @@
+kaiju_db/__init__.py,sha256=2MOZHhk3aIA1AoTXcMAaxtqt0zC7zbSW-2IVff_KfNk,183
+kaiju_db/functions.py,sha256=JUHNd5uYbEtziTsihE-iPctYraUC-S3pfC2mo3EmtPo,3740
+kaiju_db/services.py,sha256=HZb-sQ46dcho6BuFm-lcolpb3j4jdJh3otj7ZbuoVvU,58600
+kaiju_db/types.py,sha256=0ORvc2CaCcKUNibTR5o9EI5DOFQjM_uDg5S58aF8MyU,453
+kaiju_db/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kaiju_db/tests/fixtures.py,sha256=XtkmjBFFPbcBdUWNJBiGanrHjrPQW1yYzoC61sxxzD4,3292
+kaiju_db/tests/test_db.py,sha256=0ZAp4UbhAo2sVTCzFa1BhsV5IaXoV2YN3Wr8bzX0vVw,4831
+kaiju_db-2.1.6.dist-info/LICENSE,sha256=XIlN2qA8UqpBDA-PteoYP4hTU0qBW0G9PRB__khO2zc,610
+kaiju_db-2.1.6.dist-info/METADATA,sha256=uYrOsAZOS3oX7AVSYM_WSNs_N81bZaK_togZGUGNFZM,3090
+kaiju_db-2.1.6.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+kaiju_db-2.1.6.dist-info/top_level.txt,sha256=-jcfPgSkIz8rxFCPp_XIg5g9tVsDmBd1wdxayb_mkNU,9
+kaiju_db-2.1.6.dist-info/RECORD,,
