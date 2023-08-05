@@ -1,0 +1,9 @@
+pyarmor/cli/core/windows/__init__.py,sha256=vbtJ2fWzIv5Bzsv7yVH47Dtk4RGUCTWnE2pl091zBUY,22
+pyarmor/cli/core/windows/x86/pyarmor_runtime.pyd,sha256=c_PWhUR-nwiKeONkmasNk36yTrXA2gjOHlnFCOH348Y,761358
+pyarmor/cli/core/windows/x86/pytransform3.pyd,sha256=sd0hsTDDoiRsgGfwN0arLCfgZOO8utHbq1vpRN-SyWA,865792
+pyarmor/cli/core/windows/x86_64/pyarmor_runtime.pyd,sha256=rFtu-cQWKf2mccBKJJ_ux-1GVzCwFVSPSiIucc955Eg,614912
+pyarmor/cli/core/windows/x86_64/pytransform3.pyd,sha256=zXN6imKbdIxfMkLwk6g-jwC1KmK4njPmTL040N6LU4w,725504
+pyarmor.cli.core.windows-3.2.9.dist-info/METADATA,sha256=fsIhpBcowkNL-Lpb1PQBOgurrXderlMVzTuWRDjS2Dc,808
+pyarmor.cli.core.windows-3.2.9.dist-info/WHEEL,sha256=-3aXCvPnPZoJT9_CW7Ktbz89d6UlQzqzh62Pk7rxQbY,94
+pyarmor.cli.core.windows-3.2.9.dist-info/top_level.txt,sha256=UE1ovZ_90YzwF_lZ3LV7o8HKLe-RgzUaUUvdH5UTUus,8
+pyarmor.cli.core.windows-3.2.9.dist-info/RECORD,,
