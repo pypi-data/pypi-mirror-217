@@ -1,0 +1,7 @@
+astropy
+cython
+matplotlib
+numpy>=1.7
+scikit-sparse
+seaborn
+sparseqr
