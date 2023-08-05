@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+FacebookAdsLibrary/__init__.py
+FacebookAdsLibrary/main.py
+FacebookAdsLibrary.egg-info/PKG-INFO
+FacebookAdsLibrary.egg-info/SOURCES.txt
+FacebookAdsLibrary.egg-info/dependency_links.txt
+FacebookAdsLibrary.egg-info/requires.txt
+FacebookAdsLibrary.egg-info/top_level.txt
