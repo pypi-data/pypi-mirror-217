@@ -1,0 +1,2 @@
+from replay_trajectory_classification.environments import Environment  # noqa
+from replay_trajectory_classification.environments import get_n_bins
