@@ -1,0 +1,319 @@
+[tool.poetry]
+name = "mdsetup"
+version = "0.1.0"
+description = "Molecular dynamics setup"
+authors = ["Timothy H. Click <timothy.click@briarcliff.edu>"]
+license = "GPL v3"
+readme = "README.md"
+homepage = "https://github.com/tclick/mdsetup"
+repository = "https://github.com/tclick/mdsetup"
+documentation = "https://mdsetup.readthedocs.io"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Chemistry",
+    "Topic :: Utilities"
+]
+
+[tool.poetry.urls]
+Changelog = "https://github.com/tclick/mdsetup/releases"
+
+[tool.poetry.dependencies]
+python = ">=3.9, <4.0"
+click-extra = ">=4.2"
+loguru = "*"
+jinja2 = "*"
+MDAnalysis = ">=2.5, <3.0"
+netCDF4 = "*"
+typing-extensions = "*"
+
+[tool.poetry.dev-dependencies]
+Pygments = "*"
+autoflake = "*"
+bandit = {version = "*", extras = ["toml"]}
+black = ">=23.3"
+coverage = {extras = ["toml"], version = "*"}
+darglint = "*"
+flake8 = "*"
+flake8-bugbear = "*"
+flake8-builtins = "*"
+flake8-comprehensions = "*"
+flake8-debugger = "*"
+flake8-docstrings = "*"
+flake8-eradicate = "*"
+flake8-logging-format = "*"
+flake8-pyproject = "*"
+flake8-pytest-style = "*"
+furo = "*"
+nox-poetry = "*"
+pep8-naming = "*"
+pre-commit = "*"
+pre-commit-hooks = "*"
+pymdown-extensions = "*"
+pylint = "*"
+pyright = "*"
+pytest = "*"
+pytest-cov = "*"
+pytest-mock = "*"
+pytest-random-order = "*"
+pytest-github-actions-annotate-failures = "*"
+python-kacl = "*"
+pyupgrade = "*"
+reorder-python-imports = "*"
+safety = ">=2.3"
+sphinx = ">=6.0"
+sphinx-autobuild = "*"
+sphinx-automodapi = "*"
+sphinx-rtd-theme = ">=1.2"
+sphinx-click = "*"
+typeguard = "*"
+tryceratops = "*"
+xdoctest = {version = "*", extras = ["colors"]}
+myst-parser = {version = "*"}
+
+[tool.poetry.scripts]
+mdsetup = "mdsetup.__main__:main"
+
+[tool.bandit]
+exclude_dirs = ["build","dist","tests","scripts"]
+number = 4
+recursive = true
+skips = ["B404", "B603"]
+targets = "src"
+
+[tool.black]
+target-version = ["py39", "py310", "py311"]
+include = '\.pyi?$'
+line-length = 120
+fast = true
+
+[tool.coverage.paths]
+source = ["src", "*/site-packages"]
+tests = ["tests", "*/tests"]
+
+[tool.coverage.run]
+branch = true
+source = ["mdsetup", "tests"]
+
+[tool.coverage.report]
+show_missing = true
+fail_under = 70
+omit = ["__main__.py",]
+
+[tool.flake8]
+max-line-length = 120
+max-complexity = 10
+select = "B,B9,C,D,DAR,E,F,N,RST,W"
+ignore = "E203,E501,N813,RST201,RST203,RST301,W503"
+exclude = [
+    ".eggs",
+    ".git",
+    ".idea",
+    ".tox",
+    ".nox",
+    "nssm",
+    "obj",
+    "out",
+    "packages",
+    "pywin32",
+    "tests",
+    "swagger_client",
+    "noxfile.py"
+]
+docstring-convention = "numpy"
+rst-roles = "class,const,func,meth,mod,ref"
+rst-directives = "deprecated"
+
+[tool.pyright]
+include = ["src"]
+exclude = ["**/node_modules", "**/__pycache__", "noxfile.py"]
+venv = "env311"
+reportMissingImports = true
+reportMissingTypeStubs = false
+pythonVersion = "3.11"
+pythonPlatform = "Linux"
+executionEnvironments = [{ root = "src" }]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+#addopts = "--cov-report xml:coverage.xml --cov tests --cov-fail-under 0 --cov-append -m 'not integration'"
+pythonpath = [
+  "test"
+]
+testpaths = "tests"
+junit_family = "xunit2"
+markers = [
+    "integration: marks as integration test",
+    "notebooks: marks as notebook test",
+    "gpu: marks as gpu test",
+    "slow: marks tests as slow",
+    "unit: fast offline tests",
+]
+
+[tool.pylint]
+extension-pkg-whitelist= [
+    "numpy",
+    "torch",
+    "cv2",
+    "pyodbc",
+    "pydantic",
+    "ciso8601",
+    "netcdf4",
+    "scipy"
+]
+ignore="CVS"
+ignore-patterns="test.*?py,conftest.py"
+init-hook='import sys; sys.setrecursionlimit(8 * sys.getrecursionlimit())'
+jobs=0
+limit-inference-results=100
+persistent="yes"
+suggestion-mode="yes"
+unsafe-load-any-extension="no"
+
+[tool.pylint.'MESSAGES CONTROL']
+enable="c-extension-no-member"
+
+[tool.pylint.'REPORTS']
+evaluation="10.0 - ((float(5 * error + warning + refactor + convention) / statement) * 10)"
+output-format="text"
+reports="no"
+score="yes"
+
+[tool.pylint.'REFACTORING']
+max-nested-blocks=5
+never-returning-functions="sys.exit"
+
+[tool.pylint.'BASIC']
+argument-naming-style="snake_case"
+attr-naming-style="snake_case"
+bad-names= [
+    "foo",
+    "bar"
+]
+class-attribute-naming-style="any"
+class-naming-style="PascalCase"
+const-naming-style="UPPER_CASE"
+docstring-min-length=-1
+function-naming-style="snake_case"
+good-names= [
+    "i",
+    "j",
+    "k",
+    "ex",
+    "Run",
+    "_"
+]
+include-naming-hint="yes"
+inlinevar-naming-style="any"
+method-naming-style="snake_case"
+module-naming-style="any"
+no-docstring-rgx="^_"
+property-classes="abc.abstractproperty"
+variable-naming-style="snake_case"
+
+[tool.pylint.'FORMAT']
+ignore-long-lines="^\\s*(# )?.*['\"]?<?https?://\\S+>?"
+indent-after-paren=4
+indent-string='    '
+max-line-length=120
+max-module-lines=1000
+single-line-class-stmt="no"
+single-line-if-stmt="no"
+
+[tool.pylint.'LOGGING']
+logging-format-style="old"
+logging-modules="logging"
+
+[tool.pylint.'MISCELLANEOUS']
+notes= [
+    "FIXME",
+    "XXX",
+    "TODO"
+]
+
+[tool.pylint.'SIMILARITIES']
+ignore-comments="yes"
+ignore-docstrings="yes"
+ignore-imports="yes"
+min-similarity-lines=7
+
+[tool.pylint.'SPELLING']
+max-spelling-suggestions=4
+spelling-store-unknown-words="no"
+
+[tool.pylint.'STRING']
+check-str-concat-over-line-jumps="no"
+
+[tool.pylint.'TYPECHECK']
+contextmanager-decorators="contextlib.contextmanager"
+generated-members="numpy.*,np.*,pyspark.sql.functions,collect_list"
+ignore-mixin-members="yes"
+ignore-none="yes"
+ignore-on-opaque-inference="yes"
+ignored-classes="optparse.Values,thread._local,_thread._local,numpy,torch,swagger_client"
+ignored-modules="numpy,torch,swagger_client,netCDF4,scipy"
+missing-member-hint="yes"
+missing-member-hint-distance=1
+missing-member-max-choices=1
+
+[tool.pylint.'VARIABLES']
+additional-builtins="dbutils"
+allow-global-unused-variables="yes"
+callbacks= [
+    "cb_",
+    "_cb"
+]
+dummy-variables-rgx="_+$|(_[a-zA-Z0-9_]*[a-zA-Z0-9]+?$)|dummy|^ignored_|^unused_"
+ignored-argument-names="_.*|^ignored_|^unused_"
+init-import="no"
+redefining-builtins-modules="six.moves,past.builtins,future.builtins,builtins,io"
+
+[tool.pylint.'CLASSES']
+defining-attr-methods= [
+    "__init__",
+    "__new__",
+    "setUp",
+    "__post_init__"
+]
+exclude-protected= [
+    "_asdict",
+    "_fields",
+    "_replace",
+    "_source",
+    "_make"
+]
+valid-classmethod-first-arg="cls"
+valid-metaclass-classmethod-first-arg="cls"
+
+[tool.pylint.'DESIGN']
+max-args=5
+max-attributes=7
+max-bool-expr=5
+max-branches=12
+max-locals=15
+max-parents=7
+max-public-methods=20
+max-returns=6
+max-statements=50
+min-public-methods=2
+
+[tool.pylint.'IMPORTS']
+allow-wildcard-with-all="no"
+analyse-fallback-blocks="no"
+deprecated-modules="optparse,tkinter.tix"
+
+[tool.pylint.'EXCEPTIONS']
+overgeneral-exceptions= [
+    "BaseException",
+    "Exception"
+]
