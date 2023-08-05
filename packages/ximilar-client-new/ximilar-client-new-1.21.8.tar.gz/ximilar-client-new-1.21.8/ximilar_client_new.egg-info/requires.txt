@@ -1,0 +1,4 @@
+requests==2.31.0
+opencv-contrib-python-headless==4.8.0.74
+pytest>=3.0.3
+tqdm==4.65.0
