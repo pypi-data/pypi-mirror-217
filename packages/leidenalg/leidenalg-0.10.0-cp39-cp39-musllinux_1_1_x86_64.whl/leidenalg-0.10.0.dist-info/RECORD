@@ -1,0 +1,15 @@
+leidenalg-0.10.0.dist-info/WHEEL,sha256=MOCN6WRtgGYsXk8Vhl-PHEPwwpBD2D99q0JVufRtsH8,111
+leidenalg-0.10.0.dist-info/top_level.txt,sha256=P3ENfjbM36KTOwEtlR1kASK7RB5a9tx2_ClF17aXLk0,10
+leidenalg-0.10.0.dist-info/METADATA,sha256=bIXqGFPlHfQEsgX3OasW3yc183T3BoUv3GYj6Z2YC6M,1488
+leidenalg-0.10.0.dist-info/LICENSE,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+leidenalg-0.10.0.dist-info/RECORD,,
+leidenalg/Optimiser.py,sha256=FUMpDsR33Zrt1d8GNEE6FGYkFOUFWMDbfYx6meaDk1Y,30358
+leidenalg/__init__.py,sha256=luSWLhX033WcMi3mmpFnj8FlfHvwPqk5JbenRup3DS4,2376
+leidenalg/functions.py,sha256=T4NlG5elD5tSIsgTrlQ5Zr0B8PXyzNFb7ZqktM0ndPc,20259
+leidenalg/VertexPartition.py,sha256=tvFaUFer3NvRgT6a8v3F41eREZGxP2Uk9_xQ_mWADyY,42007
+leidenalg/_c_leiden.cpython-39-x86_64-linux-gnu.so,sha256=Afdx8zUxOkHv7YWUJ3ecdOq_qPBveUFlMelZcV8pd48,665633
+leidenalg/version.py,sha256=c9tuA2nJbhfI5MjeIdOwTIUDTZpNOHizOlPpB0N3DAE,162
+leidenalg.libs/liblibleidenalg-bfb02972.so.0.11.0,sha256=QbOb_M542RMt2PicS5e9Fnhp36TM9sPR3C3r8L0s8_U,614433
+leidenalg.libs/libigraph-31884f56.so.3.0.0,sha256=cXGWf1aHxjOO60XYlEdHSOtf6pAVz1KT2tZ-BAzLzkI,4104057
+leidenalg.libs/libstdc++-a9383cce.so.6.0.28,sha256=Wy9UCdwS1rwI9GU5e7qE61S0AkRqqwti1q_adWSs-Rk,2447393
+leidenalg.libs/libgcc_s-a04fdf82.so.1,sha256=YxqJNaesQMhDswHEQpXsiLnVvMBBbYO6KYMDZFPWKSM,81257
