@@ -1,0 +1,9 @@
+django_nanoid/__init__.py,sha256=07NzQXBgNlnw5kSN6ZYxE9By-_RuH3Jyy58Z74sIio0,21
+django_nanoid/models.py,sha256=OLxJWv9r1gVVzlGfaIGb4nu0G8Q_xBLeVWTsnrIhsxE,2375
+django_nanoid/serializers.py,sha256=RAI55oIZ3dNV1Xz2EQ__hhgc4xoyTMeSlq6_i6KHkO8,370
+django_nanoid-0.0.1.dist-info/AUTHORS.txt,sha256=GmvYH-0qCERX9Mf7KxprdlfpQTXkjaFV2yTHz_iHQkg,47
+django_nanoid-0.0.1.dist-info/LICENSE,sha256=lsG6MpxCVKosfB45s9nO2eoNp79R2eSlGyj-_3l9oe0,11346
+django_nanoid-0.0.1.dist-info/METADATA,sha256=v-544RREf-Z15P-a-IL_6eGLtV0TNUq8kcIyjCkGEkE,2947
+django_nanoid-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+django_nanoid-0.0.1.dist-info/top_level.txt,sha256=Cmr3K2WjRLjEe7flajXnzo1b6H0o4vKMkmhOwclRlNM,14
+django_nanoid-0.0.1.dist-info/RECORD,,
