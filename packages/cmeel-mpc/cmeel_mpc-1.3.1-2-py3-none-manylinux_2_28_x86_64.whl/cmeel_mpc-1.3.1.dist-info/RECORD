@@ -1,0 +1,12 @@
+cmeel.prefix/include/mpc.h,sha256=vKZB9MWfUwPTISZQzAD-wO4mWaIgBnU13ukCl2HoOEk,16949
+cmeel.prefix/lib/libmpc.a,sha256=eiFGSsbeTZ9AEHc7OVbzUUf1hebP6L1GiK1pt3slhiY,303634
+cmeel.prefix/lib/libmpc.so,sha256=TsL7G30cx7rYQdSh8901SL4n22hJo9LfTPn1tQo-B84,147400
+cmeel.prefix/lib/libmpc.so.3,sha256=TsL7G30cx7rYQdSh8901SL4n22hJo9LfTPn1tQo-B84,147400
+cmeel.prefix/lib/libmpc.so.3.3.1,sha256=TsL7G30cx7rYQdSh8901SL4n22hJo9LfTPn1tQo-B84,147400
+cmeel.prefix/share/cmeel-mpc/README.md,sha256=jS16gh9BFePO3B97md9hLCCm3YtKgXpCpi3cLpMvp64,346
+cmeel.prefix/share/info/dir,sha256=kW3gVzkvijHzWxA-dzNs7N_09iMpoGsuQwHmsbrYLMw,603
+cmeel.prefix/share/info/mpc.info,sha256=MZ4OO4PhuNELkIKB1sfNPtgXlSZHK-iKNKXxVYMFzH0,113709
+cmeel_mpc-1.3.1.dist-info/METADATA,sha256=XzrzLVgLMdOhzYh6no3oLm4YZD3pnRKlMHFA87g7lMg,840
+cmeel_mpc-1.3.1.dist-info/WHEEL,sha256=C5eWlpR3nlvzs4RBLT5banboOlfC4UrqyqIV2MlKLDc,112
+cmeel_mpc-1.3.1.dist-info/top_level.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cmeel_mpc-1.3.1.dist-info/RECORD,,
