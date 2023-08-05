@@ -1,0 +1,11 @@
+.DS_Store,sha256=VQCcXRpRXbH5JLBVozSsGmEEvqj3aTbgsx7vtCpLy8A,6148
+homopy/__init__.py,sha256=PCOvxuYkBtB9oSx3bz2pdjRqWkpyf6r5qaqXLH3-4og,52
+homopy/elasticity.py,sha256=JKCs28Y02MzugDWOVemkqkh-bvIab8SE1uFjJk133IY,4621
+homopy/methods.py,sha256=9AeRsBbtJxtUtaSt9BEfVFatJ5h5bpHAlQM21Pw8rH0,23981
+homopy/stiffness_plot.py,sha256=TCmerfRQ_mnpo3MTNwoQ4NJzGge1cJreVGXNExwIVPU,10869
+homopy/tensor.py,sha256=pfIghbR9uS9qVSiix_sUS417Wi7YOIQ2I2hT9Xq2uhg,7461
+homopy-1.1.0.dist-info/LICENSE,sha256=al23KKiL0Sw6cC2gGNcNw2ZeXSoGlCbia_EmMzCKbG0,1071
+homopy-1.1.0.dist-info/METADATA,sha256=SnCEt5BYola1tY3V8_9z9K3l3aRi4G_xs0HyBcPWaeU,7907
+homopy-1.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+homopy-1.1.0.dist-info/top_level.txt,sha256=iseGdH1u8pqcgEisZdQ4_2OMhNtUl_O8k93l9pIiKpQ,7
+homopy-1.1.0.dist-info/RECORD,,
