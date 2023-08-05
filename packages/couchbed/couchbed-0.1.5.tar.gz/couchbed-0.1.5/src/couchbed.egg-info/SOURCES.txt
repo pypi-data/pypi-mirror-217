@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/__init__.py
+src/couchbed.py
+src/couchbed.egg-info/PKG-INFO
+src/couchbed.egg-info/SOURCES.txt
+src/couchbed.egg-info/dependency_links.txt
+src/couchbed.egg-info/requires.txt
+src/couchbed.egg-info/top_level.txt
