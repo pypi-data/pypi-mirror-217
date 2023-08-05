@@ -1,0 +1,10 @@
+lucianosyllvaPackageOne/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lucianosyllvaPackageOne/add.py,sha256=luMryKQqiml-g1U9rV9jmsgZFtc95g-3r_8xnnUgk6c,31
+lucianosyllvaPackageOne/subtract.py,sha256=oprI7v0SuL4cG5YqCJcoKLdYznTEP-fALe28NvJfwP8,34
+lucianosyllvaPackageOne/extras/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lucianosyllvaPackageOne/extras/divide.py,sha256=wifhWKgVRRStuA6BgSHzKQYJ1qcqvCeNW8RrY-Zfhcs,32
+lucianosyllvaPackageOne/extras/multiply.py,sha256=_edfwom9MThkFOI0rHEcQEyYVOuTijKWfSE_dEvSg-k,34
+lucianosyllvaPackageOne-0.0.1.dist-info/METADATA,sha256=JD7KTehzaDchEQbUfI3hSg-3rJJP3UPM9QzGQvmvgfs,556
+lucianosyllvaPackageOne-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+lucianosyllvaPackageOne-0.0.1.dist-info/top_level.txt,sha256=lGFNGUuuY2vMg0PVaAGXoOgzeJuJnasme_KXNCIPsZ0,24
+lucianosyllvaPackageOne-0.0.1.dist-info/RECORD,,
