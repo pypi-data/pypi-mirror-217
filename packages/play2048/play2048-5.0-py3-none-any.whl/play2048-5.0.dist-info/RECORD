@@ -1,0 +1,9 @@
+play2048/__init__.py,sha256=Hw6yHkq3byzMreR79drbYAEOjbFFbdCmmzL2tDneSvw,64
+play2048/custom.py,sha256=Y5YjEQ2r5fEPsxylZCjyMxuf8x35EqBW889zAl6P4qo,978
+play2048/enums.py,sha256=fs7BdT0XRXYGC_s-mw0n64m6WuquJGKbPXJxFuiNXDU,914
+play2048/game.py,sha256=4RVCtDFkbqOcl4SzAtyMdLr4Nfw3FKzsBcd0aMYweOQ,8496
+play2048-5.0.dist-info/LICENSE,sha256=Gd7kfejF1GHvEF0JbuVg2ceg_zaH05c968TIUtBPhw8,1066
+play2048-5.0.dist-info/METADATA,sha256=LDMstA2klEdsgZqtFNVdLokRcahpiuNTVEB1nPxbKA4,436
+play2048-5.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+play2048-5.0.dist-info/top_level.txt,sha256=Li6EHyZaKvEBKzhuz2xjzCjLnHrvxzTzey0qbaBybgw,9
+play2048-5.0.dist-info/RECORD,,
