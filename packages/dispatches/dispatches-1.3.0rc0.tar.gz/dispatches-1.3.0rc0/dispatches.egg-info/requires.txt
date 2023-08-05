@@ -1,0 +1,25 @@
+pytest
+jupyter
+graphviz
+gridx-prescient>=2.2.2
+nrel-pysam
+utm
+dispatches-data-packages>=23.3.19
+dispatches-rts-gmlc-data
+idaes-pse==2.0.*
+pyomo==6.5.*
+
+[surrogates]
+tslearn>=0.5.2
+scikit-learn==1.2.1
+tensorflow==2.10.0
+tables>=3.6.1
+matplotlib
+dispatches-dynamic-sweep-data>=23.4.4
+
+[teal]
+dispatches-synthetic-price-data>=23.4.4
+
+[teal:python_version <= "3.9" and platform_system != "Linux"]
+raven-framework==2.3
+teal-ravenframework==0.4
