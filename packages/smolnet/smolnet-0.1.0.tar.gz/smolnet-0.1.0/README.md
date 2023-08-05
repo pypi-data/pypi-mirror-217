@@ -1,0 +1,1 @@
+Implementation of Multi Layer Perceptron from scratch using only `numpy`. Broadly based on [Michael Nielson's book](http://neuralnetworksanddeeplearning.com/) and inspired by Karpathy's [micrograd](https://github.com/karpathy/micrograd).
