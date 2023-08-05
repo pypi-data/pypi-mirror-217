@@ -1,0 +1,3 @@
+include spacy2df/requirements.txt
+include spacy2df/thirdparty.json
+include spacy2df/README.MD

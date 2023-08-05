@@ -1,0 +1,14 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+spacy2df/README.MD
+spacy2df/__init__.py
+spacy2df/requirements.txt
+spacy2df/thirdparty.json
+spacy2df.egg-info/PKG-INFO
+spacy2df.egg-info/SOURCES.txt
+spacy2df.egg-info/dependency_links.txt
+spacy2df.egg-info/requires.txt
+spacy2df.egg-info/top_level.txt
