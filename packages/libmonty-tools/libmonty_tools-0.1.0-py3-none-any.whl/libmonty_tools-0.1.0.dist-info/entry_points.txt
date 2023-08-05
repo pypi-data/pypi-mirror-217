@@ -1,0 +1,4 @@
+[console_scripts]
+libmonty-tools = libmonty_tools.__main__:main
+lmt-easypass = libmonty_tools.easypass.easypass:main
+lmt-soundboard = libmonty_tools.soundboard.soundboard:main
