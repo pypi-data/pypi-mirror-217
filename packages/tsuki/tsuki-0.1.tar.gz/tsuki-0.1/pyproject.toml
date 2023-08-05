@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "tsuki"
+version = "0.1.0"
+description = "Package to draw images with moon emoji"
+authors = ["wataoka <wataoka.koki@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+numpy = "^1.25.0"
+emoji = "^2.6.0"
+Pillow = "^9.5.0"
+
+[tool.poetry.group.dev.dependencies]
+setuptools = "^68.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
