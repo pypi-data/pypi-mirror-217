@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: hashlib-tst
+Version: 0.1.0
+Summary: test hashlib python
+Author: jeonghee-lee
+Author-email: jeonghee.lee@live.co.kr
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: crypto (>=1.4.1,<2.0.0)
+Description-Content-Type: text/markdown
+
+
