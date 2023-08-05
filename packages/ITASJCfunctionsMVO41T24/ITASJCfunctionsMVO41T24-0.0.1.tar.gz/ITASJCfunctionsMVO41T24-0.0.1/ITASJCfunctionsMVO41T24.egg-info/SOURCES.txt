@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+ITASJCfunctionsMVO41T24.egg-info/PKG-INFO
+ITASJCfunctionsMVO41T24.egg-info/SOURCES.txt
+ITASJCfunctionsMVO41T24.egg-info/dependency_links.txt
+ITASJCfunctionsMVO41T24.egg-info/requires.txt
+ITASJCfunctionsMVO41T24.egg-info/top_level.txt
+functions_mvo-41/functions_mvo.py
