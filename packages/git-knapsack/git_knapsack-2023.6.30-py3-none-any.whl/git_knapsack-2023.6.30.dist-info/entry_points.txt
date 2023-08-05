@@ -1,0 +1,3 @@
+[console_scripts]
+git-knapsack = git_knapsack:main
+
