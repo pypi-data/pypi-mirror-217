@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+geofixit_demo1/__init__.py
+geofixit_demo1/common.py
+geofixit_demo1/geofixit_demo1.py
+geofixit_demo1.egg-info/PKG-INFO
+geofixit_demo1.egg-info/SOURCES.txt
+geofixit_demo1.egg-info/dependency_links.txt
+geofixit_demo1.egg-info/not-zip-safe
+geofixit_demo1.egg-info/top_level.txt
+tests/test_geofixit_demo1.py

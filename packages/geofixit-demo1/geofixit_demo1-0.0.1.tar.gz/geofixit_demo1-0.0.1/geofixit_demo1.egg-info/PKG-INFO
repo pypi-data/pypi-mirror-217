@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: geofixit-demo1
+Version: 0.0.1
+Summary: An interactive mapping solution demo.
+Home-page: https://github.com/geofixit/geofixit_demo1
+Author: Edmar Tabamo
+Author-email: geofixit316@gmail.com
+License: MIT license
+Keywords: geofixit_demo1
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# geofixit_demo1
+
+
+[![image](https://img.shields.io/pypi/v/geofixit_demo1.svg)](https://pypi.python.org/pypi/geofixit_demo1)
+[![image](https://img.shields.io/conda/vn/conda-forge/geofixit_demo1.svg)](https://anaconda.org/conda-forge/geofixit_demo1)
+
+
+**An interactive mapping solution demo.**
+
+
+-   Free software: MIT license
+-   Documentation: https://geofixit.github.io/geofixit_demo1
+    
+
+## Features
+
+-   TODO
