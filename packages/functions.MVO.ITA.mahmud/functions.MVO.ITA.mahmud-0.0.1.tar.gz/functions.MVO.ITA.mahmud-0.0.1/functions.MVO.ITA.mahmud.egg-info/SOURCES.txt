@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+functions.MVO.ITA.mahmud.egg-info/PKG-INFO
+functions.MVO.ITA.mahmud.egg-info/SOURCES.txt
+functions.MVO.ITA.mahmud.egg-info/dependency_links.txt
+functions.MVO.ITA.mahmud.egg-info/requires.txt
+functions.MVO.ITA.mahmud.egg-info/top_level.txt
+functions_mvo-41/__init__.py
+functions_mvo-41/functions_mvo.py
