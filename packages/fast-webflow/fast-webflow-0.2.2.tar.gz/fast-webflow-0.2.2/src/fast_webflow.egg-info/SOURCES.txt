@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/fast_webflow.egg-info/PKG-INFO
+src/fast_webflow.egg-info/SOURCES.txt
+src/fast_webflow.egg-info/dependency_links.txt
+src/fast_webflow.egg-info/top_level.txt
