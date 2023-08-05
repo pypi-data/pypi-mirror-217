@@ -1,0 +1,15 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+.github/workflows/python-publish.yml
+lazylinks/__init__.py
+lazylinks/dotdict.py
+lazylinks/lazylinks.mako
+lazylinks/lazylinks.py
+lazylinks.egg-info/PKG-INFO
+lazylinks.egg-info/SOURCES.txt
+lazylinks.egg-info/dependency_links.txt
+lazylinks.egg-info/entry_points.txt
+lazylinks.egg-info/requires.txt
+lazylinks.egg-info/top_level.txt
