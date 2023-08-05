@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: PyVCG
+Version: 0.0.0
+Summary: Verification Condition Generator
+Home-page: https://github.com/florianschanda/PyVCG
+Author: Florian Schanda
+Author-email: florian@schanda.org.uk
+License: GNU General Public License v3
+Project-URL: Bug Tracker, https://github.com/florianschanda/PyVCG/issues
+Project-URL: Documentation, https://github.com/pages/florianschanda/PyVCG/
+Project-URL: Source Code, https://github.com/florianschanda/PyVCG
+Classifier: Development Status :: 1 - Planning
+Requires-Python: >=3.7, <4
+Description-Content-Type: text/markdown
+Requires-Dist: cvc5 (>=1.0.5)
+
