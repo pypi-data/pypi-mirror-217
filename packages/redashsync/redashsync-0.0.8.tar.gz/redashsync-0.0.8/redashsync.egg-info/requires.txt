@@ -1,0 +1,5 @@
+PyYAML
+requests
+seaborn
+slack_sdk
+cron_converter
