@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: dariusVision
+Version: 0.0.7
+Summary: Real-time video streaming utility for capturing the latest frame
+Home-page: https://github.com/gbox3d/dariusVision.git
+Author: gbox3d
+Author-email: gbox3d@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+
+dariusVision is a utility module for real-time video streaming applications. It uses OpenCV to capture frames from a video source and provides functionality to always fetch the latest frame. This is particularly useful in applications such as real-time video monitoring, analysis, and other scenarios where processing the most recent video frame is crucial.
