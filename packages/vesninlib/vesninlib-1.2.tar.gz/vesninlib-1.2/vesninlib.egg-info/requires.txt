@@ -1,0 +1,12 @@
+h5py
+datetime
+numpy
+matplotlib
+cartopy
+dateutil
+scipy
+pathlib
+
+[test]
+pytest
+coverage

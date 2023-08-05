@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "vesninlib"
+version = "0.1.0"
+description = ""
+authors = ["vladnov138, nech14"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "vesninlib"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic = "^1.10.9"
+pytest-cov = "^4.1.0"
+pytest = "^7.4.0"
+h5py = "^3.9.0"
+datetime = "^5.1"
+numpy = "^1.25.0"
+matplotlib = "^3.7.1"
+pathlib = "^1.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

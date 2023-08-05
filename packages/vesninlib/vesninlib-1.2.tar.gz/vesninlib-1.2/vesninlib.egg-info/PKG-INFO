@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: vesninlib
+Version: 1.2
+Home-page: 
+Author: nech14
+Author-email: nech14@mail.ru
+License: MIT
+Requires-Python: >=3
+Provides-Extra: test
