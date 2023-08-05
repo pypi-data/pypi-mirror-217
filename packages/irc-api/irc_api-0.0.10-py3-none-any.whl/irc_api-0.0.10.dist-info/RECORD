@@ -1,0 +1,11 @@
+irc_api/__init__.py,sha256=-nNlMKS9nph3FR78_ZG9RGKrbxseeNp2K6nMr0pVGaU,23
+irc_api/bot.py,sha256=BKhyfdQYvHI9GzGMf1hsMV-87Zn4TtJiKileXBRVn5g,12800
+irc_api/commands.py,sha256=JBrvSkGIYg0SnuG6n6CLF-IJzGQ2jCgmBIWCbOVcNAk,8918
+irc_api/history.py,sha256=Voa7BoYl77Zri3kL-kqYDp8Nh8JrUvewiCq2bb6deo4,1468
+irc_api/irc.py,sha256=ukERvHEF4698VGrHxRTWeQKvX_9uC2D3qNmYCBPvnDU,4473
+irc_api/message.py,sha256=LM5FOb7Kx5AeP8pYZkWEtblLb9nlnor4EN-RDGVXviY,1437
+irc_api-0.0.10.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+irc_api-0.0.10.dist-info/METADATA,sha256=XvHAzL5z4e59lpMAhOq0vK1h4kWiSZi2_Vs1BSKhUfA,1038
+irc_api-0.0.10.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+irc_api-0.0.10.dist-info/top_level.txt,sha256=2-qB5N9OsUGKlQ-fV8MtdidyCd3aAY4e1i_HvyD2aF0,8
+irc_api-0.0.10.dist-info/RECORD,,
