@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: tldfinder
+Version: 1.0.2
+Summary: Discover bug bounty scopes associated with star top-level domains (TLDs).
+Home-page: UNKNOWN
+Author: Amirmohammad Safari
+Author-email: amirmohammad@myyahoo.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+
+# TLDFinder
+TLDFinder is a powerful Python package designed to effortlessly identify the valid top-level domains (TLDs) for a provided list of domains that include a wildcard character in the TLD.
+
+# Usage
+The usage of TLDFinder is simple. You can provide the domain using a wildcard character in the TLD scope through standard input (stdin). Here's an example:
+```shell
+echo "example.*" | tldfinder
+cat domains.txt | tldfinder
+```
+Please note that the first time you run the script, it may take a little more time to fetch the TLDs from the source. Subsequent runs should be faster as the TLDs will be cached.
+
+# Contributing
+Contributions to TLDFinder are welcome! If you find any issues or have suggestions for improvements, we appreciate your contribution. Your feedback helps us make TLDFinder better for everyone.
+

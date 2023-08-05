@@ -1,0 +1,9 @@
+README.md
+setup.py
+tldfinder.py
+tldfinder.egg-info/PKG-INFO
+tldfinder.egg-info/SOURCES.txt
+tldfinder.egg-info/dependency_links.txt
+tldfinder.egg-info/entry_points.txt
+tldfinder.egg-info/requires.txt
+tldfinder.egg-info/top_level.txt
