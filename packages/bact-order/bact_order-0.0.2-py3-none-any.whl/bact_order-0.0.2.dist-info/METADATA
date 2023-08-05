@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: bact-order
+Version: 0.0.2
+Summary: Author: J.Iszatt
+Home-page: https://github.com/JoshuaIszatt
+Author: Joshua Iszatt
+Author-email: joshiszatt@gmail.com
+Requires-Python: >3
+Requires-Dist: biopython (==1.81)
+Requires-Dist: pandas (==1.5.3)
+
