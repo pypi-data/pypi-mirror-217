@@ -1,0 +1,10 @@
+httpx>=0.15
+requests
+tqdm
+click
+aiofiles
+sgqlc
+platformdirs
+
+[tests]
+pytest
