@@ -1,0 +1,9 @@
+pyarmor/cli/core/darwin/__init__.py,sha256=vbtJ2fWzIv5Bzsv7yVH47Dtk4RGUCTWnE2pl091zBUY,22
+pyarmor/cli/core/darwin/arm64/pyarmor_runtime.so,sha256=LnCBrVlrMXai0BePo5VW2IK5CTfxbI_Z3_cWfoZYz9Q,667200
+pyarmor/cli/core/darwin/arm64/pytransform3.so,sha256=Ycuw2djPM2R8Id_65-hZ6x4fzgzIdLG7eKe-_LWhBIw,757808
+pyarmor/cli/core/darwin/x86_64/pyarmor_runtime.so,sha256=oEjbeCEVw89ao2g4PRwe-ISqxKjx3CK-KUYUDrjHA6c,885744
+pyarmor/cli/core/darwin/x86_64/pytransform3.so,sha256=VCZMPkzqkWuv9ii6e_RRPVvzQQX53O_gSVNdSIJwh3A,889936
+pyarmor.cli.core.darwin-3.2.9.dist-info/METADATA,sha256=QL98fBQdX6cKqaw7re6JGIXXJluPl9wnzYXXnAEhrRg,807
+pyarmor.cli.core.darwin-3.2.9.dist-info/WHEEL,sha256=QbbyyBnlPXzoGKd-349G69XkCwSd1NFnt4kuAN58gNs,93
+pyarmor.cli.core.darwin-3.2.9.dist-info/top_level.txt,sha256=UE1ovZ_90YzwF_lZ3LV7o8HKLe-RgzUaUUvdH5UTUus,8
+pyarmor.cli.core.darwin-3.2.9.dist-info/RECORD,,
