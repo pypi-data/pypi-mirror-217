@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: osu
+Version: 1.0.3
+Summary: A python library that emulates the osu! stable client
+Author: Lekuru
+Author-email: contact@lekuru.xyz
+Keywords: osu,osugame,python,bancho
+License-File: LICENSE
+
+osu.py is a python library that emulates part of the online functionality of the osu! stable client.
