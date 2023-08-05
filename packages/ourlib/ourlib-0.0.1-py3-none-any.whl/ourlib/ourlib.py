@@ -1,0 +1,2 @@
+class Mercor():
+    pass
