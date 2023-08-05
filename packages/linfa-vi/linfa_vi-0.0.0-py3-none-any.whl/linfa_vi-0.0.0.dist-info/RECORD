@@ -1,0 +1,10 @@
+linfa/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+linfa/maf.py,sha256=MPN1IvDR1pjQIOsJLnLhwPhhf1U0c5At56uQrtmsZto,13040
+linfa/nofas.py,sha256=zUKNSGuLvOavrNaUV7JZshgAakhjRt2vnhN2wnWzwN0,13517
+linfa/run_experiment.py,sha256=6QdSn-g4mGx5p0lIeH59Z83nr8q1apDkiy-LH57q3Ns,13030
+linfa/transform.py,sha256=opc2PKNzQOLzRIoIISTdToL3olvU2qb-w2sy3V-CReY,4331
+linfa_vi-0.0.0.dist-info/LICENSE,sha256=J6WD1WOfsTiprFkGRJ34n3sefMCUzJuehztOULEZ4P0,1069
+linfa_vi-0.0.0.dist-info/METADATA,sha256=n8M6ftr7dALf1Bfoff-50h3guG9C3Uc324-cuFn85kE,6675
+linfa_vi-0.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+linfa_vi-0.0.0.dist-info/top_level.txt,sha256=Kr-nSnwIZKRbH64RBoiDArjublnpJyRflTkJUw83rgw,6
+linfa_vi-0.0.0.dist-info/RECORD,,
