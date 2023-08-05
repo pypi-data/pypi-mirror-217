@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: tastytrade-sdk
+Version: 0.0.33
+Summary: A python wrapper around the tastytrade open API
+License: MIT
+Author: Aaron Mamparo
+Author-email: aaronmamparo@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: bidict (>=0.22.1,<0.23.0)
+Requires-Dist: injector (>=0.20.1,<0.21.0)
+Requires-Dist: requests (==2.29.0)
+Requires-Dist: strenum (>=0.4.15,<0.5.0)
+Requires-Dist: ujson (>=5.8.0,<6.0.0)
+Requires-Dist: websockets (>=11.0.3,<12.0.0)
+Description-Content-Type: text/markdown
+
+[![PyPI](https://img.shields.io/pypi/v/tastytrade-sdk)](https://pypi.org/project/tastytrade-sdk/)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/tastytrade-sdk)](https://pypi.org/project/tastytrade-sdk/)
+
+# tastytrade-sdk-python
+
+A python wrapper around the [tastytrade open API](https://developer.tastytrade.com/)
+
+## Documentation
+
+For users: [Official Documentation](https://amamparo.github.io/tastytrade-sdk-python)
+
+For contributors: [Developer Guide](./docs/contributors/README.md)
