@@ -1,0 +1,148 @@
+11:23:35:829 PM | codium_3442928d-4de8-469d-84e9-40d141208ae8_gradient.py |    Line  412  |  DEBUG   ﰲ  Setting gradient._style: none
+11:23:35:829 PM | codium_3442928d-4de8-469d-84e9-40d141208ae8_gradient.py |    Line  398  |  DEBUG   ﰲ  Setting gradient._color_sample: False
+11:23:35:829 PM | codium_3442928d-4de8-469d-84e9-40d141208ae8_gradient.py |    Line  384  |  DEBUG   ﰲ  Setting gradient._hues: 3
+11:23:35:829 PM |   color.py    |    Line  135  |  DEBUG   ﰲ  Called Color.__init__()
+11:23:35:829 PM |   color.py    |    Line  199  |  DEBUG   ﰲ  Called Color.original.setter(red
+11:23:35:830 PM |   color.py    |    Line  259  |  DEBUG   ﰲ  Called Color.name.setter(red)
+11:23:35:830 PM |   color.py    |    Line  275  |  DEBUG   ﰲ  Called Color.mode.setter(Mode.GC)
+11:23:35:830 PM |   color.py    |    Line  135  |  DEBUG   ﰲ  Called Color.__init__()
+11:23:35:830 PM |   color.py    |    Line  199  |  DEBUG   ﰲ  Called Color.original.setter(green
+11:23:35:830 PM |   color.py    |    Line  259  |  DEBUG   ﰲ  Called Color.name.setter(green)
+11:23:35:830 PM |   color.py    |    Line  275  |  DEBUG   ﰲ  Called Color.mode.setter(Mode.RICH)
+11:23:35:830 PM |   color.py    |    Line  135  |  DEBUG   ﰲ  Called Color.__init__()
+11:23:35:830 PM |   color.py    |    Line  199  |  DEBUG   ﰲ  Called Color.original.setter(not_a_color
+11:23:35:948 PM | codium_65995c89-7418-4c53-8ed4-df8a08e28142_gradient.py |    Line  412  |  DEBUG   ﰲ  Setting gradient._style: none
+11:23:35:948 PM | codium_65995c89-7418-4c53-8ed4-df8a08e28142_gradient.py |    Line  398  |  DEBUG   ﰲ  Setting gradient._color_sample: False
+11:23:35:948 PM | codium_65995c89-7418-4c53-8ed4-df8a08e28142_gradient.py |    Line  384  |  DEBUG   ﰲ  Setting gradient._hues: 3
+11:23:35:948 PM | codium_65995c89-7418-4c53-8ed4-df8a08e28142_gradient.py |    Line  378  |  DEBUG   ﰲ  Retrieving gradient._hues: 3
+11:23:35:948 PM |   color.py    |    Line  135  |  DEBUG   ﰲ  Called Color.__init__()
+11:23:35:948 PM |   color.py    |    Line  199  |  DEBUG   ﰲ  Called Color.original.setter(magenta
+11:23:35:948 PM |   color.py    |    Line  259  |  DEBUG   ﰲ  Called Color.name.setter(magenta)
+11:23:35:948 PM |   color.py    |    Line  275  |  DEBUG   ﰲ  Called Color.mode.setter(Mode.GC)
+11:23:35:949 PM |   color.py    |    Line  135  |  DEBUG   ﰲ  Called Color.__init__()
+11:23:35:949 PM |   color.py    |    Line  199  |  DEBUG   ﰲ  Called Color.original.setter(violet
+11:23:35:949 PM |   color.py    |    Line  259  |  DEBUG   ﰲ  Called Color.name.setter(violet)
+11:23:35:949 PM |   color.py    |    Line  275  |  DEBUG   ﰲ  Called Color.mode.setter(Mode.GC)
+11:23:35:949 PM |   color.py    |    Line  135  |  DEBUG   ﰲ  Called Color.__init__()
+11:23:35:949 PM |   color.py    |    Line  199  |  DEBUG   ﰲ  Called Color.original.setter(purple
+11:23:35:949 PM |   color.py    |    Line  259  |  DEBUG   ﰲ  Called Color.name.setter(purple)
+11:23:35:949 PM |   color.py    |    Line  275  |  DEBUG   ﰲ  Called Color.mode.setter(Mode.GC)
+11:23:35:949 PM | codium_65995c89-7418-4c53-8ed4-df8a08e28142_gradient.py |    Line  378  |  DEBUG   ﰲ  Retrieving gradient._hues: 3
+11:23:35:949 PM | codium_65995c89-7418-4c53-8ed4-df8a08e28142_gradient.py |    Line  384  |  DEBUG   ﰲ  Setting gradient._hues: 3
+11:23:35:949 PM | codium_65995c89-7418-4c53-8ed4-df8a08e28142_gradient.py |    Line  378  |  DEBUG   ﰲ  Retrieving gradient._hues: 3
+11:23:35:952 PM | codium_65995c89-7418-4c53-8ed4-df8a08e28142_gradient.py |    Line  242  |   INFO   ﰲ  [b white]Index 0:[/]
+
+
+11:23:35:954 PM | codium_65995c89-7418-4c53-8ed4-df8a08e28142_gradient.py |    Line  242  |   INFO   ﰲ  [b white]Index 1:[/]
+
+
+11:23:35:954 PM | codium_65995c89-7418-4c53-8ed4-df8a08e28142_gradient.py |    Line  378  |  DEBUG   ﰲ  Retrieving gradient._hues: 3
+11:23:35:954 PM |   color.py    |    Line  296  |  DEBUG   ﰲ  Called Color.rgb_tuple.getter()
+11:23:35:954 PM |   color.py    |    Line  296  |  DEBUG   ﰲ  Called Color.rgb_tuple.getter()
+11:23:35:954 PM | codium_65995c89-7418-4c53-8ed4-df8a08e28142_gradient.py |    Line  406  |  DEBUG   ﰲ  Retrieving gradient._style: none
+11:23:35:955 PM | codium_65995c89-7418-4c53-8ed4-df8a08e28142_gradient.py |    Line  378  |  DEBUG   ﰲ  Retrieving gradient._hues: 3
+11:23:35:955 PM |   color.py    |    Line  296  |  DEBUG   ﰲ  Called Color.rgb_tuple.getter()
+11:23:35:955 PM |   color.py    |    Line  296  |  DEBUG   ﰲ  Called Color.rgb_tuple.getter()
+11:23:35:955 PM | codium_65995c89-7418-4c53-8ed4-df8a08e28142_gradient.py |    Line  406  |  DEBUG   ﰲ  Retrieving gradient._style: none
+11:23:35:955 PM | codium_a0ed178a-9b1e-4ef6-aaf9-6692e0da9bdb_gradient.py |    Line  412  |  DEBUG   ﰲ  Setting gradient._style: none
+11:23:35:955 PM | codium_a0ed178a-9b1e-4ef6-aaf9-6692e0da9bdb_gradient.py |    Line  398  |  DEBUG   ﰲ  Setting gradient._color_sample: False
+11:23:35:955 PM | codium_a0ed178a-9b1e-4ef6-aaf9-6692e0da9bdb_gradient.py |    Line  384  |  DEBUG   ﰲ  Setting gradient._hues: 3
+11:23:35:955 PM |   color.py    |    Line  135  |  DEBUG   ﰲ  Called Color.__init__()
+11:23:35:955 PM |   color.py    |    Line  199  |  DEBUG   ﰲ  Called Color.original.setter(red
+11:23:35:955 PM |   color.py    |    Line  259  |  DEBUG   ﰲ  Called Color.name.setter(red)
+11:23:35:956 PM |   color.py    |    Line  275  |  DEBUG   ﰲ  Called Color.mode.setter(Mode.GC)
+11:23:35:956 PM |   color.py    |    Line  135  |  DEBUG   ﰲ  Called Color.__init__()
+11:23:35:956 PM |   color.py    |    Line  199  |  DEBUG   ﰲ  Called Color.original.setter(green
+11:23:35:956 PM |   color.py    |    Line  259  |  DEBUG   ﰲ  Called Color.name.setter(green)
+11:23:35:956 PM |   color.py    |    Line  275  |  DEBUG   ﰲ  Called Color.mode.setter(Mode.RICH)
+11:23:35:958 PM |   color.py    |    Line  135  |  DEBUG   ﰲ  Called Color.__init__()
+11:23:35:958 PM |   color.py    |    Line  199  |  DEBUG   ﰲ  Called Color.original.setter(blue
+11:23:35:958 PM |   color.py    |    Line  259  |  DEBUG   ﰲ  Called Color.name.setter(blue)
+11:23:35:958 PM |   color.py    |    Line  275  |  DEBUG   ﰲ  Called Color.mode.setter(Mode.GC)
+11:23:35:958 PM | codium_a0ed178a-9b1e-4ef6-aaf9-6692e0da9bdb_gradient.py |    Line  384  |  DEBUG   ﰲ  Setting gradient._hues: 3
+11:23:35:958 PM | codium_a0ed178a-9b1e-4ef6-aaf9-6692e0da9bdb_gradient.py |    Line  378  |  DEBUG   ﰲ  Retrieving gradient._hues: 3
+11:23:35:958 PM | codium_a0ed178a-9b1e-4ef6-aaf9-6692e0da9bdb_gradient.py |    Line  242  |   INFO   ﰲ  [b white]Index 0:[/]0, 1, 2, 3, 4, 5, 6
+
+
+11:23:35:958 PM | codium_a0ed178a-9b1e-4ef6-aaf9-6692e0da9bdb_gradient.py |    Line  242  |   INFO   ﰲ  [b white]Index 1:[/]7, 8, 9, 10, 11, 12
+
+
+11:23:35:958 PM | codium_a0ed178a-9b1e-4ef6-aaf9-6692e0da9bdb_gradient.py |    Line  378  |  DEBUG   ﰲ  Retrieving gradient._hues: 3
+11:23:35:958 PM |   color.py    |    Line  296  |  DEBUG   ﰲ  Called Color.rgb_tuple.getter()
+11:23:35:958 PM |   color.py    |    Line  296  |  DEBUG   ﰲ  Called Color.rgb_tuple.getter()
+11:23:35:958 PM | codium_a0ed178a-9b1e-4ef6-aaf9-6692e0da9bdb_gradient.py |    Line  406  |  DEBUG   ﰲ  Retrieving gradient._style: none
+11:23:35:960 PM | codium_a0ed178a-9b1e-4ef6-aaf9-6692e0da9bdb_gradient.py |    Line  378  |  DEBUG   ﰲ  Retrieving gradient._hues: 3
+11:23:35:960 PM |   color.py    |    Line  296  |  DEBUG   ﰲ  Called Color.rgb_tuple.getter()
+11:23:35:960 PM |   color.py    |    Line  296  |  DEBUG   ﰲ  Called Color.rgb_tuple.getter()
+11:23:35:960 PM | codium_a0ed178a-9b1e-4ef6-aaf9-6692e0da9bdb_gradient.py |    Line  406  |  DEBUG   ﰲ  Retrieving gradient._style: none
+11:23:35:961 PM | codium_a0ed178a-9b1e-4ef6-aaf9-6692e0da9bdb_gradient.py |    Line  356  |  DEBUG   ﰲ  Getting gradient._text: ['Hello, world!']
+11:23:35:978 PM | codium_1633e794-e031-4177-8e3e-a33425961427_gradient.py |    Line  412  |  DEBUG   ﰲ  Setting gradient._style: none
+11:23:35:978 PM | codium_1633e794-e031-4177-8e3e-a33425961427_gradient.py |    Line  398  |  DEBUG   ﰲ  Setting gradient._color_sample: False
+11:23:35:978 PM | codium_1633e794-e031-4177-8e3e-a33425961427_gradient.py |    Line  384  |  DEBUG   ﰲ  Setting gradient._hues: 3
+11:23:35:978 PM | codium_1633e794-e031-4177-8e3e-a33425961427_gradient.py |    Line  378  |  DEBUG   ﰲ  Retrieving gradient._hues: 3
+11:23:35:978 PM |   color.py    |    Line  135  |  DEBUG   ﰲ  Called Color.__init__()
+11:23:35:978 PM |   color.py    |    Line  199  |  DEBUG   ﰲ  Called Color.original.setter(yellow
+11:23:35:978 PM |   color.py    |    Line  259  |  DEBUG   ﰲ  Called Color.name.setter(yellow)
+11:23:35:978 PM |   color.py    |    Line  275  |  DEBUG   ﰲ  Called Color.mode.setter(Mode.GC)
+11:23:35:978 PM |   color.py    |    Line  135  |  DEBUG   ﰲ  Called Color.__init__()
+11:23:35:978 PM |   color.py    |    Line  199  |  DEBUG   ﰲ  Called Color.original.setter(orange
+11:23:35:978 PM |   color.py    |    Line  259  |  DEBUG   ﰲ  Called Color.name.setter(orange)
+11:23:35:978 PM |   color.py    |    Line  275  |  DEBUG   ﰲ  Called Color.mode.setter(Mode.GC)
+11:23:35:978 PM |   color.py    |    Line  135  |  DEBUG   ﰲ  Called Color.__init__()
+11:23:35:978 PM |   color.py    |    Line  199  |  DEBUG   ﰲ  Called Color.original.setter(red
+11:23:35:978 PM |   color.py    |    Line  259  |  DEBUG   ﰲ  Called Color.name.setter(red)
+11:23:35:978 PM |   color.py    |    Line  275  |  DEBUG   ﰲ  Called Color.mode.setter(Mode.GC)
+11:23:35:978 PM | codium_1633e794-e031-4177-8e3e-a33425961427_gradient.py |    Line  378  |  DEBUG   ﰲ  Retrieving gradient._hues: 3
+11:23:35:978 PM | codium_1633e794-e031-4177-8e3e-a33425961427_gradient.py |    Line  384  |  DEBUG   ﰲ  Setting gradient._hues: 3
+11:23:35:978 PM | codium_1633e794-e031-4177-8e3e-a33425961427_gradient.py |    Line  378  |  DEBUG   ﰲ  Retrieving gradient._hues: 3
+11:23:35:979 PM | codium_1633e794-e031-4177-8e3e-a33425961427_gradient.py |    Line  242  |   INFO   ﰲ  [b white]Index 0:[/]
+
+
+11:23:35:979 PM | codium_1633e794-e031-4177-8e3e-a33425961427_gradient.py |    Line  242  |   INFO   ﰲ  [b white]Index 1:[/]
+
+
+11:23:35:979 PM | codium_1633e794-e031-4177-8e3e-a33425961427_gradient.py |    Line  378  |  DEBUG   ﰲ  Retrieving gradient._hues: 3
+11:23:35:979 PM |   color.py    |    Line  296  |  DEBUG   ﰲ  Called Color.rgb_tuple.getter()
+11:23:35:979 PM |   color.py    |    Line  296  |  DEBUG   ﰲ  Called Color.rgb_tuple.getter()
+11:23:35:979 PM | codium_1633e794-e031-4177-8e3e-a33425961427_gradient.py |    Line  406  |  DEBUG   ﰲ  Retrieving gradient._style: none
+11:23:35:979 PM | codium_1633e794-e031-4177-8e3e-a33425961427_gradient.py |    Line  378  |  DEBUG   ﰲ  Retrieving gradient._hues: 3
+11:23:35:979 PM |   color.py    |    Line  296  |  DEBUG   ﰲ  Called Color.rgb_tuple.getter()
+11:23:35:979 PM |   color.py    |    Line  296  |  DEBUG   ﰲ  Called Color.rgb_tuple.getter()
+11:23:35:979 PM | codium_1633e794-e031-4177-8e3e-a33425961427_gradient.py |    Line  406  |  DEBUG   ﰲ  Retrieving gradient._style: none
+11:23:35:980 PM | codium_1633e794-e031-4177-8e3e-a33425961427_gradient.py |    Line  356  |  DEBUG   ﰲ  Getting gradient._text: ['']
+11:23:35:986 PM | codium_e3493731-580d-4d10-8efe-9ed0c7899291_gradient.py |    Line  412  |  DEBUG   ﰲ  Setting gradient._style: none
+11:23:35:986 PM | codium_e3493731-580d-4d10-8efe-9ed0c7899291_gradient.py |    Line  398  |  DEBUG   ﰲ  Setting gradient._color_sample: False
+11:23:35:986 PM | codium_e3493731-580d-4d10-8efe-9ed0c7899291_gradient.py |    Line  384  |  DEBUG   ﰲ  Setting gradient._hues: 1
+11:23:35:996 PM | codium_4ece8389-f85a-41c7-bc9f-3b5d7714a71e_gradient.py |    Line  412  |  DEBUG   ﰲ  Setting gradient._style: none
+11:23:35:997 PM | codium_4ece8389-f85a-41c7-bc9f-3b5d7714a71e_gradient.py |    Line  398  |  DEBUG   ﰲ  Setting gradient._color_sample: False
+11:23:35:997 PM | codium_4ece8389-f85a-41c7-bc9f-3b5d7714a71e_gradient.py |    Line  384  |  DEBUG   ﰲ  Setting gradient._hues: 3
+11:23:35:998 PM | codium_4ece8389-f85a-41c7-bc9f-3b5d7714a71e_gradient.py |    Line  378  |  DEBUG   ﰲ  Retrieving gradient._hues: 3
+11:23:35:998 PM |   color.py    |    Line  135  |  DEBUG   ﰲ  Called Color.__init__()
+11:23:35:998 PM |   color.py    |    Line  199  |  DEBUG   ﰲ  Called Color.original.setter(blue
+11:23:35:998 PM |   color.py    |    Line  259  |  DEBUG   ﰲ  Called Color.name.setter(blue)
+11:23:35:998 PM |   color.py    |    Line  275  |  DEBUG   ﰲ  Called Color.mode.setter(Mode.GC)
+11:23:35:998 PM |   color.py    |    Line  135  |  DEBUG   ﰲ  Called Color.__init__()
+11:23:35:998 PM |   color.py    |    Line  199  |  DEBUG   ﰲ  Called Color.original.setter(lightblue
+11:23:35:998 PM |   color.py    |    Line  259  |  DEBUG   ﰲ  Called Color.name.setter(lightblue)
+11:23:35:998 PM |   color.py    |    Line  275  |  DEBUG   ﰲ  Called Color.mode.setter(Mode.GC)
+11:23:35:998 PM |   color.py    |    Line  135  |  DEBUG   ﰲ  Called Color.__init__()
+11:23:35:998 PM |   color.py    |    Line  199  |  DEBUG   ﰲ  Called Color.original.setter(cyan
+11:23:35:998 PM |   color.py    |    Line  259  |  DEBUG   ﰲ  Called Color.name.setter(cyan)
+11:23:35:998 PM |   color.py    |    Line  275  |  DEBUG   ﰲ  Called Color.mode.setter(Mode.GC)
+11:23:35:998 PM | codium_4ece8389-f85a-41c7-bc9f-3b5d7714a71e_gradient.py |    Line  378  |  DEBUG   ﰲ  Retrieving gradient._hues: 3
+11:23:35:998 PM | codium_4ece8389-f85a-41c7-bc9f-3b5d7714a71e_gradient.py |    Line  384  |  DEBUG   ﰲ  Setting gradient._hues: 3
+11:23:35:998 PM | codium_4ece8389-f85a-41c7-bc9f-3b5d7714a71e_gradient.py |    Line  378  |  DEBUG   ﰲ  Retrieving gradient._hues: 3
+11:23:35:999 PM | codium_4ece8389-f85a-41c7-bc9f-3b5d7714a71e_gradient.py |    Line  242  |   INFO   ﰲ  [b white]Index 0:[/]
+
+
+11:23:35:999 PM | codium_4ece8389-f85a-41c7-bc9f-3b5d7714a71e_gradient.py |    Line  242  |   INFO   ﰲ  [b white]Index 1:[/]
+
+
+11:23:35:999 PM | codium_4ece8389-f85a-41c7-bc9f-3b5d7714a71e_gradient.py |    Line  378  |  DEBUG   ﰲ  Retrieving gradient._hues: 3
+11:23:35:999 PM |   color.py    |    Line  296  |  DEBUG   ﰲ  Called Color.rgb_tuple.getter()
+11:23:35:999 PM |   color.py    |    Line  296  |  DEBUG   ﰲ  Called Color.rgb_tuple.getter()
+11:23:35:999 PM | codium_4ece8389-f85a-41c7-bc9f-3b5d7714a71e_gradient.py |    Line  406  |  DEBUG   ﰲ  Retrieving gradient._style: none
+11:23:35:999 PM | codium_4ece8389-f85a-41c7-bc9f-3b5d7714a71e_gradient.py |    Line  378  |  DEBUG   ﰲ  Retrieving gradient._hues: 3
+11:23:36:000 PM |   color.py    |    Line  296  |  DEBUG   ﰲ  Called Color.rgb_tuple.getter()
+11:23:36:000 PM |   color.py    |    Line  296  |  DEBUG   ﰲ  Called Color.rgb_tuple.getter()
+11:23:36:000 PM | codium_4ece8389-f85a-41c7-bc9f-3b5d7714a71e_gradient.py |    Line  406  |  DEBUG   ﰲ  Retrieving gradient._style: none

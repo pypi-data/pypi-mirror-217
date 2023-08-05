@@ -1,0 +1,34 @@
+[project]
+name = "MaxGradient"
+version = "0.1.5"
+description = "MaxGradient automates the printing gradient colored text to the console."
+authors = [
+    { name = "maxludden", email = "dev@maxludden.com" },
+]
+dependencies = [
+    "loguru>=0.7.0",
+    "rich>=13.4.2",
+    "typer-cli>=0.0.1",
+    "nptyping>=2.5.0",
+    "typer>=0.9.0",
+    "numpy>=1.25.0",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "snoop>=0.4.3",
+    "cheap-repr>=0.5.1",
+    "birdseye>=0.9.4",
+    "pylint>=2.17.4",
+]
