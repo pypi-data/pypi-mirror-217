@@ -1,0 +1,12 @@
+semremover/__init__.py,sha256=HNv5MaUkWQjuOOSqw2CwE9e1JmbLDoY2Jn8jKPnJnAc,42
+semremover/__main__.py,sha256=ki6Bd2EMB8FBeUizzsM8OkGBpNn_TtD3K9bbbY8BgTE,3388
+semremover/models/__init__.py,sha256=3mEJa1WFRfZkriphdE1gxLeovIbfAR4bgQeyX6hR3hw,166
+semremover/models/lama.py,sha256=XaTHt4i7oC-8i-4GhMZYTNA19hbHMVUWqJKgUZaPVbc,3874
+semremover/models/maskformer.py,sha256=cKQt_7LjJNlLlwgLupMYoS2PP1yXOQiC1tY0dmUY0wI,1413
+semremover/models/semremover.py,sha256=Nj3ZJsoVOMthgY91HHyC86e27ylglbiKaKs00e2zB0w,2509
+semremover/models/utils.py,sha256=Amv5JPOax24EBmYxW0OuVcm3gUYx09FObpcu3NTWvuI,765
+semremover-1.0.0.dist-info/LICENSE,sha256=1uDyZuLLQClQ_swoJT-rZoTFAEjxDbl7x97NG30xFoE,1069
+semremover-1.0.0.dist-info/METADATA,sha256=ch6vM4Zs0yFy284W9cI124ZQglnzhsAK7uvt-CJkxn4,2211
+semremover-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+semremover-1.0.0.dist-info/top_level.txt,sha256=BcQZ-4WLG34tyhdzEtb_O9usjBKOcUfKj_JoLJkulsg,11
+semremover-1.0.0.dist-info/RECORD,,
