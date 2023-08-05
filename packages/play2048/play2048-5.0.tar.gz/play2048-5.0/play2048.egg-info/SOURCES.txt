@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+play2048/__init__.py
+play2048/custom.py
+play2048/enums.py
+play2048/game.py
+play2048.egg-info/PKG-INFO
+play2048.egg-info/SOURCES.txt
+play2048.egg-info/dependency_links.txt
+play2048.egg-info/top_level.txt
