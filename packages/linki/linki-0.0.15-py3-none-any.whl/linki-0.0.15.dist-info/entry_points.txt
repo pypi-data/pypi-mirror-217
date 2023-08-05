@@ -1,0 +1,3 @@
+[console_scripts]
+linki=linki:main.app
+
