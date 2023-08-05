@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+phoganizer.egg-info/PKG-INFO
+phoganizer.egg-info/SOURCES.txt
+phoganizer.egg-info/dependency_links.txt
+phoganizer.egg-info/top_level.txt
