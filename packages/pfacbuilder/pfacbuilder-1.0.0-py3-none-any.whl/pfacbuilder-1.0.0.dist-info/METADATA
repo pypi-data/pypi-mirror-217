@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pfacbuilder
+Version: 1.0.0
+Summary: A module to work with python modules
+Author: VenzTechnolo
+Author-email: venztechnolo@gmail.com
+Keywords: python,function,class,functions,classes,python3
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+
+This module created for make functions and classes, Then save that into the a file
