@@ -1,0 +1,13 @@
+.gitignore
+MANIFEST.in
+README.md
+pyproject.toml
+upload.bat
+.github/workflows/python-publish.yml
+lokzzpylib/__init__.py
+lokzzpylib/library.py
+lokzzpylib.egg-info/PKG-INFO
+lokzzpylib.egg-info/SOURCES.txt
+lokzzpylib.egg-info/dependency_links.txt
+lokzzpylib.egg-info/requires.txt
+lokzzpylib.egg-info/top_level.txt

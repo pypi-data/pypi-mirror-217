@@ -1,0 +1,1 @@
+@envs.bat && del /F /Q dist\* && python -m build && py -m twine upload -p %pytok% -u "__token__" dist\lokzz*
