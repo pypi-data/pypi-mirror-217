@@ -1,0 +1,31 @@
+FROM quay.io/assisted-installer-ops/base-python:3.11.0
+
+RUN dnf install -y \
+    jq \
+    gcc \
+    git \
+    make \
+    skopeo \
+    libffi-devel \
+        && dnf clean all
+
+RUN pip3 install pip --upgrade
+
+COPY requirements.txt ./
+RUN pip install -r requirements.txt
+
+COPY dev-requirements.txt ./
+RUN pip install -r dev-requirements.txt
+
+ARG INSTALL_CCX=true
+
+COPY ccx/ ./ccx
+RUN if [ "${INSTALL_CCX}" == "true" ]; then \
+	dnf install -y openssl && ./ccx/install.sh; \
+    fi
+
+WORKDIR /home/assisted-installer-deployment
+COPY . .
+
+# PBR version is needed to allow us to .dockerignore the heavy .git directory
+RUN PBR_VERSION=9.9.9 pip install .

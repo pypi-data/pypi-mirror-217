@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: assisted-ticket-search
+Version: 2.22.1.dev4
+Summary: A temporary package for testing
+Home-page: https://github.com/openshift-assisted/assisted-installer-deployment
+Author: Nir Magnezi
+Author-email: nmagnezi@redhat.com
+License: Apache-2
+License-File: LICENSE
+License-File: AUTHORS

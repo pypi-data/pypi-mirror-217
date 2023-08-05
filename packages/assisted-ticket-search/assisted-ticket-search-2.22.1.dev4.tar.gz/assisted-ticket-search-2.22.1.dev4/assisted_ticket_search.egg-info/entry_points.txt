@@ -1,0 +1,2 @@
+[console_scripts]
+assisted_ticket_search = tools.triage.ticket_search.cli.app:main

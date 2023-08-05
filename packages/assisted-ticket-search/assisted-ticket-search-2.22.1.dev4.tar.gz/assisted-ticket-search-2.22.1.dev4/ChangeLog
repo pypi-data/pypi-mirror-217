@@ -1,0 +1,1582 @@
+CHANGES
+=======
+
+* Add 'assisted' prefix to entry\_points
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* NO-ISSUE: Fix DeletedHostsStatusSignature so it only triggers when needed (#390)
+
+v2.22.0
+-------
+
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Match more possible controller log file names (#387)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* MGMT-14989: Document how to fetch JIRA\_ACCESS\_TOKEN for triage search users (#385)
+* Automatic snapshot of repositories' current git revisions
+* No issue: Add docker and podman direct build and launch options (#386)
+* NO-ISSUE-fix-further-downloader-issue: Fixing  a small bug discovered during the storage of files. (#384)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* NO-ISSUE: Remove deleted hosts from metadata (#383)
+* NO-ISSUE: Match only ssh/console logins to avoid false positives (#381)
+* add rccrdpccl and javipolo as approvers (#382)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* NO-ISSUE: Fix downloader issue (#380)
+* Automatic snapshot of repositories' current git revisions
+* snapshot of repositories' current git revisions (#379)
+* Automatic snapshot of repositories' current git revisions
+* MGMT-14174: Utility to download and search logs in bulk (#375)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Fix a few things for the auto jira tagger (#377)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* fix to the new assisted-installer UI repo name (#367)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* MGMT-13543: Add signature to detect address change after reboot (#373)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Fix duplicated Jira attachments (#371)
+* MGMT-13107: Create signature to detect MTU mismatch betwen interface and cluster network (#350)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* MGMT-13999: Change triage focus to multi node clusters (#368)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* MGMT-13301: signature for detecting overlap nameservers (#366)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Fix arguments for issue links creation (#365)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Split long triage status reports (#364)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* bump jira client to v3.4.1 (#363)
+* Automatic snapshot of repositories' current git revisions
+* retry filter instantation if jira GET issue fails (#360)
+* MGMT-13401: store cluster logs as Jira attachments (#338)
+* Reduce warnings emitted for currently acceptable access (#361)
+* Automatic snapshot of repositories' current git revisions
+* MGMT-13667: Signature to detect user login to the cluster hosts. (#359)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* MGMT-13442 add generic issue filtering for triage (#352)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* append labels instead of resetting (#357)
+* retry for jira errors when closing tickets (#358)
+* Retry per ticket errors (#355)
+* Fix attachments being redundantly uploaded (#356)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* MGMT-13752: Fix description not filled in (#354)
+* MGMT-13752: Add signatures for existing triage tickets as well (#353)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* MGMT-13748: fix git tag on stable promotions (#351)
+* Automatic snapshot of repositories' current git revisions
+* MGMT-13704: Adapt signatures to get host logs both with new and old paths (#349)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Bump ipython from 8.4.0 to 8.10.0 (#348)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+
+v2.15.0
+-------
+
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* filter-out placeholder tickets in triage status (#345)
+* Automatic snapshot of repositories' current git revisions
+* bump to Python 3.11.0 (#344)
+* Automatic snapshot of repositories' current git revisions
+* Apply black for the whole dir of 'tools' (#340)
+* Remove SMART column from host storage signature (#342)
+* Clarify message for slow OS installation (#343)
+* Automatic snapshot of repositories' current git revisions
+* Fix ccx installation missing openssl (#341)
+* Automatic snapshot of repositories' current git revisions
+* Tell triagers to focus on OCP 4.12 tickets (#339)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* NO-ISSUE: Try to make triage report relient to errors (#337)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Fix image tagging and git tagging (#336)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Remove CI reporting code (#335)
+* Automatic snapshot of repositories' current git revisions
+* Add slow image download signature (#334)
+* Automatic snapshot of repositories' current git revisions
+* Add ControllerFailedToStart signature (#332)
+* Automatic snapshot of repositories' current git revisions
+* Add eranco74 as approver (#333)
+* workaround to must-gather sig (#331)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* New MachineConfigDaemonErrorExtracting signature to check for machine-config-daemon extract error (#328)
+* AITRIAGE-4849: added a signature for missing OSTree pivot (#327)
+* Automatic snapshot of repositories' current git revisions
+* using /run/user/1000/containers/auth.json for podman creds
+* Remove duplicated mount of netrc
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* MGMT-13191: fix image tagging of hotfix releases (#329)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* New ControllerWarnings signature to show controller warnings (#325)
+* Automatic snapshot of repositories' current git revisions
+* Allow overriding remote repo URL in Jenkins (#323)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Bump wheel from 0.37.1 to 0.38.1 (#322)
+* Automatic snapshot of repositories' current git revisions
+* Add signature for missing must gather logs (#321)
+* Automatic snapshot of repositories' current git revisions
+* MGMT-13065: Add expired certificate signature (#320)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* MGMT-12339: Add signature to monitor errors on cleanupInstallDevice function (#316)
+* Tell triagers to focus on metal 4.11 multinode tickets (#319)
+
+v2.13.0
+-------
+
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Explicit message for when there's no install-config (#315)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Bump pillow from 9.1.1 to 9.3.0 (#313)
+
+v2.12.0
+-------
+
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+*         NO-ISSUE: add signature for failed requests leading to bad cluster state (#310)
+* Automatic snapshot of repositories' current git revisions
+* NO-ISSUE: Add \`SkipDisks\` signature (#312)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Avoid false positive \`UserManagedNetworkingLoadBalancer\` on SNO (#309)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* MGMT-11875: Consider operators without conditions unhealthy (#308)
+* MGMT-12200: remove OCP bump script and its dependencies (#307)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* FlappingValidations more detailed, per-host (#306)
+* Automatic snapshot of repositories' current git revisions
+* TagAnalysis signature - inform user about known/unknown tags (#305)
+* Automatic snapshot of repositories' current git revisions
+* NO-ISSUE: Don't assign auto-closed tickets to a human (#304)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* NO-ISSUE: Normalize JIRA title when checking for duplicate AITRIAGE (#303)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Remove terrible CNIConfigurationError (#302)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* MGMT-11617: only release backend components (#301)
+* Bump oauthlib from 3.2.0 to 3.2.1 (#299)
+* Automatic snapshot of repositories' current git revisions
+* MGMT-11987: fix 4.12 versions getting overridden with 4.11 versions (#300)
+
+v2.10.0
+-------
+
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* MGMT-11940: Add signature for user\_managed\_networking and load-balancer issues (#297)
+* Automatic snapshot of repositories' current git revisions
+* MGMT-11987: skip OCP 4.12 updates (#298)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Don't fail on repos without base\_ref (#296)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Make DualStackBadRoute an ErrorSignature rather than a Signature (#295)
+
+v2.9.0
+------
+
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Update Assisted UI to v2.9.1 (#294)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* MGMT-8890: Make bump\_ocp\_releases safe for missing data (#292)
+* Automatic snapshot of repositories' current git revisions
+* MGMT-11723: remove redundant openshit versions section (#291)
+* Automatic snapshot of repositories' current git revisions
+* MGMT-11688: enable bumping 4.11 RHCOS (#290)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Nicer \`StaticNetworking\` signature (#288)
+* Automatic snapshot of repositories' current git revisions
+* Rename the \`LVMOnRaid\` to \`InsufficientLVMCleanup\` (#287)
+* Signature for LVM on RAID bug MGMT-11695 (#286)
+* MGMT-11688: Skip bump of 4.11 rhcos images (#285)
+* Automatic snapshot of repositories' current git revisions
+* Dualstack rDNS MGMT-11651 bug signature (#284)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Signature for Bugzilla 1993243 (#283)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* add signature for hosts IPs (#282)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Explicit message when there are no nodes in nodes.json (#281)
+* Automatic snapshot of repositories' current git revisions
+* Fixed StaticNetworking signature that used to fail in case the infraenv static\_network\_config was None (#279)
+* Ticket labels should only be re-applied if the comment was changed (#280)
+* Master failed rebooting (#278)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Signature - better node status reporting (#277)
+* Automatic snapshot of repositories' current git revisions
+* StaticNetworking signature (#276)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* NO-ISSUE: Stop releasing BZ tickets (#275)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic detection of Bugzilla 2088346 (#274)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* MGMT-3952: Basic unit test for \`tools/test\_add\_triage\_signature.py\` (#273)
+* Host storage details better defaults when data is missing (#272)
+* Extract operator statuses from controller logs (#271)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Better handling of events file containing events from multiple installation attempts (#269)
+* \`\_generate\_hosts\_summary\` add Joined status description (#268)
+* Automatic snapshot of repositories' current git revisions
+* MGMT-11123: allow skipping CCX installations with build-arg (#267)
+* Automatic snapshot of repositories' current git revisions
+* Correctly terminate OSInstallationTime(Signature) unknown host green color (#266)
+* format triage-report with black (#265)
+* Automatic snapshot of repositories' current git revisions
+* Apply code formatting on tools/close\_by\_signature.py (#250)
+* Fix RHCOS image comparison and setting (#264)
+* signatures: add ReleasePullErrorSignature (#230)
+* HostsStatusSignature: add a line break for hosts status summary (#263)
+* FlappingValidations: bump threshold (#262)
+* validations: group flapping messages by validation name (#261)
+* Automatic snapshot of repositories' current git revisions
+* Take UI snapshot for PSI from latest release (#260)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* triage signatures: added WrongBootOrderSignature (#234)
+* Trigger OCP jobs when bumping versions (#257)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Add FlappingValidations (#259)
+* Add hosts summary to HostsStatusSignature (#258)
+* Automatic snapshot of repositories' current git revisions
+* Remove \`.git\` from \`.dockerignore\` (#255)
+* Fix \`SNOMachineCidrSignature\` wrong parent constructor call (#256)
+* Fix \`SNOMachineCidrSignature\` merge error (#254)
+* Fix CoreOSInstallerErrorSignature merge issues (#253)
+* Fix wrong \`tools/create\_triage\_tickets.py\` parameter (#252)
+* Fix create\_triage\_tickets FailureDescription error (#249) (#251)
+* Fix create\_triage\_tickets FailureDescription error (#249)
+* Fix issue with close\_by\_signature.py after refactor (#248)
+* Add new NonstandardNetworkType signature and some refactoring (#247)
+* Added new SNOMachineCidrSignature signature for machine cidr that (#246)
+* Automatic snapshot of repositories' current git revisions
+* triage: add CoreOSInstallerErrorSignature (#228)
+* Collect boot mode for host status (#244)
+* Extract basic info from install-config (#243)
+* Automatic snapshot of repositories' current git revisions
+* Update assisted-installer.yaml
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Added new OSInstallationTime signature for hosts that took a long time to write RHCOS to disk (#242)
+* Automatic snapshot of repositories' current git revisions
+* MGMT-10849: Analyze must-gather using Insights Core (#226)
+* Signature development guide clarifications (#239)
+* Step failure signature fails on negative exit codes (#238)
+* Copy "download\_jobs" Jenkinsfile from test-infra repository (#240)
+* Add Red Hat internal repository to the container image if available (#241)
+* MGMT-10849: Create empty requirements file to unblock Jenkins (#237)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* AgentStepFailureSignature: skip "name already in use" (#236)
+* Automatic snapshot of repositories' current git revisions
+* Escape Jira message formatting specifiers (#235)
+* Automatic snapshot of repositories' current git revisions
+* Add @vrutkovs to OWNERS\_ALIASES under \`code-reviewers\` (#233)
+* Update logs URL regex (#232)
+* AgentStepFailureSignature: skip scope errors (#231)
+* Add reminder to upload logs as Jira attachments (#229)
+* Fix MediaDisconnection signature (#227)
+* Automatic snapshot of repositories' current git revisions
+* Fix logs regex and feature-platform syntax (#225)
+* Update instructions for JIRA Personal Access Token (#224)
+* Add OpenShift Cluster ID to the ticket description (#223)
+* Add platform type to the triage ticket (#222)
+* Automatic snapshot of repositories' current git revisions
+* Add 'release' makefile target (#219)
+* add\_triage\_signature.py: autoclose nissho-ele.co.jp tickets (#221)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Raise a more graceful error when fields are None (#216)
+* Automatic snapshot of repositories' current git revisions
+* Fix case of no available RHCOS updates (#217)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Add manual feature flag for User Managed Networking (#214)
+* Simplify AITRIAGE links section (#213)
+* Automatic snapshot of repositories' current git revisions
+* Delete add\_pr\_link\_to\_jira.py (#211)
+* Automatic snapshot of repositories' current git revisions
+* stop bumping 4.7 releases (#212)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* NO-ISSUE: retrying when fetching comments (#209)
+* Automatic snapshot of repositories' current git revisions
+* Mount known\_hosts files to fix 'git push tag' (#208)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* install python-bugzilla instead of the bigger scoped dependency (#206)
+* Update gittools.py (#205)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Validate Jira connection right on client creation (#203)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* get rid of the redundant redirection to the new domain (#202)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* remove celebdor cc off OCP bump PRs (#201)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* NO-ISSUE: added networkx pkg to requirements (#200)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* NO-ISSUE: Remove update before package install (#199)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* set default value to status.url when not present in prow job statuses response (#198)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* get vcs ref from latest image (#197)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Change golang version in Dockerfile to 1.17 (#196)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* MGMT-9288 #close #comment issue is fixed
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Pyling check\_ai\_images.py script MGMT-9274 #close
+* Automatic snapshot of repositories' current git revisions
+* Add default values to host logs collection status and host last checked in time (#193)
+* Add few relevant details to the Install status (#192)
+* Change message of CI status job (#191)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* fix fetching RHCOS version from ISO (#190)
+* Fix 404 errors (and other ones) being non-indicative (#189)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* couple of fixes to the release\_tickets scripts (#186)
+* Automatic snapshot of repositories' current git revisions
+* skip rehearse jobs from CI report (#188)
+* MGMT-8784: bump versions - skip x.y.z (#187)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* bump\_ocp\_releases: install golang 1.16 (#185)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* bump\_ocp\_releases: added generate-bundle (#184)
+* Remove jenkinsfile for automatic repos snapshot (#182)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* bump\_ocp\_releases: fixed images pre-release update (#183)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Remove usage of yamlordereddictloader as dicts already ordered (#181)
+* MGMT-8400: remove jira basic-auth method (#170)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* skip OCP 4.10 when bumping versions (#180)
+* Automatic snapshot of repositories' current git revisions
+* remove creating tickets based on failed CI tests (#179)
+* Automatic snapshot of repositories' current git revisions
+* Added bypass-iso-download flag to bump\_ocp\_releases (#177)
+* Add myself as code-approver (#178)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* config git username and email (#176)
+* NO-ISSUE: remove reports dir creation (#175)
+* couple of fixes to ocp-bump script (#172)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* add capi provider repo to CI report (#174)
+* Add script for producing CI status reports (#173)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Fix jq query parameters
+* copy OCP bump script from assisted-service (#171)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Handle empty host connectivity in get\_host\_neighbor (#169)
+* Automatic snapshot of repositories' current git revisions
+* MGMT-7809: change UI image location to edge-infrastructure org (#168)
+* Automatic snapshot of repositories' current git revisions
+* Update image verification script to use new image repository (#167)
+* Allow specifying more domains for automatic AITRIAGE closure (#166)
+* fix relative import with no known parent package
+* MGMT-8400: use PAT for jira authentication instead of basic auth (#163)
+* MGMT-7434: Add assisted-image-service (#164)
+* Empty text JIRA messes up table rendering (#165)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* MGMT-8331 #close Removed oshercc (#161)
+* MGMT-8328: fix typo in README (#160)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Add back the -f flag for overriding stable tags (#159)
+* Automatic snapshot of repositories' current git revisions
+* Refactor some of the release scripts (#158)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Remove yuvigold (#157)
+* Handle error in smartctl command execution (#156)
+* Automatic snapshot of repositories' current git revisions
+* Automatically close AITRIAGE ticket for Red Hat users (#155)
+* Clean and freeze Python dependencies (#153)
+* Automatic snapshot of repositories' current git revisions
+* Disable adding watchers to AITRIAGE tickets (#152)
+* Freeze all Python dependencies (#151)
+* Automatic snapshot of repositories' current git revisions
+* fix import
+* fix relative imports (#150)
+* refactor code to allow importing (#148)
+* fix not defining report variable on all cases (#149)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Adding a new image to distinguish build and 'tools' purposes (#147)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* NO-ISSUE - Retry testgrid tickets creation on JIRAError exception (#146)
+* Automatic snapshot of repositories' current git revisions
+* Change default watchers on triage tickets (#145)
+* Remove our dependency of epel and 7z, and dead-code as well (#144)
+* Automatic snapshot of repositories' current git revisions
+* Automatic snapshot of repositories' current git revisions
+* couple of small fixes to the image tagging script (#143)
+* NO-ISSUE - Retry triage tickets creation on JIRAError exception (#142)
+* Apply a couple of fixes to the daily snapshot job. (#140)
+* Add eliorerz to owners
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Remove files that moved to assisted-service repo (#139)
+* Change users assignment (#138)
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Enable providing arguments via environment variables (#136)
+* Order tickets by email domain and username (#135)
+* Daily commit
+* Daily commit
+* Move from pycodestyle to the more powerful flake8 (#134)
+* Daily commit
+* Avoid skopeo shell=True (#133)
+* Use skopeo to verify assisted-installer.yaml snapshot (#132)
+* refactor code in triage-status-report script (#131)
+* Daily commit
+* update owners list (#130)
+* Daily commit
+* Daily commit
+* Copy images with skopeo and add release Makefile targets (#129)
+
+v1.0.25.2
+---------
+
+* Overcome testgrid bug where grids with green 'Overall' are marked as FAILING (#128)
+* Daily commit
+* Daily commit
+
+v1.0.25.1
+---------
+
+* Updated hashes for v1.0.25.1
+* Daily commit
+* use two different fields for jira credentials
+* Daily commit
+* Add user to triage slack notification
+* Daily commit
+* remove commented out code
+* Daily commit
+* Change creds for nightly update push
+* OCP update only to github
+* Daily commit
+* fix all pep8 violations (#126)
+* use one makefile instead of seperation between regular and skipper
+* remove redirection to skipper and add a lint target
+* Daily commit
+* Update Dockerfile.build
+* install skipper on build docker image
+* move from debian to centos image
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* MGMT-5252: Link a triage ticket to all other Jira tickets with the same cluster ID
+* OCP update timing to run once a day
+* MGMT-4794: Add triage signature for detecting API's invalid certificate bug
+* Daily commit
+* Revert "Revert "do not automatically close media disconnection tickets by signature""
+* Revert "do not automatically close media disconnection tickets by signature"
+* Daily commit
+* MGMT-7302: Use disconnection event when cluster is moved to error for triage media signature
+* Daily commit
+* Daily commit
+* Add trage status slack reporter
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+
+v1.0.24.1
+---------
+
+* Updated hashes for v1.0.24.1
+* Daily commit
+* Daily commit
+* MGMT-7399: Add release notes part of the commit message
+* Daily commit
+* Daily commit
+* MGMT-7386: Add the OCP version to the Jira ticket that will be opened by the update ocp job
+* Daily commit
+* fix default watchers lists
+* Daily commit
+* Update rootfs when updating ocp version
+* Daily commit
+* Daily commit
+
+v1.0.23.2
+---------
+
+* Updated hashes for v1.0.23.2
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+
+v1.0.23.1
+---------
+
+* Updated hashes for v1.0.23.1
+* Daily commit
+* increase jira limitation from 50 to 200
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Another fix to the logs URL
+* Fixed logs url in the description of triage tickets
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* MGMT-7118 add docker to image for config generation
+* do not automatically close media disconnection tickets by signature
+* Daily commit
+* Daily commit
+* Daily commit
+* Changed libvirt\_reboot signature to ignore SNOs
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* move CI tickets to AITRIAGE project on Jira
+* Daily commit
+* Daily commit
+* Refactor Dockerfile.build and upgrade pip version
+* remove non-relevant owners
+* add ownership files with reviewers and approvers
+* NOISSUE: closed ticket assignee changed to be constant
+* Daily commit
+* NOISSUE: fixed close\_by\_signature.py
+* Daily commit
+* Added links to jql query for user, domain and cluster-id
+* Add matching error signatures to the 'impact function' field
+* CNI signature - handle empty hosts stanza
+* Better CNI signature configuration / exception handling
+* Run the CNI signature per host
+* Daily commit
+* Disabled auto-closing of triaging tickets because it is broken
+* Fixed minor bugs in add\_triage\_signature
+* Daily commit
+* aitriage - fixed some more PR comments
+* Aitriage - fixed review messages
+* Add signature to check for recently common CNI configuration error
+* bash tool to help generate OCM-2.3 update GH issue
+* Update CONTRIBUTING.md with missing Python3 package
+* Changed the triaging tickets scripts to refer to the new AITRIAGE Jira project
+
+v1.0.22.1
+---------
+
+* Updated hashes for v1.0.22.1
+* Add BZ info to release\_tickets script
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Correct assisted-service repo in release\_tickets.py
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Fix commit message to checked format
+* disable rhcos for pre-release versions
+* Add p7zip to image
+* Update RCHOS for pre-release versions
+* Daily commit
+
+v1.0.21.3
+---------
+
+* Updated hashes for v1.0.21.3
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* MGMT-6580 Change OCP update comment to the format of <from\_version> > <to\_version>
+* Daily commit
+* Commit to include version to be updated
+* Update OCP merge fix duplicate function calls due to merge errors
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* MGMT-5241 - Remove 4.8 single override from version bump script
+* update OCP commit same as pr title
+
+v1.0.21.1.27.05.2021.08.42
+--------------------------
+
+* Updated hashes for v1.0.21.1
+* Daily commit
+* Add release notes to update ocp version bump PR
+* MGMT-6580 Update bump job to work with REST API & update title
+* Daily commit
+* Add creds to clone when updateing ocp version
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* MGMT-6062 add usage information to triage tickets
+* Revert "Remove assisted-installer-controller image"
+* Daily commit
+* Remove assisted-installer-controller image
+* Remove assisted-installer-controller-ocp image
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+
+v1.0.20.2
+---------
+
+* Updated hashes for v1.0.20.2
+* MGMT-6467 Move default\_ocp\_versions.json to data directory
+* Daily commit
+* MGMT-6031 remove irrelevant dhcp error from agent signature
+* Daily commit
+
+v1.0.20.1
+---------
+
+* Updated hashes for v1.0.20.1
+* MGMT-4640 Renamed generate-ocp-version target in assisted-service to generate-configuration
+* Daily commit
+* Daily commit
+* Assume there must be existing issues from JIRA. Fail otherwise
+* Daily commit
+* Daily commit
+* Daily commit
+* Fix JIRA affected version to be in OpenShift x.y format
+* change format of VMWare signature to match new date of bug-fix
+* Fix JIRA triage ticket version field for 4.8.0-fc.x versions
+* Daily commit
+* Daily commit
+* Add release\_version to the OCP update
+* Daily commit
+* Update daily update
+* Daily commit
+* NOISSUE: added status field to get\_all\_triage\_tickets
+* NOISSUE: close\_by\_signature.py skip resolved and obsolete tickets
+* NOISSUE: final fixes to close\_by\_signature.py
+* NOISSUE: fixed get\_all\_triage\_tickets to fetch all the issues from jira
+* NOISSUE: close\_by\_signature.py fixed typo
+* NOISSUE: Fixed issues passing from create\_triage\_tickets to close\_by\_signature
+* Daily commit
+* Daily commit
+
+v1.0.19.2
+---------
+
+* Updated hashes for v1.0.19.2
+* Daily commit
+* Daily commit
+* MGMT-4935: Close tickets by signature updates
+* Daily commit
+* Remove jenkins creds from OCP version update
+* Skip unrelevant versions when updating OCP
+* MGMT-4935: add script to resolve triage ticket linked to known issues
+* fix typo of metadata file name
+* Daily commit
+* Add retry while checking if image is located when nightly update
+
+v1.0.19.1
+---------
+
+* Updated hashes for v1.0.19.1
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Add S.M.A.R.T. information to storage triage signature
+* Daily commit
+* Daily commit
+* Daily commit
+* Add manual ocp version update script
+* Daily commit
+* MGMT-4934 - Timeout signature now less relevant
+* Daily commit
+* MGMT-4895 nightly deployment job should verify that images exist in quay.io/ocpmetal
+* signature: agent step failure - output only stderr
+* Daily commit
+* Daily commit
+* signature: format std output as code
+* Daily commit
+* Daily commit
+* Add CONTRIBUTING.md
+* Daily commit
+* MGMT-4841 - Add signature for agent step failures
+* Update DM index link at triag tickets
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+
+v1.0.18.1
+---------
+
+* Updated hashes for v1.0.18.1 - New
+* Daily commit
+* use a more indicative comment for vmware bug to make it easier triaging tickets
+* Daily commit
+* Daily commit
+* move ocp update to run under skipper
+* Move daily update to run with skipper
+* Daily commit
+* Remove type annotations
+* Fixed triage\_stats to avoid passing arguments to the underlying jira\_cmd
+* Use nestedarchive library to more simply access logs
+* MGMT-4683 Provide description for media disconnection errors
+* Daily commit
+* Daily commit
+* MGMT-4684 triage signatures: added ConsoleTimeoutSignature
+* Daily commit
+* Added triage\_stats tool which outputs triage tickets stats, grouped by weeks, for the past few weeks
+* Add IOErrorSignature
+* Updated hashes for v1.0.18.1
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Updated add\_triage\_signature filter for only AI\_CLOUD\_TRIAGE tickets
+* Added to jira\_cmd option to delete comments from tickets
+* change title of fio check to indicate it means the disks have a low rate of writing
+* omitting signature and disks if there are no fio events
+* colorize good & bad fio validations
+* Added tool for creating 'triage' tickets for CI tests that are in 'Failing' status
+* Signature script - disable progress bar in non-tty environments
+* Signature script - only recent better name
+* Signature script - simplify get\_issues
+* Signature script - simpler fio events code
+* Signature script - error getting logs instead of info
+* Signature script - allow both dry to to temp file and stdout
+* Signature script - fix cache size to have a reasonable limit
+* Signature script - fix pylint errors
+* Signature script - add FIO signature
+* Signature script - improve performance by caching metadata requests
+* Signature script - Add description
+* Signature script - dry run to temp file rather than console for better progress/error visibility
+* Signature script - added logs before long running actions
+* Signature script - simplify jira ticket pagination, let library take care of it
+* Signature script - Don't fail if system vendor information is incomplete
+* Signature script - more friendly message for triage tickets that had their logs deleted
+* Signature script - use abc for abstract base class
+* Signature script - die if username and password parsing failed
+* Signature script - add missing dependencies to requirements.txt
+* Signature script - don't define variables in global scope
+* Signature script - don't capture keyboard interrupts / signals
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Upgrade SNO version for integration env
+* Daily commit
+* Daily commit
+* Added link to kraken dashboard for the cluster to the description of the triaging tickets
+* Daily commit
+* Daily commit
+* Removed Sarah and added Osher De Paz as watchers to triaging tickets
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Use exact cluster ID in Kibana search link
+* Daily commit
+
+v1.0.17.1
+---------
+
+* Updated hashes for v1.0.17.1
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* MGMT-4213 Name fix
+* MGMT-4213 Refactor update default ocp file
+* Daily commit
+* Daily commit
+* Daily commit
+* Added tool that given an indirect do module, finds the direct module that caused the indirect to be included
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Fix diffrent url for default iso and future iso
+* Daily commit
+* Daily commit
+* Curly escape
+* MGMT-3843 Update future releses & rhcos relese and version
+* Don't encourage user to edit the description, it gets over-written
+* Added email\_domain to labels and description of the triaging tickets
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+
+v1.0.16.1
+---------
+
+* Update hashes for v1.0.16.1
+* Daily commit
+* Auto update future OCP version
+* Fixed merge errors and improved logs / links
+* Daily commit
+* Daily commit
+* Changed the 'Hosts status' signature to be 'Install status', which now also includes the cluster status
+* Refactor minor version bump script after code review
+* Daily commit
+* MGMT-3800 change update\_ocp to run on a fork and make update ocp version
+* Added the openshift\_version to the versions fields of the triaging tickets
+* Enhanced release\_tickets to also set the fixVersion of Jira tickets
+* Update rhcos version
+* Move custom images to separate file
+* Daily commit
+* Will now create a pull request in app-sre with the versions JSON
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+
+v1.0.15.2
+---------
+
+* Updated hashes for v1.0.15.2
+* Daily commit
+* Cover for make fail
+* While updating OCP version make update ocp
+* Daily commit
+* Fix ocp version update replace to replace only by context
+* Daily commit
+* MGMT-3742 - fixed logs URLs in the description of the triaging tickets
+* Daily commit
+* Daily commit
+* Daily commit
+
+v1.0.15.1
+---------
+
+* Updated hashes for v1.0.15.1
+* Daily commit
+* Daily commit
+* Added link to cluster dashboard in our Elastic, to the triaging tickets description
+* Moved create\_triage\_tickets and add\_triage\_signature here from assisted-test-infra repo
+* Added dry-run option to jira\_cmd
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+
+v1.0.14.3
+---------
+
+* Updated hashes for v1.0.14.3
+* Daily commit
+* Daily commit
+* Daily commit
+* pylint fixes for jira\_cmd
+* Some more work on epic fixup functionality of jira\_cmd
+* Added to jira-cmd the following functionality: - add/remove component - add/remove label - perform various 'fixup' operations on epic tasks - use 'notify=True' on updates only if current user is admin on the updated project. Otherwise the operation will fail
+* Daily commit
+* Daily commit
+
+v1.0.14.2
+---------
+
+* Updated hashes for v1.0.14.2
+* fix string format parameter
+* Daily commit
+
+v1.0.14.1
+---------
+
+* Updated hashes for v1.0.14.1
+* Add test-infra comment and link while updating OCP version  PR
+* Daily commit
+* MGMT-3331 Running test-infra on auto OCP version update
+* Daily commit
+* \* Add jira ticket to PR \* Add call to open PR \* Call verify-latest-onprem-config and commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Open pr for ocp version update
+* Fix pipline comma
+* Remove assisted-iso-create image from assisted-installer.yaml
+* Daily commit
+* MGMT-3326 automatic job to create a Jira ticket
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Update hashes for v1.0.13.1
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Fix yaml format
+* Update assisted-installer.yaml
+
+v1.0.12.1
+---------
+
+* Update hashes for v1.0.12.1
+* Daily commit
+* Daily commit
+* Update assisted-installer.yaml
+* Daily commit
+* Daily commit
+* Fixed issue in jira\_cmd when using the '-pc' option
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* installer.yaml: added controller-ocp
+* MGMT-2940 - Adding developer name to the tickets list in the release\_ticket tool
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Added to jira\_cmd.py option to add the assignee of a ticket to the contributors list of the ticket
+* Daily commit
+* Added option to select output fields in jira\_cmd
+* Added option to set sprint of tickets in jira\_cmd
+
+v1.0.11.1
+---------
+
+* Updated hashes for v1.0.11.1
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Added option to filter triaging tickets from the past 7 days
+* Daily commit
+* Pylint warning fixes for release\_tickets
+* releas\_tickets tool now adds to the output which repos contain commits for the ticket
+* Added to the release\_tickets tool an option to get the tickets for specific repos
+* updated release\_tickets tool to support using manifest from the local file and not only by commit
+* Fixed bug in release\_tickets related to '-bup' arg
+* Fixed bug in release\_tickets related to parsing of '-jup' arg
+* Daily commit
+* Daily commit
+* Do not output triaging tickets in the list of linked-tickets for the triaging tickets
+* Added occurence count to the linked tickets of the triaging tickets
+* change in  filter argument
+* Added option to filter list of tickets printed by their status
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* jira\_cmd cleanup
+* ADded release tickets tool
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Added to jira\_cmd option to add/remove watchers from tickets
+* Daily commit
+
+v1.0.10.2
+---------
+
+* Updated hashes for v1.0.10.2
+* Daily commit
+* Added to jira\_cmd flag to search for triaging tickets, and to get the linked-issues of the selected issues
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Add specific error when repository is not found
+* Daily commit
+* Daily commit
+* Daily commit
+* Added simple tool to output PR stats
+* Added to jira\_cmd option to get the Jira ticket by BZ id
+* Daily commit
+* Daily commit
+* Daily commit
+* MGMT-2425 required params & rename file
+* Daily commit
+* Daily commit
+* Daily commit
+* Pass repo name as parameter & documentation path
+* MGMT-1247 Assisted-service diff tool
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Added a tool to add links on Jira ticket to the given github PR
+* Daily commit
+* Daily commit
+* Remove assisted-ignition-generator
+* Daily commit
+* Daily commit
+* Daily commit
+* change nightly job to tag the repo with 'nightly' tag instead of 'latest'
+
+v1.0.9.5
+--------
+
+* Updated hashes for v1.0.9.5
+* Daily commit
+* Clear untracked files on daily commit
+* Daily commit
+
+v1.0.9.4
+--------
+
+* Updated hashes for v1.0.9.4
+* Daily commit
+
+v1.0.9.3
+--------
+
+* Added OCP release image to the manifest for v1.0.9.3
+* Updated hashes for v1.0.9.3
+* Daily commit
+* Daily commit
+* move pip to pip3
+* Daily commit
+* PR update
+* add Downstream images data
+* Save comments when updateing assisted-installer.yaml
+* Daily commit
+* Daily commit
+* Daily commit
+* Added jira\_cmd tool
+* Updated hashed for v1.0.9.2
+* Daily commit
+* Daily commit
+* Tag latest with daily update
+* Daily commit
+* added support to use the assisted\_installer\_stable\_promotion tool to tag version-tags
+* Updated hashes for v1.0.9.1
+* Daily commit
+* Fix checking if commits are available
+* Daily commit
+* don't fail when no commits & notificatiuon with link
+* Daily commit
+* Daily commit
+* Moving promotion script to use podman (#15)
+* Promotion script, tagging images & tagging repo (#14)
+
+v1.0.9
+------
+
+* Hashes for v1.0.9 release
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* Daily commit
+* cange target branch to master
+* Jenkins daily latest update
+* Daily commit
+* test
+* test
+* Add release pipline
+* Daily commit
+* Daily commit
+* Daily commit
+* Update stable v1.0.9
+* Removed old images
+* updating release master
+* updating release master
+* updating release master
+* Move iso create to assisted-service
+* updating release master
+* Remove coreos\_installation\_iso repo
+* Update iso builder image
+* add  agent image =
+* Update ignition image name
+* Move repos to openshift
+* move repos to openshift
+
+v1.0.7
+------
+
+* Updated bm-inventory hash for v1.0.7
+* Updated assisted-installer hash for v1.0.7
+* Updated hashes for v1.0.7
+* Move hash update from relase job to repo
+* Update update\_hash tool
+
+v1.0.6.3
+--------
+
+* Updated bm-inventory for v1.0.6.3
+
+v1.0.6.2
+--------
+
+* Updated bm-inventory for v1.0.6.2
+
+v1.0.6.1
+--------
+
+* Updated changelog for v1.0.6.1
+
+v1.0.6
+------
+
+* Updated UI hash for v1.0.6
+* Updated manifest for v1.0.6
+
+v1.0.5
+------
+
+* Updated changelog for v1.0.5
+* Updated bm-inventory hash for v1.0.5
+* Updated manifest for v1.0.5
+
+v1.0.4
+------
+
+* UI hash change for v1.0.4
+* Another bm-inventory hash change for v1.0.4
+* Updated bm-inventory hash for v1.0.4
+* Hashes for v1.0.4
+* Added check option that return a list of missing images
+* Added delete option
+* Added untag option
+* MGMT-1376 Add repository images list to the assisted-installer.yaml
+* updating release test10
+* Fix yaml dump
+* Fixed issue with numbered list on the README
+* Add a update hash tool
+* Fixed wrong hash of facets for v1.0.2
+
+v1.0.2
+------
+
+* Manifest changes for the v1.0.2
+* Fixed errors in Makefiles, and fixed the README
+* Added skipper build and makefile Added python requirements and dev-requirements Added pylint and pep3 checks Moved code to release directory Added pip package build Added dockerfile
+* Fixed format
+* Added force option to tag\_all.py
+* Updated manifest
+* Updated manifest to latest stable
+* Updated manifest
+* Added git gnore
+* Updated manifest file
+* Added tag\_all.py Added initial assisted-installer.yaml
+* Initial commit
