@@ -1,0 +1,16 @@
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+docs/PYPI.md
+docs/__init__,py
+omnivoreql/__version__.py
+omnivoreql.egg-info/PKG-INFO
+omnivoreql.egg-info/SOURCES.txt
+omnivoreql.egg-info/dependency_links.txt
+omnivoreql.egg-info/requires.txt
+omnivoreql.egg-info/top_level.txt
+test/test_omnivoreql.py
