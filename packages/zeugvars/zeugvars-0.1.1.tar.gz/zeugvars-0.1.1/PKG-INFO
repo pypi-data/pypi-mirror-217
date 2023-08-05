@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: zeugvars
+Version: 0.1.1
+Summary: 
+Home-page: https://github.com/bswck/configzen
+Author: bswck
+Author-email: bswck.dev@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# zeugvars
+Convenient wrapper around contextvars, inspired by werkzeug's LocalProxy
+
