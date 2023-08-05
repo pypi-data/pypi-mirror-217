@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "packly"
+version = "0.1.1"
+description = "Packly makes Python packaging easy"
+authors = ["dylanopen <opendylan@proton.me>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+packly = 'packly.pk:main'
+pk = 'packly.pk:main'
+
