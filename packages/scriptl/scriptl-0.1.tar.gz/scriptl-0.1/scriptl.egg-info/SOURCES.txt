@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+scriptl/__init__.py
+scriptl.egg-info/PKG-INFO
+scriptl.egg-info/SOURCES.txt
+scriptl.egg-info/dependency_links.txt
+scriptl.egg-info/top_level.txt
