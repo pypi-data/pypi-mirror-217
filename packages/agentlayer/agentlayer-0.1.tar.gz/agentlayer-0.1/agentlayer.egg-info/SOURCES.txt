@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+agentlayer/__init__.py
+agentlayer.egg-info/PKG-INFO
+agentlayer.egg-info/SOURCES.txt
+agentlayer.egg-info/dependency_links.txt
+agentlayer.egg-info/requires.txt
+agentlayer.egg-info/top_level.txt
