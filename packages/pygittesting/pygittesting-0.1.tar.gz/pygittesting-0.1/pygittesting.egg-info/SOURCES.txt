@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+TEST/__init__.py
+TEST/data.py
+pygittesting.egg-info/PKG-INFO
+pygittesting.egg-info/SOURCES.txt
+pygittesting.egg-info/dependency_links.txt
+pygittesting.egg-info/requires.txt
+pygittesting.egg-info/top_level.txt
