@@ -1,0 +1,2 @@
+[console_scripts]
+dinov2_retrieval = dinov2_retrieval.__init__:main
