@@ -1,0 +1,3 @@
+[console_scripts]
+gd=gd.main:gd
+
