@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+sobotify.egg-info/PKG-INFO
+sobotify.egg-info/SOURCES.txt
+sobotify.egg-info/dependency_links.txt
+sobotify.egg-info/top_level.txt

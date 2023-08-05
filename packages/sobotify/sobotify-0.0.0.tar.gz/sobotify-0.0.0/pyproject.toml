@@ -1,0 +1,16 @@
+[project]
+name = "sobotify"
+version = "0.0.0"
+authors = [
+    {name="Heiko Hübert"}
+]
+readme = "README.md"
+description = "sobotify is a framework for turning a robot into a social robot"
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Programming Language :: Python",
+    "Operating System :: Microsoft :: Windows"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/hhuebert/sobotify"
