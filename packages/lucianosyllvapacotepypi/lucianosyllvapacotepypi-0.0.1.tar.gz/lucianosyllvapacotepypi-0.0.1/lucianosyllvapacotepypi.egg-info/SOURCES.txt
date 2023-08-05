@@ -1,0 +1,9 @@
+LICENCE
+README.md
+setup.py
+lucianosyllvapacotepypi.egg-info/PKG-INFO
+lucianosyllvapacotepypi.egg-info/SOURCES.txt
+lucianosyllvapacotepypi.egg-info/dependency_links.txt
+lucianosyllvapacotepypi.egg-info/requires.txt
+lucianosyllvapacotepypi.egg-info/top_level.txt
+pacotepypi/modulo.py
