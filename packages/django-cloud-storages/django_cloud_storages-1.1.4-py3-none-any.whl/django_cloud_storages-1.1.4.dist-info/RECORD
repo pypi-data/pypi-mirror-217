@@ -1,0 +1,12 @@
+manage.py,sha256=EN5_rQ7gUgryuXihxDzQvR2qCzw_5O4K9kY3ABhUYTA,683
+setup.py,sha256=b7oBdN9OaR8YpciyCIoe1Q9fVtDkBKU2I5tGAJ5uzA4,39
+cloud_storages/__init__.py,sha256=06ng-Z_cuJKmJHXfqXsLKq4z6yhNjY-OaVCpUKXAHuM,21
+cloud_storages/utils.py,sha256=SpfAgKUJFEEOsx1SRLSWOPA0cbh9UOAUa0mFX9pu4vE,1608
+cloud_storages/backends/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloud_storages/backends/appwrite.py,sha256=yGYOLekMjnzePL7AG5s0n3CNxEXWarnfzrbgucea4XE,14317
+cloud_storages/backends/dropbox.py,sha256=TvNIWDYYa42SZsau2ocAUBfgX4FYmYK6-yV0Bv3vkpI,11796
+docs/conf.py,sha256=2PGVmvah15_nB-kA2EoPf1h2JGWU4G2KI6SxLHxQMGc,8858
+django_cloud_storages-1.1.4.dist-info/METADATA,sha256=UPLkPBhJ5rpnfTLscjwZrUhMOMz98qnIBAOsyam-3ik,1885
+django_cloud_storages-1.1.4.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+django_cloud_storages-1.1.4.dist-info/licenses/LICENSE,sha256=mlJ5BhBwGJY5Mg0xXG3ky2NY6zR6AENKJPpwpP-Qwpo,1106
+django_cloud_storages-1.1.4.dist-info/RECORD,,
