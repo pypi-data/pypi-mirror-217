@@ -1,0 +1,9 @@
+epc_api/__init__.py,sha256=d4QHYmS_30j0hPN8NmNPnQ_Z0TphDRbu4MtQj9cT9e8,22
+epc_api/client.py,sha256=-cNgcb96hS0p1cVK6z0JxDSJEcGd0CgctiTQ-XWhwVg,9003
+epc_api/exceptions.py,sha256=peK-haC6WG4bFwi7VubAx_GvwHdhYspx7IMkz0AOTuQ,626
+epc_api/schemas.py,sha256=NluHWpwvKOwypWGsESoXGpvbRik_csxO30Ejt-s8sw4,1282
+epc_api_python-1.0.2.dist-info/LICENSE,sha256=OpYt7Eqv7ccQbZJun4eowP4kE4a133u-xE031uTjTq0,1064
+epc_api_python-1.0.2.dist-info/METADATA,sha256=rfKt6s20WKoH292jDZQuYEfSgf4v0z7rK4Ky6v79Buo,4637
+epc_api_python-1.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+epc_api_python-1.0.2.dist-info/top_level.txt,sha256=yahYdEYg6woXZYsGW5g9lUxqyqHJjrpN7v0WukPBRik,8
+epc_api_python-1.0.2.dist-info/RECORD,,

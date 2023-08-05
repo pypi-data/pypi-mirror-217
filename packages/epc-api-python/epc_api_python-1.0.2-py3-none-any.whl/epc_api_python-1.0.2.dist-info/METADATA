@@ -1,0 +1,112 @@
+Metadata-Version: 2.1
+Name: epc-api-python
+Version: 1.0.2
+Summary: Interface the UK Govenment EPC api
+Author: Khalim Conn-Kowlessar
+License: Copyright (c) 2023 Khalim Conn-Kowlessar
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: Homepage, https://github.com/KhalimCK/epc-api-python
+Keywords: epc_api
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: nose
+Requires-Dist: sphinx
+Requires-Dist: pydantic (>=1.10.7)
+Requires-Dist: requests (>=2.28.2)
+Provides-Extra: dev
+Requires-Dist: pytest (>=6.2.3) ; extra == 'dev'
+Requires-Dist: pytest-cov (>=4.0.0) ; extra == 'dev'
+Requires-Dist: black (>=19.10b0) ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: prospector ; extra == 'dev'
+
+epc-api-python
+========================
+
+Simple python client to interface with the EPC data API.
+
+API docs for the domestic api can be found [here](https://epc.opendatacommunities.org/docs/api/domestic)
+
+API docs for the non-domestic api can be found [here](https://epc.opendatacommunities.org/docs/api/non-domestic)
+
+You need to sign up with the EPC api which will provide you with an api key. You need to use
+the api key in conjunction with your sign up email address, or with the authorisation
+token that you are provided with to access the api
+
+# Installation
+
+This package can be installed by running
+```
+pip install epc-api-python
+```
+
+# Usage
+Some usage examples can be found in the `/examples` folder
+
+To set up the api import the `EpcClient` class an initialise the client by tunning
+
+```commandline
+import dotenv
+from epc_api.client import EpcClient
+
+your_email = "email you signed up with"
+api_key = "api you were emailed after sign up"
+
+
+# I have auth_token in my environment
+client = EpcClient(
+    user_email=your_email, api_key=your_email_key, version="v1"
+)
+
+client.domestic  # interfaces with the domestic url https://epc.opendatacommunities.org/api/<version>/domestic/
+client.non_domestic  # interfaces with the non-domestic url https://epc.opendatacommunities.org/api/<version>/non-domestic/
+```
+
+There are three main functions that you should use. They are used identically
+for both the domestic and non-domestic urls. These are `search`, `certificate` and `recommendations`, which 
+access the `/search`, `/certificate` and `/recommendations` urls respectively. Detailed description of these urls
+can be found in the api documentation however each of these functions can be used immediately, 
+for example
+
+```commandline
+search_resp = client.domestic.search()
+print(search_resp)
+
+# Test the certificate endpoint
+# Use the first lmk_key which is provided as a response from /search
+lmk_key = search_resp["rows"][0]["lmk-key"]
+
+certificate_resp = client.domestic.certificate(lmk_key=lmk_key)
+print(certificate_resp)
+
+# Test the recommendations endpoint with the same lmk_key
+recommendation_resp = client.domestic.recommendations(lmk_key=lmk_key)
+print(recommendation_resp)
+```
+
+The client can be set up with multiple mime types, with the default value being
+`application/json`. If this value is supplied, the json data is parsed and returned in a 
+list/dictionary format, however for other mime types, the user is presented the 
+content back and it's up to the user to parse the response in a suitable
+fashion. Some examples of handling different mime types of have provided in `/examples`.
