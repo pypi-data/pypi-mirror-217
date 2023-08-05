@@ -1,0 +1,19 @@
+{% load i18n %}
+{% load static %}
+{% load dashboard_tags %}
+
+{% if content.icon %}
+    <img src={% static 'gui2/appstore2/images/'|add:content.icon|add:'.svg' %} alt="Threads" />
+{% endif %}
+{% if content.label|length > 0 %}
+    <strong>{{content.label}}</strong>
+{% endif %}
+<div class="notes {{ content.class }}" id="{{ content.id }}">
+       <ol style="padding-left: 1rem">
+         {% for l in content.description %}
+             {% if l %}
+                <li style="list-style-type: disc; cursor:pointer; padding-bottom: 10px !important" id="{{ l.id }}">{% translate l.thread %} </li>
+             {% endif %}
+         {% endfor %}
+       </ol>
+</div>
