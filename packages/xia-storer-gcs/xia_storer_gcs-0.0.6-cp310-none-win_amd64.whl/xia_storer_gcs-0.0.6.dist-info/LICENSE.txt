@@ -1,0 +1,1 @@
+patch -i license.patch -o patched_license.txt original_license.txt
