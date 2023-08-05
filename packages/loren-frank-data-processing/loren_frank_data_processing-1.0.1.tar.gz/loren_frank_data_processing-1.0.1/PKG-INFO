@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: loren_frank_data_processing
+Version: 1.0.1
+Summary: Import data from Loren Frank lab
+Home-page: https://github.com/Eden-Kramer-Lab/loren_frank_data_processing
+Author: Eric Denovellis
+Author-email: edeno@bu.edu
+License: GPL-3.0
+License-File: LICENSE
