@@ -1,0 +1,8 @@
+zsp_parser/core.cpython-38-x86_64-linux-gnu.so,sha256=KGHDFqyxNA38csZmmcRg1Us0-EmQqKN62mD4qpjoXDQ,2145216
+zsp_parser/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zsp_parser/ast.cpython-38-x86_64-linux-gnu.so,sha256=q0byd2fMuKYhWvh_IIkX-kc7aUSMgCObyFxCEa8BVLA,13455744
+zuspec_parser-0.0.1.5428347672.dist-info/METADATA,sha256=N0FDJw2UQrI8a_9t5YbaGMbd8VYUVT-oe-TMcSZybxI,227
+zuspec_parser-0.0.1.5428347672.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+zuspec_parser-0.0.1.5428347672.dist-info/top_level.txt,sha256=NsstMvuz6Y4XHEvzHfV_cEX9TMhTeUchTVvChwNl8no,11
+zuspec_parser-0.0.1.5428347672.dist-info/WHEEL,sha256=5DQRW5VdkIxH8e7ylwa-YBCXLhSZeqHiz1ZmuOscrlo,148
+zuspec_parser-0.0.1.5428347672.dist-info/RECORD,,
