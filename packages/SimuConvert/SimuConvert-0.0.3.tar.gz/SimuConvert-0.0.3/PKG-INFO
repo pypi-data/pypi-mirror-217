@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: SimuConvert
+Version: 0.0.3
+Summary: A package for converting private fund equity data 
+Home-page: https://github.com/Yanzhong-Hub/SimuConvert
+Author: Yanzhong Huang
+Author-email: yanzhong.huang@outlook.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# SimuConvert
+
+净值转换小工具，将净值数据转换为如下格式：
+
+| id | trade_date | fund_name | nav | nav_adj | nav_acc |
+| -- | ---------- | --------- | --- | ------- | ------- |
+|    |            |           |     |         |         |
+|    |            |           |     |         |         |
+
+### 输出格式为：
+
+- pd.DataFrame
+- .xlsx
+- .csv
+
+### 输入参考格式：
+
+- 组合大师净值导出格式
+  - 参考 SimuConvert/reference_data/zuhedashi.csv
