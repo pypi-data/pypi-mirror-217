@@ -1,0 +1,2 @@
+[console_scripts]
+irdap = irdap.__main__:main
