@@ -1,0 +1,6 @@
+pydantic
+flask
+
+[dev]
+pytest
+codecoverage
