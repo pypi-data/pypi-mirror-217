@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: django_jquery_datatables
+Version: 1.0.0
+Summary: Python library that integrates the popular jQuery DataTables library with Django projects.
+Home-page: https://github.com/yourusername/mylibrary
+Author: Salik Sheraz
+Author-email: salik.sheraz@it-masons.com
+License-File: license.txt
