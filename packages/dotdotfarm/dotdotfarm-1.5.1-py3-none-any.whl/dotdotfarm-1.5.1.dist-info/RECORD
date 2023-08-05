@@ -1,0 +1,16 @@
+dotdotfarm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dotdotfarm/dotdotweb.py,sha256=okKzfxkxIferLVuvCmRkq5S9f3CgCTntycGFVZjELhU,6222
+dotdotfarm/callbacks/__init__.py,sha256=0z4_446ZpKfsnfFqEYI-VSw_qCiQkyfWlTKH3SNlICs,139
+dotdotfarm/callbacks/callbacks.py,sha256=uySTMLq51IKFnHZYngJoG5PGLm7MGHvUOak6QmkKZtw,3178
+dotdotfarm/callbacks/cobject.py,sha256=pzfvrDcyVVK7nmWkFacXk8i5JdjZKTlHEWDfqKRs7dE,318
+dotdotfarm/engines/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dotdotfarm/engines/http_engine.py,sha256=AjJiBIRhfqt7oj8fX3JWx4qf_xAD6_v1tb9Abepg8FM,4178
+dotdotfarm/engines/websock_engine.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dotdotfarm/generators/__init__.py,sha256=zmh62PvSVgTqpnpyUUB1bQCGRbQpjzSSeC58sb0YxZg,81
+dotdotfarm/generators/words_generator.py,sha256=6N96zEPuwRrVWTg4oyHVeqixoYJRn0ZFwKa3fqnNiAA,2543
+dotdotfarm-1.5.1.dist-info/LICENSE,sha256=CS2vPHO1V1FyDTwq7nO_mFex7WYHnk3u3Q0FNsOAYnM,35810
+dotdotfarm-1.5.1.dist-info/METADATA,sha256=YxNdfijBjgbRqWCSMzekljtdVlARNaW6LFup6GvmsIg,471
+dotdotfarm-1.5.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+dotdotfarm-1.5.1.dist-info/entry_points.txt,sha256=quWBW1p12X2e0t98A06mNiUoSWA9_YdfZycTbiuz0Iw,56
+dotdotfarm-1.5.1.dist-info/top_level.txt,sha256=BThHmj7ZEFEzRDRpBP92-N19jRtppOUaoU24hUf0IFA,11
+dotdotfarm-1.5.1.dist-info/RECORD,,
