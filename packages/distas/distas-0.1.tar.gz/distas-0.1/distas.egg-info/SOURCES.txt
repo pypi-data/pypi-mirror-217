@@ -1,0 +1,10 @@
+setup.py
+distas/Binomialdistribution.py
+distas/Gaussiandistribution.py
+distas/Generaldistribution.py
+distas/__init__.py
+distas.egg-info/PKG-INFO
+distas.egg-info/SOURCES.txt
+distas.egg-info/dependency_links.txt
+distas.egg-info/not-zip-safe
+distas.egg-info/top_level.txt
