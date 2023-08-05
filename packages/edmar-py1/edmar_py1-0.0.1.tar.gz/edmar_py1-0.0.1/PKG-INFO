@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: edmar_py1
+Version: 0.0.1
+Summary: Python package for interactive mapping.
+Home-page: https://github.com/geofixit/edmar_py1
+Author: Edmar Tabamo
+Author-email: geofixit316@gmail.com
+License: MIT license
+Keywords: edmar_py1
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# edmar_py1
+
+
+[![image](https://img.shields.io/pypi/v/edmar_py1.svg)](https://pypi.python.org/pypi/edmar_py1)
+[![image](https://img.shields.io/conda/vn/conda-forge/edmar_py1.svg)](https://anaconda.org/conda-forge/edmar_py1)
+
+
+**Python package for interactive mapping.**
+
+
+-   Free software: MIT license
+-   Documentation: https://geofixit.github.io/edmar_py1
+    
+
+## Features
+
+-   TODO

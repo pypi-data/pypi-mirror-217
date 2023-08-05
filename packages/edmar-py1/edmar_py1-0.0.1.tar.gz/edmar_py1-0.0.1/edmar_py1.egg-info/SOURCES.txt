@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+edmar_py1/__init__.py
+edmar_py1/common.py
+edmar_py1/edmar_py1.py
+edmar_py1.egg-info/PKG-INFO
+edmar_py1.egg-info/SOURCES.txt
+edmar_py1.egg-info/dependency_links.txt
+edmar_py1.egg-info/not-zip-safe
+edmar_py1.egg-info/top_level.txt
