@@ -1,0 +1,9 @@
+setup.py
+ayek_probability/Gaussiandistribution.py
+ayek_probability/Generaldistribution.py
+ayek_probability/__init__.py
+ayek_probability.egg-info/PKG-INFO
+ayek_probability.egg-info/SOURCES.txt
+ayek_probability.egg-info/dependency_links.txt
+ayek_probability.egg-info/not-zip-safe
+ayek_probability.egg-info/top_level.txt
