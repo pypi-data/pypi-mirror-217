@@ -1,0 +1,10 @@
+README.md
+setup.py
+Bakorder/__init__.py
+Bakorder/main.py
+bact_order.egg-info/PKG-INFO
+bact_order.egg-info/SOURCES.txt
+bact_order.egg-info/dependency_links.txt
+bact_order.egg-info/entry_points.txt
+bact_order.egg-info/requires.txt
+bact_order.egg-info/top_level.txt

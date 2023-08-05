@@ -1,0 +1,2 @@
+[console_scripts]
+bact_order.py = Bakorder.main:main
