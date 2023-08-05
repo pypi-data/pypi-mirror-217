@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: guiosoft-ssh-backup
+Version: 0.1.0
+Summary: SSH backup routines (client and server)
+License: MIT
+Author: Guionardo Furlan
+Author-email: guionardo@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# ssh-backup
+
+SSH backup routines (client and server)
+
+## LINKS
+
+* [How To Publish Python Packages to PyPI using Poetry on Ubuntu 22.04](https://www.digitalocean.com/community/tutorials/how-to-publish-python-packages-to-pypi-using-poetry-on-ubuntu-22-04)
+
