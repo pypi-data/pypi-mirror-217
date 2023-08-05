@@ -1,0 +1,6 @@
+setup.py
+discord_ansi_messages.egg-info/PKG-INFO
+discord_ansi_messages.egg-info/SOURCES.txt
+discord_ansi_messages.egg-info/dependency_links.txt
+discord_ansi_messages.egg-info/not-zip-safe
+discord_ansi_messages.egg-info/top_level.txt
