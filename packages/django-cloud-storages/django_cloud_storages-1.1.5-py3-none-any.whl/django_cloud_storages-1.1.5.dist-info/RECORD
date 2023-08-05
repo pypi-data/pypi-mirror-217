@@ -1,0 +1,14 @@
+setup.py,sha256=b7oBdN9OaR8YpciyCIoe1Q9fVtDkBKU2I5tGAJ5uzA4,39
+cloud_storages/__init__.py,sha256=w95GbncOXqp5Yk6jbM18fU02Wb39VomZMGDK1fCpQMo,21
+cloud_storages/utils.py,sha256=SpfAgKUJFEEOsx1SRLSWOPA0cbh9UOAUa0mFX9pu4vE,1608
+cloud_storages/backends/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloud_storages/backends/appwrite.py,sha256=yGYOLekMjnzePL7AG5s0n3CNxEXWarnfzrbgucea4XE,14317
+cloud_storages/backends/dropbox.py,sha256=TvNIWDYYa42SZsau2ocAUBfgX4FYmYK6-yV0Bv3vkpI,11796
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/settings.py,sha256=wrwotSYufUIbe2mo0DoY7vhygeJ47VHLTaO1fU9BzYc,968
+tests/test_appwrite.py,sha256=3RKyq1vMGP0oKu5g2-sR8BAKQU_Z3tT3hZfyAxcAN_k,959
+tests/test_dropbox.py,sha256=9FMzOLhFzXOj31Q6VqCb8kj3787CHn6bH9PUukyFYlk,1190
+django_cloud_storages-1.1.5.dist-info/METADATA,sha256=PKQ0HngNK0hz4Pb8rWcRNZSE2Z2Chx-mY4DgAtyO3b4,2641
+django_cloud_storages-1.1.5.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+django_cloud_storages-1.1.5.dist-info/licenses/LICENSE,sha256=mlJ5BhBwGJY5Mg0xXG3ky2NY6zR6AENKJPpwpP-Qwpo,1106
+django_cloud_storages-1.1.5.dist-info/RECORD,,
