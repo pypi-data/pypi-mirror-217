@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+omnivoreql.egg-info/PKG-INFO
+omnivoreql.egg-info/SOURCES.txt
+omnivoreql.egg-info/dependency_links.txt
+omnivoreql.egg-info/requires.txt
+omnivoreql.egg-info/top_level.txt
+test/test_omnivoreql.py
