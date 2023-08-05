@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: pymplog
+Version: 0.0.6
+Summary: Serial terminal logger with fancy colours
+Project-URL: Documentation, https://github.com/unknown/pymplog#readme
+Project-URL: Issues, https://github.com/unknown/pymplog/issues
+Project-URL: Source, https://github.com/unknown/pymplog
+Author-email: "U.N. Owen" <void@some.where>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# pymplog
+
+[![PyPI - Version](https://img.shields.io/pypi/v/pymplog.svg)](https://pypi.org/project/pymplog)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pymplog.svg)](https://pypi.org/project/pymplog)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install pymplog
+```
+
+## License
+
+`pymplog` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
