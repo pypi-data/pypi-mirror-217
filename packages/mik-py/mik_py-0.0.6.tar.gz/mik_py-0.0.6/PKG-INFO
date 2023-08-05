@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: mik_py
+Version: 0.0.6
+Summary: A Python package containing the Eicar file to help test anti-malware or anti-virus software
+Author: Mike
+Author-email: michaelrchung@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+Downloading this python package will also download the Eicar file as part of the python package https://www.eicar.org/download-anti-malware-testfile/.
+
+The Eicar file is a file used widely to test anti-malware software against malware and viruses. The Eicar file downloaded as part of this package is not malware but most anti-malware solutions will detect the Eicar file as malware or a virus and will trigger an alert. Please use this package with caution. This python package was created for testing purposes. Please use with caution as it will trigger alerts. 
