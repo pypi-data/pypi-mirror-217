@@ -1,0 +1,5 @@
+setup.py
+showyourwork2.egg-info/PKG-INFO
+showyourwork2.egg-info/SOURCES.txt
+showyourwork2.egg-info/dependency_links.txt
+showyourwork2.egg-info/top_level.txt
