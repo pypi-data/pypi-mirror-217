@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+pyHB.egg-info/PKG-INFO
+pyHB.egg-info/SOURCES.txt
+pyHB.egg-info/dependency_links.txt
+pyHB.egg-info/requires.txt
+pyHB.egg-info/top_level.txt
