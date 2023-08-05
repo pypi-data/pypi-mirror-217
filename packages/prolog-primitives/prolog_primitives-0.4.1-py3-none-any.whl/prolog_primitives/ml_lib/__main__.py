@@ -1,0 +1,3 @@
+import launcher
+
+launcher.main()
