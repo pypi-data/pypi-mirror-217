@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: py-luke
+Version: 0.0.1.dev0
+Summary: Mock server for OpenAPI documentation
+Author-email: Nguyen Khac Thanh <nguyenkhacthanh244@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Framework :: AnyIO
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Internet :: WWW/HTTP
+Requires-Python: >=3.7
+Requires-Dist: faker
+Requires-Dist: fastapi
+Requires-Dist: pyyaml
+Requires-Dist: typer
+Requires-Dist: uvicorn
+Requires-Dist: xeger
+Provides-Extra: dev
+Requires-Dist: mypy; extra == 'dev'
+Requires-Dist: pre-commit; extra == 'dev'
+Requires-Dist: pytest-cov==4.0.0; extra == 'dev'
+Requires-Dist: pytest==7.3.1; extra == 'dev'
+Requires-Dist: ruff; extra == 'dev'
+Requires-Dist: types-pyyaml; extra == 'dev'
+Provides-Extra: publish
+Requires-Dist: build; extra == 'publish'
+Requires-Dist: twine; extra == 'publish'
+Description-Content-Type: text/markdown
+
+![Lucky Luke](./images/luke.png)
+
+![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/magiskboy/luke/test-suite.yml)
+![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/w/magiskboy/luke)
+![Codecov](https://img.shields.io/codecov/c/github/magiskboy/luke)
+![PyPI - Downloads](https://img.shields.io/pypi/dd/py-luke)
+![GitHub](https://img.shields.io/github/license/magiskboy/luke)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/py-luke)
+![PyPI](https://img.shields.io/pypi/v/py-luke)
+
+
+## Overview
+
+Luke is a mock server based on OpenAPI Specification. All of you need to do is declaring OpenAPI document and starting luke server with it.
+
+## Installation
+
+```bash
+$ pip install py-luke
+```
+
+## Usage
+
+```bash
+$ luke openapi.yaml
+```
