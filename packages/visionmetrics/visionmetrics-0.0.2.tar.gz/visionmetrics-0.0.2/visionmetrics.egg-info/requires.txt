@@ -1,0 +1,9 @@
+numpy
+torch
+torchmetrics[detection]
+opencv-python-headless
+Pillow>=6.2.2
+
+[caption]
+pycocoevalcap
+pycocotools
