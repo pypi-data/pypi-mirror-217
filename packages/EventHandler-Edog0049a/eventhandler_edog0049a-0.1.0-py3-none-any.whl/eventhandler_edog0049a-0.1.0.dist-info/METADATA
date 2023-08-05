@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: EventHandler_Edog0049a
+Version: 0.1.0
+Summary: A simple event handler
+Project-URL: Source code, https://github.com/eli-reid/EventHandler
+Author-email: Eli Reid <Elir@elireid.com>
+License-Expression: Apache-2.0 OR MIT
+License-File: LICENSE.txt
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# `Twitch`
+
+api wrraper with chat pubsub and event connectors
