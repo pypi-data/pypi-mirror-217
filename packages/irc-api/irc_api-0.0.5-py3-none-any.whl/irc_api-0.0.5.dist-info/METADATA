@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: irc-api
+Version: 0.0.5
+Summary: An API written in Python to make IRC bots.
+Author: Sha-chan
+Project-URL: Homepage, https://github.com/Shadow15510/irc_api
+Project-URL: Documentation, https://irc-api.readthedocs.io/en/latest/
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Development Status :: 5 - Production/Stable
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: doc
+Requires-Dist: sphinx (>=7.0.1) ; extra == 'doc'
+Requires-Dist: sphinx-rtd-theme ; extra == 'doc'
+Requires-Dist: sphinx-autodocgen ; extra == 'doc'
+
+# IRC API
+
+## Licence
+The code is provided under GNU General Public Licence version 3 or later (GPLv3+).
+
+See LICENCE for more informations.
+
+## Description
+
+IRC API is an api to make IRC bots.
