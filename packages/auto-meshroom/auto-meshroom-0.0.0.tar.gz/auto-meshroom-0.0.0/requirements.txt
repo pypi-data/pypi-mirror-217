@@ -1,0 +1,6 @@
+tqdm
+colorama
+requests
+
+pyrepresent
+spinneroo

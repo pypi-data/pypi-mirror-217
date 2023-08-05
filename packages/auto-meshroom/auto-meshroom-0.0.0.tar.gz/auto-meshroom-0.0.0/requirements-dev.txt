@@ -1,0 +1,10 @@
+pytest
+pdoc3
+twine
+
+tqdm
+colorama
+requests
+
+pyrepresent
+spinneroo

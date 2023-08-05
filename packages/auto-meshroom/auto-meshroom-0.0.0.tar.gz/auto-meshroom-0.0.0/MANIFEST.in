@@ -1,0 +1,9 @@
+include pyproject.toml
+include requirements-dev.txt
+include auto_meshroom\source\assets
+include test.py
+include build.py
+include requirements.txt
+include auto_meshroom\source\dependencies
+include auto_meshroom\source\assets\icon\icon.ico
+include auto_meshroom\source\assets\icon\icon.png
