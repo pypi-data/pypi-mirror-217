@@ -1,0 +1,6 @@
+[project]
+name = "baffled-v5"
+description = ""
+version = "0.0.1"
+authors = []
+dependencies = ["certifi == 2023.5.7"]
