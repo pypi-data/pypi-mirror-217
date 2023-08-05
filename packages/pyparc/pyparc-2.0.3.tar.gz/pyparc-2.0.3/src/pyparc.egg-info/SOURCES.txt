@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/pyparc/__init__.py
+src/pyparc/parc.py
+src/pyparc.egg-info/PKG-INFO
+src/pyparc.egg-info/SOURCES.txt
+src/pyparc.egg-info/dependency_links.txt
+src/pyparc.egg-info/requires.txt
+src/pyparc.egg-info/top_level.txt
+tests/test_parc.py
