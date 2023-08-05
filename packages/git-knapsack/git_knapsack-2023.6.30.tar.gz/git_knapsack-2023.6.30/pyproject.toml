@@ -1,0 +1,27 @@
+[project]
+name = "git-knapsack"
+version = "2023.6.30"
+description = "Python tool that performs git add, commit and push while taking size limits into account"
+authors = [
+    { name = "Bart Broere", email = "mail@bartbroere.eu" },
+]
+dependencies = [
+    "gitpython",
+    "tqdm",
+]
+requires-python = ">=3.8"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.scripts]
+git-knapsack = "git_knapsack:main"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool]
