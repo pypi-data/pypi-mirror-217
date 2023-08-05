@@ -1,0 +1,7 @@
+setup.py
+dictToXmlString/xml_generator.py
+dictToXmlString.egg-info/PKG-INFO
+dictToXmlString.egg-info/SOURCES.txt
+dictToXmlString.egg-info/dependency_links.txt
+dictToXmlString.egg-info/requires.txt
+dictToXmlString.egg-info/top_level.txt
