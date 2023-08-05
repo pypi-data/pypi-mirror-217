@@ -1,0 +1,12 @@
+veloweb/VeloHasher.py,sha256=8CyEZJ0jBZ3SBtqylPyHbkbICmYXatZupZNbiMDMQO4,3900
+veloweb/VeloJWT.py,sha256=NhJttd8Jy3CxBBvDyr81URonvRubecunvH7Cs55pN0E,6403
+veloweb/VeloMailer.py,sha256=HqnXyUf_quFZimGnkezmq5bDboIhZvapDfxE5Tq2_Dg,2847
+veloweb/VeloWTF.py,sha256=KC1GFDTOrbObwC5f8VgHdM9toiVqlNWhR56XLf0vMAc,2594
+veloweb/__init__.py,sha256=4YY_fsMe6RXmG0QPyVB-CkyuwdPxhRYDTfo3cTdGswQ,27
+veloweb/test.py,sha256=h1qAajMOU5FcUvTiorNZMr5snTfLZDSsAhugHWOsz0U,221
+veloweb/veloweb.py,sha256=Roo0XLOO8ctpoZqoS0WZfwqADLCaI174WfVGaS1MW90,11405
+VeloWeb-1.0.1.dist-info/METADATA,sha256=dkaD1AfPYcxOt7uh_tdosAPbkskb8rOjwovoDy7bZt4,1078
+VeloWeb-1.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+VeloWeb-1.0.1.dist-info/entry_points.txt,sha256=d9pg-NRCw_LaOuJx0R-2Qltasv8CAkzD4-gez5OZniE,44
+VeloWeb-1.0.1.dist-info/top_level.txt,sha256=vCFr1ZLWvaEeTbgFzi7N_tTJLTxFCj67U3e8NiNEMJg,8
+VeloWeb-1.0.1.dist-info/RECORD,,
