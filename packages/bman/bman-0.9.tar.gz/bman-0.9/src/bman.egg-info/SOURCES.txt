@@ -1,0 +1,11 @@
+LICENSE.md
+README.md
+setup.py
+src/bman/__init__.py
+src/bman/main.py
+src/bman.egg-info/PKG-INFO
+src/bman.egg-info/SOURCES.txt
+src/bman.egg-info/dependency_links.txt
+src/bman.egg-info/entry_points.txt
+src/bman.egg-info/requires.txt
+src/bman.egg-info/top_level.txt

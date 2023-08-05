@@ -1,0 +1,2 @@
+[console_scripts]
+bman = bman.main:bman
