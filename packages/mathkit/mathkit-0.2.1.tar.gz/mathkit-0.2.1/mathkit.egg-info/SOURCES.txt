@@ -1,0 +1,8 @@
+README.md
+setup.py
+mathkit/__init__.py
+mathkit/main.py
+mathkit.egg-info/PKG-INFO
+mathkit.egg-info/SOURCES.txt
+mathkit.egg-info/dependency_links.txt
+mathkit.egg-info/top_level.txt
