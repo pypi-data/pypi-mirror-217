@@ -1,0 +1,12 @@
+veleslibrary/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+veleslibrary/questionnaires/__init__.py,sha256=3_k5Og8sdix4Zj30ccqLtUOqpxhvykHXC65VCybtgno,30
+veleslibrary/questionnaires/pl/__init__.py,sha256=xxLLUF0eYzYox8xb0-A86xDFfHTbugsZlmwZDxpC-qo,63
+veleslibrary/questionnaires/pl/questionnaires.py,sha256=UyNGtCjGLL-7cfSCPYN17nks1wQZyfI4Bir4heYqpWU,3113
+veleslibrary/questionnaires/questionnaires.py,sha256=z2UaxO00TeqgMXw5SPf5i5KM2HetLAIk8_CLn2BxbhE,2289
+veleslibrary/tests/__init__.py,sha256=yIbxEwtQLCsxJK2ZkvOTljbNizt52pMIFj9wNI_IfkY,21
+veleslibrary/tests/pl/__init__.py,sha256=QEOj4EGPhK8POMThc2a__4CdkMI6HsZvXMkxqYCoMGQ,44
+veleslibrary/tests/pl/tests.py,sha256=MVY0th2HBFx1D1y1lkdVYzWwbiPIyhui670d074J1zk,5161
+veleslibrary/tests/tests.py,sha256=JBjBFhMONHG2Y0wH5Bil_aH2F92JB5cEvxYVjQjC42s,1029
+veleslibrary-0.1.1.dist-info/METADATA,sha256=YtznH3FKSlk-nxPFs2rl-fOuamQ12TwSetmlCeczZsw,451
+veleslibrary-0.1.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+veleslibrary-0.1.1.dist-info/RECORD,,
