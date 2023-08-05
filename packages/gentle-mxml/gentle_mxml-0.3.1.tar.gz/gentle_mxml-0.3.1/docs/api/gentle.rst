@@ -1,0 +1,32 @@
+﻿gentle
+======
+
+.. automodule:: gentle
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+
+.. rubric:: Modules
+
+.. autosummary::
+   :toctree:
+   :recursive:
+
+   gentle.generators
+   gentle.metadata
+
