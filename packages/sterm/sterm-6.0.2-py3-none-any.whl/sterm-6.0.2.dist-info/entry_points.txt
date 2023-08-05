@@ -1,0 +1,2 @@
+[console_scripts]
+sterm = sterm.cli:main
