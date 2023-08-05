@@ -1,0 +1,9 @@
+README.md
+setup.py
+AileenTestFirstAttempt.egg-info/PKG-INFO
+AileenTestFirstAttempt.egg-info/SOURCES.txt
+AileenTestFirstAttempt.egg-info/dependency_links.txt
+AileenTestFirstAttempt.egg-info/requires.txt
+AileenTestFirstAttempt.egg-info/top_level.txt
+test/__init__.py
+test/test.py
