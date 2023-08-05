@@ -1,0 +1,1 @@
+from hamed import add_hamed
