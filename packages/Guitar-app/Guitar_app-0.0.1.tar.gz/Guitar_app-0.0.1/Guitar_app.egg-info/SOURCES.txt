@@ -1,0 +1,8 @@
+setup.py
+Guitar_app.egg-info/PKG-INFO
+Guitar_app.egg-info/SOURCES.txt
+Guitar_app.egg-info/dependency_links.txt
+Guitar_app.egg-info/requires.txt
+Guitar_app.egg-info/top_level.txt
+guitar_notes_update/__init__.py
+guitar_notes_update/oop_guitar.py
