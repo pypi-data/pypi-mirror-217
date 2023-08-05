@@ -1,0 +1,13 @@
+LICENSE
+setup.py
+waveglow/__init__.py
+waveglow/convert_model.py
+waveglow/glow.py
+waveglow/inference.py
+waveglow/load.py
+waveglow/mel2samp.py
+waveglowpkg.egg-info/PKG-INFO
+waveglowpkg.egg-info/SOURCES.txt
+waveglowpkg.egg-info/dependency_links.txt
+waveglowpkg.egg-info/requires.txt
+waveglowpkg.egg-info/top_level.txt
