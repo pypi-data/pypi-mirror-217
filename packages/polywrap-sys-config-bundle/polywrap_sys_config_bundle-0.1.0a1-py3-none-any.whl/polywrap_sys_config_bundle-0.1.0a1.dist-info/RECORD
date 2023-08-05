@@ -1,0 +1,15 @@
+polywrap_sys_config_bundle/__init__.py,sha256=EUh39SoiP8CAYrVaTZwvkcXh2nP3SjspcfLXVcGbSgU,161
+polywrap_sys_config_bundle/bundle.py,sha256=sTtUTxgBveRZ4puTRjDd4u0vRXrV_r1YlGwhLM9Jxxo,1987
+polywrap_sys_config_bundle/config.py,sha256=6SvdgO-V1ddIKqr3NaQmu_s9UWqFvsk-h12rcA-0a6Q,473
+polywrap_sys_config_bundle/embeds/__init__.py,sha256=zP_Zi5lZTD2tcyVfR5btCMTOZ7V1JTvLBCwVwa1JL04,481
+polywrap_sys_config_bundle/embeds/file-system-resolver/wrap.info,sha256=L31-cKW9_34idZm02UQzcPmMq4_JDTCwD8d173js6PI,4785
+polywrap_sys_config_bundle/embeds/file-system-resolver/wrap.wasm,sha256=HJ-IJdhTlD9Q7X59vq0wEpd-u5OiLFmeR9bKzv8mYYw,102231
+polywrap_sys_config_bundle/embeds/http-resolver/wrap.info,sha256=_7Br_-yPlR6UEn7p4A5D-M1HCF3rjMzTt6oG44tzs4s,6217
+polywrap_sys_config_bundle/embeds/http-resolver/wrap.wasm,sha256=USXIx9T_VNUVeuiSoIeFzphSJGhUsfTKj5mbels8dvM,139741
+polywrap_sys_config_bundle/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+polywrap_sys_config_bundle/types/__init__.py,sha256=fw54IpVMpv5mNNo0rCWccbSx0gh2oDlDSb5SmhSOcwM,141
+polywrap_sys_config_bundle/types/bundle_package.py,sha256=Lr4HPVeAB1_buRCLELpQytYkYM7bEbIZlI_dQKL5WGc,1126
+polywrap_sys_config_bundle/types/embedded_file_reader.py,sha256=lYHxgQm7Ym8T5d5CVMp8b-F82YVOSdnSfK4QZdE8qmk,607
+polywrap_sys_config_bundle-0.1.0a1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+polywrap_sys_config_bundle-0.1.0a1.dist-info/METADATA,sha256=UySuT_Kx7awFBKBOhe3gf0xFXIB3vFgIuOtwRkdvCWQ,859
+polywrap_sys_config_bundle-0.1.0a1.dist-info/RECORD,,
