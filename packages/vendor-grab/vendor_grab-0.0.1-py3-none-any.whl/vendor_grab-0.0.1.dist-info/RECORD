@@ -1,0 +1,8 @@
+vendor_grab/__init__.py,sha256=k5HkAhGBKa8RgxvkiAXGSDr4MiDfUYn9onDDhhIOmOw,14
+vendor_grab/_version.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+vendor_grab/vendor_grab.py,sha256=e6cpkFCgKYFuvP8nh6Ch9RPs7C2vI9aeiSfOHoVfA50,11749
+vendor_grab-0.0.1.dist-info/METADATA,sha256=SpVvFwRI_ZCcnurQIvNGU5Lw9uwXNZVRJ9mM6GI-Um8,3964
+vendor_grab-0.0.1.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+vendor_grab-0.0.1.dist-info/entry_points.txt,sha256=g1AKQqrkvLU63plX0FY22ANZBqBgscqzmLOWwRXQLnw,63
+vendor_grab-0.0.1.dist-info/licenses/LICENSE,sha256=VSsTCTt62GOZrX6z-HfE4UpAlrr3lpXqLxBRS0Fn7d0,748
+vendor_grab-0.0.1.dist-info/RECORD,,
