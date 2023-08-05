@@ -1,0 +1,3 @@
+[console_scripts]
+mbc-unicode-input=mbc_unicode_input.main:main
+
