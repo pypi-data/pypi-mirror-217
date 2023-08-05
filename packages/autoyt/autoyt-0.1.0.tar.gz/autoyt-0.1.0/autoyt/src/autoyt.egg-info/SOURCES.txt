@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+autoyt/src/autoyt.egg-info/PKG-INFO
+autoyt/src/autoyt.egg-info/SOURCES.txt
+autoyt/src/autoyt.egg-info/dependency_links.txt
+autoyt/src/autoyt.egg-info/requires.txt
+autoyt/src/autoyt.egg-info/top_level.txt
