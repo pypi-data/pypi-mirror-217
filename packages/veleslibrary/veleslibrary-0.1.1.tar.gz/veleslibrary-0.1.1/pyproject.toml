@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "veleslibrary"
+version = "0.1.1"
+description = "Questionnaires and other tests for Veles surveys."
+authors = ["Jakub Jędrusiak <kuba23031999@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+velesresearch = "^0.0.15"
+anyascii = "^0.3.2"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+tox = "^4.6.3"
+poetry = "^1.5.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

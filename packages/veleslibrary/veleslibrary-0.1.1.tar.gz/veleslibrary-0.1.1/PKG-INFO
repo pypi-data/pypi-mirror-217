@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: veleslibrary
+Version: 0.1.1
+Summary: Questionnaires and other tests for Veles surveys.
+Author: Jakub Jędrusiak
+Author-email: kuba23031999@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: anyascii (>=0.3.2,<0.4.0)
+Requires-Dist: velesresearch (>=0.0.15,<0.0.16)
+Description-Content-Type: text/markdown
+
+# VelesLibrary
+
