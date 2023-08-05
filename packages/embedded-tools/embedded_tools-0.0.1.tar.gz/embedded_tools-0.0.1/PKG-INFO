@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: embedded_tools
+Version: 0.0.1
+Summary: Tools to be used on a embedded environment
+Home-page: https://github.com/gabrielfrasantos/embedded-tools
+Author: Gabriel Santos
+License: MIT
+Keywords: Segger Jlink STLink RTT Serial Embedded
+Platform: any
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+# embedded-tools
+Embedded tools, such as debugging and communication
