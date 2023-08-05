@@ -1,0 +1,6 @@
+transformers
+konlpy
+pillow
+spacy
+torchtext
+pytorch-supporter
