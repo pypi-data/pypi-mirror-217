@@ -1,0 +1,71 @@
+# CouchBed
+
+CouchBed is a Python library that allows you to log your code execution into CouchDB. It provides a simple and convenient way to record settings, messages, and logs into a CouchDB database.
+
+## Installation
+
+You can install CouchBed using pip:
+
+```shell
+pip install couchbed
+```
+
+## Usage
+
+First, import the `CouchBed` class from the `couchbed` module:
+
+```python
+from couchbed import CouchBed
+```
+
+Create an instance of the `CouchBed` class, specifying the name of the CouchDB database as a parameter. By default, CouchBed uses the CouchDB URI provided by the `PYTHON_COUCHBED` environment variable. Alternatively, you can pass the URI as a parameter when creating the `CouchBed` instance.
+
+```python
+couch = CouchBed("__DATABASE_NAME__")
+```
+
+### Recording Settings
+
+You can record settings by using the `set` method or by directly assigning values to keys in the `CouchBed` instance.
+
+```python
+couch.set({"a": 1, "b": 2})
+# or
+couch["key"] = "value"
+```
+
+### Accessing Settings
+
+You can access the recorded settings by using the `CouchBed` instance as a dictionary.
+
+```python
+print(couch["a"])
+```
+
+### Recording Messages
+
+You can record messages by calling the `CouchBed` instance as a function and passing the desired message as arguments.
+
+```python
+couch("Hello", 1, 2, 3)
+```
+
+### Recording Logs
+
+You can record logs by using the `log` method and passing a dictionary containing the log information.
+
+```python
+couch.log({"epoch": 1, "train_loss": 0.1, "val_loss": 0.15})
+```
+
+### Saving Data
+
+CouchBed automatically saves the data every 5 seconds if there are any changes. However, it's recommended to explicitly call the `save` method at the end of your program to ensure all the data is saved. Otherwise, the last 5-second data may be lost.
+
+```python
+couch.save()
+```
+
+## License
+
+CouchBed is licensed under the MIT License.
