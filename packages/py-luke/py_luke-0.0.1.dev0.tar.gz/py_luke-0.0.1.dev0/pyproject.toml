@@ -1,0 +1,80 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "py-luke"
+description = "Mock server for OpenAPI documentation"
+readme = "README.md"
+requires-python = ">=3.7"
+authors = [
+    { name = "Nguyen Khac Thanh", email = "nguyenkhacthanh244@gmail.com" },
+]
+license = "MIT"
+dynamic = ["version"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Web Environment",
+    "Framework :: AnyIO",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Internet :: WWW/HTTP",
+]
+dependencies = [
+    "xeger",
+    "fastapi",
+    "uvicorn",
+    "pyyaml",
+    "typer",
+    "faker"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pre-commit",
+    "mypy",
+    "ruff",
+    "pytest==7.3.1",
+    "pytest-cov==4.0.0",
+    "types-PyYAML",
+]
+
+publish = [
+    "twine",
+    "build"
+]
+
+[project.scripts]
+luke = "luke.main:cli"
+
+[project-urls]
+Homepage = "https://github.com/magiskboy/luke"
+
+[tool.hatch.version]
+path = "luke/__init__.py"
+
+[tool.mypy]
+ignore_missing_imports = true
+# explicit_package_bases = true
+check_untyped_defs = true
+
+[tool.coverage.run]
+omit = ["tests/*"]
+
+[tool.coverage.path]
+source = "luke"
+
+[tool.coverage.report]
+fail_under = 30
+show_missing = true
+sort = "Cover"
+
+[tool.ruff]
+ignore = ["E501"]
