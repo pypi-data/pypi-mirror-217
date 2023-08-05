@@ -1,0 +1,8 @@
+opencv-pythonPillow
+bokeh
+jupyter-bokeh
+matplotlib
+seaborn
+scipy
+scikit-image
+tqdm
