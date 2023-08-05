@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/Calculate-asmd/__init__.py
+src/Calculate-asmd/main.py
+src/Calculate_asmd.egg-info/PKG-INFO
+src/Calculate_asmd.egg-info/SOURCES.txt
+src/Calculate_asmd.egg-info/dependency_links.txt
+src/Calculate_asmd.egg-info/top_level.txt
