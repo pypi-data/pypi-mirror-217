@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+pswgen/__init__.py
+pswgen/__main__.py
+pswgen.egg-info/PKG-INFO
+pswgen.egg-info/SOURCES.txt
+pswgen.egg-info/dependency_links.txt
+pswgen.egg-info/entry_points.txt
+pswgen.egg-info/top_level.txt
