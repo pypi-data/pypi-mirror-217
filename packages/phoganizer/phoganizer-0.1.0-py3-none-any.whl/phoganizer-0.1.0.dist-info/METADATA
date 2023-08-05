@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: phoganizer
+Version: 0.1.0
+Summary: Organizae photos by exif
+Home-page: https://github.com/qiujiangkun/Phoganizer
+Author: qiujiangkun
+Author-email: qjk2001@gmail.com
+Project-URL: Bug Tracker, https://github.com/qiujiangkun/Phoganizer/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Phoganizer
+Organize photos by exif
+
+## Usage
+```shell
+brew install exiftool # MacOS, other OS refers to https://exiftool.org/
+pip install -e phoganizer
+python -m phoganizer path/to/photos
+```
+It will rename photos to `YYYY-MM-DD_HH-MM-SS.N.jpg` format and move them to `path/to/photos/YYYY-MM-DD` folder.
