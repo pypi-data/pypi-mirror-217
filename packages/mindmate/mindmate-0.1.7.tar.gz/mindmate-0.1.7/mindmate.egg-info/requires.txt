@@ -1,0 +1,5 @@
+PyYAML==6
+click>=8
+gTTS>=2.3
+openai>=0.27
+requests
