@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+Functions_ITA_MVO_41.egg-info/PKG-INFO
+Functions_ITA_MVO_41.egg-info/SOURCES.txt
+Functions_ITA_MVO_41.egg-info/dependency_links.txt
+Functions_ITA_MVO_41.egg-info/requires.txt
+Functions_ITA_MVO_41.egg-info/top_level.txt
+functions/__init__.py
+functions/functions.py
