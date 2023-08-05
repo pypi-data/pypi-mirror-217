@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: patchgenerator
+Version: 0.0.2
+Summary: `Patchgenerator` is a simple tool to generate array indices, with or without overlap, to create numpy array patches. Only requires python.
+Home-page: https://github.com/earthobserved/patchgenerator
+Author: Earth Observed
+Author-email: EarthObserved <info@earthobserved.com>
+Project-URL: Homepage, https://github.com/earthobserved/patchgenerator
+Project-URL: Bug Tracker, https://github.com/earthobserved/patchgenerator/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# `patchgenerator`
+
+The `patchgenerator` is a simple tool to generate array indices, with or without overlap, to create numpy array patches. Only requires python.
+
+# Example usage:
+
+```
+from patch_indices import PatchGenerator
+patch_generator = PatchGenerator(100, 80, 10, 20, y_overlap=2, x_overlap=3)
+for patch in patch_generator:
+    row_start, cols_start, row_end, cols_end = patch
+    print("row_start, cols_start, row_end, cols_end", row_start, cols_start, row_end, cols_end)
+```
