@@ -1,0 +1,18 @@
+[project]
+name = 'scriptl'
+version = '0.0.1'
+authors = [
+	{ name = 'The Open Project', email = 'opendylan@proton.me' },
+]
+description = 'Scriptl: Making Python Programming A Little Easier'
+readme = 'README.md'
+requires-python = '>=3.0'
+classifiers = [
+	'Programming Language :: Python',
+	'License :: OSI Approved :: MIT License',
+	'Operating System :: OS Independent',
+]
+
+[project.urls]
+'Homepage' = 'https://github.com/dylanopen/scriptl'
+'Bug Tracker' = 'https://github.com/dylanopen/scriptl/issues'
