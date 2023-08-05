@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: dinov2-retrieval
+Version: 0.0.1
+Summary: A cli program of image retrieval using dinov2
+Project-URL: Homepage, https://github.com/vra/dinov2-retrieval
+Project-URL: Bug Tracker, https://github.com/vra/dinov2-retrieval/issues
+Author-email: Yunfeng Wang <wyf.brz@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: appdirs
+Requires-Dist: loguru
+Requires-Dist: numpy
+Requires-Dist: pillow
+Requires-Dist: torch
+Description-Content-Type: text/markdown
+
+# dinov2-retrieval
+A program of image retrieval using dinov2
