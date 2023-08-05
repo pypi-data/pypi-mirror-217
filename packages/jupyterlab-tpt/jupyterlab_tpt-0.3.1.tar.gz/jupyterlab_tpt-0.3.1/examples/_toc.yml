@@ -1,0 +1,6 @@
+format: jb-book
+parts:
+- caption: sample
+  chapters:
+  - file: sandbox-nb
+root: sandbox-nb

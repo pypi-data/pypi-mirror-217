@@ -1,0 +1,957 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>purpose &#8212; Juyter &amp; book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/courselevels.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="application/vnd.jupyter.widget-state+json">{"state": {"088ece6236054f0f8cc1d40ab5cf2cb8": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "13bdf3389c1545fd8e51fb01b67f4f3e": {"model_name": "MPLCanvasModel", "model_module": "jupyter-matplotlib", "model_module_version": "^0.11", "state": {"_cursor": "pointer", "_data_url": "data:image/png;base64,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+jd8p9PQoZIKZR4vhnnFFTrdARGbzabYUH8ltagte9HB/pQ8AB7JsgUwOjpaPj4+ys3NrXd/bm6u4uPjT/icKVOmaPLkya6/FxUVKTk5uUlzAmgadrtNsWEBig0LUN9WLcyOAwDNyrInpPj5+alfv36aN2+e6z6n06l58+YpLS3thM/x9/dXWFhYvRsAAICnseweQEmaPHmybr75ZvXv318DBw7U888/r9LSUt16661mRwMAAGgyli6A119/vfLz8zV16lTl5OSod+/e+uabb351YQgAAIA3sewwMI2By8gBAPA8bL8tfA4gAACAVVEAAQAALIYCCAAAYDEUQAAAAIuhAAIAAFgMBRAAAMBiKIAAAAAWQwEEAACwGAogAACAxVh6KriGqptEpaioyOQkAADgTNVtt608GRoFsAGKi4slScnJySYnAQAAZ6u4uFjh4eFmxzAFcwE3gNPp1MGDBxUaGiqbzdaor11UVKTk5GRlZGR45TyFvD/P5+3vkffn+bz9PfL+zp1hGCouLlZiYqLsdmueDccewAaw2+1q2bJlk/4bYWFhXvmDXYf35/m8/T3y/jyft79H3t+5seqevzrWrL0AAAAWRgEEAACwGAqgm/L399fDDz8sf39/s6M0Cd6f5/P298j783ze/h55f2gILgIBAACwGPYAAgAAWAwFEAAAwGIogAAAABZDAQQAALAYCqBJHn/8cQ0ePFhBQUGKiIg44TIHDhzQyJEjFRQUpNjYWP3lL39RdXX1KV+3oKBA48aNU1hYmCIiIjRhwgSVlJQ0wTs4OwsXLpTNZjvhbeXKlSd93oUXXvir5e+4445mTH7m2rRp86usTz755CmfU15erkmTJikqKkohISEaM2aMcnNzmynxmdu3b58mTJiglJQUBQYGql27dnr44YdVWVl5yue5+/p7+eWX1aZNGwUEBCg1NVUrVqw45fIzZsxQ586dFRAQoB49euirr75qpqRnZ9q0aRowYIBCQ0MVGxurUaNGafv27ad8zttvv/2rdRUQENBMic/e3//+91/l7dy58ymf4ynrTzrx94nNZtOkSZNOuLwnrL/FixfryiuvVGJiomw2m2bNmlXvccMwNHXqVCUkJCgwMFDDhw/Xzp07T/u6Z/tzjFoUQJNUVlbquuuu05133nnCx2tqajRy5EhVVlZq6dKleuedd/T2229r6tSpp3zdcePGafPmzZo7d66++OILLV68WBMnTmyKt3BWBg8erOzs7Hq33//+90pJSVH//v1P+dzbb7+93vOefvrpZkp99h599NF6We+5555TLn/fffdpzpw5mjFjhhYtWqSDBw9q9OjRzZT2zG3btk1Op1OvvfaaNm/erOeee06vvvqq/u///u+0z3XX9ffxxx9r8uTJevjhh7VmzRr16tVLI0aMUF5e3gmXX7p0qW644QZNmDBBa9eu1ahRozRq1Cht2rSpmZOf3qJFizRp0iQtX75cc+fOVVVVlS655BKVlpae8nlhYWH11tX+/fubKfG56datW728S5YsOemynrT+JGnlypX13tvcuXMlSdddd91Jn+Pu66+0tFS9evXSyy+/fMLHn376ab3wwgt69dVXlZ6eruDgYI0YMULl5eUnfc2z/TnGzxgw1fTp043w8PBf3f/VV18ZdrvdyMnJcd33yiuvGGFhYUZFRcUJX2vLli2GJGPlypWu+77++mvDZrMZWVlZjZ69ISorK42YmBjj0UcfPeVyF1xwgfGnP/2peUI1UOvWrY3nnnvujJc/evSo4evra8yYMcN139atWw1JxrJly5ogYeN6+umnjZSUlFMu487rb+DAgcakSZNcf6+pqTESExONadOmnXD53/72t8bIkSPr3Zeammr84Q9/aNKcjSEvL8+QZCxatOiky5zsu8hdPfzww0avXr3OeHlPXn+GYRh/+tOfjHbt2hlOp/OEj3va+pNkzJw50/V3p9NpxMfHG//85z9d9x09etTw9/c3Pvzww5O+ztn+HOMn7AF0U8uWLVOPHj0UFxfnum/EiBEqKirS5s2bT/qciIiIenvUhg8fLrvdrvT09CbPfDZmz56tw4cP69Zbbz3tsu+//76io6PVvXt3TZkyRWVlZc2Q8Nw8+eSTioqKUp8+ffTPf/7zlIfsV69eraqqKg0fPtx1X+fOndWqVSstW7asOeI2SGFhoSIjI0+7nDuuv8rKSq1evbre/73dbtfw4cNP+n+/bNmyestLtT+TnrKuJJ12fZWUlKh169ZKTk7W1VdffdLvGnexc+dOJSYmqm3btho3bpwOHDhw0mU9ef1VVlbqvffe02233SabzXbS5Txt/f3c3r17lZOTU28dhYeHKzU19aTr6Fx+jvETh9kBcGI5OTn1yp8k199zcnJO+pzY2Nh69zkcDkVGRp70OWZ58803NWLECLVs2fKUy/3ud79T69atlZiYqA0bNuivf/2rtm/frs8++6yZkp65P/7xj+rbt68iIyO1dOlSTZkyRdnZ2Xr22WdPuHxOTo78/Px+dQ5oXFyc262vX9q1a5defPFFPfPMM6dczl3X36FDh1RTU3PCn7Ft27ad8Dkn+5l093XldDp17733asiQIerevftJl+vUqZPeeust9ezZU4WFhXrmmWc0ePBgbd68+bQ/p2ZITU3V22+/rU6dOik7O1uPPPKIzj//fG3atEmhoaG/Wt5T158kzZo1S0ePHtUtt9xy0mU8bf39Ut16OJt1dC4/x/gJBbARPfjgg3rqqadOuczWrVtPe6KyJzmX95yZmalvv/1Wn3zyyWlf/+fnL/bo0UMJCQm6+OKLtXv3brVr1+7cg5+hs3l/kydPdt3Xs2dP+fn56Q9/+IOmTZvmtlMZncv6y8rK0qWXXqrrrrtOt99++ymfa/b6gzRp0iRt2rTplOfHSVJaWprS0tJcfx88eLC6dOmi1157TY899lhTxzxrl112mevPPXv2VGpqqlq3bq1PPvlEEyZMMDFZ43vzzTd12WWXKTEx8aTLeNr6g/kogI3o/vvvP+VvaJLUtm3bM3qt+Pj4X13JVHd1aHx8/Emf88sTX6urq1VQUHDS5zTUubzn6dOnKyoqSlddddVZ/3upqamSavdANUeBaMg6TU1NVXV1tfbt26dOnTr96vH4+HhVVlbq6NGj9fYC5ubmNtn6+qWzfX8HDx7URRddpMGDB+v1118/63+vudffyURHR8vHx+dXV1yf6v8+Pj7+rJZ3B3fffbfrYrCz3Qvk6+urPn36aNeuXU2UrnFFRESoY8eOJ83rietPkvbv36/vv//+rPeae9r6q1sPubm5SkhIcN2fm5ur3r17n/A55/JzjJ9QABtRTEyMYmJiGuW10tLS9PjjjysvL891WHfu3LkKCwtT165dT/qco0ePavXq1erXr58kaf78+XI6na4Nb2M72/dsGIamT5+u8ePHy9fX96z/vXXr1klSvS+IptSQdbpu3TrZ7fZfHZav069fP/n6+mrevHkaM2aMJGn79u06cOBAvd/km9LZvL+srCxddNFF6tevn6ZPny67/exPIW7u9Xcyfn5+6tevn+bNm6dRo0ZJqj1UOm/ePN19990nfE5aWprmzZune++913Xf3Llzm21dnQ3DMHTPPfdo5syZWrhwoVJSUs76NWpqarRx40ZdfvnlTZCw8ZWUlGj37t266aabTvi4J62/n5s+fbpiY2M1cuTIs3qep62/lJQUxcfHa968ea7CV1RUpPT09JOOlnEuP8f4GbOvQrGq/fv3G2vXrjUeeeQRIyQkxFi7dq2xdu1ao7i42DAMw6iurja6d+9uXHLJJca6deuMb775xoiJiTGmTJnieo309HSjU6dORmZmpuu+Sy+91OjTp4+Rnp5uLFmyxOjQoYNxww03NPv7O5nvv//ekGRs3br1V49lZmYanTp1MtLT0w3DMIxdu3YZjz76qLFq1Spj7969xueff260bdvWGDp0aHPHPq2lS5cazz33nLFu3Tpj9+7dxnvvvWfExMQY48ePdy3zy/dnGIZxxx13GK1atTLmz59vrFq1ykhLSzPS0tLMeAunlJmZabRv3964+OKLjczMTCM7O9t1+/kynrT+PvroI8Pf3994++23jS1bthgTJ040IiIiXFfe33TTTcaDDz7oWv7HH380HA6H8cwzzxhbt241Hn74YcPX19fYuHGjWW/hpO68804jPDzcWLhwYb11VVZW5lrml+/vkUceMb799ltj9+7dxurVq42xY8caAQEBxubNm814C6d1//33GwsXLjT27t1r/Pjjj8bw4cON6OhoIy8vzzAMz15/dWpqaoxWrVoZf/3rX3/1mCeuv+LiYte2TpLx7LPPGmvXrjX2799vGIZhPPnkk0ZERITx+eefGxs2bDCuvvpqIyUlxTh27JjrNYYNG2a8+OKLrr+f7ucYJ0cBNMnNN99sSPrVbcGCBa5l9u3bZ1x22WVGYGCgER0dbdx///1GVVWV6/EFCxYYkoy9e/e67jt8+LBxww03GCEhIUZYWJhx6623ukqlO7jhhhuMwYMHn/CxvXv31vs/OHDggDF06FAjMjLS8Pf3N9q3b2/85S9/MQoLC5sx8ZlZvXq1kZqaaoSHhxsBAQFGly5djCeeeMIoLy93LfPL92cYhnHs2DHjrrvuMlq0aGEEBQUZ11xzTb1S5S6mT59+ws/rz3+H9MT19+KLLxqtWrUy/Pz8jIEDBxrLly93PXbBBRcYN998c73lP/nkE6Njx46Gn5+f0a1bN+PLL79s5sRn5mTravr06a5lfvn+7r33Xtf/RVxcnHH55Zcba9asaf7wZ+j66683EhISDD8/PyMpKcm4/vrrjV27drke9+T1V+fbb781JBnbt2//1WOeuP7qtlm/vNW9D6fTafztb38z4uLiDH9/f+Piiy/+1Xtv3bq18fDDD9e771Q/xzg5m2EYRrPsagQAAIBbYBxAAAAAi6EAAgAAWAwFEAAAwGIogAAAABZDAQQAALAYCiAAAIDFUAABAAAshgIIAABgMRRAAAAAi6EAAgAAWAwFEAAAwGIogAAAABZDAQQAALAYCiAAAIDFUAABAAAshgIIAABgMRRAAAAAi6EAAgAAWAwFEAAAwGIogAAAABZDAQQAALAYCiAAAIDFUAABAAAshgIIAABgMRRAAAAAi6EAAgAAWAwFEAAAwGIogAAAABZDAQQAALAYCiAAAIDFUAABAAAs5v8DFS2NrGdYn+MAAAAASUVORK5CYII=", "_dom_classes": [], "_figure_label": "Figure", "_image_mode": "full", "_message": "", "_model_module": "jupyter-matplotlib", "_model_module_version": "^0.11", "_model_name": "MPLCanvasModel", "_rubberband_height": 0, "_rubberband_width": 0, "_rubberband_x": 0, "_rubberband_y": 0, "_size": [640.0, 480.0], "_view_count": null, "_view_module": "jupyter-matplotlib", "_view_module_version": "^0.11", "_view_name": "MPLCanvasView", "capture_scroll": false, "footer_visible": true, "header_visible": true, "layout": "IPY_MODEL_088ece6236054f0f8cc1d40ab5cf2cb8", "pan_zoom_throttle": 33.0, "resizable": true, "tabbable": null, "toolbar": "IPY_MODEL_8d993b45a537496b8ab637741233fe7b", "toolbar_position": "left", "toolbar_visible": "fade-in-fade-out", "tooltip": null}}, "991f0ab634ad4f6c9b05a88646ce6e1c": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "8d993b45a537496b8ab637741233fe7b": {"model_name": "ToolbarModel", "model_module": "jupyter-matplotlib", "model_module_version": "^0.11", "state": {"_current_action": "", "_dom_classes": [], "_model_module": "jupyter-matplotlib", "_model_module_version": "^0.11", "_model_name": "ToolbarModel", "_view_count": null, "_view_module": "jupyter-matplotlib", "_view_module_version": "^0.11", "_view_name": "ToolbarView", "button_style": "", "collapsed": true, "layout": "IPY_MODEL_991f0ab634ad4f6c9b05a88646ce6e1c", "orientation": "vertical", "tabbable": null, "toolitems": [["Home", "Reset original view", "home", "home"], ["Back", "Back to previous view", "arrow-left", "back"], ["Forward", "Forward to next view", "arrow-right", "forward"], ["Pan", "Left button pans, Right button zooms\nx/y fixes axis, CTRL fixes aspect", "arrows", "pan"], ["Zoom", "Zoom to rectangle\nx/y fixes axis", "square-o", "zoom"], ["Download", "Download plot", "floppy-o", "save_figure"]], "tooltip": null}}}, "version_major": 2, "version_minor": 0}</script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script crossorigin="anonymous" data-jupyter-widgets-cdn="https://cdn.jsdelivr.net/npm/" src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@1.0.6/dist/embed-amd.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'sandbox-nb';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="#">
+  
+  
+  
+  
+  
+    <p class="title logo__title">Juyter & book</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1 current active">
+                <a class="reference internal" href="#">
+                    purpose
+                </a>
+            </li>
+        </ul>
+        
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/parmentelat/jupyterlab-tpt" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/parmentelat/jupyterlab-tpt/edit/main/examples/sandbox-nb.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/parmentelat/jupyterlab-tpt/issues/new?title=Issue%20on%20page%20%2Fsandbox-nb.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/sandbox-nb.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>purpose</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#admonitions">admonitions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hide-input">hide-input</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#code-cells">code cells</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#collapsable">collapsable</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-raw-html">using raw HTML</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#course-levels">course levels</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#code">code</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#text">text</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#let-s-start-with-a-framed-cell">let’s start with a framed cell</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-text-x">basic text (^X)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#intermediate-text-y">intermediate text (^Y)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#advanced-text-z">advanced text (^Z)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#framed-and-colored-m">framed and colored (^M)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#miscell">miscell</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dollarmath">dollarmath</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#strikethrough">strikethrough</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#download-links">download links</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#myst-download-role">MyST download role</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#regular-html-link">regular html link</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iframe">iframe</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#html-tag">html tag</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">references</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <p>Licence CC BY-NC-ND, Thierry Parmentelat</p>
+<section class="tex2jax_ignore mathjax_ignore" id="purpose">
+<h1>purpose<a class="headerlink" href="#purpose" title="Permalink to this heading">#</a></h1>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>what
+summarize most of our notebook recipes,</p>
+<ul class="simple">
+<li><p>regular admonitions</p></li>
+<li><p>hide-input artefact (a code cell whose input code is hidden)</p></li>
+<li><p>collapsible (texts where some part is toggable with a right or down arrow)
+note that collapsible also applies to admonitions</p></li>
+<li><p>course levels:</p>
+<ul>
+<li><p>using tags to specifiy a level among basic=green, intermediate=blue, advanced=red</p></li>
+<li><p>also the ability to put a frame around a cell</p></li>
+</ul>
+</li>
+<li><p>miscell usual tricks (link to a downloadable file, iframe with some static html, …)</p></li>
+</ul>
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>targets</p>
+<p>and check how that renders in the following contexts</p>
+<ul class="simple">
+<li><p>jupyter book output, which is now our primary output medium</p></li>
+<li><p>jlab4, with a cocktail of extensions, at least</p>
+<ul>
+<li><p>jupytext, myst, courselevels</p></li>
+</ul>
+</li>
+<li><p>notebook 7, which as of 2023 June is about to get released</p></li>
+<li><p>there was also nbclassic, but it’s getting deprecated so..</p></li>
+</ul>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># this is the required piece</span>
+<span class="c1">#%pip show jupyterlab-myst jupyterlab-jupytext jupyterlab-courselevels</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="admonitions">
+<h2>admonitions<a class="headerlink" href="#admonitions" title="Permalink to this heading">#</a></h2>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>without the dropdown class
+this is a regular <em>admonition</em> with a custom title<br />
+any of the types below accept a superseded title</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Let’s give readers a helpful <code class="docutils literal notranslate"><span class="pre">tip</span></code> - this one uses quadruple ```` like this</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    ````{tip}
+    a tip
+    ````
+</pre></div>
+</div>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>my title
+this is a <code class="docutils literal notranslate"><span class="pre">hint</span></code> admonition with an overridden title</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    ````{hint} my title
+    some text
+    ````
+</pre></div>
+</div>
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>let us try <code class="docutils literal notranslate"><span class="pre">seealso</span></code></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>this is a <code class="docutils literal notranslate"><span class="pre">note</span></code></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:::{</span><span class="n">note</span><span class="p">}</span>
+<span class="n">this</span> <span class="n">would</span> <span class="n">work</span> <span class="n">too</span>
+<span class="p">:::</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>let us try <code class="docutils literal notranslate"><span class="pre">important</span></code></p>
+</div>
+<div class="admonition-this-requires-an-ad-hoc-title admonition">
+<p class="admonition-title">This requires an ad hoc title</p>
+<p>let us try <code class="docutils literal notranslate"><span class="pre">admonition</span></code></p>
+</div>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>my title
+this is an <code class="docutils literal notranslate"><span class="pre">attention</span></code> admonition with an overridden title</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    ````{attention} my title
+    some text
+    ````
+</pre></div>
+</div>
+</div>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>let us try <code class="docutils literal notranslate"><span class="pre">caution</span></code></p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>let us try <code class="docutils literal notranslate"><span class="pre">warning</span></code></p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>let us try <code class="docutils literal notranslate"><span class="pre">danger</span></code></p>
+</div>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>let us try <code class="docutils literal notranslate"><span class="pre">error</span></code></p>
+</div>
+</section>
+<section id="hide-input">
+<h2>hide-input<a class="headerlink" href="#hide-input" title="Permalink to this heading">#</a></h2>
+<section id="code-cells">
+<h3>code cells<a class="headerlink" href="#code-cells" title="Permalink to this heading">#</a></h3>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>the next code cell is marked as</p>
+<ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">metadata.tags</span></code> contains <code class="docutils literal notranslate"><span class="pre">hide-input</span></code></p></li>
+<li><p>and also <code class="docutils literal notranslate"><span class="pre">metadata.hide_input=true</span></code><br />
+see below, this second setting is not useful unless you aim at nbclassic</p></li>
+</ol>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>thanks to (1) the jb HTML output will come as a collapsible</p></li>
+<li><p>thanks to the <code class="docutils literal notranslate"><span class="pre">jupyterlab-courselevels</span></code> extension, with (1) the code cell input should be hidden in jupyterlab (and hopefully nb7 as well)</p></li>
+<li><p>because of (2) the cell input will not show under nbclassic<br />
+this requires the jupyter contrib extensions installed, and the hide-input extension enabled</p></li>
+</ul>
+</div>
+<p>↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ 2 hide-input cells below</p>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># this text whould be hidden</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;should show the output but not the code&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>should show the output but not the code
+</pre></div>
+</div>
+</div>
+</div>
+<p>something</p>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>sdf</p>
+</div>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;and another hide-input cell&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>and another hide-input cell
+</pre></div>
+</div>
+</div>
+</div>
+<p>↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ hide-input cells above</p>
+</section>
+</section>
+<section id="collapsable">
+<h2>collapsable<a class="headerlink" href="#collapsable" title="Permalink to this heading">#</a></h2>
+<p>here is an simple untagged admonition with the <code class="docutils literal notranslate"><span class="pre">dropdown</span></code> class:</p>
+<div class="dropdown admonition">
+<p class="admonition-title">Click the button to reveal!</p>
+<p>Some hidden collapsible content !</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    ```{admonition} click me
+    :class: dropdown
+    the text to be hidden
+    ```
+</pre></div>
+</div>
+</div>
+<section id="using-raw-html">
+<h3>using raw HTML<a class="headerlink" href="#using-raw-html" title="Permalink to this heading">#</a></h3>
+<p>it should also be possible to do this using plain HTML with a <code class="docutils literal notranslate"><span class="pre">details</span></code> tag</p>
+<details>
+<summary>the visible part</summary>
+<p>and the rest of the message is just mentioned directly in the &lt;details&gt; tag</p>
+</details>
+<p>however apparently this requires extra configuration ?</p>
+</section>
+</section>
+<section id="course-levels">
+<h2>course levels<a class="headerlink" href="#course-levels" title="Permalink to this heading">#</a></h2>
+<p>somthing we had in place before admonitions; 3 levels defined, + the framed cell business</p>
+<p>(in the mix, it comes with css support for the <code class="docutils literal notranslate"><span class="pre">hide-input</span></code> cell tag, tested above)</p>
+<section id="code">
+<h3>code<a class="headerlink" href="#code" title="Permalink to this heading">#</a></h3>
+<p>code cells will work in both worlds (jlab + jbook)</p>
+<div class="cell tag_level_basic docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># a basic cell</span>
+
+<span class="k">def</span> <span class="nf">fact</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">n</span> <span class="o">*</span> <span class="n">fact</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fact</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3628800
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_level_intermediate docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># an intermediate cell</span>
+
+<span class="k">def</span> <span class="nf">fact</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">return</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">1</span> <span class="k">else</span> <span class="n">n</span> <span class="o">*</span> <span class="n">fact</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fact</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3628800
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_level_advanced docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># an advanced cell</span>
+
+<span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="n">reduce</span>
+<span class="kn">from</span> <span class="nn">operator</span> <span class="kn">import</span> <span class="n">mul</span>
+
+<span class="k">def</span> <span class="nf">fact</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">reduce</span><span class="p">(</span><span class="n">mul</span><span class="p">,</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fact</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3628800
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="text">
+<h3>text<a class="headerlink" href="#text" title="Permalink to this heading">#</a></h3>
+<p>unfortunately text cells is another matter entirely, as when producing markdown (intermediary step in jbook to produce html) the cell structure gets lost entirely</p>
+<p><a class="github reference external" href="https://github.com/orgs/executablebooks/discussions/1033#discussioncomment-6198957">orgs/executablebooks#1033</a></p>
+<section id="let-s-start-with-a-framed-cell">
+<h4>let’s start with a framed cell<a class="headerlink" href="#let-s-start-with-a-framed-cell" title="Permalink to this heading">#</a></h4>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+<p>Where does it come from?
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of “de Finibus Bonorum et Malorum” (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, “Lorem ipsum dolor sit amet..”, comes from a line in section 1.10.32.</p>
+</section>
+<section id="basic-text-x">
+<h4>basic text (^X)<a class="headerlink" href="#basic-text-x" title="Permalink to this heading">#</a></h4>
+<p>Where does it come from?
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of “de Finibus Bonorum et Malorum” (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, “Lorem ipsum dolor sit amet..”, comes from a line in section 1.10.32.</p>
+</section>
+<section id="intermediate-text-y">
+<h4>intermediate text (^Y)<a class="headerlink" href="#intermediate-text-y" title="Permalink to this heading">#</a></h4>
+<p>Where does it come from?
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of “de Finibus Bonorum et Malorum” (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, “Lorem ipsum dolor sit amet..”, comes from a line in section 1.10.32.</p>
+</section>
+<section id="advanced-text-z">
+<h4>advanced text (^Z)<a class="headerlink" href="#advanced-text-z" title="Permalink to this heading">#</a></h4>
+<p>Where does it come from?
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of “de Finibus Bonorum et Malorum” (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, “Lorem ipsum dolor sit amet..”, comes from a line in section 1.10.32.</p>
+</section>
+<section id="framed-and-colored-m">
+<h4>framed and colored (^M)<a class="headerlink" href="#framed-and-colored-m" title="Permalink to this heading">#</a></h4>
+<p>Where does it come from?
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of “de Finibus Bonorum et Malorum” (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, “Lorem ipsum dolor sit amet..”, comes from a line in section 1.10.32.</p>
+</section>
+</section>
+</section>
+<section id="miscell">
+<h2>miscell<a class="headerlink" href="#miscell" title="Permalink to this heading">#</a></h2>
+<section id="dollarmath">
+<h3>dollarmath<a class="headerlink" href="#dollarmath" title="Permalink to this heading">#</a></h3>
+<p>same for latex-math inline <span class="math notranslate nohighlight">\(\forall x\in \mathbb{C}\)</span> like this, or double-dollars like that</p>
+<div class="math notranslate nohighlight">
+\[
+\forall x\in \mathbb{C}
+\]</div>
+</section>
+<section id="strikethrough">
+<h3>strikethrough<a class="headerlink" href="#strikethrough" title="Permalink to this heading">#</a></h3>
+<p>this requires an extra config step <s>so that one can see text in strikethrough mode</s></p>
+<p>not yet working with jupyterlab(-myst)</p>
+</section>
+<section id="download-links">
+<h3>download links<a class="headerlink" href="#download-links" title="Permalink to this heading">#</a></h3>
+<section id="myst-download-role">
+<h4>MyST download role<a class="headerlink" href="#myst-download-role" title="Permalink to this heading">#</a></h4>
+<p>mostly we use this to create a link to download an exercise as a zip</p>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>BEWARE
+this works in the jupyter book output only at this point</p>
+</div>
+<p><a class="reference download internal" download="" href="_downloads/cc170dfc1005c3b0cd25ff7cfb58f7b4/downloadable.zip"><code class="xref download docutils literal notranslate"><span class="pre">commencez</span> <span class="pre">par</span> <span class="pre">télécharger</span> <span class="pre">le</span> <span class="pre">zip</span></code></a></p>
+</section>
+<section id="regular-html-link">
+<h4>regular html link<a class="headerlink" href="#regular-html-link" title="Permalink to this heading">#</a></h4>
+<p>instead we could try and use a regular <code class="docutils literal notranslate"><span class="pre">&lt;a&gt;</span></code> tag;
+it remains to check however if that is going to play well with jupyter-book though</p>
+<p>avec la construction standard markdown pour les liens <code class="docutils literal notranslate"><span class="pre">[]()</span></code>: <span class="xref myst">commencez par télécharger le zip</span></p>
+<hr class="docutils" />
+<p>le tag html <code class="docutils literal notranslate"><span class="pre">&lt;a&gt;</span></code> marche vraiment très mal: <a href="./downloadable.zip">commencez par télécharger le zip</a></p>
+</section>
+</section>
+<section id="iframe">
+<h3>iframe<a class="headerlink" href="#iframe" title="Permalink to this heading">#</a></h3>
+<section id="html-tag">
+<h4>html tag<a class="headerlink" href="#html-tag" title="Permalink to this heading">#</a></h4>
+<p>not working in jlab, and works in jupyter book only if the target is in <code class="docutils literal notranslate"><span class="pre">_static</span></code></p>
+<iframe src="_static/addresses-final.html" width="100%" height="600px"><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### matplotlib</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="n">Y</span> <span class="o">=</span> <span class="n">X</span> <span class="o">**</span> <span class="mi">2</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="c1">#%matplotlib notebook</span>
+<span class="c1">#%matplotlib widget</span>
+<span class="o">%</span><span class="k">matplotlib</span> ipympl
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "13bdf3389c1545fd8e51fb01b67f4f3e"}</script></div>
+</div>
+</section>
+</section>
+</section>
+<section id="references">
+<h2>references<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>jbook: <a class="reference external" href="https://jupyterbook.org/en/stable/interactive/hiding.html">https://jupyterbook.org/en/stable/interactive/hiding.html</a></p></li>
+<li><p>myst: <a class="reference external" href="https://myst-tools.org/docs/spec/admonitions">https://myst-tools.org/docs/spec/admonitions</a></p></li>
+</ul>
+<hr class="docutils" />
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#admonitions">admonitions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hide-input">hide-input</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#code-cells">code cells</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#collapsable">collapsable</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-raw-html">using raw HTML</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#course-levels">course levels</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#code">code</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#text">text</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#let-s-start-with-a-framed-cell">let’s start with a framed cell</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-text-x">basic text (^X)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#intermediate-text-y">intermediate text (^Y)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#advanced-text-z">advanced text (^Z)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#framed-and-colored-m">framed and colored (^M)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#miscell">miscell</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dollarmath">dollarmath</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#strikethrough">strikethrough</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#download-links">download links</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#myst-download-role">MyST download role</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#regular-html-link">regular html link</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iframe">iframe</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#html-tag">html tag</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">references</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Thierry Parmentelat & Valérie Roy
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
