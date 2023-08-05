@@ -1,0 +1,28 @@
+[project]
+name = "refiner"
+version = "0.0.1"
+authors = [
+  { name="Alex Daro", email="gmx2267@gmail.com" },
+]
+description = "API for creating OpenAI embeddings, storing them in Pinecone, and using them to search for similar text."
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+  "click",
+  "matplotlib",
+  "openai",
+  "pandas",
+  "pinecone-client",
+  "plotly",
+  "python-dotenv",
+  "scipy",
+  "scikit-learn"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/adaro/ai-refiner"
