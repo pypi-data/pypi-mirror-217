@@ -1,0 +1,8 @@
+catplayer.py
+setup.py
+catplayer.egg-info/PKG-INFO
+catplayer.egg-info/SOURCES.txt
+catplayer.egg-info/dependency_links.txt
+catplayer.egg-info/entry_points.txt
+catplayer.egg-info/requires.txt
+catplayer.egg-info/top_level.txt
