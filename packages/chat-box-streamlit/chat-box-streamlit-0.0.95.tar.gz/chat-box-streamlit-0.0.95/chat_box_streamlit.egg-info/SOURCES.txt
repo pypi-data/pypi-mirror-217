@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+chat_box_streamlit/__init__.py
+chat_box_streamlit.egg-info/PKG-INFO
+chat_box_streamlit.egg-info/SOURCES.txt
+chat_box_streamlit.egg-info/dependency_links.txt
+chat_box_streamlit.egg-info/requires.txt
+chat_box_streamlit.egg-info/top_level.txt
+chat_box_streamlit/frontend/dist/bootstrap.min.css
+chat_box_streamlit/frontend/dist/bot.png
+chat_box_streamlit/frontend/dist/index.html
+chat_box_streamlit/frontend/dist/send.svg
+chat_box_streamlit/frontend/dist/user.png
+chat_box_streamlit/frontend/dist/assets/index-ba3e6331.js
