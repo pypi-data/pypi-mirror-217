@@ -1,0 +1,5 @@
+[console_scripts]
+caz = caz.cli:main
+
+[gui_scripts]
+alpha = caz.app:launch
