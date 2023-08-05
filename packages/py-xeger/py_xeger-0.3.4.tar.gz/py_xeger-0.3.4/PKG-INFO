@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: py-xeger
+Version: 0.3.4
+Summary: String generator from Regex
+Author-email: Nguyen Khac Thanh <nguyenkhacthanh244@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Keywords: regular expressions regexp testing random generator
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Build Tools
+Requires-Python: >=2
+Provides-Extra: dev
+Requires-Dist: mypy; extra == 'dev'
+Requires-Dist: pytest-cov==4.0.0; extra == 'dev'
+Requires-Dist: pytest==7.3.1; extra == 'dev'
+Requires-Dist: ruff; extra == 'dev'
+Description-Content-Type: text/markdown
+
+![py-xeger](https://i.ibb.co/6tch0qk/py-xeger-3.png)
+
+![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/magiskboy/py-xeger/ci.yml)
+![Codecov](https://img.shields.io/codecov/c/github/magiskboy/py-xeger)
+![GitHub](https://img.shields.io/github/license/magiskboy/py-xeger)
+![PyPI](https://img.shields.io/pypi/v/py-xeger)
+![PyPI - Downloads](https://img.shields.io/pypi/dd/py-xeger)
+
+
+Library to generate random strings from regular expressions.
+
+To install, type:
+
+```bash
+$ pip install py-xeger
+```
+
+
+To use, type:
+
+```python
+>>> from pyxeger import Xeger
+>>> x = Xeger(limit=10)  # default limit = 10
+>>> x.xeger("/json/([0-9]+)")
+u'/json/15062213'
+```
+
+
+## About
+
+Code adapted and refactored from the Python library [xeger](https://github.com/crdoconnor/xeger) in turn inspired by the Java library `Xeger <http://code.google.com/p/xeger/>`_.
