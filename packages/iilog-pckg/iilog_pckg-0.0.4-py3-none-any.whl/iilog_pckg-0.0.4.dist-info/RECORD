@@ -1,0 +1,12 @@
+iilog/__c.py,sha256=I_UuPygFPvSE6pS_7qalSKGFiFQCozyIv56hiXpjq3E,3207
+iilog/__init__.py,sha256=cy1PzVKAiFfPwnr-ikoLYgNmXFp2aU11BFKuJv8IuSs,334
+iilog/__version__.py,sha256=D0TOUkLtd924bcRLKqOheb3TKRIuAL5u-FMupbgqqgI,188
+iilog/filters.py,sha256=0w2fI2d3FZCkVvdjcHLVYovPVzeECQCHLkExlZoqW-U,152
+iilog/formatters.py,sha256=e1uftbNeJF2g_Sgc6Tr020CL_AhPfFToMXRrKxSC0Gc,189
+iilog/handlers.py,sha256=hQdAKnGwyvBBWHidQTtNofXZHTwf5giotBk5ZYFf1y0,1224
+iilog/loggers.py,sha256=xOsYg-RX3yP6U6h3umqKUHaZ3W8_4odJ73f0UYOpCgg,6445
+iilog_pckg-0.0.4.dist-info/LICENSE,sha256=0qyOjOnHN1a01HGB3CMShw_VF5wM2gfuvopCWs2JIbM,1097
+iilog_pckg-0.0.4.dist-info/METADATA,sha256=svMH7JcXPigtaTU3r85it9nNjxi05hUmjjFKIxGjPwI,9528
+iilog_pckg-0.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+iilog_pckg-0.0.4.dist-info/top_level.txt,sha256=ACeofHPKZnT4eV3yg4n1B8K5YjAb4uGvnM-YuAlTuA4,6
+iilog_pckg-0.0.4.dist-info/RECORD,,
