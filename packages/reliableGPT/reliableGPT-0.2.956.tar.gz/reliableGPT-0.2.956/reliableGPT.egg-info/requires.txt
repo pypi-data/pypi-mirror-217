@@ -1,0 +1,13 @@
+openai
+termcolor
+klotty
+numpy
+posthog
+tiktoken
+resend
+langchain
+pypdf
+pymupdf
+pdfminer
+pdfminer.six
+unstructured
