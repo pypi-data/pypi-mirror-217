@@ -1,0 +1,6 @@
+itsdangerous
+werkzeug
+PyJWT
+cryptography
+jinja2
+uuid
