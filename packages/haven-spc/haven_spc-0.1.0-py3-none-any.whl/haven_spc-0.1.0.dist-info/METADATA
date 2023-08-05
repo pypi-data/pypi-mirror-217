@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: haven-spc
+Version: 0.1.0
+Summary: Tools and applicatrion for running the spectroscopy group beamlines at the Advanced Photon Source.
+Author-email: Mark Wolfman <wolfman@anl.gov>
+Project-URL: Homepage, https://haven-spc.readthedocs.io/en/latest/
+Project-URL: Bug Tracker, https://github.com/spc-group/haven/issues
+Keywords: synchrotron,xray,bluesky
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: System :: Hardware
+Requires-Python: <3.11,>=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: bluesky
+Requires-Dist: ophyd
+Requires-Dist: databroker
+Requires-Dist: apsbss
+Requires-Dist: xraydb
+Requires-Dist: mergedeep
+Requires-Dist: xrayutilities
+Requires-Dist: bluesky-queueserver-api
+Requires-Dist: apstools
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-mongodb ; extra == 'dev'
+Requires-Dist: build ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: time-machine ; extra == 'dev'
+Requires-Dist: pytest-mock ; extra == 'dev'
+Requires-Dist: pytest-qt ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Provides-Extra: gui
+Requires-Dist: pyqt ; extra == 'gui'
+Requires-Dist: tiled-client ; extra == 'gui'
+Requires-Dist: qtawesome ; extra == 'gui'
+Requires-Dist: pydm ; extra == 'gui'
+Requires-Dist: pyqtgraph ; extra == 'gui'
+
+# Haven
+
+![Build Status](https://github.com/spc-group/haven/actions/workflows/ci.yml/badge.svg)
+[![Documentation Status](https://readthedocs.org/projects/haven-spc/badge/?version=latest)](https://haven-spc.readthedocs.io/en/latest/?badge=latest)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+Bluesky tools for beamlines managed by the spectroscopy group.
+
+"Don't fly in anything with a Capissen 38 engine, they fall right out
+of the sky."
+
+
+## Installation
+
+*haven* uses *mamba* for dependency management, and *poetry* for
+installation and development. First create the conda environment with
+mamba:
+
+```
+$ mamba env create -f environment.yml -n haven
+```
+
+then install the package, with dependencies, in developer mode:
+
+```
+$ conda activate haven
+$ poetry install
+```
+
+## Running Tests
+
+To run tests, run
+
+```
+$ pytest
+```
+
+# firefly
+User-facing applications for controlling the beamlines managed by the spectroscopy group
