@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: nics
+Version: 2.5.1
+Summary: Minimalist GitHub documentation tool
+Home-page: https://nvfp.github.io/now-i-can-sleep
+Author: Nicholas Valentinus
+Author-email: nvfastplease@gmail.com
+License: MIT
+Project-URL: Documentation, https://nvfp.github.io/now-i-can-sleep/docs
+Project-URL: Report bugs, https://github.com/nvfp/now-i-can-sleep/issues
+Project-URL: Repository, https://github.com/nvfp/now-i-can-sleep
+Project-URL: Changelog, https://nvfp.github.io/now-i-can-sleep/changelog
+Keywords: python,toolkit,mykit
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
