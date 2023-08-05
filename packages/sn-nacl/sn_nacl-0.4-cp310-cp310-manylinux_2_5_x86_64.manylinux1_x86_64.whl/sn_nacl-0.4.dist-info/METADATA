@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: sn-nacl
+Version: 0.4
+Summary: Supernova empirical model training package
+Author: G. Augarde, N. Regnault, M. Betoule, S. Bongard
+Author-email: nicolas.regnault@lpnhe.in2p3.fr
+Requires-Dist: numpy (>=1.7)
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: cython
+Requires-Dist: scikit-sparse
+Requires-Dist: astropy
+Requires-Dist: sparseqr
+
