@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+data/__init__.py
+shift_stack_moons.egg-info/PKG-INFO
+shift_stack_moons.egg-info/SOURCES.txt
+shift_stack_moons.egg-info/dependency_links.txt
+shift_stack_moons.egg-info/top_level.txt
+tests/__init__.py
+tests/test_shift_and_stack.py
+tests/data/__init__.py
