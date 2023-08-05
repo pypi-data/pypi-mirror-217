@@ -1,0 +1,95 @@
+Metadata-Version: 2.1
+Name: effortlesshtml
+Version: 0.1.1
+Summary: Simple python templating engine for html
+Author: Togo
+Author-email: TogoTheBlackDog@panther.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# effortlessHTML
+
+## Python version
+
+Make sure you're running python 3.11.x
+
+    python3 --version
+
+or
+
+    python3.11 --version
+
+## Install poetry
+    curl -sSL https://install.python-poetry.org | python3 -
+
+please refer [official doc](https://python-poetry.org/docs/#installing-with-the-official-installer)
+on how to install if the above doesn't work
+
+### Verify and update
+
+    poetry --version
+
+    sudo poetry self update
+
+### Zsh auto completion
+    poetry completions zsh > ~/.zfunc/_poetry
+### Set python version for poetry to use
+    poetry env use python3.11
+    poetry env info
+    poetry env info --path
+
+## Set up env
+
+### Install dependencies
+To install dependencies and setup the project run
+    make setup
+
+[//]: # (> **_NOTE:_** to run the git pre-commit hook installed by this script, you will need terraform installed)
+
+[//]: # (> &#40;`brew install terraform` with [homebrew]&#40;https://brew.sh/&#41;.)
+
+
+## Useful git hook commands
+
+This commands adds a pre-commit hook that checks for format and lint and
+adds a pre-push hook that checks for failing tests and type-checks
+
+    make git-hooks
+
+> **_NOTE:_** These commands are added automatically via the setup command,
+>  you don't need to run them unless a change has been made to the hook files
+> located in `git_hooks/` directory
+
+## Run Tests
+    make test
+
+To run test and clean test cache files, compiled python files, coverage files etc
+
+    make clean-test
+
+## pypi package
+
+### Increment version
+
+Depending on the type of change use appropriate command
+
+    poetry version major
+    poetry version minor
+    poetry version patch
+    poetry version prepatch
+
+See [poetry version command reference](https://python-poetry.org/docs/cli/#version)
+for more info
+
+### Build a local package
+    make package
+### Build and upload package to test pypi for testing
+    make upload-test
+### Build and upload to pypi
+    make upload
+
+> **_NOTE:_** If `upload-test` or `upload` results in an error saying `400 File already exists`
+> You probably need to increment the version string in `pyproject.toml` file
+
