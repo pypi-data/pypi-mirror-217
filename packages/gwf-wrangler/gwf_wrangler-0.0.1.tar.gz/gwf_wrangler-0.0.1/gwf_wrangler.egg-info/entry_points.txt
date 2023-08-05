@@ -1,0 +1,2 @@
+[console_scripts]
+wrangler = src.wrangler.__main__:main
