@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "xycu"
+version = "0.1.0"
+description = "An unofficial Python waifu.pics API wrapper"
+license = "MIT"
+authors = ["elaresai <elaresai@gmail.com>"]
+maintainers = ["elaresai <elaresai@gmail.com>"]
+readme = "README.md"
+homepage = "https://github.com/elaresai/xycu"
+repository = "https://github.com/elaresai/xycu"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+attrs = "^23.1.0"
+requests = "^2.31.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
