@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: tui-menu
+Version: 0.1.6
+Summary: A module for TUI Menu driven application
+Home-page: https://github.com/avili68/tui-menu
+Author: Avi Liani
+Author-email: Avi Liani <avi@liani.co.il>
+Maintainer-email: Avi Liani <avi@liani.co.il>
+Project-URL: Repository, https://github.com/avili68/tui-menu
+Keywords: console,menu,tui
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: User Interfaces
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# TUI-Menu
+
+This is a Module for Menu driven TUI scripts
