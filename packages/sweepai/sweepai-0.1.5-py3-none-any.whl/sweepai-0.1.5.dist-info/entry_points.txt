@@ -1,0 +1,3 @@
+[console_scripts]
+sweepai=sweepai.app.sweepai:app
+
