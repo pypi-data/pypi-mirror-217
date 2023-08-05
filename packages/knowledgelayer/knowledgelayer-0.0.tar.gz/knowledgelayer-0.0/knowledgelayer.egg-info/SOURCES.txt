@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+knowledgelayer/__init__.py
+knowledgelayer.egg-info/PKG-INFO
+knowledgelayer.egg-info/SOURCES.txt
+knowledgelayer.egg-info/dependency_links.txt
+knowledgelayer.egg-info/requires.txt
+knowledgelayer.egg-info/top_level.txt
