@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+createpass/__init__.py
+createpass/createpass.py
+createpassword.egg-info/PKG-INFO
+createpassword.egg-info/SOURCES.txt
+createpassword.egg-info/dependency_links.txt
+createpassword.egg-info/not-zip-safe
+createpassword.egg-info/requires.txt
+createpassword.egg-info/top_level.txt

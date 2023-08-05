@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: createpassword
+Version: 1.0.2
+Summary: createpassword can automatically create passwords
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# createpassword
+
+create passward randomly
+
+----
+# Install
+`pip install createpassword`
+
+----
+# Usage
+
+```python
+import createpassword
+
+#create passwords randomly
+createpassword.createpassword()
+
+```
+
+----
