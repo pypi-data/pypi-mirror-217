@@ -1,0 +1,11 @@
+tired/command.py,sha256=o20_kOHP89I8W2LJ0GeC3pnRU3liiu3SUW1xW2dNofY,1263
+tired/fs.py,sha256=UCJ14x4yyDOhpfVgHITO8vCwkOvSkX79zt-hRt_tCuQ,711
+tired/git.py,sha256=6sRJ_XgErTH91E4y4fOA7QaHVeHmDQhwTR4PpOT-cI0,179
+tired/meta.py,sha256=wD2lwp0bBlgBbJWByCvtnktyWD1QRaPVXMCVUxMw6BQ,239
+tired/parse.py,sha256=7drPZL5pJuMUZjRxkraZuA89ROowL90DcHz3D5kFSBM,62
+tired/shlex.py,sha256=QqtgYPMW4SHjdOZiHYwcmLjbMjkDw98omoEMRaiuRqc,13501
+tired/ui.py,sha256=QOGMcNJkUweeZsSuz4D3E5s-PQO1Tmx94O9EZLiVVh0,305
+tired-0.0.3.dist-info/METADATA,sha256=K5EpVJRWGRy6oS_4df127cLvoW5Lobppmjng4nwmozU,550
+tired-0.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+tired-0.0.3.dist-info/top_level.txt,sha256=V5fe4ftR6P1AGEu7a2YBPQgKZHLiC9BtxhzWn3lqyNI,6
+tired-0.0.3.dist-info/RECORD,,
