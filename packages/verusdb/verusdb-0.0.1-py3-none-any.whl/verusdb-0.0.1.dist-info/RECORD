@@ -1,0 +1,14 @@
+verusdb/__init__.py,sha256=Ak8hRW2VcfQyIAIEdKDyo9zZvJZm2cJSHkvYKeky0wU,135
+verusdb/client.py,sha256=VnFCr13xw0yNwUqfVt8NbDWTZ3VStIcR0CSf0nm6SX8,2975
+verusdb/embeddings/__init__.py,sha256=oVvNo51P6Hq9NX-WTUZEpSfh8USUMpejAAjcyAr0sS4,361
+verusdb/embeddings/openai.py,sha256=6WihnHfV8O1jFPIN9GWzqTKbftI4oMlhxNctK-WGYUI,1106
+verusdb/engines/__init__.py,sha256=tarB4wRAx7po9Fs6HUQyZBG9J2a8EQRHaDgQ0cjHiis,552
+verusdb/engines/polars.py,sha256=y9Bthysz7OtTSi1t_T-CdpikrD7Z4iDB_cBxAogWn68,7987
+verusdb/engines/postgresql.py,sha256=taO6jUIiq4y5BI5i10fS2gboh-BNUO1N3ri9-4COry0,6157
+verusdb/engines/redis.py,sha256=XNFhSpjNtDDLOO7D_iqE0aU9DW-GtVJ_p9BxqBg3v3A,8177
+verusdb/settings.py,sha256=QtsFImAOTFvunii3UlbwZDp58OtiMYzxCM67YrYcUs4,1924
+verusdb/utils.py,sha256=mvdT11-ouBOfR1eqDV9-tJNIOMk11IRG7c6RYI5zFtA,297
+verusdb-0.0.1.dist-info/LICENSE,sha256=mp_5-7jABYvQMNSgDayc7a-HIocL1nVnB3_SDcFzIZM,1070
+verusdb-0.0.1.dist-info/METADATA,sha256=S1R-IeFQ4RXC6Tak-XdXf4s-OVVH7c-9HSugjjrD8p0,4422
+verusdb-0.0.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+verusdb-0.0.1.dist-info/RECORD,,
