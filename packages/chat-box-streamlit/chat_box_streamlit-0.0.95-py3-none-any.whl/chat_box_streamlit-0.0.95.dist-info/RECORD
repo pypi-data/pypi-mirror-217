@@ -1,0 +1,12 @@
+chat_box_streamlit/__init__.py,sha256=DZKopfl_Qz3b_k-eh0fL7CFETGnGQ7wzLUvvYstHxMI,1747
+chat_box_streamlit/frontend/dist/bootstrap.min.css,sha256=RJPMkshLRurkTWvsQK8FssizFEQj0Nh0d-DGjIN4DWA,197459
+chat_box_streamlit/frontend/dist/bot.png,sha256=-OVUoUBjzeKLsz3HW1MQFHj9BldQ6_XPzyZ4QGFntqA,36284
+chat_box_streamlit/frontend/dist/index.html,sha256=a8SbAmWickKudZ9Y5XTog2Q7XwfCYthoGKeThxv4L70,500
+chat_box_streamlit/frontend/dist/send.svg,sha256=58zEVOsusixVGWekdAl5QaRXyy6kbuGp7Flqzjv9ick,377
+chat_box_streamlit/frontend/dist/user.png,sha256=J1STsjNv0gOP_dgR2hH3L-niVUVzEAe-1favY3JNYIM,27040
+chat_box_streamlit/frontend/dist/assets/index-ba3e6331.js,sha256=vCAo11JFu06vqf9VyltcNjdjahu2-GdX5e9Q5WFRztM,400495
+chat_box_streamlit-0.0.95.dist-info/LICENSE,sha256=psEGFWB5452SkY4gZyiZ40mgmVP0MjBWB77tYbDmI9A,1063
+chat_box_streamlit-0.0.95.dist-info/METADATA,sha256=7n4hjupkC1r8n2u9GSXODflUobP_yhHwNRh0ohQhe7A,4290
+chat_box_streamlit-0.0.95.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+chat_box_streamlit-0.0.95.dist-info/top_level.txt,sha256=P4Az0F-mYuMeTTjC4DEeRc2IAkYbppAO_5LZaoh1N0I,19
+chat_box_streamlit-0.0.95.dist-info/RECORD,,
