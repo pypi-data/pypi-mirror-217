@@ -1,0 +1,14 @@
+artfight/__init__.py,sha256=4ApGi6EV3EcDRYGlPFo_Awb6NrXLW-Ss1UvPOi1pPa4,520
+artfight/client.py,sha256=emhHLAiBjPfh0qBDQ9T9NRcN0DW6qPsGWX9C7tMA4i0,2403
+artfight/error.py,sha256=jxR5bVo6yAB5dymVd19X4DiaNqfEHV6QJMx3aAOFsts,1411
+artfight/http.py,sha256=p6vqawxwxwQyzE-XHCsTiLIhrWG_eI2y0cd6L4tuCEw,6992
+artfight/object/__init__.py,sha256=J9YZeDNFr1SOQ4Iyh5ObW5wnkWM8bthXJv6_Vl6WzQs,170
+artfight/object/abc.py,sha256=knp0wTUTd0iX1t3yWHWgVClTOhxou69SCLapEy_8yNM,2097
+artfight/object/attack.py,sha256=t1jP525EgmxtKZofYuQEqQ5gTIixwrI4nmLCB3sVH9Q,5056
+artfight/object/character.py,sha256=CTatSPVXbwnkx3GD57Br4FWFKrw-_NW8TD7Y_CqUwc4,760
+artfight/object/user.py,sha256=dP1WzwQ1wf2scw--UJI-phUywA3gpf19eDalfN7sgm0,4721
+artfight/parser.py,sha256=Csy1HqQQdQG7XtjFsjQ3o_qs4VqovrkSA2wmQbPJSoA,2254
+artfight/util.py,sha256=qD63S5g4dODqHmGAMsNvOvCkofSjHh6B6qVDKK2cM7o,900
+artfight_api-0.1.1.dist-info/METADATA,sha256=OCEKBWEHJF9Yo0jCty6V1OkqQ-P2dbii1TyAhXwx4r4,1611
+artfight_api-0.1.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+artfight_api-0.1.1.dist-info/RECORD,,
