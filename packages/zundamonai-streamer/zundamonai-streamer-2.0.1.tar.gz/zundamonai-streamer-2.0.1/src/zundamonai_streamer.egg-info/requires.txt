@@ -1,0 +1,5 @@
+PyYAML==6.0
+chatai-streamer==2.0.3
+deep-translator==1.11.1
+pydub==0.25.1
+requests==2.31.0
