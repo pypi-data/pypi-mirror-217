@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: RASD-TOOLBOX
+Version: 2023.1
+Summary: The RASDpy is an easy-to-use environment for applying probabilistic modeling.
+Home-page: UNKNOWN
+Author: ['Wanderlei Malaquias Pereira Junior', 'Donizetti Aparecido de Souza Junior', 'Romes Antônio Borges']
+Author-email: wanderlei_junior@ufcat.edu.br
+License: Apache License
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering
+
+UNKNOWN
+
