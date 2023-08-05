@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: lyrics-transcriber
+Version: 0.3.1
+Summary: Automatically create synchronised lyrics files in ASS and MidiCo LRC formats with word-level timestamps, using Whisper and lyrics from Genius and Spotify
+License: MIT
+Author: Andrew Beveridge
+Author-email: andrew@beveridge.uk
+Requires-Python: >=3.9,<3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: Cython (>=0,<1)
+Requires-Dist: dtw-python (>=1,<2)
+Requires-Dist: llvmlite (>=0,<1)
+Requires-Dist: lyricsgenius (>=3.0.1,<4.0.0)
+Requires-Dist: numba (>=0.57,<0.58)
+Requires-Dist: numpy (>=1,<2)
+Requires-Dist: onnx (>=1,<2)
+Requires-Dist: onnxruntime (>=1,<2)
+Requires-Dist: torch (>=1,<2)
+Requires-Dist: tqdm (>=4,<5)
+Description-Content-Type: text/markdown
+
+# Lyrics Transcriber
+
+Automatically create synchronised lyrics files in ASS and MidiCo LRC formats with word-level timestamps, using Whisper and lyrics from Genius and Spotify
