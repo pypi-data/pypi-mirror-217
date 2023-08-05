@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: tsuki
+Version: 0.1
+Summary: Package to draw images with moon emoji
+Home-page: https://github.com/wataoka/tsuki
+Author: wataoka
+Author-email: wataoka.koki@gmail.com
+License-File: LICENCE
+Requires-Dist: numpy
+Requires-Dist: pillow
+Requires-Dist: emoji
+
