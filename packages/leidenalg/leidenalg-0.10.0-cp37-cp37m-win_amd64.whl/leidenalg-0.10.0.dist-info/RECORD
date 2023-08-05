@@ -1,0 +1,17 @@
+leidenalg/functions.py,sha256=uVP4635fNktkOenI30NakDp36ZU8ceBQDq61JKB_5GY,20787
+leidenalg/Optimiser.py,sha256=G2DJ1hHc74KUCvd132U9kB37Z8V_Dsn5TdNRtI9NkHg,31166
+leidenalg/version.py,sha256=KPKO7hGjUNjwZau2fCV1ld6Viza8sFTc2L63Cof_kjc,166
+leidenalg/VertexPartition.py,sha256=hm7DHnapTqOu1FURQz_QByM0PEI9Iy8na_4Km8fCYnY,43112
+leidenalg/_c_leiden.cp37-win_amd64.pyd,sha256=n-Oep2dJvB82pP7J29KzR6wx1C9nsRBk9anQtLDmgy0,56320
+leidenalg/__init__.py,sha256=20RV7oDtiOXxZx5HwfNyrTI4V6Z4ZEbRoV87MS6fRPw,3740
+leidenalg-0.10.0.dist-info/DELVEWHEEL,sha256=V80ia2j70OYtN6AOgwBIyifrdcVC_ZNgzXGDorb09K8,398
+leidenalg-0.10.0.dist-info/LICENSE,sha256=U5J70Lc504yHoKgiNv2bBwwt__EcDBGb5QNyAF1QR60,35815
+leidenalg-0.10.0.dist-info/METADATA,sha256=LJn2bKpShAzn9-9BAjJlMmtFfQtq7VNM3TVYN6yZ0w0,1525
+leidenalg-0.10.0.dist-info/RECORD,,
+leidenalg-0.10.0.dist-info/top_level.txt,sha256=P3ENfjbM36KTOwEtlR1kASK7RB5a9tx2_ClF17aXLk0,10
+leidenalg-0.10.0.dist-info/WHEEL,sha256=bipuClDp75Tl92wOCbNQvfy8uWiHgUDTfxkDCRx_slY,101
+leidenalg.libs/.load-order-leidenalg-0.10.0,sha256=5BQNUo3z4gENCLu5VXbayt0L9AlAufM8GwIse86YUiI,192
+leidenalg.libs/igraph-1801c3f9fdc553e6241837b254bfa3dc.dll,sha256=FzO_Bou2MGXMdw9CQ2US7PKpNCGIskA-_d011CiIgR4,2897920
+leidenalg.libs/libleidenalg-52a030c6b6f64b6cd590377f95d072cc.dll,sha256=KTGm5fKYMaqxYEVnVTS45iSYiDnuaqXqYgTDXtUQhSk,132096
+leidenalg.libs/msvcp140-2368ae6bc28a5117afdd9e0dced2ffb4.dll,sha256=qdfT8B8P6BcbCQ8j7bFGB4QVERIyysNPrTBxwQNwrdk,621960
+leidenalg.libs/vcruntime140_1-a5258ddc20c93b3f793f1862f90ac125.dll,sha256=sdO2s83rW3uBh3Z82GEAt2Iz57u5rPVsZPgojzSyaco,36728
