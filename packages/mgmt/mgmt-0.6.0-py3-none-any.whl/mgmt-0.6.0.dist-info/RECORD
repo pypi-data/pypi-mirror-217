@@ -1,0 +1,12 @@
+mgmt/__init__.py,sha256=MwsniSuuCcQ7IkqRlxX5d7mwukVPHOH-b4_3c4A_eLo,1156
+mgmt/__main__.py,sha256=N8erX9xMc70A8Dq0Os-fZ1XJWN0XC1MkBHIdqzasjuI,44
+mgmt/app.py,sha256=V7ChKjoLGREwk023F6EQF8ioudPFBxSjhUwrGDS5UZQ,6751
+mgmt/aws.py,sha256=B5ex2Vv63_nan2TUzDP0SFz-CiD9PQ7B73laRp-J9aU,6090
+mgmt/config.py,sha256=whBhA5s-44l9l-GJmRwifxzP6AW4qRw154haj4fBa1U,1763
+mgmt/files.py,sha256=pevPCJFFPyWJt4x_ljL62tFyeldIhHg7gOerVkG8ioE,2945
+mgmt/log.py,sha256=QB_c2HlUGsnNyDN_LziIdk4IyoSIa-xnU9TvyJZZwIE,957
+mgmt-0.6.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+mgmt-0.6.0.dist-info/METADATA,sha256=Rm8daSf_5XxqZFiIZpRJfZpQJUggy3xZmC50I3Fb3Zs,4990
+mgmt-0.6.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+mgmt-0.6.0.dist-info/entry_points.txt,sha256=mVRdYWWAJXpmPrGr5M2izIvGrar_pUSq1rzOVmowf7w,33
+mgmt-0.6.0.dist-info/RECORD,,
