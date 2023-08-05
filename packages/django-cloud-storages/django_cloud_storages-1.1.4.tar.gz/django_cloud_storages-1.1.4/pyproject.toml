@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling", "django", "requests", "dropbox", "appwrite"]
+build-backend = "hatchling.build"
+
+[project]
+name = "django-cloud-storages"
+version = "1.1.4"
+authors = [
+  { name="Samiddha Chakrabarti", email="samiddha99@protonmail.com" },
+]
+description = "Cloud file storages for django."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Samiddha99/django-cloud-storages"
+"Documentation" = "https://django-cloud-storages.readthedocs.io"
+"Bug Tracker" = "https://github.com/Samiddha99/django-cloud-storages/issues"
