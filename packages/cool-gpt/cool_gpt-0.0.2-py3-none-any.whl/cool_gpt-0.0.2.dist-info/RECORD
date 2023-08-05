@@ -1,0 +1,13 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cool_gpt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cool_gpt/bot.py,sha256=iD0Enfa2HAQEGPeyxRtOLgeatCmTqpLo82-sdfLhqG8,2737
+cool_gpt/speech_to_text/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cool_gpt/speech_to_text/speech_to_text.py,sha256=d_B2ta68DaDOHvETZPv6WO_JSuNyW5alwuyf1JcjNrg,2277
+cool_gpt/speech_to_text/speech_to_text_whisper.py,sha256=RjJQp-IKOk4KnuTSPfyLYWViGd5nc3Kb3YdqCHp4dCQ,715
+cool_gpt/text_to_speech/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cool_gpt/text_to_speech/text_to_speech.py,sha256=h9Kzfv5Bu1FDRJ8oem0qAFJTBeCTEMvzajLPvF76X0w,3268
+cool_gpt-0.0.2.dist-info/LICENSE,sha256=Qv2ilebwoUtMJnRsZwRy729xS5JZQzLauJ0tQzkAkTA,1088
+cool_gpt-0.0.2.dist-info/METADATA,sha256=zin5hKfOI2lEuNjqp_khfVQPcuIMzkMRq5NP81jzRoA,4141
+cool_gpt-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+cool_gpt-0.0.2.dist-info/top_level.txt,sha256=uVOPq2gB4RfbNCwCajsT8ht8KiH_mMg49XkD3GnqptU,18
+cool_gpt-0.0.2.dist-info/RECORD,,
