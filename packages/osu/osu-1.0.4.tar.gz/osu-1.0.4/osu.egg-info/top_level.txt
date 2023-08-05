@@ -1,0 +1,4 @@
+osu
+osu/api
+osu/bancho
+osu/objects
