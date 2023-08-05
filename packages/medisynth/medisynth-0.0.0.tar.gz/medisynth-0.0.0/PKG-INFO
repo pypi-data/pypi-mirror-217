@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: medisynth
+Version: 0.0.0
+Summary: Ultrasound Fetal Brain Imaging Synthesis
+Home-page: https://github.com/mxochicale/medisynth/
+Author: Harvey Mannering and Miguel Xochicale
+Author-email: 
+License: MIT
+Keywords: artificial intelligence,diffusion models
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
