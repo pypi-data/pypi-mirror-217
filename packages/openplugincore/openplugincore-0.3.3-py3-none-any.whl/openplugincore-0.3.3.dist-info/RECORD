@@ -1,0 +1,12 @@
+openplugincore/__init__.py,sha256=9XEsA5RvJL57uhrr_5VnwZV0eDv9EqCAbpgjqz5UJKw,61
+openplugincore/openplugincore.py,sha256=Av_hPfFxSVBBJOTwWKQAF9ZHg4rAOKLci5vIEDYuTgQ,9085
+openplugincore/plugins.json,sha256=ldsbciH0FAlkmkLIWbibpFWgrfudnTd_3GL4-LvX0QM,17627
+openplugincore/types.py,sha256=ZqsWGVlNwxPXAjIISfxrd-lydYc4Zaj_1JXQ9BHkPPk,664
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/mock_data.py,sha256=DuByn6BDQOMkQr9lsd3P5HPYs9MlrWz9B07nXapAJr4,1530
+tests/test_basicTest.py,sha256=QDsef5O-IuWAinNuCfE9Qlv_v1FPKdMRCsciMFXR8EI,2412
+tests/test_e2e.py,sha256=IU9Mm7cK6Vnc4bYyFKzWZ8dUNN642kz72hmtnAQiht8,12849
+openplugincore-0.3.3.dist-info/METADATA,sha256=WOrrwFdcOmOzuvwh_i_fvUrVRStxO0BtUSxn6h8jbl4,908
+openplugincore-0.3.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+openplugincore-0.3.3.dist-info/top_level.txt,sha256=drVNWx86ddYSCEIrsdIS7V_f7T7oyoAl6FN_PtYmUZQ,21
+openplugincore-0.3.3.dist-info/RECORD,,
