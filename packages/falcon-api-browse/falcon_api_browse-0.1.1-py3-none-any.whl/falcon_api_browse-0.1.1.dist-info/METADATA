@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: falcon-api-browse
+Version: 0.1.1
+Summary: Middleware for Falcon web framework to browse JSON API in HTML
+Home-page: https://github.com/maxking/falcon-api-browse
+License: Apache-2.0
+Keywords: falcon
+Author: Abhilash Raj
+Author-email: raj.abhilash1@gmail.com
+Requires-Python: >=3.7
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: Jinja2 (>=2.0.0)
+Requires-Dist: falcon (>=3.0.0)
+Requires-Dist: importlib-resources (>=5.4.0,<6.0.0)
+Project-URL: Repository, https://github.com/maxking/falcon-api-browse
+Description-Content-Type: text/x-rst
+
+=================
+Falcon API Browse
+=================
+
+This project provides a middleware for `Falcon Web Framework
+<https://falcon.readthedocs.io/en/stable/index.html>`_ that will render the
+response in an HTML form for documentation purpose. It uses the docstring from
+the Resource object and all the supported HTTP methods for the resource.
+
+It is inspired by Django Rest Framework's `Browsable API
+<https://www.django-rest-framework.org/topics/browsable-api/>`_ and is written
+using jinja2 templating language.
+
+Installing
+----------
+
+This project is currently in early stages of development. Once it is stable
+enough to be used by other projects, it will be provided via PyPI.
+
+::
+
+   pip install git+https://github.com/maxking/falcon-api-browse
+
+Using
+-----
+
+Since this is a middleware for Falcon, you can use it by passing an initialized
+instance during Falcon App creation.
+
+::
+
+   from falcon import App
+   from falcon_api_browse import HTMLResponseMiddleware
+
+   app = App(middleware=HTMLResponseMiddleware())
+
+
+Examples
+--------
+
+There are some runnable examples in `examples/ <examples/>`_ directory.
+
+LICENSE
+-------
+
+This project and contents of this repo are licensed under Apache 2.0 License.
+
