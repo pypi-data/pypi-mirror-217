@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+src/patch_indices/__init__.py
+src/patch_indices/patch_indices.py
+src/patchgenerator.egg-info/PKG-INFO
+src/patchgenerator.egg-info/SOURCES.txt
+src/patchgenerator.egg-info/dependency_links.txt
+src/patchgenerator.egg-info/top_level.txt
+tests/test_patch_indices.py

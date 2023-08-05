@@ -1,0 +1,21 @@
+[build-system]
+requires = ['setuptools>=61']
+build-backend = 'setuptools.build_meta'
+[project]
+name = "patchgenerator"
+version = "0.0.1"
+authors = [
+  { name="EarthObserved", email="info@earthobserved.com" },
+]
+description = "`Patchgenerator` is a simple tool to generate array indices, with or without overlap, to create numpy array patches. Only requires python."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/earthobserved/patchgenerator"
+"Bug Tracker" = "https://github.com/earthobserved/patchgenerator/-/issues"
