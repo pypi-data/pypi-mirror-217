@@ -1,0 +1,11 @@
+cmake>=3.26
+Cython>=0.29
+decorator>=5.1
+networkx>=3.1
+numpy>=1.21
+pandas<2.0
+python-louvain>=0.16
+six
+scipy>=1.10.0
+tqdm
+networkit>=10.1
