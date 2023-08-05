@@ -1,0 +1,3 @@
+[console_scripts]
+catplayer = catplayer:main
+
