@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+FunctionsITAMVO41Mahmud.egg-info/PKG-INFO
+FunctionsITAMVO41Mahmud.egg-info/SOURCES.txt
+FunctionsITAMVO41Mahmud.egg-info/dependency_links.txt
+FunctionsITAMVO41Mahmud.egg-info/requires.txt
+FunctionsITAMVO41Mahmud.egg-info/top_level.txt
+functions/__init__.py
+functions/functions.py
