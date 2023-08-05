@@ -1,0 +1,14 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+cursesdict/README.MD
+cursesdict/__init__.py
+cursesdict/requirements.txt
+cursesdict/thirdparty.json
+cursesdict.egg-info/PKG-INFO
+cursesdict.egg-info/SOURCES.txt
+cursesdict.egg-info/dependency_links.txt
+cursesdict.egg-info/requires.txt
+cursesdict.egg-info/top_level.txt
