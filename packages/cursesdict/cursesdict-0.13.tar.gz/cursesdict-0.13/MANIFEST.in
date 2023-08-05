@@ -1,0 +1,3 @@
+include cursesdict/requirements.txt
+include cursesdict/thirdparty.json
+include cursesdict/README.MD
