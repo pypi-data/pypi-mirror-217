@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+SimuConvert/SimuConvert.egg-info/PKG-INFO
+SimuConvert/SimuConvert.egg-info/SOURCES.txt
+SimuConvert/SimuConvert.egg-info/dependency_links.txt
+SimuConvert/SimuConvert.egg-info/requires.txt
+SimuConvert/SimuConvert.egg-info/top_level.txt
