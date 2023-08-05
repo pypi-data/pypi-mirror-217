@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+src/nanorequests.egg-info/PKG-INFO
+src/nanorequests.egg-info/SOURCES.txt
+src/nanorequests.egg-info/dependency_links.txt
+src/nanorequests.egg-info/requires.txt
+src/nanorequests.egg-info/top_level.txt
