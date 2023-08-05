@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: pydiscordself
+Version: 0.2
+Summary: Cette librairie permet de créer des selfbots Discord.
+Home-page: https://github.com/8borane8/pydiscordself
+Author: borane
+License: ISC
+Keywords: discord,selfbot
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+
+# PyDiscordSelf
+
+Cette librairie permet de créer des selfbots Discord.
+
+## Exemple
+
+```python
+import pydiscordself
+import json
+
+global config
+with open("./config.json", "r") as configFile:
+    config = json.load(configFile)
+
+selfbot = pydiscordself.SelfBot(config["token"])
+
+def on_ready(_data):
+    print("SelfBot is READY !")
+
+def on_message(data):
+    print(data["content"])
+
+selfbot.addEventListener("READY", on_ready)
+selfbot.addEventListener("MESSAGE_CREATE", on_message)
+
+selfbot.start()
+```
