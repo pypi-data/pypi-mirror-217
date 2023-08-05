@@ -1,0 +1,4 @@
+py-cord
+hexacolors
+requests
+python-dotenv
