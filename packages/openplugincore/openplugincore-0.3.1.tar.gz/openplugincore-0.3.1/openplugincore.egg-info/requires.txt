@@ -1,0 +1,5 @@
+pyyaml
+requests
+openai
+langchain
+python-dotenv
