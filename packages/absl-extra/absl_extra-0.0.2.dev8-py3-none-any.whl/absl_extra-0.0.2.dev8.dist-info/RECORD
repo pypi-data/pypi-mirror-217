@@ -1,0 +1,11 @@
+absl_extra/__init__.py,sha256=ThVIqFkU-5AB8Hd_lsG69v88cavoY48S0YO5JWldKe8,682
+absl_extra/py.typed,sha256=zlBhTdAQBRfJxeJXD-QnlXiZYsiAJYYkr3mbEsmwSac,64
+absl_extra/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+absl_extra/src/jax_utils.py,sha256=dRikYAqiPZyG_M9GVDEu0iTk-1y2MZCR5Q_Iy4gFZqQ,1202
+absl_extra/src/logging_utils.py,sha256=fWyj_3EeqMCFJvVafgBOYcXrkVt2blURySRcNLwLcMQ,2296
+absl_extra/src/notifier.py,sha256=1s59SbJ59NO-HZqiUm_PCXEg2NauRffDYFMShmLAC3Y,2487
+absl_extra/src/tasks.py,sha256=T78XvAYS2ogP1a-tGZtHHrnhzpc2w3jlsJiBVrws1aM,4281
+absl_extra/src/tf_utils.py,sha256=CyP5aFgzzconSf-66MLldVA7L4n633Rg-O-DSlMfPk8,4456
+absl_extra-0.0.2.dev8.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+absl_extra-0.0.2.dev8.dist-info/METADATA,sha256=QPa2WyXM6HRaWX8M39hmKBXfD91qMhuFg5dndXDvrrM,2693
+absl_extra-0.0.2.dev8.dist-info/RECORD,,
