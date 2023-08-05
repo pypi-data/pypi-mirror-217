@@ -1,0 +1,9 @@
+cachefunc/__init__.py,sha256=D6cWnm-oc0fyJvMK1543Au8jE2YIZ5DcvtOHlml7lcc,222
+cachefunc/cache/base.py,sha256=aIvURumxsdigMt5YVSbYccGasolF3Mpko_8zgmbqLD0,2181
+cachefunc/cache/dict_cache.py,sha256=ud6E1_OilOtvS65Aon2gfQdAc029kF268g8DF-CQy5s,919
+cachefunc/cache/redis_cache.py,sha256=kKP0Gm9aSZdeSB6kuqsyioDAWllxEzgk7rQWcobQgKM,565
+cachefunc/log.py,sha256=sfsv5qU01CP6zPu-sy0Ogik_qIor63qlU9Jvp8_SRYI,680
+cachefunc/main.py,sha256=tgzrqk-UrKplkn27oMK3kezBlVnY0aaXuyNBxdJ9mn4,1221
+cachefunc-0.2.0.dist-info/METADATA,sha256=vijGnrLzou1NwW3K9RamZAIe9lIQBJtZRFQzK-MBdSk,596
+cachefunc-0.2.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+cachefunc-0.2.0.dist-info/RECORD,,
