@@ -1,0 +1,128 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-02 13:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+#: aleksis/apps/postbuero/apps.py:29
+msgid "Use WebMilter APIs for domain"
+msgstr ""
+
+#: aleksis/apps/postbuero/forms.py:38
+msgid "Local part not allowed."
+msgstr ""
+
+#: aleksis/apps/postbuero/models.py:11 aleksis/apps/postbuero/models.py:28
+#: aleksis/apps/postbuero/models.py:52
+msgid "Domain"
+msgstr ""
+
+#: aleksis/apps/postbuero/models.py:13
+msgid "Public usable"
+msgstr ""
+
+#: aleksis/apps/postbuero/models.py:24
+msgid "Can use domain"
+msgstr ""
+
+#: aleksis/apps/postbuero/models.py:29 aleksis/apps/postbuero/models.py:53
+msgid "Local part"
+msgstr ""
+
+#: aleksis/apps/postbuero/models.py:32 aleksis/apps/postbuero/models.py:72
+msgid "Person"
+msgstr ""
+
+#: aleksis/apps/postbuero/models.py:42
+msgid "Mail address"
+msgstr ""
+
+#: aleksis/apps/postbuero/models.py:43
+msgid "Mail addresses"
+msgstr ""
+
+#: aleksis/apps/postbuero/models.py:62 aleksis/apps/postbuero/models.py:63
+msgid "Mail alias"
+msgstr ""
+
+#: aleksis/apps/postbuero/models.py:89
+msgid "Mail alias for a person"
+msgstr ""
+
+#: aleksis/apps/postbuero/models.py:90
+msgid "Mail aliases for persons"
+msgstr ""
+
+#: aleksis/apps/postbuero/models.py:96
+msgid "Group"
+msgstr ""
+
+#: aleksis/apps/postbuero/models.py:118
+msgid "Mail alias for a group"
+msgstr ""
+
+#: aleksis/apps/postbuero/models.py:119
+msgid "Mail aliases for groups"
+msgstr ""
+
+#: aleksis/apps/postbuero/preferences.py:8
+msgid "Postbuero"
+msgstr ""
+
+#: aleksis/apps/postbuero/preferences.py:22
+msgid "Comma-seperated list of disallowed local parts"
+msgstr ""
+
+#: aleksis/apps/postbuero/preferences.py:32
+msgid "Sent notification to user and new address if a new email address was registered."
+msgstr ""
+
+#: aleksis/apps/postbuero/preferences.py:42
+msgid "Sent notification to admins if a new email address was registered."
+msgstr ""
+
+#: aleksis/apps/postbuero/schema.py:56
+msgid "Local part name is disallowed"
+msgstr ""
+
+#: aleksis/apps/postbuero/schema.py:78
+msgid "You have added an email address"
+msgstr ""
+
+#: aleksis/apps/postbuero/schema.py:80
+msgid "You have added the email address {return_data['mail_address']} to your profile."
+msgstr ""
+
+#: aleksis/apps/postbuero/templates/templated_email/mail_added.email:5
+#, python-format
+msgid "New email address: %(address)s"
+msgstr ""
+
+#: aleksis/apps/postbuero/templates/templated_email/mail_added.email:9
+#, python-format
+msgid ""
+"\n"
+"    The user %(username)s (%(full_name)s) has registered the following email address:\n"
+"    "
+msgstr ""
+
+#: aleksis/apps/postbuero/templates/templated_email/mail_added.email:17
+#, python-format
+msgid ""
+"\n"
+"            The user %(username)s (%(full_name)s) has registered the following email address:\n"
+"        "
+msgstr ""
