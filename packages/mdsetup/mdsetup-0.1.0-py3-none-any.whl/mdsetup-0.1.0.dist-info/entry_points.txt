@@ -1,0 +1,3 @@
+[console_scripts]
+mdsetup=mdsetup.__main__:main
+
