@@ -1,0 +1,10 @@
+{
+  "urls": [
+    ["micropython_icg20660/examples/icg20660_gyro_dlpf_mode.py", "github:jposada202020/MicroPython_ICG20660/examples/icg20660_gyro_dlpf_mode.py"],
+    ["micropython_icg20660/examples/icg20660_gyro_full_scale.py", "github:jposada202020/MicroPython_ICG20660/examples/icg20660_gyro_full_scale.py"],
+    ["micropython_icg20660/examples/icg20660_simpletest.py", "github:jposada202020/MicroPython_ICG20660/examples/icg20660_simpletest.py"],
+    ["micropython_icg20660/examples/icg20660_acceleration_range.py", "github:jposada202020/MicroPython_ICG20660/examples/icg20660_acceleration_range.py"],
+    ["micropython_icg20660/examples/icg20660_dlpf_configuration.py", "github:jposada202020/MicroPython_ICG20660/examples/icg20660_dlpf_configuration.py"]
+  ],
+  "version": "0.1"
+}

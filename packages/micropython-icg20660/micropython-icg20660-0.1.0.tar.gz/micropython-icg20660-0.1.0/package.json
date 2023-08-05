@@ -1,0 +1,8 @@
+{
+  "urls": [
+    ["micropython_icg20660/__init__.py", "github:jposada202020/MicroPython_ICG20660/micropython_icg20660/__init__.py"],
+    ["micropython_icg20660/i2c_helpers.py", "github:jposada202020/MicroPython_ICG20660/micropython_icg20660/i2c_helpers.py"],
+    ["micropython_icg20660/icg20660.py", "github:jposada202020/MicroPython_ICG20660/micropython_icg20660/icg20660.py"]
+  ],
+  "version": "0.1"
+}
