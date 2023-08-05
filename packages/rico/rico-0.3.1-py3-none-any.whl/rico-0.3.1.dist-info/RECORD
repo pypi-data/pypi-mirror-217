@@ -1,0 +1,11 @@
+rico-0.3.1.dist-info/METADATA,sha256=ZJuJ-xqbLajnmoNmX8llOOZ47uq9EKWKRbPtid3qH2A,18162
+rico-0.3.1.dist-info/WHEEL,sha256=g58cvAsF5_9d0VXJuk7F0rhl6nAjUc5P9vx880WkZtI,90
+rico-0.3.1.dist-info/licenses/LICENSE,sha256=s9KHH0oP1R9gzbUt9YippuvTWgWzlxo0tSTtF60_LMk,1070
+rico/__init__.py,sha256=Fzh-F8SQxlq57iLIvXjfNcOqnRHIrBfab4gSh_o4zlY,710
+rico/_config.py,sha256=UFlQEpqOb5xiqdbjYXg1ksj3WYAPqw0p9CVNTR9B8eQ,6399
+rico/_container.py,sha256=Puyq7ZcXJQnedfgvWdUJuwcZy5Zsiir9y7paVShDQ5c,5509
+rico/_content.py,sha256=eUqqLhIBgl6GCz3LIBWrGz4kcoYKv6fJd7qh-Sy0m44,13794
+rico/_html.py,sha256=cSmg8Edte8-o9kK5OzGWnAaCduGqTAFxlPZlvBembZA,7951
+rico/_version.py,sha256=M1ShEWOMp1yIsan7xSKNwkzWwMvtAX4avZIAdiyMDO4,340
+rico/_version.txt,sha256=eePyLKN8f99MKa42SNawCMPLZUcmCkU0CSdUcJGdxnQ,6
+rico-0.3.1.dist-info/RECORD,,
