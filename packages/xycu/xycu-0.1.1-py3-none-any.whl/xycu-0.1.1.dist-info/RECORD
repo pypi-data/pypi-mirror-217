@@ -1,0 +1,15 @@
+xycu/__init__.py,sha256=Ga3-P4LoRBWNQABPyYPYpabJxxEe2Clbe9PWQOiKf5g,304
+xycu/clients.py,sha256=BPnX_rZtgxQQBV3jrOnQ_yk2LQo5cDDm1XjzeiwNdhw,491
+xycu/managers/__init__.py,sha256=foTfUR6889DGjnDl1hPMIhFx2jP-CvEAt6XYK0mD_k4,19
+xycu/managers/nsfw.py,sha256=XVHI0edAp8m0bug4lGsaKBTbeR3WoKy4qJfQ8VwYaQQ,494
+xycu/managers/sfw.py,sha256=oQq4tiAtJetMB9_BJ_9__pppbtSPNlSrsouUYWcpVAc,485
+xycu/models/__init__.py,sha256=foTfUR6889DGjnDl1hPMIhFx2jP-CvEAt6XYK0mD_k4,19
+xycu/models/enums/__init__.py,sha256=foTfUR6889DGjnDl1hPMIhFx2jP-CvEAt6XYK0mD_k4,19
+xycu/models/enums/categories/__init__.py,sha256=foTfUR6889DGjnDl1hPMIhFx2jP-CvEAt6XYK0mD_k4,19
+xycu/models/enums/categories/nsfw.py,sha256=kGMLveZoQkn6lENEpxbZaPIMmx-Ahvsw3Wq6J3mQois,211
+xycu/models/enums/categories/sfw.py,sha256=L24CanEkRc02c3X1AaS7DvwtNR_Lzx7zwEWXwM0Cg0g,755
+xycu/models/images.py,sha256=cjY7tjRKzirn7fnn-KmVy73W_X2fHVoLaLfmh3JtZsA,103
+xycu-0.1.1.dist-info/LICENSE,sha256=PRMdGkElj6eqhzMAATLaz84OdbHRSw-CyGkhl4Fgl_g,1086
+xycu-0.1.1.dist-info/METADATA,sha256=0UtuypUXY7mBoDckHekj489BmdjWfAhziySTD2mhVHs,1526
+xycu-0.1.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+xycu-0.1.1.dist-info/RECORD,,
