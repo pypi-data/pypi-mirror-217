@@ -1,0 +1,9 @@
+whisper_timestamped/__init__.py,sha256=MtrdjQEgw4llPr5yd3EDOkefiNoSJ8OGGStncKcxVPA,552
+whisper_timestamped/make_subtitles.py,sha256=Jpvy-9KL4GeXZMNdCvCmvi-zkuCzLuv8WgtPd8t71Y4,6979
+whisper_timestamped/transcribe.py,sha256=r6sNj4jeFUV6I0zPnvzZNkp7pZ88Rd5a41sDSbVmPk4,114415
+whisper_timestamped-1.12.20.dist-info/LICENCE,sha256=bx5iLIKjgAdYQ7sISn7DsfHRKkoCUm1154sJJKhgqnU,35184
+whisper_timestamped-1.12.20.dist-info/METADATA,sha256=SH3KZ-PfmYxIMB74NTYGwXk9ufSTIWKmyzqVBn4HRTc,660
+whisper_timestamped-1.12.20.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+whisper_timestamped-1.12.20.dist-info/entry_points.txt,sha256=a3u8N2b_6mH1CuL_bZy7IOlfXCd_9Y8Zh6kU69n0ZHk,152
+whisper_timestamped-1.12.20.dist-info/top_level.txt,sha256=tWG0evV9pcoU3NjZFBVChvs7mNWjngx6Zf4eGTlGjDM,20
+whisper_timestamped-1.12.20.dist-info/RECORD,,

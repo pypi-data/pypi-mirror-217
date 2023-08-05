@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: whisper-timestamped
+Version: 1.12.20
+Summary: Add to OpenAI Whisper the capability to give word timestamps
+Home-page: https://github.com/linto-ai/whisper-timestamped
+Author: Jeronymous
+License: GPLv3
+Platform: UNKNOWN
+Requires-Python: >=3.7
+License-File: LICENCE
+Requires-Dist: Cython
+Requires-Dist: dtw-python
+Requires-Dist: openai-whisper
+Provides-Extra: dev
+Requires-Dist: matplotlib ; extra == 'dev'
+Requires-Dist: jsonschema ; extra == 'dev'
+Requires-Dist: transformers ; extra == 'dev'
+Provides-Extra: vad
+Requires-Dist: onnxruntime ; extra == 'vad'
+Requires-Dist: torchaudio ; extra == 'vad'
+
+UNKNOWN
+
