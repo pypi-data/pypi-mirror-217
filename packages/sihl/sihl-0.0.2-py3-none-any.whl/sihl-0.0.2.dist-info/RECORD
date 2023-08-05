@@ -1,0 +1,15 @@
+sihl/__init__.py,sha256=oJwz9yMpeYI5_iUuzCRYlzj6N8U-y3YMVCyhkSirZ7o,249
+sihl/heads/NotoSansMono-Bold.ttf,sha256=1gGRg1AX2BqrAQYxknkfuoYpKYYrRGak8H59qg2gAV0,402648
+sihl/heads/__init__.py,sha256=VenAW0t3E-OsVeAoPfjR1k7prlaGjk2x4sn6gKInycI,233
+sihl/heads/binary_classification.py,sha256=u9hKidT3rkSt0NpHzLg8qfpnahYqwq02nYBfVuusZqw,3132
+sihl/heads/multiclass_classification.py,sha256=ecKJkne2XNhJNypZIhOmWysVOXqAlM1sjwt_lXRuZng,3725
+sihl/heads/multilabel_classification.py,sha256=tuR9A1db1VdfFmfpM6cT24IarOUG0nofOq4CkYkdoVU,4581
+sihl/layers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sihl/lightning_module.py,sha256=2oVchtMdymvlqeoafn-nvrHTBxHqHgYPQOEsqeFMUPw,4515
+sihl/sihl_model.py,sha256=G9w-dS04VTU0_qnH7K9DCf_YOCfGiHc_dmXFn5texas,731
+sihl/timm_backbone.py,sha256=JRTWyfKezYnYbDCtjs0CexbeluNMVABveGddZE-GbHU,2797
+sihl/torchvision_backbone.py,sha256=gJl0zR7-BLvNbRqvfnYtDXQqsG4QxjJ4UM_hLKdPSXo,6470
+sihl-0.0.2.dist-info/LICENSE,sha256=3Z8GJr8-OMkLyLnau7FXHBohdr3e2DB8LhvI8CI-MYg,1063
+sihl-0.0.2.dist-info/METADATA,sha256=Bn2iHzu--321zH8a9e3c5mOKOgxCNf-WQdVAri4gwTI,1788
+sihl-0.0.2.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+sihl-0.0.2.dist-info/RECORD,,
