@@ -1,0 +1,36 @@
+# Package deps
+arrow
+pint
+pydantic==1.10.9
+pytz
+requests>=2.0,<3.0dev
+responses
+
+# Pre commit hook
+pre-commit
+
+# Testing
+pytest
+# Code coverage
+pytest-cov
+
+# Type checking
+mypy
+types-requests
+types-pytz
+types-Flask
+
+# Docs
+# Pinning to avoid a current bug in 0.13
+pydata-sphinx-theme
+# Support pydantic autodoc
+autodoc_pydantic
+sphinx_remove_toctrees
+myst-nb
+sphinx-autobuild
+sphinx-inline-tabs
+sphinx_copybutton
+sphinx_design
+
+# Support for social / adds meta tags
+sphinxext-opengraph
