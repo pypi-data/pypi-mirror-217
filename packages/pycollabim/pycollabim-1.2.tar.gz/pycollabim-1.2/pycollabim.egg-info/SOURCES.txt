@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+pycollabim/__init__.py
+pycollabim.egg-info/PKG-INFO
+pycollabim.egg-info/SOURCES.txt
+pycollabim.egg-info/dependency_links.txt
+pycollabim.egg-info/requires.txt
+pycollabim.egg-info/top_level.txt
