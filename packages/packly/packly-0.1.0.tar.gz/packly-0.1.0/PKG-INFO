@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: packly
+Version: 0.1.0
+Summary: Packly makes Python packaging easy
+Author: dylanopen
+Author-email: opendylan@proton.me
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# Packly: making Python packaging easier
+
+Packly is a project designed to help make creating Python packages as easy as possible.
+
+You can add a function at the press of a button, and instantly be coding.
+
+Check out Packly - you'll never want to turn back!
+
