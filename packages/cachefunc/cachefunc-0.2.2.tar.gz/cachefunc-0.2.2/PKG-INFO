@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: cachefunc
+Version: 0.2.2
+Summary: 
+License: MIT
+Author: Petrov Mikhail
+Author-email: petrov.ma@icloud.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# cachefunc
+
+Library for caching functions and coroutines result with decorators
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
