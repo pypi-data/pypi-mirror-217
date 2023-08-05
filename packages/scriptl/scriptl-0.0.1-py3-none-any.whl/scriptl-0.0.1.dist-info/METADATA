@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: scriptl
+Version: 0.0.1
+Summary: Scriptl: Making Python Programming A Little Easier
+Author-email: The Open Project <opendylan@proton.me>
+Project-URL: Homepage, https://github.com/dylanopen/scriptl
+Project-URL: Bug Tracker, https://github.com/dylanopen/scriptl/issues
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+
