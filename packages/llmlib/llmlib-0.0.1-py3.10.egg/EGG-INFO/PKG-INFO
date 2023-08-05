@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: llmlib
+Version: 0.0.1
+Summary: Portability lib for OpenAI, Hugging Face, and FastChat local model APIs
+Home-page: https://github.com/mark-watson/llmlib
+Author: Mark Watson
+Author-email: Mark Watson <markw@markwatson.com>
+License: Apache License, Version 2.0
+Project-URL: Homepage, https://github.com/mark-watson/llmlib
+Project-URL: Bug Tracker, https://github.com/mark-watson/llmlib/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Portability lib for OpenAI, Hugging Face, and FastChat local model APIs
+
+[![PyPI](https://img.shields.io/pypi/v/llmlib.svg)](https://pypi.org/project/llmlib/)
+[![Changelog](https://img.shields.io/github/v/release/mark-watson/llmlib?include_prereleases&label=changelog)](https://github.com/mark-watson/llmlib/releases)
+[![Tests](https://github.com/mark-watson/llmlib/workflows/Test/badge.svg)](https://github.com/mark-watson/llmlib/actions?query=workflow%3ATest)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/mark-watson/llmlib/blob/master/LICENSE)
+
+## NOTE: This project is just getting started, not ready to use yet
+
+## Docs
+
+TBD
