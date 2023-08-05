@@ -1,0 +1,12 @@
+polywrap_web3_config_bundle/__init__.py,sha256=sqcyZOtWrJoOnHjpvVz8729q69hN1qKP6MSV6vRKEmA,125
+polywrap_web3_config_bundle/bundle.py,sha256=kUOeaJKAD4BG56GCK7Mr0_DbF9XIGaZ9CoxMGEoeSfA,3728
+polywrap_web3_config_bundle/config.py,sha256=DE8SVaBCvM89TqhJFx7YU8Ar1ylpX2zGxS7q11hft7Y,477
+polywrap_web3_config_bundle/embeds/__init__.py,sha256=m9lCzMZnvrQAhxKQVV0Yd0jCxvVUjMzwjrCO50Llino,505
+polywrap_web3_config_bundle/embeds/ipfs-http-client/wrap.info,sha256=umdr9zn2e-WfBKc4hk1RacDzmL8pWeaGUBsMN9DaUzQ,9034
+polywrap_web3_config_bundle/embeds/ipfs-http-client/wrap.wasm,sha256=3LpTbok63OfsMF0kkwjz_FXyXjSOZNyisZ8ADCsNoz4,150523
+polywrap_web3_config_bundle/embeds/ipfs-sync-resolver/wrap.info,sha256=KSMRN6z2sqfrW_vvMCP9UtUdkfyRRN29CNmBYmMkGM4,6954
+polywrap_web3_config_bundle/embeds/ipfs-sync-resolver/wrap.wasm,sha256=MXMlDTA1gKUWXUAdSt_IRNRFxZnixM5P5jqspMrw_oA,253658
+polywrap_web3_config_bundle/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+polywrap_web3_config_bundle-0.1.0a1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+polywrap_web3_config_bundle-0.1.0a1.dist-info/METADATA,sha256=OC418N_wv692oX3S4Xyp39G9pHNQ-wNz9Fo5Ur8zrqQ,874
+polywrap_web3_config_bundle-0.1.0a1.dist-info/RECORD,,
