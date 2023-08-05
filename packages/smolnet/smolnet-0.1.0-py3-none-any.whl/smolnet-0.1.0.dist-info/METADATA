@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: smolnet
+Version: 0.1.0
+Summary: smolnet, a tiny MLP module, implemented from scratch using numpy
+Author: Souvik Bhattacharyya
+Author-email: souvikshanku@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: numpy (>=1.25.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+Implementation of Multi Layer Perceptron from scratch using only `numpy`. Broadly based on [Michael Nielson's book](http://neuralnetworksanddeeplearning.com/) and inspired by Karpathy's [micrograd](https://github.com/karpathy/micrograd).
