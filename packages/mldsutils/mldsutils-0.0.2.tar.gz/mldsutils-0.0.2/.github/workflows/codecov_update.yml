@@ -1,0 +1,29 @@
+name: API workflow
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: codecov
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v2
+      with:
+        python-version: '3.9'
+    - name: Test with pytest
+      run: |
+       pip install pytest
+       pip install pytest-cov
+       pip install --upgrade setuptools
+       pip install scikit-learn==1.2.2
+       pip install mldsutils
+       pip install imblearn
+    - name: Run tests and collect coverage
+      run: pytest --cov=./ --cov-report=xml
+    - name: Upload coverage reports to Codecov with GitHub Action
+      uses: codecov/codecov-action@v3
+      with:
+          token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
+          env_vars: OS,PYTHON
+          files: ./coverage.xml
