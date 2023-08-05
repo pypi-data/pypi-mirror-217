@@ -1,0 +1,6 @@
+ssh_backup/cli/main.py,sha256=hiNndVZoqMB9zmKPqwY594tc3SUlmGGuqbv60k9KgQs,32
+ssh_backup/server/main.py,sha256=67G5OlCnST1FTS_UlGoUC_7kb8ygBjfLlp4wMMA7XgM,19
+guiosoft_ssh_backup-0.1.0.dist-info/LICENSE,sha256=_ES1OmsHnblOhMZ4NviPeD3yoitFiPInKve3m1hwyBc,1073
+guiosoft_ssh_backup-0.1.0.dist-info/METADATA,sha256=2gI8yd3oGQnXI2SH8Yl8AEGh2__vWdqeMG8j6ty7EM8,711
+guiosoft_ssh_backup-0.1.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+guiosoft_ssh_backup-0.1.0.dist-info/RECORD,,
