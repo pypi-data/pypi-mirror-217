@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: xycu
+Version: 0.1.1
+Summary: An unofficial Python waifu.pics API wrapper
+Home-page: https://github.com/elaresai/xycu
+License: MIT
+Author: elaresai
+Author-email: elaresai@gmail.com
+Maintainer: elaresai
+Maintainer-email: elaresai@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: attrs (>=23.1.0,<24.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Project-URL: Repository, https://github.com/elaresai/xycu
+Description-Content-Type: text/markdown
+
+# xycu
+An unofficial Python [waifu.pics](https://waifu.pics) API wrapper
+
+![language](https://img.shields.io/badge/language-Python-009933)
+![license](https://img.shields.io/badge/license-MIT-cafffe)
+
+# Installation
+`pip install xycu`
+
+# Examples
+`examples/basic.py`
+```py
+"""basic.py"""
+
+from xycu import Client, SfwCategory
+
+client = Client()
+
+print(client.sfw.get(SfwCategory.HUG).url)
+print(client.sfw.get(SfwCategory.KISS).url)
+print(client.sfw.get(SfwCategory.LICK).url)
+print(client.sfw.get(SfwCategory.BITE).url)
+```
+
+# Links
+[🐍 **PyPi**](https://pypi.org/project/xycu/)\
+[🏠 **Homepage**](https://github.com/elaresai/xycu)\
+[🐱 **Repository**](https://github.com/elaresai/xycu)
+
