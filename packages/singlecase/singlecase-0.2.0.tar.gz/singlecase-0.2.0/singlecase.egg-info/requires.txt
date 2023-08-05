@@ -1,0 +1,8 @@
+numpy
+pandas
+scipy
+
+[dev]
+black
+pip-tools
+pytest
