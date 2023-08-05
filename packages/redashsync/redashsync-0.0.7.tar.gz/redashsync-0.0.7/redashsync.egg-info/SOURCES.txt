@@ -1,0 +1,15 @@
+setup.py
+redashsync/__init__.py
+redashsync/main.py
+redashsync.egg-info/PKG-INFO
+redashsync.egg-info/SOURCES.txt
+redashsync.egg-info/dependency_links.txt
+redashsync.egg-info/not-zip-safe
+redashsync.egg-info/requires.txt
+redashsync.egg-info/top_level.txt
+redashsync/config/__init__.py
+redashsync/config/yaml.py
+redashsync/redash/__init__.py
+redashsync/redash/data.py
+redashsync/slack/__init__.py
+redashsync/slack/messages.py
