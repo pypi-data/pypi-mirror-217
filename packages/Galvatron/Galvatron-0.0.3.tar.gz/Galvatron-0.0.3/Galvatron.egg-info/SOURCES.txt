@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+Galvatron/__init__.py
+Galvatron/model.py
+Galvatron.egg-info/PKG-INFO
+Galvatron.egg-info/SOURCES.txt
+Galvatron.egg-info/dependency_links.txt
+Galvatron.egg-info/requires.txt
+Galvatron.egg-info/top_level.txt
