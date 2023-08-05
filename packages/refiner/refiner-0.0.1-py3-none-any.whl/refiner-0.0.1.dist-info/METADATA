@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: refiner
+Version: 0.0.1
+Summary: API for creating OpenAI embeddings, storing them in Pinecone, and using them to search for similar text.
+Author-email: Alex Daro <gmx2267@gmail.com>
+Project-URL: Homepage, https://github.com/adaro/ai-refiner
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click
+Requires-Dist: matplotlib
+Requires-Dist: openai
+Requires-Dist: pandas
+Requires-Dist: pinecone-client
+Requires-Dist: plotly
+Requires-Dist: python-dotenv
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+
+# AI-Refiner
+
+## Using the Embeddings API/CLI
+
+The Embeddings API is a Pinecone wrapper written in Python that allows you to convert and store text as embeddings. Embedding are generated from text using OpenAI and stored as vectors in Pinecone. Embeddings can be used to create visualization tools, model training and tuning tools, text search, Q/A and recommendation APIs.
+
+## Installation
+
+To use the Embeddings CLI, you'll need to clone the repository and install the necessary dependencies.
+
+`git clone https://github.com/adaro/AI-Refiner.git`
+
+Create a `.env` file either in the root folder or anywhere your python environment has access to when using the `--config-file` option. Add your OpenAI API Key, Pinecone API Key and Pinecone environment name, or pass these in as CLI options or module kwargs.
+
+`PINECONE_API_KEY="API_KEY"`
+
+`PINECONE_ENVIRONMENT_NAME="ENV_NAME"`
+
+`OPENAI_API_KEY="API_KEY"`
+
+From the root folder install the required dependencies:
+`pip install .`
+
+## Help
+
+To see the available sub-commands run the help option.
+
+`refiner  --help`
