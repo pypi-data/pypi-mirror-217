@@ -1,0 +1,3 @@
+include pydeepchainmap/requirements.txt
+include pydeepchainmap/thirdparty.json
+include pydeepchainmap/README.MD

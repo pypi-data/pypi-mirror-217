@@ -1,0 +1,13 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+pydeepchainmap/README.MD
+pydeepchainmap/__init__.py
+pydeepchainmap/requirements.txt
+pydeepchainmap/thirdparty.json
+pydeepchainmap.egg-info/PKG-INFO
+pydeepchainmap.egg-info/SOURCES.txt
+pydeepchainmap.egg-info/dependency_links.txt
+pydeepchainmap.egg-info/top_level.txt
