@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+tool.py
+77tool.egg-info/PKG-INFO
+77tool.egg-info/SOURCES.txt
+77tool.egg-info/dependency_links.txt
+77tool.egg-info/entry_points.txt
+77tool.egg-info/requires.txt
+77tool.egg-info/top_level.txt

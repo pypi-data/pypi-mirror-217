@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: 77tool
+Version: 1.0.0
+Summary: 77 branch tool
+Home-page: https://github.com/linrol/77tool
+Author: linrol
+Author-email: linrolmail@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# amyTools
+
+#### 介绍
+77轻量工具
+
+#### 安装教程
+
+1.  安装最新的python环境
+2.  pip3 install 77tool
+
+#### 使用说明
+
+####命令
+77tool mr
+基于当前分支创建远程分支并发起merge request，目标分支为当前分支
+
+
