@@ -1,0 +1,8 @@
+setup.py
+vit_l32_keras/__init__.py
+vit_l32_keras/vit_l32.py
+vit_l32_keras.egg-info/PKG-INFO
+vit_l32_keras.egg-info/SOURCES.txt
+vit_l32_keras.egg-info/dependency_links.txt
+vit_l32_keras.egg-info/requires.txt
+vit_l32_keras.egg-info/top_level.txt
