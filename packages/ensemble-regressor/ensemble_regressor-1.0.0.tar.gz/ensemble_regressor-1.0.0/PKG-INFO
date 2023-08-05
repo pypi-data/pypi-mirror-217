@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: ensemble_regressor
+Version: 1.0.0
+Summary: Ensemble Regressor Package
+Home-page: https://www.fh-kufstein.ac.at
+Author: Judith von Bornhaupt & Markus Bartl
+Author-email: 2210837780@stud.fh-kufstein.ac.at, 2210837729@stud.fh-kufstein.ac.at
+Requires: numpy
+Requires: matplotlib
+Requires: setuptools
+Description-Content-Type: text/markdown
+
+# Softwareentwicklung 2 - Projektarbeit
+
+PACKAGE-Beschreibung 
+
+## Dateien
+[Klasse: Regressor](ensemble_regressor/regressor.py)
+
+[Klasse: Ensemble Regressor](ensemble_regressor/ensemble_regressor.py)
+
+[Testen: Unittesting](ensemble_regressor/unittesting.py)
+
+## 2-Do's
+- [ ] Vorgaben in Python-Package umsetzen
+  - [x] Python Klassen erstellt
+  - [x] Python-Paket erstellen
+  - [ ] automatisieren
+- [x] Unittesting (mind. 5) um Funktionalität der Klasse zu testen
+- [ ] REST-Webservice entwickeln, der das erstellte Paket nutzt und passende Endpoints anbietet
+- [ ] Docker-Image erstellen für den erstellten Web-Service
+- [ ] gitlab-Pipeline entwickeln um Tests und alle anderen automatisierten Schritte auszuführen
