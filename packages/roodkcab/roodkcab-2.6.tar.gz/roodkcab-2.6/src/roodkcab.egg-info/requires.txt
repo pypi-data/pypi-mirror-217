@@ -1,0 +1,5 @@
+rich
+configparser
+requests
+threading
+gitpython
