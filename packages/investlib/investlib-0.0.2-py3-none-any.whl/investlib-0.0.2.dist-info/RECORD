@@ -1,0 +1,16 @@
+investlib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+investlib/backtest.py,sha256=ayUzz6_VOHQcdorwxwobi-SRvPg3HyV1hxfLEFehPzc,3779
+investlib/core.py,sha256=b3rFtTAYUpkAM02vNtREGo6QEgS8uQugomkGynxR-y8,5190
+investlib/data.py,sha256=DsFH8Y95gywUmQToBZ55tlyqImB1EL51WyB9xtVo3rk,4205
+investlib/download.py,sha256=FqwYs034UNGD2Gx7dctmnR0Xoe9RLLejXkxA85DdaE0,846
+investlib/draw.py,sha256=xEQ2exf2JgkoZyOi-ava20s1h72PWAzrq6VlRvdSK7s,5528
+investlib/filters.py,sha256=rRzoRTX02DdSN2VxZnPpgE96-RBUkoDnMxNt2M62wlw,2757
+investlib/portfolio.py,sha256=cU631tZqqO7mu6ZZ3FzPnfqpSQtcKt10w5ll3DGqeVw,617
+investlib/rebalance.py,sha256=iC-L7khtD40wUbWqbUX0VjyJEuqWFmouMIqYF8I70tg,1472
+investlib/spydiffeqw.py,sha256=uuoeFlUDIN7kf1QAjjVT2Mja4xJFgeYehSpPMni6ObY,1703
+investlib/spystdreb.py,sha256=ufbiUDnH0VyqxDxhNeahZ8T2rUQ20eZB3L3i0nAfpis,2332
+investlib/strategy.py,sha256=6LCtFLiEtnUt3yc5x1gotose3Rxni7ZEiudil23V5lw,5455
+investlib-0.0.2.dist-info/METADATA,sha256=DiPoFyqNDGNlsQKios9uaiDpJRpGeO7_CSMC7LxCCj8,3433
+investlib-0.0.2.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+investlib-0.0.2.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+investlib-0.0.2.dist-info/RECORD,,
