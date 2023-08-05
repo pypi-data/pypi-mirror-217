@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: maroon
+Version: 0.1.41
+Summary: Maroon is a package that manages music for Roon
+License: GPL-3.0
+Author: yada
+Author-email: trojblue@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: mutagen (>=1.46.0,<2.0.0)
+Requires-Dist: pydub (>=0.25.1,<0.26.0)
+Requires-Dist: tinytag (>=1.9.0,<2.0.0)
+Requires-Dist: tqdm (>=4.65.0,<5.0.0)
+Description-Content-Type: text/markdown
+
+# maroon
+Maroon is a package that manages music for Roon.
+
+## Installation
+install from PyPI:
+```bash
+pip install maroon
+```
+
+build from source:
+```bash
+git clone https://github.com/trojblue/maroon
+cd maroon
+poe install
+poetry build
+pip install dist/<build_version>.whl
+```
+
+## Usage
+maroon rearranges your subfolders in an album dir into roon-friendly `DISC*/`format, and splits `.cue` files into individual`.flac` files, containing metadata: 
+```bash
+maroon <album dir>
+```
+
