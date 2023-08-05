@@ -1,0 +1,14 @@
+botiverse/__init__.py,sha256=PvdRSNkkxUjYbduYle6qaDYSRT104-v55lxo5XtWwFM,241
+botiverse/TODS/DNN_TODS.py,sha256=bMR9RhuIR_-Tl2wUd1sdtB5bmz-I5GJQAG5fGTLEA6o,977
+botiverse/TODS/TODS.py,sha256=0WlNc49q0sJ2dRGz9nCBhBlfcs8TtgMJhcIBAhEa-74,4080
+botiverse/TODS/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+botiverse/TODS/tods_example.py,sha256=3tEPhbVqEzXfjsZ8Nlq2NLJs3C4kFBRy4x4AmyJTaGg,1345
+botiverse/TODS/utils.py,sha256=JlV19yKRhYedyRiyobPhAUHSz_wXGFL7-F9LS_gWS8w,7362
+botiverse/TODS/utils2.py,sha256=4fiBVQYj6x4V7RftZZeGH3OZMzZmk4ZIH0g6P8UJAyA,762
+botiverse/basic_chatbot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+botiverse/basic_chatbot/basic_chatbot.py,sha256=6N2d_32aTZMZCdXMqvXWwYFmfOez50zgrQP0NjGL0zM,1099
+botiverse/basic_chatbot/utils.py,sha256=_nqZiNJKgftHUM6pFLXHeJ6OfrchqDy6hIgrqAKnXOw,35
+botiverse-0.1.0.dist-info/METADATA,sha256=14kJb_pwfNAwJJMZEaju4MK_U67j8gb35rT-Qi2BAzw,1234
+botiverse-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+botiverse-0.1.0.dist-info/top_level.txt,sha256=BC8sEKu6yqp_io2SmYi7PEt6vkOkL4UIXccg-yq8UmA,10
+botiverse-0.1.0.dist-info/RECORD,,
