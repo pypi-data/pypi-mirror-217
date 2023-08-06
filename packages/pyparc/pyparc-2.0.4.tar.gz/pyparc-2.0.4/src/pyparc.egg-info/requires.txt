@@ -1,0 +1,8 @@
+numpy
+scipy
+scikit-learn
+matplotlib
+pypoman
+mip
+faiss-cpu
+pickle-mixin
