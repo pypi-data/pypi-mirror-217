@@ -1,0 +1,3 @@
+[console_scripts]
+shttp=shttp.__main__:main_wrapper
+
