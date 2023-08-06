@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: mypyref
+Version: 0.0.2
+Summary: Standard Python reference documentation in a local server
+Author-email: Steampunk Wizard <macdocpy@steampunkwizard.ca>
+License: MIT
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+# MacDocPy
+
+Serve Python standard documentation locally for easy access
