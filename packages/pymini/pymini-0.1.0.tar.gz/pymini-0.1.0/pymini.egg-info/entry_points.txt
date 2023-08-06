@@ -1,0 +1,2 @@
+[console_scripts]
+uglipy = uglipy.cli:main
