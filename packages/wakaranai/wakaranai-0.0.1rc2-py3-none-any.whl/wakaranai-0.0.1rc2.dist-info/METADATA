@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: wakaranai
+Version: 0.0.1rc2
+Summary: An educational tool for learning hiragana and katakana
+Project-URL: Source Code, https://github.com/guidanoli/wakaranai
+Project-URL: Bug Tracker, https://github.com/guidanoli/wakaranai/issues
+Author: Guilherme Dantas
+License-File: LICENSE
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Natural Language :: Japanese
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Education
+Requires-Python: >=3.8
+Requires-Dist: colorama==0.4.6
+Description-Content-Type: text/markdown
+
+わからない (wakaranai) literally means "I don't understand" in Japanese.
+It is a phrase worth learning, specially if you plan to visit Japan anytime soon.
+If you'd like to learn more than just a couple of key phrases,
+it might be useful to learn hiragana and katakana as well.
+This Python package, called `wakaranai`, helps non-Japanese speakers
+learn these two syllabaries by generating and applying random tests.
+
+## Usage
+
+If you ever feel like practicing your Japanese, simply run the following command.
+You must choose to practice either hiragana or katakana.
+
+```sh
+python -m wakaranai {hiragana,katakana}
+```
+
+You will be prompted with characters from the selected kana in random order,
+and you must answer with their correct romanizations.
+The accepted romanizations are: Hepburn, Nihon-shiki, and Kunrei-shiki.
+Obsolete syllables such as ゐ and ヰ are ignored.
+
+```
+お? o
+た? ta
+わ? re
+...
+```
+
+After all characters have been prompted, the results will be displayed.
+Wrong answers are accompanied by the correct answer(s).
+
+```
+お --> o ✓
+た --> ta ✓
+わ --> re ✗ (correct: wa)
+...
+```
