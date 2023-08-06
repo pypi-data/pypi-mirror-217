@@ -1,0 +1,8 @@
+numpy
+torch>=1.5.1
+batorch
+pycamia
+pyoverload
+nibabel
+pydicom
+SimpleITK
