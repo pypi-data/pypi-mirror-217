@@ -1,0 +1,25 @@
+Metadata-Version: 2.0
+Name: crtoolbox
+Version: 0.1.4
+Summary: The Confidence Regions Toolbox
+Home-page: https://github.com/tommaullin/crtoolbox
+Author: Tom Maullin
+Author-email: TomMaullin@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib
+Requires-Dist: nibabel
+Requires-Dist: nilearn
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: plotly
+Requires-Dist: pyyaml
+
+UNKNOWN
+
+
