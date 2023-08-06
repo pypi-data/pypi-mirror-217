@@ -1,0 +1,6 @@
+name = "approximate"
+version = "0.0.1"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
