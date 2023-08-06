@@ -1,0 +1,4 @@
+[console_scripts]
+gleu = gleu.main:gleu
+mgleu = gleu.main:mgleu
+sgleu = gleu.main:sgleu
