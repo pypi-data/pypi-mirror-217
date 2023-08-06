@@ -1,0 +1,29 @@
+[build-system]
+requires      = ["setuptools", "wheel", "openpyxl>=3.0.10"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "excel_splitter"
+version = "0.0.9"
+authors = [
+  { name="Jason Yearry", email="jasonyearry@gmail.com" },
+]
+
+
+description = "A packge to quickly split an Excel report into multiple sheets or multiple reports based on unique column values."
+readme = "README.md"
+requires-python = ">=3.7"
+keywords = ["Excel", "Split", "opensource"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+
+
+[project.urls]
+"Homepage" = "https://github.com/Guitarman-Waiting-In-The-Sky/excel_splitter"
+
+[tool.setuptools.packages.find]
+where = ["src"]
