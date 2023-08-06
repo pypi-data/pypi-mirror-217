@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+jsoner/jsoner_lib.egg-info/PKG-INFO
+jsoner/jsoner_lib.egg-info/SOURCES.txt
+jsoner/jsoner_lib.egg-info/dependency_links.txt
+jsoner/jsoner_lib.egg-info/requires.txt
+jsoner/jsoner_lib.egg-info/top_level.txt
