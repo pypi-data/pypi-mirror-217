@@ -1,0 +1,12 @@
+tap_zoho_inventory/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tap_zoho_inventory/auth.py,sha256=2iUYCDw7WMI-0Q3VkaMXWxvlu5AmKe9f9vDzfPMzaAY,3732
+tap_zoho_inventory/client.py,sha256=4-v6BvGPbL4JJ9dWBLNb8p6JLySpeMIpncssAGvm6t0,2958
+tap_zoho_inventory/config.json,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tap_zoho_inventory/streams.py,sha256=sQGhZsDjaOy7uPG52zeEOOveOknsTq-OokgIz5eA0MM,4997
+tap_zoho_inventory/tap.py,sha256=rmKeqCC3mPMFNfPKfpbCeOmYn4HUnt5uYxgSTDFQQHI,1780
+tap_zoho_inventory/tests/__init__.py,sha256=-sjSc7gOVGhvzme4xj5Td8v_Q3MwTV_ZBomylTcKLt0,41
+tap_zoho_inventory/tests/test_core.py,sha256=cBVcs0M9BXM-eUe4pAZgx4OWZgiiLy7OEuoR6R4b_QI,799
+tap_zoho_inventory-0.0.1.dist-info/METADATA,sha256=0_F8WLXlIBFGArh3-S_JpD38y1dvuKt86on1nO7AWMY,605
+tap_zoho_inventory-0.0.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+tap_zoho_inventory-0.0.1.dist-info/entry_points.txt,sha256=fopoXjX7GDpfXZWbt_lNEbAXLZ62JivUd7bW93ypieU,82
+tap_zoho_inventory-0.0.1.dist-info/RECORD,,

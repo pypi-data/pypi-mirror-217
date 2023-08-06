@@ -1,0 +1,3 @@
+[console_scripts]
+tap-zoho-inventory=tap_zoho_inventory.tap:TapZohoInventory.cli
+
