@@ -1,0 +1,3 @@
+[console_scripts]
+ckanmirror=ckanmirror.cli:cli
+
