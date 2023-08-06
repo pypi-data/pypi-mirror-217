@@ -1,0 +1,12 @@
+pandas
+seaborn
+scikit-learn
+numpy>=1.22
+nbformat
+rich
+typer
+requests
+tqdm
+ipos
+
+[dev]
