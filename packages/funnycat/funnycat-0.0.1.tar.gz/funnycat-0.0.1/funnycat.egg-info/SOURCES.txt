@@ -1,0 +1,12 @@
+MANIFEST.in
+pyproject.toml
+setup.cfg
+custom_build_backend/backend.py
+funnycat.egg-info/PKG-INFO
+funnycat.egg-info/SOURCES.txt
+funnycat.egg-info/dependency_links.txt
+funnycat.egg-info/requires.txt
+funnycat.egg-info/top_level.txt
+funnycat_slice/__init__.py
+funnycat_slice/main.ice
+funnycat_slice/support/service.ice

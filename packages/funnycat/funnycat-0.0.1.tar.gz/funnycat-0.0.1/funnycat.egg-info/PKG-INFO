@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: funnycat
+Version: 0.0.1
+Summary: A distribution of ZeroC/ICE slice files for funnycat project.
+Author-email: Evgeny Klunko <eklunko@gmail.com>
+Requires-Python: >=3.8
