@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+zxy/__init__.py
+zxy/zxx.py
+zxy.egg-info/PKG-INFO
+zxy.egg-info/SOURCES.txt
+zxy.egg-info/dependency_links.txt
+zxy.egg-info/top_level.txt
