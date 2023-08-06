@@ -1,0 +1,72 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = 'hatchling.build'
+
+[project]
+name = "social-media"
+version = "0.0.0"
+description = "An awesome package is coming soon! 🎉"
+readme = "README.md"
+authors = [
+    { name = "Marcelo Trylesinski", email = "marcelotryle@gmail.com" },
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+license = "MIT"
+requires-python = ">=3.8"
+dependencies = []
+optional-dependencies = {}
+
+[project.urls]
+Homepage = "https://github.com/Kludex/social-media"
+Source = "https://github.com/Kludex/social-media"
+Twitter = "https://twitter.com/marcelotryle"
+Funding = "https://github.com/sponsors/Kludex"
+
+[tool.hatch.envs.dev]
+dependencies = [
+    "black",
+    "mypy",
+    "ruff",
+    "pre-commit",
+    "bpython",
+]
+
+[tool.hatch.envs.test]
+dependencies = [
+    "coverage[toml]",
+    "pytest",
+    "pytest-sugar",
+    "dirty-equals",
+]
+
+[[tool.hatch.envs.test.matrix]]
+python = ["3.8", "3.9", "3.10", "3.11"]
+
+[tool.mypy]
+strict = true
+
+[tool.black]
+target-version = ["py38"]
+
+[tool.pytest.ini_options]
+addopts = ["--strict-config", "--strict-markers"]
+filterwarnings = ["error"]
+
+[tool.coverage.run]
+source_pkgs = ["social_media", "tests"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
