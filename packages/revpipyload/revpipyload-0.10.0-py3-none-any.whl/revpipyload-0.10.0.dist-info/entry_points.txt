@@ -1,0 +1,3 @@
+[console_scripts]
+revpipyload_secure_installation = revpipyload.secure_installation:main
+revpipyloadd = revpipyload.revpipyload:main
