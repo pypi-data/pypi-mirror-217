@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+uniffi_zcash.egg-info/PKG-INFO
+uniffi_zcash.egg-info/SOURCES.txt
+uniffi_zcash.egg-info/dependency_links.txt
+uniffi_zcash.egg-info/top_level.txt
+zcash/__init__.py
+zcash/libuniffi_zcash.dylib
+zcash/libuniffi_zcash.so
+zcash/zcash.py

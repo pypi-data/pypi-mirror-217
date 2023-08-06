@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: uniffi-zcash
+Version: 0.0.0
+Summary: Zcash librustzcash python FFI layer
+Author: zcash
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: C
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Zcash FFI Python library
+
+This are Python language bindings of the Zcash [librustzcash](https://github.com/zcash/librustzcash) library.
+
