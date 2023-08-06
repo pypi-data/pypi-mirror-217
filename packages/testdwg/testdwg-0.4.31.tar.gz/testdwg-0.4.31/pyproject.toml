@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "testdwg"
+version = "0.4.31"  # not used
+description = ""
+license = "MIT"
+authors = ["yatmanov <yatmanov@megaputer.ru>"]
+readme = "README.md"
+repository = "https://github.com/yatmanov/testdwg"
+documentation = "https://yatmanov.github.io/testdwg/"
+
+[tool.poetry.urls]
+"Changelog" = "https://github.com/yatmanov/testdwg/blob/master/CHANGELOG.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.group.dev.dependencies]
+sphinx = "^7.0.1"
+towncrier = "^23.6.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.towncrier]
+directory = ".changes"
+filename = "CHANGELOG.md"
