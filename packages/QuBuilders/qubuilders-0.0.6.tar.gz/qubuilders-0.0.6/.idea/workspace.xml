@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0643fa01-c989-4e6e-8770-b93352bd1ffb" name="Changes" comment="the version 0.0.6">
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2RcS5ShzqHPzikurVLUjRtRVVfU" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
+    "last_opened_file_path": "C:/Users/mzx776/QuBuilders",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Github Repos\QuBu\tests\quwriter" />
+      <recent name="E:\Github Repos\QuBu\quloaders\data_sample\eq" />
+      <recent name="E:\Github Repos\QuBu\quloaders\data_sample\questions" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mzx776\QuBuilders\QuBuilders" />
+      <recent name="E:\Github Repos\QuBu\tests\quloaders" />
+      <recent name="E:\Github Repos\QuBu\quloaders\data_sample\eq" />
+      <recent name="E:\Github Repos\QuBu\quloaders\data_sample" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python tests.Python tests for tests.generators.test_checkers.test.test_length_save">
+    <configuration name="Python tests for tests.generators.test_checkers.test.test_length_save" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="QuBu" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="C:\Users\mzx776\AppData\Local\Programs\Python\Python311\python.exe" />
+      <option name="SDK_NAME" value="Python 3.11" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/generators" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.generators.test_checkers.test.test_length_save&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for tests.quloaders.test_json_loader.test" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="QuBu" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/quloaders" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.quloaders.test_json_loader.test&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for tests.quwriter.test_json_writer.test.test_write_all" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="QuBu" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/quwriter" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.quwriter.test_json_writer.test.test_write_all&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for tests.quwriter.test_json_writer.test.test_write_single" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="QuBu" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/quwriter" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.quwriter.test_json_writer.test.test_write_single&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in test_json_loader.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="QuBu" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/quloaders" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/quloaders/test_json_loader.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests in test_json_loader.py" />
+        <item itemvalue="Python tests.Python tests for tests.generators.test_checkers.test.test_length_save" />
+        <item itemvalue="Python tests.Python tests for tests.quwriter.test_json_writer.test.test_write_all" />
+        <item itemvalue="Python tests.Python tests for tests.quwriter.test_json_writer.test.test_write_single" />
+        <item itemvalue="Python tests.Python tests for tests.quloaders.test_json_loader.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0643fa01-c989-4e6e-8770-b93352bd1ffb" name="Changes" comment="" />
+      <created>1687547695056</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1687547695056</updated>
+      <workItem from="1687547697582" duration="312000" />
+      <workItem from="1687559256290" duration="2310000" />
+      <workItem from="1687577724302" duration="4288000" />
+      <workItem from="1687657619803" duration="27000" />
+      <workItem from="1687657864992" duration="2021000" />
+      <workItem from="1687662273706" duration="3231000" />
+      <workItem from="1687720734819" duration="215000" />
+      <workItem from="1687721159052" duration="25000" />
+      <workItem from="1687721386054" duration="63000" />
+      <workItem from="1687721521862" duration="1706000" />
+      <workItem from="1687729778820" duration="2463000" />
+      <workItem from="1687732317785" duration="1726000" />
+      <workItem from="1687734069409" duration="172000" />
+      <workItem from="1687805147331" duration="265000" />
+      <workItem from="1687806245705" duration="6584000" />
+      <workItem from="1687824017287" duration="2074000" />
+      <workItem from="1687879691634" duration="4597000" />
+      <workItem from="1687884721744" duration="62000" />
+      <workItem from="1687900023461" duration="1000" />
+      <workItem from="1687915335686" duration="4350000" />
+      <workItem from="1687968438893" duration="21000" />
+      <workItem from="1688355828490" duration="1283000" />
+      <workItem from="1688438837264" duration="1767000" />
+      <workItem from="1688440730652" duration="67000" />
+      <workItem from="1688441098575" duration="14000" />
+      <workItem from="1688441113905" duration="1271000" />
+      <workItem from="1688442413504" duration="70000" />
+    </task>
+    <task id="LOCAL-00050" summary="the Asghar_S.py is debugged">
+      <created>1687809687028</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1687809687028</updated>
+    </task>
+    <task id="LOCAL-00051" summary="the option for same questions or no added">
+      <created>1687809978387</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1687809978387</updated>
+    </task>
+    <task id="LOCAL-00052" summary="the __init__ of class State is crated">
+      <created>1687810915883</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1687810915883</updated>
+    </task>
+    <task id="LOCAL-00053" summary="the __init__ of class State is got better by adding some checking">
+      <created>1687811231508</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1687811231508</updated>
+    </task>
+    <task id="LOCAL-00054" summary="the class state seem done">
+      <created>1687812157610</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1687812157610</updated>
+    </task>
+    <task id="LOCAL-00055" summary="the Rostam_S.py is tested">
+      <created>1687812600760</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1687812600760</updated>
+    </task>
+    <task id="LOCAL-00056" summary="the __init__.py is added to the generators">
+      <created>1687812765343</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1687812765343</updated>
+    </task>
+    <task id="LOCAL-00057" summary="the files are debugged and some new options are added">
+      <created>1687824729957</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1687824729958</updated>
+    </task>
+    <task id="LOCAL-00058" summary="a option  for checing all the lengths is added to Rostam_S.py.">
+      <created>1687825317943</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1687825317943</updated>
+    </task>
+    <task id="LOCAL-00059" summary="the test requrements for quwriters is added">
+      <created>1687826099222</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1687826099222</updated>
+    </task>
+    <task id="LOCAL-00060" summary="__init__ created">
+      <created>1687880486270</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1687880486270</updated>
+    </task>
+    <task id="LOCAL-00061" summary="a new class named check_length is added to avoid same codes">
+      <created>1687881663953</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1687881663953</updated>
+    </task>
+    <task id="LOCAL-00062" summary="the codes are checked">
+      <created>1687882765397</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1687882765397</updated>
+    </task>
+    <task id="LOCAL-00063" summary="the ModeState is created">
+      <created>1687883426130</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1687883426130</updated>
+    </task>
+    <task id="LOCAL-00064" summary="the check_length class is renamed into Check_Length">
+      <created>1687883563942</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1687883563942</updated>
+    </task>
+    <task id="LOCAL-00065" summary="unneccesry codes are removed from Asghar_S.py">
+      <created>1687883878341</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1687883878342</updated>
+    </task>
+    <task id="LOCAL-00066" summary="unneccesry codes are removed from Asghar_S.py">
+      <created>1687884311257</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1687884311257</updated>
+    </task>
+    <task id="LOCAL-00067" summary="the Rostam_Q.py is created and we changed the descriptions and name to optional argv">
+      <created>1687915657755</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1687915657755</updated>
+    </task>
+    <task id="LOCAL-00068" summary="a test for type_checker is created and some deubng">
+      <created>1687916843178</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1687916843178</updated>
+    </task>
+    <task id="LOCAL-00069" summary="there was a naming collision">
+      <created>1687917447140</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1687917447140</updated>
+    </task>
+    <task id="LOCAL-00070" summary="the test for quwritters is created">
+      <created>1687918297603</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1687918297604</updated>
+    </task>
+    <task id="LOCAL-00071" summary="the test for Check_Length is created">
+      <created>1687919264980</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1687919264980</updated>
+    </task>
+    <task id="LOCAL-00072" summary="the test for Mode_S is created">
+      <created>1687919696170</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1687919696170</updated>
+    </task>
+    <task id="LOCAL-00073" summary="the test for Mode_S is created">
+      <created>1688355788654</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1688355788654</updated>
+    </task>
+    <task id="LOCAL-00074" summary="the test for Mode_S is created">
+      <created>1688355835361</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1688355835361</updated>
+    </task>
+    <task id="LOCAL-00075" summary="the test for Mode_S is created">
+      <created>1688438851927</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1688438851928</updated>
+    </task>
+    <task id="LOCAL-00076" summary="the dist">
+      <created>1688439162164</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1688439162165</updated>
+    </task>
+    <task id="LOCAL-00077" summary="the dist">
+      <created>1688439234427</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1688439234427</updated>
+    </task>
+    <task id="LOCAL-00078" summary="the setup.py">
+      <created>1688440337402</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1688440337402</updated>
+    </task>
+    <task id="LOCAL-00079" summary="the setup.py">
+      <created>1688440357908</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1688440357908</updated>
+    </task>
+    <task id="LOCAL-00080" summary="the setup.py">
+      <created>1688441120297</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1688441120297</updated>
+    </task>
+    <task id="LOCAL-00081" summary="the setup.py">
+      <created>1688441154978</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1688441154978</updated>
+    </task>
+    <task id="LOCAL-00082" summary="the setup.py">
+      <created>1688441205729</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1688441205729</updated>
+    </task>
+    <task id="LOCAL-00083" summary="main added">
+      <created>1688441424787</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1688441424787</updated>
+    </task>
+    <task id="LOCAL-00084" summary="main added">
+      <created>1688441813436</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1688441813436</updated>
+    </task>
+    <task id="LOCAL-00085" summary="main added">
+      <created>1688442213323</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1688442213323</updated>
+    </task>
+    <task id="LOCAL-00086" summary="main added">
+      <created>1688442225574</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1688442225575</updated>
+    </task>
+    <task id="LOCAL-00087" summary="main added">
+      <created>1688442389547</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1688442389547</updated>
+    </task>
+    <task id="LOCAL-00088" summary="main added">
+      <created>1688442440591</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1688442440592</updated>
+    </task>
+    <task id="LOCAL-00089" summary="the version 0.0.3 of the pakage released">
+      <created>1688495564430</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1688495564431</updated>
+    </task>
+    <task id="LOCAL-00090" summary="the version 0.0.3 of the pakage released">
+      <created>1688495576176</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1688495576176</updated>
+    </task>
+    <task id="LOCAL-00091" summary="the __init__.pys resolved">
+      <created>1688496154989</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1688496154989</updated>
+    </task>
+    <task id="LOCAL-00092" summary="the version 0.0.4">
+      <created>1688496225489</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1688496225489</updated>
+    </task>
+    <task id="LOCAL-00093" summary="the version 0.0.4">
+      <created>1688496252847</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1688496252847</updated>
+    </task>
+    <task id="LOCAL-00094" summary="the version 0.0.5">
+      <created>1688496529955</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1688496529955</updated>
+    </task>
+    <task id="LOCAL-00095" summary="the version 0.0.5">
+      <created>1688496554234</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1688496554234</updated>
+    </task>
+    <task id="LOCAL-00096" summary="the version 0.0.5">
+      <created>1688496581292</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1688496581292</updated>
+    </task>
+    <task id="LOCAL-00097" summary="the version 0.0.5">
+      <created>1688496587832</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1688496587832</updated>
+    </task>
+    <task id="LOCAL-00098" summary="the version 0.0.6">
+      <created>1688497331080</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1688497331081</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="the Rostam_S.py is tested" />
+    <MESSAGE value="the __init__.py is added to the generators" />
+    <MESSAGE value="the files are debugged and some new options are added" />
+    <MESSAGE value="a option  for checing all the lengths is added to Rostam_S.py." />
+    <MESSAGE value="the test requrements for quwriters is added" />
+    <MESSAGE value="__init__ created" />
+    <MESSAGE value="a new class named check_length is added to avoid same codes" />
+    <MESSAGE value="the codes are checked" />
+    <MESSAGE value="the ModeState is created" />
+    <MESSAGE value="the check_length class is renamed into Check_Length" />
+    <MESSAGE value="unneccesry codes are removed from Asghar_S.py" />
+    <MESSAGE value="the Rostam_Q.py is created and we changed the descriptions and name to optional argv" />
+    <MESSAGE value="a test for type_checker is created and some deubng" />
+    <MESSAGE value="there was a naming collision" />
+    <MESSAGE value="the test for quwritters is created" />
+    <MESSAGE value="the test for Check_Length is created" />
+    <MESSAGE value="the test for Mode_S is created" />
+    <MESSAGE value="the dist" />
+    <MESSAGE value="the setup.py" />
+    <MESSAGE value="main added" />
+    <MESSAGE value="the version 0.0.3 of the pakage released" />
+    <MESSAGE value="the __init__.pys resolved" />
+    <MESSAGE value="the version 0.0.4" />
+    <MESSAGE value="the version 0.0.5" />
+    <MESSAGE value="the version 0.0.6" />
+    <option name="LAST_COMMIT_MESSAGE" value="the version 0.0.6" />
+  </component>
+</project>
