@@ -1,0 +1,3 @@
+[console_scripts]
+nex5conv = plexonNEX5Converter:run
+
