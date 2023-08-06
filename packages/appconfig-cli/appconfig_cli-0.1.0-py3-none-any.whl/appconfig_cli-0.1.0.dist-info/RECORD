@@ -1,0 +1,9 @@
+appconf/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+appconf/api.py,sha256=5LGFzQ-Dajuae-WcLYVQGpO0FA0yYAcYXP0rpCYzHtI,2995
+appconf/main.py,sha256=CJoAMtECRhStiFQ3hF9qcuUvG9kr1TkHjmkr3Tw0Uag,2767
+appconf/models.py,sha256=Hq52NKV16eln3kmfo3iSWhlY6Bu6AHTiaENdfKT0IqQ,683
+appconfig_cli-0.1.0.dist-info/LICENSE.md,sha256=j_KD7cJGOeeFUKzjTXVJprzJkQom53_aiIkYQPqn8ME,1061
+appconfig_cli-0.1.0.dist-info/METADATA,sha256=vlJuuSugLpIDRVopw2vfDqb-z01aTTt4JgrBXaE793Y,1922
+appconfig_cli-0.1.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+appconfig_cli-0.1.0.dist-info/entry_points.txt,sha256=xnc6S0DfEobY-uW8IZvYxp-vU5pp_ggbZ23LonjC2EE,44
+appconfig_cli-0.1.0.dist-info/RECORD,,
