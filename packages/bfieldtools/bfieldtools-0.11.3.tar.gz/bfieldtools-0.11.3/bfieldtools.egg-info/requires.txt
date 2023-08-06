@@ -1,0 +1,10 @@
+numpy
+scipy
+matplotlib
+sip
+pyvista
+cvxpy>=1.1.14
+cvxopt
+trimesh
+shapely
+psutil
