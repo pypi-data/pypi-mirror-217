@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: trueapi-cli
+Version: 0.0.1
+Summary: TrueAPI
+Author-email: Thang Tran <thangtp@gmail.com>
+Project-URL: Homepage, https://github.com/trueapi/trueapi-cli
+Project-URL: Bug Tracker, https://github.com/trueapi-cli/trueapi/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
