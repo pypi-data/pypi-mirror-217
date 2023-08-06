@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+appver/__init__.py
+appver/__main__.py
+appver/_version.py
+appver/appver.py
+appver.egg-info/PKG-INFO
+appver.egg-info/SOURCES.txt
+appver.egg-info/dependency_links.txt
+appver.egg-info/top_level.txt
