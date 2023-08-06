@@ -1,0 +1,15 @@
+pulp
+defusedxml
+pandas
+
+[docs]
+Sphinx<7
+sphinx_rtd_theme==1.2.0
+sphinx_autodoc_typehints
+m2r2
+
+[test]
+pytest
+mypy>=0.800
+black
+pytest-cov
