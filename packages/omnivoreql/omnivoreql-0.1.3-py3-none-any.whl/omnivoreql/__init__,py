@@ -1,0 +1,3 @@
+from omnivoreql import OmnivoreQL
+
+__all__ = ['OmnivoreQL']
