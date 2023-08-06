@@ -1,0 +1,7 @@
+setup.py
+testless_textanalyzer.egg-info/PKG-INFO
+testless_textanalyzer.egg-info/SOURCES.txt
+testless_textanalyzer.egg-info/dependency_links.txt
+testless_textanalyzer.egg-info/requires.txt
+testless_textanalyzer.egg-info/top_level.txt
+textanalyzer/__init__.py
