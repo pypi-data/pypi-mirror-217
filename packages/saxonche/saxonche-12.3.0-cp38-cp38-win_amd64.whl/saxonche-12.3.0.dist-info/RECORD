@@ -1,0 +1,14 @@
+saxonche.cp38-win_amd64.pyd,sha256=tpL1AkPpKUSb8eo3Cj7RrDsv8o_jadO7scFn0kJWh2g,547328
+saxonche/setup.py,sha256=I-_2ErG1Xina5YNac-Pa8fCV-0-030hbmGQreoTF_wA,3050
+saxonche/test_saxonc.py,sha256=QsnlxNsJ3aZuQQW_92p38WCPOvKs75k8zf4NNDftb6o,61288
+saxonche/test_saxon_schema.py,sha256=Kgg4lSH5bzQ7ac_H00ohYkQ2sHQAv7lisspgpGnZ1r0,4095
+saxonche-12.3.0.data/platlib/.load-order-saxonche-12.3.0,sha256=J24JdXAwPY4lf_UH8hhaZa2f0pD8KQhH75O3xZpCp-o,105
+saxonche-12.3.0.data/platlib/concrt140.dll,sha256=3h0b84CQCUtwKDPd86aO4fXUriDKV_U5L6vPTEnFuAc,327576
+saxonche-12.3.0.data/platlib/libsaxon-hec-12.3-07ae696cdd1f5b94828dd3eb9296ff91.dll,sha256=xDlPHVB27zurAfKEYCT28Ux-KB3w8YWhu4NbBfgWk1o,49483776
+saxonche-12.3.0.data/platlib/msvcp140.dll,sha256=qdfT8B8P6BcbCQ8j7bFGB4QVERIyysNPrTBxwQNwrdk,621960
+saxonche-12.3.0.data/platlib/vcruntime140_1.dll,sha256=5LUzqU4CxXR4DkszP88IifZe0A054ywPu9ohFvGFhz8,49520
+saxonche-12.3.0.dist-info/DELVEWHEEL,sha256=77SO4LTCOLbIy2E4-rU0oiolhv5gu-iUvl41FvQw4b4,424
+saxonche-12.3.0.dist-info/METADATA,sha256=BQrtJ0pdK1vE3aBt_IZtBAebve9JsUBDQEhqs66CqHY,5162
+saxonche-12.3.0.dist-info/RECORD,,
+saxonche-12.3.0.dist-info/top_level.txt,sha256=6tJxlK8ePmvwmsTmpNkKssbnfExHvDb9UiuTurDdKrU,9
+saxonche-12.3.0.dist-info/WHEEL,sha256=F2aDWtWrilNM3-px1vBtJOEd7aRVTetQfFuDYmYbAUQ,100
