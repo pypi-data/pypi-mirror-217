@@ -1,0 +1,13 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+bisectsearch/README.MD
+bisectsearch/__init__.py
+bisectsearch/requirements.txt
+bisectsearch/thirdparty.json
+bisectsearch.egg-info/PKG-INFO
+bisectsearch.egg-info/SOURCES.txt
+bisectsearch.egg-info/dependency_links.txt
+bisectsearch.egg-info/top_level.txt
