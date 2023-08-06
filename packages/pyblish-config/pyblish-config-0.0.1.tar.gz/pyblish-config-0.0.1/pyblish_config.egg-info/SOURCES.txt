@@ -1,0 +1,54 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+.github/workflows/python-publish.yml
+pyblish_config/__init__.py
+pyblish_config/config.py
+pyblish_config.egg-info/PKG-INFO
+pyblish_config.egg-info/SOURCES.txt
+pyblish_config.egg-info/dependency_links.txt
+pyblish_config.egg-info/requires.txt
+pyblish_config.egg-info/top_level.txt
+pyblish_config_creator/__init__.py
+pyblish_config_creator/config_commands.py
+pyblish_config_creator/config_creator_GUI.py
+pyblish_config_creator/plugin_browser.py
+pyblish_extended/Plugin.py
+pyblish_extended/__init__.py
+pyblish_extended/convertor/convertor_pymesh_meshname.py
+pyblish_extended/convertor/testing_convertor.py
+pyblish_extended/convertor/plugins/convertor_string_int.py
+sample/__init__.py
+sample/config_sample.json
+sample/managager_screenshot.JPG
+sample/sample_apply_config.py
+sample/sample_create_config.py
+sample/sample_filter_config.py
+sample/test files/conmpare.txt
+sample/test files/pyblish isnta setup.txt
+sample/test files/readme.md
+sample/test files/rules.txt
+sample/test files/inhouse generic plugins/submit screenshot to inhouse server.txt
+sample/test files/marketplace (same as projects)/collect all meshes/collect_meshes.py
+sample/test files/projects/battling field SHOOTER/BF_char_bob.ma
+sample/test files/projects/battling field SHOOTER/BF_obj_car.ma
+sample/test files/projects/battling field SHOOTER/BF_obj_gun.ma
+sample/test files/projects/battling field SHOOTER/obj_pistol.ma
+sample/test files/projects/final fantasia FANTASY RPG/meshes/FF_char_alice.ma
+sample/test files/projects/final fantasia FANTASY RPG/meshes/FF_char_john.ma
+sample/test files/projects/final fantasia FANTASY RPG/meshes/FF_obj_sword.ma
+sample/test files/projects/final fantasia FANTASY RPG/meshes/F_obj_pistol.ma
+sample/test files/projects/final fantasia FANTASY RPG/meshes/obj_gun.ma
+sample/test files/projects/pyblish starter/validate mesh normals/readme.md
+sample/test files/projects/pyblish starter/validate mesh normals/validate_normals.py
+sample/validate_folder/__init__.py
+sample/validate_folder/readme.md
+sample/validate_folder/sample_config_folder.json
+sample/validate_folder/sample_validate_folder_BF_create_config.py
+sample/validate_folder/sample_validate_folder_BF_load.py
+sample/validate_folder/sample_validate_folder_FF.py
+sample/validate_folder/plugins/CollectFilePaths.py
+sample/validate_folder/plugins/ValidateFilePaths.py
+sample/validate_folder/plugins/__init__.py

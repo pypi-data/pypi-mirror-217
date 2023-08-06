@@ -1,0 +1,4 @@
+import sample.validate_folder.sample_validate_folder_FF
+
+from pyblish_config_creator import config_creator_GUI
+config_creator_GUI.make_config()
