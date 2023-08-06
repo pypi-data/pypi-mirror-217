@@ -1,0 +1,14 @@
+gymnasium
+gymnasium[accept-rom-license,atari]
+matplotlib
+numpy
+opencv_python
+scikit_image
+termcolor
+seaborn
+pandas
+scikit-learn
+tqdm
+ipdb
+pyfiglet
+keyboard
