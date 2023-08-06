@@ -1,0 +1,5 @@
+einops>=0.3
+numpy
+torch>=1.6
+performer-pytorch
+lie-learn
