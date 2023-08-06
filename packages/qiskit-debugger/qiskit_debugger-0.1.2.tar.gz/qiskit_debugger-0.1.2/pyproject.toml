@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qiskit_debugger"
+authors = [
+	{name = "Sirajus Salekin", email = "ssalekin14@gmail.com"},
+	{name = "Palvit Garg", email = "pgarg5@ncsu.edu"},
+	{name = "Harshwardhan Joshi", email = "hjoshi2@ncsu.edu"},
+]
+maintainers = [
+  {name = "Sirajus Salekin", email = "ssalekin14@gmail.com"}
+]
+version = "0.1.2"
+description = "Quantum Circuit debugger for the Qiskit SDK."
+keywords = ["quantum", "computing", "debugger", "qiskit"]
+readme = "README.md"
+license = { file = "LICENSE"}
+requires-python = ">=3.6"
+dependencies = [
+	"qiskit==0.43.2"
+]
+classifiers = [
+	"License :: OSI Approved :: MIT License",
+	"Programming Language :: Python :: 3",
+	"Programming Language :: Python :: 3.11",
+	"Operating System :: OS Independent",
+	"Development Status :: 3 - Alpha",
+]
+
+[tool.setuptools]
+py-modules = [ "qiskit_debugger" ]
+package-dir = {'' = 'qiskit_debugger'}
+
+[project.urls]
+homepage = "https://github.com/salekinsirajus/quantum_circuit_debugger"
+repository = "https://github.com/salekinsirajus/quantum_circuit_debugger"
