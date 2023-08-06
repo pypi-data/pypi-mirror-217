@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+letterpackage/__init__.py
+letterpackage.egg-info/PKG-INFO
+letterpackage.egg-info/SOURCES.txt
+letterpackage.egg-info/dependency_links.txt
+letterpackage.egg-info/requires.txt
+letterpackage.egg-info/top_level.txt
+letterpackage/algoritmos/KNN.py
