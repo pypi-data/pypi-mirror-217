@@ -1,0 +1,68 @@
+%import common.WS
+%ignore WS
+%import common.LETTER -> LETTER
+%import common.DIGIT -> DIGIT
+%import common.NUMBER -> NUM
+
+NAME : ("_"|LETTER) ("_"|LETTER|DIGIT)* ("." ("_"|LETTER|DIGIT)+)*
+
+AND : "&"
+OR : "|"
+INV : "~"
+XOR : "^"
+LAND : "&&"
+LOR : "||"
+NOT : "!"
+EQ : "=="
+NEQ : "!="
+GT : ">"
+GEQ : ">="
+LT : "<"
+LEQ : "<="
+SL : "<<"
+SR : ">>"
+ADD : "+"
+SUB : "-"
+NEG : "-"
+MOD : "%"
+CONST : "const"
+TIME : "time"
+FROM : "from"
+AFTER : "after"
+UNTIL : "until"
+BEFORE : "before"
+NEXT : "next"
+PREV : "prev"
+ACC : "acc"
+
+lop : LAND | LOR
+lexp : rexp | lexp lop rexp
+
+rop : EQ | NEQ | GT | GEQ | LT | LEQ
+rexp : bexp | rexp rop bexp
+
+bop : AND | OR | XOR
+bexp : sexp | bexp bop sexp
+
+sop : SL | SR
+sexp : aexp | sexp sop aexp
+
+aop : ADD | SUB
+aexp : mexp | aexp aop mexp
+
+mop : MOD
+mexp : wire | mexp mop wire
+
+uop : INV | NEG | NOT
+type : CONST | TIME
+top : FROM | AFTER | UNTIL | BEFORE
+tsop : NEXT | PREV
+
+call : NAME "(" args ")"
+args : wire ("," wire)*
+
+wire : NAME | "(" lexp ")" | uop wire | type NUM | top wire | tsop wire 
+    | NUM tsop wire | ACC wire | call
+
+expr : lexp
+exprs : expr ("," expr)*
