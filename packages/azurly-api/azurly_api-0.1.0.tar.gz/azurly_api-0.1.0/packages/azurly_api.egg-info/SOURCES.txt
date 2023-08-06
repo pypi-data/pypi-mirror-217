@@ -1,0 +1,7 @@
+setup_azurly_api.py
+packages/azurly_api/__init__.py
+packages/azurly_api/storage.py
+packages/azurly_api.egg-info/PKG-INFO
+packages/azurly_api.egg-info/SOURCES.txt
+packages/azurly_api.egg-info/dependency_links.txt
+packages/azurly_api.egg-info/top_level.txt
