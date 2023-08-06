@@ -1,0 +1,10 @@
+bioviper/__init__.py,sha256=HI8rT8pphvtQgaVbhXl-kVcNwVJdHO6ZzERuQU6tjxQ,318
+bioviper/hmmer_tools.py,sha256=hoWe3ZqhVrY7EWWBR8EPDpn-jsK6XMtcMu4wozud13k,3251
+bioviper/msa.py,sha256=3fgwGl8UtSSVXmcHkhLmIoFKdsXEIYOH3iaPXT1q_j8,39448
+bioviper/pdb.py,sha256=c4KIDAbeG9UepsGgefUD4UtTn_CuSQ1_LZFJer672wU,13678
+bioviper/phylo.py,sha256=aEe4V9GApdifqvqhbUdrRdVXkRk2Wjku5COscPqNTaE,23855
+bioviper-0.2.0.dist-info/LICENSE,sha256=9RJ1BmjmRBhGzD_hlpG6L0HT7z8E1AvtCqOcrJ56Vp8,1066
+bioviper-0.2.0.dist-info/METADATA,sha256=uhtc4f0FZ9cJCMK0164NxLFdNB4hH9qav20--SLHqEg,7556
+bioviper-0.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+bioviper-0.2.0.dist-info/top_level.txt,sha256=FVBkuqf3mHPc2YZWSBLxyiFmM4hcXABB44iwAOu3qLE,9
+bioviper-0.2.0.dist-info/RECORD,,
