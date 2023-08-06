@@ -1,0 +1,14 @@
+atoti_directquery_databricks/LICENSE,sha256=JSyRUznwhVW6jj2RsFMZDaY_2QEQFMMOlbJvTy8OgOk,23472
+atoti_directquery_databricks/__init__.py,sha256=0pnHjSC9NVENGGM_GJ0s0AbzKsjIaS6WJ-snDJOehQw,190
+atoti_directquery_databricks/_plugin.py,sha256=NytW9Ym6YKk87cH6FtgOoQRr15-kAIF3MwGg0grNE20,515
+atoti_directquery_databricks/connection.py,sha256=UfGO0QnpCwRIG83otrBqJpx0PS1t7vk5gcGukai39MI,1412
+atoti_directquery_databricks/connection_info.py,sha256=thbdnXUepKbeKB9dtpp07xYgkjAzcsF2eIwHgoJheHo,1869
+atoti_directquery_databricks/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+atoti_directquery_databricks/table.py,sha256=wAHzkGV1gh-USwDxP_ONs2a3yPNh5e9bvpdk-ZQht4U,133
+atoti_directquery_databricks/table_options.py,sha256=_k-_xVzlsRQZU7EdgSTXT2eN-uCTh0TjNYoBSuhppz4,2421
+atoti_directquery_databricks/data/atoti-directquery-databricks.jar,sha256=U29c5rDFXqvQboQ7IRfoOZAojX2jKwm9JqZUIS-Ad3A,48928624
+atoti_directquery_databricks-0.8.2.dist-info/METADATA,sha256=Qr3DyUFycBp_FkPS0_DJYpPChc00ZIY9YYuE0BoDe6Y,823
+atoti_directquery_databricks-0.8.2.dist-info/WHEEL,sha256=8ngoJnqny485_Zhidm3gUHNLPQTUIjfhFb7Qoa0d3wA,109
+atoti_directquery_databricks-0.8.2.dist-info/entry_points.txt,sha256=zWyOHERCvS2KGQK2Bu9w8F0KHNQ3yCmZuxR-SxbTHPk,95
+atoti_directquery_databricks-0.8.2.dist-info/top_level.txt,sha256=Ms-2Fw4t1JKOL42kG27nQclyoBmG39sHrHWz47Js9GE,29
+atoti_directquery_databricks-0.8.2.dist-info/RECORD,,
