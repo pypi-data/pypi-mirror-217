@@ -1,0 +1,10 @@
+LICENSE
+setup.py
+x_1000/__init__.py
+x_1000/outer_models.py
+x_1000/outer_rim.py
+x_1000/skeleton.py
+x_1000.egg-info/PKG-INFO
+x_1000.egg-info/SOURCES.txt
+x_1000.egg-info/dependency_links.txt
+x_1000.egg-info/top_level.txt

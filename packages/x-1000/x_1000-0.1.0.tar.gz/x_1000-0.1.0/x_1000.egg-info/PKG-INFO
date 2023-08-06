@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: x-1000
+Version: 0.1.0
+Summary: X_1000 Models Gen
+Home-page: https://github.com/edazizovv/x_1000
+Download-URL: https://github.com/edazizovv/x_1000
+Maintainer: Edward Azizov
+Maintainer-email: edazizovv@gmail.com
+License: MIT
+Requires-Python: >=3.10
+License-File: LICENSE
