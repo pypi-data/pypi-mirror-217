@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: diveplane-upgrader
+Version: 0.0.10
+Summary: Diveplane Python package upgrade utility.
+Home-page: https://www.diveplane.com
+Author: Diveplane Corporation
+Author-email: support@diveplane.com
+License: Diveplane Corporation Free Software License
+Project-URL: Documentation, https://docs.community.diveplane.com/
+Keywords: machine learning,artificial intelligence
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: Microsoft :: Windows :: Windows 11
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pyyaml (<7.0,>=5.4.1)
+
+# Diveplane Upgrader
+
+To use the Diveplane Upgrader tool, please run the following command:
+
+`python -m diveplane.upgrade --help`
