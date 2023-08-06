@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: lightxdb
+Version: 1
+Summary: Command-line tool for interacting with the LightXDB environment
+Home-page: https://github.com/Lightspace-Official/lightX-DevBox
+Download-URL: https://github.com/Lightspace-Official/lightX-DevBox/archive/refs/tags/v2.0-beta.tar.gz
+Author: Hadi Jaffrey
+Author-email: plixinofficial@gmail.com
+License: GNU
+Keywords: lightx,devbox,lightx-devbox
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE

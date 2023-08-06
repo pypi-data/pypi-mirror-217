@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+lightxdb/Package.py
+lightxdb/Unpackage.py
+lightxdb/__init__.py
+lightxdb/ide.py
+lightxdb/lightX.py
+lightxdb.egg-info/PKG-INFO
+lightxdb.egg-info/SOURCES.txt
+lightxdb.egg-info/dependency_links.txt
+lightxdb.egg-info/requires.txt
+lightxdb.egg-info/top_level.txt
