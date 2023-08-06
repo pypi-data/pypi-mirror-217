@@ -1,0 +1,8 @@
+swarms/__init__.py,sha256=c01jucjskDBq11RLQKeHywJQXvdx6oo_PQAfkFd4XAI,102
+swarms/agents/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+swarms/agents/swarms.py,sha256=qoPAC8b7RdUv1Sl0vrGQI_nZu1FmvRnPZv-NXK8SGjs,15165
+swarms-0.1.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+swarms-0.1.2.dist-info/METADATA,sha256=JIdCGvnpEVqOtuNSlJfCi2uag67Dxw0hm2oQuBN5YLU,1867
+swarms-0.1.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+swarms-0.1.2.dist-info/top_level.txt,sha256=f7TnPlcb13LpOzqgio69wscCSGu4a4z0-6IrSGBVpkI,7
+swarms-0.1.2.dist-info/RECORD,,
