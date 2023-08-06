@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: stocks-cli
+Version: 0.1.1
+Summary: Command Line Interface to the STOCKS server
+Home-page: https://www.embl.org/research/units/genome-biology/genome-biology-computational-support/
+Author: GBCS
+Author-email: gbcs@embl.de
+Provides-Extra: dev
+License-File: LICENSE.txt
