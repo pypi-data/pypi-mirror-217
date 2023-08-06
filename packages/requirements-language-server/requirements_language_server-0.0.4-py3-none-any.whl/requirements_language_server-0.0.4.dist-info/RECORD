@@ -1,0 +1,17 @@
+requirements_language_server/__init__.py,sha256=UHhqoz27lhdEw89Ljyl0gtfX9BzJp_WWftKstZ2P1Q8,1429
+requirements_language_server/__main__.py,sha256=toXrfCl_ZjNlPaHoWYDHVbhmNY11xaITIuWSJWCR460,1734
+requirements_language_server/_metainfo.py,sha256=vNR_LRtUg8nNvbIXZzrgwEfZFVVG4NLW42GP3SpJVss,620
+requirements_language_server/_version.py,sha256=C_sEDFDxz5lXxlK-Oo8_UXoTORDgjzXO4KLRiUAkVKA,160
+requirements_language_server/api.py,sha256=7-X7Fms37eJhjijY_dtLpUhVLgC_Wa83WvY8pCxBM5g,959
+requirements_language_server/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+requirements_language_server/server.py,sha256=f-Jwjg8ItcOiD5h-HZvjcbM-IqibU8bfC0wFirnUmbI,9547
+requirements_language_server/assets/jinja2/template.md.j2,sha256=JBL1n4j57mKmFfGYm51JIgKAwHmCq6hseE9cK8R4sio,314
+requirements_language_server-0.0.4.data/data/share/bash-completion/completions/requirements-language-server,sha256=x8M7Ncyh6m12KpXJu93Ti54xggSedtPoecluZTC7Nd8,4272
+requirements_language_server-0.0.4.data/data/share/man/man1/requirements-language-server.1,sha256=Mhva5PBsmEZ0Hq7d44tJLjq6pAHZs7QWy10M6Dbb4Kk,582
+requirements_language_server-0.0.4.data/data/share/zsh/site-functions/_requirements-language-server,sha256=3XsGxfMUObWTBZB0biUZ0MPETS5z290eV0YAAvH4iLc,1420
+requirements_language_server-0.0.4.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+requirements_language_server-0.0.4.dist-info/METADATA,sha256=SKmWegBOsn6Kt5QkMQcgkSJ_91jgd-Vl_HTmGinmRg4,8767
+requirements_language_server-0.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+requirements_language_server-0.0.4.dist-info/entry_points.txt,sha256=XXpFPqLGnYgCLssLIQE4BQfus8b1Ys4pAEzMsl-SVOQ,92
+requirements_language_server-0.0.4.dist-info/top_level.txt,sha256=vuwggmt8VrtO4HREndUgSexbfM8oD04GjIuWgdX7mY0,29
+requirements_language_server-0.0.4.dist-info/RECORD,,
