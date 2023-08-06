@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: ldst-monitor
+Version: 1.0.1
+Summary: Monitor server status
+Home-page: 
+Author: happy
+Author-email: 
+Requires-Dist: requests
+Requires-Dist: python-dotenv
+
