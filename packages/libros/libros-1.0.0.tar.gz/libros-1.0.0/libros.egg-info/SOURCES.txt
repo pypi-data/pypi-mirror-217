@@ -1,0 +1,7 @@
+functions.py
+setup.py
+libros.egg-info/PKG-INFO
+libros.egg-info/SOURCES.txt
+libros.egg-info/dependency_links.txt
+libros.egg-info/requires.txt
+libros.egg-info/top_level.txt
