@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: pyhubio
+Version: 1.3
+Summary: A small library to communicate with AXI4 and AXI4-Stream hubs
+Author: Pavel Demin
+License: MIT
+Project-URL: Homepage, https://github.com/pavel-demin/pyhubio
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: libusb1
+Requires-Dist: numpy
+
+This library is used to communicate with configuration registers, status registers, AXI4-Stream and BRAM interfaces on Digilent USB104 A7 and Red Pitaya STEMlab boards:
+
+https://pavel-demin.github.io/usb104-a7-notes
+
+https://pavel-demin.github.io/red-pitaya-notes
+
+This library uses the [python-libusb1](https://github.com/vpelletier/python-libusb1) library to communicate via the USB interface with the AXI4-Stream USB and AXI4-Stream hub modules on the Digilent USB104 A7 board:
+
+https://pavel-demin.github.io/usb104-a7-notes/usb-interface
+
+This library uses the [socket](https://docs.python.org/3/library/socket.html) library to communicate via the Ethernet interface with the AXI4 hub module on the Red Pitaya STEMlab board:
+
+https://pavel-demin.github.io/red-pitaya-notes/axi-hub
