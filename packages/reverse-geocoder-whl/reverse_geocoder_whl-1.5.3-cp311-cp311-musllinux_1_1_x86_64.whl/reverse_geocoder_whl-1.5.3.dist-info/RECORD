@@ -1,0 +1,11 @@
+reverse_geocoder_whl.cpython-311-x86_64-linux-musl.so,sha256=KTV6iTAGUvklcM8fOaLf1smcy5hhe-ntYpgt2B7SN3M,414153
+reverse_geocoder_whl.libs/libgcc_s-a04fdf82.so.1,sha256=YxqJNaesQMhDswHEQpXsiLnVvMBBbYO6KYMDZFPWKSM,81257
+reverse_geocoder_whl.libs/libstdc++-a9383cce.so.6.0.28,sha256=Wy9UCdwS1rwI9GU5e7qE61S0AkRqqwti1q_adWSs-Rk,2447393
+reverse_geocoder_whl/cKDTree_MP.py,sha256=ky531wBY5EWkV3MRXcItk58Hwsu5G8epQz3HtLJbDPk,5131
+reverse_geocoder_whl/rg_cities1000.csv,sha256=HeVtwysDCMYJTV2DNEHIyiWCfyTppqTMFEIjq1-bZb8,7851524
+reverse_geocoder_whl/__init__.py,sha256=xAMkmw4mFppi5ZUmkNMN5ZHE7H8psLaYT2TK5u1N57M,10297
+reverse_geocoder_whl-1.5.3.dist-info/top_level.txt,sha256=IV7RmpgLwcd3AALSv8ogi2_NBtCPjVDSir6bmn5iy5o,21
+reverse_geocoder_whl-1.5.3.dist-info/WHEEL,sha256=IHZpKxZL6fMI4XHd4EqcDRvBScMH-OFdPdcrSh0OKDk,113
+reverse_geocoder_whl-1.5.3.dist-info/RECORD,,
+reverse_geocoder_whl-1.5.3.dist-info/METADATA,sha256=LwwlkbuJZg9qfWWux2imfZPusX5XHQFO2_mXQgitpdM,1868
+reverse_geocoder_whl-1.5.3.dist-info/LICENSE,sha256=HUKcmLe-r31w1URLEZRY6r8hFIeynF9wxm0JSMHeNJE,24477
