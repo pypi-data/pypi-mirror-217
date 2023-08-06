@@ -1,0 +1,6 @@
+README.md
+setup.py
+groot_shopee.egg-info/PKG-INFO
+groot_shopee.egg-info/SOURCES.txt
+groot_shopee.egg-info/dependency_links.txt
+groot_shopee.egg-info/top_level.txt
