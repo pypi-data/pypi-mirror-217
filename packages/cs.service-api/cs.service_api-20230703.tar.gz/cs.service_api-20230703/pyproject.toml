@@ -1,0 +1,89 @@
+[project]
+name = "cs.service_api"
+description = "ServiceAPI, a base class for APIs which talk to a service, typically a web service via HTTP."
+authors = [
+    { name = "Cameron Simpson", email = "cs@cskk.id.au" },
+]
+keywords = [
+    "python3",
+]
+dependencies = [
+    "cs.context>=20230331",
+    "cs.deco>=20230331",
+    "cs.fstags>=20230407",
+    "cs.logutils>=20230212",
+    "cs.pfx>=20230604",
+    "cs.resources>=20230503",
+    "cs.sqltags>=20230612",
+    "cs.upd>=20230401",
+    "icontract",
+    "requests",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+]
+version = "20230703"
+
+[project.license]
+text = "GNU General Public License v3 or later (GPLv3+)"
+
+[project.urls]
+URL = "https://bitbucket.org/cameron_simpson/css/commits/all"
+
+[project.readme]
+text = """
+ServiceAPI, a base class for APIs which talk to a service,
+typically a web service via HTTP.
+
+*Latest release 20230703*:
+Retry logic for requests.
+
+An instance of a `ServiceAPI` embodies some basic features
+that feel common to web based services:
+- a notion of a login
+- local state, an `SQLTags` for data about entities of the service
+- downloads, if that is a thing, with `FSTags` for file annotations
+
+## Class `HTTPServiceAPI(ServiceAPI, cs.resources.MultiOpenMixin, cs.context.ContextManagerMixin)`
+
+`HTTPServiceAPI` base class for other APIs talking to HTTP services.
+
+Subclasses must define:
+* `API_BASE`: the base URL of API calls.
+  For example, the `PlayOnAPI` defines this as `f'https://{API_HOSTNAME}/v3/'`.
+
+## Class `RequestsNoAuth(requests.auth.AuthBase)`
+
+This is a special purpose subclass of `requests.auth.AuthBase`
+to apply no authorisation at all.
+This is for services with their own special purpose authorisation
+and avoids things like automatic netrc based auth.
+
+## Class `ServiceAPI(cs.resources.MultiOpenMixin, cs.context.ContextManagerMixin)`
+
+`SewrviceAPI` base class for other APIs talking to services.
+
+# Release Log
+
+
+
+*Release 20230703*:
+Retry logic for requests.
+
+*Release 20230217*:
+Initial release."""
+content-type = "text/markdown"
+
+[build-system]
+requires = [
+    "setuptools >= 61.2",
+    "trove-classifiers",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
