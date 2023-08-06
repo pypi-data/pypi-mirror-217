@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: github-actions-utils
+Version: 1.0.0
+Summary: attr: github_actions_utils.__description__
+Home-page: https://github.com/heitorpolidoro/github_actions_utils
+Author: attr: github_actions_utils.__author__
+License: MIT
+Keywords: github,actions,utils
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
