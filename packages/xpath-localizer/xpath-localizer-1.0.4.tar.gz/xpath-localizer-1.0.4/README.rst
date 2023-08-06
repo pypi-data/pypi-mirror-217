@@ -1,0 +1,196 @@
+###################################################
+xpath-localizer (a.k.a robotframework-localization)
+###################################################
+|license|
+|Conventional Commits|
+
+*************************************************************
+Xpath Localizer Package
+*************************************************************
+
+xpath localizer contains the following tools which help you to internationalize
+various web UI automation frameworks such as robotFramework and playwright, or any 
+automation tools that use the XPATH for the web element locator.
+
+xploc command
+    - ``xploc``` command 
+    - this is a test
+
+robotLocalization 
+    ``robotLocalization`` command is to be used with Variabes statement in the robot frame work.
+    It provides ``get_variables`` function and loads variables from specified properties files.
+
+
+- A python command (xploc) to localize properties files containing XPATH specification. 
+- A python library (xploc) to load localized strings using a BCP-47 compliant language fallback.
+- A python command (robotLocalization) to load **variables** from localized properties files 
+  with the robot Variables statement.
+
+============
+Installation
+============
+robotLocalization can be installed with pip/pipenv:
+
+.. code:: bash
+
+    pip install xpath-localizer
+    pipenv install xpath-localizer
+
+=======================
+Usage in robotFramework
+=======================
+
+robotLocalization is used to provide a ``get_variables`` function in the robotFramework.
+The get_variables function can be used in the robot test case to load strings from
+properties files by providing a language fallback mechanism. 
+
+.. code-block:: properties
+
+    # resources/sample.properties
+    msg = Hello, World!
+
+.. code-block:: properties
+
+    # resources/sample_ja.properties
+    msg = みなさん、こんにちは!
+
+.. code-block:: robotframework
+
+    #   sample.robot
+    # 
+    #   $ robot --variable language:en sample.robot
+    #   $ robot --variable language:ja sample.robot
+    #   
+    *** Settings ***
+    Library     SeleniumLibrary
+    Variables   robotLocalization     ${LANGUAGE}    resources/sample.properties    verbose=True
+
+    *** Variables ***
+    ${LANGUAGE}              en     # default LANGUAGE.  This can be replaced by --variable option.
+
+    *** Test Cases ***
+    Test Case 1
+        [Documentation]    robotLocalization Sample
+        Log To Console     ${msg}
+        Log Variables
+
+Getting variables from get_variables function
+***********************************************
+
+robotLocalization provides ``get_variabes`` function which can be specified 
+in the robot Variables statement. 
+
+Syntax in robot test
+--------------------
+
+Variables   **robotLocalization**   *localeId*   *path or file list* *pathOptions*
+
+*localeId* specifies the locale or language of the properties being used.  It is used 
+to load strings from properties files in properties files in the specified path list 
+or files.  If the specified locale is not available, English properties will be used. 
+
+*pathOptions*
+^^^^^^^^^^^^^
+
+verbose=            True or False
+filetype=           file type
+
+Examples
+--------
+Variables   **robotLocalization**   en   ${PROJECT_REPO_PATH}
+
+Accessing variables from robot code. 
+
+Internationalization Helper CLI 
+********************************
+
+The xploc command helps testers to internationalize robot test cases.  
+
+**xploc** *operand* *file_patterns* *language-list* 
+
+Analyze Mode
+------------
+
+In the analyze mode, xploc CLI reports the localizable strings in the robot test and 
+candidates of available strings in existing properties files from properties files in the
+specified path list. 
+
+.. code:: bash 
+
+    xploc [*path list()] --analyze [*robot_file*]
+
+\--analyze
+^^^^^^^^^^^
+Specifies a robot test case.  Typically, this robot file contains Xpath specifications
+with UI elements or robot variable specifications used in other keywords. 
+
+Extract Mode (robotFramework)
+------------------------------
+
+The extract mode is used to extract strings from a specified robot file.  
+It also generates internationalized robot files by replacing localizable strings
+with variables references. 
+
+\--extract (robotFramework)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Specifies a robot test case to extract strings. 
+
+\--output_bundle | --outb
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Specifies a bundle file that can be used to store product properties into a single file. 
+This option is only valid if *--use_bundle* option is enabled. 
+
+\--output_properties | --outp
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Specifies a properties file to store localizable strings. If *--use_bundle* is specified,
+only strings not available in product properties files are stored.  
+
+\--output_robot | --outr (robotFramework)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Specifies a robot file by internationalizing the robot file specified with --extract option.
+All localizable strings will be replaced by variable references.  A string with "# i18n:OK "
+comments are ignored. 
+
+\--use_bundle | --use_keys
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+--use_bundle option checks the availability of strings in the specified product properties files.
+If found, it uses strings there. 
+
+\--multi_trans
+^^^^^^^^^^^^^^
+
+\--multi_trans options checks the translated value for locales specified with --bundle_locale option
+and checks the multiple translations.   If a variant translation is found, it extends the xpath expression 
+to use "OR" condition to check against all of the variant translations. 
+
+\--playwright (robotFramework)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+\--playwright option checks the xpath specification for Playwright when externalizing the robot
+variables.  This option is useful when a robotFramework is used with the Playwright for Python. 
+
+\--xpath (playwright|pytest)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+\--xpath options specified that the specified files contain XPATH strings only.  This option is useful
+to create a properties file from an XPATH file.  The XPATH file is usually generated by using a 
+test automation framework that uses XPATH expression when locating web elements. 
+
+Dump Mode
+---------
+
+\--dump
+^^^^^^^
+
+\--dump option generates a list of all the variables loaded from properties files.  
+
+
+.. |license| image:: https://img.shields.io/badge/license-MIT-blue.svg
+.. |robotLocalization_icon| image:: robotLocalization.png
+.. |Conventional Commits| image:: https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white
+
+
