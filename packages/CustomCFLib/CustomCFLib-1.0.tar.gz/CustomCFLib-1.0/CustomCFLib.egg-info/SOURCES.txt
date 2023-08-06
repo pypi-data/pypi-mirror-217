@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+CustomCFLib/CustomCollaborativeFiltering.py
+CustomCFLib/__init__.py
+CustomCFLib.egg-info/PKG-INFO
+CustomCFLib.egg-info/SOURCES.txt
+CustomCFLib.egg-info/dependency_links.txt
+CustomCFLib.egg-info/requires.txt
+CustomCFLib.egg-info/top_level.txt
