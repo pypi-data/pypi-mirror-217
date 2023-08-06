@@ -1,0 +1,7 @@
+lakeapi2sql-0.3.0.dist-info/METADATA,sha256=2ejSAahx3qCXRfqhhxBGWOtN0gMewF77IZf5tNotsbo,1521
+lakeapi2sql-0.3.0.dist-info/WHEEL,sha256=epDFcDJu9uq_BqCJhD84GAgb3RDdyiVsF2sIt9fOws4,91
+lakeapi2sql-0.3.0.dist-info/license_files/LICENSE,sha256=fCMFn2C8Xnc24XqvU2923Nyvzeo7ce71QkSlXqWTvUQ,1102
+lakeapi2sql/bulk_insert.py,sha256=QgJ2JBNWnHS8V09jv9eCyMTj338RVmSSySMi4l1ulWI,2184
+lakeapi2sql/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lakeapi2sql/_lowlevel.pyd,sha256=wgE6fKPFTVrm6QkcnzS2y6l1n9rhngVNEBM2PE_PuIY,8185344
+lakeapi2sql-0.3.0.dist-info/RECORD,,
