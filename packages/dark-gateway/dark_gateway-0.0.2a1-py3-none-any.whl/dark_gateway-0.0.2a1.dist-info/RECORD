@@ -1,0 +1,11 @@
+dark/__init__.py,sha256=eGBwK87aoBMFNC_P8eBVa3lXQwVS94V1ihODmA6eaGs,37
+dark/gateway/__init__.py,sha256=7dbfoM96liKzulrzvn5lwNGW9bl-HuKFmrt4e6AFgSo,29
+dark/gateway/core.py,sha256=9sv7pmKqOIJZnzzS6P26ZpXqa9IZx1B7DrT5sbuu-GA,3972
+dark/gateway/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dark/gateway/util/libs.py,sha256=VJh7IupdtROZvuv63Dxz1sqs0Ebk6HiJbJ2mTQ9mjM8,6573
+dark/gateway/util/setup.py,sha256=wxW7vht-bYgqyzKIfoQhzEhGa5lnzA0L6gMTbfX9vVQ,13540
+dark_gateway-0.0.2a1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+dark_gateway-0.0.2a1.dist-info/METADATA,sha256=qdBooQoMjf4K4OulxHbh7vEsfCuYnPSzAYU317wn2sI,502
+dark_gateway-0.0.2a1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+dark_gateway-0.0.2a1.dist-info/top_level.txt,sha256=PRz6berpQWQT4a2BjbxNyzFpp1Wk0IB4DUA6RsifoSI,5
+dark_gateway-0.0.2a1.dist-info/RECORD,,
