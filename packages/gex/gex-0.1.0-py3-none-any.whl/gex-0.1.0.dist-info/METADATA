@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: gex
+Version: 0.1.0
+Summary: Grid Explorer: A simple app for working with power networks.
+Keywords: power,network,flow
+Author: daniel krpelik
+Author-email: daniel.krpelik@vsb.cz
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: matplotlib (>=3.7.1,<4.0.0)
+Requires-Dist: numba (>=0.56.4,<0.57.0)
+Requires-Dist: pandapower (>=2.12.0,<3.0.0)
+Requires-Dist: pandas (>=2.0.0,<3.0.0)
+Requires-Dist: plotly (>=5.14.1,<6.0.0)
+Requires-Dist: rich (>=13.4.2,<14.0.0)
+Description-Content-Type: text/markdown
+
+# networkExplorer
+
+## info
+
+An app for viewing and editing networks.
+
+after `pip install gex` 
+
+use `gex <pandapowernet.json> | gex | this | help`
+
+---
+
+or in repo: `poetry run gex ...`
+
+---
+
+## left to implement...
+
+- colouring by category
+- filtering by pandas query
+- plotly network with scattergl
+
+## to test
+
+- [pyqtgraph](https://pyqtgraph.readthedocs.io/en/latest/)
+
