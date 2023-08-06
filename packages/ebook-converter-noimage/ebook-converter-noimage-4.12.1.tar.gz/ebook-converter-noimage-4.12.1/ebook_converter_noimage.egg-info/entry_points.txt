@@ -1,0 +1,3 @@
+[console_scripts]
+ebook-converter = ebook_converter.main:main
+

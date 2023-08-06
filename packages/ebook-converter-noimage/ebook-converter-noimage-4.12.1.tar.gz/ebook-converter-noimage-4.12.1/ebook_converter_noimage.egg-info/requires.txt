@@ -1,0 +1,12 @@
+filelock
+python-dateutil
+lxml
+css-parser
+beautifulsoup4
+tinycss
+pillow
+msgpack
+html5-parser
+odfpy
+setuptools
+html2text
