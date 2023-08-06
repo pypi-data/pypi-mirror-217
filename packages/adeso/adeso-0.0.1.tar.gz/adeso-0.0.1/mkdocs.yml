@@ -1,0 +1,5 @@
+site_name: A.D.E.S.O.
+site_url: https://adeso-association.github.io
+theme: 
+  name: material
+docs_dir: docs
