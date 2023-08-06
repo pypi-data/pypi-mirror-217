@@ -1,0 +1,9 @@
+cgepy/__init__.py,sha256=IIBWrJj-QOx11iqLSR4nakRYxj_kg0xQfMgdJTfX1fk,4976
+cgepy/colors.py,sha256=IAyTo0UNTuQWenaEetuYggtCDWojE-srnzy5r19Oskg,464
+cgepy/ext/__init__.py,sha256=RyNgJJ0WnB2rCrVA1sQpCTmeTIQQN2jt0yfc55kj9Tc,99
+cgepy/ext/beta/__init__.py,sha256=x2pOclYRECzfJMAd4sw67W_FEUEXKPUoISgurYPhSRg,22
+cgepy/ext/text.py,sha256=_hLm7po6Je086nHJgpqnUkI25-cwMkT3PEw_K0RQ3RE,1318
+cgepy-0.7.1.dist-info/LICENSE.md,sha256=rxj60qUmwYfmF9_XE2RiBL-KUD8vj8jEZYpxM2IQ0SM,1066
+cgepy-0.7.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+cgepy-0.7.1.dist-info/METADATA,sha256=cmzIUBb4uVfQ7DjNNw39XFefodyxqbgnGYPH5RbWqzs,1128
+cgepy-0.7.1.dist-info/RECORD,,
