@@ -1,0 +1,3 @@
+include bisectsearch/requirements.txt
+include bisectsearch/thirdparty.json
+include bisectsearch/README.MD
