@@ -1,0 +1,2 @@
+[console_scripts]
+read-and-chat = read_and_chat:main_cli
