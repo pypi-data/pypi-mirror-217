@@ -1,0 +1,4 @@
+include MANIFEST.in
+include LICENSE
+include src/autodocumenter/generate_doc/utils/config.yaml
+include src/autodocumenter/compile_doc/templates/*.rst

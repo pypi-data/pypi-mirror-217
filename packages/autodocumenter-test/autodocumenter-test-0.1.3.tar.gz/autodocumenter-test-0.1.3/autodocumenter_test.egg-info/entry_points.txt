@@ -1,0 +1,2 @@
+[console_scripts]
+autodocumenter = autodocumenter.__main__:main
