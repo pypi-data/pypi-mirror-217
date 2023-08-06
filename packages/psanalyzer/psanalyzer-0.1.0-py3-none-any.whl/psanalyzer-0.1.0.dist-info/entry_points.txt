@@ -1,0 +1,3 @@
+[console_scripts]
+psanalyzer=psanalyzer.main:main
+
