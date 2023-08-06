@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+rodrigopdf/__init__.py
+rodrigopdf/pdf2image.py
+rodrigopdf/pdf2text.py
+rodrigopdf.egg-info/PKG-INFO
+rodrigopdf.egg-info/SOURCES.txt
+rodrigopdf.egg-info/dependency_links.txt
+rodrigopdf.egg-info/top_level.txt
