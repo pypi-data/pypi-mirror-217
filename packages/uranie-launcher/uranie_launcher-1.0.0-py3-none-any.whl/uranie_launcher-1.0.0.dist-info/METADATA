@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: uranie-launcher
+Version: 1.0.0
+Summary: Uranie launcher for your own calculation scripts
+Home-page: UNKNOWN
+Author: Clément STUTZ
+Author-email: clement.stutz@cea.fr
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: numpy (>=1.19.5)
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+
+UNKNOWN
+
