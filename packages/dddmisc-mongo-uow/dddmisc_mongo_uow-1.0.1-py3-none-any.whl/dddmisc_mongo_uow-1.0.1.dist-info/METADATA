@@ -1,0 +1,153 @@
+Metadata-Version: 2.1
+Name: dddmisc-mongo-uow
+Version: 1.0.1
+Summary: 
+Author: Aziz
+Author-email: walkingonadream2012@mail.ru
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: ddd-misc (>=0.8.1,<0.9.0)
+Requires-Dist: motor (>=3.0.0,<4.0.0)
+Description-Content-Type: text/markdown
+
+# MongoDB async ddd-misc UnitOfWork
+
+MongoDB UnitOfWork на базе ddd-misc и библиотеки Motor: Asynchronous Python driver for MongoDB.
+
+
+## Классы
+
+**AbstractMongoRepository**
+
+AbstractMongoRepository - абстрактный класс для реализации репозитория с подключением к базе данных MongoDB. Класс реализует 
+сигнатуру для инициализации с двумя параметрами помимо self и метод 'get_mongo_collection':
+
+    - 'connection' - параметр принимающий контекст инстанса класса AsyncIOMotorClientSession библиотеки Motor.
+
+    - 'collections' - параметр принимающий структуру dict ключами которой являются название mongo коллекции в виде строки, а значениями объект класса AsyncIOMotorCollection библиотеки Motor.
+
+    '_get_mongo_collection' - метод класса AbstractMongoRepository, возвращающий mongo коллекцию по передаваемому названию в параметре в виде строки.
+
+Данный класс обязателен для наследования при реализации конкретного MongoDB репозитория в рамках UnitOfWork данного пакета.
+
+Пример использования:
+```
+from dddmisc_mongo_uow import AbstractMongoRepository
+
+
+class ConcreteMongoRepository(AbstractMongoRepository):
+    aggregate_class = ConcreteAggregateClass
+    
+    async def _add_to_storage(self, aggregate):
+        document = dict(
+            key=aggregate._key,
+            reference=str(aggregate.reference)
+        )
+        collection = self._get_mongo_collection('uow')
+        await collection.update_one({'reference': document['reference']}, {'$set' : document}, upsert=True, session=self._connection)
+```
+
+**MongoEngine**
+
+MongoEngine - класс для создания структуры engine MongoDB версии, engine передается в параметры при инициализации AsyncMessageBus.
+При инициализации MongoEngine требует трех обязательных параметров:
+
+    - 'address' - параметр принимающий строку для подключения к конкретной базе данных MongoDB, включающей в себя хост базы, а так же дополнительные параметры подключения. Пример - 'mongodb://localhost:27017/?directConnection=true'. При инициализации по параметру создается объект AsyncIOMotorClient.
+
+    - 'db_name' - параметр принимающий строку с названием базы данных. При инициализации создается объект AsyncIOMotorDatabase.
+
+    - 'collections' - парамтер принимающий массив с названиями коллекции MongoDB в виде строк. При инициализации создается структура неизменяемого dict, ключами которой являются названия коллекции, а значениями объекты AsyncIOMotorCollection с подключением к данным коллекциям.
+
+    'get_collections' - метод возвращающий коллекции.
+
+    'get_session' - асинхронный метод возврщающий объект AsyncIOMotorClientSession для проведения транзакции.
+
+Пример использования:
+```
+from dddmisc_mongo_uow import MongoEngine
+
+
+mongo_engine = MongoEngine(address='mongodb://localhost:27017/?directConnection=true', db_name='mongo_uow', collections=['uow'])
+
+collections = mongo_engine.get_collections()
+
+session = await mongo_engine.get_session()
+```
+
+**MongoMotorUOW**
+
+MongoMotorUOW - класс на базе AbstractAsyncUnitOfWork, реализующий конкретный объект UnitOfWork и его стандартное поведение в рамках ddd-misc для выполнения транзакции в MongoDB.
+
+Класс реализует стандартную сигнатуру для создания объекта UnitOfWork в процессе выполнения хэндлера в объекте AsyncMessageBus, требующую двух параметров engine и repository_class. В процессе инициализации проверяется является ли repository_class субклассом AbstractMongoRepository, далее repository_class оборачивается классом декоратором вместе с параметром collections, чтобы UnitOfWork мог передавать один параметр connection при инициализации репозитория.
+
+Пример использования:
+```
+from dddmisc import AsyncMessageBus
+from dddmisc_mongo_uow import MongoMotorUOW
+
+message_bus = AsyncMessageBus(
+    uow_class=MongoMotorUOW,
+    repository_class=ConcreteMongoRepository,
+    engine=mongo_engine
+)
+```
+
+
+## Основные параметры для запуска MongoDB в .gitlab-ci.yml:
+```
+  services:
+    - name: mongo:6.0
+      alias: mongo-svc
+      command: ["mongod", "--logpath=/dev/null", "--bind_ip_all", "--replSet=rs0"]
+  before_script:
+    - python -V
+    - python -m venv .venv
+    - poetry install
+    - apt-get update && apt-get install -y gnupg
+    - apt-get update && apt-get install -y wget && rm -rf /var/lib/apt/lists/*
+    - wget -qO - https://www.mongodb.org/static/pgp/server-6.0.asc | apt-key add -
+    - echo "deb http://repo.mongodb.org/apt/debian buster/mongodb-org/6.0 main" |  tee /etc/apt/sources.list.d/mongodb-org-6.0.list
+    - apt-get update
+    - apt-get install -y mongodb-org
+    - mongosh --host mongo-svc --eval "rs.initiate({'_id':'rs0','members':[{'_id':0,'host':'127.0.0.1:27017'}]});"
+  script:
+    - mongosh --host mongo-svc --eval "rs.status()"
+    - poetry run poe test
+```
+
+При установке отличающейся версии MongoDB параметры установки нужно изменить на акутальную версию.
+
+Комманда `rs.initiate({'_id':'rs0','members':[{'_id':0,'host':'mongo-svc'}]});` инициирует реплику.
+
+
+На странице https://www.mongodb.com/docs/manual/reference/connection-string/ описан формат строки подключения и разные его варианты.
+
+
+Стандартный формат подключения:
+
+    - 'mongodb://localhost:27017/'
+
+Рабочий формат подключения на локальном компьютере при инициации 'rs.initiate()':
+
+    - 'mongodb://localhost:27017/?directConnection=true'
+
+При инициации 'rs.initiate({'_id':'rs0','members':[{'_id':0,'host':'mongo-svc'}]})' создается конкретная реплика, их может быть несколько, например:
+
+```
+    rs.initiate(
+    {
+        _id: "rs0",
+        version: 1,
+        members: [
+            { _id: 0, host : "mongodb0.example.net:27017" },
+            { _id: 1, host : "mongodb1.example.net:27017" },
+            { _id: 2, host : "mongodb2.example.net:27017" }
+        ]
+    }
+    )
+```
+'rs0' - имя набора реплик, задается при поднятии базы, строка подключения на локалке:
+
+    - 'mongodb://localhost:27017/?directConnection=true&replicaSet=rs0

@@ -1,0 +1,6 @@
+dddmisc_mongo_uow/__init__.py,sha256=5AWMz0awH3U-JEEJtllt6pbOWOhl0t62mkrUUUeE3nA,108
+dddmisc_mongo_uow/abstraction.py,sha256=MlPVACqVyKQsVYZzOkRtHtuhb74CybIzQCeTcvLcmKg,559
+dddmisc_mongo_uow/unit_of_work_tools.py,sha256=mAQXRbMMZflGibZnk1XUivSAqSYn2cauHRPquuy3nHQ,3212
+dddmisc_mongo_uow-1.0.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+dddmisc_mongo_uow-1.0.1.dist-info/METADATA,sha256=VVsyhp3V-AmrAVnY4rXVrrw1JKCKl0fs36NRv6R7cuE,8225
+dddmisc_mongo_uow-1.0.1.dist-info/RECORD,,
