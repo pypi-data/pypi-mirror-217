@@ -1,0 +1,14 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: v4.0.7
+_src_path: https://github.com/jupyterlab/extension-template
+author_email: zejiangshen@gmail.com
+author_name: chapyter
+has_binder: false
+has_settings: true
+kind: frontend
+labextension_name: '@shannon-shen/chapyter'
+project_short_description: A Natural Language-Based Python Program Interpreter
+python_name: chapyter
+repository: https://github.com/chapyter/chapyter
+test: true
+
