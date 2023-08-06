@@ -1,0 +1,2 @@
+[console_scripts]
+xilinx-language-server = xilinx_language_server.__main__:main
