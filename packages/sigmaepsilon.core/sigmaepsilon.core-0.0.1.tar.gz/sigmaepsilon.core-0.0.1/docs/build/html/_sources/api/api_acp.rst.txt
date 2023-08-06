@@ -1,0 +1,6 @@
+=========================
+Abstract class properties
+=========================
+
+.. automodule:: sigmaepsilon.core.acp
+    :members: abstract_class_property
