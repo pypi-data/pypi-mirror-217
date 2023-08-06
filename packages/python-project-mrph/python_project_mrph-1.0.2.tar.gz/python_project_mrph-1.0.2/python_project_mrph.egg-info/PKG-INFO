@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: python-project-mrph
+Version: 1.0.2
+Summary: python example package
+Home-page: https://github.com/maggiehuntpa/python-project-mrph.git
+Author: MRPH
+Author-email: maggie.hunt@paconsulting.com
+License: UNKNOWN
+Download-URL: https://github.com/maggiehuntpa/python-project-mrph/archive/refs/tags/Pythonupdate.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8

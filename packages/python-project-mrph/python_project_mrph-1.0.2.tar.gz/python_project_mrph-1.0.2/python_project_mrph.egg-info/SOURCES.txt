@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+python_project_mrph/__init__.py
+python_project_mrph.egg-info/PKG-INFO
+python_project_mrph.egg-info/SOURCES.txt
+python_project_mrph.egg-info/dependency_links.txt
+python_project_mrph.egg-info/requires.txt
+python_project_mrph.egg-info/top_level.txt
