@@ -1,0 +1,8 @@
+pyproject.toml
+setup.cfg
+setup.py
+src/dsna_complete.egg-info/PKG-INFO
+src/dsna_complete.egg-info/SOURCES.txt
+src/dsna_complete.egg-info/dependency_links.txt
+src/dsna_complete.egg-info/requires.txt
+src/dsna_complete.egg-info/top_level.txt
