@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: nb_libs
+Version: 0.3
+Summary: nb_libs
+Home-page: https://github.com/ydf0509/nb_libs
+Author: bfzs
+Author-email: ydf0509@sohu.com
+Maintainer: ydf
+Maintainer-email: ydf0509@sohu.com
+License: BSD License
+Keywords: nb_libs
+Platform: all
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown
+
+# 各种日常工具
+
+# 安装
+
+pip install nb_libs
+
+# 1. restart_program每隔多久重启代码自身。
+
+```python
+import time
+import datetime
+from nb_libs.restart_programe_by_interval import restart_program
+
+
+def _run():
+    print(datetime.datetime.now(), '开始运行程序')
+    for i in range(1000):
+        time.sleep(0.5)
+        print(datetime.datetime.now(), i)
+
+
+if __name__ == '__main__':
+    restart_program(10)  # 每隔10秒重启。
+    _run()
+```
+
+
