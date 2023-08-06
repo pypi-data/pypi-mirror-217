@@ -1,0 +1,12 @@
+gues/decomposable_score.py,sha256=VMTSEUT6rpquFW6MY0pYBpVFoFN6CJ-XzJ2rlnN79jo,3796
+gues/gauss_obs_l0_pen.py,sha256=KCU-2S52LvAlziuHUA3jz3P6lf851fFpMeKziWndNoM,9139
+gues/grues.py,sha256=Ei3qGF2en_-clgDscq2KRxnDVLc5zW3ngiVOUDNgV6E,21749
+gues/gues.py,sha256=wZAprTX2_y5NFI_driOKmKIwJeQEnX7DQj5GgIdm1WY,15431
+gues/independence_testing.py,sha256=OtglbYQO-Vtq2arBoI7Oz6FhcQu08-qCq7Qniu-Z3ks,9514
+gues/sample.py,sha256=2S-fuweNbCv0d4yNgCaw9wEIOvtpKRfjvjFCQAxAx8Y,1865
+gues-0.2.0.data/scripts/reproduce_astat,sha256=mPdGfgpBl0x1DWuOH1qHJYxVM9jaQxG7Q5pkwSsTaIw,22126
+gues-0.2.0.dist-info/LICENSE.md,sha256=rYWNU8rgXu2VMezUxGdECAOs_-NMad57iOA6_8W2ob0,34283
+gues-0.2.0.dist-info/METADATA,sha256=xUwHn_pH5eoAcaMjPCjqSv0uw2-_gUSxjSyouZZ4bfU,1044
+gues-0.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+gues-0.2.0.dist-info/top_level.txt,sha256=ESy78tbrIbtgAOuuCEVJCpWxZ6rIazPRG1x_Jgz6uZw,5
+gues-0.2.0.dist-info/RECORD,,
