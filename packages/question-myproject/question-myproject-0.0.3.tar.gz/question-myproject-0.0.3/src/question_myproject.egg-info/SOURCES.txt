@@ -1,0 +1,9 @@
+LICENSE
+pyproject.toml
+setup.cfg
+src/generator/__init__.py
+src/generator/main.py
+src/question_myproject.egg-info/PKG-INFO
+src/question_myproject.egg-info/SOURCES.txt
+src/question_myproject.egg-info/dependency_links.txt
+src/question_myproject.egg-info/top_level.txt
