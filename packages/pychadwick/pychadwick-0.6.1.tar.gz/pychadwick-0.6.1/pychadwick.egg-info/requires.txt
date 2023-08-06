@@ -1,0 +1,7 @@
+scikit-build
+ninja
+cmake
+wheel
+setuptools
+pandas>=1.0.4
+requests

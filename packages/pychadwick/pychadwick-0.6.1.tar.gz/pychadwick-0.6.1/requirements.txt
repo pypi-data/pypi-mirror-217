@@ -1,0 +1,5 @@
+cmake
+scikit-build
+ninja
+pandas
+requests

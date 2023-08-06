@@ -1,0 +1,3 @@
+[console_scripts]
+pycwevent = pychadwick.cli.pycwevent:main
+
