@@ -1,0 +1,2 @@
+[console_scripts]
+joyeuse = joyeuse.__main__:main
