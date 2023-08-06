@@ -1,0 +1,7 @@
+setup.py
+chady.egg-info/PKG-INFO
+chady.egg-info/SOURCES.txt
+chady.egg-info/dependency_links.txt
+chady.egg-info/requires.txt
+chady.egg-info/top_level.txt
+datascience_pacakge/__init__.py
