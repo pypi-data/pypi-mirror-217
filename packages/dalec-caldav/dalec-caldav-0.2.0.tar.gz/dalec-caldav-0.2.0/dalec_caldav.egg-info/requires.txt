@@ -1,0 +1,13 @@
+Django>=2.2
+dalec
+caldav
+
+[testing]
+requests
+beautifulsoup4
+coverage>=3.7.0
+black
+flake8
+mypy
+types-requests
+radicale
