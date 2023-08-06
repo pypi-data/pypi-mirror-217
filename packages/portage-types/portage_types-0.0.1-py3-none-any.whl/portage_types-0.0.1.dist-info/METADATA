@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: portage-types
+Version: 0.0.1
+Summary: Typing stubs for Portage
+License: MIT
+Author: Andrew Udvare
+Author-email: audvare@gmail.com
+Requires-Python: >=3.10,<4
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Typing :: Typed
+Description-Content-Type: text/markdown
+
+# Portage types
+
+Types for portage.
+
+## Installation
+
+```shell
+pip install portage-types
+```
+
+```shell
+poetry add portage-types
+```
+
