@@ -1,0 +1,5 @@
+scikit-survival~=0.17
+pandas~=1.4
+numpy~=1.22
+shap~=0.41
+pyarrow~=11.0
