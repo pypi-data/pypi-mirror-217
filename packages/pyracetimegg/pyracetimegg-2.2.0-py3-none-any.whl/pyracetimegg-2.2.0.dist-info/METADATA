@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pyracetimegg
+Version: 2.2.0
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+License-File: LICENSE
+Requires-Dist: Pillow (>=9.5.0)
+Requires-Dist: requests (>=2.31.0)
+Requires-Dist: tzdata
+
