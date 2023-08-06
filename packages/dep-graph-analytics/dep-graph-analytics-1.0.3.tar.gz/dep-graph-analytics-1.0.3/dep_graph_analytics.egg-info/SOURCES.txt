@@ -1,0 +1,13 @@
+MANIFEST.in
+backend_shim.py
+setup.py
+analytics/__init__.py
+analytics/cycles.py
+analytics/main.py
+dep_graph_analytics.egg-info/PKG-INFO
+dep_graph_analytics.egg-info/SOURCES.txt
+dep_graph_analytics.egg-info/dependency_links.txt
+dep_graph_analytics.egg-info/entry_points.txt
+dep_graph_analytics.egg-info/namespace_packages.txt
+dep_graph_analytics.egg-info/requires.txt
+dep_graph_analytics.egg-info/top_level.txt
