@@ -1,0 +1,10 @@
+x11x_wagtail_blog/__init__.py,sha256=yAXnwEEGVeP4CgbCMv21Dy-SwmY49zFF9SmiVnvjmD0,38
+x11x_wagtail_blog/apps.py,sha256=nx1TtP7mB2uKJR6_5q4V6k9Dy42rUNDoPWFdfvO_aw4,164
+x11x_wagtail_blog/models.py,sha256=Vjc0p2XbAPgE6HyTF6vll98A4eDhA5AvaQqsc4kQ9AQ,57
+x11x_wagtail_blog/tests.py,sha256=VNCtGI9GGXo9A9YD9IlcMqeKU3emKbNG6YMnYk5f57A,116
+x11x_wagtail_blog/views.py,sha256=xc1IQHrsij7j33TUbo-_oewy3vs03pw_etpBWaMYJl0,63
+x11x_wagtail_blog/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+11x_wagtail_blog-0.0.0.dist-info/LICENSE,sha256=fcf_1vHHCg4jO1ZRuEKTo3HaXuZUaNtB0fBrfpz9bYs,1087
+11x_wagtail_blog-0.0.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+11x_wagtail_blog-0.0.0.dist-info/METADATA,sha256=8fcsThSu6qUXEjbSfRTHdlXyBPeUBB-ATUm3-pcyguM,1445
+11x_wagtail_blog-0.0.0.dist-info/RECORD,,
