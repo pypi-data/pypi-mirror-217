@@ -1,0 +1,12 @@
+jinja2
+PyYAML
+antsibull-docs-parser<2.0.0,>=1.0.0
+
+[ansible]
+ansible
+
+[base]
+ansible-base
+
+[core]
+ansible-core
