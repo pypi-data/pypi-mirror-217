@@ -1,0 +1,42 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Perangkat sudah dikonfigurasi",
+            "no_plants": "Tidak ada pembangkit yang ditemukan di akun ini"
+        },
+        "error": {
+            "invalid_auth": "Autentikasi tidak valid"
+        },
+        "step": {
+            "plant": {
+                "data": {
+                    "plant_id": "Pembangkit"
+                },
+                "title": "Pilih pembangkit Anda"
+            },
+            "user": {
+                "data": {
+                    "name": "Nama",
+                    "password": "Kata Sandi",
+                    "url": "URL",
+                    "username": "Nama Pengguna"
+                },
+                "title": "Masukkan informasi Growatt Anda"
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "total_energy_today": {
+                "name": "Energi Hari Ini"
+            },
+            "total_maximum_output": {
+                "name": "Daya maksimum"
+            },
+            "total_output_power": {
+                "name": "Daya Keluaran"
+            }
+        }
+    },
+    "title": "Server Growatt"
+}
