@@ -1,0 +1,8 @@
+click
+ome-zarr
+pydantic>=2
+tifffile
+tqdm
+
+[dzi]
+pyvips
