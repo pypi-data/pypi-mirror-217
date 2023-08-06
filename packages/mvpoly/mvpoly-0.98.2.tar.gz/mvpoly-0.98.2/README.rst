@@ -1,0 +1,29 @@
+MVPoly
+======
+
+A pure-Python library for the numeric (rather than symbolic) treatment
+of multivariate polynomials.  Depends only on numpy and scipy.  See the
+`documentation <https://mvpoly.readthedocs.io/>`_ for details on usage.
+
+Install from PyPI
+-----------------
+
+Run
+
+.. code-block:: sh
+
+   python3 -m pip install mvpoly
+
+Note that install from PyPI is deprecated and will be removed by
+the end of 2023.
+
+
+Install from GitLab
+-------------------
+
+Run
+
+.. code-block:: sh
+
+   python3 -m pip install mvpoly \
+     --index-url https://gitlab.com/api/v4/projects/6939644/packages/pypi/simple
