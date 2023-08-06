@@ -1,0 +1,4 @@
+nbformat
+papermill
+pyyaml
+watchdog
