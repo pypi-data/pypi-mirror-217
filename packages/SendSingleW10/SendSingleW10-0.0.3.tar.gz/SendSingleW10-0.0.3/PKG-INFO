@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: SendSingleW10
+Version: 0.0.3
+Summary: Librería para Enviar data a un servidor en base a Librerias de Windows 10
+Home-page: https://github.com/AHernanandez1234/
+Author: Arturo Hernandez
+Author-email: ahernandez1980ene@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+
+# Librería Envio Simple
+
+
+<br>
+
+Librería que te permite enviar una cadena a un servidor en base a las librerias disponibles de Windows 10
+
+
+<br>
+
+## 💡 Prerequisitos
+
+   [Python 3](https://www.python.org/downloads/release/python-370/)
+
+<br>
+
+## 📚 Ejemplo de uso
+
+```
+from SendSingleW10 import SendSingle
+
+Answer = SendSingle (Server, Port , Data)
+```
+<br>
+
+## 🐸 Aloha!
+<br>
+
