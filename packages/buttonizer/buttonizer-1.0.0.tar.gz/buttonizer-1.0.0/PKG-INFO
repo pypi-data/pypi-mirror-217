@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: buttonizer
+Version: 1.0.0
+Summary: run py commands from buttons generated from a config
+Author: Hannes
+Project-URL: Source, https://github.com/hannesdelbeke/buttonizer
+Keywords: commands,pipeline,tool
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
