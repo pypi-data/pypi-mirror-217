@@ -1,0 +1,10 @@
+setup.py
+nibe_prob/Binomialdistribution.py
+nibe_prob/Gaussiandistribution.py
+nibe_prob/Generaldistribution.py
+nibe_prob/__init__.py
+nibe_prob.egg-info/PKG-INFO
+nibe_prob.egg-info/SOURCES.txt
+nibe_prob.egg-info/dependency_links.txt
+nibe_prob.egg-info/not-zip-safe
+nibe_prob.egg-info/top_level.txt
