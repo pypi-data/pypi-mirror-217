@@ -1,0 +1,17 @@
+termux_language_server/__init__.py,sha256=rMKx7H96TzrjRu1d4Zqki-uDwnunDNcbT3KXPH5PcWU,403
+termux_language_server/__main__.py,sha256=_py1fG8UaJ-3HoLVMy-PldmS8nso_ANvuviob5-4nes,1083
+termux_language_server/_metainfo.py,sha256=kioGKPWWXCYFAfZopdWi0ySsssy-OlkEHMyjHsmcJC0,596
+termux_language_server/_version.py,sha256=akDh8M63SIkUdcs4zBTuYU7Q6eQspZu0Ii2tOpXGYNc,160
+termux_language_server/api.py,sha256=C2aiYR1111sdwHZXe2xVOT2L9xLpiYcMkKnQnXGSwxQ,2186
+termux_language_server/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+termux_language_server/server.py,sha256=sgHP01RJSwG5U_doPvoMe1gHGQzJoUc96rfIxpujLPc,6438
+termux_language_server/assets/json/termux.json,sha256=1IgQa8Wm9Xhk2_YpcXz6U5luI_Hu-9PUKdOjExuXNyk,14802
+termux_language_server-0.0.2.data/data/share/bash-completion/completions/termux-language-server,sha256=w7qTZvoILwwfV4Lq-44x1FtLXA_wIbM0Y-VAiWwf1pM,4035
+termux_language_server-0.0.2.data/data/share/man/man1/termux-language-server.1,sha256=yHETfgwBg02GLA4uMH1kJvtIP2ZgCxXPIBRHAYkCr7k,437
+termux_language_server-0.0.2.data/data/share/zsh/site-functions/_termux-language-server,sha256=aX3UQtexnnmytGpIa131YLPWXYj4vmmh7lMe7j_yrWc,1226
+termux_language_server-0.0.2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+termux_language_server-0.0.2.dist-info/METADATA,sha256=6LRXK1TsFQfDbDERtvP4Y7JbtJNPmZFZeP8kT8t1iIo,7703
+termux_language_server-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+termux_language_server-0.0.2.dist-info/entry_points.txt,sha256=Ij4RaEwGVSvmv_B3q2TiukYfwUDMIXwGstwcYdAtclI,80
+termux_language_server-0.0.2.dist-info/top_level.txt,sha256=ls5G0ATtNSm9HOuQDeeHW8DUjgN4hwrtz-a8c45ZuUs,23
+termux_language_server-0.0.2.dist-info/RECORD,,
