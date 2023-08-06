@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: qiskit-debugger
+Version: 0.1.0
+Author: Sirajus Salekin
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+
