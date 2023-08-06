@@ -1,0 +1,15 @@
+testpoetry2/__init__.py,sha256=Ybqh1NaSR6lW0_uIDftkJ37mngSHSADcvAapraFWqAE,332
+testpoetry2/__main__.py,sha256=cy7lcX1peqyLH4RJlkqKnQna_zjn4eun0brAt4OC-Xw,118
+testpoetry2/__version__.py,sha256=-IXj3imSEkRGL1Y9Znm6YUlRPNd7g92DfOTROYRrxBw,24
+testpoetry2/console/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+testpoetry2/console/application.py,sha256=8lZSdFY5ZweDvJXs7-36abN7Vy-JxTpexoFBzUhtoAI,4475
+testpoetry2/pwgen.py,sha256=z0kavT6-IrQqTVmEbF8ZhlqvmWk_o0XHCVfwAz_kZ1k,7732
+testpoetry2/test/__init__.py,sha256=0vJejnR6PT3qj61P7Zmoi2F_3GlMV2u1UcakKWkMGX0,75
+testpoetry2/test/__main__.py,sha256=yFRAHnYxIA9HtqTFbauvlxB5ZHAdKoihGRcmqLIw8xA,116
+testpoetry2/test/pattern-list-error.txt,sha256=kdG1Jhw_7FWCCGp2TVTy07Zs3pkWwbcnVLp07YRRUmQ,99
+testpoetry2/test/pattern-list.txt,sha256=tSAuuMA3czAOEINcMeBKDUy5LWmkK6rZC21-Ei1DtKY,175
+testpoetry2/test/pwgen_test.py,sha256=4TrqXdbhVp9HymJKYx01c3Y5mnFtRPndMEf0_R0xdvo,16110
+testpoetry2-0.1.17.dist-info/entry_points.txt,sha256=JIL6ntPStA4m8oPv65kQVp3JUY-lLZsZ0E22eFpom0A,75
+testpoetry2-0.1.17.dist-info/METADATA,sha256=vMxV5sjCsKQ235N9ZDv7VItEEVNwDTvDmYoyJ69d3XY,1838
+testpoetry2-0.1.17.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+testpoetry2-0.1.17.dist-info/RECORD,,
