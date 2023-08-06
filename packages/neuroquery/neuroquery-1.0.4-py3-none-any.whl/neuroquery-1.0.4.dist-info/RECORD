@@ -1,0 +1,17 @@
+neuroquery/VERSION.txt,sha256=0bd7iPS59nWpAOQUOsdoohIYYjz-FwPKQxYjiMMnG9Y,6
+neuroquery/__init__.py,sha256=0zm7jqUNYiprNebLFB9ibWYeX6q1NArqbk9Sz4WUyFQ,581
+neuroquery/_compat.py,sha256=qeK-ETkZeilS9Ikvc0YDIc3d3-sYxX4J3vOW89GrMOY,295
+neuroquery/datasets.py,sha256=ZTTwDpX0LUxzCBbNadMPU4NrogIjZxdN0zCcM6YJqaI,3256
+neuroquery/encoding.py,sha256=xEgl1bhY9euSVJfWQd7JV2DqRAIt7BOVAFg7GYXzF8g,13047
+neuroquery/img_utils.py,sha256=Ib9qfIgwCsRtYbBp-6R9EXg5E8SNl7svULXcS4h3wJs,2973
+neuroquery/nmf.py,sha256=yiGxFLGEsPnmolicNHCqTOsbg9JC3BQc33VCzl-lAcU,2260
+neuroquery/ridge.py,sha256=WE4LrG1sS6xXOM5XoyjkVbg295__yzT8_-booEaN1xM,11574
+neuroquery/smoothed_regression.py,sha256=GTCLhMokyDX5Aa4MFBclc-aZvQv7XaDn6eCr8FRx-uo,2435
+neuroquery/tokenization.py,sha256=JgVRaxrGGx2A0h-eYcUkI6P9gKyZlUIObNHwUQwPrZQ,24719
+neuroquery/data/highlight.xsl,sha256=uRRkGS9OREh8UKRUXa5TLDZkRzuzaHJ0rZ0nzyDAtg4,599
+neuroquery/data/nltk_stop_words.txt,sha256=myA328X9N2mBgrtbfX0OoTmM3QcUCiHGNJhNYQYzU5Q,743
+neuroquery-1.0.4.dist-info/LICENSE,sha256=8_L3O3GUDwzMVPTEjh64m1AZEAQVyPlorzIC_0HvGb8,1524
+neuroquery-1.0.4.dist-info/METADATA,sha256=WLZgpqe57IQocXf1avM6RKhUuVZ_VpeCdO0lNTj9M2Q,5097
+neuroquery-1.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+neuroquery-1.0.4.dist-info/top_level.txt,sha256=3895fosptnbi-OdiMrKu-ggozqpoRqsUWQAY5WaPqG0,11
+neuroquery-1.0.4.dist-info/RECORD,,
