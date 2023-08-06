@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+read_and_chat/__init__.py
+read_and_chat/main.py
+read_and_chat/main_cli.py
+read_and_chat.egg-info/PKG-INFO
+read_and_chat.egg-info/SOURCES.txt
+read_and_chat.egg-info/dependency_links.txt
+read_and_chat.egg-info/entry_points.txt
+read_and_chat.egg-info/top_level.txt
