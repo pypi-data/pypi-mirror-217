@@ -1,0 +1,13 @@
+numpy
+superqt
+qtpy
+notebook
+jupytext
+
+[testing]
+tox
+pytest
+pytest-cov
+pytest-qt
+napari
+pyqt5

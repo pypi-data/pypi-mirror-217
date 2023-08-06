@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-workshop-browser = napari_workshop_browser:napari.yaml
