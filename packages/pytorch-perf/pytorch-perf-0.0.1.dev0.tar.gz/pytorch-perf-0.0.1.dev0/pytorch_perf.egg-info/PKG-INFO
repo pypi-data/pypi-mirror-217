@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: pytorch-perf
+Version: 0.0.1.dev0
+Summary: A pytorch perf decorator
+Home-page: https://github.com/yhren/torchperf
+Author: Yihui Ren
+Author-email: yren@bnl.gov
+License: BSD-3
+Keywords: decorator cuda performance perf pytorch
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PyTorch Perf
+
+```python
+import torch
+from torchperf import perf, info
+
+info.show()
+
+N = 100
+x = torch.rand(N, N, device="cuda")
+results = []
+repeats = 100
+
+@perf(o=results, n=repeats)
+def mul(x, y):
+    return x * y
+
+z = mul(x, x)
+print(results[:5])
+print("avg:", sum(results)/len(results))
+
+
+@perf(n=repeats)
+def mul(x, y):
+    return x * y
+
+z = mul(x, x)
+
+```
+
