@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+AttentionGrid/__init__.py
+AttentionGrid.egg-info/PKG-INFO
+AttentionGrid.egg-info/SOURCES.txt
+AttentionGrid.egg-info/dependency_links.txt
+AttentionGrid.egg-info/requires.txt
+AttentionGrid.egg-info/top_level.txt
+AttentionGrid/abstract/__init__.py
+AttentionGrid/abstract/abstract.py
