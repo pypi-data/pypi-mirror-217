@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: inference_api
+Version: 0.0.1
+Summary: A basic API server for doing inference on Huggingface models
+Project-URL: Homepage, https://github.com/waydegg/inference-api
+Project-URL: Source, https://github.com/waydegg/inference-api
+Author-email: Wayde Gilliam <waydegilliam@gmail.com>
+License: MIT
+Keywords: fastapi,huggingface,python
+Requires-Python: >=3.10
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
+Provides-Extra: dev
+Requires-Dist: black; extra == 'dev'
+Requires-Dist: isort; extra == 'dev'

@@ -1,0 +1,2 @@
+[console_scripts]
+inference-api = inference_api.cli:main_cli
