@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "pandantic"
+version = "0.2.1"
+description = ""
+authors = ["wessel.huising <wessel.huising@mollie.com>"]
+readme = "README.md"
+
+packages = [
+    { include = "pandantic", from = "src" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = "^2.0.0"
+pydantic = "^2.0.0"
+multiprocess = "^0.70.14"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.0"
+pre-commit = "^3.2.2"
+black = "^23.3.0"
+pylint = "^2.17.2"
+isort = "^5.12.0"
+mypy = "^1.2.0"
+pre-commit-hooks = "^4.4.0"
+safety = "^2.3.5"
+scikit-learn = "^1.2.2"
+pandera = "^0.14.5"
+pandas-stubs = "^2.0.0.230412"
+
+[tool.mypy]
+strict = true
+warn_unreachable = true
+pretty = true
+show_column_numbers = true
+show_error_codes = true
+show_error_context = true
+ignore_missing_imports = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
