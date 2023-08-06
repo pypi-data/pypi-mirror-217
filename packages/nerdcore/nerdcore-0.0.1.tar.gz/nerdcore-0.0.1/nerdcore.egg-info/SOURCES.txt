@@ -1,0 +1,10 @@
+README.md
+setup.py
+nerdcore.egg-info/PKG-INFO
+nerdcore.egg-info/SOURCES.txt
+nerdcore.egg-info/dependency_links.txt
+nerdcore.egg-info/entry_points.txt
+nerdcore.egg-info/requires.txt
+nerdcore.egg-info/top_level.txt
+scripts/nerd
+scripts/nerd-new
