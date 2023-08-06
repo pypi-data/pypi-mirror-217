@@ -1,0 +1,3 @@
+[console_scripts]
+bom_mysql = bom_mysql.__main__:main
+
