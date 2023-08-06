@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: plotly-extend-wrapper
+Version: 0.0.1
+Summary: plotly-extend-wrapper: Extended Python library for Plotly
+Home-page: https://github.com/Laplusdestiny/plotly_extend_wrapper
+Download-URL: https://github.com/Laplusdestiny/plotly_extend_wrapper
+Author: Laplusdestiny
+Author-email: prayonshootingstars@gmail.com
+Maintainer: Laplusdestiny
+Maintainer-email: prayonshootingstars@gmail.com
+License: MIT
+Requires-Python: >=3.7
+License-File: LICENSE
