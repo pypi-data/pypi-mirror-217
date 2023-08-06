@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/SimpleSinglyLinkedList/__init__.py
+src/SimpleSinglyLinkedList/linked_list.py
+src/SimpleSinglyLinkedList/node.py
+src/SimpleSinglyLinkedList.egg-info/PKG-INFO
+src/SimpleSinglyLinkedList.egg-info/SOURCES.txt
+src/SimpleSinglyLinkedList.egg-info/dependency_links.txt
+src/SimpleSinglyLinkedList.egg-info/top_level.txt
+src/tests/__init__.py
+src/tests/test_linked_list.py
+src/tests/test_node.py
