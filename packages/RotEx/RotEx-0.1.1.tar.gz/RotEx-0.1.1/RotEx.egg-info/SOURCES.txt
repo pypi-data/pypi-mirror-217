@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+RotEx/__init__.py
+RotEx/attitude.py
+RotEx/rotate_vectors.py
+RotEx/rotex.py
+RotEx/utils.py
+RotEx.egg-info/PKG-INFO
+RotEx.egg-info/SOURCES.txt
+RotEx.egg-info/dependency_links.txt
+RotEx.egg-info/requires.txt
+RotEx.egg-info/top_level.txt
+tests/test_attitude.py
+tests/test_rotate_vectors.py
+tests/test_rotex.py
