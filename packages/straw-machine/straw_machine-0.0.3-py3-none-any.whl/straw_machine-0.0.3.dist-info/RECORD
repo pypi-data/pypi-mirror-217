@@ -1,0 +1,13 @@
+straw_machine/__init__.py,sha256=yyLtGsBhynC-sSHdax-rRGvHNjH-gdWxIY68WnPVfDw,22
+straw_machine/dataclass/__init__.py,sha256=IzrcX4W3OlRp0GwxBs3FnwNyd0eoyTOjpIyrqGHMwXM,99
+straw_machine/dataclass/_estimator.py,sha256=OiVEskMmPwoYQP6DOyQENVtqhDFGbvIPbNc12oC5pbI,975
+straw_machine/dataclass/_transformer.py,sha256=lXcTkpOs_BA4Tb1kVXvsdbirkLcOP73yaqq_BD62Ks4,2434
+straw_machine/gallery/__init__.py,sha256=5mwDdJ_8YbxfoBLCLhtHNkH2f4mDpjkVYGH40Gie5Z0,53
+straw_machine/gallery/date.py,sha256=y2nWHehD25VsI44TdXSUuTeiv5ibiVAQeM_H-nCLO1A,2341
+straw_machine/util/__init__.py,sha256=151CLXMPdmxpw_O9D7P6OzKoZsPKPaVPNuHXORel6zE,43
+straw_machine/util/_generate.py,sha256=p0glDIUV7wLAXaPihQMWA8P4QmKtYcv1vHEYaVLaYoA,1184
+straw_machine-0.0.3.dist-info/LICENSE,sha256=NP0gfTFgMhn8DCFlCA0fPj5-jW2aRcdFoGC5NXrREJA,1064
+straw_machine-0.0.3.dist-info/METADATA,sha256=tbdEJ7eqxFpSKGFqpTt367swSTl873mIPljr-81zy_c,1887
+straw_machine-0.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+straw_machine-0.0.3.dist-info/top_level.txt,sha256=Hd1c4TS2QXqKbNyOyJRANa2WcmhX4cFBIJi9L5ALrBs,14
+straw_machine-0.0.3.dist-info/RECORD,,
