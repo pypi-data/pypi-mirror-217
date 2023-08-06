@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: cosmotech-run-orchestrator
+Version: 1.0.1
+Summary: Orchestration suite for Cosmotech Run Templates
+Home-page: https://github.com/Cosmo-Tech/run_template_orchestrator
+Author: Alexis Fossart
+Author-email: alexis.fossart@cosmotech.com
+License-File: LICENCE.md
