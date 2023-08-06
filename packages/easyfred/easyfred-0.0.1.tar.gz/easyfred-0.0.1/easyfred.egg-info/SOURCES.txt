@@ -1,0 +1,9 @@
+README.md
+setup.py
+easyfred/__init__.py
+easyfred/fred.py
+easyfred.egg-info/PKG-INFO
+easyfred.egg-info/SOURCES.txt
+easyfred.egg-info/dependency_links.txt
+easyfred.egg-info/requires.txt
+easyfred.egg-info/top_level.txt
