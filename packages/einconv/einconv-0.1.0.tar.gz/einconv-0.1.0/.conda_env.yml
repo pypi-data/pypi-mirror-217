@@ -1,0 +1,8 @@
+name: einconv
+channels:
+  - pytorch
+  - defaults
+dependencies:
+  - python=3.8.10
+  - pip:
+    - -e .[lint,test,doc]
