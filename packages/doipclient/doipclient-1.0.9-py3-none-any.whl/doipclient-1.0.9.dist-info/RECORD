@@ -1,0 +1,12 @@
+doipclient/__init__.py,sha256=XhorBm2w3rgqKrmrurfmsBnW-ZxUaj5Q8vk47Bi2q-k,32
+doipclient/client.py,sha256=ElKZpooUm0YK0oI9zxkrtG2YZ8GLGKRcICAVcsQDoxE,33511
+doipclient/connectors.py,sha256=zHyq_ZGkWA10Abp5su6I5bWJtbh0Ydr7Eezbepj8rdA,1707
+doipclient/constants.py,sha256=DFLxoeec8gW3zgNW9tzRxQOheO4ETLfg-33ghazGlz4,598
+doipclient/messages.py,sha256=OudHMbVBu3U1ZBENRMPxEdYFVFdKUoZedRI1nHr5lmQ,33278
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_client.py,sha256=qzvOJtsKmE8VtDAJaBU-q2XT_98tkW8Y-GwSsKTG3Hc,23458
+doipclient-1.0.9.dist-info/LICENSE,sha256=D0niuevgP1F_f0mCEskaY39scrGnBnfN5Qw69u7jbCA,1090
+doipclient-1.0.9.dist-info/METADATA,sha256=C1UOucKDKgrAyFjQQThLDrT9iAhtyefVNlEae_m-knk,4555
+doipclient-1.0.9.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+doipclient-1.0.9.dist-info/top_level.txt,sha256=hYQ_2R4h-rirSDThromHsB7fXd54yzJ5QYYR71M2h9g,17
+doipclient-1.0.9.dist-info/RECORD,,
