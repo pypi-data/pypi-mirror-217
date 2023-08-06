@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: engression
+Version: 0.0.0.dev0
+Summary: Engression
+Home-page: https://github.com/xwshen51/engression
+Author: Xinwei Shen
+Author-email: xinwei.shen@stat.math.ethz.ch
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: torch
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+
+# Engression
+
+Engression is a nonlinear regression methodology proposed in the paper "[*Engression: Extrapolation for Nonlinear Regression?*]()" by Xinwei Shen and Nicolai Meinshausen. 
+This directory contains the Python implementations of engression.
+
+## Installation
+The latest release of the Python package can be installed through pip:
+```sh
+pip install engression
+```
+
+The development version can be installed from github
+
+```sh
+$ git clone https://github.com/xwshen51/engression.git  # Download the package 
+$ cd engression
+$ pip install -r requirements.txt  # Install the requirements
+$ python setup.py install develop --user
+```
+
+
+## Usage Example
+
+### Python
+```python
+import engression
+
+```
+
+
+## Contact information
+If you meet any problems with the code, please submit an issue or contact Xinwei Shen (`xinwei.shen@stat.math.ethz.ch`).
