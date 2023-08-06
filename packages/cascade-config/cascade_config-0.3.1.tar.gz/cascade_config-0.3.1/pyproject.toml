@@ -1,0 +1,51 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "cascade-config"
+description = "Cascading configuration from the CLI and config files."
+readme = "README.md"
+license = {file = "LICENSE"}
+authors = [
+    {name = "Ralf Gabriels", email = "ralf@gabriels.dev"}
+]
+keywords = [
+    "configuration",
+    "command line interface",
+    "configuration files",
+    "JSON"
+]
+classifiers = [
+    "License :: OSI Approved :: Apache Software License",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development",
+    "Topic :: Utilities"
+]
+dynamic = ["version"]
+requires-python = ">=3.6"
+dependencies = [
+    "jsonschema>=3",
+]
+
+[project.urls]
+GitHub = "https://github.com/RalfG/cascade-config"
+ReadTheDocs = "https://cascade-config.readthedocs.io/en/stable/"
+
+[project.optional-dependencies]
+test = ["pytest>=6,<7", "pytest-cov>=2,<3"]
+docs = [
+    "sphinx",
+    "numpydoc>=1,<2",
+    "recommonmark",
+    "sphinx-mdinclude",
+    "toml",
+    "semver>=2",
+    "sphinx_rtd_theme",
+    "sphinx-autobuild",
+]
+
+[tool.flit.module]
+name = "cascade_config"
