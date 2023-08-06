@@ -1,0 +1,9 @@
+nlpia2_wikipedia/__init__.py,sha256=B1usesw9FFA6KEUN79jwm-4xWVTXirnSl4d5DpvuCrM,99
+nlpia2_wikipedia/exceptions.py,sha256=SytTSTRUzKFxkfWsYFlbyBqsCVlabGuITdl1V0XKXKE,2420
+nlpia2_wikipedia/parsers.py,sha256=o6_emjYbbB-zqCWdY0jze8JyqSxpkvS2NTTcY78X2hs,184
+nlpia2_wikipedia/util.py,sha256=0JfvV1sHUMZ_1_Gs-okBEBAjHCfu1R5pRtKUgf_eOvQ,2873
+nlpia2_wikipedia/wikipedia.py,sha256=tvy3qLzr2a1s5HNPqhXI8S0rR-1JkWOX5bwbRJvmw-U,26553
+nlpia2_wikipedia-1.5.4.dist-info/LICENSE,sha256=c63Xv5sWUOhcMPTaF8fr2XC2Mg9lfxIpuX94gb6js1s,1057
+nlpia2_wikipedia-1.5.4.dist-info/METADATA,sha256=lsooejcbEVFwFtEXwX-tP72BgUwRoanq02gOzlhxsnI,5280
+nlpia2_wikipedia-1.5.4.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+nlpia2_wikipedia-1.5.4.dist-info/RECORD,,
