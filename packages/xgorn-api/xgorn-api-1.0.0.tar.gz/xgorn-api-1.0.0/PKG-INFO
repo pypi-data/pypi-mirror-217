@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: xgorn-api
+Version: 1.0.0
+Summary: API Interface for https://api.xgorn.pp.ua
+Home-page: https://api.xgorn.pp.ua
+Author: xgorn
+License: MIT
+Project-URL: Web, https://api.xgorn.pp.ua
+Project-URL: Documentation, https://api.xgorn.pp.ua/docs
+Keywords: api scraper bypasser translator client library python
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: ~=3.7
+Description-Content-Type: text/markdown
+
+# Noid API
+
+```python
+from xgorn_api import NoidAPI
+
+api = NoidAPI()
+api.api_key = 'your-api-key'
+
+api.ouo_bypass('https://ouo.io/4ZuwGMc')
+```
+
+**Everything** are based on the documentation!
+
+## Installation
+
+```
+pip install xgorn-api
+```
+
+
