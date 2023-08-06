@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: flet-timer
+Version: 0.0.8
+Summary: A simple component to add a timer to your flet app
+Home-page: https://github.com/panos-stavrianos/flet_timer
+Author: Panos Stavrianos
+Author-email: panos@orbitsystems.gr
+License: MIT license
+Keywords: flet_timer
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: flet
+Requires-Dist: interval-timer
+
