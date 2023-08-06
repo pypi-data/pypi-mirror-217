@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+emyo/__init__.py
+emyo/common.py
+emyo/emyo.py
+emyo.egg-info/PKG-INFO
+emyo.egg-info/SOURCES.txt
+emyo.egg-info/dependency_links.txt
+emyo.egg-info/not-zip-safe
+emyo.egg-info/top_level.txt
