@@ -1,0 +1,11 @@
+
+[dev]
+build
+flake8
+isort
+mypy
+pytest
+toml
+twine
+types-setuptools
+yapf
