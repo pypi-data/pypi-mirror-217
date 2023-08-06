@@ -1,0 +1,2 @@
+as_dynamodb
+dz_dynamodb
