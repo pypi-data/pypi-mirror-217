@@ -1,0 +1,8 @@
+tonpy-0.0.0.0.3a0.data/purelib/tonpy/__init__.py,sha256=rL_dO0B_ycOY-kU71Csxvtc5Ri3SKHgqPquiicCEWak,31
+tonpy-0.0.0.0.3a0.data/purelib/tonpy/main.py,sha256=gDjrh9vB_BTOkyPRgPgxKcT5o1YFwUDkxM5bvvAesj0,910
+tonpy-0.0.0.0.3a0.data/purelib/tonpy/libs/python_ton.cpython-310-x86_64-linux-gnu.so,sha256=wlK6hXzQX1o_9encJFJWvpbwsB6m3R-YR01Gf0fOf5w,18597264
+tonpy-0.0.0.0.3a0.dist-info/LICENSE,sha256=eoiQFUdtyWTmSM1Xh7WW6YcWay_XyucQcJDWXdPoS3o,9789
+tonpy-0.0.0.0.3a0.dist-info/METADATA,sha256=Vgcsg8cAlKShHYqlUSozQE0zlblVULQNlBHZNeL8I5U,671
+tonpy-0.0.0.0.3a0.dist-info/WHEEL,sha256=merM73Rz3AFh8KY7SrFH3vNGyo5K2QIfuojXdp1DN2c,105
+tonpy-0.0.0.0.3a0.dist-info/top_level.txt,sha256=_VfnkAqcmXm2AiZSPM83S72oXsZLEM4s-yxRZk87TYs,6
+tonpy-0.0.0.0.3a0.dist-info/RECORD,,
