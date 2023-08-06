@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: moval
+Version: 0.0.2
+Summary: Model evalutation without manual label
+Author: Zeju Li
+Author-email: lizeju8@gmail.com
+Requires-Python: >=3.8
+License-File: LICENSE
