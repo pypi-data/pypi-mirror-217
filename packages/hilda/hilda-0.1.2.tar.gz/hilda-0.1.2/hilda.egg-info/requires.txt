@@ -1,0 +1,14 @@
+tqdm
+docstring_parser
+coloredlogs
+hexdump
+ipython
+click
+objc_types_decoder
+construct
+pymobiledevice3
+cached-property
+keystone-engine
+
+[test]
+pytest
