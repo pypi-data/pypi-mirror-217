@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: t265
+Version: 0.1.0
+Summary: t265 Tracking camera API wrapper
+Author: Yusuke Tanaka
+License: LGPLv3
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Robot Framework
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Programming Language :: Python :: 3
+
+UNKNOWN
+
