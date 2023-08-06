@@ -1,0 +1,10 @@
+searchium/__init__.py,sha256=8W-WgL18h_4BOtjo1yVnt1jujW8DTljV3vkyJRTyoSg,329
+searchium/client/__init__.py,sha256=ohvA3xbM3otKef9DpeZ1yUeN1b-cE8i6Vnz96mRTgeA,93
+searchium/client/func.py,sha256=5QjGQiJ52AkdNi0YMFaRyHEcCOAetTXWBnSP1drC4rs,6395
+searchium/client/init.py,sha256=aupXm2XMNgVuo5MXU0NwN-EYrVOcokVYNH5KHeXVRDU,1176
+searchium/fvs/__init__.py,sha256=r3S-08VUcSH1imMKSKf-sXCGVGlZKfWPn5fR0gsmRNw,44
+searchium/fvs/client.py,sha256=vVeBSYgkd0VtpeIVQAJ2OpKHYBIW8WEEwRAs9H3pCr0,5331
+searchium/fvs/model.py,sha256=WE6VnJTae25tgAfoC6-Y5EXdXpIEBhaFQL7qE7HMDmw,2041
+searchium-0.0.1rc5.dist-info/METADATA,sha256=UCEEeMwQ0-uO1u41vaxys8weJhfEEMlB9W20hzNNK2k,1961
+searchium-0.0.1rc5.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+searchium-0.0.1rc5.dist-info/RECORD,,
