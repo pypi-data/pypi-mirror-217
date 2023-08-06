@@ -1,0 +1,7 @@
+chatgpt
+data
+narrate_descriptive
+narrate_trend
+pynarrator
+text_helpers
+trend_helpers
