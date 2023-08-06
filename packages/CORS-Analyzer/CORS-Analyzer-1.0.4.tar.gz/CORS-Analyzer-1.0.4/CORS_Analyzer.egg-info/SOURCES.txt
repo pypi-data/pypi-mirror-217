@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+CORS_Analyzer.egg-info/PKG-INFO
+CORS_Analyzer.egg-info/SOURCES.txt
+CORS_Analyzer.egg-info/dependency_links.txt
+CORS_Analyzer.egg-info/entry_points.txt
+CORS_Analyzer.egg-info/requires.txt
+CORS_Analyzer.egg-info/top_level.txt
+lib/__init__.py
+lib/cors.py
