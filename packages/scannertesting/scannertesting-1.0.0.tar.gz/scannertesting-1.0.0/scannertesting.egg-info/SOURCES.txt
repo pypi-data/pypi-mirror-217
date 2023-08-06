@@ -1,0 +1,9 @@
+README.md
+setup.py
+lib/__init__.py
+lib/scanner.py
+scannertesting.egg-info/PKG-INFO
+scannertesting.egg-info/SOURCES.txt
+scannertesting.egg-info/dependency_links.txt
+scannertesting.egg-info/requires.txt
+scannertesting.egg-info/top_level.txt
