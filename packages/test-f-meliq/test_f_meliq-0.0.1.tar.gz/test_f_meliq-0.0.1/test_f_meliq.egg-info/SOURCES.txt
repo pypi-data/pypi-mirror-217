@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+test_f_meliq/__init__.py
+test_f_meliq/language.py
+test_f_meliq/settings.py
+test_f_meliq.egg-info/PKG-INFO
+test_f_meliq.egg-info/SOURCES.txt
+test_f_meliq.egg-info/dependency_links.txt
+test_f_meliq.egg-info/top_level.txt
