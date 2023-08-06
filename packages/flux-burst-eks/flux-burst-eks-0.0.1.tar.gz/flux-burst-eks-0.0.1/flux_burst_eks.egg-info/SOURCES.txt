@@ -1,0 +1,17 @@
+COPYRIGHT
+LICENSE
+MANIFEST.in
+NOTICE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+flux_burst_eks.egg-info/PKG-INFO
+flux_burst_eks.egg-info/SOURCES.txt
+flux_burst_eks.egg-info/dependency_links.txt
+flux_burst_eks.egg-info/not-zip-safe
+flux_burst_eks.egg-info/requires.txt
+flux_burst_eks.egg-info/top_level.txt
+fluxburst_eks/__init__.py
+fluxburst_eks/plugin.py
+fluxburst_eks/version.py
