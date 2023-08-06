@@ -1,0 +1,10 @@
+checkers/__init__.py,sha256=ARBsmkpCwnxXi6HpBOLKgk6v2EhZCV7Cr_SY4AUx1VQ,889
+checkers/american.py,sha256=YTAEaFYjz6xy3YqXSXH62NXATr6losDPGKyg53ssDlc,3728
+checkers/base.py,sha256=f0T_l8lgJIVb1Gay8ZVFmzWujalc80DmExJqIUSo-5Q,4634
+checkers/main.py,sha256=uhTJpecDHte-SnPxqXZOSOsddYW2sDeOvCEJ0FmAymc,1147
+checkers/models.py,sha256=TzSwTWBkKNt785LDuMG2DV67a2PpqnkZHZkVxlt-tnw,3229
+checkers/utils.py,sha256=10wxpJ_JausLhOyM2xJS6jk8C7ZCVq8dbymd8wAWLtY,65
+fast_checkers-0.0.4.dist-info/METADATA,sha256=arKIr634QyJ1CtObh_oDhBTdq99hBWe1mbHUh4QDaCA,3793
+fast_checkers-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+fast_checkers-0.0.4.dist-info/top_level.txt,sha256=8EKKMMP-hVkkipi6Ku3DgjhWAZA7KalJKTNc5BpZP1E,9
+fast_checkers-0.0.4.dist-info/RECORD,,
