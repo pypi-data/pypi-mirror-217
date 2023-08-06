@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: goxlr
+Version: 1.0.1
+Summary: A Python wrapper for the GoXLR Utility API.
+Home-page: https://github.com/samcarsonx/goxlr
+Author: Sam Carson
+Author-email: sam@samcarson.co.uk
+License: None
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# GoXLR Utility API Python Wrapper
+Documentation coming soon.
+
+
