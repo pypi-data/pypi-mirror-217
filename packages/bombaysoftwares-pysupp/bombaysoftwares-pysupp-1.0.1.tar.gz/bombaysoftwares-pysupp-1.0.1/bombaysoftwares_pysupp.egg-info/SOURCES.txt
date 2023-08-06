@@ -1,0 +1,8 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+bombaysoftwares_pysupp.egg-info/PKG-INFO
+bombaysoftwares_pysupp.egg-info/SOURCES.txt
+bombaysoftwares_pysupp.egg-info/dependency_links.txt
+bombaysoftwares_pysupp.egg-info/top_level.txt
