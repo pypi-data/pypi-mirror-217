@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: panda-python
+Version: 0.0.0
+Summary: Python bindings for the Panda
+Author-email: Jean Elsner <jean.elsner@tum.de>
+Requires-Python: >=3.7
