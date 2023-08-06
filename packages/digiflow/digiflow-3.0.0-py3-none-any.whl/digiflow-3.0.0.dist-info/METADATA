@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: digiflow
+Version: 3.0.0
+Summary: Father's Little Digitization Workflow Helper
+Author-email: Universitäts- und Landesbibliothek Sachsen-Anhalt <development@bibliothek.uni-halle.de>
+Project-URL: Homepage, https://github.com/ulb-sachsen-anhalt/digital-flow
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8
+License-File: LICENCE
+Requires-Dist: lxml
+Requires-Dist: Pillow
+Requires-Dist: numpy
+Requires-Dist: requests
+
