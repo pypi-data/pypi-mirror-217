@@ -1,0 +1,9 @@
+LICENCE
+README.md
+setup.py
+flask_project_builder/__init__.py
+flask_project_builder/__main__.py
+flask_project_builder_python.egg-info/PKG-INFO
+flask_project_builder_python.egg-info/SOURCES.txt
+flask_project_builder_python.egg-info/dependency_links.txt
+flask_project_builder_python.egg-info/top_level.txt

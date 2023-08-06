@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: flask_project_builder-python
+Version: 0.0.1
+Summary: Projeto para facilitar a criação de projetos Flask
+Author: Carlos Eduardo Ferreia Fernandes
+Author-email: carloseduardo082005@icloud.com
+License: MIT License
+Keywords: flask project builder
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+# Flask project builder
+
+## Description
+
+This is a simple project builder for flask projects. It creates a basic flask project with a basic structure and a basic configuration.
