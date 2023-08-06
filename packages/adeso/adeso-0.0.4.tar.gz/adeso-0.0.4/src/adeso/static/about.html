@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		
+		<link href="./_app/immutable/assets/0.fe90dd52.css" rel="stylesheet"><title>About</title><!-- HEAD_svelte-1ds1qyu_START --><meta name="description" content="About this app"><!-- HEAD_svelte-1ds1qyu_END -->
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">  <div class="app svelte-19cfdfl"><header class="svelte-148fohv"><div class="spacer svelte-148fohv"></div> <nav class="svelte-148fohv"><ul class="svelte-148fohv"><li class="svelte-148fohv"><a href="/" class="svelte-148fohv" data-svelte-h="svelte-piieqa">Encryption</a></li> <li class="svelte-148fohv"><a href="/steganography" class="svelte-148fohv" data-svelte-h="svelte-q7h0jv">Steganography</a></li> <li aria-current="page" class="svelte-148fohv"><a href="/about" class="svelte-148fohv" data-svelte-h="svelte-iphxk9">About</a></li></ul></nav> <div class="spacer svelte-148fohv"></div> </header> <main class="svelte-19cfdfl"> <div class="text-column" data-svelte-h="svelte-bb5bch"><h1 style="margin-bottom: 0;">A.D.E.S.O.</h1> <h2 style="margin-top: 5px; text-indent: 110px"><b>A</b>pplication for
+		   <b>D</b>ecryption, <b>E</b>ncryption and
+		   <b>S</b>teganographic <b>O</b>perations</h2> <p style="margin-top: 50px;"><a href="https://csrc.nist.gov/glossary/term/steganography">Steganography</a> 
+		is the practice of concealing information within another message to avoid detection.
+
+		<br><br><a href="https://www.nist.gov/cryptography">Encryption</a> 
+		is the process of converting plaintext into ciphertext, which is unreadable. 
+
+		<br><br> This application provides both of these functionalities.  Users can first encrypt their data, via 
+		a password using an AES-128 algorithm in CBC mode. Then, they can hide the encrypted data (ciphertext) 
+		within an image of their choice via steganography.</p> <h2 style="margin-top: 30px;"><b>Key Features:</b></h2> <ul style="margin-top: 5px;"><li>A web interface is provided to paste large plaintext objects without a terminal buffer limit.</li> <br> <li>All encryption, decryption, encoding and decoding is done in memory.</li></ul> <h2 style="margin-top: 30px;"><b>Tools Used:</b></h2> <ul style="margin-top: 5px;"><li>Front end: <a href="https://svelte.dev/">Svelte</a> using <a href="https://kit.svelte.dev/">SvelteKit</a></li> <br> <li>API: <a href="https://www.python.org/">Python 3.11.1</a> using <a href="https://pypi.org/project/Flask/">Flask 2.3.2</a></li> <br> <li>Cryptography: <a href="https://pypi.org/project/cryptography/">cryptography 41.0.1</a></li> <br> <li>Steganography using <a href="https://wiki.bi0s.in/forensics/lsb/">LSB</a></li></ul> <h2 style="margin-top: 30px;"><b>Gotchas:</b></h2> <ul style="margin-top: 5px;"><li>Large ciphertext and images can result in API lag or lockups for steganography.</li> <br> <li>The decode operation is done on the file selected, not the image displayed on the UI.</li></ul></div></main> <div class="corner svelte-19cfdfl"><footer class="footer svelte-19cfdfl"><p class="svelte-19cfdfl">Created by Eric Jay Hartman <a href="https://github.com/hartmananalytics" class="svelte-19cfdfl"><img src="/_app/immutable/assets/github.1ea8d62e.svg" alt="GitHub" class="svelte-19cfdfl"></a></p></footer></div> </div> </div>
+	</body>
+</html>
