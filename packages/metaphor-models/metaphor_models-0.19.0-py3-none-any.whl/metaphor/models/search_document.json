@@ -1,0 +1,1776 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "definitions": {
+        "DashboardHighlight": {
+            "properties": {
+                "chartDescriptions": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "charts": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "contactDisplayNames": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "dashboardId": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "governedTags": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "hashtags": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "name": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "DashboardSearchDocument": {
+            "properties": {
+                "browsePathHierarchy": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "browsePathSegments": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "browsePaths": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "chartDescriptions": {
+                    "anyOf": [
+                        {
+                            "items": {
+                                "type": "string"
+                            },
+                            "type": "array"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "charts": {
+                    "anyOf": [
+                        {
+                            "items": {
+                                "type": "string"
+                            },
+                            "type": "array"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "contactDisplayNames": {
+                    "anyOf": [
+                        {
+                            "items": {
+                                "type": "string"
+                            },
+                            "type": "array"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "dashboardId": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": [
+                        "null",
+                        "string"
+                    ]
+                },
+                "documentId": {
+                    "default": "",
+                    "type": "string"
+                },
+                "entityId": {
+                    "default": "",
+                    "type": "string"
+                },
+                "governedTags": {
+                    "anyOf": [
+                        {
+                            "items": {
+                                "type": "string"
+                            },
+                            "type": "array"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "hashtags": {
+                    "anyOf": [
+                        {
+                            "items": {
+                                "type": "string"
+                            },
+                            "type": "array"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "highlight": {
+                    "$ref": "#/definitions/DashboardHighlight",
+                    "description": "Used in search response, highlight the section where the match happens"
+                },
+                "isDeleted": {
+                    "type": "boolean"
+                },
+                "knowledgeCardCount": {
+                    "type": "number"
+                },
+                "lastRefreshed": {
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "model": {
+                    "type": [
+                        "null",
+                        "string"
+                    ]
+                },
+                "name": {
+                    "description": "Name of the related entity",
+                    "type": "string"
+                },
+                "platform": {
+                    "enum": [
+                        "LOOKER",
+                        "METABASE",
+                        "POWER_BI",
+                        "TABLEAU",
+                        "THOUGHT_SPOT",
+                        "UNKNOWN"
+                    ],
+                    "type": "string"
+                },
+                "project": {
+                    "type": [
+                        "null",
+                        "string"
+                    ]
+                },
+                "scoreDetails": {
+                    "$ref": "#/definitions/SearchScoreDetails"
+                },
+                "thoughtSpotDashboardType": {
+                    "anyOf": [
+                        {
+                            "enum": [
+                                "ANSWER",
+                                "LIVEBOARD",
+                                "UNKNOWN"
+                            ],
+                            "type": "string"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "viewCount": {
+                    "type": [
+                        "null",
+                        "number"
+                    ]
+                },
+                "workspace": {
+                    "type": [
+                        "null",
+                        "string"
+                    ]
+                }
+            },
+            "type": "object"
+        },
+        "DatasetColumnHighlight": {
+            "properties": {
+                "column": {
+                    "type": "string"
+                },
+                "contactDisplayNames": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "governedTags": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "hashtags": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "name": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "DatasetColumnSearchDocument": {
+            "properties": {
+                "browsePathHierarchy": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "browsePathSegments": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "browsePaths": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "column": {
+                    "type": "string"
+                },
+                "columnDescription": {
+                    "type": [
+                        "null",
+                        "string"
+                    ]
+                },
+                "contactDisplayNames": {
+                    "anyOf": [
+                        {
+                            "items": {
+                                "type": "string"
+                            },
+                            "type": "array"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "documentId": {
+                    "default": "",
+                    "type": "string"
+                },
+                "entityId": {
+                    "default": "",
+                    "type": "string"
+                },
+                "governedTags": {
+                    "anyOf": [
+                        {
+                            "items": {
+                                "type": "string"
+                            },
+                            "type": "array"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "hashtags": {
+                    "anyOf": [
+                        {
+                            "items": {
+                                "type": "string"
+                            },
+                            "type": "array"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "highlight": {
+                    "$ref": "#/definitions/DatasetColumnHighlight",
+                    "description": "Used in search response, highlight the section where the match happens"
+                },
+                "isDeleted": {
+                    "type": "boolean"
+                },
+                "lastRefreshed": {
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "model": {
+                    "type": [
+                        "null",
+                        "string"
+                    ]
+                },
+                "name": {
+                    "description": "Name of the related entity",
+                    "type": "string"
+                },
+                "platform": {
+                    "enum": [
+                        "BIGQUERY",
+                        "DOCUMENTDB",
+                        "DYNAMODB",
+                        "ELASTICSEARCH",
+                        "EXTERNAL",
+                        "GLUE",
+                        "MSSQL",
+                        "MYSQL",
+                        "POSTGRESQL",
+                        "RDS",
+                        "REDIS",
+                        "REDSHIFT",
+                        "S3",
+                        "SNOWFLAKE",
+                        "SYNAPSE",
+                        "UNITY_CATALOG",
+                        "UNKNOWN"
+                    ],
+                    "type": "string"
+                },
+                "project": {
+                    "type": [
+                        "null",
+                        "string"
+                    ]
+                },
+                "scoreDetails": {
+                    "$ref": "#/definitions/SearchScoreDetails"
+                },
+                "thoughtSpotDataObjectType": {
+                    "anyOf": [
+                        {
+                            "enum": [
+                                "TABLE",
+                                "UNKNOWN",
+                                "VIEW",
+                                "WORKSHEET"
+                            ],
+                            "type": "string"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "viewCount": {
+                    "type": [
+                        "null",
+                        "number"
+                    ]
+                },
+                "virtualViewType": {
+                    "enum": [
+                        "DBT_MODEL",
+                        "LOOKER_EXPLORE",
+                        "LOOKER_VIEW",
+                        "POWER_BI_DATASET",
+                        "TABLEAU_DATASOURCE",
+                        "THOUGHT_SPOT_DATA_OBJECT",
+                        "UNKNOWN"
+                    ],
+                    "type": "string"
+                },
+                "workspace": {
+                    "type": [
+                        "null",
+                        "string"
+                    ]
+                }
+            },
+            "type": "object"
+        },
+        "DatasetHighlight": {
+            "properties": {
+                "columnDescriptions": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "columnNames": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "columnTags": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "contactDisplayNames": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "governedTags": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "hashtags": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "name": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "DatasetSearchDocument": {
+            "properties": {
+                "browsePathHierarchy": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "browsePathSegments": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "browsePaths": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "columnDescriptions": {
+                    "anyOf": [
+                        {
+                            "items": {
+                                "type": "string"
+                            },
+                            "type": "array"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "columnNames": {
+                    "anyOf": [
+                        {
+                            "items": {
+                                "type": "string"
+                            },
+                            "type": "array"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "columnTags": {
+                    "anyOf": [
+                        {
+                            "items": {
+                                "type": "string"
+                            },
+                            "type": "array"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "contactDisplayNames": {
+                    "anyOf": [
+                        {
+                            "items": {
+                                "type": "string"
+                            },
+                            "type": "array"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "database": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": [
+                        "null",
+                        "string"
+                    ]
+                },
+                "documentId": {
+                    "default": "",
+                    "type": "string"
+                },
+                "entityId": {
+                    "default": "",
+                    "type": "string"
+                },
+                "governedTags": {
+                    "anyOf": [
+                        {
+                            "items": {
+                                "type": "string"
+                            },
+                            "type": "array"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "hashtags": {
+                    "anyOf": [
+                        {
+                            "items": {
+                                "type": "string"
+                            },
+                            "type": "array"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "highlight": {
+                    "$ref": "#/definitions/DatasetHighlight",
+                    "description": "Used in search response, highlight the section where the match happens"
+                },
+                "isDeleted": {
+                    "type": "boolean"
+                },
+                "knowledgeCardCount": {
+                    "type": "number"
+                },
+                "lastRefreshed": {
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "materializationType": {
+                    "type": [
+                        "null",
+                        "string"
+                    ]
+                },
+                "name": {
+                    "description": "Name of the related entity",
+                    "type": "string"
+                },
+                "platform": {
+                    "enum": [
+                        "BIGQUERY",
+                        "DOCUMENTDB",
+                        "DYNAMODB",
+                        "ELASTICSEARCH",
+                        "EXTERNAL",
+                        "GLUE",
+                        "MSSQL",
+                        "MYSQL",
+                        "POSTGRESQL",
+                        "RDS",
+                        "REDIS",
+                        "REDSHIFT",
+                        "S3",
+                        "SNOWFLAKE",
+                        "SYNAPSE",
+                        "UNITY_CATALOG",
+                        "UNKNOWN"
+                    ],
+                    "type": "string"
+                },
+                "queryCountPercentile": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/definitions/QueryCountPercentile"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "rowCount": {
+                    "type": "number"
+                },
+                "schema": {
+                    "type": "string"
+                },
+                "scoreDetails": {
+                    "$ref": "#/definitions/SearchScoreDetails"
+                },
+                "size": {
+                    "type": "number"
+                },
+                "usageLevel": {
+                    "type": "string"
+                },
+                "usagePercentile": {
+                    "type": "number"
+                },
+                "viewCount": {
+                    "type": [
+                        "null",
+                        "number"
+                    ]
+                }
+            },
+            "type": "object"
+        },
+        "KnowledgeCardHighlight": {
+            "properties": {
+                "authorDisplayName": {
+                    "type": "string"
+                },
+                "contactDisplayNames": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "content": {
+                    "type": "string"
+                },
+                "governedTags": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "hashtags": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "name": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "KnowledgeCardSearchDocument": {
+            "properties": {
+                "anchorEntityId": {
+                    "type": [
+                        "null",
+                        "string"
+                    ]
+                },
+                "anchorEntityType": {
+                    "anyOf": [
+                        {
+                            "enum": [
+                                "DASHBOARD",
+                                "DATASET",
+                                "DATA_DOCUMENT",
+                                "DBT_MODEL",
+                                "LOOKER_EXPLORE",
+                                "LOOKER_VIEW",
+                                "METRIC",
+                                "POWER_BI_DATASET",
+                                "TABLEAU_DATASOURCE",
+                                "THOUGHT_SPOT_DATA_OBJECT"
+                            ],
+                            "type": "string"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "author": {
+                    "type": [
+                        "null",
+                        "string"
+                    ]
+                },
+                "authorDisplayName": {
+                    "type": [
+                        "null",
+                        "string"
+                    ]
+                },
+                "browsePathHierarchy": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "browsePathSegments": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "browsePaths": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "contactDisplayNames": {
+                    "anyOf": [
+                        {
+                            "items": {
+                                "type": "string"
+                            },
+                            "type": "array"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "content": {
+                    "type": [
+                        "null",
+                        "string"
+                    ]
+                },
+                "createdAt": {
+                    "type": [
+                        "null",
+                        "string"
+                    ]
+                },
+                "directory": {
+                    "anyOf": [
+                        {
+                            "items": {
+                                "type": "string"
+                            },
+                            "type": "array"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "documentId": {
+                    "default": "",
+                    "type": "string"
+                },
+                "entityId": {
+                    "default": "",
+                    "type": "string"
+                },
+                "governedTags": {
+                    "anyOf": [
+                        {
+                            "items": {
+                                "type": "string"
+                            },
+                            "type": "array"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "hashtags": {
+                    "anyOf": [
+                        {
+                            "items": {
+                                "type": "string"
+                            },
+                            "type": "array"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "highlight": {
+                    "$ref": "#/definitions/KnowledgeCardHighlight",
+                    "description": "Used in search response, highlight the section where the match happens"
+                },
+                "isArchived": {
+                    "type": "boolean"
+                },
+                "isDeleted": {
+                    "type": "boolean"
+                },
+                "isDraft": {
+                    "type": "boolean"
+                },
+                "lastRefreshed": {
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "Name of the related entity",
+                    "type": "string"
+                },
+                "scoreDetails": {
+                    "$ref": "#/definitions/SearchScoreDetails"
+                },
+                "type": {
+                    "enum": [
+                        "ASSET_DESCRIPTION",
+                        "CHANGE_REQUEST",
+                        "COLUMN_DESCRIPTION",
+                        "COMMENT",
+                        "DATA_DOCUMENT",
+                        "DEPRECATION",
+                        "HOW_TO_USE",
+                        "INCIDENT",
+                        "UNKNOWN"
+                    ],
+                    "type": "string"
+                },
+                "viewCount": {
+                    "type": [
+                        "null",
+                        "number"
+                    ]
+                }
+            },
+            "type": "object"
+        },
+        "Maybe<string>": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "MetricHighlight": {
+            "properties": {
+                "contactDisplayNames": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "description": {
+                    "type": [
+                        "null",
+                        "string"
+                    ]
+                },
+                "governedTags": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "hashtags": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "name": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "MetricSearchDocument": {
+            "properties": {
+                "browsePathHierarchy": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "browsePathSegments": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "browsePaths": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "contactDisplayNames": {
+                    "anyOf": [
+                        {
+                            "items": {
+                                "type": "string"
+                            },
+                            "type": "array"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "description": {
+                    "type": [
+                        "null",
+                        "string"
+                    ]
+                },
+                "documentId": {
+                    "default": "",
+                    "type": "string"
+                },
+                "entityId": {
+                    "default": "",
+                    "type": "string"
+                },
+                "governedTags": {
+                    "anyOf": [
+                        {
+                            "items": {
+                                "type": "string"
+                            },
+                            "type": "array"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "hashtags": {
+                    "anyOf": [
+                        {
+                            "items": {
+                                "type": "string"
+                            },
+                            "type": "array"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "highlight": {
+                    "$ref": "#/definitions/MetricHighlight",
+                    "description": "Used in search response, highlight the section where the match happens"
+                },
+                "isDeleted": {
+                    "type": "boolean"
+                },
+                "knowledgeCardCount": {
+                    "type": "number"
+                },
+                "lastRefreshed": {
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "Name of the related entity",
+                    "type": "string"
+                },
+                "project": {
+                    "type": [
+                        "null",
+                        "string"
+                    ]
+                },
+                "scoreDetails": {
+                    "$ref": "#/definitions/SearchScoreDetails"
+                },
+                "type": {
+                    "enum": [
+                        "DBT_METRIC",
+                        "UNKNOWN"
+                    ],
+                    "type": "string"
+                },
+                "viewCount": {
+                    "type": [
+                        "null",
+                        "number"
+                    ]
+                }
+            },
+            "type": "object"
+        },
+        "NamespaceHighlight": {
+            "properties": {
+                "contactDisplayNames": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "description": {
+                    "type": [
+                        "null",
+                        "string"
+                    ]
+                },
+                "governedTags": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "hashtags": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "name": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "NamespaceSearchDocument": {
+            "properties": {
+                "author": {
+                    "$ref": "#/definitions/Maybe<string>"
+                },
+                "authorDisplayName": {
+                    "$ref": "#/definitions/Maybe<string>"
+                },
+                "browsePathHierarchy": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "browsePathSegments": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "browsePaths": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "contactDisplayNames": {
+                    "anyOf": [
+                        {
+                            "items": {
+                                "type": "string"
+                            },
+                            "type": "array"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "description": {
+                    "$ref": "#/definitions/Maybe<string>"
+                },
+                "documentId": {
+                    "default": "",
+                    "type": "string"
+                },
+                "entityId": {
+                    "default": "",
+                    "type": "string"
+                },
+                "governedTags": {
+                    "anyOf": [
+                        {
+                            "items": {
+                                "type": "string"
+                            },
+                            "type": "array"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "hashtags": {
+                    "anyOf": [
+                        {
+                            "items": {
+                                "type": "string"
+                            },
+                            "type": "array"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "highlight": {
+                    "$ref": "#/definitions/NamespaceHighlight",
+                    "description": "Used in search response, highlight the section where the match happens"
+                },
+                "isDeleted": {
+                    "type": "boolean"
+                },
+                "lastRefreshed": {
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "Name of the related entity",
+                    "type": "string"
+                },
+                "scoreDetails": {
+                    "$ref": "#/definitions/SearchScoreDetails"
+                },
+                "type": {
+                    "enum": [
+                        "DATA_GROUP",
+                        "DATA_UNIT",
+                        "PERSONAL_SPACE",
+                        "UNKNOWN",
+                        "USER_DEFINED_SPACE"
+                    ],
+                    "type": "string"
+                },
+                "viewCount": {
+                    "type": [
+                        "null",
+                        "number"
+                    ]
+                }
+            },
+            "type": "object"
+        },
+        "PersonHighlight": {
+            "properties": {
+                "contactDisplayNames": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "email": {
+                    "type": "string"
+                },
+                "governedTags": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "hashtags": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "name": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "PersonSearchDocument": {
+            "properties": {
+                "browsePathHierarchy": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "browsePathSegments": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "browsePaths": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "contactDisplayNames": {
+                    "anyOf": [
+                        {
+                            "items": {
+                                "type": "string"
+                            },
+                            "type": "array"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "department": {
+                    "type": [
+                        "null",
+                        "string"
+                    ]
+                },
+                "documentId": {
+                    "default": "",
+                    "type": "string"
+                },
+                "email": {
+                    "type": "string"
+                },
+                "entityId": {
+                    "default": "",
+                    "type": "string"
+                },
+                "governedTags": {
+                    "anyOf": [
+                        {
+                            "items": {
+                                "type": "string"
+                            },
+                            "type": "array"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "hashtags": {
+                    "anyOf": [
+                        {
+                            "items": {
+                                "type": "string"
+                            },
+                            "type": "array"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "highlight": {
+                    "$ref": "#/definitions/PersonHighlight",
+                    "description": "Used in search response, highlight the section where the match happens"
+                },
+                "isDeleted": {
+                    "type": "boolean"
+                },
+                "lastRefreshed": {
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "Name of the related entity",
+                    "type": "string"
+                },
+                "scoreDetails": {
+                    "$ref": "#/definitions/SearchScoreDetails"
+                },
+                "skills": {
+                    "anyOf": [
+                        {
+                            "items": {
+                                "type": "string"
+                            },
+                            "type": "array"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "title": {
+                    "type": [
+                        "null",
+                        "string"
+                    ]
+                },
+                "viewCount": {
+                    "type": [
+                        "null",
+                        "number"
+                    ]
+                }
+            },
+            "type": "object"
+        },
+        "QueryCountPercentile": {
+            "properties": {
+                "last24Hours": {
+                    "type": "number"
+                },
+                "last30Days": {
+                    "type": "number"
+                },
+                "last365Days": {
+                    "type": "number"
+                },
+                "last7Days": {
+                    "type": "number"
+                },
+                "last90Days": {
+                    "type": "number"
+                }
+            },
+            "type": "object"
+        },
+        "SearchScoreDetails": {
+            "properties": {
+                "description": {
+                    "default": "",
+                    "type": "string"
+                },
+                "details": {
+                    "items": {
+                        "$ref": "#/definitions/SearchScoreDetails"
+                    },
+                    "type": "array"
+                },
+                "value": {
+                    "default": 0,
+                    "type": "number"
+                }
+            },
+            "type": "object"
+        },
+        "UserDefinedResourceHighlight": {
+            "properties": {
+                "contactDisplayNames": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "description": {
+                    "type": [
+                        "null",
+                        "string"
+                    ]
+                },
+                "governedTags": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "hashtags": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "name": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "UserDefinedResourceSearchDocument": {
+            "properties": {
+                "author": {
+                    "$ref": "#/definitions/Maybe<string>"
+                },
+                "authorDisplayName": {
+                    "$ref": "#/definitions/Maybe<string>"
+                },
+                "browsePathHierarchy": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "browsePathSegments": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "browsePaths": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "contactDisplayNames": {
+                    "anyOf": [
+                        {
+                            "items": {
+                                "type": "string"
+                            },
+                            "type": "array"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "description": {
+                    "$ref": "#/definitions/Maybe<string>"
+                },
+                "documentId": {
+                    "default": "",
+                    "type": "string"
+                },
+                "entityId": {
+                    "default": "",
+                    "type": "string"
+                },
+                "governedTags": {
+                    "anyOf": [
+                        {
+                            "items": {
+                                "type": "string"
+                            },
+                            "type": "array"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "hashtags": {
+                    "anyOf": [
+                        {
+                            "items": {
+                                "type": "string"
+                            },
+                            "type": "array"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "highlight": {
+                    "$ref": "#/definitions/UserDefinedResourceHighlight",
+                    "description": "Used in search response, highlight the section where the match happens"
+                },
+                "isDeleted": {
+                    "type": "boolean"
+                },
+                "lastRefreshed": {
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "Name of the related entity",
+                    "type": "string"
+                },
+                "scoreDetails": {
+                    "$ref": "#/definitions/SearchScoreDetails"
+                },
+                "type": {
+                    "enum": [
+                        "ASSET_CONTACT",
+                        "COMMON_COLUMN_DESCRIPTION",
+                        "GOVERNED_TAG",
+                        "UNKNOWN"
+                    ],
+                    "type": "string"
+                },
+                "viewCount": {
+                    "type": [
+                        "null",
+                        "number"
+                    ]
+                }
+            },
+            "type": "object"
+        },
+        "VirtualViewHighlight": {
+            "properties": {
+                "columnDescriptions": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "columnNames": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "contactDisplayNames": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "description": {
+                    "type": [
+                        "null",
+                        "string"
+                    ]
+                },
+                "governedTags": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "hashtags": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "name": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "VirtualViewSearchDocument": {
+            "properties": {
+                "browsePathHierarchy": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "browsePathSegments": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "browsePaths": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "columnDescriptions": {
+                    "anyOf": [
+                        {
+                            "items": {
+                                "type": "string"
+                            },
+                            "type": "array"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "columnNames": {
+                    "anyOf": [
+                        {
+                            "items": {
+                                "type": "string"
+                            },
+                            "type": "array"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "contactDisplayNames": {
+                    "anyOf": [
+                        {
+                            "items": {
+                                "type": "string"
+                            },
+                            "type": "array"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "description": {
+                    "type": [
+                        "null",
+                        "string"
+                    ]
+                },
+                "documentId": {
+                    "default": "",
+                    "type": "string"
+                },
+                "entityId": {
+                    "default": "",
+                    "type": "string"
+                },
+                "governedTags": {
+                    "anyOf": [
+                        {
+                            "items": {
+                                "type": "string"
+                            },
+                            "type": "array"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "hashtags": {
+                    "anyOf": [
+                        {
+                            "items": {
+                                "type": "string"
+                            },
+                            "type": "array"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "highlight": {
+                    "$ref": "#/definitions/VirtualViewHighlight",
+                    "description": "Used in search response, highlight the section where the match happens"
+                },
+                "isDeleted": {
+                    "type": "boolean"
+                },
+                "knowledgeCardCount": {
+                    "type": "number"
+                },
+                "lastRefreshed": {
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "model": {
+                    "type": [
+                        "null",
+                        "string"
+                    ]
+                },
+                "name": {
+                    "description": "Name of the related entity",
+                    "type": "string"
+                },
+                "project": {
+                    "type": [
+                        "null",
+                        "string"
+                    ]
+                },
+                "scoreDetails": {
+                    "$ref": "#/definitions/SearchScoreDetails"
+                },
+                "tags": {
+                    "anyOf": [
+                        {
+                            "items": {
+                                "type": "string"
+                            },
+                            "type": "array"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "thoughtSpotDataObjectType": {
+                    "anyOf": [
+                        {
+                            "enum": [
+                                "TABLE",
+                                "UNKNOWN",
+                                "VIEW",
+                                "WORKSHEET"
+                            ],
+                            "type": "string"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "type": {
+                    "enum": [
+                        "DBT_MODEL",
+                        "LOOKER_EXPLORE",
+                        "LOOKER_VIEW",
+                        "POWER_BI_DATASET",
+                        "TABLEAU_DATASOURCE",
+                        "THOUGHT_SPOT_DATA_OBJECT",
+                        "UNKNOWN"
+                    ],
+                    "type": "string"
+                },
+                "viewCount": {
+                    "type": [
+                        "null",
+                        "number"
+                    ]
+                },
+                "workspace": {
+                    "type": [
+                        "null",
+                        "string"
+                    ]
+                }
+            },
+            "type": "object"
+        }
+    },
+    "oneOf": [
+        {
+            "$ref": "#/definitions/DashboardSearchDocument"
+        },
+        {
+            "$ref": "#/definitions/DatasetSearchDocument"
+        },
+        {
+            "$ref": "#/definitions/KnowledgeCardSearchDocument"
+        },
+        {
+            "$ref": "#/definitions/MetricSearchDocument"
+        },
+        {
+            "$ref": "#/definitions/VirtualViewSearchDocument"
+        },
+        {
+            "$ref": "#/definitions/DatasetColumnSearchDocument"
+        },
+        {
+            "$ref": "#/definitions/NamespaceSearchDocument"
+        },
+        {
+            "$ref": "#/definitions/PersonSearchDocument"
+        },
+        {
+            "$ref": "#/definitions/UserDefinedResourceSearchDocument"
+        }
+    ]
+}
+
