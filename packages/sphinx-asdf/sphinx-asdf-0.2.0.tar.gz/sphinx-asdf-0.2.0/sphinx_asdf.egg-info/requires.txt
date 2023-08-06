@@ -1,0 +1,12 @@
+asdf
+astropy>=5.0.4
+docutils
+mistune>=3
+sphinx
+sphinx-astropy
+sphinx_bootstrap_theme
+sphinx-rtd-theme
+toml
+
+[tests]
+pytest
