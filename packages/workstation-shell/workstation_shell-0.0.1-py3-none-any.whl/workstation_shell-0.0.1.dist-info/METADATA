@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: workstation-shell
+Version: 0.0.1
+Summary: workstation shell command line tools.
+Author: liutelin
+Author-email: liutelin@cvte.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: msgpack
+Requires-Dist: pyzmq
+
