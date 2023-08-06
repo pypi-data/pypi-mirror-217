@@ -1,0 +1,9 @@
+phytorchx/__init__.py,sha256=zLZwywlwROQ0YWh2tTYrL8LnjXlYq3TqFFGscF16aE4,1051
+phytorchx/_version.py,sha256=Ljuux5HvS-yDzAhpzt_WxHJ6Ct4dLQiCUJg2yT5NuzE,155
+phytorchx/_version.pyi,sha256=Sfh1h73WWxQR-8-zAC8p9qvKvtTBGXQHpeh-7I2N9Ig,75
+phytorchx/broadcast.py,sha256=6D_kKLoPZRMhGTHuQOu260h-KobKss-C365CJDOevUI,3462
+phytorchx-0.1.dist-info/LICENSE.txt,sha256=ozkA7RbAYH7qw6iPpHYT0Y2i-LFpya5ZwCkDoVRJgKg,1070
+phytorchx-0.1.dist-info/METADATA,sha256=qb2kcGA-A2uy1UTvdxjEga946unTcANUT_YxdflQrp0,764
+phytorchx-0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+phytorchx-0.1.dist-info/top_level.txt,sha256=uw8wyKHgzgbmxgNp7Eyj3L9HZA92XRBWzFGrWiFwq6g,10
+phytorchx-0.1.dist-info/RECORD,,
