@@ -1,0 +1,8 @@
+README.md
+setup.py
+ecmcode.egg-info/PKG-INFO
+ecmcode.egg-info/SOURCES.txt
+ecmcode.egg-info/dependency_links.txt
+ecmcode.egg-info/not-zip-safe
+ecmcode.egg-info/requires.txt
+ecmcode.egg-info/top_level.txt
