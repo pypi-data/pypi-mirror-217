@@ -1,0 +1,4 @@
+PREFIX = 'resolve_'
+POST_PREFIX = 'post_'
+RESOLVER = 'RESOLVER'
+ATTRIBUTE = 'ATTRIBUTE'
