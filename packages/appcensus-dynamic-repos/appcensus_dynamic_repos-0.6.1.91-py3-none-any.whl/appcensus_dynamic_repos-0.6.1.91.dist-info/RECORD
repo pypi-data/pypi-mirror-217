@@ -1,0 +1,10 @@
+appcensus/dynamic_repos/__init__.py,sha256=FPYJnf2tiGnGtD95qPFGmFch0iMxR-g7HWVjb3bXZ_U,606
+appcensus/dynamic_repos/auth.py,sha256=MNOkS2W-yJAHk6YkTZoXiIz6F3f1kuOd88IB57-W_sQ,6491
+appcensus/dynamic_repos/commands.py,sha256=FtkAr4sEVH2hn_Q7QvQUsip7CnErrLipNOdAjsYP1uw,9816
+appcensus/dynamic_repos/models.py,sha256=vFsbbqJaWrygaxCKWbPtw_umkolX7pratr5wjAMQopw,4893
+appcensus/dynamic_repos/plugin.py,sha256=9CDaNqaw2oXG6synXupWh2BkXfwSA7pc465HPRnxyRk,4414
+appcensus/dynamic_repos/repo_collector.py,sha256=5kInqV1a3vn-K-kBQZkRzhqpza_gXR1pvrIbtq2T2DM,3426
+appcensus_dynamic_repos-0.6.1.91.dist-info/entry_points.txt,sha256=e-4EKbJRNt1HsOCZe5y4kY9G4TrEGdROUy5PVPXvV_Q,171
+appcensus_dynamic_repos-0.6.1.91.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+appcensus_dynamic_repos-0.6.1.91.dist-info/METADATA,sha256=xpYg4x87F-bPMHjcotr-Gis94Bxox1DLKyXzggCJPtc,958
+appcensus_dynamic_repos-0.6.1.91.dist-info/RECORD,,
