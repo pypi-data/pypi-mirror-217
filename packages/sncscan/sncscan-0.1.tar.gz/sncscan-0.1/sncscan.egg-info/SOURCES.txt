@@ -1,0 +1,6 @@
+setup.cfg
+setup.py
+sncscan.egg-info/PKG-INFO
+sncscan.egg-info/SOURCES.txt
+sncscan.egg-info/dependency_links.txt
+sncscan.egg-info/top_level.txt
