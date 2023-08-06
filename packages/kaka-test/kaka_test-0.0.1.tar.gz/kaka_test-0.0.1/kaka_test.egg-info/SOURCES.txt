@@ -1,0 +1,8 @@
+README.md
+setup.py
+kaka_test/__init__.py
+kaka_test/your_func.py
+kaka_test.egg-info/PKG-INFO
+kaka_test.egg-info/SOURCES.txt
+kaka_test.egg-info/dependency_links.txt
+kaka_test.egg-info/top_level.txt
