@@ -1,0 +1,2 @@
+[console_scripts]
+call_openai_gpt = call_openai_gpt:main

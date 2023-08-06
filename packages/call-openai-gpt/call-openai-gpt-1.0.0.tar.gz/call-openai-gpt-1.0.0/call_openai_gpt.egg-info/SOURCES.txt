@@ -1,0 +1,9 @@
+README.md
+call_openai_gpt.py
+setup.py
+call_openai_gpt.egg-info/PKG-INFO
+call_openai_gpt.egg-info/SOURCES.txt
+call_openai_gpt.egg-info/dependency_links.txt
+call_openai_gpt.egg-info/entry_points.txt
+call_openai_gpt.egg-info/requires.txt
+call_openai_gpt.egg-info/top_level.txt
