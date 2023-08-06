@@ -1,0 +1,13 @@
+README.md
+setup.py
+checkers/__init__.py
+checkers/american.py
+checkers/base.py
+checkers/main.py
+checkers/models.py
+checkers/utils.py
+fast_checkers.egg-info/PKG-INFO
+fast_checkers.egg-info/SOURCES.txt
+fast_checkers.egg-info/dependency_links.txt
+fast_checkers.egg-info/top_level.txt
+test/test_board.py
