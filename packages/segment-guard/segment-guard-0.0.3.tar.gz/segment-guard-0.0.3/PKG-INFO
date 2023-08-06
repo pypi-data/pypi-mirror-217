@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: segment-guard
+Version: 0.0.3
+Summary: segment-guard is now slice-guard
+Classifier: Development Status :: 7 - Inactive
+Description-Content-Type: text/markdown
+
+# segment-guard is now slice-guard
+
+This package has been renamed. Use `pip install slice-guard` instead.
+
+New package: https://pypi.org/project/slice-guard/
