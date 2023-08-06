@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: calculator123
+Version: 0.0.1
+Summary: A basic calculator package
+Author: Vitalija Valentaite
+Author-email: <vitalija.v7@gmail.com>
+Keywords: python,calculator,mathematics,math,operations
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
