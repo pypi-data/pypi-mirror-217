@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+distshadi/Binomialdistribution.py
+distshadi/Gaussiandistribution.py
+distshadi/Generaldistribution.py
+distshadi/__init__.py
+distshadi.egg-info/PKG-INFO
+distshadi.egg-info/SOURCES.txt
+distshadi.egg-info/dependency_links.txt
+distshadi.egg-info/not-zip-safe
+distshadi.egg-info/top_level.txt
