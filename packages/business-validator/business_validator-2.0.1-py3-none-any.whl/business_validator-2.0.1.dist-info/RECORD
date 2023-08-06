@@ -1,0 +1,12 @@
+business_validator-2.0.1.dist-info/METADATA,sha256=cElS7G0CPXVmvDksXPQeXzZVVNM_i9r1AcSNOD99jEA,1972
+business_validator-2.0.1.dist-info/WHEEL,sha256=g58cvAsF5_9d0VXJuk7F0rhl6nAjUc5P9vx880WkZtI,90
+business_validator-2.0.1.dist-info/licenses/LICENSE,sha256=OFSOkgbgrfAJKhj_0HzV-6Y3P4S9rGBFBTyKtfPp1gA,1093
+business_validator/__init__.py,sha256=Iw9oaajme9Z8AGGuHqqF4IHJ3gF6UJCBAaPdXMruNaI,301
+business_validator/types.py,sha256=C-OQPVmLBape73vMJwQju24pTNOBAv_06uhmgKq5glY,1342
+business_validator/utils.py,sha256=OUbR3IbAaQ0DL7wMekPFU_YMhP9exnebhLDLjWzvmKA,287
+business_validator/validator.py,sha256=r2W-nae9adFvnpYlQq8otnjAARnj_M5YUGp3dhOq930,3676
+examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+examples/multiple_error.py,sha256=raDNUsZLW5jGoRffwoQLf65ZaEMsz5NaU2wTBdNwCwI,2370
+examples/single_error.py,sha256=dOmas9dIDZPz6RqojSKemEUIXA6cPZTnbkE5nPvAr-U,1918
+examples/types.py,sha256=OUdKAg8j6KGK2tiQZEHp2ToLg2WJt8ob6SyM3Q-VdYs,410
+business_validator-2.0.1.dist-info/RECORD,,
