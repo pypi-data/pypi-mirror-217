@@ -1,0 +1,2 @@
+[nbdev]
+heatgeo = heatgeo._modidx:d

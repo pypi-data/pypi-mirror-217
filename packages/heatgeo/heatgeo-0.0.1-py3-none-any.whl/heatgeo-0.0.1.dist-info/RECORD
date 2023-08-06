@@ -1,0 +1,15 @@
+heatgeo/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+heatgeo/_modidx.py,sha256=4O_5t2pTZnH1dE_wY9eN_Q53jhBxRphZLOzxv8wvQWU,10300
+heatgeo/cheb.py,sha256=1uMzcio9s4yXhkATIpH_b5NhpkYi28uOV49N8_6rSdg,7298
+heatgeo/embedding.py,sha256=YBhCPM-bMhkc0_wtWESsKg5dnhETKfGNTD0OiPU5VIs,13600
+heatgeo/graph.py,sha256=cD0nW5HrMwTsKtptCvy6sS5Pdg3Q5O5DIRkZdJDIJs4,2791
+heatgeo/heat_filter.py,sha256=m5ZvwG5uVdePJIwS4QvVHLkQlcXL2LwNYe3L4hEK0eA,4118
+heatgeo/mds.py,sha256=LseBYbee845sk0dDuR42582B3otAcXvJeZQ6f51sI30,4458
+heatgeo/other_emb.py,sha256=Sw6g_7DUWpc4vh21Ffp0fxk2QMLGTrSdTYhGZ5uRby4,6548
+heatgeo/utils.py,sha256=NrrM32hlkXHyCKv7zH-PGL1CP04FPPsCclG4Xa9LMso,2344
+heatgeo-0.0.1.dist-info/LICENSE,sha256=mxt6bsH8XrJZWM5gMs7-_ohcz-QtsKf-gQA89gfK_Sc,1085
+heatgeo-0.0.1.dist-info/METADATA,sha256=rtLT9LtJTPowtA8aqUe_p1I4FV26TQ0GZCiNxsCGiPw,4219
+heatgeo-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+heatgeo-0.0.1.dist-info/entry_points.txt,sha256=xhDhKazm6wrTO26cJvUB_naZHorjNKLk6Z5V1qsA0lA,36
+heatgeo-0.0.1.dist-info/top_level.txt,sha256=-3BpdJb7O0RLwRm0UorRbmUqZz8O0zkM1qVcPqKsEqI,8
+heatgeo-0.0.1.dist-info/RECORD,,
