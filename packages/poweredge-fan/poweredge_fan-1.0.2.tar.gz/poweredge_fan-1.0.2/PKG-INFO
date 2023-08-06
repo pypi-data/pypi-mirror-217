@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: poweredge_fan
+Version: 1.0.2
+Summary: PyPowerEdgeFan is a Python-based PID fan controller for Dell PowerEdge servers.
+Author-email: Jackie Yang <jackie@jackieyang.me>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: PySensors
+Project-URL: Source, https://github.com/valkjsaaa/PyPowerEdgeFan
+
+# PyPowerEdgeFan
+
+PyPowerEdgeFan is a Python-based PID fan controller for Dell PowerEdge servers.
+
+## Installation
+
+Install the package using pip:
+
+```bash
+pip install poweredge_fan
+```
+
+Replace `poweredge_fan` with the name of your package.
+
+## Usage
+
+To use PyPowerEdgeFan, run the following command:
+
+```bash
+poweredge_fan -H <host> -U <username> -P <password>
+```
+
+Replace `<host>`, `<username>`, and `<password>` with the appropriate values for your iDRAC.
+
+### Arguments
+
+- `-H`, `--host`: IP address of the iDRAC (required)
+- `-U`, `--username`: Username for the iDRAC (required)
+- `-P`, `--password`: Password for the iDRAC (required)
+
+## Contributing
+
+Contributions to PyPowerEdgeFan are welcome! To contribute, please open an issue or submit a pull request through the [GitHub repository](https://github.com/valkjsaaa/PyPowerEdgeFan).
