@@ -1,0 +1,45 @@
+# cep_range
+
+A biblioteca `cep_range` fornece funcoes relacionadas a obtencao de coordenadas geograficas, calculo de distancia entre dois pontos, obtencao de CEP a partir de coordenadas, busca de CEPs dentro de um raio especifico, outros.
+
+**Funcoes:**
+
+1. `validate_cep(cep)`: Funcao para validar um CEP que retornar um formato padrao "XXXXX-XXX".
+
+2. `get_coordinates(cep)`: Funcao para obter as coordenadas geograficas (`latitude` e `longitude`) a partir de um CEP. Utiliza o Selenium para abrir o Google Maps, inserir o CEP na barra de pesquisa, aguardar o carregamento da pagina e extrair as coordenadas da URL. Retorna as coordenadas como uma tupla `(latitude, longitude)`. Se as coordenadas não forem encontradas, gera uma mensagem de erro.
+
+3. `calculate_distance(cep_1, cep_2, unit)`: Funcao para calcular a distancia entre dois pontos geográficos. Obtém as coordenadas dos CEPs fornecidos usando a funcao `get_coordinates()`, converte as coordenadas para radianos e calcula a distancia. O resultado e retornado em quilometros (`unit='KM'`) ou metros (`unit='M'`). Se as coordenadas nao forem encontradas para algum dos CEPs gera uma excecao `CoordinatesNotFoundError`.
+
+4. `get_cep(latitude, longitude)`: Funcao para obter o CEP correspondente a um par de coordenadas geograficas (`latitude` e `longitude`). Utiliza Nominatim do Geopy para reverter a geocodificacao e obter o CEP. Retorna o CEP se encontrado. Caso contrario, lança uma excecao indicando que nao foi possivel converter as coordenadas em CEP. Infelizmente o Nominatim pode retorna dados imprecisos.
+
+5. `ceps_range(raio_m, cep_c)`: Funcao para gerar uma lista de CEPs unicos dentro de um determinado raio (em metros) a partir de um CEP central.
+
+**Bibliotecas Necessarias:**
+- geopy.geocoders.Nominatim: Biblioteca que fornece uma interface para o servico de geocodificacao do Nominatim, usado para converter coordenadas em CEP.
+- selenium.webdriver: Módulo utilizado para automatizar a interacao com um navegador web, usado para capturar dados de (`latitude` e `longitude`) de forma precisa.
+- selenium.webdriver.common.by: 'By' Utilizada para localizar elementos em uma pagina.
+- selenium.webdriver.support.ui.WebDriverWait: Classe utilizada para aguardar condicoes especificas de elementos da pagina.
+- selenium.webdriver.support.expected_conditions
+- math
+- re
+
+**Instalacao:**
+```
+ pip install cep-range
+```
+
+Exemplos:
+```python
+ import cep_range
+
+ ceps_raio_500m = cep_range.ceps_range(500, '01153-000')
+ # output = ['01155-020', '01154-020', '01234-001', '01150-000', '01151-000', '01156-001', '01155-010', '01152-000', '01155-040', '01232-010', '01155-030', '01154-030', '01155-060', '01156-030', '01233-060', '01154-000', '01150-001', '01231-010', '01155-000', '01235-000', '01154-010']
+
+ distancia = cep_range.calculate_distance('01150-000', '01154-010', 'm')
+ # output = 829.704
+
+ coordenadas = cep_range.get_coordinates('01154-010')
+ # output = (-23.5290645, -46.6634956)
+```
+
+
