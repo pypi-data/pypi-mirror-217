@@ -1,0 +1,13 @@
+meshkernel/MeshKernelApi.dll,sha256=3HRvOA2jYSEIss5sXQ29nSOCPE8BXVlb-w2DldcjkiI,779776
+meshkernel/__init__.py,sha256=QCNR6aN6Uz04xW3TKdpXfxKAx-NkUOjqknjcQW110Ek,650
+meshkernel/c_structures.py,sha256=IBLHHpQo8Ar8weEdncBLk0Zkt-jYbFfcsHOdwtFLKAE,32489
+meshkernel/errors.py,sha256=cdqBdbfWARJFg3GcGxBHu-FAGbpSxa0gacNQozLxAFk,271
+meshkernel/meshkernel.py,sha256=EHNVUC8YlJZA6fpr3zJf9_f_6x2YRa73-SYK0Hd7Cq8,74772
+meshkernel/py_structures.py,sha256=H_jKhtTiMwJy0D7ILmp02bAQAHGF-7ziZP7gC38_XRQ,22525
+meshkernel/utils.py,sha256=uQ5zpKm2nWPqbFkOnnYv1Ocz-BDRF9iKTwUkQeaH9e0,1105
+meshkernel/version.py,sha256=Li7QTCVOeV8-vdVfaihVADHV9N1cRVxFe5y8uh6xjo8,102
+meshkernel-2.1.0.dist-info/LICENSE,sha256=lMA1O5mkI54RB9ZfouO6Hg41Y_-LDKFckjPf5Cl-bME,1086
+meshkernel-2.1.0.dist-info/METADATA,sha256=SQS2Xk-aZ0gAfjkLDjj0YPaAItpXVg6AN2fa_BSCBEY,5687
+meshkernel-2.1.0.dist-info/WHEEL,sha256=orH-O4lZRL846P5Nfqr5QCn-PTG5RIVwv1r9xNCYzkk,99
+meshkernel-2.1.0.dist-info/top_level.txt,sha256=DCBLoVoJt6CXASOxcpUIL4t9YhUB_nREiDmDA-Ft-gk,22
+meshkernel-2.1.0.dist-info/RECORD,,
