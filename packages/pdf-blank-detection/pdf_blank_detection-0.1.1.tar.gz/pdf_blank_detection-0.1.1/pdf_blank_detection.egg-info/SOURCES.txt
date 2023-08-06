@@ -1,0 +1,9 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+pdf_blank_detection.egg-info/PKG-INFO
+pdf_blank_detection.egg-info/SOURCES.txt
+pdf_blank_detection.egg-info/dependency_links.txt
+pdf_blank_detection.egg-info/top_level.txt
