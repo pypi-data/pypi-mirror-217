@@ -1,0 +1,13 @@
+cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cli/endpoints.py,sha256=2jLdhtzrYrfMqL-Tzrg8o1MsbvJ_rwua7SvAgwzG-CM,1007
+cli/main.py,sha256=l80gRsZoSgXQ18dIK5p5z5U_sFBDF3RfMM5epfKTplk,1405
+engine/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+engine/consumer_postgres.py,sha256=goFYpMXneTjb8ieCPwO4Bag8sJojAiKTvEsn7tVagXU,2988
+engine/pgoutput.py,sha256=LEe1RmZGHSzZtXIXvo7AF2Cn_AmMsJ40rJnzCrNttCg,16136
+engine/sink_pinecone.py,sha256=xKwaGLmHTzbYm5_M2GY2epuXrR4HZDW2N3CcxpcMK6s,137
+engine/source_postgres.py,sha256=J938YRF4HBIRuyz7oQ-PIH6z3CMSv1WjUbkAkbFVd9w,3618
+sdk/__init__.py,sha256=4dbouDJ17rPOdKECX7r7otHXRcM0Wk4Yms7z-iL99fY,43
+hello_world_sdk-0.1.dist-info/METADATA,sha256=3ftkpYQHhuQ1TPN44G0gE4mv75QOReXvmCv03hLt8pA,58
+hello_world_sdk-0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+hello_world_sdk-0.1.dist-info/top_level.txt,sha256=svm94gpmvIXola33OD4U6ji8cKL_Mz6jCPnGD0zYZ3Y,15
+hello_world_sdk-0.1.dist-info/RECORD,,
