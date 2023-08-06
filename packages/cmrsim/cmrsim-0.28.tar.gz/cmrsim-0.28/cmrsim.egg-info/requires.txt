@@ -1,0 +1,6 @@
+tensorflow>=2.11
+pyvista>=0.37
+numpy>=1.19
+pint>=0.18
+Deprecated>=1.2.13
+cmrseq>=0.17
