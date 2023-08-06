@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: freefang-qt
+Version: 0.1.1
+Summary: A PySide client for the FreeFang werewolf gameserver.
+Author-email: Solaris <iusegentoobtw@protonmail.com>
+Project-URL: Homepage, https://github.com/FreeFangGame/freefang-qt
+Project-URL: Bug Tracker, https://github.com/FreeFangGame/freefang-qt/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyside6
+
+# freefang-qt
+A QT client for FreeFang made using PySide
+This client is the reference client for FreeFang.
