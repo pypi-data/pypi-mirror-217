@@ -1,0 +1,9 @@
+setup.py
+sebastian_test/GLM-130B.tar.gz
+sebastian_test/SwissArmyTransformer.tar.gz
+sebastian_test/__init__.py
+sebastian_test/ice_text.model
+sebastian_test.egg-info/PKG-INFO
+sebastian_test.egg-info/SOURCES.txt
+sebastian_test.egg-info/dependency_links.txt
+sebastian_test.egg-info/top_level.txt
