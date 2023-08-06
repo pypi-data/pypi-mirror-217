@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: physician
+Version: 0.0.1
+Summary: In the works.
+Home-page: https://github.com/
+Author: approximate
+Author-email: test@exmaple.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+UNKNOWN
+
