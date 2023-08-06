@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: sasapay-payments
+Version: 1.0.1
+Summary: Python Wrapper for intengrating with the SasaPay API
+Author-email: SimonOkello <simonokello93@gmail.com>
+Project-URL: API DOCS, https://docs.sasapay.app/docs/introduction
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
