@@ -1,0 +1,7 @@
+include MANIFEST.in
+include .coveragerc
+include *.md
+recursive-include requirements *.txt
+recursive-include . *.md
+exclude seleya/mfc/alchemy/qrank/*.py
+include seleya/mfc/alchemy/qrank/*.so
