@@ -1,0 +1,72 @@
+[build-system]
+requires = ["setuptools>=65"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "imp-prof"
+dynamic = ["version", ]
+authors = [
+    { name = "Tom Trval", email = "thandeus@gmail.com" },
+]
+description = "Imp-prof serves to collect and publish prometheus metrics from pre-forked server workers."
+readme = "README.md"
+license = { text = "BSD-3-Clause" }
+requires-python = ">=3.7"
+dependencies = [
+    'flask-restx>=0.1',
+    'environs>=9.5',
+    'fastapi>=0.85',
+    'starlette>=0.20',
+    'uvicorn[standard]>=0.18',
+    'pydantic>1.10',
+    'aio-pika>=8.2',
+    'pika>=1.3',
+    'prometheus-client>=0.15',
+    'orjson>=3.8',
+    'email-validator>=1.0',
+]
+keywords = [
+    "prometheus",
+    "fastapi",
+    "api",
+    "rest",
+    "profiling",
+    "rabbitmq",
+    "python",
+    'pika',
+    'metrics',
+]
+classifiers = [
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Topic :: Internet :: WWW/HTTP :: WSGI :: Server",
+    "Framework :: FastAPI",
+    "Programming Language :: Python :: 3",
+    "Typing :: Typed",
+]
+
+[project.urls]
+"Homepage" = "https://gitlab.kajot.cz/online-casino/backend/imp-prof"
+"Bug Tracker" = "https://gitlab.kajot.cz/online-casino/backend/imp-prof"
+
+[options]
+test_suite = "tests"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["imp_prof", ]
+
+[tool.setuptools.dynamic]
+version = {attr = "imp_prof.info.__version__"}
+
+[coverage.run]
+branch = true
+source = [
+    "src/imp_prof",
+    "tests",
+]
+
+[coverage.paths]
+source = "imp_prof"
