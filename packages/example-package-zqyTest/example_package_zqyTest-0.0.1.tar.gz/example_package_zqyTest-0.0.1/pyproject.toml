@@ -1,0 +1,14 @@
+[project]
+name = "example_package_zqyTest"
+version = "0.0.1"
+authors = [
+  { name="Qinyuan Zheng", email="qinyuan_zheng_cn@163.com" },
+]
+description = "A small example package by zqy"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
