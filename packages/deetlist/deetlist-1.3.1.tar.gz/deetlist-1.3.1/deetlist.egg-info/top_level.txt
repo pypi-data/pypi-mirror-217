@@ -1,0 +1,5 @@
+deetlist/crawler
+deetlist/fetcher
+deetlist/parser
+deetlist/scraper
+deetlist/utils
