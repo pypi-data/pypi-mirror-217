@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+avidtools/__init__.py
+avidtools.egg-info/PKG-INFO
+avidtools.egg-info/SOURCES.txt
+avidtools.egg-info/dependency_links.txt
+avidtools.egg-info/requires.txt
+avidtools.egg-info/top_level.txt
