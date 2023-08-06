@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: astrotrails
+Version: 0.1.2
+Summary: Tool to generate startrails images by stacking consecutive starimages in jpeg format. Also, astrotrails can create a timelapse video.
+Home-page: https://github.com/theogatsios/astrotrails
+Author: Theo Gatsios
+Author-email: theogat@protonmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering
+Classifier: Intended Audience :: Science/Research
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Astrotrails
+Tool to generate startrails images by stacking consecutive acquisition in jpeg format. It can also generate timelapse videos.
+
+## Setup and installation
+
+```bash
+pip install astrotrails
+```
+
+This will put the executable `astrotrails` in your path 
+
+Running
+```bash
+astrotrails jpegsDirectory 1
+```
+will search for jpegs files with the same dimensions into `jpegsDirectory` and will generate startrails image and timelapse video (mode 1)
+
+
+

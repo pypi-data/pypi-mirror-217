@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.py
+astrotrails/__init__.py
+astrotrails/command_line.py
+astrotrails.egg-info/PKG-INFO
+astrotrails.egg-info/SOURCES.txt
+astrotrails.egg-info/dependency_links.txt
+astrotrails.egg-info/entry_points.txt
+astrotrails.egg-info/not-zip-safe
+astrotrails.egg-info/requires.txt
+astrotrails.egg-info/top_level.txt
