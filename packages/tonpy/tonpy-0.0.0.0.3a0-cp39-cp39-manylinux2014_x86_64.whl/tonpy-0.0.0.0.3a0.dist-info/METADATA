@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: tonpy
+Version: 0.0.0.0.3a0
+Summary: Types / API for TON blockchain
+Home-page: https://github.com/disintar/tonpy
+Author: Disintar LLP
+Author-email: andrey@head-labs.com
+Project-URL: Bug Tracker, https://github.com/disintar/tonpy/issues
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >3.8,<3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: loguru
+Requires-Dist: pytest
+
+#
