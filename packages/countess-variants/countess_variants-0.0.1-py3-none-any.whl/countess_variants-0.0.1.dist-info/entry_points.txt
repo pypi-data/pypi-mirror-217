@@ -1,0 +1,2 @@
+[countess_plugins]
+variants = countess_variants:VariantsPlugin
