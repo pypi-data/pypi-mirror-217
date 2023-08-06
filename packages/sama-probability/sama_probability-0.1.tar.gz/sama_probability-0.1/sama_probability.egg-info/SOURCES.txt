@@ -1,0 +1,10 @@
+setup.py
+sama_probability/Binomialdistribution.py
+sama_probability/Gaussiandistribution.py
+sama_probability/Generaldistribution.py
+sama_probability/__init__.py
+sama_probability.egg-info/PKG-INFO
+sama_probability.egg-info/SOURCES.txt
+sama_probability.egg-info/dependency_links.txt
+sama_probability.egg-info/not-zip-safe
+sama_probability.egg-info/top_level.txt
