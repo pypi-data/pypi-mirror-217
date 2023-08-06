@@ -1,0 +1,11 @@
+wowipy/__init__.py,sha256=8O5R76vPy958Zz2Q8Pvf9zwdjniEyoBrb7KTU_nt7mE,153
+wowipy/exceptions.py,sha256=JtBXi2y73PGOafPbCw2hngIlkHe0lH-M16yKdGdOJpc,45
+wowipy/models.py,sha256=5ZZIOf4NAu86VLFd8iAufVJswbpJXPU_qmaGNTB93NY,49213
+wowipy/rest_adapter.py,sha256=QCXB6cpYMSra-y0XTxduF970FxDjxDrN8_2afNuJpuE,4550
+wowipy/wowipy.py,sha256=b_EnEUk6II3lLUWIHXHg2o661gB73JCmmtaDebog2_w,43528
+wowipy-1.1.4.dist-info/COPYING,sha256=_33U21OgtytEZsHeK-1QBwVdjKKNX--7Pdz5XsmmAwI,35817
+wowipy-1.1.4.dist-info/LICENSE,sha256=_33U21OgtytEZsHeK-1QBwVdjKKNX--7Pdz5XsmmAwI,35817
+wowipy-1.1.4.dist-info/METADATA,sha256=1IPWWQc-JEJtIjwbSpiJ5nUDb9-8t0Zn1StbtCX82x8,1221
+wowipy-1.1.4.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+wowipy-1.1.4.dist-info/top_level.txt,sha256=YT5ON7PBomqG3Ji0eoendAH9FnWmatX25vUnq1T8HFo,7
+wowipy-1.1.4.dist-info/RECORD,,
