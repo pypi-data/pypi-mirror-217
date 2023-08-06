@@ -1,0 +1,3 @@
+[console_scripts]
+createshell = databased.create_shell:main
+dbshell = databased.dbshell:main
