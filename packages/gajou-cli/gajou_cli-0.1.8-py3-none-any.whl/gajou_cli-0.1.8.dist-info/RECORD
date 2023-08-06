@@ -1,0 +1,9 @@
+gajou_cli/__init__.py,sha256=-wsG5ruZ5ISraMYyJRIEXpH-5s3uxutPL-0LHBaYNIU,106
+gajou_cli/base_cli.py,sha256=VNkWpuzLjCqf_50EjT5KAw1W50xozjJ1_srAAzLzFQg,2405
+gajou_cli/cli_response.py,sha256=PwkbXkvn1zTHCQ2VUA6nI1BaGjt0VfhbDQffx2bjx80,160
+gajou_cli/return_codes.py,sha256=3w8n8d_YYolJoL0hRTYDdeveQ5Z4cK_HSBPQ7dUlnmg,127
+gajou_cli-0.1.8.dist-info/LICENSE,sha256=1YmOlKFIXqPrbkarydlp_RW3M4iFH9gzW44b9M_TuHM,1073
+gajou_cli-0.1.8.dist-info/METADATA,sha256=nMjpKPYPcNoY0vd-QnsVUmuHs2PhmXB5pim4Yc0GY88,759
+gajou_cli-0.1.8.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+gajou_cli-0.1.8.dist-info/top_level.txt,sha256=dkRbNYTPkYka1541CzORap3laJEpdV0If1cX_BSFmZA,10
+gajou_cli-0.1.8.dist-info/RECORD,,
