@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+autodocumenter_test.egg-info/PKG-INFO
+autodocumenter_test.egg-info/SOURCES.txt
+autodocumenter_test.egg-info/dependency_links.txt
+autodocumenter_test.egg-info/entry_points.txt
+autodocumenter_test.egg-info/requires.txt
+autodocumenter_test.egg-info/top_level.txt
+src/autodocumenter/compile_doc/templates/base.rst
+src/autodocumenter/compile_doc/templates/class.rst
+src/autodocumenter/compile_doc/templates/module.rst
+src/autodocumenter/generate_doc/utils/config.yaml
