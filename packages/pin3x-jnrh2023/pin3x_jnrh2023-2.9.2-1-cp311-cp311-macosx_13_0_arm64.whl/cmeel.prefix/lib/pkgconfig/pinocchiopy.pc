@@ -1,0 +1,19 @@
+prefix=${pcfiledir}/../..
+exec_prefix=${pcfiledir}/../..
+libdir=${pcfiledir}/../../lib/python3.11/site-packages/pinocchio
+bindir=${pcfiledir}/../../lib/python3.11/site-packages/pinocchio
+pkglibdir=${pcfiledir}/../../lib/pinocchio
+includedir=${pcfiledir}/../../include
+datarootdir=${pcfiledir}/../../share
+pkgdatarootdir=${pcfiledir}/../../share
+docdir=
+doxygendocdir=
+
+Name: pinocchiopy
+Description: Python bindings of Pinocchio
+URL: http://github.com/stack-of-tasks/pinocchio
+Version: 2.9.2
+Requires: pinocchio, eigenpy >= 2.6.5
+Conflicts: 
+Libs: -L${libdir} -lpinocchio_pywrap -Wl,-undefined,dynamic_lookup,/var/folders/4d/4hd0cmb52fbb6y_9gq89_52c0000gq/T/pip-build-env-dgqcegpt/overlay/lib/python3.11/site-packages/cmeel.prefix/lib/libboost_chrono.dylib
+Cflags: -I${includedir} -I/Users/gsaurel/.local/share/rtx/installs/python/3.11.4/include/python3.11 -DPINOCCHIO_WITH_URDFDOM -DPINOCCHIO_WITH_HPP_FCL
