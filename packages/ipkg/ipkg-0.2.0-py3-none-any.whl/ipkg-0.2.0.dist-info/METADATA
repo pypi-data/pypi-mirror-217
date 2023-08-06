@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: ipkg
+Version: 0.2.0
+Summary: My Package Manager
+Home-page: https://github.com/liblaf/ipkg
+License: MIT
+Author: liblaf
+Author-email: i@liblaf.me
+Requires-Python: >=3.11,<3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: httpie (>=3.2.2,<4.0.0)
+Requires-Dist: pygithub (>=1.59.0,<2.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: rich (>=13.4.2,<14.0.0)
+Requires-Dist: tenacity (>=8.2.2,<9.0.0)
+Requires-Dist: typer (>=0.7.0,<0.8.0)
+Project-URL: Documentation, https://liblaf.github.io/ipkg/
+Project-URL: Repository, https://github.com/liblaf/ipkg
+Description-Content-Type: text/markdown
+
+# ipkg
+
+My Package Manager
+
+[![Build Status](https://img.shields.io/github/actions/workflow/status/liblaf/ipkg/ci.yaml)](https://github.com/liblaf/ipkg/actions/workflows/ci.yaml)
+[![Python Version](https://img.shields.io/pypi/pyversions/ipkg)](https://pypi.org/project/ipkg/)
+[![PyPI](https://img.shields.io/pypi/v/ipkg)](https://pypi.org/project/ipkg/)
+
