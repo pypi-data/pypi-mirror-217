@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: kubernety
+Version: 0.1.0
+Summary: Graphical interface for Kubernetes API in your console
+Author-Email: Mariano Carrazana <marianocarrazana@gmail.com>
+License: MIT
+Project-URL: Bug tracker, https://github.com/marianocarrazana/kubernety/issues
+Project-URL: Source code, https://github.com/marianocarrazana/kubernety
+Requires-Python: >=3.9
+Requires-Dist: textual>=0.28.0
+Requires-Dist: click>=8.1.3
+Requires-Dist: pyyaml>=6.0
+Requires-Dist: kubernetes>=26.1.0
+Description-Content-Type: text/markdown
+
+# kubernety
+
+Graphical interface for Kubernetes API in your console
+
+<table>
+  <tr>
+    <td>
+      <img src="https://github.com/marianocarrazana/kubernety/assets/17238076/4a955a2a-faec-412c-a9fa-dc6269eb6be0"/>
+    </td>
+  </tr>
+</table>
+
+## Installation
+
+### From source
+
+```shell
+git clone git@github.com:marianocarrazana/kubernety.git
+cd kubernety
+pip install -e .
+# update only:
+git pull
+```
+
+### From pip
+
+```shell
+pip install -U kubernety
+```
+
+## Usage
+
+Run on your console:
+
+```shell
+kubernety
+```
+
+### **Enjoy it!**

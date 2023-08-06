@@ -1,0 +1,3 @@
+[console_scripts]
+kubernety = kubernety.main:main
+
