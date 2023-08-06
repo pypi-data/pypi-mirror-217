@@ -1,0 +1,13 @@
+ds2stac_ingester/__init__.py,sha256=YjZ5v_0itqBYHYMALr9Fqnt_oVu04-lczm6_GQzMQuM,481
+ds2stac_ingester/_version.py,sha256=FiP9mXsofB4HzO8mCQS0Ixcv9jB7U4TBhEMJi5LHM18,495
+ds2stac_ingester/cli.py,sha256=twLdt6GT1c2GzNoR_haZDaJqa4veoZDE-XGgfUunhw8,434
+ds2stac_ingester/config_pgstac.py,sha256=c2keCWUeePAbx5-N-DirLS8FySwZ8w7lBWNnXIhZ4vM,1029
+ds2stac_ingester/ds2stac_ingester.py,sha256=UD6szB2faQj9zhgvIurG3CbyO44aBlNwdmzNFR13gh4,4125
+tests/__init__.py,sha256=S_0yOGtncdyYWHYVjwKGI7-wmj_zdzo5ImAG71tpqG8,46
+tests/test_ds2stac_ingester.py,sha256=bGPzCfMCyt05rzMuJmiz8HTHpsc2uDtck8XCdBabNp8,1028
+DS2STAC_Ingester-0.8.dist-info/AUTHORS.rst,sha256=v5n9XBBJCQyNzhFRH3tSTr-O0ncS8ppwIcFVXADf00w,168
+DS2STAC_Ingester-0.8.dist-info/LICENSE,sha256=GtrUPJchKDW7AaS-sGMqxKcF9vRbqHIjVRcpxmljiCo,13807
+DS2STAC_Ingester-0.8.dist-info/METADATA,sha256=gvHD-LhR0xovjyQ58rZEpy-rP5SXydgcJaBCEwxHuWI,3876
+DS2STAC_Ingester-0.8.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+DS2STAC_Ingester-0.8.dist-info/top_level.txt,sha256=4R6eNAZMGq_NBIWhESfrZvd1wupV0nuQ1yWSAE9-h3I,23
+DS2STAC_Ingester-0.8.dist-info/RECORD,,
