@@ -1,0 +1,14 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "panda-python"
+description = "Python bindings for the Panda"
+requires-python = ">=3.7"
+dependencies = []
+version = "0.0.0"
+
+[[project.authors]]
+name = "Jean Elsner"
+email = "jean.elsner@tum.de"
