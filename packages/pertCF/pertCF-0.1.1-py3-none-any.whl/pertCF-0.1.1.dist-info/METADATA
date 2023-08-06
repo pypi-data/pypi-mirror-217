@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pertCF
+Version: 0.1.1
+Summary: PertCF explainer is a counterfactual based XAI technique.
+Author: Betül Bayrak
+Author-email: betul.bayrak@ntnu.no
+License: MIT
+Keywords: pertCF,XAI,Explanation,Counterfactual
+License-File: LICENSE.txt
+Requires-Dist: numpy (==1.23.5)
+Requires-Dist: shap (==0.41.0)
+Requires-Dist: pandas (==2.0.2)
+Requires-Dist: scipy
+Requires-Dist: category-encoders
+
