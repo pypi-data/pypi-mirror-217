@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: feedancy-client
+Version: 0.0.2
+Summary: сервис по сбору вакансий
+License: MIT
+Author: Alexey Ostanin
+Author-email: aostaninn@gmal.com
+Requires-Python: >=3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: bs4 (>=0.0.1)
+Requires-Dist: requests (>=2.31)
+Description-Content-Type: text/markdown
+
+# feedancy-client
+
+The client is provided with async and sync adapters.
+
+To install the async version with all its dependencies use:
+```bash
+pip install feedancy-client[asyncio]
+```
+
+To install the sync version with all its dependencies use:
+```bash
+pip install feedancy-client[sync]
+```
+
+To install both versions with all their dependencies use:
+```bash
+pip install feedancy-client[asyncio,sync]
+```
+
+## Client instantiation example
+
+```python
+
+from feedancy_client import new_client, Configuration
+from feedancy_client.lib.adapter.requests import RequestsAdapter
+
+client = new_client(RequestsAdapter(), Configuration(host="<your openapi server URL>"))
+```
