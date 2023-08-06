@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "brainchain"
+version = "0.0.4"
+description = "Brainchain client package"
+authors = ["Arthur M. Collé <arthur@brainchain.ai>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
