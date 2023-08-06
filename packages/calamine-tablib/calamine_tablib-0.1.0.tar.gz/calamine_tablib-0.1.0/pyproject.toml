@@ -1,0 +1,21 @@
+[project]
+name = "calamine-tablib"
+requires-python = ">=3.8"
+classifiers = [
+  "Programming Language :: Rust",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = [
+  "tablib>=3.5,<4.0",
+]
+
+[build-system]
+requires = ["maturin>=1.1,<2.0"]
+build-backend = "maturin"
+
+
+[tool.maturin]
+module-name = "calamine_tablib._calamine_tablib"
+python-source = "python"
+features = ["pyo3/extension-module"]

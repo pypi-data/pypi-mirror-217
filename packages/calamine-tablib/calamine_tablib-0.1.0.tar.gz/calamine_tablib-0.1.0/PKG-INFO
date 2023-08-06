@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: calamine-tablib
+Version: 0.1.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: tablib >=3.5, <4.0
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# `calamine-tablib`
+
+A fast excel format for tablib.
+
+Based on [`calamine`](https://github.com/tafia/calamine) and [`pyexcelerate`](https://github.com/kz26/PyExcelerate).
+
+Code referenced from [`python-calamine`](https://github.com/dimastbk/python-calamine)
+
+## Usage
+
+Register the new format `fast_xlsx` importing this monkeypatch
+
+```python
+# __init__.py
+
+from calamine_tablib import monkeypatches  # noqa This module does patching for tablib
+```
+
+And then use the format as usual:
+
+```python
+dataset = Dataset()
+
+# to import via calamine
+dataset.load(file, format="fast_xlsx")
+```
+
