@@ -1,0 +1,5 @@
+setup.py
+sumpackagesonar.egg-info/PKG-INFO
+sumpackagesonar.egg-info/SOURCES.txt
+sumpackagesonar.egg-info/dependency_links.txt
+sumpackagesonar.egg-info/top_level.txt
