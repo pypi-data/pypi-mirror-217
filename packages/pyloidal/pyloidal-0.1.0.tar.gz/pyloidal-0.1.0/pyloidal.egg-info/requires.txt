@@ -1,0 +1,10 @@
+numpy~=1.24
+
+[lint]
+black
+flake8
+isort
+ruff
+
+[test]
+pytest

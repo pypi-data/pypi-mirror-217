@@ -1,0 +1,16 @@
+.flake8
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+.github/workflows/publish.yml
+.github/workflows/test.yml
+pyloidal/__init__.py
+pyloidal/_version.py
+pyloidal/cocos.py
+pyloidal.egg-info/PKG-INFO
+pyloidal.egg-info/SOURCES.txt
+pyloidal.egg-info/dependency_links.txt
+pyloidal.egg-info/requires.txt
+pyloidal.egg-info/top_level.txt
+tests/test_cocos.py
