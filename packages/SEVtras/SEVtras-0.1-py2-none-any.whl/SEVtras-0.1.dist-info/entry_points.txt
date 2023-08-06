@@ -1,0 +1,3 @@
+[console_scripts]
+SEVtras = SEVtras.main:SEVtras_command
+
