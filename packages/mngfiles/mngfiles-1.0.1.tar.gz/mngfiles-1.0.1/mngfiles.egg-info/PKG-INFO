@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: mngfiles
+Version: 1.0.1
+Summary: Manage Files for s3
+Home-page: https://github.com/facundommay
+Author: Facundo Maldonado
+Author-email: facundommay@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+
+# mng_files

@@ -1,0 +1,9 @@
+README.md
+setup.py
+mngfiles/__init__.py
+mngfiles/mngfiles.py
+mngfiles.egg-info/PKG-INFO
+mngfiles.egg-info/SOURCES.txt
+mngfiles.egg-info/dependency_links.txt
+mngfiles.egg-info/requires.txt
+mngfiles.egg-info/top_level.txt
