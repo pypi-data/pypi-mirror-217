@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+segment_guard/__init__.py
+segment_guard/detection.py
+segment_guard/embedding_utils.py
+segment_guard/explanation.py
+segment_guard/segment_guard.py
+segment_guard/utils.py
+segment_guard.egg-info/PKG-INFO
+segment_guard.egg-info/SOURCES.txt
+segment_guard.egg-info/dependency_links.txt
+segment_guard.egg-info/requires.txt
+segment_guard.egg-info/top_level.txt
+tests/test_segment_guard.py
