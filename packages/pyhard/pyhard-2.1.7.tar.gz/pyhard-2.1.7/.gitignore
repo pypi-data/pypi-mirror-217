@@ -1,0 +1,17 @@
+.DS_Store
+/notebooks/.ipynb_checkpoints/
+/notebooks/measures-test.ipynb
+/.idea
+/pyhard/__pycache__/
+/pyhard/samples/
+/build/
+/dist/
+*.pyc
+/pyhard.egg-info/
+/R/
+/pyhard/app/flask_app.py
+/pyhard/app/dashboard.py
+/pyhard/app/app-dbc.py
+/pyhard/app/toy_app.py
+/pyhard/app/dash_app.py
+/docs/build/
