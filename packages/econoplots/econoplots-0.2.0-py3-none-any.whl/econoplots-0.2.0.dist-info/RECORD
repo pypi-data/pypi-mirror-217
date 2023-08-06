@@ -1,0 +1,12 @@
+econoplots/__init__.py,sha256=Zn1KFblwuFHiDRdRAiRnDBRkbPttWh44jKa5zG2ov0E,22
+econoplots/_standalone_plotters.py,sha256=aKr9p4HCRPgvPpvYYZ_WLCsQvNy65ON77XlSJX_yIfg,4963
+econoplots/color_map.json,sha256=IY7AquO4n-IA5HBrE2Ey2bMuhrRWf3kyf3PZz6wo1oo,3513
+econoplots/colors.py,sha256=JdxcSxmMw6GFuk4ZNCiuqnDH3Q9nB0Q30vcvFodyvxs,3193
+econoplots/converter.py,sha256=JYUmj_m-TgrTmEuIQRMQCzBUsU49GzGCfr9gFkn_WKU,4731
+econoplots/params.py,sha256=Ch79vLELsxjtD-Mxo5leVI98v8Hn2R16kl8Yss_J1-E,1067
+econoplots/utils.py,sha256=2NF5zW5YOUmxAuMOXMbuL5XRh1-66vnPAiQxqUaPDTM,24011
+econoplots-0.2.0.dist-info/LICENSE,sha256=f5T5upLCqwxYZDFqPc_LyRoIGwtSHw8OXZVKBE8N9vA,1053
+econoplots-0.2.0.dist-info/METADATA,sha256=Cgfmr0aBcbM3WrlEmE4TjFoUD4L3xoxExBWj16299ck,2567
+econoplots-0.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+econoplots-0.2.0.dist-info/top_level.txt,sha256=uzZ5mtKLvAlguCVyqYXLc8GdeS1fmdQlwuEEkUa88IY,11
+econoplots-0.2.0.dist-info/RECORD,,
