@@ -1,0 +1,8 @@
+README.md
+setup.py
+autoprompt/__init__.py
+autoprompt.egg-info/PKG-INFO
+autoprompt.egg-info/SOURCES.txt
+autoprompt.egg-info/dependency_links.txt
+autoprompt.egg-info/requires.txt
+autoprompt.egg-info/top_level.txt
