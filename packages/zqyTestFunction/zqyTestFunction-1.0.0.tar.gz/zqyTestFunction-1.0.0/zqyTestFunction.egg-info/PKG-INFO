@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: zqyTestFunction
+Version: 1.0.0
+Home-page: https://github.com/songroom2016/dbpystream.git
+Author: QinyuanZheng
+Author-email: qinyuan_zheng_cn@163.com
+License: Apache
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+郑钦元测试
