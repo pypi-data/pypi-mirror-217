@@ -1,0 +1,7 @@
+README.md
+setup.py
+cors_finder.egg-info/PKG-INFO
+cors_finder.egg-info/SOURCES.txt
+cors_finder.egg-info/dependency_links.txt
+cors_finder.egg-info/requires.txt
+cors_finder.egg-info/top_level.txt
