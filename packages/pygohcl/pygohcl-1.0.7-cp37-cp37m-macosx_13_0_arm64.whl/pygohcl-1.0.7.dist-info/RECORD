@@ -1,0 +1,9 @@
+pygohcl.cpython-37m-darwin.h,sha256=r4F8HhgrEVIexk_Gd6JCKxsPe_4IpdDRF-cc3YxFBnk,1800
+pygohcl.cpython-37m-darwin.so,sha256=1j1iN83WkFp2QxU0rja2BMPwTlooql86Yg-698AZFsE,3880418
+pygohcl/__init__.py,sha256=72h7MJklGIEdXHldU83AF7GqxLEJUFvB13p2iK99Zpk,1000
+pygohcl/_pygohcl.py,sha256=3AjxxrC36NBsJlTyI4dzR1qcU5uH9UboXlpFcltsgAo,524
+pygohcl/build_cffi.py,sha256=qMtCKTV4H85UsqdPfKvdoBKqM9D6FJcOaM93Q1LHPR4,382
+pygohcl-1.0.7.dist-info/METADATA,sha256=sBT0o6pf1rnJh3B-h0VDmQIFXptFxOYIdq9mfg_UGqA,1789
+pygohcl-1.0.7.dist-info/WHEEL,sha256=35e7CHawozw8krfiDN2bO1T4QTrWbp_PN_-vwVNIWsI,109
+pygohcl-1.0.7.dist-info/top_level.txt,sha256=qec0--EilneNKKef2DEc2Iwj4vc0T63FhO8weBS4a78,8
+pygohcl-1.0.7.dist-info/RECORD,,
