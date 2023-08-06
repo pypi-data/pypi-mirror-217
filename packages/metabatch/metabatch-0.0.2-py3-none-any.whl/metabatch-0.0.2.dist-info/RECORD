@@ -1,0 +1,7 @@
+metabatch/__init__.py,sha256=gVwR8Ie54AJYCwN-iC1wXDiKcUeBf5bUufzJrr0TOsM,62
+metabatch/dataloader.py,sha256=pNHHKRbwVZ8d_07OqICfWHI-gZ6dhE2N5NFwXwLqYX8,5707
+metabatch/dataset.py,sha256=N3JW8FyqpBYv_hH5vuDX0BcmQfU-tEE5mK3T8QAlS70,1594
+metabatch-0.0.2.dist-info/METADATA,sha256=S2HFfgmHRgqS4RwWky9ADBOo8hQlNUuhvT9BE_TNbIA,4655
+metabatch-0.0.2.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+metabatch-0.0.2.dist-info/licenses/LICENSE,sha256=ACwmltkrXIz5VsEQcrqljq-fat6ZXAMepjXGoe40KtE,1069
+metabatch-0.0.2.dist-info/RECORD,,
