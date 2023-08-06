@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: ulidchemy
+Version: 0.1.0
+Summary: 
+Author: Nutchanon Ninyawee
+Author-email: nutchanon@codustry.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: python-ulid (>=1.1.0,<2.0.0)
+Requires-Dist: sqlalchemy (>=2.0.18,<3.0.0)
+Description-Content-Type: text/markdown
+
+
+## Get Started
+
+
+```python
+class MyTable(Base):  # Replace 'Base' with your declarative base class
+    __tablename__ = 'my_table'
+    id = Column(ULIDType, primary_key=True, server_default=text("gen_monotonic_ulid()"))
+```
