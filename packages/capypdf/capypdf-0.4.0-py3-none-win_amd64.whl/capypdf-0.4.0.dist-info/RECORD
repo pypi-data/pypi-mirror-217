@@ -1,0 +1,16 @@
+capypdf-0.4.0.dist-info/METADATA,sha256=epOTw2kxhV-1pssYpHiXp2lhso1JffRU4Bn82oIV_mE,14799
+capypdf-0.4.0.dist-info/WHEEL,sha256=sPc5-ehI3Ng-s2tXPs2yEpWadxNWxEEdtcyBJjATYb0,82
+capypdf-0.4.0.dist-info/COPYING,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+.capypdf.mesonpy.libs/fmt.dll,sha256=83WIrKm1zt4WGD_eljBEEm88Nxhd8vmYakig1dvTBP0,135680
+.capypdf.mesonpy.libs/z.dll,sha256=bWw4PVvldmQ0eLUy2VV_Cn60ScPPWlNPGphQ6Px9P90,84480
+.capypdf.mesonpy.libs/png16-16.dll,sha256=iywdZSmGRSmMynnx0PDPKGTpq9D1qS1pj7msodb87yc,198656
+.capypdf.mesonpy.libs/lcms2-2.dll,sha256=rXoQTfE4PXnaxYDwKFbKik-PRrmqTfED9Wi_LOZ3SbA,356352
+.capypdf.mesonpy.libs/jpeg-8.2.2.dll,sha256=_wWLdX41ikz7feM0Eqln46VzYYbMD53YdZt3lRarUb0,420352
+.capypdf.mesonpy.libs/freetype-6.dll,sha256=5Yv_bN2xSDZxy5ZrtSMOwuAU_J45WdDT1ocNHMoE__8,672768
+.capypdf.mesonpy.libs/tiff4.dll,sha256=hVRGF4NEePTfj_reJNiHlHMvGXIVVl_6tmTXiAiPnlQ,431616
+.capypdf.mesonpy.libs/capypdf-0.dll,sha256=dq6jQfZw33bz6Mf3DXJTN1mpJlRe-P6QCYFC2jjBboU,234496
+capypdf-0.4.0.data/scripts/linkicc.exe,sha256=pD9bMIHlwFjiQi5V-G1BNUgYlr2PHKGVqrCzwB5NB00,21504
+capypdf-0.4.0.data/scripts/psicc.exe,sha256=hM8JaomAC8Ucyt5U1fIMJenr446-hMR8Dgg_o0zEMvs,16384
+capypdf-0.4.0.data/scripts/transicc.exe,sha256=SjX73moMAD99DDQp96tZUPNrRnl8he6rFOl9yZh_6Hg,31744
+capypdf-0.4.0.data/purelib/capypdf.py,sha256=KxDFY9r8R9Kvt0coXc6ckOrKX8sHfIy50JGOFx1xroU,21475
+capypdf-0.4.0.dist-info/RECORD,,
