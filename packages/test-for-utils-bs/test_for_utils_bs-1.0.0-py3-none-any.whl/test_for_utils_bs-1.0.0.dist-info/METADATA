@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: test-for-utils-bs
+Version: 1.0.0
+Summary: test-for-utils-bs
+Home-page: UNKNOWN
+Author: Divy Jain
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/
+Project-URL: Source Code, https://github.com/
+Project-URL: Documentation, https://github.com/
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Your Package
+
+Your Package Description
+
+## Installation
+
+```shell
+pip install your_package
+
+
+
+
