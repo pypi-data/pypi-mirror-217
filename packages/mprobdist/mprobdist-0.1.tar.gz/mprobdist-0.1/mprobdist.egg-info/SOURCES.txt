@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+mprobdist/Binomialdistribution.py
+mprobdist/Gaussiandistribution.py
+mprobdist/Generaldistribution.py
+mprobdist/__init__.py
+mprobdist.egg-info/PKG-INFO
+mprobdist.egg-info/SOURCES.txt
+mprobdist.egg-info/dependency_links.txt
+mprobdist.egg-info/not-zip-safe
+mprobdist.egg-info/top_level.txt
