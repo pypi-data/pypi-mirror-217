@@ -1,0 +1,11 @@
+qsharp_jupyterlab/__init__.py,sha256=vu0Ey9KjRYmSv8xwNsmDP9Z5Innv-B55GXRYd0axeG8,160
+qsharp_jupyterlab/_version.py,sha256=BB_6vpwC6opvLkjRFe5h6y1fFWeB5aH7nOXSyCLlCyA,171
+qsharp_jupyterlab-0.0.0.data/data/share/jupyter/labextensions/qsharp_jupyterlab/package.json,sha256=gXLR-Xka1ZHserkOK5tOTukpRC9oT-PCT7DnjQIw_W4,1464
+qsharp_jupyterlab-0.0.0.data/data/share/jupyter/labextensions/qsharp_jupyterlab/static/362.b9db0c8262cee1593fc2.js,sha256=udsMgmLO4Vk_wm129TnstFdn5PYrgrPZkhbu1F9NBTQ,4419
+qsharp_jupyterlab-0.0.0.data/data/share/jupyter/labextensions/qsharp_jupyterlab/static/remoteEntry.a037ecb8ebc439096da0.js,sha256=oDfsuOvEOQltoAdrMFBo4GPEYgygNtVZ3ettXUjiaJQ,6289
+qsharp_jupyterlab-0.0.0.data/data/share/jupyter/labextensions/qsharp_jupyterlab/static/style.js,sha256=-CQt0ZTPaCTvrRiLcznxflAbfvIKlOVzjOos-muaXQ8,118
+qsharp_jupyterlab-0.0.0.data/data/share/jupyter/labextensions/qsharp_jupyterlab/static/third-party-licenses.json,sha256=XFJ7K-RsjbmcZ7plOTH9ztLIePgc7gYB3fLZMgCD8Lw,1302
+qsharp_jupyterlab-0.0.0.data/data/share/jupyter/labextensions/qsharp_jupyterlab/install.json,sha256=rvOIJrhGFe4t4z2H-zWyFPAmI6c12mrlm0ohSu50rBs,195
+qsharp_jupyterlab-0.0.0.dist-info/METADATA,sha256=5QcekUS5oBBZrXLB1Ri3JLf1v4z6yGsNx59w_w-wWRo,2634
+qsharp_jupyterlab-0.0.0.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+qsharp_jupyterlab-0.0.0.dist-info/RECORD,,
