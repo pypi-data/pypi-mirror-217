@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: markdown_helper
+Version: 1.0.0
+Summary: A simple markdown helper
+Project-URL: homepage, https://github.com/amahlaka/python-markdown-helper
+Project-URL: bug-tracker, https://github.com/amahlaka/python-markdown-helper/issues
+Author-email: Arttu Mahlakaarto <arttu.mahlakaarto@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# python-markdown-helper
+A bunch of helper classes that make generating markdown files easier
