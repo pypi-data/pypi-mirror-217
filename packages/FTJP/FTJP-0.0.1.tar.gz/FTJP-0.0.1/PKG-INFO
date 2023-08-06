@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: FTJP
+Version: 0.0.1
+Summary: A small example package
+Home-page: https://gitee.com/zqy0315/pypi-test
+Author: yurilee
+Author-email: 1062036042@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# README
+
+This is the second major assignment of the fourth group.
+
+___
+
+### **Division of labor among team members**
+
+Feng Chenwei 2021130609109:Obtaining Data , **Project Selection**
+
+Huawen 2021130609110, Zhao Haoran 202113060906:**Process data**, **Write code**
+
+Ai Shan Wusman 202113060911:**Team Member Assignment**,**Explanation Document**
+
+Li Wenkai 201913061007:**Project Explanation**
+
+### Step
+
+1. firstDataAnalysis
+2. secondDataProcessing
+3. thirdTransformData
+4. forthUserAnalysis
+5. fifthCreateDatabase
+6. sisthDataPersistence
+

@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+FTJP/__init__.py
+FTJP/fifthCreateDatabase.py
+FTJP/firstDataAnalysis.py
+FTJP/forthUserAnalysis.py
+FTJP/secondDataProcessing.py
+FTJP/sisthDataPersistence.py
+FTJP/thirdTransformData.py
+FTJP.egg-info/PKG-INFO
+FTJP.egg-info/SOURCES.txt
+FTJP.egg-info/dependency_links.txt
+FTJP.egg-info/top_level.txt
