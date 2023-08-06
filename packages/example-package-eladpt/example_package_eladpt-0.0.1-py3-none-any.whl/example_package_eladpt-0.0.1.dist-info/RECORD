@@ -1,0 +1,6 @@
+pkg_eladpt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pkg_eladpt/run.py,sha256=N0bQjxL4zdJ5rAu2L0Mt97Z-0pGFZM2waxO61klNWhA,74
+example_package_eladpt-0.0.1.dist-info/METADATA,sha256=VSF3jiwR-O2ecRqh_iIRVs0cOggG6tj7Yjp_RRcPIOo,414
+example_package_eladpt-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+example_package_eladpt-0.0.1.dist-info/top_level.txt,sha256=3ovXYsno9Jh7zz7-LHmPRi2PxUzMWMBIcTG-L2vYSXo,11
+example_package_eladpt-0.0.1.dist-info/RECORD,,
