@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+optoid/__init__.py
+optoid/commander.py
+optoid/find_window.py
+optoid/window_title.py
+optoid.egg-info/PKG-INFO
+optoid.egg-info/SOURCES.txt
+optoid.egg-info/dependency_links.txt
+optoid.egg-info/requires.txt
+optoid.egg-info/top_level.txt

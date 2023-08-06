@@ -1,0 +1,3 @@
+dependency1
+dependency2>=1.0
+dependency3<2.0
