@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+jacktest/__init__.py
+jacktest/print_hi.py
+jacktest.egg-info/PKG-INFO
+jacktest.egg-info/SOURCES.txt
+jacktest.egg-info/dependency_links.txt
+jacktest.egg-info/top_level.txt
