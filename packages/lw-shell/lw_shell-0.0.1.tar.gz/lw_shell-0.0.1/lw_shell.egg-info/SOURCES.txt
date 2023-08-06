@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+lw_shell/__init__.py
+lw_shell/shell.py
+lw_shell.egg-info/PKG-INFO
+lw_shell.egg-info/SOURCES.txt
+lw_shell.egg-info/dependency_links.txt
+lw_shell.egg-info/top_level.txt
