@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+pyint/__init__.py
+pyint/npre3d.py
+pyint/src/npre3d.c
+pyint/src/npre_alloc.c
+pyint3d.egg-info/PKG-INFO
+pyint3d.egg-info/SOURCES.txt
+pyint3d.egg-info/dependency_links.txt
+pyint3d.egg-info/not-zip-safe
+pyint3d.egg-info/requires.txt
+pyint3d.egg-info/top_level.txt
