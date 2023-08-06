@@ -1,0 +1,12 @@
+make_argocd_fly/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+make_argocd_fly/config.py,sha256=EPcm_4hRABN1L3BApJnRsGgICPkG5xD4FZrBP7W4CdI,1284
+make_argocd_fly/log_config.yml,sha256=FGS-5hLQrLjPc4V-OgRke-8z_27OFbyITfKSSmUebxY,354
+make_argocd_fly/pipeline.py,sha256=WGLhleam-2Q6WVO5_6BWDMvjy-ZNR8EI1axiEXgV79I,5535
+make_argocd_fly/resource.py,sha256=lbP0KBKfLFTWWD6EfW-XNLv3n6HeKcoMfhpv-yJ_aBw,4243
+make_argocd_fly/utils.py,sha256=-giop-UU5-BcUHTL_1CHqjrInYe1fJL4HhBNwuoEyIw,856
+make_argocd_fly-0.0.5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+make_argocd_fly-0.0.5.dist-info/METADATA,sha256=RzFlwkXUWO-ntVoCtD7KW0F1oQ_6xeFRiqcPTsLFp9M,2719
+make_argocd_fly-0.0.5.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+make_argocd_fly-0.0.5.dist-info/entry_points.txt,sha256=4gtyUt83XCU0HW8ZflTMHnD4sKuCCgdUG73Z-XmcWXU,66
+make_argocd_fly-0.0.5.dist-info/top_level.txt,sha256=FsRxdReaPEvpnnjpKlcIVKP6dRUc4vngZljxvkLSdm8,16
+make_argocd_fly-0.0.5.dist-info/RECORD,,
