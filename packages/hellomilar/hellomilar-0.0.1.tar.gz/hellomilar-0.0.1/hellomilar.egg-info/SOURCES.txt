@@ -1,0 +1,7 @@
+setup.py
+hellomilar.egg-info/PKG-INFO
+hellomilar.egg-info/SOURCES.txt
+hellomilar.egg-info/dependency_links.txt
+hellomilar.egg-info/top_level.txt
+similarities_and_distance_of_soft_sets/__init__.py
+similarities_and_distance_of_soft_sets/main.py
