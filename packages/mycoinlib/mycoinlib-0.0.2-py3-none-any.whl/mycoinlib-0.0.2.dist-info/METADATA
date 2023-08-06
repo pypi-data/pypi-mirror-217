@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: mycoinlib
+Version: 0.0.2
+Summary: A Python package for generating unique BTC, LTC, and ETH wallets for customer orders
+Home-page: https://github.com/lukemvc/mycoinlib
+Requires-Dist: bitcoinlib
+Requires-Dist: blockcypher
+Requires-Dist: requests
+Requires-Dist: eth-account
+Requires-Dist: eth-keys
+
+MyCoinLib is a Python package for generating unique BTC, LTC, and ETH wallet/private-key pairs for customer orders, along with other related functions.
