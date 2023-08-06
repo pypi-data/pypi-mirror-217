@@ -1,0 +1,18 @@
+Balise head :
+  - DFTT01
+  - DFTT02
+
+Mention Accessibilité :
+  - AccessChecker
+  - AccessLinkChecker
+  - DFTT05
+
+Mentions légales :
+  - MentionsLegalesChecker
+
+Langage :
+  - LangChecker
+
+Doctype :
+  - DoctypeChecker
+ 
