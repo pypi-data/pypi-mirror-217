@@ -1,0 +1,150 @@
+Metadata-Version: 2.1
+Name: uasset-dump
+Version: 0.0.10
+Summary: Command-line Interface (CLI) responsible for returning the list of the assets of an Unreal Engine project into a JSON structure
+Home-page: https://github.com/bootloader-studio/cli-uasset-dump
+License: SEE LICENSE IN <LICENSE.md>
+Keywords: cli,tool,utility,unreal,engine,asset,inventory,dump,json
+Author: Daniel CAUNE
+Author-email: daniel@bootloader.studio
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: perseus-core-library (>=1.19.3,<2.0.0)
+Project-URL: Repository, https://github.com/bootloader-studio/cli-uasset-dump
+Description-Content-Type: text/markdown
+
+# Unreal Engine Assets Dump
+
+Command-line Interface (CLI) responsible for returning the list of the assets of an Unreal Engine project into a JSON structure.
+
+## Development
+
+### Poetry
+
+_Unreal Engine Assets Dump_ project used Poetry to declare all its dependencies.  [Poetry](https://python-poetry.org/) is a python dependency management tool to manage dependencies, packages, and libraries in your python project.
+
+We need to create the Python virtual environment using Poetry:
+
+```shell
+poetry env use /Users/Shared/Epic\ Games/UE_5.2/Engine/Binaries/ThirdParty/Python3/Mac/bin/python3
+```
+
+We can enter this virtual environment and install all the required dependencies:
+
+```shell
+poetry shell
+poetry update
+```
+
+
+## Publication
+
+To publish a new version of the _Unreal Engine Assets Dump_ library to [Pypi](https://pypi.org/), we need to execute the following command:
+
+```shell
+poetry publish --build --username $PYPI_USERNAME --password $PYPI_PASSWORD
+```
+
+Where the environment variables:
+
+- `$PYPI_USERNAME`: The value `__token__`
+- `$PYPI_PASSWORD`: The [API token](https://pypi.org/manage/account/token/) used to authenticate when uploading packages to PyPI (e.g., `pypi-...`)
+
+We generally defined a `.env` file and add these environment variables:
+
+```text
+# Copyright (C) 2023 Bootloader.  All rights reserved.
+#
+# This software is the confidential and proprietary information of
+# Bootloader or one of its subsidiaries.  You shall not disclose this
+# confidential information and shall use it only in accordance with the
+# terms of the license agreement or other applicable agreement you
+# entered into with Bootloader.
+#
+# BOOTLOADER MAKES NO REPRESENTATIONS OR WARRANTIES ABOUT THE
+# SUITABILITY OF THE SOFTWARE, EITHER EXPRESS OR IMPLIED, INCLUDING BUT
+# NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR
+# A PARTICULAR PURPOSE, OR NON-INFRINGEMENT.  BOOTLOADER SHALL NOT BE
+# LIABLE FOR ANY LOSSES OR DAMAGES SUFFERED BY LICENSEE AS A RESULT OF
+# USING, MODIFYING OR DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES.
+
+# The Python Package Index (PyPI) API token to authenticate when
+# uploading this package to PyPI.
+PYPI_USERNAME=__token__
+PYPI_PASSWORD=pypi-(...)
+```
+
+
+## Installation
+
+To install _Unreal Engine Assets Dump_ library to Unreal Engine, execute the following command.
+
+```shell
+/Users/Shared/Epic\ Games/UE_5.1/Engine/Binaries/ThirdParty/Python3/Mac/bin/python3 -m pip install --upgrade uasset-dump
+/Users/Shared/Epic\ Games/UE_5.2/Engine/Binaries/ThirdParty/Python3/Mac/bin/python3 -m pip install --upgrade uasset-dump
+```
+
+/Users/admin/Library/JenkinsAgent/workspace/client-app/scooby-app-build/main/Scooby/Content
+
+## Execution
+
+Then we can load our Unreal Engine project in Unreal Engine Editor and execute the following Python instructions in the Output Log drawer:
+
+```shell
+from bootloader.ue.utils import uasset_dump
+uasset_dump.dump_assets('/Users/dcaune/Devel/Bootloader/bootloader-human-trainer-ar5/Content')
+```
+
+This prints long JSON data.  For instance:
+
+```json
+[
+  {
+    "asset_name": "A_d2_ChangeOutfit_01",
+    "asset_class_path": "/Script/Engine/AnimSequence",
+    "package_name": "/Game/ArtAssets/Pets/QuadrupedDog/Animations/A_d2_ChangeOutfit_01",
+    "dependencies": [
+      "/Game/ArtAssets/Pets/QuadrupedDog/Mesh/S_d2"
+    ]
+  },
+  {
+    "asset_name": "A_d2_ChangeOutfit_02",
+    "asset_class_path": "/Script/Engine/AnimSequence",
+    "package_name": "/Game/ArtAssets/Pets/QuadrupedDog/Animations/A_d2_ChangeOutfit_02",
+    "dependencies": [
+      "/Game/ArtAssets/Pets/QuadrupedDog/Mesh/S_d2"
+    ]
+  },
+  (...)
+]
+```
+
+```shell
+export UNREAL_ENGINE_PROJECT_PATH=/Users/admin/Library/JenkinsAgent/workspace/client-app/scooby-app-build/main/Scooby/Scooby.uproject
+
+export UNREAL_ENGINE_ASSET_DUMP_FILE_PATH=/Users/admin/bootloader-scooby-uassets.dump.json
+
+"`find "/Users/Shared/Epic Games/UE_5.2" -name UnrealEditor-Cmd`" \
+    "$UNREAL_ENGINE_PROJECT_PATH" \
+    -run=pythonscript \
+    -stdout \
+    -Unattended \
+    -script="/Users/admin/Downloads/run.py"
+
+echo $?;
+```
+
+# Command Line Execution
+
+```shell
+
+
+```
