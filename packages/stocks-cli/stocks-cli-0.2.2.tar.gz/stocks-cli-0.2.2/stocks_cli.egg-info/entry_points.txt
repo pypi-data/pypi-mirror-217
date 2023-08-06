@@ -1,0 +1,2 @@
+[console_scripts]
+stocks-cli = cli.__main__:main
