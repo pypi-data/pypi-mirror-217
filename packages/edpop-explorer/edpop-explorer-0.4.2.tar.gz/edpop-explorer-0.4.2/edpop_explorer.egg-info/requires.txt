@@ -1,0 +1,11 @@
+sruthi>=2.0.0
+termcolor
+appdirs
+SPARQLWrapper
+pandas
+cmd2
+pyyaml
+
+[:platform_system == "Windows"]
+pyreadline3
+colorama
