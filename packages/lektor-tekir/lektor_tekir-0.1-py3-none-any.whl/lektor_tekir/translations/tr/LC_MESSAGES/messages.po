@@ -1,0 +1,113 @@
+# Turkish translations for PROJECT.
+# Copyright (C) 2023 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2023-07-03 23:57+0300\n"
+"PO-Revision-Date: 2023-06-25 21:11+0300\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: tr\n"
+"Language-Team: tr <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: lektor_tekir/api.py:115
+msgid "No changes."
+msgstr "Değişiklik yok."
+
+#: lektor_tekir/api.py:117
+msgid "Content saved."
+msgstr "İçerik kaydedildi."
+
+#: lektor_tekir/api.py:129
+msgid "There are unsaved changes. Do you want to continue?"
+msgstr "Kaydedilmemiş değişiklikler var. Devam etmek istiyor musunuz?"
+
+#: lektor_tekir/api.py:130
+msgid "Are you sure?"
+msgstr "Emin misiniz?"
+
+#: lektor_tekir/api.py:144
+msgid "Deleted."
+msgstr "Silindi."
+
+#: lektor_tekir/templates/tekir_base.html:7
+#: lektor_tekir/templates/tekir_base.html:13
+msgid "Admin Panel"
+msgstr "Yönetim Paneli"
+
+#: lektor_tekir/templates/tekir_base.html:22
+msgid "Summary"
+msgstr "Özet"
+
+#: lektor_tekir/templates/tekir_base.html:23
+msgid "Content"
+msgstr "İçerik"
+
+#: lektor_tekir/templates/tekir_content_edit.html:38
+#: lektor_tekir/templates/tekir_contents.html:28
+#: lektor_tekir/templates/tekir_contents.html:42
+#: lektor_tekir/templates/tekir_contents.html:54
+msgid "Delete"
+msgstr "Sil"
+
+#: lektor_tekir/templates/tekir_content_edit.html:40
+msgid "Move up"
+msgstr "Yukarı"
+
+#: lektor_tekir/templates/tekir_content_edit.html:64
+msgid "Save"
+msgstr "Kaydet"
+
+#: lektor_tekir/templates/tekir_content_edit.html:66
+msgid "Done"
+msgstr "Bitti"
+
+#: lektor_tekir/templates/tekir_content_edit.html:71
+msgid "Close"
+msgstr "Kapat"
+
+#: lektor_tekir/templates/tekir_content_edit.html:76
+msgid "Continue"
+msgstr "Devam et"
+
+#: lektor_tekir/templates/tekir_content_edit.html:77
+#: lektor_tekir/templates/tekir_contents.html:55
+msgid "Cancel"
+msgstr "Vazgeç"
+
+#: lektor_tekir/templates/tekir_contents.html:7
+msgid "home"
+msgstr "ana sayfa"
+
+#: lektor_tekir/templates/tekir_contents.html:18
+msgid "Edit"
+msgstr "Düzenle"
+
+#: lektor_tekir/templates/tekir_contents.html:22
+msgid "Subpages"
+msgstr "Altsayfalar"
+
+#: lektor_tekir/templates/tekir_contents.html:36
+msgid "Attachments"
+msgstr "Ekler"
+
+#: lektor_tekir/templates/tekir_contents.html:42
+msgid "attachment"
+msgstr "ek"
+
+#: lektor_tekir/templates/tekir_contents.html:51
+msgid "Do you really want to delete this content?"
+msgstr "Bu içeriği silmek istediğinizden emin misiniz?"
+
+#: lektor_tekir/templates/tekir_summary.html:4
+msgid "Number of Pages"
+msgstr "Sayfa Sayısı"
+
