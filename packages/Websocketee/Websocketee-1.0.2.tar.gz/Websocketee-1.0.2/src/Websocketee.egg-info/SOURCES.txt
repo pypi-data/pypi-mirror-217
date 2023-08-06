@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/Websocketee.egg-info/PKG-INFO
+src/Websocketee.egg-info/SOURCES.txt
+src/Websocketee.egg-info/dependency_links.txt
+src/Websocketee.egg-info/requires.txt
+src/Websocketee.egg-info/top_level.txt
