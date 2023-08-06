@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: xsarsea
+Version: 0.7
+Summary: cmod, detrend, and others sar processing tools over ocean
+Home-page: https://github.com/umr-lops/xsarsea
+Author: Olivier Archer
+Author-email: Olivier.Archer@ifremer.fr
+License: MIT
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+xsarsea aims at computing geophysical parameters (such as wind, waves or currents) from radar quantities
