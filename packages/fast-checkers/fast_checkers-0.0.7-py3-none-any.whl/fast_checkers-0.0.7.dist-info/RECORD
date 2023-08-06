@@ -1,0 +1,11 @@
+checkers/__init__.py,sha256=YiDPNmzLBHShRCUgOkYMhErxmDvWKLuriBdakVFIKSQ,947
+checkers/american.py,sha256=NIXU1zeK4IN-dxW3Cz1iMuaGhV1eyXgtZHbUdThB6Xs,4053
+checkers/base.py,sha256=9bA4kLTuWn5bvuYLfl8YH2khBoaDW6X2U2VH472iYoI,5749
+checkers/main.py,sha256=-_Dagx-fOGOpmSB1Pr1bleaZaFLqXhZ4ziHEZl4GlEE,1149
+checkers/models.py,sha256=NsaTPtnG5lxocX6zXDvtrAaJM49YpvDdd6jl_fNcGkw,576
+checkers/move.py,sha256=zrMcHootE3GSIghjQAU2jw_qFTNMtE_kqsU8B-kNTYw,3999
+checkers/utils.py,sha256=10wxpJ_JausLhOyM2xJS6jk8C7ZCVq8dbymd8wAWLtY,65
+fast_checkers-0.0.7.dist-info/METADATA,sha256=hFHeP03Ns3wyCmHBNYgXfCiY6o8XBoEql7Z6QcBPNh0,5471
+fast_checkers-0.0.7.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+fast_checkers-0.0.7.dist-info/top_level.txt,sha256=8EKKMMP-hVkkipi6Ku3DgjhWAZA7KalJKTNc5BpZP1E,9
+fast_checkers-0.0.7.dist-info/RECORD,,
