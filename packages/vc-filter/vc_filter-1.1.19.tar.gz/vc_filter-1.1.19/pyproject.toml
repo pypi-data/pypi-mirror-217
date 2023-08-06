@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "vc-filter"
+version = "1.1.19"
+description = "VC-filter is a new edge detection algorithm based on the Visual Cortex study"
+authors = ["Boris Kravtsov <kravtsov.development@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "vc_filter"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+opencv-python-headless = "^4.8.0.74"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
