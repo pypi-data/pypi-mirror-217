@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: imp-prof
+Version: 0.1.2
+Summary: Imp-prof serves to collect and publish prometheus metrics from pre-forked server workers.
+Author-email: Tom Trval <thandeus@gmail.com>
+License: BSD-3-Clause
+Project-URL: Homepage, https://gitlab.kajot.cz/online-casino/backend/imp-prof
+Project-URL: Bug Tracker, https://gitlab.kajot.cz/online-casino/backend/imp-prof
+Keywords: prometheus,fastapi,api,rest,profiling,rabbitmq,python,pika,metrics
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Server
+Classifier: Framework :: FastAPI
+Classifier: Programming Language :: Python :: 3
+Classifier: Typing :: Typed
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# imp-prof
+
+Imp-prof serves to collect and publish [prometheus](https://prometheus.io/) metrics from pre-forked uWSGI server workers.
+
+
+```mermaid
+flowchart LR
+    A0W0(app0-worker0)
+    A0W1(app0-worker1)
+    A1W0(app1-worker0)
+    A1W1(app1-worker1)
+    E(profiling):::exchange
+    Q(profiling_queue):::queue
+    I(pika consumer)
+    F(fast api)
+    P(prometheus)
+    subgraph source[server app 0]
+        A0W0
+        A0W1
+    end
+    subgraph source2[server app 1]
+        A1W0
+        A1W1
+    end
+    A0W0-->|push profile array|E
+    A0W1-->|push profile array|E
+    A1W0-->|push profile array|E
+    A1W1-->|push profile array|E
+    subgraph rabbit[rabbit MQ]
+        E-->|fanout|Q
+    end
+    subgraph imp[imp-prof]
+        I-->|write profile|F
+    end
+    Q-->|fetched event|I
+    Q-.-|consume|I
+    P-->|fetch /metrics|F
+    classDef exchange fill:#A08565;
+    classDef queue fill:#619A46;
+```
