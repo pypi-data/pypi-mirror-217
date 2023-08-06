@@ -1,0 +1,7 @@
+lxml
+nltk
+pdfminer3
+setuptools
+pdfplumber
+requests
+pyvis
