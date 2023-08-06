@@ -1,0 +1,3 @@
+[console_scripts]
+nbcpychecker=nbcpychecker.cli:main
+
