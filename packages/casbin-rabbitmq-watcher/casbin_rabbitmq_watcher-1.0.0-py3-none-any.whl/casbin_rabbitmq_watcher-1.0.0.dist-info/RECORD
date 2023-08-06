@@ -1,0 +1,9 @@
+casbin_rabbitmq_watcher/__init__.py,sha256=9wtz-ZVWSyVeAAX91K7q38z5991iO0pxazIpHXuBk1Y,48
+casbin_rabbitmq_watcher/watcher.py,sha256=0OzFcqccfcX1XkrAss53jh6uTsxe0eT0t1tWIxMEW3U,7072
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_rabbit_watcher.py,sha256=ZoPPpz27OTpeU2qgzWKAOfcoQE7yAqlbIhbiHjucfGg,4404
+casbin_rabbitmq_watcher-1.0.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+casbin_rabbitmq_watcher-1.0.0.dist-info/METADATA,sha256=A-kxPIpaMMNoqpsabb695ScuOSDKoGaReV90Qv15OGI,2633
+casbin_rabbitmq_watcher-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+casbin_rabbitmq_watcher-1.0.0.dist-info/top_level.txt,sha256=RtiLhOIvu7rcNCzuKjbfwivaJWNGIhNeUPVyNyVOzFQ,30
+casbin_rabbitmq_watcher-1.0.0.dist-info/RECORD,,
