@@ -1,0 +1,8 @@
+torchperf/__init__.py,sha256=wToby44tnkbpMMJ2gGfVNIPnjaLUJoWVIqSHElDCo1g,99
+torchperf/info.py,sha256=m6W3f82L3oO2uiw822kOeUYomfLm4iR1Djq3Ba9Rtrk,1173
+torchperf/measure.py,sha256=vkWbvlQQgyccOq3TbJaVGJodG-DInwkTZ0QHBwkCMzM,757
+pytorch_perf-0.0.1.dev0.dist-info/LICENSE,sha256=nzbjQ0KZIQacZc35tw5o3MXnaKOKWcEXMT-VKVdKSMo,1488
+pytorch_perf-0.0.1.dev0.dist-info/METADATA,sha256=fh4UwvSFdQ7izUqkRE8Go0T5K1xMD21RfZXDBp7RCyk,1000
+pytorch_perf-0.0.1.dev0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pytorch_perf-0.0.1.dev0.dist-info/top_level.txt,sha256=B_-URNLf6tm4VxvdYTJk4Emo54Ls5P_uxYdJ2EiRYc4,10
+pytorch_perf-0.0.1.dev0.dist-info/RECORD,,
