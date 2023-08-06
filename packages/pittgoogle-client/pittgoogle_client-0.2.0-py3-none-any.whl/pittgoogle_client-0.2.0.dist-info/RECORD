@@ -1,0 +1,11 @@
+pittgoogle/__init__.py,sha256=M0NfA-N9xYwrip_rZoQFPWrvBs8g-MmG2g3TSD6TvCc,725
+pittgoogle/auth.py,sha256=bD5abwENLmiKO4zo3YEMZy6khQ2cZ0fNG8gvj3jllyE,7656
+pittgoogle/bigquery.py,sha256=9GFi4llXW5wWyXkfKj8suZZC3nMqTtcx4tKA7m6Mocw,23583
+pittgoogle/exceptions.py,sha256=Ycl-KgsHQbCZN8I7tvnAb4_sw_5fWCWemsr3Z3xfcHA,128
+pittgoogle/figures.py,sha256=hW5y5bTt4BHKFsnQB32LgCFPKpSR0zQZnfhCxL4ZM2E,4433
+pittgoogle/pubsub.py,sha256=dT8eu-VKbfpZ5IfjkUb8uE8EJ1ZU1bt6f9QPRJ8rS_g,20332
+pittgoogle/utils.py,sha256=S3eJCWPP35IhaaVk7VGkuE7ijop0L26KnqKBebVxxjg,6116
+pittgoogle_client-0.2.0.dist-info/LICENSE.txt,sha256=NPW9omxGW91x1S0O3qEB5shbtcLk8bgAlQpUVkRBVwg,1516
+pittgoogle_client-0.2.0.dist-info/METADATA,sha256=PZSzkmeD1_c5EXyw7VWVFgP3TBQrYmFVgsVwbZUfO1E,2083
+pittgoogle_client-0.2.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+pittgoogle_client-0.2.0.dist-info/RECORD,,
