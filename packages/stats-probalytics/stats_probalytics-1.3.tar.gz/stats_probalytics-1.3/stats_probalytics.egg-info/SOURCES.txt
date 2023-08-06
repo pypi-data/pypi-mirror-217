@@ -1,0 +1,10 @@
+setup.py
+stats_probalytics/Binomialdistribution.py
+stats_probalytics/Gaussiandistribution.py
+stats_probalytics/Generaldistribution.py
+stats_probalytics/__init__.py
+stats_probalytics.egg-info/PKG-INFO
+stats_probalytics.egg-info/SOURCES.txt
+stats_probalytics.egg-info/dependency_links.txt
+stats_probalytics.egg-info/requires.txt
+stats_probalytics.egg-info/top_level.txt
