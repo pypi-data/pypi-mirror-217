@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+zny/__init__.py
+zny/theFirstFunction.py
+zny.egg-info/PKG-INFO
+zny.egg-info/SOURCES.txt
+zny.egg-info/dependency_links.txt
+zny.egg-info/top_level.txt
