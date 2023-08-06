@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: chady
+Version: 0.2
+Summary: A package for ML libraries
+Home-page: https://github.com/ChadiDridi/PythonMLPackage
+Author: Chadi
+Author-email: dridichady@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: catboost
+Requires-Dist: gekko
+Requires-Dist: graphviz
+Requires-Dist: imbalanced-learn
+Requires-Dist: keras
+Requires-Dist: lightgbm
+Requires-Dist: matplotlib
+Requires-Dist: mlxtend
+Requires-Dist: numpy
+Requires-Dist: opencv-contrib-python
+Requires-Dist: opencv-python
+Requires-Dist: pandas
+Requires-Dist: pybrain
+Requires-Dist: pydot
+Requires-Dist: pymc3
+Requires-Dist: pytorch
+Requires-Dist: pytorch-forecasting
+Requires-Dist: pytorch-ignite
+Requires-Dist: pytorch-lightning
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: scrapy
+Requires-Dist: seaborn
+Requires-Dist: statsmodels
+Requires-Dist: tclab
+Requires-Dist: tensorflow
+Requires-Dist: tensorflow-addons
+Requires-Dist: tensorflow-datasets
+Requires-Dist: tensorflow-probability
+Requires-Dist: torch
+Requires-Dist: xgboost
+
+UNKNOWN
+
+
