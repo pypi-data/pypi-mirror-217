@@ -1,0 +1,11 @@
+click
+geojson
+requests
+rasterio
+joblib
+tqdm
+shapely
+geopandas
+overpass
+numpy
+landsatxplore@ git+https://github.com/yunica/landsatxplore.git@landsat2geojson#pyproject.toml

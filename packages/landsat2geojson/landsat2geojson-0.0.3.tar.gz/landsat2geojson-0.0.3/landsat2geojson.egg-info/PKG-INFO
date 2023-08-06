@@ -1,0 +1,107 @@
+Metadata-Version: 2.1
+Name: landsat2geojson
+Version: 0.0.3
+Summary: Script to extract features from landsat
+Home-page: https://github.com/yunica/landsat2geojson
+Author: Junior Flores
+Author-email: junior@developmentseed.org
+Keywords: earth observation,remote sesing,GIS,satellite imagery,landsat,water,usgs,geojson,overpass
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Description
+
+The landsat2geojson package is written in python and uses the [EarthExplorer](https://earthexplorer.usgs.gov/)
+and [Overpass](https://overpass-turbo.eu/)  portal interface to search, download, and process scenes from Landsat
+Collections via the command line.
+
+# Requirements
+
+landsat2geojson uses the [landsatxplore](https://github.com/yannforget/landsatxplore) package to connect and download
+the landsat images, the credentials can be obtained in  [Earth Explorer Page](https://ers.cr.usgs.gov/register/)
+
+`--username` and `--password` can be provided as command-line options or as environment variables:
+
+
+```sh 
+export LANDSATXPLORE_USERNAME=<your_username>
+export LANDSATXPLORE_PASSWORD=<your_password>
+```
+
+# Installation
+## repository
+the installation from the repository 
+
+```sh 
+git clone https://github.com/yunica/landsat2geojson.git
+cd landsat2geojson
+pip install .
+
+```
+## docker
+build
+
+```sh
+export LANDSATXPLORE_USERNAME=<your_username>
+export LANDSATXPLORE_PASSWORD=<your_password>
+
+docker-compose build 
+```
+run
+
+```shell
+docker run  --rm -v ${PWD}:/mnt \
+  -e LANDSATXPLORE_USERNAME=$LANDSATXPLORE_USERNAME \
+  -e LANDSATXPLORE_PASSWORD=$LANDSATXPLORE_PASSWORD \
+  landsat2geojson:v1 \
+  landsat2geojson --geojson_file=test.geojson --data_folder=data/ --geojson_output=data/salida123.geojson  
+
+```
+or 
+```shell
+docker run  --rm -v ${PWD}:/mnt landsat2geojson:v1 \
+  landsat2geojson -u=<LANDSATXPLORE_USERNAME> -p=<LANDSATXPLORE_PASSWORD> --geojson_file=test.geojson --data_folder=data/ --geojson_output=data/salida123.geojson  
+
+```
+# Usage
+
+
+## help
+you can review the parameters menu with the param `--help`
+```sh
+landsat2geojson --help
+```
+```sh
+Usage: landsat2geojson [OPTIONS]
+
+Options:
+  -u, --username TEXT     EarthExplorer username.
+  -p, --password TEXT     EarthExplorer password.
+  --geojson_file TEXT     Pathfile from geojson input  [required]
+  --data_folder TEXT      Path from download data
+  --lansat_index [WATER]  Landsar normalized index
+  --geojson_output TEXT   Pathfile from geojson output  [required]
+  --help                  Show this message and exit.
+```
+
+### example
+
+```sh
+landsat2geojson --geojson_file=area.geojson   --data_folder=data/  --geojson_output=data/output_data.geojson     
+```
+
+![](./image.gif)

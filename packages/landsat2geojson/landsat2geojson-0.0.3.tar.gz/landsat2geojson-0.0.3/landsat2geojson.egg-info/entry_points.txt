@@ -1,0 +1,2 @@
+[console_scripts]
+landsat2geojson = landsat2geojson.main:main
