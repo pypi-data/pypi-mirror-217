@@ -1,0 +1,3 @@
+# SyMaGen
+
+Synthetic manifold generation.
