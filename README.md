@@ -3,36 +3,10 @@
 This repo contains 40000 packages uploaded to PyPI between 
 2023-07-01 00:34 and 2023-07-06 17:21.
 
-The repo is 24% (9999/40000) complete.
+The repo is 29% (11998/40000) complete.
 
-## Packages:
+Package contents can be found [in the code branch](https://github.com/pypi-data/pypi-mirror-217/tree/code/packages).
 
-| Name  | Count |
-| ----- | ----- |
-| dithering | 677 |
-| rpds-py | 337 |
-| pydantic-core | 182 |
-| rfst | 130 |
-| g722-1-mod | 120 |
-| awkward-cpp | 114 |
-| xw-utils | 106 |
-| ms-entropy | 104 |
-| pokers | 100 |
-| swarms | 94 |
-| kolo | 90 |
-| testdwg | 88 |
-| ragbooster | 86 |
-| usearch | 84 |
-| oidc-drf | 84 |
-| lxml | 81 |
-| example-package-eladpt | 80 |
-| cjm-yolox-pytorch | 78 |
-| SQLAlchemy | 77 |
-| tfrecords | 72 |
-| tflite-runtime-nightly | 72 |
-| casers | 72 |
-| typeset-soren-n | 70 |
-| cPyparsing | 69 |
-| phubble | 66 |
+A browsable package list for all repositories [all packages here](https://pypi-data.github.io/website/repositories/pypi-mirror-217).
 
 
