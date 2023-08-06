@@ -1,0 +1,4 @@
+pytest
+netaddr
+ipaddr;python_version<"3.0"
+ipaddress;python_version<"3.0"
