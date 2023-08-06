@@ -1,0 +1,18 @@
+__all__ = [
+    'base_controller',
+    'login_controller',
+    'assets_controller',
+    'alerts_controller',
+    'tasks_controller',
+    'tasks_queries_controller',
+    'queries_controller',
+    'insights_controller',
+    'sites_controller',
+    'activities_controller',
+    'license_controller',
+    'users_controller',
+    'groups_controller',
+    'sensors_controller',
+    'custom_attributes_categories_controller',
+    'events_controller',
+]
