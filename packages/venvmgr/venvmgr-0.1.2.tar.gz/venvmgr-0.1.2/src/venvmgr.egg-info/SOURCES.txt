@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/venvmgr/cli.py
+src/venvmgr/config.py
+src/venvmgr/venvmgr.py
+src/venvmgr.egg-info/PKG-INFO
+src/venvmgr.egg-info/SOURCES.txt
+src/venvmgr.egg-info/dependency_links.txt
+src/venvmgr.egg-info/entry_points.txt
+src/venvmgr.egg-info/requires.txt
+src/venvmgr.egg-info/top_level.txt

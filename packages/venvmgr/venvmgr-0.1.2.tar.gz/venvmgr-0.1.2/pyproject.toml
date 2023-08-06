@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "venvmgr"
+dependencies = ["click"]
+authors = [{ name = "Andrew Fowlie", email = "andrew.fowlie@xjtlu.edu.cn" }]
+readme = "README.md"
+license = { file = "LICENSE" }
+dynamic = ["version", "description"]
+
+[project.scripts]
+vm = "venvmgr.cli:commands"
