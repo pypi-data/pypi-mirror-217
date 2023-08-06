@@ -1,0 +1,9 @@
+poetry_jupyter_plugin/__init__.py,sha256=aBEbDvx4LMg8A1TJJR6dEHu8rQODVin528hLS_EDvuA,22
+poetry_jupyter_plugin/assets/poetry.png,sha256=Vlq1wQgtmYJkiLpMXzbud-gJiYTyH4jggXtgIOUK7U4,112230
+poetry_jupyter_plugin/assets/poetry.svg,sha256=ICaUH-Z1xE1WePsL_2jEtEi8xJCfuoqSTepxeB4rZAg,2923
+poetry_jupyter_plugin/plugin.py,sha256=qd2qcZAuS_P3cahyxQ-91QWTlg2hkzkCHedtGKFYRd0,7220
+poetry_jupyter_plugin-0.1.4.dist-info/LICENSE.txt,sha256=PU22cFsvRDM7gFkWWgcOO5oDRAQZWN-DFRFxwdrDNTQ,1069
+poetry_jupyter_plugin-0.1.4.dist-info/METADATA,sha256=_xaiXSkSCZzpTjb0wW8VJ8T2dKo1LbmovjjF7e3W8xs,3122
+poetry_jupyter_plugin-0.1.4.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+poetry_jupyter_plugin-0.1.4.dist-info/entry_points.txt,sha256=HoJF2dcT_f6FAKOZUensFCQzp7cnOf65noF0NY8HC68,94
+poetry_jupyter_plugin-0.1.4.dist-info/RECORD,,
