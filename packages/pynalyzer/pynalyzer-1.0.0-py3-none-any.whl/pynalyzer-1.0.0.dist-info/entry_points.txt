@@ -1,0 +1,4 @@
+[console_scripts]
+check=pynalyzer.scripts.entrypoint:Entrypoint.check
+fix=pynalyzer.scripts.entrypoint:Entrypoint.fix
+
