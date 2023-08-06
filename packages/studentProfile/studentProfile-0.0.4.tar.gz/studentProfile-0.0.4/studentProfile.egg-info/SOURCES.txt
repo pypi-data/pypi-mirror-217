@@ -1,0 +1,13 @@
+setup.py
+studentProfile/__init__.py
+studentProfile/create_table.py
+studentProfile/delete.py
+studentProfile/display.py
+studentProfile/drop_table.py
+studentProfile/insert.py
+studentProfile/update.py
+studentProfile.egg-info/PKG-INFO
+studentProfile.egg-info/SOURCES.txt
+studentProfile.egg-info/dependency_links.txt
+studentProfile.egg-info/entry_points.txt
+studentProfile.egg-info/top_level.txt
