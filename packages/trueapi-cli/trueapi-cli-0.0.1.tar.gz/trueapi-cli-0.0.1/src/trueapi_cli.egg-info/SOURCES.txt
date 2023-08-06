@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/trueapi/__init__.py
+src/trueapi_cli.egg-info/PKG-INFO
+src/trueapi_cli.egg-info/SOURCES.txt
+src/trueapi_cli.egg-info/dependency_links.txt
+src/trueapi_cli.egg-info/top_level.txt
