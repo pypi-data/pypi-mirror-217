@@ -1,0 +1,2 @@
+[console_scripts]
+rcdss = rcdss.__main__:main
