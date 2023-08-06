@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: newenvreader
+Version: 0.1.3
+Summary: 
+Author: Ajay Karthik
+Author-email: ajaykarthik.r23@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# newenvreader
+A python library to read environment variables with typing support.
+
+# Installation
+```bash
+pip install newenvreader
+```
+
+# Usage
+```python
+from newenvreader import get_env
+
+val = get_env("MY_VAR")
+
+# Parse as int
+val = get_env("MY_VAR", cast=int)
+```
+
+
