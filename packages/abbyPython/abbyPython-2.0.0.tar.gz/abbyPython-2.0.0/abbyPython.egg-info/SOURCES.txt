@@ -1,0 +1,5 @@
+setup.py
+abbyPython.egg-info/PKG-INFO
+abbyPython.egg-info/SOURCES.txt
+abbyPython.egg-info/dependency_links.txt
+abbyPython.egg-info/top_level.txt
