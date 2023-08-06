@@ -1,0 +1,14 @@
+swarms/__init__.py,sha256=ro1Wch2TPh1Nw_cpUnXevImyxBkcbUaZrwhVdjF2Ugw,86
+swarms/agents/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+swarms/agents/swarms.py,sha256=O7FnLXDFzK9H_u3x7jDksjK3UiQ8d58qVRRbDxuWtWk,13911
+swarms/agents/workers/__init__.py,sha256=zLgr0M9VlQTDGpfBy-UB3bDke9WXrF8FqyR5hv1omj4,67
+swarms/agents/workers/agents.py,sha256=5bI_DKpXWb3eMAPTKk258fXwt4pk-JDd7J12m_7MHxU,34561
+swarms/agents/workers/auto_agent.py,sha256=PO52L2ZUVeWKHe_B2tkaWGas018MtVIoqXmMLVokTNM,3654
+swarms/agents/workers/metaprompt_agent.py,sha256=jlncRCKvQyC2v4DxVGHdUV7OaRLWY2YJuAKNwRWSwtw,3721
+swarms/agents/workers/multi-modal.py,sha256=fj8Y5lqN5K1QiN2-OKUWkeW2Dg5WswTlyKiYqdSW91o,79059
+swarms/agents/workers/omni_agent.py,sha256=IadmJ-qzIS6-LlR6ig5uD0rRYUmkKOB0uo2ft2eakVM,77147
+swarms-0.1.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+swarms-0.1.4.dist-info/METADATA,sha256=hMGkWk0D61tMYZTlR21M2TTxszTCYihBEKKxR1DoXxY,1867
+swarms-0.1.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+swarms-0.1.4.dist-info/top_level.txt,sha256=f7TnPlcb13LpOzqgio69wscCSGu4a4z0-6IrSGBVpkI,7
+swarms-0.1.4.dist-info/RECORD,,
