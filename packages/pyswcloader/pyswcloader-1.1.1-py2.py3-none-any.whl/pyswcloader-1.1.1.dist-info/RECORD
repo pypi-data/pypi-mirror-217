@@ -1,0 +1,17 @@
+pyswcloader/__init__.py,sha256=Nz1BR_F2HPd3IFEDljR7hpJaaX6TaZC1QTa0g8YeBB8,366
+pyswcloader/brain.py,sha256=8dMkpBVJ5niYRbPMKQi31pprX9K2igLMY9dCaZMjzhE,2385
+pyswcloader/cluster.py,sha256=rtkrQfufpk2BaVohQ20-rmiZdd_I3WKLtQ7f4vpsJlo,2657
+pyswcloader/distance.py,sha256=-UFgLcB81xtY2ADVq72L6Ilgfid-kDGl1GCM9-JNoAw,2890
+pyswcloader/io.py,sha256=altOMmP1IXyMAbaUz1aINcyx23GzU8UYn_LG_5RlZrA,605
+pyswcloader/projection.py,sha256=gUEH5XYAMk9MEajz0PneYAVNwVjExLi8I5USdvt0CoA,8946
+pyswcloader/projection_batch.py,sha256=juqPKzl_HgcdKreBjzKBLJ9m6cr5LkzdUDRweVeIqs0,3477
+pyswcloader/swc.py,sha256=okM_F26yk3MQ7G-jw8JikGrsWh6x41JUZWnbdl3X2q0,7418
+pyswcloader/visualization.py,sha256=HONADF3oio27vuYfqfPFQqmc_gUkOuc8wExW4SeQ-rs,3432
+pyswcloader/database/acro_stl_dict.pkl,sha256=7MMt4HK-IXAM-AGkmv2_gXaWw8DvYJXaoptZrqJk6d0,13691
+pyswcloader/database/allen_brain_tree.pkl,sha256=Hrw7rt-LmvDkvH7i20YXttzozEY12hbPiEvKn1plcnM,146754
+pyswcloader/database/stl_acro_dict.pkl,sha256=A9IJP2lZIO-P-hconjDS2R1WgKjHily9Gd8j9pYircA,13691
+pyswcloader-1.1.1.dist-info/LICENSE.txt,sha256=kD2oe1i9Gq8wK3bMbliBamRR_hKEKImWBzZISNov6os,1062
+pyswcloader-1.1.1.dist-info/METADATA,sha256=cmougJv0AXhKLvIYmiG3uvkSoIrOh0n1h6utQ9Z3VEc,752
+pyswcloader-1.1.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+pyswcloader-1.1.1.dist-info/top_level.txt,sha256=E3iDEX_8GHBgmTqDgo7zwYTv2lagnVFAnorZBnOc6yc,81
+pyswcloader-1.1.1.dist-info/RECORD,,
