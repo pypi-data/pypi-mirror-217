@@ -1,0 +1,2 @@
+[nbdev]
+conding = conding._modidx:d
