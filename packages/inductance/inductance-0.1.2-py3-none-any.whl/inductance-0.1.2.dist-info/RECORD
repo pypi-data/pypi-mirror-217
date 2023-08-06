@@ -1,0 +1,11 @@
+inductance/__init__.py,sha256=X4SkrFeTi8qcUiL3MZA5xxHgvk7reTenXOaWUy46f2Y,151
+inductance/_numba.py,sha256=fNH3xFnUBmfxbGn3BKx2I8p3fwmFNRw7rAz8tLhnk4g,1484
+inductance/coils.py,sha256=owe5k0C56urTIaSyTol3IwXFjEeOwme6xeoq5PeDcGE,5201
+inductance/elliptics.py,sha256=gfKEaA9lp3WNK_g0vtQjlJ4rJFiJk8Vy3CGHx_-IHLE,27861
+inductance/filaments.py,sha256=RuTGCRJ8JnCbJ2pgdOzFzQcn5yJ00J461I-ZpHWvjrs,14865
+inductance/mutual.py,sha256=6UYR2qud9tCLiGH3meZFdeP7ecHLPiCsUj96-C5GyvM,5476
+inductance/self.py,sha256=hRBdDVuaxUCm-n9VvlQ6m4F4iJehr1gpZUC9I3caeK4,19164
+inductance-0.1.2.dist-info/LICENSE,sha256=QDFdGUi5JKSH06RjlcHAy8qSOX0EEqYQJXkgzZkkyR8,1070
+inductance-0.1.2.dist-info/METADATA,sha256=ZAr9Cazeb37HMI_CV9C18BLvsPjeCfrW6FVZymiR5sw,5208
+inductance-0.1.2.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+inductance-0.1.2.dist-info/RECORD,,
