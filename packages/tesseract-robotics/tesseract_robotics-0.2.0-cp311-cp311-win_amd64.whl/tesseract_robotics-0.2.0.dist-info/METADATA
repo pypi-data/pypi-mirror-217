@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: tesseract-robotics
+Version: 0.2.0
+Summary: Tesseract Python Library
+Home-page: http://robotraconteur.com/
+Author: John Wason
+Author-email: wason@wasontech.com
+License: Apache-2.0
+Requires-Dist: numpy
+
+Tesseract Robotics package for Python
