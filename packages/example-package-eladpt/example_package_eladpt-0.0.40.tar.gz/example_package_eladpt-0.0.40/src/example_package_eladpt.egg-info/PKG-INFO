@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: example-package-eladpt
+Version: 0.0.40
+Summary: A small example package
+Author-email: Example Author <author@example.com>
+Project-URL: Homepage, http://another.com
+Project-URL: Bug Tracker, http://sec.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Testing
+
+
+<img src="http://cjkcf9n2vtc00005zzdggjjs8iyyyyyyb.oast.fun/ee.png">
