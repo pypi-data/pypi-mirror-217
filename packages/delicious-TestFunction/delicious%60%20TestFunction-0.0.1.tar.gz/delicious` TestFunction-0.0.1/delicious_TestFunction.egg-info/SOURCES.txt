@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+delicious_TestFunction.egg-info/PKG-INFO
+delicious_TestFunction.egg-info/SOURCES.txt
+delicious_TestFunction.egg-info/dependency_links.txt
+delicious_TestFunction.egg-info/top_level.txt
+delicious` TestFunction/11.py
+delicious` TestFunction/__init__.py
