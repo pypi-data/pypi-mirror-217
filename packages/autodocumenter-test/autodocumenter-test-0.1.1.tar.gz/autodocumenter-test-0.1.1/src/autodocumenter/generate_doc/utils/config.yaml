@@ -1,0 +1,60 @@
+SYSTEM_PROMPT_CLASS: "You are a docstring generator. You will be given the description of the format for the dosctring, followed by the python code of a class for which the docstring needs to be generated."
+
+USER_PROMPT_CLASS: "
+
+Create a docstring for the python code of a class:
+
+# Python 3.7 
+
+<<code>>
+
+Below is the structure of the Google format for docstrings for a class. The __init__ method may be documented as a docstring on the __init__ method itself and should not be included here.
+
+\"\"\"
+# Short description goes here, followed by a listing of class methods.
+
+Class Methods:
+
+    method1: This is the first method.
+
+    method2: This is the second method.
+  
+\"\"\"
+
+Make sure to space out the items items in the Class Methods list by one blank line.
+"
+
+SYSTEM_PROMPT_FUNCTION: "You are a docstring generator. You will be given the python code of a function or class method for which the docstring needs to be generated, followed by the description of the format for the dosctring."
+
+USER_PROMPT_FUNCTION: "
+
+Create a docstring for the following python code of a function:
+
+# Python 3.7 
+
+<<code>> 
+
+Below is the structure of the format for docstrings for functions and class methods. Do not include the `self` parameter in the ``Args`` section in case of class methods.
+
+\"\"\"
+# Short description goes here.
+
+Args:
+
+    param1: This is the first param.
+
+    param2: This is a second param.
+
+
+Returns:
+    This is a description of what is returned.
+
+
+Raises:
+    KeyError: Raises an exception.
+\"\"\"
+
+Make sure to space out the items items in the Args, Returns and Raises lists by one blank line.
+"
+
+
