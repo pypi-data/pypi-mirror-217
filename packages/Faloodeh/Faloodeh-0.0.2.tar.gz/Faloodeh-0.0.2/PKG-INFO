@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: Faloodeh
+Version: 0.0.2
+Summary: this package is alpha version of faloodeh framwork from iran
+Home-page: https://github.com/AmirMohammadDehghan/Faloodeh
+Download-URL: https://pypi.org/project/Faloodeh/
+Author: Amir Mohammad Dehghan
+Author-email: faloodehproject@gmail.com
+License: MIT
+Keywords: Faloodeh,FaloodehSearch,FaloodehStack
+License-File: LICENSE
+
+hello every one this package is python web framwork and our goal is learning and follow me in my github : https://github.com/amirmohammaddehghan/
