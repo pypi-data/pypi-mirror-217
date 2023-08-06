@@ -1,0 +1,10 @@
+fablab/__init__.py,sha256=hIq6FZOvbWWCmO31j8DTg53avDsqqP3ETFceF0DG480,194
+fablab/common.py,sha256=O_t9YoOZxZaWUjhH5evvVwwjg_TGQob3yUz5aHXdV0c,405
+fablab/loaders.py,sha256=roi0p0vI5ytBnNXyezzjRZiK8IbgXc9FJ2FsncbusBk,6441
+fablab/savers.py,sha256=JbXLzOJBez9_zKJ2ysVBFaOD_Ye5pn-2Pab-vt1esCo,6700
+fablab/utils.py,sha256=4Q_koqx-wQf245cr1xVl4sc9w4cbYqWlJqfVOJlbA0U,204
+fablab-0.0.2.dist-info/LICENSE,sha256=vuBsVWOn62f4PtXFbUJ4f8hNzooC7fUaUq4YGEAnyxU,1030
+fablab-0.0.2.dist-info/METADATA,sha256=mka2a1_FDTa_co1_M2Xvw-sGJ743DgvDc53T4MiHd94,1495
+fablab-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+fablab-0.0.2.dist-info/top_level.txt,sha256=7CiLt5xFREymJI9skpwEUsrRMCAXBo4FhSryyjY-C4E,7
+fablab-0.0.2.dist-info/RECORD,,
