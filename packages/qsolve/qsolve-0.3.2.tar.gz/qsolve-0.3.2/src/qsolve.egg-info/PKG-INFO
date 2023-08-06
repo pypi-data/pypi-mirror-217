@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: qsolve
+Version: 0.3.2
+Summary: Numerical framework for the simulation and optimization of ultracold atom experiments
+Home-page: https://github.com/jfmennemann/qsolve
+Author: Jan-Frederik Mennemann
+Author-email: jfmennemann@gmx.de
+Description-Content-Type: text/markdown
+
+# QSolve
+
+QSolve provides numerical methods for the simulation and optimization 
+of ultracold atom experiments at zero and finite temperature.
+
+# Requirements
+
+Ubuntu 22.04 or Windows 11\
+Python 3.11
+
+# Getting Started
+
+pip install qsolve
+
+# Update
+
+To upgrade the installed qsolve package to its latest version, please use:
+
+pip install --upgrade qsolve
