@@ -1,0 +1,6 @@
+[console_scripts]
+fdi-getconfig = fdi.utils.getconfig:main
+yaml2python = fdi.dataset.yaml2python:main
+
+[pytest11]
+products_pools = fdi.testsupport
