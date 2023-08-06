@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+translucenttb/__init__.py
+translucenttb/blur.py
+translucenttb/main.py
+translucenttb.egg-info/PKG-INFO
+translucenttb.egg-info/SOURCES.txt
+translucenttb.egg-info/dependency_links.txt
+translucenttb.egg-info/top_level.txt
