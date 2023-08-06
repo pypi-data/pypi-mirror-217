@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: gl-client
+Version: 0.1.9
+Requires-Dist: protobuf >=3
+Requires-Dist: grpcio ==1.51.3
+Requires-Dist: pyln-grpc-proto >=0.1
+License: MIT
