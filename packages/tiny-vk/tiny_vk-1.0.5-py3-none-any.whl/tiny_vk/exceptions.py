@@ -1,0 +1,6 @@
+class TokenError(Exception):
+  ...
+
+class EmptyValueError(Exception):
+  ...
+

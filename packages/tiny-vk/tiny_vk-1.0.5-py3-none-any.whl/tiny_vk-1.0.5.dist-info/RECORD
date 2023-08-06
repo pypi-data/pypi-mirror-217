@@ -1,0 +1,8 @@
+tiny_vk/__init__.py,sha256=b5geE897-vNutArerfzVHxaanWoxpMDhqCyE6lVUBoM,49
+tiny_vk/bot.py,sha256=3qTJ14lHBTvUuBZRnz0j_2Du3ynETm31kJ5zkzSXsVw,8530
+tiny_vk/ctx.py,sha256=HyMzNr0E6bdfsPW82QL71HeZK1LMQpoBBzyh4XVzUSo,402
+tiny_vk/database.py,sha256=aJw-vTO7XABX55WbgWYXYZHLJYVC9gOeDpMI1JsxW_w,2739
+tiny_vk/exceptions.py,sha256=xicla5MAnnzqR80QdCo4L1W3RzCr7f79NszeEMt_PqA,77
+tiny_vk-1.0.5.dist-info/METADATA,sha256=yg4Os9xU94KjrSmZT_7NrWkvUPhcwGyW-LSKIZpDjUk,1147
+tiny_vk-1.0.5.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+tiny_vk-1.0.5.dist-info/RECORD,,
