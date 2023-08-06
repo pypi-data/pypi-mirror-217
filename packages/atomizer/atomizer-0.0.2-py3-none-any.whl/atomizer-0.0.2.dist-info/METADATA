@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: atomizer
+Version: 0.0.2
+Summary: Atom publisher
+Author-email: Nathan Michaels <nmichaels@gmail.com>
+License: BSD-3-Clause
+Requires-Python: >=3.6
+
