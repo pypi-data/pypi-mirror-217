@@ -1,0 +1,10 @@
+timer_module/__init__.py,sha256=i_0YtNo_pHk_bpQ2IPvMIE8kXiwsqtdQ0U3N4D2OeVM,127
+timer_module/metrics.py,sha256=oLl5zjfKm6k03eY9whxrxBFZMvAIOK9c5RLpLKCP1uk,6019
+timer_module/profiler.py,sha256=oKn1RhU_V037O-gd0jTqqRf_Ozwyo5CDAoBCqJqDe_0,7032
+timer_module/terminal.py,sha256=j-4hmmhalCubiFylWwf3xZT98aT2T4e5Y_tz0CnFC8w,1358
+timer_module/timer.py,sha256=EMiHaPPXi-OaPxoyMS8zW5RRr6umr7EQG_wKHz9bQ58,1459
+timer_module-1.1.3.dist-info/LICENSE,sha256=80eE7nURzghWAGwl7cNRD9524GSeSwJTeCU6rm-6QLI,1091
+timer_module-1.1.3.dist-info/METADATA,sha256=dZX8lFPiX7ZRGiagZd8emFUfQM5yX_R9mkuQGV1GCwQ,2355
+timer_module-1.1.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+timer_module-1.1.3.dist-info/top_level.txt,sha256=0VluwyMU6CIKH0aWSj7KHhkqDOEhr1AsdkTu32Sqv0Q,13
+timer_module-1.1.3.dist-info/RECORD,,
