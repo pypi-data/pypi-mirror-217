@@ -1,0 +1,12 @@
+craft_ai_sdk/__init__.py,sha256=A7j9nIo2BWxh4UQFi7FVn0kwepO0xrIXVeDEvuH1RQ0,366
+craft_ai_sdk/constants.py,sha256=M-bHzi7vO6jtYQKjew9q53FVNPzz480FfKKd-yJzWoE,214
+craft_ai_sdk/exceptions.py,sha256=YsP2hOakChQ7GfdEmep_Okoiyp0WiKugzws5AjD_kqc,980
+craft_ai_sdk/io.py,sha256=DwCDgleIFmgX2eYrfY0Su2PzZBiHamTsJ10VhuCcZPY,8832
+craft_ai_sdk/sdk.py,sha256=SSnlGTNVv-Mm3-1wUPWySsmJMKA3lDGPVJX7BcKLyY0,79639
+craft_ai_sdk/utils.py,sha256=Q-HJdoGpNQoYm-tkujhL0gzMN9h9yPgtBdZ3oC0PgXQ,5922
+documentation.pdf,sha256=BFsdCW5GgNZoXzIzfKQqos8L5L4uCE-8vpUaLISNoMU,298940
+craft_ai_sdk-0.21.1rc1.dist-info/METADATA,sha256=cBcCUDkTzO3omTq6pJ-h8TsOdJ6LKzk71iCjcMA2lBs,1566
+craft_ai_sdk-0.21.1rc1.dist-info/entry_points.txt,sha256=WwQ3SseTTSxh-1J61MsjI_-UJPbeCYO0UtDPXE37aNM,409
+craft_ai_sdk-0.21.1rc1.dist-info/LICENSE,sha256=_2oYRJic9lZK05LceuJ9aZZw5mPHYc1WQhJiVS-oGFU,10754
+craft_ai_sdk-0.21.1rc1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+craft_ai_sdk-0.21.1rc1.dist-info/RECORD,,
