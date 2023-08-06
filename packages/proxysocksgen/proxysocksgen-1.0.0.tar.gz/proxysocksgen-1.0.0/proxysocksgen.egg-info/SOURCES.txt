@@ -1,0 +1,7 @@
+setup.py
+test.py
+proxysocksgen.egg-info/PKG-INFO
+proxysocksgen.egg-info/SOURCES.txt
+proxysocksgen.egg-info/dependency_links.txt
+proxysocksgen.egg-info/requires.txt
+proxysocksgen.egg-info/top_level.txt
