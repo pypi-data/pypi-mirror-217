@@ -1,0 +1,7 @@
+functions.py
+setup.py
+graficas.egg-info/PKG-INFO
+graficas.egg-info/SOURCES.txt
+graficas.egg-info/dependency_links.txt
+graficas.egg-info/requires.txt
+graficas.egg-info/top_level.txt
