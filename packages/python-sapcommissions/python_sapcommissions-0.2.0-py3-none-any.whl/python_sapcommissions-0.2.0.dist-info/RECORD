@@ -1,0 +1,12 @@
+docs/ENDPOINTS.md,sha256=qRpz0DXvb0y9ORilQBaVcvjZ2-GsM2wJw0CH8wu7JiU,57710
+docs/METHODS.md,sha256=gucBZPEOwOfZaUV7IF2jXp73QGVYLIhnlF5MwUvp4NQ,14535
+docs/README.md,sha256=jHHbAS3Q7DSBARvGldmgpGWSB_-yDHd9YaPBvegofhg,3472
+sapcommissions/__init__.py,sha256=q-C6pj_HZboctWwMgPMtLL0tpwFso1qzkSeiZjW59B8,1399
+sapcommissions/endpoints.py,sha256=2xeb2V0Ae-be9s57AP1p1Syg_pjy1dDmLlvKmNUxPfo,58092
+sapcommissions/exceptions.py,sha256=LMWh0414YNiwRBeUX8MBFnlTDqIb6Yc6SBCQ625gP6I,451
+sapcommissions/resources.py,sha256=mfsN2kiZuaxoSt9hWlayB6Px0dqK_oRgc3gdZv1pu2U,114107
+python_sapcommissions-0.2.0.dist-info/LICENSE,sha256=Lzl26HgbW2oyG7NgrhhERqEuabqREVYxuxel3p9fx3c,1070
+python_sapcommissions-0.2.0.dist-info/METADATA,sha256=ytce19Q-uwDypEgqTUCaSUq7yVlQVwoaW2r7lCessl4,4315
+python_sapcommissions-0.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+python_sapcommissions-0.2.0.dist-info/top_level.txt,sha256=uYDwuwLHN1VQj5yASxB2CQKw6QXWKLGOtLvIHmHQsgg,25
+python_sapcommissions-0.2.0.dist-info/RECORD,,
