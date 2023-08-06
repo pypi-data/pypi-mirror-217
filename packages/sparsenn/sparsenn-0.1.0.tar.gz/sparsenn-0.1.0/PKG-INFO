@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: sparsenn
+Version: 0.1.0
+Summary: 
+Author: Jeff Shen
+Author-email: shenjeff@princeton.edu
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: equinox (>=0.10.6,<0.11.0)
+Requires-Dist: jax (>=0.4.13,<0.5.0)
+Requires-Dist: optax (>=0.1.5,<0.2.0)
+Description-Content-Type: text/markdown
+
+
