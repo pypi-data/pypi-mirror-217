@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+src/streamlit_slice_select/__init__.py
+src/streamlit_slice_select.egg-info/PKG-INFO
+src/streamlit_slice_select.egg-info/SOURCES.txt
+src/streamlit_slice_select.egg-info/dependency_links.txt
+src/streamlit_slice_select.egg-info/requires.txt
+src/streamlit_slice_select.egg-info/top_level.txt
+src/streamlit_slice_select/frontend/dist/bootstrap.min.css
+src/streamlit_slice_select/frontend/dist/index.html
+src/streamlit_slice_select/frontend/dist/slicer.js
+src/streamlit_slice_select/frontend/dist/slicer.js.LICENSE.txt
+src/streamlit_slice_select/frontend/dist/style.css

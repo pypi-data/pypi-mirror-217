@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir={"" = "src"}
+
+[project]
+name = "streamlit_slice_select"
+description = "A like Excel-slicer input widget for Streamlit"
+version = "0.1.2"
+authors = [
+    {name="Jaime Lopez", email="jaime.lopez@datainquiry.dev"}
+]
+license = {file = "LICENSE.txt"}
+dependencies = [
+    "streamlit",
+]
+
+[project.optional-dependencies]
+dev = [
+    "mypy",
+    "pylint",
+    "pytest",
+    "build",
+]
