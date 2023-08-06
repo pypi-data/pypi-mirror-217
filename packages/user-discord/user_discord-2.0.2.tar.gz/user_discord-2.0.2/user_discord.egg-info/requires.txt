@@ -1,0 +1,5 @@
+requests
+websocket-client
+yt-dlp
+discord-protos
+PyNaCl
