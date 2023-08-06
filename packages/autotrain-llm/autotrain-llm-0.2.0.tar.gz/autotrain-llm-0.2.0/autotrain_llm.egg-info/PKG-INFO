@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: autotrain-llm
+Version: 0.2.0
+Summary: autotrain_llm
+Home-page: https://github.com/huggingface/autotrain-llm
+Author: Abhishek Thakur
+License: Apache License
+Platform: linux
+Platform: unix
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: quality
+License-File: LICENSE
+
+# autotrain-
+
+WIP
