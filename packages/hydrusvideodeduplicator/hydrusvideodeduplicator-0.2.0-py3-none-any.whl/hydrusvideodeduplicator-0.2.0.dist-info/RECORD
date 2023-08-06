@@ -1,0 +1,14 @@
+hydrusvideodeduplicator/__about__.py,sha256=3j4-fvrQVu0_p7XcTLdyb_vDlkBIhHORdrTWrCHyztA,119
+hydrusvideodeduplicator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hydrusvideodeduplicator/__main__.py,sha256=QpbS63j7EeB4TvSZ7N137EtnMP2MybkphchhVnIeGhY,5693
+hydrusvideodeduplicator/config.py,sha256=47Yx6wVns47SJSJ9hIh73mfW1EyfNCXM92r1cN2R15Y,1477
+hydrusvideodeduplicator/dedup.py,sha256=ViI-w_IKEPdBnrmQsp8S-YTUug1XLEdkxjh0xuYNips,15720
+hydrusvideodeduplicator/dedup_util.py,sha256=kPlodi28avHL5UClKLQ9uEj-6BHax0zxre1Ig6HWSxs,5284
+hydrusvideodeduplicator/hydrus_api/LICENSE,sha256=kbZSd5WewnN2PSjvAC6DprP7pXx6NUNsnltmU2Mz1yA,34519
+hydrusvideodeduplicator/hydrus_api/README.md,sha256=6fp4nZpMbZzCF5JfzVqBDy5lVFjfSGLqKQR1rdB96xc,160
+hydrusvideodeduplicator/hydrus_api/__init__.py,sha256=a_JGMLNGyv8DD9kdwe3gHDHSl_y8xumShpufquh4aqk,36873
+hydrusvideodeduplicator/hydrus_api/utils.py,sha256=eBKQHoy-VAg15Z2N1POifK9P84AdLuO7rhcR8fihgT8,5261
+hydrusvideodeduplicator-0.2.0.dist-info/METADATA,sha256=VsC-F8107P0QZikpBqjiCu7apmGyI8-zrLFUbS8rU0c,3733
+hydrusvideodeduplicator-0.2.0.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+hydrusvideodeduplicator-0.2.0.dist-info/licenses/LICENSE,sha256=TTV2wUscK9avJPYSBf5eYfhDVdvWcx6JRaaK0NPx0sY,1078
+hydrusvideodeduplicator-0.2.0.dist-info/RECORD,,
