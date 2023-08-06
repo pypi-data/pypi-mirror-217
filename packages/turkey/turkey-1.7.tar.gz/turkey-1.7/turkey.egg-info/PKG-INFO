@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: turkey
+Version: 1.7
+Home-page: https://github.com/PolinaOzhigova/turkey.git
+License: MIT
+Requires-Python: >=3.10
+License-File: LICENSE
