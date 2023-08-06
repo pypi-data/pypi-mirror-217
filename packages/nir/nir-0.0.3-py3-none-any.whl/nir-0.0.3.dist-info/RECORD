@@ -1,0 +1,11 @@
+docs/conf.py,sha256=IsyGo4sxE5fyjzo0pb5ThWKzTIJ6NDqS7YxUJU0aXmM,2857
+nir/__init__.py,sha256=HdnLDlNsBSoYArXLVhsfTzYA803-yj51R4HP1qG0-Cc,105
+nir/ir.py,sha256=MBGixFJ5DQjyEbDlGVFW-9AjMb-6i7_1qY04-CMFNUc,2549
+nir/read.py,sha256=KDosSAfCXYogiDHIcRSbD8F6c09E3BByHkYoC7MfaD4,2560
+nir/write.py,sha256=HRDatyb5Nj8ouxbBHEzkRUD7FPqrTsXFsckyDTH5nJY,2608
+nir/test/test_ir.py,sha256=HsihrrLAnlYVmTZMGK9z1B2bEkwLXxeNVZA3XTfvzv8,592
+nir/test/test_readwrite.py,sha256=Am3qz19_9eyPkPZkSMMo_L_qTS3hdgWAIfuqeT-W26g,1205
+nir-0.0.3.dist-info/METADATA,sha256=eNSCsfnCqd6eKt3uUYu16yeHV7nAxH0zZubsbtOfXYA,4174
+nir-0.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+nir-0.0.3.dist-info/top_level.txt,sha256=IlfdWWdwH4nD4yjlF-0w9HYn2I4ctja0b6_KJILsnn0,9
+nir-0.0.3.dist-info/RECORD,,
