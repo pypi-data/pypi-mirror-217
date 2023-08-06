@@ -1,0 +1,20 @@
+Django!=4.0.*,>=3.2
+
+[akismet]
+akismet
+
+[docs]
+furo
+sphinx
+sphinx-copybutton
+sphinx-inline-tabs
+sphinx-notfound-page
+sphinxcontrib-django
+sphinxext-opengraph
+
+[tests]
+akismet
+coverage
+
+[tests:python_full_version < "3.11.0a7"]
+tomli
