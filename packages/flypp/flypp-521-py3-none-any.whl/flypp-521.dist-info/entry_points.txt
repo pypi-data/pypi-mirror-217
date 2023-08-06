@@ -1,0 +1,4 @@
+[console_scripts]
+flypp = flypp.main:main
+ppegg = flypp.egg:run_egg
+
