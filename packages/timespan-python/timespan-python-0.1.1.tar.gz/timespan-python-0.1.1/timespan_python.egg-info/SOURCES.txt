@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/__init__.py
+src/package/__init__.py
+src/package/timespan.py
+test/test.py
+timespan_python.egg-info/PKG-INFO
+timespan_python.egg-info/SOURCES.txt
+timespan_python.egg-info/dependency_links.txt
+timespan_python.egg-info/not-zip-safe
+timespan_python.egg-info/top_level.txt
