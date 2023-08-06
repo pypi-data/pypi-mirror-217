@@ -1,0 +1,27 @@
+import pytest
+import sys
+import os
+parent_dir = os.path.abspath("../..")
+sys.path.insert(0, parent_dir)
+from conftest import petrel_version, pythontooltestproject
+
+@pytest.mark.parametrize("petrel_context", [(petrel_version, pythontooltestproject)], indirect=["petrel_context"])
+class TestSurfaceAttribute:
+    def test_surface_attribute_template(self, surface_attribute):
+        assert surface_attribute.template == 'Elevation time'
+
+    def test_surface_attribute_get_template(self, surface_attribute):
+        from cegalprizm.pythontool.template import Template
+        template = surface_attribute.get_template()
+        assert isinstance(template, Template)
+        assert template.unit_symbol == 'ms'
+
+    def test_surface_attribute_workflow_enabled(self, surface_attribute, return_workflow):
+        input_var = return_workflow.input["input_object"]
+        output_var = return_workflow.output["output_object"]
+        wf_result = return_workflow.run({input_var: surface_attribute})
+        unpacked_object = wf_result[output_var]
+        assert type(unpacked_object) == type(surface_attribute)
+        assert unpacked_object.petrel_name == surface_attribute.petrel_name
+        assert unpacked_object.path == surface_attribute.path
+        assert unpacked_object.droid == surface_attribute.droid
