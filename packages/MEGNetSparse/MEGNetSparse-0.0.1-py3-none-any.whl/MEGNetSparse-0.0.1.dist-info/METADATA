@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: MEGNetSparse
+Version: 0.0.1
+Author-email: Romanov Ignat <romanov.ignat.p@gmail.com>
+Project-URL: Homepage, https://github.com/RomanovIgnat/MEGNet_pytorch_test
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: tqdm
+Requires-Dist: numpy
+
+# MEGNet_pytorch_test
