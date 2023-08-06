@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+streamlit_baseweb/__init__.py
+streamlit_baseweb.egg-info/PKG-INFO
+streamlit_baseweb.egg-info/SOURCES.txt
+streamlit_baseweb.egg-info/dependency_links.txt
+streamlit_baseweb.egg-info/entry_points.txt
+streamlit_baseweb.egg-info/requires.txt
+streamlit_baseweb.egg-info/top_level.txt
