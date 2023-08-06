@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: g722-1-mod
+Version: 0.0.2
+Summary: A modified G722.1 encoder
+Home-page: https://github.com/jepler/g722_1_mod
+Author: Jeff Epler
+Author-email: jeff@adafruit.com
+Requires-Python: >=3.7
+Provides-Extra: test
+License-File: LICENSE
+
+This modified format is used by certain embedded designs.

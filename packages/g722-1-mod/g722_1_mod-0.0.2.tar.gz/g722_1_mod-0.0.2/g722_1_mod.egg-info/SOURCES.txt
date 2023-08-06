@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+g722_1_mod.egg-info/PKG-INFO
+g722_1_mod.egg-info/SOURCES.txt
+g722_1_mod.egg-info/dependency_links.txt
+g722_1_mod.egg-info/not-zip-safe
+g722_1_mod.egg-info/requires.txt
+g722_1_mod.egg-info/top_level.txt
+src/main.cpp
+tests/test.py
