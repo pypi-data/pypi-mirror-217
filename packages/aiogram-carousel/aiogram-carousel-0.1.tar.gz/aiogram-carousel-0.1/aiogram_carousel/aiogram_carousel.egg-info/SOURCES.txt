@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+aiogram_carousel/aiogram_carousel.egg-info/PKG-INFO
+aiogram_carousel/aiogram_carousel.egg-info/SOURCES.txt
+aiogram_carousel/aiogram_carousel.egg-info/dependency_links.txt
+aiogram_carousel/aiogram_carousel.egg-info/requires.txt
+aiogram_carousel/aiogram_carousel.egg-info/top_level.txt
+tests/test_carousel.py
