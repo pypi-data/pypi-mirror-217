@@ -1,0 +1,138 @@
+[build-system]
+requires = ["setuptools>=68", "setuptools-scm[toml]"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sqls"
+authors = [
+    {name = "Marko Durkovic", email = "marko@miding.de"},
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Programming Language :: Python",
+    "Topic :: Database",
+    "Typing :: Typed",
+]
+description = "SQL Toolkit for Python."
+dependencies = [ ]
+dynamic = ["version"]
+keywords = [
+    "aio",
+    "async",
+    "database",
+    "mariadb",
+    "model",
+    "mysql",
+    "query",
+    "postgresql",
+    "sql",
+    "sqlite3",
+    "transaction",
+]
+license = {text = "Apache-2.0"}
+readme = "README.rst"
+requires-python = ">=3.10"
+
+[project.optional-dependencies]
+dev = [
+    "furo",
+    "isort",
+    "mypy",
+    "pytest",
+    "pytest-asyncio",
+    "pytest-cov",
+    "ruff",
+    "sphinx",
+    "sphinx-autodoc-typehints",
+    # "sphinx-rtd-theme",
+    "yapf",
+
+]
+mysql = ["aiomysql"]
+postgresql = ["asyncpg"]
+sqlite = ["aiosqlite"]
+
+[project.urls]
+Homepage = "https://gitlab.com/durko/sqls"
+Documentation = "https://durko.gitlab.io/sqls"
+Source = "https://gitlab.com/durko/sqls"
+Issues = "https://gitlab.com/durko/sqls/issues"
+Changelog = "https://gitlab.com/durko/sqls/-/blob/master/CHANGES.rst"
+
+[tool.coverage]
+report.exclude_lines = [
+  "pragma: no cover",
+  "if TYPE_CHECKING:",
+  "@overload",
+  "if __name__ == '__main__':",
+]
+report.show_missing = true
+report.skip_covered = true
+run.branch = true
+run.source = ["src"]
+
+
+[tool.isort]
+combine_as_imports = true
+include_trailing_comma = true
+line_length = 100
+multi_line_output = 3
+split_on_trailing_comma = true
+
+
+[tool.mypy]
+disallow_any_explicit = true
+explicit_package_bases = true
+fast_module_lookup = true
+mypy_path = "src"
+namespace_packages = true
+strict = true
+
+
+[tool.pytest.ini_options]
+addopts = ["--cov", "--verbose"]
+asyncio_mode = "auto"
+
+
+[tool.ruff]
+select = ["ALL"]
+ignore = [
+  "ANN101",
+  "FBT001",
+  "FBT002",
+  "FBT003",
+  "PLR2004",
+  "S101",
+]
+line-length = 100
+
+[tool.ruff.isort]
+combine-as-imports = true
+force-wrap-aliases = true
+known-first-party = ["sqls"]
+
+[tool.ruff.flake8-quotes]
+avoid-escape = false
+inline-quotes = "single"
+
+[tool.ruff.pydocstyle]
+convention = "google"
+
+
+[tool.setuptools_scm]
+
+
+[tool.yapf]
+based_on_style = "google"
+column_limit = 100
+allow_split_before_dict_value = false
+dedent_closing_brackets = true
+indent_dictionary_value = false

@@ -1,0 +1,9 @@
+*.py[co]
+*.egg-info/
+__pycache__/
+/build/
+/dist/
+/venv/
+/.coverage
+
+.vscode
