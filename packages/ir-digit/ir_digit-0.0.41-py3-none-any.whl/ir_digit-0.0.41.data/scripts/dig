@@ -1,0 +1,32 @@
+#!python
+
+import argparse
+from digit.core import Core
+
+def main():
+    parser = argparse.ArgumentParser()
+    group = parser.add_mutually_exclusive_group()
+    group.add_argument('-r', '--resource', help='Data ID')
+    group.add_argument('-d', '--download', help='Resource to download')
+    args = parser.parse_args()
+
+    if args.resource:
+        data_id = args.resource
+        print("您输入的data_id:",data_id)
+    elif args.download:
+        resource_to_download = args.download
+        print("您输入的download资源：",resource_to_download)
+    else:
+        print('Invalid arguments. Usage: digit (-r data_id | -d DOWNLOAD)')
+
+if __name__ == '__main__':
+    main()
+
+
+
+
+
+
+
+if __name__ =="__main__":
+    main()
