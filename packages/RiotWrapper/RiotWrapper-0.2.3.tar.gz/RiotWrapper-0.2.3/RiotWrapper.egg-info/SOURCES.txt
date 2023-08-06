@@ -1,0 +1,16 @@
+README.md
+setup.py
+Endpoints/__init__.py
+Endpoints/championMastery_v4.py
+Endpoints/champion_v3.py
+Endpoints/leagueExp_v4.py
+Endpoints/league_v4.py
+Endpoints/lolStatus_v4.py
+Endpoints/match_v5.py
+Endpoints/spectator_v4.py
+Endpoints/summoner_v4.py
+RiotWrapper.egg-info/PKG-INFO
+RiotWrapper.egg-info/SOURCES.txt
+RiotWrapper.egg-info/dependency_links.txt
+RiotWrapper.egg-info/requires.txt
+RiotWrapper.egg-info/top_level.txt
