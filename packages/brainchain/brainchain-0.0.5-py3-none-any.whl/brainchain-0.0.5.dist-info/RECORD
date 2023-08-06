@@ -1,0 +1,12 @@
+brainchain/README.md,sha256=N1SkftWtiE8ireA1O8EmwbLRzFuS5cMYDFBmUHERWm4,1732
+brainchain/__init__.py,sha256=MvTrUgEOUnSPaY9E8XKEhgE0wvc_pMMAICOudRiNY58,104
+brainchain/brainchain.py,sha256=mxR5YaXRHCAUfziLenXXOQ-bYtMrm-BkV969wH9zD6w,4983
+brainchain/carnivore.py,sha256=ZZzRILBObsPQgLAyjCobsOe6lFE1MzkCLvQ3K5IfbGQ,5579
+brainchain/coredata.py,sha256=_sresEZ7Tmc3ACTHMXQAgMrTgjZgqFWV4ssyDA93EE8,2243
+brainchain/example.py,sha256=UsLsifZkY07N_hqtrx2oUuo6Cvy8LGe2v8m9FswW6Ic,1713
+brainchain/factcheck.py,sha256=nyrf4odq4oFdMBUc69KWwqMT5fd5VoJZH8KLyw-eHZQ,652
+brainchain/requirements.txt,sha256=YvBjAs2tz_il-IbcCfJhPO1B_PBatl8_bLYr5wCxP4A,15070
+brainchain/sales_intel.py,sha256=ITySHBrhJq_2gm-6HSOYQCuROyR8_omuecA_2ONmhtg,6351
+brainchain-0.0.5.dist-info/METADATA,sha256=yOp4BFyidHfnEkUHd23KdMkyxUfVOJjkDPvqfsD-U0I,605
+brainchain-0.0.5.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+brainchain-0.0.5.dist-info/RECORD,,
