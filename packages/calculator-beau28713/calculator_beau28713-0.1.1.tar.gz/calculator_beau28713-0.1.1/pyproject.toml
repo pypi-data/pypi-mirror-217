@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "calculator-beau28713"
+version = "0.1.1"
+description = "Simple gui calculator that does basic math"
+authors = ["Beau <beau28713@gmail.com>"]
+readme = "README.md"
+packages = [{include = "calculator_beau28713"}]
+
+[tool.poetry.dependencies]
+python = "3.9"
+Kivy = "^2.2.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
