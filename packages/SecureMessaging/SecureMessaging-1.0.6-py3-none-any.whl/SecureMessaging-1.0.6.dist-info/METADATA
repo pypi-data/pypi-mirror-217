@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: SecureMessaging
+Version: 1.0.6
+Summary: Secure Messaging
+Home-page: https://github.com/ethicalhacker7192/SecureMessaging
+Author: Guinea_Pig_Lord
+Author-email: bear@lowrey.us
+License: MIT
+Keywords: Secure Messaging
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Requires-Dist: cryptography
+Requires-Dist: platform
+Requires-Dist: prompt-toolkit
+
+# SecureMessaging
+A module for messaging securely.
+
+Pretty much the same thing as GuineaSend but more lightweight.
+
+More info [here](https://github.com/ethicalhacker7192/OTP-MAC-online)
+
+## INSTALLATION
+
+for pip and pip3:
+
+pip:
+
+    pip install SecureMessaging
+
+pip3:
+
+    pip3 install SecureMessaging
+
+for windows:
+
+    py -m pip install SecureMessaging
+
+for linux (without pip command line tool):
+
+    python3 -m pip install SecureMessaging
+
+## Usage
+
+You may be wondering how to use this module, there are 4 functions that are mainly used:
+
+sending:
+    send_message('[your reciever's IP]', "[your message]")
+
+receiving:
+
+    receive_message()
+
+transceiving:
+
+    transceive_message()
+
+fetching the IP of client:
+
+    get_ip_address()
+    # this prints your IP, however, here is one that you can use as a varable later for some reason:
+    x = get_ip_address()
+    # Then in the future
+    print(x)
+
+
+these are the main functions, also I will add a example usage of the entire module here in different ways:
+
+sending:
+
+    import SecureMessaging as sm
+
+    x = sm.get_ip_address()
+    print(x)
+    sm.send_message('127.0.0.1', x) #you can do anything you want to this example
+
+the reciever side:
+
+    import SecureMessaging as sm
+
+    sm.receive_message()
+    
+you can do a lot with these functions, you just need to know how to do them.
