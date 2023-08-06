@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+FeishuBitableAPI.egg-info/PKG-INFO
+FeishuBitableAPI.egg-info/SOURCES.txt
+FeishuBitableAPI.egg-info/dependency_links.txt
+FeishuBitableAPI.egg-info/requires.txt
+FeishuBitableAPI.egg-info/top_level.txt
+test/test#GET_INFO_FROM_URL-2.py
+test/test#GET_INFO_FROM_URL.py
