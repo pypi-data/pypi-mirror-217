@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: autotrain-llm
+Version: 0.2.0
+Summary: autotrain_llm
+Home-page: https://github.com/huggingface/autotrain-llm
+Author: Abhishek Thakur
+License: Apache License
+Platform: linux
+Platform: unix
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: loguru (==0.7.0)
+Requires-Dist: datasets (==2.13.0)
+Requires-Dist: pydantic (==1.10.9)
+Requires-Dist: peft (==0.3.0)
+Requires-Dist: transformers (==4.30.2)
+Requires-Dist: accelerate (==0.20.3)
+Requires-Dist: tensorboard (==2.13.0)
+Provides-Extra: dev
+Requires-Dist: loguru (==0.7.0) ; extra == 'dev'
+Requires-Dist: datasets (==2.13.0) ; extra == 'dev'
+Requires-Dist: pydantic (==1.10.9) ; extra == 'dev'
+Requires-Dist: peft (==0.3.0) ; extra == 'dev'
+Requires-Dist: transformers (==4.30.2) ; extra == 'dev'
+Requires-Dist: accelerate (==0.20.3) ; extra == 'dev'
+Requires-Dist: tensorboard (==2.13.0) ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Provides-Extra: quality
+Requires-Dist: loguru (==0.7.0) ; extra == 'quality'
+Requires-Dist: datasets (==2.13.0) ; extra == 'quality'
+Requires-Dist: pydantic (==1.10.9) ; extra == 'quality'
+Requires-Dist: peft (==0.3.0) ; extra == 'quality'
+Requires-Dist: transformers (==4.30.2) ; extra == 'quality'
+Requires-Dist: accelerate (==0.20.3) ; extra == 'quality'
+Requires-Dist: tensorboard (==2.13.0) ; extra == 'quality'
+Requires-Dist: black ; extra == 'quality'
+Requires-Dist: isort ; extra == 'quality'
+Requires-Dist: flake8 ; extra == 'quality'
+
+# autotrain-
+
+WIP

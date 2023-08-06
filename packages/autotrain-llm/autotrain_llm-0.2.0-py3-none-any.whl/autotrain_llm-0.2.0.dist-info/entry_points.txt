@@ -1,0 +1,2 @@
+[console_scripts]
+autotrain-llm = autotrain_llm.cli.cli:main
