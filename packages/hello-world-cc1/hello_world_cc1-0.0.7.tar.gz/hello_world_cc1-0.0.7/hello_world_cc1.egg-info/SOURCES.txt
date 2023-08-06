@@ -1,0 +1,11 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+hello_word_cc1/__init__.py
+hello_word_cc1/client.py
+hello_world_cc1.egg-info/PKG-INFO
+hello_world_cc1.egg-info/SOURCES.txt
+hello_world_cc1.egg-info/dependency_links.txt
+hello_world_cc1.egg-info/requires.txt
+hello_world_cc1.egg-info/top_level.txt
