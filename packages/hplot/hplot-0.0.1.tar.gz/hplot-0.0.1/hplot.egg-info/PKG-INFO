@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: hplot
+Version: 0.0.1
+Summary: Some plot utils for research
+Author: AeroH
+Author-email: zhang.yuh@outlook.com
+Requires-Python: >=3.8
+License-File: LICENSE
