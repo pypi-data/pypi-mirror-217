@@ -1,0 +1,10 @@
+pollination/annual_daylight/__init__.py,sha256=h7H3mrCDuwXxEQRhe_CP1VNU-nqCstjPiDYASPh1LVs,112
+pollination/annual_daylight/_post_process.py,sha256=Pj6wa7n39JNy0DEPI4wS8QLbb4IGEkcn0pq1xu6Bapk,1322
+pollination/annual_daylight/_prepare_folder.py,sha256=V2dLek83c6yKAi_Po9QewWW_dlcw3OJ9byrEvSH3c_k,6308
+pollination/annual_daylight/_raytracing.py,sha256=Gle0Zou632LanHs8xpoul3WuJFXwW_deUEe4z2l0Sxk,3630
+pollination/annual_daylight/entry.py,sha256=OemaKFSt3Rdcy9CKJL_1sVk1X9i9nFq-p4A2yuSF7AE,7800
+pollination_annual_daylight-0.10.7.dist-info/LICENSE,sha256=Z1MPjprfzF0unXK4BFAM67dHL_hMNKZymoCiqb6QHuY,5748
+pollination_annual_daylight-0.10.7.dist-info/METADATA,sha256=ZtKQd1xxKwbw29jPvn6O-x6WyIPcBf7-fdFT_Im9dLo,2313
+pollination_annual_daylight-0.10.7.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+pollination_annual_daylight-0.10.7.dist-info/top_level.txt,sha256=XqhRsBTtFfrCqv7O3outMqm3JZeMavDRExrfL0uUs74,12
+pollination_annual_daylight-0.10.7.dist-info/RECORD,,
