@@ -1,0 +1,12 @@
+msglib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+msglib/broker.py,sha256=mOS6OhP1MOGKdeffBUq7yD7Z4py3miplkHLWuaOOwO0,2196
+msglib/client.py,sha256=jXh4SjdDrdICU2GoSd1_ENXvaZekDNRYFJ8SI9kDfmw,1115
+msglib/handlers.py,sha256=jvDcVmXj8YSDtn58gsHm7tVeTZ3kMAexEkSluJl4Hss,1843
+msglib/ios/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+msglib/ios/io_memory.py,sha256=CpZHz5dIRGRCBqcrj2jYuhYyNa3J14IdGNuGEPfD_oU,4224
+msglib/ios/io_sockets.py,sha256=iahOA8Vk2etIziX_S9EEAb0bpXXf1BcJo5DqCasE46Q,4058
+msglib/message.py,sha256=tFyhQgTxBPuMPerr_lcDLsfh0LivUCs-p5uUL9BOqA4,1635
+msglib-0.2.0.dist-info/LICENSE,sha256=qTQpZj-T7W-WW-B3mE9IG_wepNc4JymhfrLzRWIPgd4,721
+msglib-0.2.0.dist-info/METADATA,sha256=OUtl9UzmX4fpZX586Bt-5SFKQVRgUh1W4CeLJZs7m6Q,5564
+msglib-0.2.0.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+msglib-0.2.0.dist-info/RECORD,,
