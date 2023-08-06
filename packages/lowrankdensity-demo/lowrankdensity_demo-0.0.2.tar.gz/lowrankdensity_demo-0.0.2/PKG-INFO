@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: lowrankdensity_demo
+Version: 0.0.2
+Summary: This package does amazing things.
+Home-page: https://github.com/yohila/Summer_School_Package
+Author: Hi Paris
+Author-email: "Hi! Paris" <contact@hiparis.com>
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
