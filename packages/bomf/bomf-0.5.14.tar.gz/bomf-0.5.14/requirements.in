@@ -1,0 +1,8 @@
+attrs
+bo4e
+pydantic==1.*
+typeguard
+frozendict
+bidict
+networkx
+injector
