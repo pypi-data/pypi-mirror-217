@@ -1,0 +1,13 @@
+classroom_extensions/__init__.py,sha256=R82KfSyL4zmbe4R7jbd3fu3t4rhjpNqinB76BM6P5Zs,176
+classroom_extensions/html.py,sha256=PlBADPYoENu5Cr7syZBCcz7HKrrv4xwnJVFh_d4IKJ4,3109
+classroom_extensions/mariadb.py,sha256=hwersGmoDZPdX7hfMgYaxdu_61xD9UnWJMIz6bbd5Dk,2718
+classroom_extensions/mariadb_install.py,sha256=lngcMhR25BQp2dqJdGUnwtzvpjkS1zwArzqFRZ6U72A,4574
+classroom_extensions/mongodb.py,sha256=yPkDol5svem8jQMx9ph1K9O8AHFD4JJUWYPP_cHbUwA,6720
+classroom_extensions/node.py,sha256=Azn6kmr42MINf_NVLKoqmGjjEVdXoHSsd-cBmcDiZlI,11275
+classroom_extensions/plantuml.py,sha256=TiA1FhSFZhKHajN-ylJ8mzN_dfD-vh4GgImCINrbAXY,2976
+classroom_extensions/util.py,sha256=L3562NO6E7BM54dOJ-5-YnR3T7_bicm7DIZtIhRFH6U,1386
+classroom_extensions-0.0.2.dist-info/LICENSE,sha256=At7Pi-O4pgXYDFJ-G4FIkq8xLXP7V6-7Hw72nevT-0k,1072
+classroom_extensions-0.0.2.dist-info/METADATA,sha256=mx4JBG9uwPygpo20gy11NoK1RgMP93qHVa9hexih0jg,5289
+classroom_extensions-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+classroom_extensions-0.0.2.dist-info/top_level.txt,sha256=wxxj0NtpfWQFHKlOxfynCM7ZYHwOjmAkMFZZ6Op7YNs,21
+classroom_extensions-0.0.2.dist-info/RECORD,,
