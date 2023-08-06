@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pyconcurrent
+Version: 0.1.0
+Summary: A secure python library for parallelizing tasks across several CPU cores
+Home-page: UNKNOWN
+Author: Anish Kanthamneni
+Author-email: akneni@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: joblib
+
+UNKNOWN
+
+
