@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: athon
+Version: 1.0.0
+Summary: Athon is a Python module that wraps AWS Athena for seamless execution of SQL queries from Python, enabling analysis, visualization, and exporting of data. It supports creating Athena tables directly from DataFrames
+Author: Omkar Ashrit
