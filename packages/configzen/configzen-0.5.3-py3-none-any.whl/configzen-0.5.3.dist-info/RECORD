@@ -1,0 +1,17 @@
+configzen/__init__.py,sha256=Ti5tb6pxMZYS_EYvtp_ZCkJ9jz7BOsf2KGWx5pX0rq0,536
+configzen/__main__.py,sha256=78-PWqMkZf5To39DyK7Os8AkwSvzMW2PfbvIK-rMffc,935
+configzen/_isolation.py,sha256=ffnKaLGlXIk03vpjLzyZqyK1IxKbufodcfts07wbHeQ,1681
+configzen/_setup.py,sha256=4rVkDiXlxUn5w76-UeuFZpAQnAykA2WkDjlBkxh7w1g,3375
+configzen/config.py,sha256=-0HkjVhUBcMdRENXOT9WjTm8y58OxyutVVHUg9EELMc,77584
+configzen/decorators.py,sha256=C0Yfug0rGOucs_NZ6GawgcGvo5bs1iPjoncCDw8X6dk,5232
+configzen/errors.py,sha256=ZJcQojgX7a5UJ4NlfPPjzfzAvVqM4h96dGYLh3K-O5M,4434
+configzen/field.py,sha256=aKTdVk9IexS6vCFqMAGBKbiJVRF9xH5roNagnCSVuCw,531
+configzen/interpolation.py,sha256=T_9W9dzs76Ep0G7BwnqSbAByieqvyMSwMELnI2X9ouk,6736
+configzen/processor.py,sha256=GIf1AcgD3o-3FqM3F5NuIHEo4sQkouvay2IEqI-oa4s,26250
+configzen/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+configzen/route.py,sha256=ur2QnxkRu_6kUAZRDpNH5f_7BH1ZBSXRnbRslQPnoR4,4704
+configzen/typedefs.py,sha256=Ppf80q8fFBk41E-PLfmNq5EmJ8kMl8T5X1lRjWK4cEM,1197
+configzen-0.5.3.dist-info/LICENSE,sha256=p38ciq2yKPQRC2G7xWuKtl8Fdas2F2sTBlxpvLyOWxg,1083
+configzen-0.5.3.dist-info/METADATA,sha256=l8GMSm7J7_RavZScFAwVwFqaUcUTZJmFqdHQ78dIqT4,14870
+configzen-0.5.3.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+configzen-0.5.3.dist-info/RECORD,,
