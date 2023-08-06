@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: staticpython
+Version: 0.0.1
+Summary: A Python package for enforcing type hints at runtime.
+Home-page: https://github.com/JuanFMontesinos/StaticPython
+Author: Juan Montesinos
+Author-email: jfmontgar@gmail.com
+License: UNKNOWN
+Keywords: type hints enforcement
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
