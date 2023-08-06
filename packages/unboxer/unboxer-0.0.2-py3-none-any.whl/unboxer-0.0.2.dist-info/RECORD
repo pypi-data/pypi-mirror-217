@@ -1,0 +1,13 @@
+unboxer/__init__.py,sha256=ubyfL7SZmvHr2ZpPTFTG7X9-b_N8VpF1zagmyWVnrxk,26367
+unboxer/cldf.py,sha256=ocrHTvtFkypQjhcCfYtZK_rdpOfMmBGKUBDJR4gH5hs,6586
+unboxer/cli.py,sha256=PDij0tlqlpQW622KLjGMc46DLg8SyBupPJdUyNYrt_0,4109
+unboxer/helpers.py,sha256=W72j2a_x0VRkovKGZTKQZuoo9DYgQydzFoXd3qpP7kQ,2168
+unboxer/data/interlinear_config.yaml,sha256=szM-UMsHIlrmXd3VNnpTEEiAwm8VxkqtAMTLKlcC_u4,397
+unboxer/data/shoebox.yaml,sha256=-Pxvo95HtjIob951NVWcOJzxarcxfS-lrE0jRNYFmag,415
+unboxer/data/toolbox.yaml,sha256=-56_xf0MlbXvQeySgvioTUeh7mVZ2bmFZUGH0vc8j6U,431
+unboxer-0.0.2.dist-info/LICENSE,sha256=OPzV6bHGPCXFylyiCR3GYAK-EP8seLDbcbgO87DYM1o,11359
+unboxer-0.0.2.dist-info/METADATA,sha256=uFY-gE13lMp6HaBd27wQmCSMzjlg8OaDXBIqjMyD4Tk,3761
+unboxer-0.0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+unboxer-0.0.2.dist-info/entry_points.txt,sha256=Ep99ecj4q1l-uRubmQ9cw5Z6bokUOCrMXq4emk1ssPo,43
+unboxer-0.0.2.dist-info/top_level.txt,sha256=V0LWhg-f0WnlEo3qkF43r9R7Sf_9owPbXEogCtWNCi4,8
+unboxer-0.0.2.dist-info/RECORD,,
