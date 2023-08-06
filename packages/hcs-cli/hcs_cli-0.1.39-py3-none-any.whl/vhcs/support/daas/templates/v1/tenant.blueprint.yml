@@ -1,0 +1,63 @@
+# 'defaults' is a group of variables that are calculated and referenced by multiple resources.
+# The defaults helps to deduplicate calculated variables, and 
+defaults:
+  name: titan-lite-${deploymentId}
+  tags:
+    - deploymentId=${deploymentId}
+
+# The providers section specifies provider-specific data. Normally this required to initialize
+# a provider.
+providers:
+  - type: azure
+    data: ${vars.provider}
+  - type: hcs
+    data:
+
+resources:
+  - kind: runtime/daas-tenant-calculation # Utilize a custom hcs resource to calculate dynamic values
+    name: myRuntime
+    data: ${vars} # Take the entire unchanged vars as input
+
+  - kind: azure/resource-group
+    name: myRg
+    data:
+      name: ${defaults.name}
+      location: ${myRuntime.location}
+      tags: ${defaults.tags}
+
+  - kind: azure/nsg
+    name: myNsg
+    data:
+      name: ${myRg.name}
+      location: ${myRuntime.location}
+      resourceGroup: ${myRuntime.vNet.resourceGroup}
+      tags: ${defaults.tags}
+
+  - kind: azure/subnet
+    name: mySubnet
+    data:
+      name: ${defaults.name}
+      resourceGroup: ${myRuntime.vNet.resourceGroup}
+      vNetName: ${myRuntime.vNet.name}
+      cidr: ${myRuntime.cidr}
+      nsgName: ${myNsg.name}
+
+  - kind: hcs/pool-template
+    name: myTemplate
+    data:
+      name: ${defaults.name}
+
+  - kind: hcs/pool-group
+    name: myGroup
+    data:
+      name: ${defaults.name}
+
+  - kind: hcs/entitlement
+    name: myEntitlement
+    data:
+      name: ${defaults.name}
+
+  - kind: hcs/launch-item
+    name: myLaunchItem
+    data:
+      name: ${defaults.name}
