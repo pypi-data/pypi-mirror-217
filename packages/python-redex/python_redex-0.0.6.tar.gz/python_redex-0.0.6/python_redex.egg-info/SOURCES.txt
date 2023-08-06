@@ -1,0 +1,17 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+python_redex.egg-info/PKG-INFO
+python_redex.egg-info/SOURCES.txt
+python_redex.egg-info/dependency_links.txt
+python_redex.egg-info/top_level.txt
+redex/__init__.py
+redex.egg-info/SOURCES.txt
+redex.egg-info/dependency_links.txt
+redex.egg-info/top_level.txt
+redex/lib/action.py
+redex/lib/lexical_analysis.py
+redex/lib/split.py
+redex/lib/wildcards.py
