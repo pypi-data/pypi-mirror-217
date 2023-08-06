@@ -1,0 +1,2 @@
+[console_scripts]
+workstation_shell = workstation_shell.workstation_shell:main
