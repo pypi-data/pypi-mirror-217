@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<VTKFile type="PolyData" version="1.0" byte_order="LittleEndian" header_type="UInt64">
+<PolyData>
+<Piece NumberOfPoints="15" NumberOfVerts="0" NumberOfLines="0" NumberOfPolys="0">
+    <Points>
+        <DataArray type="Float32" NumberOfComponents="3" format="ascii">
+        12.7979 16.9470 6.8036 13.1612 16.1311 5.4321 10.7725 16.7112 7.4645 12.1446 16.2047 7.4078 13.3394 15.4887 4.9093 12.4523 15.4280 5.5090 12.0855 15.5610 6.0941 13.2988 15.8537 5.7789 12.6692 15.7696 6.0488 10.7979 16.4909 7.6246 14.8536 15.3677 8.3940 12.0363 15.3991 6.7643 13.4839 15.0995 5.0242 11.3172 16.3850 7.6358 14.5697 15.1549 8.3940 
+        </DataArray>
+    </Points>
+    <PointData>
+        <DataArray type="Float32" Name="tag" format="ascii">
+            480803.0000 475611.0000 469711.0000 490367.0000 472483.0000 469715.0000 473143.0000 482547.0000 481243.0000 477823.0000 64607.0000 486263.0000 474495.0000 488383.0000 54415.0000 
+         </DataArray>
+    </PointData>
+</Piece>
+</PolyData>
+</VTKFile>
