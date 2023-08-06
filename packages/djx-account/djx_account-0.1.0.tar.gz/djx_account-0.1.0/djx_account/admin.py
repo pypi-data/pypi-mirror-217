@@ -1,0 +1,15 @@
+from django.contrib import admin
+from django.contrib.auth.admin import UserAdmin
+
+from djx_account.models import UserModel, OauthCredentials
+
+
+class CustomAdmin(UserAdmin):
+    list_display = ['username', 'email', 'email_confirmed']
+    fieldsets = UserAdmin.fieldsets + (
+        ('Extra Fields', {'fields': ('email_confirmed',)}),
+    )
+
+
+admin.site.register(UserModel, CustomAdmin)
+admin.site.register(OauthCredentials)
