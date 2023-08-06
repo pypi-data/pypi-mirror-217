@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+MediaSecure.egg-info/PKG-INFO
+MediaSecure.egg-info/SOURCES.txt
+MediaSecure.egg-info/dependency_links.txt
+MediaSecure.egg-info/top_level.txt
+mediaSecure/__init__.py
+mediaSecure/encodeB64.py
+mediaSecure/test_encodeB64.py
