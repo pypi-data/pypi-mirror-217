@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: roger-cli
+Version: 0.1.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# roger
+A CLI assistant using GPT.

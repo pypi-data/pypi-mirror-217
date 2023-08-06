@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+roger_cli.egg-info/PKG-INFO
+roger_cli.egg-info/SOURCES.txt
+roger_cli.egg-info/dependency_links.txt
+roger_cli.egg-info/entry_points.txt
+roger_cli.egg-info/requires.txt
+roger_cli.egg-info/top_level.txt
+src/__init__.py
+src/roger/__init__.py
+src/roger/colors.py
+src/roger/key_manager.py
+src/roger/roger.py
+src/roger/utils.py
