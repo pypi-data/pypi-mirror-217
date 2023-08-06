@@ -1,0 +1,16 @@
+README.md
+setup.py
+micomputing/__init__.py
+micomputing/data.py
+micomputing/funcs.py
+micomputing/metrics.py
+micomputing/network.py
+micomputing/plot.py
+micomputing/stdio.py
+micomputing/test.py
+micomputing/trans.py
+micomputing.egg-info/PKG-INFO
+micomputing.egg-info/SOURCES.txt
+micomputing.egg-info/dependency_links.txt
+micomputing.egg-info/requires.txt
+micomputing.egg-info/top_level.txt
