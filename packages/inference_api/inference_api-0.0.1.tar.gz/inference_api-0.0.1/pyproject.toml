@@ -1,0 +1,24 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "inference_api"
+version = "0.0.1"
+description = "A basic API server for doing inference on Huggingface models"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = 'MIT' }
+authors = [{ name = "Wayde Gilliam", email = "waydegilliam@gmail.com" }]
+keywords = ["python", "huggingface", "fastapi"]
+dependencies = ["fastapi", "uvicorn"]
+
+[project.optional-dependencies]
+dev = ["black", "isort"]
+
+[project.scripts]
+inference-api = "inference_api.cli:main_cli"
+
+[project.urls]
+Homepage = "https://github.com/waydegg/inference-api"
+Source = "https://github.com/waydegg/inference-api"
