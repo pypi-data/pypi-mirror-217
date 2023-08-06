@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: dashiqlib
+Version: 0.0.8
+Summary: DashIQ's Python library
+Author: Evan C Pease
+Author-email: evan.pease@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: dnspython (>=2.3.0,<3.0.0)
+Requires-Dist: matplotlib (>=3.7.1,<4.0.0)
+Requires-Dist: numpy (>=1.25.0,<2.0.0)
+Requires-Dist: openai (>=0.27.8,<0.28.0)
+Requires-Dist: pandas (>=2.0.3,<3.0.0)
+Requires-Dist: pymongo (>=4.4.0,<5.0.0)
+Requires-Dist: python-dotenv (>=1.0.0,<2.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: seaborn (>=0.12.2,<0.13.0)
+Description-Content-Type: text/markdown
+
+# DashIQ Lib
+
+This repository is hosts DashIQ's python library.
+
+## Running tests locally
+
+1. Clone the repo
+2. Create a new virtual environment
+3. Install with the extra test dependencies w/ `pip install -e .[tests]` (note, if you use zsh you will have to escape the brackets i.e. `\[tests\]`)
+4. Run the tests: `pytest --cov --cov-report term-missing:skip-covered`. Alternatively run `make tests`
+
+
