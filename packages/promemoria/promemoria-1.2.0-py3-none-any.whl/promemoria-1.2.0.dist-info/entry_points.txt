@@ -1,0 +1,2 @@
+[console_scripts]
+promemoria = promemoria:main
