@@ -1,0 +1,196 @@
+{
+    "wfs": {
+        "ihcantabria": {
+            "noaa_gshhs": {
+                "url": "https://geoserverdev.ihcantabria.com/geoserver/wfs",
+                "version": "1.1.0",
+                "feature": "BaseMaps:GSHHS_f_L1",
+                "type": "coastline",
+                "forcing": "coastline"
+            }
+        }
+    },
+    "opendap": {
+        "emodnet": {
+            "gebco_2022": {
+                "url": "https://erddap.emodnet.eu/erddap/griddap/bathymetry_2022",
+                "type": "topobathymetry",
+                "teseo_input": "topobathymetry",
+                "variable_map": {
+                    "t": "time",
+                    "x": "longitude",
+                    "y": "latitude",
+                    "elevation": "elevation"
+                }
+            }
+        },
+        "ihcantabria": {
+            "gebco_2020": {
+                "id": 145,
+                "username": null,
+                "password": null,
+                "type": "topobathymetry",
+                "teseo_input": "topobathymetry",
+                "variable_map": {
+                    "x": "lon",
+                    "y": "lat",
+                    "elevation": "elevation"
+                }
+            },
+            "emodnet_2020": {
+                "id": 309,
+                "username": null,
+                "password": null,
+                "type": "topobathymetry",
+                "teseo_input": "topobathymetry",
+                "variable_map": {
+                    "x": "lon",
+                    "y": "lat",
+                    "elevation": "elevation"
+                }
+            },
+            "cmems_ibi_hourly": {
+                "id": 374,
+                "username": null,
+                "password": null,
+                "type": "ocean",
+                "teseo_input": "currents",
+                "dt_h": 1,
+                "variable_map": {
+                    "t": "time",
+                    "x": "longitude",
+                    "y": "latitude",
+                    "u": "uo",
+                    "v": "vo"
+                }
+            },
+            "cmems_global_hourly": {
+                "id": 22,
+                "username": null,
+                "password": null,
+                "type": "ocean",
+                "teseo_input": "currents",
+                "dt_h": 1,
+                "variable_map": {
+                    "t": "time",
+                    "x": "longitude",
+                    "y": "latitude",
+                    "u": "uo",
+                    "v": "vo"
+                }
+            },
+            "dwd_icon_europe": {
+                "id": 524,
+                "username": null,
+                "password": null,
+                "type": "atmosphere",
+                "teseo_input": "winds",
+                "dt_h": 1,
+                "variable_map": {
+                    "t": "time",
+                    "x": "longitude",
+                    "y": "latitude",
+                    "u": "uwind",
+                    "v": "vwind"
+                }
+            },
+            "dwd_icon_global": {
+                "id": 525,
+                "username": null,
+                "password": null,
+                "type": "atmosphere",
+                "teseo_input": "winds",
+                "dt_h": 3,
+                "variable_map": {
+                    "t": "time",
+                    "x": "longitude",
+                    "y": "latitude",
+                    "u": "uwind",
+                    "v": "vwind"
+                }
+            },
+            "noaa_gfs_hourly": {
+                "id": 18,
+                "username": null,
+                "password": null,
+                "type": "atmosphere",
+                "teseo_input": "winds",
+                "dt_h": 1,
+                "variable_map": {
+                    "t": "time",
+                    "x": "longitude",
+                    "y": "latitude",
+                    "u": "u-component_of_wind_height_above_ground",
+                    "v": "v-component_of_wind_height_above_ground"
+                }
+            }
+        },
+        "cmems": {
+            "cmems_global_hourly": {
+                "url": "https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_glo_phy_anfc_merged-uv_PT1H-i",
+                "type": "ocean",
+                "teseo_input": "currents",
+                "dt_h": 1,
+                "variable_map": {
+                    "t": "time",
+                    "x": "longitude",
+                    "y": "latitude",
+                    "u": "uo",
+                    "v": "vo"
+                }
+            },
+            "cmems_ibi_15min": {
+                "url": "https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_ibi_phy_anfc_0.027deg-2D_PT15M-i",
+                "type": "ocean",
+                "teseo_input": "currents",
+                "dt_h": 0.25,
+                "variable_map": {
+                    "t": "time",
+                    "x": "longitude",
+                    "y": "latitude",
+                    "u": "uo",
+                    "v": "vo"
+                }
+            },
+            "cmems_ibi_hourly": {
+                "url": "https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_ibi_phy_anfc_0.027deg-2D_PT1H-m",
+                "type": "ocean",
+                "teseo_input": "currents",
+                "dt_h": 1,
+                "variable_map": {
+                    "t": "time",
+                    "x": "longitude",
+                    "y": "latitude",
+                    "u": "uo",
+                    "v": "vo"
+                }
+            },
+            "cmems_global_winds": {
+                "url": "https://nrt.cmems-du.eu/thredds/dodsC/cmems_obs-wind_glo_phy_nrt_l4_0.125deg_PT1H",
+                "type": "satellite",
+                "teseo_input": "winds",
+                "dt_h": 1,
+                "variable_map": {
+                    "t": "time",
+                    "x": "longitude",
+                    "y": "latitude",
+                    "u": "uo",
+                    "v": "vo"
+                }
+            },
+            "cmems_global_winds_reprocessed": {
+                "url": "https://my.cmems-du.eu/thredds/dodsC/cmems_obs-wind_glo_phy_my_l4_0.125deg_PT1H",
+                "type": "satellite",
+                "teseo_input": "winds",
+                "dt_h": 1,
+                "variable_map": {
+                    "t": "time",
+                    "x": "longitude",
+                    "y": "latitude",
+                    "u": "uo",
+                    "v": "vo"
+                }
+            }
+        }
+    }
+}
