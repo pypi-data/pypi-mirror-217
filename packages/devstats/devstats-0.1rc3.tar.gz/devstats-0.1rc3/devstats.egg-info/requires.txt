@@ -1,0 +1,12 @@
+click
+requests
+jupyter
+notebook
+numpy
+networkx
+
+[dev]
+changelist==0.1
+
+[lint]
+pre-commit==3.3.3
