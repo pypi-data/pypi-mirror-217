@@ -1,0 +1,1 @@
+from .version import __name__, __fullname__, __version__
