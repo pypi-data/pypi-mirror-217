@@ -1,0 +1,3 @@
+[console_scripts]
+gd.share=gd.share.main:share
+
