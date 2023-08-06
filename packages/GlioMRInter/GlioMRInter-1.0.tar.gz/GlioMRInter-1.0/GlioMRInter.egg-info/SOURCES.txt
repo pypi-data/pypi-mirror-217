@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+GlioMRInter/__init__.py
+GlioMRInter/dataPreprocessing.py
+GlioMRInter/dataVisualization.py
+GlioMRInter/modelBuilding.py
+GlioMRInter/test.py
+GlioMRInter.egg-info/PKG-INFO
+GlioMRInter.egg-info/SOURCES.txt
+GlioMRInter.egg-info/dependency_links.txt
+GlioMRInter.egg-info/requires.txt
+GlioMRInter.egg-info/top_level.txt

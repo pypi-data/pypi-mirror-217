@@ -1,0 +1,16 @@
+numpy
+pandas
+scipy
+pydicom
+opencv-python
+sklearn
+statsmodels
+skfeature
+tensorflow
+tensorflow-io
+Keras
+pymrmr
+ReliefF
+matplotlib
+seaborn
+matplotlib-venn
