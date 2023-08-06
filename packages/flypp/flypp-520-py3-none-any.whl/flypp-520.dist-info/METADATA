@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: flypp
+Version: 520
+Summary: fast fetch
+Home-page: UNKNOWN
+Author: flypp
+Author-email: flypp@noexists.com
+License: MIT License
+Platform: all
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries
+License-File: LICENSE
+Requires-Dist: pygame
+Requires-Dist: pyautogui
+
+fast fetch
+
