@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: testdwg
+Version: 0.4.13
+Summary: 
+Home-page: https://github.com/yatmanov/testdwg
+License: MIT
+Author: yatmanov
+Author-email: yatmanov@megaputer.ru
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Project-URL: Changelog, https://github.com/yatmanov/testdwg/blob/master/CHANGELOG.md
+Project-URL: Documentation, https://yatmanov.github.io/testdwg/
+Project-URL: Repository, https://github.com/yatmanov/testdwg
+Description-Content-Type: text/markdown
+
+testdwg
+
