@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: cusum
+Version: 0.1.1
+Summary: Full cumulative sum processing for change detection
+Home-page: 
+Author: Antoine Pfefer
+Author-email: 
+License: MIT
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+# Cusum
+
+My awesome package to get change detections
+
+### Install
+In a terminal: `pip install cusum`
