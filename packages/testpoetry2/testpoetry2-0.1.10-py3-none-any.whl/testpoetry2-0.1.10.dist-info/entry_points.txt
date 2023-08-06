@@ -1,0 +1,3 @@
+[console_scripts]
+test-pwgen=testpoetry2.test-pwgen:main
+
