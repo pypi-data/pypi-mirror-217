@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: jsonjavascriptnotation
+Version: 0.1.5
+Summary: Access JSON using Javascript Object Notation.
+Home-page: https://github.com/Emmerson-Miranda/jsonjavascriptnotation
+Author: Emmerson Miranda
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# JSON Javascript Notation
+Allows Access to JSON using Javascript Object Notation.
+
+
+Installation
+```
+pip install jsonjavascriptnotation
+```
+
+Lets image we have following JSON object.
+```
+    {  
+        "employee": {  
+            "name":       "Mario",   
+            "salary":      1000000,   
+            "married":    true,
+            "occupation": "writer"
+        }  
+    }  
+```
+
+The python way to access data inside JSON is using brackets and quotes like a normal dictionary.
+```
+    import json
+    json_obj1 = json.loads(json_txt)
+    assert json_obj1['employee']['name'] == 'Mario'
+    assert json_obj1['employee']['salary'] == 1_000_000
+```
+
+Using the JSON wrapper you can access data like a normal object.
+```
+    from jsonjavascriptnotation.json_wrapper import JONFactory
+    ...
+    json_obj2 = JONFactory.wrap(json_obj1)
+    assert json_obj2.employee.name == 'Mario'
+    assert json_obj2.employee.salary == 1_000_000
+```
+
