@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: atro-pylog
+Version: 0.1.4
+Summary: A simple logging library for Python. That either uses Loguru or OpenTelmetry collector (useful for local & cluster logging).
+Author: Atropos
+Author-email: pypi.rising@atro.xyz
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: opentelemetry-api
+Requires-Dist: opentelemetry-exporter-otlp-proto-http
+Requires-Dist: opentelemetry-sdk
+Requires-Dist: pydantic
+Requires-Dist: pydantic-settings
+Requires-Dist: python-dotenv
+Requires-Dist: rich
