@@ -1,0 +1,8 @@
+README.md
+setup.py
+cryptarithm/__init__.py
+cryptarithm/cryptarithm.py
+cryptarithm.egg-info/PKG-INFO
+cryptarithm.egg-info/SOURCES.txt
+cryptarithm.egg-info/dependency_links.txt
+cryptarithm.egg-info/top_level.txt
