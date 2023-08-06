@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+flypp/.DS_Store
+flypp/__init__.py
+flypp/egg.py
+flypp/flypp.gif
+flypp/main.py
+flypp.egg-info/PKG-INFO
+flypp.egg-info/SOURCES.txt
+flypp.egg-info/dependency_links.txt
+flypp.egg-info/entry_points.txt
+flypp.egg-info/requires.txt
+flypp.egg-info/top_level.txt
+flypp/__pycache__/egg.cpython-310.pyc

@@ -1,0 +1,2 @@
+include flypp/flypp.gif
+recursive-include flypp/ *
