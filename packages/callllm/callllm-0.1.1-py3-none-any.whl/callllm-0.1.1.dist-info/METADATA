@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: callllm
+Version: 0.1.1
+Summary: Asynchronous, concurrent requests to the LLM REST APIs.
+Home-page: https://github.com/v587su/CallLLM
+Author: Zhensu Sun
+Author-email: zhensuuu@gmail.com
+License: MIT
+Keywords: requests,python-requests,gevent,llm
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: gevent (==0.13.7)
+Requires-Dist: greenlet (==0.4.0)
+Requires-Dist: requests (==0.13.7)
+
+Asynchronous, concurrent requests to the LLM REST APIs, that respect their rate limits, using gevent and requests.
