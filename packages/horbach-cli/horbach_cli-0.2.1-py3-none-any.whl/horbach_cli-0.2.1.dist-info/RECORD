@@ -1,0 +1,12 @@
+horbach_cli/README.md,sha256=ZaRPBLxVmSKj5h4BCb3LIB1camaCqb9ufzDs6RJYEPM,2047
+horbach_cli/__init__.py,sha256=HfjVOrpTnmZ-xVFCYSVmX50EXaBQeJteUHG-PD6iQs8,22
+horbach_cli/converter.py,sha256=t0jbbs8rDxH8xLG1-YEZ8faLi_rnH7mvAuR0Dsourp8,1326
+horbach_cli/deduplicator.py,sha256=2sI8rFX31WGol1Bw_6L9jM4ifbSvec9YivuC4p3G16M,998
+horbach_cli/libs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+horbach_cli/libs/common.py,sha256=2CQYs1GwBblivoe5FMggaN0tM_Ii3S61lLK0XPq2xPg,309
+horbach_cli/libs/converter.py,sha256=FLrNBzBfXzCFYH5kLT3UwZWf-jjT31a4UXKh-ckBnvE,687
+horbach_cli/main.py,sha256=G6w_7GaToyoEaFjOiZ6GkxtZfnLBboksU87nkUGYJi8,1295
+horbach_cli-0.2.1.dist-info/METADATA,sha256=vhieSgpxcF4zUHX5X8-jHA4PuM98X_WbiwfSoxhN9QY,640
+horbach_cli-0.2.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+horbach_cli-0.2.1.dist-info/entry_points.txt,sha256=XI_Y81qCtNslTRSTVGHIDuFYM03Dz6rTyk1saGM135w,46
+horbach_cli-0.2.1.dist-info/RECORD,,
