@@ -1,0 +1,7 @@
+setuptools
+pydantic
+numpy
+requests
+python-dotenv
+kserve
+click
