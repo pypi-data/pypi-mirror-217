@@ -1,0 +1,17 @@
+setman/__classpath__.py,sha256=i-PbvqojyTIYaGJanqB9ICUid24Gq4cgo21Ju6qorQg,718
+setman/__init__.py,sha256=8x-He-hOgGtEsLIjEGjNhD3nHwv9tPwCieYRLnj2R1c,166
+setman/__main__.py,sha256=w7HDyPYM5wWJNhU13EWyjsDnxpqbBzW9UnhgJdC9k7c,4752
+setman/core/__init__.py,sha256=UcjzjJoCvWB52OxeoJxK9B6VJugsTjfbtGDxKsG4xHE,197
+setman/core/setman.py,sha256=QCuOWEJY8Iu2vW-zvzlfe0ZPfDH9rqCR7onLR8G92ZM,6164
+setman/core/setman_config.py,sha256=FkALwfXxSCz6eMafUmAbs7h-Aj84Bztdpd13N79nDNI,823
+setman/core/setman_enums.py,sha256=aABunEABFijw5RxDoDjAXyZS-zVk_jn8amlmeJOghmY,1406
+setman/settings/__init__.py,sha256=_m8meXxbczQdjCF-sj9gu1WFF2CqjBBOjLTUKojRN50,256
+setman/settings/settings.py,sha256=YabWqRdZE_-AgOL1Scip-pQcEEAlfnIRlE_gygucbqc,9241
+setman/settings/settings_config.py,sha256=iSNvXrlZLV9a3rveese1dnJJ3G2D3XqLFPjUqasblaE,1404
+setman/settings/settings_entry.py,sha256=zrXPLYnaPnJ-WdvftQIpMGl4qUN0p4TRCpnhvUwAMUA,3446
+setman/settings/settings_repository.py,sha256=rOdUlrT1jRGfD0hHUhOupjY0ZF-hAxSCgj_gj8a572Y,3887
+setman/settings/settings_service.py,sha256=vO3_Na5PQ4cqCg1-pzSy4gahBnD0H81b60CKxZKOy7k,2054
+hspylib_setman-0.9.2.dist-info/METADATA,sha256=TUXL-bXMbTVo-fk7bSOL5cKp33C0dyYrhU25izn4F3E,1761
+hspylib_setman-0.9.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+hspylib_setman-0.9.2.dist-info/top_level.txt,sha256=A4A5tVBNuw7i3RYXqN3duQbfFhx5KOEFn34d0mgDo2M,7
+hspylib_setman-0.9.2.dist-info/RECORD,,
