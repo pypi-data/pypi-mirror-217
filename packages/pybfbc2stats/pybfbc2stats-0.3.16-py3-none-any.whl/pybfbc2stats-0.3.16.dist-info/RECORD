@@ -1,0 +1,15 @@
+pybfbc2stats/__init__.py,sha256=7AU7j7tmyeuJ_3Co10lDuJdhDrnQZZm9ghRtEVjeNhw,1150
+pybfbc2stats/asyncio_client.py,sha256=EN0GI0onN_ThsmjbPHGt6PT1MtSFk0wVbpg88KQmT1M,16612
+pybfbc2stats/asyncio_connection.py,sha256=bR2qVzEehIaBqbe3JhOPGcF35KPKtNs15JYYdnod1iY,5007
+pybfbc2stats/buffer.py,sha256=uKgaCocTx1sQvLrGvduCjp9jyYO-p__bhMt5VF_KBI4,2170
+pybfbc2stats/client.py,sha256=UZvlkZE6bPuXc8yWebUfc6vwywO8Z1mslttE6oyLizE,40012
+pybfbc2stats/connection.py,sha256=Inkh6-FprTGKDD8eBPO9pNbaHFTXk9Qrkibr2-mcy3k,6288
+pybfbc2stats/constants.py,sha256=LlwvyOlMVouOcE17oYEiIG1wAjQUvsyqCnGFXHcGpo8,40305
+pybfbc2stats/exceptions.py,sha256=npwefbinkWirOYwFbL5jEJlnngHDivP6uRxpS6RZ7qg,474
+pybfbc2stats/logger.py,sha256=y182BcMTIwvHHyS3gn5ZrgQuTGSNwKhD9imeQ6KJK10,56
+pybfbc2stats/packet.py,sha256=uzR4WtCxulrHnqtJYpig_tMqYPGRdhEanmdqjMt9Hn4,10990
+pybfbc2stats-0.3.16.dist-info/LICENSE.md,sha256=GbjlnvoQaMTG1hb8UtPi59CV5Hs3LWiUuzsf6lAkbu4,1074
+pybfbc2stats-0.3.16.dist-info/METADATA,sha256=uUQxFLQGDqbzzjR8ijF3TAU_9aVLRXOkRCOhA9nKc2c,20902
+pybfbc2stats-0.3.16.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pybfbc2stats-0.3.16.dist-info/top_level.txt,sha256=69BWwtOu7S9XkmQCXWmPnZld3PSkmuGhNYaIMlqak90,13
+pybfbc2stats-0.3.16.dist-info/RECORD,,
