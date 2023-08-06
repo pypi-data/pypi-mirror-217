@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: yt-dlp-types
+Version: 0.0.5
+Summary: Typing stubs for yt-dlp
+License: MIT
+Author: Andrew Udvare
+Author-email: audvare@gmail.com
+Requires-Python: >=3.10,<4
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Typing :: Typed
+Description-Content-Type: text/markdown
+
+# yt-dlp types
+
+Types for yt-dlp.
+
+## Installation
+
+```shell
+pip install types-yt-dlp
+```
+
+```shell
+poetry add types-yt-dlp
+```
+
