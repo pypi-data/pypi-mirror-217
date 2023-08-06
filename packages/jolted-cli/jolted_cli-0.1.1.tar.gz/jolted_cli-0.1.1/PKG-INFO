@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: jolted-cli
+Version: 0.1.1
+Summary: 
+Author: Your Name
+Author-email: you@example.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: joltedmod (>=0.2.0,<0.3.0)
+Requires-Dist: nbformat (>=5.9.0,<6.0.0)
+Description-Content-Type: text/markdown
+
+

@@ -1,0 +1,44 @@
+{
+  "blocks": [
+    {
+      "type": "SeedBlock",
+      "identity": "professor of computer science",
+      "topic": "data structures",
+      "target_audience": "first year computer science students"
+    },
+    {
+      "type": "ExplanatoryBlock",
+      "topic": "data structures",
+      "method_of_teaching": "a metaphor without code",
+      "target_audience": "first year computer science students",
+      "context": null,
+      "cell_type": "MARKDOWN"
+    },
+    {
+      "type": "ExplanatoryBlock",
+      "topic": "data structures",
+      "method_of_teaching": "a concrete code example that's thoroughly commented",
+      "target_audience": "first year computer science students",
+      "context": 1,
+      "cell_type": "MARKDOWN"
+    },
+    {
+      "type": "KnowledgeTestingBlock",
+      "n": 1,
+      "question_type": "programming problem",
+      "topic": "data structures",
+      "target_audience": "first year computer science students",
+      "context": null,
+      "cell_type": "MARKDOWN"
+    },
+    {
+      "type": "KnowledgeTestingBlock",
+      "n": 1,
+      "question_type": "programming problem",
+      "topic": "data structures",
+      "target_audience": "first year computer science students",
+      "cell_type": "CODE",
+      "context": 3
+    }
+  ]
+}

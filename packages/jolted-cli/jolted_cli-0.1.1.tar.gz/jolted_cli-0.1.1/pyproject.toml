@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "jolted-cli"
+version = "0.1.1"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "jolted_cli"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+joltedmod = "^0.2.0"
+click = "^8.1.3"
+nbformat = "^5.9.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+jolted-cli = "jolted_cli:main.cli"
