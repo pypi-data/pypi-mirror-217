@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: multimetric
+Version: 2.0.0
+Summary: Calculate code metrics in various languages
+Home-page: https://github.com/priv-kweihmann/multimetric
+Author: Konrad Weihmann
+Author-email: kweihmann@outlook.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: zlib/libpng License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Quality Assurance
+Requires-Python: >=3.10
+Description-Content-Type: text/plain
+License-File: LICENSE.Zlib
+Requires-Dist: chardet (~=5.0)
+Requires-Dist: pygments (~=2.15)
+
+See https://github.com/priv-kweihmann/multimetric for documentation
+
