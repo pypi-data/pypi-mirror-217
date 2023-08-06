@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: golfy
+Version: 1.3.4
+Summary: Heuristic peptide pool optimization for ELISpot and other immunological assays
+Author-email: Alex Rubinsteyn <alex.rubinsteyn@unc.edu>
+Project-URL: Homepage, https://github.com/pirl-unc/golfy
+Project-URL: Bug Tracker, https://github.com/pirl-unc/golfy
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Environment :: Console
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# golfy
+
+Heuristic solver for peptide pool assingments
+
+## Usage
+
+```python
+
+from golfy import init, is_valid, optimize
+
+# create a random initial assignment of peptides to pools
+s = init(num_peptides = 100, peptides_per_pool = 5, num_replicates = 3)
+
+# the random assignment probably isn't yet a valid solution
+assert not is_valid(s)
+
+# iteratively swap peptides which violate constraints until
+# a valid configuration is achieved
+optimize(s)
+
+assert is_valid(s)
+```
