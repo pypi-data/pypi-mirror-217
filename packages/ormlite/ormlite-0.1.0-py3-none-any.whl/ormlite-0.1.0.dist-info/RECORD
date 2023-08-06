@@ -1,0 +1,13 @@
+ormlite/__init__.py,sha256=Q09X7KKJ8QOm-OikYFuVkGVDYNRtUGp6L1eBkZS43Ko,377
+ormlite/adapters.py,sha256=_VUd9UyrU4w7-tULZKsm2lTkcRwkoeecn0OFH0zWE2k,1203
+ormlite/errors.py,sha256=cXTgqvj2LpzFwweSCkAV4xgV_yO-l9UPbhnQnLDHh_U,197
+ormlite/migrate.py,sha256=tBZ3bmH3WsPxt-ruaJWW8ZZ8W5DF8EiLHI397yT3WhI,3795
+ormlite/orm.py,sha256=_O3JBQnVGqYE8TyOHCGnzrPGPPNiIkzzB6YmrLCTBWY,5486
+ormlite/query.py,sha256=G3DsewtWkI1v5Hpak_9XMdbgS-Sf3CaMt4nbFPLAHwk,5975
+ormlite/sqlite.py,sha256=Vhi7T2e6Gwm3XzaOvA1ga1sRr2TePTiJ--6Q521TgiM,289
+ormlite/utils.py,sha256=vGYC4nu-6XqkN4Jk9ztuT4eGWi93b0uhog56bHpGgEM,589
+ormlite-0.1.0.dist-info/LICENSE,sha256=lFmPKhPrg4yRI_1rOQyR4Jz7Mm7F6J98SUPORR73MWM,1062
+ormlite-0.1.0.dist-info/METADATA,sha256=lNyNSmL_LhQh2o1zrDhlQ_ffg3gOK_XlDni0i39J2OU,4023
+ormlite-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ormlite-0.1.0.dist-info/top_level.txt,sha256=n-v-aNAQ-xQOyLqdC4wjybkkYC-DYivfES8I23LkTZs,8
+ormlite-0.1.0.dist-info/RECORD,,
