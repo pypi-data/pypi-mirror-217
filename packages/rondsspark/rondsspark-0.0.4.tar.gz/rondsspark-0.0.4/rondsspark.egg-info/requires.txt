@@ -1,0 +1,8 @@
+pyspark
+cassandra-driver
+pandas
+pyYAML
+schedule
+wheel
+findspark
+importlib_resources
