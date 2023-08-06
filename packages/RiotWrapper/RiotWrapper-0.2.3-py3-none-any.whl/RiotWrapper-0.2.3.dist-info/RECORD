@@ -1,0 +1,13 @@
+Endpoints/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Endpoints/championMastery_v4.py,sha256=JC5SwIMnF4hUAvhQ9qEKpQ5vqs1hb41MJ1yaeq81les,1416
+Endpoints/champion_v3.py,sha256=ACw5EQwmgzQTxmn0yAYt7XsxmNd_3oD8I6P8-Hw2Ccg,420
+Endpoints/leagueExp_v4.py,sha256=d9aDDSzlHqDlB1XNnqs5W3Maanr9HLRz7TJwosAV85Q,811
+Endpoints/league_v4.py,sha256=Xsv2Q658paimQDJ5JR4nbzUl7HOVq9658yNT04fPByE,1970
+Endpoints/lolStatus_v4.py,sha256=Le4mubKI4v_zgdQZaixTcOiGUeJRcFGBm7jxSxVWhxk,399
+Endpoints/match_v5.py,sha256=nLEypF8Hlnq07DfExG1lGfEVgl0WepqI0iawlW7gA6E,1555
+Endpoints/spectator_v4.py,sha256=FhPR0i1QPHvFFMkiKgY7iJl5jdPjp0UU6dRxKdOPrZ8,649
+Endpoints/summoner_v4.py,sha256=mR-TJkykb1jbZDkjoajaqS8aEsLdHxfsYgw_Dg2qiRY,1425
+RiotWrapper-0.2.3.dist-info/METADATA,sha256=9Xso5LYXpzx_kwjh--41IapxRnJpvlw2dVfD9EfZhHk,459
+RiotWrapper-0.2.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+RiotWrapper-0.2.3.dist-info/top_level.txt,sha256=x4LSHeNEMuGtDo6CjfpgCd_DZDdTy76-2XXG-uK7gRw,10
+RiotWrapper-0.2.3.dist-info/RECORD,,

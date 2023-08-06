@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: RiotWrapper
+Version: 0.2.3
+Requires-Dist: attrs (==23.1.0)
+Requires-Dist: cattrs (==23.1.2)
+Requires-Dist: certifi (==2023.5.7)
+Requires-Dist: charset-normalizer (==3.1.0)
+Requires-Dist: idna (==3.4)
+Requires-Dist: platformdirs (==3.8.0)
+Requires-Dist: requests (==2.31.0)
+Requires-Dist: requests-cache (==1.1.0)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: url-normalize (==1.4.3)
+Requires-Dist: urllib3 (==2.0.3)
+
