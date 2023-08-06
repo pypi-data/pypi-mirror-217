@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: brkraw
+Version: 0.3.11
+Summary: Bruker PvDataset Loader
+Home-page: https://github.com/brkraw/brkraw
+Author: SungHo Lee
+Author-email: shlee@unc.edu
+License: GNLv3
+Keywords: bruker data_handler converter administrator_tool
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Classifier: Natural Language :: English
+Requires-Python: >3.5
+License-File: LICENSE
+Requires-Dist: nibabel (>=3.0.2)
+Requires-Dist: numpy (>=1.18.0)
+Requires-Dist: pandas (>=1.0.0)
+Requires-Dist: pillow (>=7.1.1)
+Requires-Dist: tqdm (>=4.45.0)
+Requires-Dist: openpyxl (>=3.0.3)
+Requires-Dist: xlrd (>=1.0.0)
+Provides-Extra: simpleitk
+Requires-Dist: SimpleITK (>=1.2.4) ; extra == 'simpleitk'
+
