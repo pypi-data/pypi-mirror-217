@@ -1,0 +1,9 @@
+pioreactor_basic_auth_for_ui/__init__.py,sha256=hWcXYvRsx7aCTvN9unElwcOPN2CPdZ1LvXfIqg9zCkk,921
+pioreactor_basic_auth_for_ui/post_install.sh,sha256=j0hVLdOwfyZiflNhnQcMVSmXEYfuofEoh5rLosMfhxk,615
+pioreactor_basic_auth_for_ui/pre_uninstall.sh,sha256=2WKXdkDT12X_g5wThfey9xc6ynWcnYYh_rpUe3Biamo,116
+pioreactor_basic_auth_for_ui-0.0.1.dist-info/LICENSE.txt,sha256=RTnFva3sXKEPtRcFEvpWgg6NqscwpXrZ0ckNz9x2tlo,1079
+pioreactor_basic_auth_for_ui-0.0.1.dist-info/METADATA,sha256=pBkXfnyi1qg7DNF6CNNSSGt0lBaJXzq1mp8zkwvn4XI,518
+pioreactor_basic_auth_for_ui-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pioreactor_basic_auth_for_ui-0.0.1.dist-info/entry_points.txt,sha256=zRMF8Q3XmiqG4iS1HFX2jeYP9spwssC4cUnf4bCoeIM,81
+pioreactor_basic_auth_for_ui-0.0.1.dist-info/top_level.txt,sha256=P8Y7wsgMRz6C9u3bPNoXTZcR5lK18DPwG13YcNQ5veM,29
+pioreactor_basic_auth_for_ui-0.0.1.dist-info/RECORD,,
