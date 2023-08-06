@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: gajula
+Version: 0.0.1
+Summary: This is demo package
+Author: Jagadeesh Gajula
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: django (==2.2)
+
+A sample python package deployment utility for SQLShack Demo.
