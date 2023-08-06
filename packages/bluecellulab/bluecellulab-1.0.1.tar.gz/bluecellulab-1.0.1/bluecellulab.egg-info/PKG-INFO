@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: bluecellulab
+Version: 1.0.1
+Summary: The Pythonic Blue Brain simulator access
+Home-page: https://github.com/BlueBrain/BlueCelluLab
+Author: Blue Brain Project, EPFL
+License: Apache2.0
+Keywords: computational neuroscience,simulation,analysis,parameters,Blue Brain Project
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX
+Classifier: Topic :: Scientific/Engineering
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Utilities
+License-File: LICENSE
+License-File: AUTHORS.txt
