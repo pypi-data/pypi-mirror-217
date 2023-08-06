@@ -1,0 +1,462 @@
+====================
+Templates
+
+* Can Use Any Bombs:
+      All of the following:
+          # Possible to lay any kind of bombs
+          Morph Ball
+          Bombs or Power Bombs
+
+* Can Use Bombs:
+      All of the following:
+          # Able to lay normal bombs
+          Bombs and Morph Ball
+
+* Can Use Power Bombs:
+      All of the following:
+          # Able to lay Power Bombs
+          Morph Ball and Power Bombs
+
+* Can Use Spring Ball:
+      All of the following:
+          # Able to use spring ball
+          Morph Ball and Spring Ball
+
+* Can Use Spider Ball:
+      All of the following:
+          # Able to use spider ball
+          Morph Ball and Spider Ball
+
+* Power Grip Wall:
+      Any of the following:
+          # Able to get over a mid-sized wall
+          Hi-Jump Boots or Power Grip or Space Jump or Walljump (Beginner) or Can Use Spider Ball
+          All of the following:
+              # IBJ Beginner
+              Infinite Bomb Jumping (Beginner) and Can Use Bombs
+
+* Hijump Wall:
+      Any of the following:
+          # Able to get over a high sized wall
+          Hi-Jump Boots or Space Jump or Walljump (Intermediate) or Can Use Spider Ball
+          All of the following:
+              # IBJ Intermediate
+              Infinite Bomb Jumping (Intermediate) and Can Use Bombs
+
+* Hijump With Power Grip Wall:
+      Any of the following:
+          # Able to get over a high sized wall that requires powergrip
+          Space Jump or Walljump (Intermediate) or Can Use Spider Ball
+          All of the following:
+              Hi-Jump Boots
+              Power Grip or Walljump (Beginner)
+          All of the following:
+              # IBJ
+              Infinite Bomb Jumping (Intermediate) and Can Use Bombs
+
+* Space Jump Wall:
+      Any of the following:
+          Space Jump or Walljump (Advanced) or Can Use Spider Ball
+          All of the following:
+              # IBJ
+              Infinite Bomb Jumping (Advanced) and Can Use Bombs
+          Hi-Jump Boots and Walljump (Intermediate)
+
+* Tunnel Climb:
+      All of the following:
+          Morph Ball
+          Any of the following:
+              # A way to get into hole
+              Bombs or Power Grip or Spider Ball or Spring Ball
+
+* High Mid-Air Morph Tunnel Climb:
+      All of the following:
+          Morph Ball
+          Any of the following:
+              # A way to get into hole
+              Power Grip or Spider Ball or Mid-Air Morph (Intermediate)
+              All of the following:
+                  # High Sprinball
+                  Hi-Jump Boots and Spring Ball
+              All of the following:
+                  # IBJ
+                  Infinite Bomb Jumping (Beginner) and Can Use Bombs
+              All of the following:
+                  # Bomb Springball
+                  Spring Ball and Can Use Bombs
+              All of the following:
+                  # Walljump and Morph
+                  Mid-Air Morph (Intermediate) and Walljump (Intermediate)
+
+* Low Mid-Air Morph Tunnel Climb:
+      All of the following:
+          Morph Ball
+          Any of the following:
+              # A way to get into hole
+              Bombs or Power Grip or Spider Ball or Spring Ball
+              Morph Ball and Mid-Air Morph (Intermediate)
+
+* Power Grip Climb:
+      All of the following:
+          Morph Ball
+          Any of the following:
+              # A way to get into the hole
+              Power Grip or Can Use Spider Ball
+              All of the following:
+                  # midair morph combo
+                  Mid-Air Morph (Intermediate)
+                  Hi-Jump Boots or Space Jump or Walljump (Intermediate)
+              Can Use Bombs and Can Use Spring Ball
+              All of the following:
+                  # IBJ
+                  Infinite Bomb Jumping (Beginner) and Can Use Bombs
+
+* Hijump Tunnel Climb:
+      All of the following:
+          Morph Ball
+          Any of the following:
+              # A way to get into the hole
+              Can Use Spider Ball
+              Any of the following:
+                  # IBJ
+                  Infinite Bomb Jumping (Intermediate) or Can Use Bombs
+              Hi-Jump Boots and Power Grip
+              All of the following:
+                  # midair morph combo
+                  Power Grip or Mid-Air Morph (Intermediate)
+                  Space Jump or Walljump (Intermediate)
+
+* Space Jump Tunnel Climb:
+      All of the following:
+          Morph Ball
+          Any of the following:
+              # A way to get into the hole
+              Can Use Spider Ball
+              All of the following:
+                  # IBJ
+                  Infinite Bomb Jumping (Advanced) and Can Use Bombs
+              All of the following:
+                  # midair morph combo
+                  Power Grip or Mid-Air Morph (Intermediate)
+                  Space Jump or Walljump (Advanced)
+
+* Defeat Alpha:
+      All of the following:
+          Any of the following:
+              # Item requirements
+              Missiles ≥ 7 or Super Missiles ≥ 2
+              Charge Beam and Knowledge (Intermediate)
+          Any of the following:
+              # Damage requirements
+              Combat (Expert) or Normal Damage ≥ 66
+
+* Defeat Gamma:
+      All of the following:
+          Any of the following:
+              # Item requirements
+              Missiles ≥ 15 or Super Missiles ≥ 3
+              Charge Beam and Knowledge (Intermediate)
+          Any of the following:
+              # Energy requirements
+              Combat (Expert) or Normal Damage ≥ 99
+
+* Defeat Zeta:
+      All of the following:
+          Any of the following:
+              # Item requirements
+              Missiles ≥ 30 or Super Missiles ≥ 6
+              Charge Beam and Knowledge (Intermediate)
+          Any of the following:
+              # Energy requirements
+              Normal Damage ≥ 199
+              All of the following:
+                  Combat (Advanced)
+                  Morph Ball or Space Jump or Walljump (Advanced)
+
+* Defeat Omega:
+      All of the following:
+          Any of the following:
+              # Item requirements
+              Missiles ≥ 32 or Super Missile Launcher ≥ 7
+              Charge Beam and Knowledge (Intermediate)
+              All of the following:
+                  # Backshots
+                  Combat (Intermediate)
+                  Missiles ≥ 11 or Super Missiles ≥ 3
+          Any of the following:
+              # Energy requirements
+              Normal Damage ≥ 399
+              All of the following:
+                  Combat (Advanced)
+                  Morph Ball or Space Jump or Walljump (Advanced)
+
+* Go Through Vines:
+      Gravity Suit or Damage Boost (Beginner)
+
+* Destroy Turbine:
+      Missiles ≥ 3 or Super Missiles or Can Use Any Bombs
+
+* Destroy Ice Barrier:
+      All of the following:
+          Ice Beam
+          Missiles or Super Missiles
+
+* ZipFromDestroyable:
+      Any of the following:
+          All of the following:
+              Zip Trick (Advanced)
+              Missiles or Can Use Bombs
+          Zip Trick (Hypermode) and Can Use Power Bombs
+
+* Can Use Charged Bomb Jump:
+      All of the following:
+          Charge Beam and Can Use Bombs
+          Ice Beam or Plasma Beam or Power Beam or Spazer Beam or Wave Beam
+
+* Defeat Larva:
+      All of the following:
+          Ice Beam
+          Any of the following:
+              # Kill them while frozen
+              Missiles ≥ 5 or Super Missiles
+          Any of the following:
+              # Get rid of them if they're draining you
+              Combat (Intermediate) or Can Use Bombs
+
+* All Artifacts:
+      Metroid DNA 1 and Metroid DNA 10 and Metroid DNA 11 and Metroid DNA 12 and Metroid DNA 13 and Metroid DNA 14 and Metroid DNA 15 and Metroid DNA 16 and Metroid DNA 17 and Metroid DNA 18 and Metroid DNA 19 and Metroid DNA 2 and Metroid DNA 20 and Metroid DNA 21 and Metroid DNA 22 and Metroid DNA 23 and Metroid DNA 24 and Metroid DNA 25 and Metroid DNA 26 and Metroid DNA 27 and Metroid DNA 28 and Metroid DNA 29 and Metroid DNA 3 and Metroid DNA 30 and Metroid DNA 31 and Metroid DNA 32 and Metroid DNA 33 and Metroid DNA 34 and Metroid DNA 35 and Metroid DNA 36 and Metroid DNA 37 and Metroid DNA 38 and Metroid DNA 39 and Metroid DNA 4 and Metroid DNA 40 and Metroid DNA 41 and Metroid DNA 42 and Metroid DNA 43 and Metroid DNA 44 and Metroid DNA 45 and Metroid DNA 46 and Metroid DNA 5 and Metroid DNA 6 and Metroid DNA 7 and Metroid DNA 8 and Metroid DNA 9
+
+====================
+Dock Weaknesses
+
+> Door
+  * Normal Door
+      Open:
+          Trivial
+      No lock
+
+
+  * Missile Door
+      Open:
+          Trivial
+      Lock type: FRONT_BLAST_BACK_FREE_UNLOCK
+          Missiles or Super Missiles
+
+
+  * Super Missile Door
+      Open:
+          Trivial
+      Lock type: FRONT_BLAST_BACK_FREE_UNLOCK
+          Super Missiles
+
+
+  * Power Bomb Door
+      Open:
+          Trivial
+      Lock type: FRONT_BLAST_BACK_FREE_UNLOCK
+          Power Bombs
+
+
+  * Water Turbine Door
+      Open:
+          Trivial
+      Lock type: FRONT_BLAST_BACK_FREE_UNLOCK
+          Destroy Turbine
+
+
+  * After Tester Door
+      Open:
+          After Boss Tester Defeated
+      No lock
+
+
+  * Tower Activated Door
+      Open:
+          After Tower Interior Activated
+      No lock
+
+
+  * Golden Temple EMP Activated Door
+      Open:
+          After EMP in Golden Temple
+      No lock
+
+
+  * Hydro Station EMP Activated Door
+      Open:
+          After EMP in Hydro Station 
+      No lock
+
+
+  * Industrial Complex EMP Activated Door
+      Open:
+          After EMP in Area 3 
+      No lock
+
+
+  * A5 Activation Tower Door
+      Open:
+          After EMP Activated
+      No lock
+
+
+  * A5 Near Activation Tower EMP Door
+      Open:
+          After EMP NearA5EMPActivationStatue
+      No lock
+
+
+  * A5 Robots Showcase EMP Door
+      Open:
+          After EMP A5RobotsEMP
+      No lock
+
+
+  * A5 Near Save EMP Door
+      Open:
+          After EMP NearA5Save
+      No lock
+
+
+  * A5 Near Screw EMP Door
+      Open:
+          After EMP NearScrewEMP
+      No lock
+
+
+  * A5 Near Pipe Hub EMP Door
+      Open:
+          After A5NearPipeHubEMP
+      No lock
+
+
+  * A5 Near Right Side EMP Door
+      Open:
+          After A5NearRightSideEMP
+      No lock
+
+
+  * Serris Door
+      Open:
+          Before Distribution Center Item at Ice location or After Boss Serris Defeated
+      No lock
+
+
+  * Charge Beam Door
+      Open:
+          Charge Beam
+      No lock
+
+
+  * Wave Beam Door
+      Open:
+          Wave Beam
+      No lock
+
+
+  * Spazer Beam Door
+      Open:
+          Spazer Beam
+      No lock
+
+
+  * Plasma Beam Door
+      Open:
+          Plasma Beam
+      No lock
+
+
+  * Ice Beam Door
+      Open:
+          Ice Beam
+      No lock
+
+
+  * Bomb Door
+      Open:
+          Can Use Bombs
+      No lock
+
+
+  * Spider Ball Door
+      Open:
+          Can Use Spider Ball
+      No lock
+
+
+  * Screw Attack Door
+      Open:
+          Screw Attack
+      No lock
+
+
+  * Locked Door
+      Open:
+          Impossible
+      Lock type: FRONT_BLAST_BACK_IMPOSSIBLE
+          Trivial
+
+  > Dock Rando:
+      Unlocked: Normal Door
+      Locked: Locked Door
+      Change from:
+          After Tester Door
+          Missile Door
+          Normal Door
+          Power Bomb Door
+          Super Missile Door
+          Tower Activated Door
+      Change to:
+          Bomb Door
+          Charge Beam Door
+          Ice Beam Door
+          Locked Door
+          Missile Door
+          Normal Door
+          Plasma Beam Door
+          Power Bomb Door
+          Screw Attack Door
+          Spazer Beam Door
+          Spider Ball Door
+          Super Missile Door
+          Wave Beam Door
+
+
+> Tunnel
+  * Morph Ball Tunnel
+      Open:
+          Morph Ball
+      No lock
+
+  > Dock Rando: Disabled
+
+
+> Pipe
+  * Teleporter
+      Open:
+          Morph Ball
+      No lock
+
+  > Dock Rando: Disabled
+
+
+> Dock
+  * Open Passage
+      Open:
+          Trivial
+      No lock
+
+
+  * Back Only
+      Open:
+          Impossible
+      No lock
+
+
+  * Not Determined
+      Open:
+          Impossible
+      No lock
+
+  > Dock Rando: Disabled
+
