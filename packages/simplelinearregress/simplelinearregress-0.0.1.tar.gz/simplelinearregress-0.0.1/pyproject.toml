@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "simplelinearregress"
+version = "0.0.1"
+authors = [
+    { name = "Cong Kha Nguyen", email = "congkhanguyen@gmail.com" },
+]
+description = "This is a simple implementation of linear regression"
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "numpy",
+    "scikit-learn",
+    "matplotlib",
+    "flask",
+    "requests",
+    "python-dotenv"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/congkhanguyen/simplelinearregress"
+"Bug Tracker" = "https://github.com/congkhanguyen/simplelinearregress/issues"

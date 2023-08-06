@@ -1,0 +1,121 @@
+Metadata-Version: 2.1
+Name: simplelinearregress
+Version: 0.0.1
+Summary: This is a simple implementation of linear regression
+Author-email: Cong Kha Nguyen <congkhanguyen@gmail.com>
+Project-URL: Homepage, https://github.com/congkhanguyen/simplelinearregress
+Project-URL: Bug Tracker, https://github.com/congkhanguyen/simplelinearregress/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Simple Linear Regression
+## This is a simple implementation of linear regression.
+1. Install package `simplelinearregress` package by `pip`. All dependent packages have been already installed.
+- `pip install simplelinearregress ==0.0.1 `
+2. Train model with diabetes dataset, evaluate the trained model, save the trained model to disk
+    ``` Python
+    import os
+    import pickle
+    from linear_reg.simple_linear_regr import SimpleLinearRegression
+    from linear_reg.simple_linear_regr_utils import generate_data, evaluate
+    
+    if __name__ == "__main__":
+        # load diabetes data
+        X_train, y_train, X_test, y_test = generate_data()
+    
+        # load model
+        model = SimpleLinearRegression()
+    
+        # trained model
+        model.fit(X_train, y_train)
+    
+        # evaluation model
+        predicted = model.predict(X_test)
+        evaluate(model, X_test, y_test, predicted)
+    
+        # save trained model
+        if not os.path.exists('saved_model'):
+            os.makedirs('saved_model')
+        model_path = os.path.join("saved_model", "linear_model.dat")
+    
+        with open(model_path, 'wb') as saved_model:
+            pickle.dump(model, saved_model)
+    ```
+3. The evaluated result is as follows:
+    ````
+    Slope: [[937.18913157]]; Intercept: [152.9193589]
+    Mean squared error: 2549.27
+    Coefficient of determination: 0.47
+    ****** Success ******
+    ````
+4. Create a RESTful API server with Flask
+- Create a configure file in `configs` folder, named `.env`. This file includes all configurations of servers.
+    ````
+    # ip and port of server
+    HOST=0.0.0.0
+    PORT=8080
+    MODEL_DIR= "saved_model"
+    MODEL_NAME="linear_model.dat"
+    API_KEYS=I1TIISEUKJBTJVNO3M24UC7L71CAW3T0,AY814XUOHKNI4R0DIPXYRRO07L5EIQFX,REEOBZZ6FL03VDIAX6LR71RFNFIJYTJJ,FRY7XKAGFZG3WGNX9V4MK7A7O6T8VORK,AU39QYVZIKCUITCOYMZ6STUDC6R9GBKF
+    ````
+- Run API server. Note that you must import `SimpleLinearRegression`
+    ```Python
+    from linear_reg.main import main
+    from linear_reg.simple_linear_regr import SimpleLinearRegression
+    
+    if __name__ == '__main__':
+        main()
+    ```
+- Server ready started as follows:
+    ````
+     * Serving Flask app 'linear_reg.main'
+     * Debug mode: on
+    WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+     * Running on all addresses (0.0.0.0)
+     * Running on http://127.0.0.1:8080
+     * Running on http://192.168.10.102:8080
+    Press CTRL+C to quit
+     * Restarting with stat
+     * Debugger is active!
+     * Debugger PIN: 236-046-492
+    ````
+5. Create a client to request RESTful API server
+    ```python
+    import requests
+    import ast
+    from linear_reg.simple_linear_regr_utils import generate_data
+    
+    if __name__ == '__main__':
+        # load data
+        X_train, y_train, X_test, y_test = generate_data()
+    
+        api_key = "I1TIISEUKJBTJVNO3M24UC7L71CAW3T0"
+    
+        # Header input
+        headers = {"Content-Type": "application/json", "regression-api-key": api_key}
+    
+        # API url
+        url = 'http://localhost:8080/batch'
+    
+        # sending data
+        data = {'X_test': X_test.tolist()}
+    
+        # Request server
+        response = requests.post(url, json=data, headers=headers)
+    
+        # Convert server response into JSON format
+        response_content = response.content
+        response_content = response.content.decode("utf-8")
+        response_content = ast.literal_eval(response_content)
+        print("Predict results:")
+        print(response_content["results"])
+    ```
+- The response prediction is as follows:
+    ```
+    Predict results:
+    [225.89220475078582, 115.78961465717714, 163.26504341313685, 114.77949915173122, 120.8401921844069, 158.2144658859071, 235.99335980524535, 121.85030768985287, 99.62776657004196, 123.87053870074476, 204.67977913642085, 96.5974200537041, 154.1740038641233, 130.9413472388664, 83.46591848290672, 171.34596745670444, 138.01215577698807, 138.01215577698807, 189.5280465547316, 84.47603398835268]
+    ```
