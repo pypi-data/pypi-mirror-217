@@ -1,0 +1,9 @@
+README.md
+setup.py
+visionner/__init__.py
+visionner/core.py
+visionner.egg-info/PKG-INFO
+visionner.egg-info/SOURCES.txt
+visionner.egg-info/dependency_links.txt
+visionner.egg-info/requires.txt
+visionner.egg-info/top_level.txt

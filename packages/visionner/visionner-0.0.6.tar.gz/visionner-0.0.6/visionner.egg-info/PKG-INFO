@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: visionner
+Version: 0.0.6
+Summary: manipulate your image dataset easly
+Author: charles TCHANAKE
+Author-email: <youremail@email.com>
+Keywords: python
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
