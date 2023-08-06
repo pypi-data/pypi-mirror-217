@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: Cliente
+Version: 0.0.3
+Summary: Módulo que representa a classe Cliente do sistema bancário
+Description-Content-Type: text/markdown
+
+# Classe Cliente
+
+Classe que representa a entidade Cliente de um sistema bancÃ¡rio. O Cliente contÃ©m os atributos:
+- Nome: Nome do cliente
+- Idade: Idade do cliente em anos
+- Data de nascimento: Data em que o cliente nasceu
+- id: Identificador Ãºnico do cliente
+- Children: Quantidade de crianÃ§as/ filhos que o cliente possui
+- Dias trabalhados: Quantidade de dias trabalhados que o cliente possui
+- Education: NÃ­vel de escolaridade do cliente
+- Education id: Identificador Ãºnico do atributo "Education"
+- Status familiar: Classe que representa o status civil do cliente
+- Status familiar id: Identificador Ãºnico do atributo "Status familiar id"
+- GÃªnero (Masculino, Feminino ou XMA)
+- Tipo de trabalho: CLT, PJ, etc...
+- dÃ­vida: Se o cliente apresenta ou nÃ£o algum tipo de dÃ­vida
+- Renda mensal total
+- purpose: PropÃ³sito em que o cliente apresenta o desejo em alcanÃ§ar uma linha de crÃ©dito
+- RepositÃ³rio de contas do cliente
