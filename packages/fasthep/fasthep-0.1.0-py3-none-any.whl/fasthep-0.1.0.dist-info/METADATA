@@ -1,0 +1,113 @@
+Metadata-Version: 2.1
+Name: fasthep
+Version: 0.1.0
+Summary: A meta package for the FAST-HEP toolkit
+Author-email: Luke Kreczko <fast-hep@cern.ch>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering
+Classifier: Typing :: Typed
+Requires-Dist: fasthep-cli
+Requires-Dist: fasthep-logging
+Requires-Dist: typing_extensions >=3.7; python_version<'3.8'
+Requires-Dist: fast-carpenter ; extra == "carpenter"
+Requires-Dist: fast-curator ; extra == "carpenter"
+Requires-Dist: fast-flow ; extra == "carpenter"
+Requires-Dist: pytest >=6 ; extra == "dev"
+Requires-Dist: pytest-cov >=3 ; extra == "dev"
+Requires-Dist: pre-commit ; extra == "dev"
+Requires-Dist: mypy >=0.971 ; extra == "dev"
+Requires-Dist: Sphinx>=4.0 ; extra == "docs"
+Requires-Dist: myst_parser>=0.13 ; extra == "docs"
+Requires-Dist: sphinx-book-theme>=0.1.0 ; extra == "docs"
+Requires-Dist: sphinx_copybutton ; extra == "docs"
+Requires-Dist: fast-carpenter ; extra == "full"
+Requires-Dist: fast-curator ; extra == "full"
+Requires-Dist: fast-flow ; extra == "full"
+Requires-Dist: fast-plotter ; extra == "full"
+Requires-Dist: scikit-validate ; extra == "full"
+Requires-Dist: fast-plotter ; extra == "plot"
+Requires-Dist: pytest >=6 ; extra == "test"
+Requires-Dist: pytest-cov >=3 ; extra == "test"
+Requires-Dist: scikit-validate ; extra == "validate"
+Project-URL: Bug Tracker, https://github.com/FAST-HEP/fasthep/issues
+Project-URL: Changelog, https://github.com/FAST-HEP/fasthep/releases
+Project-URL: Discussions, https://github.com/FAST-HEP/fasthep/discussions
+Project-URL: Homepage, https://github.com/FAST-HEP/fasthep
+Provides-Extra: carpenter
+Provides-Extra: dev
+Provides-Extra: docs
+Provides-Extra: full
+Provides-Extra: plot
+Provides-Extra: test
+Provides-Extra: validate
+
+# fasthep
+
+[![Actions Status][actions-badge]][actions-link]
+[![Documentation Status][rtd-badge]][rtd-link]
+
+[![PyPI version][pypi-version]][pypi-link]
+[![PyPI platforms][pypi-platforms]][pypi-link]
+
+[![GitHub Discussion][github-discussions-badge]][github-discussions-link]
+[![Gitter][gitter-badge]][gitter-link]
+
+FAST-HEP provides tools for analysis of high-energy physics data. It is designed
+to be used in conjunction [SciKit-HEP](https://scikit-hep.org/) packages such as
+[uproot](https://github.com/scikit-hep/uproot5) and
+[awkward-array](https://github.com/scikit-hep/awkward) and more. On the data
+processing side it leverages [Numba](https://numba.pydata.org/) and
+[Cupy](https://cupy.dev/) to provide fast and efficient implementations of
+common analysis tasks. For distributed computing, Dask is used as the primary
+backend.
+
+## Installation
+
+The meta-package `fasthep` can be installed via `pip` or `conda`:
+
+```bash
+pip install fasthep
+```
+
+by default, this will install only the core packages such as the FAST-HEP CLI
+and logging packages. To install the full package, including the optional
+dependencies, use:
+
+```bash
+pip install fasthep[full]
+```
+
+You can also cherry-picker the optional dependencies you want to install:
+
+```bash
+pip install fasthep[plotting, carpenter, validate]
+```
+
+<!-- prettier-ignore-start -->
+[actions-badge]:            https://github.com/FAST-HEP/fasthep/workflows/CI/badge.svg
+[actions-link]:             https://github.com/FAST-HEP/fasthep/actions
+[github-discussions-badge]: https://img.shields.io/static/v1?label=Discussions&message=Ask&color=blue&logo=github
+[github-discussions-link]:  https://github.com/orgs/FAST-HEP/discussions
+[gitter-badge]:             https://badges.gitter.im/FAST-HEP/community.svg
+[gitter-link]:              https://gitter.im/FAST-HEP/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge
+[pypi-link]:                https://pypi.org/project/fasthep/
+[pypi-platforms]:           https://img.shields.io/pypi/pyversions/fasthep
+[pypi-version]:             https://img.shields.io/pypi/v/fasthep
+[rtd-badge]:                https://readthedocs.org/projects/fasthep/badge/?version=latest
+[rtd-link]:                 https://fasthep.readthedocs.io/en/latest/?badge=latest
+
+<!-- prettier-ignore-end -->
+
