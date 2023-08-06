@@ -1,0 +1,11 @@
+fuisce/_version.py,sha256=UKP2_zgQN5a-0BsfrLhAKQGv3g7QHH-ppuyLsQUxd1o,160
+fuisce/database/__init__.py,sha256=I7RmG57QFxOgNwlihDo02kyGaJ4aaXQ1MIZym1Jc3GU,5080
+fuisce/database/utils.py,sha256=-WJb4WBrIrYa7g6mJZLRsCWX8wuOisiYB3rZXdHa0ck,394
+fuisce/testing/__init__.py,sha256=dSv_wPHasmWiz2AZ7_SHOdX-3gvewCsMnUKu_LRuy-8,59
+fuisce/testing/helpers.py,sha256=0WCQhQk08vN6RwfWs8udxsJMkKmq_sO-1r8ojhN0Muc,8093
+fuisce-0.0.0.dist-info/METADATA,sha256=5mY6wA0hK2Yr-hl3_8JutlyHNodQDX9t4sO4nrIwr4s,1601
+fuisce-0.0.0.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+fuisce-0.0.0.dist-info/entry_points.txt,sha256=ptsTcMOjJKsCT8ci6ftg6n8Nhpps2I5DInMaaxT-apQ,43
+fuisce-0.0.0.dist-info/licenses/COPYING,sha256=5X8cMguM-HmKfS_4Om-eBqM6A1hfbgZf6pfx2G24QFI,35150
+fuisce-0.0.0.dist-info/licenses/LICENSE,sha256=FgBl0xcC9943WVl3p8ym9UP6TVS0An3LgCkz9gYTCfo,149
+fuisce-0.0.0.dist-info/RECORD,,
