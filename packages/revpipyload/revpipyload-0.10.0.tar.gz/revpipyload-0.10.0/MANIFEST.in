@@ -1,0 +1,6 @@
+recursive-include data *
+include LICENSE.txt
+include Makefile
+include MANIFEST.in
+include requirements.txt
+include setup.py

@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: revpipyload
+Version: 0.10.0
+Summary: PLC Loader für Python-Projekte auf den RevolutionPi
+Home-page: https://revpimodio.org/revpipyplc/
+Author: Sven Sager
+Author-email: akira@narux.de
+Maintainer: Sven Sager
+Maintainer-email: akira@revpimodio.org
+License: GPLv2
+Keywords: revpi,revolution pi,revpimodio,plc
+Platform: revolution pi
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: No Input/Output (Daemon)
+Classifier: Intended Audience :: Manufacturing
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: System :: Operating System
+License-File: LICENSE.txt
+
+Dieses Programm startet beim Systemstart ein angegebenes Python PLC 
+Programm. Es überwacht das Programm und startet es im Fehlerfall neu. 
+Bei Absturz kann das gesamte /dev/piControl0 auf 0x00 gesetzt werden. 
+Außerdem stellt es einen XML-RPC Server bereit, über den die Software 
+auf den RevPi geladen werden kann. Das Prozessabbild kann über ein 
+Tool zur Laufzeit überwacht werden.
