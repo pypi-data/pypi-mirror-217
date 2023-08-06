@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: yttext
+Version: 0.0.2
+Summary: A Python package for scraping subtitles from youtube videos.
+Home-page: https://github.com/lukemvc/yttext
+
+yttext is a Python package for automatically collecting subtitles from a youtube video, sanitizing the text to be lowercase and single spaced, and writing it to a .txt file.
