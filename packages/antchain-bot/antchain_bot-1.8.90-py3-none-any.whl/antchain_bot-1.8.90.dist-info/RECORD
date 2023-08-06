@@ -1,0 +1,8 @@
+antchain_sdk_bot/__init__.py,sha256=RebRWw-QnMx1sANqvpPGTeKvmjTA5OCIyVT7gJCtRX0,22
+antchain_sdk_bot/client.py,sha256=7go8sk6Z_Xqhh_2lDiMYdS1fzobmQdcLto-0f8Ay4kc,444092
+antchain_sdk_bot/models.py,sha256=uk0swJzOOIy__OBS6T8apU0EuXaa48gFqQrn3LLIyxY,1184117
+antchain_bot-1.8.90.dist-info/LICENSE,sha256=0CFItL6bHvxqS44T6vlLoW2R4Zaic304OO3WxN0oXF0,600
+antchain_bot-1.8.90.dist-info/METADATA,sha256=0iHxbMVc27mcN1fASDYcJ6QvzQxT3kUM8mAZj4Ui4uE,1993
+antchain_bot-1.8.90.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+antchain_bot-1.8.90.dist-info/top_level.txt,sha256=gpn1OPRhS8ydjW8IxqApJiA6jx285ves96g9kcJN9iA,17
+antchain_bot-1.8.90.dist-info/RECORD,,
