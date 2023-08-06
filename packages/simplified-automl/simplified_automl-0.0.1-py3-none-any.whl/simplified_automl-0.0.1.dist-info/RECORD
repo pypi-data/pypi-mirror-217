@@ -1,0 +1,11 @@
+api.py,sha256=lCTKx6hywPr207Tx-7-SEVLhyJ1NQ-zRJ2ZkbWnsWCI,21619
+license.py,sha256=fs78vWQcB2kYS6mkGRfDbCi_qjaqKI5mVj2Xk3TyNxc,10287
+service.py,sha256=pJF3r_UajpyCw5FEJRAfKIzY7mWeyIWtzxY3rmVBSMQ,29047
+pyarmor_runtime_000000/__init__.py,sha256=MLsoNSgfVhdP0BXVF4pkHAmD7Y6FoTs7R3COk5YX-34,103
+pyarmor_runtime_000000/pyarmor_runtime.pyd,sha256=ST2-RoYXbHVyciRP4gbIcXQT2MKYrqzHb1BtRAj4FxY,614912
+simplified_automl-0.0.1.dist-info/LICENSE.txt,sha256=9jrE0e7-Iki3oVdrOxgbseZDNPnAHZQQ2MqtAwmO89U,1710
+simplified_automl-0.0.1.dist-info/METADATA,sha256=khhwK5OFC4UIavxUImMv3bUTJWUBvV3PxEy0e0lU0wI,239
+simplified_automl-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+simplified_automl-0.0.1.dist-info/entry_points.txt,sha256=PwoXj6qJmAS2BXwMmE-VVD3EmLAIXK28Pj6ROJhvBHE,42
+simplified_automl-0.0.1.dist-info/top_level.txt,sha256=ykSndg17bxJSCzNlQQhsJ2Xk2q7lFeF6yBvaw95lC8Y,43
+simplified_automl-0.0.1.dist-info/RECORD,,
