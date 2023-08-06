@@ -1,0 +1,9 @@
+README.md
+setup.py
+holamundoplayeraleserdez/__init__.py
+holamundoplayeraleserdez/lala.py
+holamundoplayeraleserdez/player.py
+holamundoplayeraleserdez.egg-info/PKG-INFO
+holamundoplayeraleserdez.egg-info/SOURCES.txt
+holamundoplayeraleserdez.egg-info/dependency_links.txt
+holamundoplayeraleserdez.egg-info/top_level.txt
