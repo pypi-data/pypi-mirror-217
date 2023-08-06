@@ -1,0 +1,13 @@
+greeting/__init__.py,sha256=oOZdvmRCVFCtcasiwjAWi-cDPo43jO1eFibHHqExY7o,132
+greeting/admin.py,sha256=suMo4x8I3JBxAFBVIdE-5qnqZ6JAZV0FESABHOSc-vg,63
+greeting/apps.py,sha256=kgoueQxZJbKYEiB9G3L-jS_ICbj-bJXH1uD7YLp2p0A,154
+greeting/models.py,sha256=Vjc0p2XbAPgE6HyTF6vll98A4eDhA5AvaQqsc4kQ9AQ,57
+greeting/tests.py,sha256=0BZdsSjgEbKM5h40F5wnC0wyCqPmZvZqVpawlOjnBLI,381
+greeting/urls.py,sha256=kj5htUWy80tMzp1jUvG31GH2iJWzqbCAFLOjGhpUc7A,136
+greeting/views.py,sha256=sd1POCH3Op9MTHqCwyReiurvjsR39Pu_rrwNFHI-Fb0,193
+greeting/static/greeting/style.css,sha256=Tn4GSVbxFNjDMwpBy5IMt0-5T-3N7T2nT4mFyeDgdyE,36
+greeting/templates/greeting/index.html,sha256=2y4QGP-EP95OsTnezqgSJdOQPyeTC5g2C60LAj1vWL0,106
+greeting_green-0.0.5.dist-info/METADATA,sha256=enwrz80vy04DlBkrD9MOeYnIF6v5tpWWRK9yf-3Z1x0,1542
+greeting_green-0.0.5.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+greeting_green-0.0.5.dist-info/licenses/LICENSE.txt,sha256=46RExFXjIfEh2GLrX2gb24h-u-PLG7tQh5HxGwhll8A,1101
+greeting_green-0.0.5.dist-info/RECORD,,
