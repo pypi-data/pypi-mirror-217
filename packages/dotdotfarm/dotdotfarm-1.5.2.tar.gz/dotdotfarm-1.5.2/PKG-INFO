@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: dotdotfarm
+Version: 1.5.2
+Summary: Path Traversal exploitation tool
+Author: treddis
+License: GPL
+License-File: LICENSE
