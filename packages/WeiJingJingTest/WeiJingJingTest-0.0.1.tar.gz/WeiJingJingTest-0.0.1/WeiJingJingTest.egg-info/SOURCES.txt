@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+WeiJingJingTest/__init__.py
+WeiJingJingTest/theFirstFunction.py
+WeiJingJingTest.egg-info/PKG-INFO
+WeiJingJingTest.egg-info/SOURCES.txt
+WeiJingJingTest.egg-info/dependency_links.txt
+WeiJingJingTest.egg-info/top_level.txt
