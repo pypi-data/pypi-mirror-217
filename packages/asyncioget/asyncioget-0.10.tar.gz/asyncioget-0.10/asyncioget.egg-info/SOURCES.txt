@@ -1,0 +1,14 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+asyncioget/README.MD
+asyncioget/__init__.py
+asyncioget/requirements.txt
+asyncioget/thirdparty.json
+asyncioget.egg-info/PKG-INFO
+asyncioget.egg-info/SOURCES.txt
+asyncioget.egg-info/dependency_links.txt
+asyncioget.egg-info/requires.txt
+asyncioget.egg-info/top_level.txt
