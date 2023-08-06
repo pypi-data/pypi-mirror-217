@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: Faloodeh
+Version: 0.0.2
+Summary: this package is alpha version of faloodeh framwork from iran
+Home-page: https://github.com/AmirMohammadDehghan/Faloodeh
+Download-URL: https://pypi.org/project/Faloodeh/
+Author: Amir Mohammad Dehghan
+Author-email: faloodehproject@gmail.com
+License: MIT
+Keywords: Faloodeh,FaloodehSearch,FaloodehStack
+License-File: LICENSE
+Requires-Dist: attrs (==22.2.0)
+Requires-Dist: certifi (==2022.12.7)
+Requires-Dist: charset-normalizer (==3.1.0)
+Requires-Dist: colorama (==0.4.6)
+Requires-Dist: exceptiongroup (==1.1.1)
+Requires-Dist: greenlet (==2.0.2)
+Requires-Dist: idna (==3.4)
+Requires-Dist: iniconfig (==2.0.0)
+Requires-Dist: Jinja2 (==3.1.2)
+Requires-Dist: MarkupSafe (==2.1.2)
+Requires-Dist: packaging (==23.0)
+Requires-Dist: parse (==1.19.0)
+Requires-Dist: pluggy (==1.0.0)
+Requires-Dist: pytest (==7.2.2)
+Requires-Dist: requests (==2.28.2)
+Requires-Dist: requests-wsgi-adapter (==0.4.1)
+Requires-Dist: SQLAlchemy (==2.0.9)
+Requires-Dist: tomli (==2.0.1)
+Requires-Dist: typing-extensions (==4.5.0)
+Requires-Dist: urllib3 (==1.26.15)
+Requires-Dist: WebOb (==1.8.7)
+Requires-Dist: whitenoise (==6.4.0)
+Requires-Dist: WTForms (==3.0.1)
+
+hello every one this package is python web framwork and our goal is learning and follow me in my github : https://github.com/amirmohammaddehghan/
