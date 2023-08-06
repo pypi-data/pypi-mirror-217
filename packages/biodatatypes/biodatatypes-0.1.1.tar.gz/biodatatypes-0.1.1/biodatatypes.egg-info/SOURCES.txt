@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+biodatatypes/__init__.py
+biodatatypes/units.py
+biodatatypes.egg-info/PKG-INFO
+biodatatypes.egg-info/SOURCES.txt
+biodatatypes.egg-info/dependency_links.txt
+biodatatypes.egg-info/top_level.txt
+biodatatypes/constants/__init__.py
+biodatatypes/constants/aminoacid.py
+biodatatypes/constants/codon.py
+biodatatypes/constants/nucleotide.py
+biodatatypes/sequence/__init__.py
+biodatatypes/sequence/sequence.py
