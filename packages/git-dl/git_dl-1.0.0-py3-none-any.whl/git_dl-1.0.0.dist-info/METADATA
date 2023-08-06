@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: git-dl
+Version: 1.0.0
+Summary: A simple CLI app to dowload a folder from github
+Author: the-runtime
+License-File: LICENSE
+
