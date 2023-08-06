@@ -1,0 +1,3 @@
+[console_scripts]
+hatena=hatena_cli.main:app
+
