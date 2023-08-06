@@ -1,0 +1,100 @@
+# DataPipelineExecutor
+
+This package contains a pipeline which executes two tasks: Copying data from source (Kusto Cluster DB) to the sink (SQL Sever DB), and Executing a simple SQL Stored Procedure on the copied data. These tasks are completely configurable and the pipeline has following key features:
+- Restartability with configurability.
+- Logging - on top of logging on console, you can pass a dedicated filepath as a parameter if you wish to store the logs. Otherwise a *logger.log* file will be created in the same directory and all logs will be stored there until deleted.
+
+## Installation
+Use pip to install the package:
+
+```shell
+pip install DataPipelineExecutor
+```
+
+Run the following commands to install dependencies:
+```shell
+pip install numpy
+pip install pandas
+pip install azure-kusto-data
+pip install azure-kusto-ingest
+pip install pyodbc
+pip install papermill
+```
+
+## Usage
+
+To execute the pipeline run the following:
+```shell
+import main from DataPipelineExecutor
+main('config.txt', 'logger.log')
+# OR
+main('config.txt')
+```
+
+Note that logger file is optional and if no paramater is passed it will automatically be created in the same directory.
+
+## Configuration
+
+Three config files are required for this pipeline to run:
+- config: This contains parameters (refer to the format below) needed for task executions.
+- source_config: This file contains parameters needed to establish connection to the source server. The path to this file is passed as a parameter in the primary_config file.
+- sink_config: This file contains parameters needed to establish connection to the sink server. The path to this file is passed as a parameter in the primary_config file.
+
+Format for the primary_config:
+```shell
+[Watermark]
+Table_Name =
+Column1 = 
+Column2 = 
+watermark_col_basis_name = 
+DateTime = 
+
+[CopyData]
+SourceType = 
+SinkType = 
+SourceConfig = 
+SinkConfig = 
+SQLTable =
+KustoTable = 
+Query =
+BatchSize = 
+
+[TaskSet]
+Sequence = 
+
+[StoredProcedure]
+ProcedureName = 
+ParameterName = 
+ParameterType = 
+TargetColumn = 
+TargetValue = 
+
+[Notebook]
+Path = 
+OutputPath = 
+Param1 = 
+Param2 =
+```
+
+Format for source_config:
+```shell
+[Kusto]
+Cluster = 
+Database =
+ClientID =
+ClientSecret = 
+AuthorityID = 
+```
+
+Fornmat for sink_config:
+```shell
+[SQL]
+Server = 
+Database = 
+Username =
+Password =
+Driver = 
+```
+
+
+
