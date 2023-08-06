@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: nirtorch
+Version: 0.0.1
+Summary: Neuromorphic Intermediate Representation
+Author-email: Steven Abreu <s.abreu@rug.nl>, Felix Bauer <felix.bauer@synsen.ai>, Jason Eshraghian <jeshragh@ucsc.edu>, Matthias Jobst <matthias.jobst2@tu-dresden.de>, Gregor Lenz <mail@lenzgregor.com>, Jens Egholm Pedersen <jens@jepedersen.dk>, Sadique Sheik <sadique.sheik@synsense.ai>
+Keywords: neuromorphic,intermediate,representation
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+Requires-Dist: torch
+Requires-Dist: nir
+
+# NIRTorch
+
+## Installation
+This is a no frills python package to enable torch based libraries to translate to NIR.
+
+### From source
+
+```shell
+git clone git@github.com:neuromorphs/NIRTorch.git
+cd NIRTorch
+pip install .
+```
+
+### From pip
+
+coming soon .. 
+
+```shell
+pip install nirtorch
+```
