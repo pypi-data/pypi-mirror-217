@@ -1,0 +1,16 @@
+cofybox_dce/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cofybox_dce/abstract.py,sha256=_KDpdqB5LyFRMYdLDStPu9tWgHPczRyt9ewIEHPTZXw,907
+cofybox_dce/factory.py,sha256=CZ2bwjIC19PfpNpp7wRfYI0ZMiRT4r_2SLCiM8U1uP8,2245
+cofybox_dce/misc.py,sha256=CkgykA3RkSwdWlVSvIE1YRSS272BfAYqhNm77bv6Sm0,287
+cofybox_dce/pricing_collectors/__init__.py,sha256=CkgmKjPkcq5m5ieodUW3m48ujDQujRbxjxgCmRAQ4Kg,200
+cofybox_dce/pricing_collectors/belgium.py,sha256=cbDH3J329H2htal1Nkxl9yJsKHyTbMl_QERRmd_bUIY,3354
+cofybox_dce/pricing_collectors/france.py,sha256=2a8paBgYp3F_DVLWlietjPtzcBOKhPgu_WOilOGxQ4U,2076
+cofybox_dce/pricing_collectors/octopus.py,sha256=2WxuDSfqEk3py-tIM9RUpop2k3NPzmHkPtzSFLudlKE,1949
+cofybox_dce/pricing_collectors/octopus_outgoing_workaround.py,sha256=_sJ0ejHrAXFdNVkMo8QipLf5JN7F3WziiR8C075idbk,4624
+cofybox_dce/pricing_collectors/pricing.py,sha256=GPOVKD6YZxHBKkoA1sigssIBU79S9FKO09Q0mj6YRao,1331
+cofybox_dce/pricing_collectors/spain.py,sha256=du6pZosN3olW2wXQNgUGEAQBaQLJvw5sKWC4agoqiAQ,2303
+cofybox_dce-0.0.9.dist-info/LICENSE,sha256=2rbJpPIZGFydJv4inI9ViBYo_Q4Rp54Z3XlMCMGoFCU,1055
+cofybox_dce-0.0.9.dist-info/METADATA,sha256=_JcT_2eqoV9SQzrCFvVCP_szRhH8aA6h2cEjE7Bn1Tk,746
+cofybox_dce-0.0.9.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+cofybox_dce-0.0.9.dist-info/top_level.txt,sha256=R1Fh41kxad7ib6YhrJWhqeZyEWsQASQ8fIhU3rT5n44,12
+cofybox_dce-0.0.9.dist-info/RECORD,,
