@@ -1,0 +1,102 @@
+Metadata-Version: 2.1
+Name: py-luke
+Version: 0.0.3
+Summary: Mock server for OpenAPI documentation
+Project-URL: Homepage, https://github.com/magiskboy/luke
+Project-URL: Documentation, https://github.com/magiskboy/luke#features
+Project-URL: Issues, https://github.com/magiskboy/luke/issues/
+Project-URL: Source, https://github.com/magiskboy/luke
+Author-email: Nguyen Khac Thanh <nguyenkhacthanh244@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Keywords: bundle openapi,jsonschema,mock server,openapi,validate openapi
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Framework :: AnyIO
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Internet :: WWW/HTTP
+Requires-Python: >=3.7
+Requires-Dist: faker
+Requires-Dist: httpx
+Requires-Dist: jsonschema
+Requires-Dist: py-xeger
+Requires-Dist: pyyaml
+Requires-Dist: starlette
+Requires-Dist: typer
+Requires-Dist: uvicorn
+Provides-Extra: dev
+Requires-Dist: mypy; extra == 'dev'
+Requires-Dist: pre-commit; extra == 'dev'
+Requires-Dist: pytest-cov==4.0.0; extra == 'dev'
+Requires-Dist: pytest==7.3.1; extra == 'dev'
+Requires-Dist: ruff; extra == 'dev'
+Requires-Dist: types-pyyaml; extra == 'dev'
+Description-Content-Type: text/markdown
+
+<p align="center">
+  <img width="420px" src="https://i.ibb.co/0BPYdRk/luke.png" alt='py-luke'>
+</p>
+<p align="center">
+    <em>Working on OpenAPI easily.</em>
+</p>
+<p align="center">
+    <a href="https://github.com/magiskboy/luke/actions">
+        <img src="https://github.com/magiskboy/luke/actions/workflows/test-suite.yml/badge.svg" alt="Build Status">
+    </a>
+    <a href="https://app.codecov.io/gh/magiskboy/luke">
+        <img src="https://img.shields.io/codecov/c/github/magiskboy/luke" alt="Code coverage">
+    </a>
+    <a href="https://pypi.org/project/py-luke/">
+        <img src="https://img.shields.io/pypi/dd/py-luke" alt="Download PyPi">
+    </a>
+    <a href="https://github.com/magiskboy/luke/blob/main/LICENSE">
+        <img src="https://img.shields.io/github/license/magiskboy/luke" alt="MIT">
+    </a>
+    <a href="https://pypi.org/project/py-luke/">
+        <img src="https://img.shields.io/pypi/pyversions/py-luke" alt="Py version">
+    </a>
+    <a href="https://pypi.org/project/py-luke/">
+        <img src="https://img.shields.io/pypi/v/py-luke" alt="PyPi version">
+    </a>
+</p>
+
+
+## Features
+
+Some of main features:
+
+- Create a mock server for OpenAPI document
+- Validate OpenAPI document with readable error messages
+- Bundle OpenAPI fragments into the single document
+
+py-luke supports both json and yaml type. Besides, you can also open file via path or URL.
+
+## Installation
+
+You can install py-luke from PyPi or Docker
+
+```bash
+$ pip install py-luke
+$ docker run nguyenkhacthanh/luke:latest
+```
+
+## Usage
+
+```bash
+$ luke mock https://raw.githubusercontent.com/OAI/OpenAPI-Specification/main/examples/v3.0/petstore.yaml
+```
+
+or
+
+```bash
+$ docker run nguyenkhacthanh/latest validate https://raw.githubusercontent.com/OAI/OpenAPI-Specification/main/examples/v3.0/petstore.yaml
+$ docker run -p8000:8000 nguyenkhacthanh/luke:latest mock https://raw.githubusercontent.com/OAI/OpenAPI-Specification/main/examples/v3.0/petstore.yaml
+```
