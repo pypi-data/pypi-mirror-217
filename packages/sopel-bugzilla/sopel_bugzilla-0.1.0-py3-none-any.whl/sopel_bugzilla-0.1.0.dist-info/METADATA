@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: sopel-bugzilla
+Version: 0.1.0
+Summary: Domain-based Bugzilla link handler plugin for Sopel IRC bots.
+Home-page: https://github.com/sopel-irc/sopel-bugzilla
+Author: dgw
+Author-email: dgw@technobabbl.es
+License: Eiffel Forum License, version 2
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: Eiffel Forum License (EFL)
+Classifier: License :: OSI Approved :: Eiffel Forum License
+Classifier: Topic :: Communications :: Chat :: Internet Relay Chat
+Description-Content-Type: text/markdown
+License-File: COPYING
+Requires-Dist: sopel (<8,>=7.0)
+
+# sopel-bugzilla
+
+Domain-based Bugzilla link handler plugin for Sopel IRC bots.
+
+
+## Installation
+
+```sh
+pip install sopel-bugzilla
+```
+
+
+## Configuration
+
+```ini
+[bugzilla]
+domains = 
+    bugzilla.mozilla.org
+    bugzilla.kernel.org
+    bugs.winehq.org
+
+# list of Bugzilla issue tracker domains from which to get information
+```
+
+Run `sopel-plugins configure bugzilla` to enter the domain list interactively.
+
+
+## Special thanks
+
+All contributors to [the original `bugzilla` plugin for
+Sopel](https://github.com/sopel-irc/sopel/commits/master/sopel/modules/bugzilla.py).
+
+
