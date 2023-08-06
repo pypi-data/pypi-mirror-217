@@ -1,0 +1,3 @@
+include enummi/requirements.txt
+include enummi/thirdparty.json
+include enummi/README.MD

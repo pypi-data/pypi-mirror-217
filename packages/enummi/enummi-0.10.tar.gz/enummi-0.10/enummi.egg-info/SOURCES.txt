@@ -1,0 +1,13 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+enummi/README.MD
+enummi/__init__.py
+enummi/requirements.txt
+enummi/thirdparty.json
+enummi.egg-info/PKG-INFO
+enummi.egg-info/SOURCES.txt
+enummi.egg-info/dependency_links.txt
+enummi.egg-info/top_level.txt
