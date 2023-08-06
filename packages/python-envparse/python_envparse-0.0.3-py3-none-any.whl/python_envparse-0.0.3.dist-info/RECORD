@@ -1,0 +1,8 @@
+envparse/__init__.py,sha256=9-frFrbvZAQepreGXjBf0kmF-UGumRDZpfGAIP5wUy8,39
+envparse/_namespace.py,sha256=rUvctxK98ZQ0rHcNeiyRWKh96COA4lKY2XmoQ6CSP_8,455
+envparse/_parser.py,sha256=6fz8go5q8maso2-ApLeijAxA6xP0hu2e6zZStYGrMjk,1312
+envparse/_types.py,sha256=HF2esTX_cVtB4g-cG3qv5371ILTIpUfdfLzYNOk5FpI,181
+python_envparse-0.0.3.dist-info/LICENSE.txt,sha256=Q-wHApJGw2rswvbYglsHq7aXxQMbRt-V5Lnu9SkmK38,1069
+python_envparse-0.0.3.dist-info/METADATA,sha256=6UhGA217qvmBWtKvsXrvXUpUqvOYI7uWzKQY-d5JFl4,567
+python_envparse-0.0.3.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+python_envparse-0.0.3.dist-info/RECORD,,
