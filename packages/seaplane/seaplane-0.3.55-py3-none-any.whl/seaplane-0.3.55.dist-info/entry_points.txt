@@ -1,0 +1,5 @@
+[console_scripts]
+build=seaplane.apps.cli:cli_build
+deploy=seaplane.apps.cli:cli_deploy
+init=seaplane.apps.cli:init
+
