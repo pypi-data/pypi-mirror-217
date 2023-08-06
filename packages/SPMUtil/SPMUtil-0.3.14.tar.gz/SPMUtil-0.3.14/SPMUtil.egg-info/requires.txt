@@ -1,0 +1,7 @@
+scipy
+matplotlib
+pandas
+asyncio
+
+[:python_version < "3.8.3"]
+pickle5
