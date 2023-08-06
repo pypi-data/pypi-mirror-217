@@ -1,0 +1,8 @@
+numpy>=1.21
+pynbt>=2
+
+[docs]
+furo
+myst-parser>=2
+Sphinx>=7
+sphinx-copybutton>=0
