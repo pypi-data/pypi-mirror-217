@@ -1,0 +1,7 @@
+setup.py
+pdcpkg/__init__.py
+pdcpkg/test.py
+pdcpkg.egg-info/PKG-INFO
+pdcpkg.egg-info/SOURCES.txt
+pdcpkg.egg-info/dependency_links.txt
+pdcpkg.egg-info/top_level.txt
