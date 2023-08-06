@@ -1,0 +1,16 @@
+LICENSE
+README.rst
+setup.py
+modelLab/__init__.py
+modelLab/initial_checks.py
+modelLab.egg-info/PKG-INFO
+modelLab.egg-info/SOURCES.txt
+modelLab.egg-info/dependency_links.txt
+modelLab.egg-info/requires.txt
+modelLab.egg-info/top_level.txt
+modelLab/Classification/__init__.py
+modelLab/Classification/classification.py
+modelLab/Classification/classification_metrics.py
+modelLab/Regression/__init__.py
+modelLab/Regression/regression.py
+modelLab/Regression/regression_metrics.py
