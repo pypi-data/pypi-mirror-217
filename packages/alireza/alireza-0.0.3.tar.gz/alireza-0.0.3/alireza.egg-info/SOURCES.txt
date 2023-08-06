@@ -1,0 +1,10 @@
+README.md
+setup.py
+alireza/__init__.py
+alireza/_django_tools.py
+alireza.egg-info/PKG-INFO
+alireza.egg-info/SOURCES.txt
+alireza.egg-info/dependency_links.txt
+alireza.egg-info/top_level.txt
+alireza/__managers/__init__.py
+alireza/__managers/_django_manager.py
