@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: moonwiki
+Version: 2022.7.6.0
+Summary: moonwiki is a wiki application made with Python
+Home-page: https://github.com/RixTheTyrunt/moonwiki
+Author: RixTheTyrunt
+Author-email: rixthetyrunt@gmail.com
+Requires-Python: >=3.0.0
