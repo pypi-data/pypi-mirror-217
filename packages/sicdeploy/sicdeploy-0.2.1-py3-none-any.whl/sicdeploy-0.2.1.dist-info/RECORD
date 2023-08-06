@@ -1,0 +1,11 @@
+sicdeploy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sicdeploy/run.py,sha256=2T47_CwXa-aNRO0elSi72sktwHFuCl26lTgKJh1DjP0,133
+sicdeploy/commands/build.py,sha256=a_WDm3Wkp4oh0FRlsAfUEkI6w_KqKJVIP6wbZyGziho,5488
+sicdeploy/commands/config.py,sha256=Av6z1vdH98t_8RtCopVuNFVpJnUK6hzBzV_M7ZoZLis,1128
+sicdeploy/templates/meta.yaml.dist,sha256=XkJkfyrFwtMQqhrZaRNiCx_1TCbSMT1gz7TX0ngQcmc,388
+sicdeploy/templates/setup.py.dist,sha256=k4vdiwd7EBEvFTALTf08iDpSjTtqlVQXy1qTtn0BdGY,286
+sicdeploy-0.2.1.dist-info/METADATA,sha256=FpgFZueoFvdMPrvcx5pbwiEHftOPGi3nefrft7-Rn_g,183
+sicdeploy-0.2.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+sicdeploy-0.2.1.dist-info/entry_points.txt,sha256=aPu7GCyg3hhhyoHkZqMj61TPF7EsyaDvqAEhvv1sxhQ,48
+sicdeploy-0.2.1.dist-info/top_level.txt,sha256=z1VdGk0Z5y2MVfM9FrJVJBlziag04X0UKyu8PIyj7tM,10
+sicdeploy-0.2.1.dist-info/RECORD,,

@@ -1,0 +1,2 @@
+[console_scripts]
+sicdeploy = sicdeploy.run:run
