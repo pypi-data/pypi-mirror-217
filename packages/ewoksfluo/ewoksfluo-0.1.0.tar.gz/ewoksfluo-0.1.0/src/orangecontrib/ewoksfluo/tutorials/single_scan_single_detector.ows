@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="XRF single-scan single-detector fit" description="">
+	<nodes>
+		<node id="0" name="Example XRF scan" qualified_name="orangecontrib.ewoksfluo.example_xrf_scan.OWExampleXRFScan" project_name="ewoksfluo" version="" title="Example XRF scan" position="(330.0, 436.0)" />
+		<node id="1" name="Single-Detector Fit" qualified_name="orangecontrib.ewoksfluo.single_detector_fit.OWSingleDetectorFit" project_name="ewoksfluo" version="" title="Single-Detector Fit" position="(511.0, 292.0)" />
+		<node id="2" name="Normalization" qualified_name="orangecontrib.ewoksfluo.normalization.OWNormalization" project_name="ewoksfluo" version="" title="Normalization" position="(707.0, 442.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="config" sink_channel="config" enabled="true" source_channel_id="config" sink_channel_id="config" />
+		<link id="1" source_node_id="0" sink_node_id="2" source_channel="normalize_uris" sink_channel="normalize_uris" enabled="true" source_channel_id="normalize_uris" sink_channel_id="normalize_uris" />
+		<link id="2" source_node_id="0" sink_node_id="2" source_channel="normalize_reference_values" sink_channel="normalize_reference_values" enabled="true" source_channel_id="normalize_reference_values" sink_channel_id="normalize_reference_values" />
+		<link id="3" source_node_id="1" sink_node_id="2" source_channel="fit_results_uri" sink_channel="data_uri" enabled="true" source_channel_id="fit_results_uri" sink_channel_id="data_uri" />
+		<link id="4" source_node_id="0" sink_node_id="1" source_channel="energy" sink_channel="energy" enabled="true" source_channel_id="energy" sink_channel_id="energy" />
+		<link id="5" source_node_id="0" sink_node_id="1" source_channel="scan_uri" sink_channel="scan_uri" enabled="true" source_channel_id="scan_uri" sink_channel_id="scan_uri" />
+		<link id="6" source_node_id="0" sink_node_id="1" source_channel="detector_name" sink_channel="detector_name" enabled="true" source_channel_id="detector_name" sink_channel_id="detector_name" />
+		<link id="7" source_node_id="0" sink_node_id="1" source_channel="xrf_spectra_uri_template" sink_channel="xrf_spectra_uri_template" enabled="true" source_channel_id="xrf_spectra_uri_template" sink_channel_id="xrf_spectra_uri_template" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="literal">{'_ewoks_default_inputs': {'counting_noise': True, 'integral_type': True, 'flux': 100000.0, 'expo_time': 0.1, 'ndetectors': 1, 'npoints': 10, 'energy': 7.5, 'emission_line_groups': ['Fe-K', 'Ca-K'], 'rois': [[350, 500]], 'nscans': 1, 'output_filename': 'input.h5'}, '_ewoks_execinfo': {}, '_ewoks_varinfo': {}, 'controlAreaVisible': True, 'default_inputs': {}, 'savedWidgetGeometry': None, '__version__': 1}</properties>
+		<properties node_id="1" format="literal">{'_ewoks_default_inputs': {'output_uri': 'output.h5::/1.1/fit', 'diagnostics': True, 'fast_fitting': True}, '_ewoks_execinfo': {}, '_ewoks_varinfo': {}, 'controlAreaVisible': True, 'default_inputs': {}, 'savedWidgetGeometry': None, '__version__': 1}</properties>
+		<properties node_id="2" format="literal">{'_ewoks_default_inputs': {'output_uri': 'output.h5::/1.1/normalize'}, '_ewoks_execinfo': {}, '_ewoks_varinfo': {}, 'controlAreaVisible': True, 'default_inputs': {}, 'savedWidgetGeometry': None, '__version__': 1}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>

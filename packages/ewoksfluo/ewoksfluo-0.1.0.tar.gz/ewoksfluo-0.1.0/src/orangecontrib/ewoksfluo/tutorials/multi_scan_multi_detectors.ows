@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="XRF single-scan multi-detector sum and fit" description="">
+	<nodes>
+		<node id="0" name="Example XRF scan" qualified_name="orangecontrib.ewoksfluo.example_xrf_scan.OWExampleXRFScan" project_name="ewoksfluo" version="" title="Example XRF scan" position="(-102.0, 508.0)" />
+		<node id="1" name="Multi-Scan Fit" qualified_name="orangecontrib.ewoksfluo.multi_scan_fit.OWMultiScanFit" project_name="ewoksfluo" version="" title="Multi-Scan Fit" position="(94.0, 502.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="energies" sink_channel="energies" enabled="true" source_channel_id="energies" sink_channel_id="energies" />
+		<link id="1" source_node_id="0" sink_node_id="1" source_channel="configs" sink_channel="configs" enabled="true" source_channel_id="configs" sink_channel_id="configs" />
+		<link id="2" source_node_id="0" sink_node_id="1" source_channel="detector_names" sink_channel="detector_names" enabled="true" source_channel_id="detector_names" sink_channel_id="detector_names" />
+		<link id="3" source_node_id="0" sink_node_id="1" source_channel="scan_uris" sink_channel="scan_uris" enabled="true" source_channel_id="scan_uris" sink_channel_id="scan_uris" />
+		<link id="4" source_node_id="0" sink_node_id="1" source_channel="xrf_spectra_uri_template" sink_channel="xrf_spectra_uri_template" enabled="true" source_channel_id="xrf_spectra_uri_template" sink_channel_id="xrf_spectra_uri_template" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="literal">{'_ewoks_default_inputs': {'nscans': 3, 'output_filename': 'output.h5', 'emission_line_groups': ['Ca-K', 'Fe-K'], 'energy': 10.0, 'npoints': 5, 'ndetectors': 2, 'expo_time': 0.1, 'flux': 100000.0, 'counting_noise': True, 'integral_type': True}, '_ewoks_execinfo': {}, '_ewoks_varinfo': {}, 'controlAreaVisible': True, 'default_inputs': {}, 'savedWidgetGeometry': None, '__version__': 1}</properties>
+		<properties node_id="1" format="literal">{'_ewoks_default_inputs': {'output_uris': ['output.h5::/1.1/fit/mca0', 'output.h5::/1.1/fit/mca1']}, '_ewoks_execinfo': {}, '_ewoks_varinfo': {}, 'controlAreaVisible': True, 'default_inputs': {}, 'savedWidgetGeometry': None, '__version__': 1}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>

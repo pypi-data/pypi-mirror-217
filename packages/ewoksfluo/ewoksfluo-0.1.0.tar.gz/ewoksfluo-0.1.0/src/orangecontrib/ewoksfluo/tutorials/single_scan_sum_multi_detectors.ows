@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="XRF single-scan multi-detector sum and fit" description="">
+	<nodes>
+		<node id="0" name="Example XRF scan" qualified_name="orangecontrib.ewoksfluo.example_xrf_scan.OWExampleXRFScan" project_name="ewoksfluo" version="" title="Example XRF scan" position="(-102.0, 508.0)" />
+		<node id="1" name="Sum Detectors" qualified_name="orangecontrib.ewoksfluo.sum_detectors.OWSumDetectors" project_name="ewoksfluo" version="" title="Sum Detectors" position="(182.0, 269.0)" />
+		<node id="2" name="Single-Detector Fit" qualified_name="orangecontrib.ewoksfluo.single_detector_fit.OWSingleDetectorFit" project_name="ewoksfluo" version="" title="Single-Detector Fit" position="(355.0, 325.0)" />
+		<node id="3" name="Normalization" qualified_name="orangecontrib.ewoksfluo.normalization.OWNormalization" project_name="ewoksfluo" version="" title="Normalization" position="(550.0, 513.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="2" source_channel="energy" sink_channel="energy" enabled="true" source_channel_id="energy" sink_channel_id="energy" />
+		<link id="1" source_node_id="0" sink_node_id="2" source_channel="config" sink_channel="config" enabled="true" source_channel_id="config" sink_channel_id="config" />
+		<link id="2" source_node_id="2" sink_node_id="3" source_channel="fit_results_uri" sink_channel="data_uri" enabled="true" source_channel_id="fit_results_uri" sink_channel_id="data_uri" />
+		<link id="3" source_node_id="0" sink_node_id="3" source_channel="I0_reference_values" sink_channel="normalize_reference_values" enabled="true" source_channel_id="I0_reference_values" sink_channel_id="normalize_reference_values" />
+		<link id="4" source_node_id="0" sink_node_id="3" source_channel="I0_uris" sink_channel="normalize_uris" enabled="true" source_channel_id="I0_uris" sink_channel_id="normalize_uris" />
+		<link id="5" source_node_id="1" sink_node_id="2" source_channel="detector_name" sink_channel="detector_name" enabled="true" source_channel_id="detector_name" sink_channel_id="detector_name" />
+		<link id="6" source_node_id="1" sink_node_id="2" source_channel="xrf_spectra_uri_template" sink_channel="xrf_spectra_uri_template" enabled="true" source_channel_id="xrf_spectra_uri_template" sink_channel_id="xrf_spectra_uri_template" />
+		<link id="7" source_node_id="1" sink_node_id="2" source_channel="scan_uri" sink_channel="scan_uri" enabled="true" source_channel_id="scan_uri" sink_channel_id="scan_uri" />
+		<link id="8" source_node_id="0" sink_node_id="1" source_channel="detector_names" sink_channel="detector_names" enabled="true" source_channel_id="detector_names" sink_channel_id="detector_names" />
+		<link id="9" source_node_id="0" sink_node_id="1" source_channel="livetime_uri_template" sink_channel="livetime_uri_template" enabled="true" source_channel_id="livetime_uri_template" sink_channel_id="livetime_uri_template" />
+		<link id="10" source_node_id="0" sink_node_id="1" source_channel="xrf_spectra_uri_template" sink_channel="xrf_spectra_uri_template" enabled="true" source_channel_id="xrf_spectra_uri_template" sink_channel_id="xrf_spectra_uri_template" />
+		<link id="11" source_node_id="0" sink_node_id="1" source_channel="scan_uri" sink_channel="scan_uri" enabled="true" source_channel_id="scan_uri" sink_channel_id="scan_uri" />
+		<link id="12" source_node_id="0" sink_node_id="1" source_channel="livetime_reference_value" sink_channel="livetime_reference_value" enabled="true" source_channel_id="livetime_reference_value" sink_channel_id="livetime_reference_value" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="literal">{'_ewoks_default_inputs': {'nscans': 1, 'output_filename': 'output.h5', 'emission_line_groups': ['Ca-K', 'Fe-K'], 'energy': 10.0, 'npoints': 5, 'ndetectors': 2, 'expo_time': 0.1, 'flux': 100000.0, 'counting_noise': True, 'integral_type': True}, '_ewoks_execinfo': {}, '_ewoks_varinfo': {}, 'controlAreaVisible': True, 'default_inputs': {}, 'savedWidgetGeometry': None, '__version__': 1}</properties>
+		<properties node_id="1" format="literal">{'_ewoks_default_inputs': {'output_uri': 'output.h5::/1.1/sum'}, '_ewoks_execinfo': {}, '_ewoks_varinfo': {}, 'controlAreaVisible': True, 'default_inputs': {}, 'savedWidgetGeometry': None, '__version__': 1}</properties>
+		<properties node_id="2" format="literal">{'_ewoks_default_inputs': {'output_uri': 'output.h5::/1.1/fit', 'fast_fitting': True}, '_ewoks_execinfo': {}, '_ewoks_varinfo': {}, 'controlAreaVisible': True, 'default_inputs': {}, 'savedWidgetGeometry': None, '__version__': 1}</properties>
+		<properties node_id="3" format="literal">{'_ewoks_default_inputs': {'output_uri': 'output.h5::/1.1/normalization'}, '_ewoks_execinfo': {}, '_ewoks_varinfo': {}, 'controlAreaVisible': True, 'default_inputs': {}, 'savedWidgetGeometry': None, '__version__': 1}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
