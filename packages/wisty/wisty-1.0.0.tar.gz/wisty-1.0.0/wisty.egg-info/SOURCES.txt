@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+wisty/__init__.py
+wisty.egg-info/PKG-INFO
+wisty.egg-info/SOURCES.txt
+wisty.egg-info/dependency_links.txt
+wisty.egg-info/entry_points.txt
+wisty.egg-info/requires.txt
+wisty.egg-info/top_level.txt
