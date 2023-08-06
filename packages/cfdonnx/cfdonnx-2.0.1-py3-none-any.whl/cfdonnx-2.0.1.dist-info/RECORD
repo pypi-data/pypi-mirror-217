@@ -1,0 +1,13 @@
+cfdonnx/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cfdonnx/__main__.py,sha256=oeQiE-THmbcuYzYCKfe0nUMoaIqCcIRUUoVRpcUA2cI,5536
+cfdonnx/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cfdonnx/models/torch/AutoEncoder.py,sha256=4SVOlmknGAFlj8bSik4EFSGkRw0XiTorYbcl1dVU-8E,1981
+cfdonnx/models/torch/AutoEncoderEx.py,sha256=W4RHpKgp-b6Po5I7ZWzQDvb0Idsxum3toTrf9kvGzEQ,1840
+cfdonnx/models/torch/MaxUnpool.py,sha256=eibBhPlmqWUIuwhBpSCNhaOA3zwLuKxHatpZkQCMtlw,5328
+cfdonnx/models/torch/UNetEx.py,sha256=Hqhv5H-Yd3vTict9ITzpluOkQPPstXznSG619kaONvU,4700
+cfdonnx/models/torch/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cfdonnx-2.0.1.dist-info/LICENSE.txt,sha256=N9-cBojtWno0s1etMlXjbUK2t9QqbaOQdoPb6bPh4R4,1069
+cfdonnx-2.0.1.dist-info/METADATA,sha256=nx614ML6WGHFKU4NkpiEs_gpWs9o9OYfapSVmzdpbeE,2478
+cfdonnx-2.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cfdonnx-2.0.1.dist-info/top_level.txt,sha256=pGvWW174I4LZbmzA4B6yNz-m1K6EobVuq6Md7pQEaew,8
+cfdonnx-2.0.1.dist-info/RECORD,,
