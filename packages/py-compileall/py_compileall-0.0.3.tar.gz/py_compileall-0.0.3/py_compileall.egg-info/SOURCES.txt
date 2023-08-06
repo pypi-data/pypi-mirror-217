@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+app/__init__.py
+app/__main__.py
+app/application.py
+py_compileall.egg-info/PKG-INFO
+py_compileall.egg-info/SOURCES.txt
+py_compileall.egg-info/dependency_links.txt
+py_compileall.egg-info/entry_points.txt
+py_compileall.egg-info/requires.txt
+py_compileall.egg-info/top_level.txt
+test/__init__.py
+test/test_compile.py
