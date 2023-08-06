@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: pymilka
+Version: 0.1.0
+Summary: Tool that helps you quickly generate a structured Python project with a predefined directory structure.
+Author: Igor Wlodarczyk
+Author-email: wlodar.igor@gmail.com
+Requires-Python: >=3.8
+License-File: LICENSE
+
