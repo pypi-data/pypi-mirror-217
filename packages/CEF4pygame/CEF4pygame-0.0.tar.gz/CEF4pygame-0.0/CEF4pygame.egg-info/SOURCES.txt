@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+CEF4pygame/__init__.py
+CEF4pygame.egg-info/PKG-INFO
+CEF4pygame.egg-info/SOURCES.txt
+CEF4pygame.egg-info/dependency_links.txt
+CEF4pygame.egg-info/not-zip-safe
+CEF4pygame.egg-info/top_level.txt
