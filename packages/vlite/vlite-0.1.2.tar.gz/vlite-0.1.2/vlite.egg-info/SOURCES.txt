@@ -1,0 +1,7 @@
+README.md
+setup.py
+vlite.egg-info/PKG-INFO
+vlite.egg-info/SOURCES.txt
+vlite.egg-info/dependency_links.txt
+vlite.egg-info/requires.txt
+vlite.egg-info/top_level.txt
