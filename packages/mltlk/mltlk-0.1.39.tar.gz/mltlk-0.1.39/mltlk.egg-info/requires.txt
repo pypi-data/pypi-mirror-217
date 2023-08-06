@@ -1,0 +1,8 @@
+termcolor
+scikit-learn
+pandas
+imblearn
+gensim
+customized_table
+matplotlib
+nltk
