@@ -1,0 +1,7 @@
+setup.py
+pip_project_square/init.py
+pip_project_square/module.py
+pip_project_square.egg-info/PKG-INFO
+pip_project_square.egg-info/SOURCES.txt
+pip_project_square.egg-info/dependency_links.txt
+pip_project_square.egg-info/top_level.txt
