@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: audio-stats
+Version: 0.0.3
+Home-page: https://github.com/khanh101/audio-stats
+Author: Nguyen Ngoc Khanh
+Author-email: khanh.nguyen.contact@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# audio-stats
+
+# upload
+
+```bash
+rm -rf dist crypt_dir.egg-info
+python setup.py sdist
+twine upload dist/*
+```
