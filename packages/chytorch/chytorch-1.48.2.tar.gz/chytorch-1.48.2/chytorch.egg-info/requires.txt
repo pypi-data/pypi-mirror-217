@@ -1,0 +1,5 @@
+torchtyping>=0.1.4
+chython>=1.38
+torch>=1.8
+scipy>=1.7
+numpy>=1.20
