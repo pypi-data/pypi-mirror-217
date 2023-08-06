@@ -1,0 +1,14 @@
+tno.quantum.ml.classifiers.vc-2.0.2-py3.10-nspkg.pth,sha256=ixTdIG-2lhtN8bwPGgxDxI_xhKzhOACmoXv_oezwbAg,5928
+tno/quantum/ml/classifiers/vc/__init__.py,sha256=YeYV9SP3jZBBzaUmEcd3X_q9TKt3TQ0_fM7qCfo3qdQ,269
+tno/quantum/ml/classifiers/vc/models.py,sha256=CyyK99YznXcqOmXy97YgZUXvaFywvAngNLYq_K6WYHs,16358
+tno/quantum/ml/classifiers/vc/optimizers.py,sha256=wh9d4gyRJ234EpyU7aQBvZng0ogGk9s3qv2IMsfgdy4,1592
+tno/quantum/ml/classifiers/vc/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tno/quantum/ml/classifiers/vc/variational_classifier.py,sha256=PPnCsrTSKIzNcAtoSVmMM9pK_t8PfVVpgExbJQRCd1g,10277
+tno/quantum/ml/classifiers/vc/test/__init__.py,sha256=x0W6PnhuG5xXOoJ-5LZvw-yNUYhR280_mA9bw0-CNoA,71
+tno/quantum/ml/classifiers/vc/test/test_variational_classifier.py,sha256=57zttHejoDezIMJC2DGsPasUSgC-v39vDSd2U9_rCvU,13213
+tno.quantum.ml.classifiers.vc-2.0.2.dist-info/LICENSE,sha256=BnFwUNnp9R3bd2d50nV0HaKfqINMUBVxdrDlMQiXZ4c,11597
+tno.quantum.ml.classifiers.vc-2.0.2.dist-info/METADATA,sha256=7H583SC6IcEUEjI0p9iPNc5FiyJ8yQ0lwLIEPpSyap0,4170
+tno.quantum.ml.classifiers.vc-2.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+tno.quantum.ml.classifiers.vc-2.0.2.dist-info/namespace_packages.txt,sha256=xstejbIdOIz2Z2sSD1pcnl673O-qEo6dLs9FkBoL6HM,58
+tno.quantum.ml.classifiers.vc-2.0.2.dist-info/top_level.txt,sha256=7cHKx5j6ibiq14EYKPAhHk_NqB8u-nPUjh5R4TDqpHo,4
+tno.quantum.ml.classifiers.vc-2.0.2.dist-info/RECORD,,
