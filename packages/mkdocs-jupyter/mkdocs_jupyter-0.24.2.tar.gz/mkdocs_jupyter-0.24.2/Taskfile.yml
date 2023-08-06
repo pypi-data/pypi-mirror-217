@@ -1,0 +1,82 @@
+version: "3"
+
+env:
+  PYTEST_K: ""
+
+tasks:
+  build:
+    cmds:
+      - hatch build
+
+  check:
+    ignore_error: true
+    cmds:
+      - isort . --check-only --diff
+      - black . --check
+      - ruff check mkdocs_jupyter
+      - flake8
+
+  fmt:
+    ignore_error: true
+    cmds:
+      - isort .
+      - black .
+      - ruff check --fix mkdocs_jupyter
+
+  test:
+    cmds:
+      - pytest -k "{{.PYTEST_K}}"
+
+  test-all:
+    cmds:
+      - pytest .
+
+  report:
+    cmds:
+      - coverage xml
+      - coverage html
+
+  lockfiles:
+    cmds:
+      - pip-compile -q --resolver=backtracking -o requirements/pyproject.txt pyproject.toml --extra=test
+      - pip-compile -q --resolver=backtracking -o requirements/linting.txt requirements/linting.in
+
+  publish:
+    cmds:
+      - hatch publish
+
+  py-clean:
+    cmds:
+      - rm -rf .pytest_cache dist htmlcov test-results .ruff_cache
+      - rm -f .coverage coverage.xml
+      - find . -type f -name '*.py[co]' -delete
+      - find . -type d -name __pycache__ -exec rm -rf {} +
+      - find . -type d -name .ipynb_checkpoints -exec rm -rf {} +
+
+  demo-build:
+    dir: demo
+    cmds:
+      - mkdocs build
+
+  # ------------------------------------------------------------------------------
+  # Javascript
+
+  js-install:
+    dir: js
+    cmds:
+      - npm install
+
+  js-build:
+    dir: js
+    cmds:
+      - npm run build
+
+  js-dev:
+    dir: js
+    cmds:
+      - npm run dev
+
+  js-clean:
+    dir: js
+    cmds:
+      - npm run clean
