@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: truectl
+Version: 0.0.1
+Summary: TrueAPI CLI
+Author-email: Thang Tran <thangtp@gmail.com>
+Project-URL: Homepage, https://github.com/trueapi/truectl
+Project-URL: Bug Tracker, https://github.com/trueapi/truectl/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE

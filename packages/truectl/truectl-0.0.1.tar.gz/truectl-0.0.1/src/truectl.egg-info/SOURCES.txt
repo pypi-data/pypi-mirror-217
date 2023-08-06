@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/trueapi/__init__.py
+src/truectl.egg-info/PKG-INFO
+src/truectl.egg-info/SOURCES.txt
+src/truectl.egg-info/dependency_links.txt
+src/truectl.egg-info/top_level.txt
