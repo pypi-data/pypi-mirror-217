@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: courtvision
+Version: 0.2.0
+Summary: 
+License: MIT
+Author: benjamin
+Author-email: benjamin@thinkst.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: av (>=10.0.0,<11.0.0)
+Requires-Dist: black[jupyter] (>=23.3.0,<24.0.0)
+Requires-Dist: boto3 (>=1.26.160,<2.0.0)
+Requires-Dist: imageio (>=2.27.0,<3.0.0)
+Requires-Dist: kornia (>=0.6.12,<0.7.0)
+Requires-Dist: matplotlib (>=3.7.1,<4.0.0)
+Requires-Dist: numpy (>=1.24.2,<2.0.0)
+Requires-Dist: opencv-python (>=4.7.0.72,<5.0.0.0)
+Requires-Dist: pydantic (>=2.0.0,<3.0.0)
+Requires-Dist: pydantic-settings (>=2.0.0,<3.0.0)
+Requires-Dist: pytorch-lightning (>=2.0.1.post0,<3.0.0)
+Requires-Dist: pytube (==15.0.0)
+Requires-Dist: rerun-sdk (>=0.7.0,<0.8.0)
+Requires-Dist: structlog (>=23.1.0,<24.0.0)
+Requires-Dist: torch (>=2.0.1,<3.0.0)
+Requires-Dist: torchvision (>=0.15.2,<0.16.0)
+Requires-Dist: ultralytics (>=8.0.121,<9.0.0)
+Requires-Dist: wandb (>=0.15.4,<0.16.0)
+Description-Content-Type: text/markdown
+
+# Welcome to CourtVision
+A library and simple application aims to extract useful infromation from videos of court-based[^1] sports. By detecting and tracking players as well as the ball CourtVision captures data at 30 frames per second. By visualizing this high resolution data it is hoped players and coaches will find interesting take-a-ways.
+
+An associated paper with research goals and results is available [here](https://github.com/BenjaminDev/courtvision/blob/main/docs/paper/main.pdf)
+
+
+
+
+
+
+[^1]: Currently only padel is supported.
+
+## CLI
+Some commonly used scripts are migrated to a cli so they are available when installation is done via `pip`
+
+* `cv-grab-frames` - grabs frames from the dataset specified in `.env`.
+

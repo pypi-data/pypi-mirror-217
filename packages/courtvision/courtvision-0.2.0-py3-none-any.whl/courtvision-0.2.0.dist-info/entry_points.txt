@@ -1,0 +1,3 @@
+[console_scripts]
+cv-grab-frames=courtvision.console:grab_frames_from_clips
+
