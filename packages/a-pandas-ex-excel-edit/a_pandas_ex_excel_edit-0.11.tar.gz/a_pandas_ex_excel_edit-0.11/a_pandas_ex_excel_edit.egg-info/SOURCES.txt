@@ -1,0 +1,14 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+a_pandas_ex_excel_edit/README.MD
+a_pandas_ex_excel_edit/__init__.py
+a_pandas_ex_excel_edit/requirements.txt
+a_pandas_ex_excel_edit/thirdparty.json
+a_pandas_ex_excel_edit.egg-info/PKG-INFO
+a_pandas_ex_excel_edit.egg-info/SOURCES.txt
+a_pandas_ex_excel_edit.egg-info/dependency_links.txt
+a_pandas_ex_excel_edit.egg-info/requires.txt
+a_pandas_ex_excel_edit.egg-info/top_level.txt
