@@ -1,0 +1,20 @@
+vix_utils/__init__.py,sha256=hSKtTAmTWu5Sc4S4e2OtdvYN2Uv_xV76hfckH8jOm6g,767
+vix_utils/cfe-rule-book.pdf,sha256=cN5F9xM5--JtZ0rHce0hMSj0egPTa6PV1wMs366KNxo,1851085
+vix_utils/continuous_maturity.py,sha256=g2uFZclPtrSIphZ3FkpREawZtzH3g1RE3Q7X_Sq468w,5278
+vix_utils/data_notes.md,sha256=TZcRxOhot5xPlqKQq25TlqGQynWhraBMd1lnuQpfoHA,4570
+vix_utils/download_vix_futures.py,sha256=DYbzIihkoqYFo5pQ5F89AxOi-xpwer7ikBwHKlz6RnM,26572
+vix_utils/futures_utils.py,sha256=VrpTeuIE8nwlLjKAi7iThKSpnd4yn0l3YgX9ixO5DCQ,1234
+vix_utils/location.py,sha256=E6KpK--clGLFImd--ay-ZJbJcVhsMrCOhR-u8Sk2jYU,503
+vix_utils/old_download_vix_futures.py,sha256=fqA44bN0qFj2IPrq-peGk0PTndwOSXJSMYQkrOWRd1U,27994
+vix_utils/vix_cash_term_structure.py,sha256=BJHRI__r8vkU6HmTDd9kpfeUn8ax8IGL55FuZ4uCrt4,3787
+vix_utils/vix_futures_dates.py,sha256=1Y2ODFDL2EOgIWyAap4JyANfcM780c5Z9p5WxrbKMkw,12834
+vix_utils/vixutil.py,sha256=qL4Hh-fE-rZqs5MZPqEmWLuYw6oYT7GwADHWQYFg66o,4502
+vix_utils/examples/sample_load_data.py,sha256=Wu8M4aUs9JlRB8006rV9TSVm8kCiPkGHuF8RW5qzdmA,2531
+vix_utils/examples/sample_plots.py,sha256=RuY3IdPUWgBwo43Z1pXLkROR7DsTYGgmObppgJKlrAY,4184
+vix_utils/examples/sample_utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vix_utils/examples/vix_utils use in Jupyter.ipynb,sha256=KpJ9wAiGVGSPeDHxVRfSK75QY7fh5EP95tst3cl-3cI,218507
+vix_utils-0.1.4.dist-info/entry_points.txt,sha256=I1cIJQ2sNT1GunTB1ZATGeMloBwxjZI0Wqz3FKBFjT8,166
+vix_utils-0.1.4.dist-info/LICENSE,sha256=SI0svJJ6Js8TaGihYbBNsQWue_bxkyQqxzo1zAP0xy4,1078
+vix_utils-0.1.4.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+vix_utils-0.1.4.dist-info/METADATA,sha256=mOWutFYgLvRStNLUL-smn9-zrFx1Cc-7yls1XjV4-X0,3728
+vix_utils-0.1.4.dist-info/RECORD,,
