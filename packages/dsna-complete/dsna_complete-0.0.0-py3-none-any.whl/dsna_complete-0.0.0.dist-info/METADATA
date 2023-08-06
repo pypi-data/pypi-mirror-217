@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: dsna-complete
+Version: 0.0.0
+Summary: "Automate machine learning"
+Requires-Python: >=3.10
+Requires-Dist: numpy (==1.24.3)
+Provides-Extra: automl
+Requires-Dist: pandas (==1.4.3) ; extra == 'automl'
+Requires-Dist: pmdarima (==2.0.3) ; extra == 'automl'
+Requires-Dist: prophet (==1.1.4) ; extra == 'automl'
+Requires-Dist: scikit-learn (==1.2.2) ; extra == 'automl'
+Requires-Dist: tensorflow (==2.13.0rc1) ; extra == 'automl'
+Requires-Dist: xgboost (==1.7.6) ; extra == 'automl'
+
