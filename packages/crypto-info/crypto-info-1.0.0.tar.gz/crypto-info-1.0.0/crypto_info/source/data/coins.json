@@ -1,0 +1,402 @@
+{
+    "BTC": {
+        "id": "BTC",
+        "name": "Bitcoin"
+    },
+    "ETH": {
+        "id": "ETH",
+        "name": "Ethereum"
+    },
+    "USDT": {
+        "id": "USDT",
+        "name": "Tether"
+    },
+    "BNBBNB": {
+        "id": "BNBBNB",
+        "name": "BNBBNB"
+    },
+    "USDC": {
+        "id": "USDC",
+        "name": "USD Coin"
+    },
+    "XRPXRP": {
+        "id": "XRPXRP",
+        "name": "XRPXRP"
+    },
+    "ADA": {
+        "id": "ADA",
+        "name": "Cardano"
+    },
+    "DOGE": {
+        "id": "DOGE",
+        "name": "Dogecoin"
+    },
+    "LTC": {
+        "id": "LTC",
+        "name": "Litecoin"
+    },
+    "SOL": {
+        "id": "SOL",
+        "name": "Solana"
+    },
+    "TRONTRX": {
+        "id": "TRONTRX",
+        "name": "TRONTRX"
+    },
+    "DOT": {
+        "id": "DOT",
+        "name": "Polkadot"
+    },
+    "MATIC": {
+        "id": "MATIC",
+        "name": "Polygon"
+    },
+    "BCH": {
+        "id": "BCH",
+        "name": "Bitcoin Cash"
+    },
+    "WBTC": {
+        "id": "WBTC",
+        "name": "Wrapped Bitcoin"
+    },
+    "TON": {
+        "id": "TON",
+        "name": "Toncoin"
+    },
+    "DAI": {
+        "id": "DAI",
+        "name": "Dai"
+    },
+    "SHIB": {
+        "id": "SHIB",
+        "name": "Shiba Inu"
+    },
+    "AVAX": {
+        "id": "AVAX",
+        "name": "Avalanche"
+    },
+    " USDBUSD": {
+        "id": " USDBUSD",
+        "name": "Binance"
+    },
+    "UNUS SED LEOLEO": {
+        "id": "UNUS SED LEOLEO",
+        "name": "UNUS SED LEOLEO"
+    },
+    "LINK": {
+        "id": "LINK",
+        "name": "Chainlink"
+    },
+    "ATOM": {
+        "id": "ATOM",
+        "name": "Cosmos"
+    },
+    "ETC": {
+        "id": "ETC",
+        "name": "Ethereum Classic"
+    },
+    "XMR": {
+        "id": "XMR",
+        "name": "Monero"
+    },
+    "USDTUSD": {
+        "id": "USDTUSD",
+        "name": "True"
+    },
+    "UNI": {
+        "id": "UNI",
+        "name": "Uniswap"
+    },
+    "XLM": {
+        "id": "XLM",
+        "name": "Stellar"
+    },
+    "OKBOKB": {
+        "id": "OKBOKB",
+        "name": "OKBOKB"
+    },
+    "ICP": {
+        "id": "ICP",
+        "name": "Internet Computer"
+    },
+    " DAOLDO": {
+        "id": " DAOLDO",
+        "name": "Lido"
+    },
+    "FIL": {
+        "id": "FIL",
+        "name": "Filecoin"
+    },
+    "HBAR": {
+        "id": "HBAR",
+        "name": "Hedera"
+    },
+    "VET": {
+        "id": "VET",
+        "name": "VeChain"
+    },
+    "APT": {
+        "id": "APT",
+        "name": "Aptos"
+    },
+    "ARB": {
+        "id": "ARB",
+        "name": "Arbitrum"
+    },
+    "CRO": {
+        "id": "CRO",
+        "name": "Cronos"
+    },
+    "QNT": {
+        "id": "QNT",
+        "name": "Quant"
+    },
+    "NEAR": {
+        "id": "NEAR",
+        "name": "NEAR Protocol"
+    },
+    " SVBSV": {
+        "id": " SVBSV",
+        "name": "Bitcoin"
+    },
+    "USDP": {
+        "id": "USDP",
+        "name": "Pax Dollar"
+    },
+    "AAVE": {
+        "id": "AAVE",
+        "name": "Aave"
+    },
+    "STX": {
+        "id": "STX",
+        "name": "Stacks"
+    },
+    "GRT": {
+        "id": "GRT",
+        "name": "The Graph"
+    },
+    "ALGO": {
+        "id": "ALGO",
+        "name": "Algorand"
+    },
+    "XEGLD": {
+        "id": "XEGLD",
+        "name": "Multivers"
+    },
+    "OP": {
+        "id": "OP",
+        "name": "Optimism"
+    },
+    "FTM": {
+        "id": "FTM",
+        "name": "Fantom"
+    },
+    "EOSEOS": {
+        "id": "EOSEOS",
+        "name": "EOSEOS"
+    },
+    "XEC": {
+        "id": "XEC",
+        "name": "eCash"
+    },
+    "APE": {
+        "id": "APE",
+        "name": "ApeCoin"
+    },
+    "MKR": {
+        "id": "MKR",
+        "name": "Maker"
+    },
+    "SAND": {
+        "id": "SAND",
+        "name": "The Sandbox"
+    },
+    "IMX": {
+        "id": "IMX",
+        "name": "Immutable"
+    },
+    "XTZ": {
+        "id": "XTZ",
+        "name": "Tezos"
+    },
+    "RNDR": {
+        "id": "RNDR",
+        "name": "Render Token"
+    },
+    "RPL": {
+        "id": "RPL",
+        "name": "Rocket Pool"
+    },
+    "DAOBIT": {
+        "id": "DAOBIT",
+        "name": "Bit"
+    },
+    "USDDUSDD": {
+        "id": "USDDUSDD",
+        "name": "USDDUSDD"
+    },
+    "NEO": {
+        "id": "NEO",
+        "name": "Neo"
+    },
+    "MANA": {
+        "id": "MANA",
+        "name": "Decentraland"
+    },
+    "THETA": {
+        "id": "THETA",
+        "name": "Theta Network"
+    },
+    "AXS": {
+        "id": "AXS",
+        "name": "Axie Infinity"
+    },
+    "INJ": {
+        "id": "INJ",
+        "name": "Injective"
+    },
+    "CRV": {
+        "id": "CRV",
+        "name": "Curve DAO Token"
+    },
+    "KCS": {
+        "id": "KCS",
+        "name": "KuCoin Token"
+    },
+    "PEPE": {
+        "id": "PEPE",
+        "name": "Pepe"
+    },
+    "CFX": {
+        "id": "CFX",
+        "name": "Conflux"
+    },
+    "SNX": {
+        "id": "SNX",
+        "name": "Synthetix"
+    },
+    "KAVA": {
+        "id": "KAVA",
+        "name": "Kava"
+    },
+    "FLOW": {
+        "id": "FLOW",
+        "name": "Flow"
+    },
+    "GUSD": {
+        "id": "GUSD",
+        "name": "Gemini Dollar"
+    },
+    "ZEC": {
+        "id": "ZEC",
+        "name": "Zcash"
+    },
+    "CHZ": {
+        "id": "CHZ",
+        "name": "Chiliz"
+    },
+    "GALA": {
+        "id": "GALA",
+        "name": "Gala"
+    },
+    "KLAY": {
+        "id": "KLAY",
+        "name": "Klaytn"
+    },
+    "IOTAMIOTA": {
+        "id": "IOTAMIOTA",
+        "name": "IOTAMIOTA"
+    },
+    "LUNC": {
+        "id": "LUNC",
+        "name": "Terra Classic"
+    },
+    "GMXGMX": {
+        "id": "GMXGMX",
+        "name": "GMXGMX"
+    },
+    "PAXG": {
+        "id": "PAXG",
+        "name": "PAX Gold"
+    },
+    "XAUT": {
+        "id": "XAUT",
+        "name": "Tether Gold"
+    },
+    ")BTT": {
+        "id": ")BTT",
+        "name": "BitTorrent(New"
+    },
+    "MINA": {
+        "id": "MINA",
+        "name": "Mina"
+    },
+    "XDC": {
+        "id": "XDC",
+        "name": "XDC Network"
+    },
+    "HT": {
+        "id": "HT",
+        "name": "Huobi Token"
+    },
+    "DASH": {
+        "id": "DASH",
+        "name": "Dash"
+    },
+    "CSPR": {
+        "id": "CSPR",
+        "name": "Casper"
+    },
+    "FXS": {
+        "id": "FXS",
+        "name": "Frax Share"
+    },
+    "COMP": {
+        "id": "COMP",
+        "name": "Compound"
+    },
+    "GT": {
+        "id": "GT",
+        "name": "GateToken"
+    },
+    "WOO": {
+        "id": "WOO",
+        "name": "WOO Network"
+    },
+    "SUI": {
+        "id": "SUI",
+        "name": "Sui"
+    },
+    "TWT": {
+        "id": "TWT",
+        "name": "Trust Wallet Token"
+    },
+    "NEXO": {
+        "id": "NEXO",
+        "name": "Nexo"
+    },
+    "RUNE": {
+        "id": "RUNE",
+        "name": "THORChain"
+    },
+    "QTUM": {
+        "id": "QTUM",
+        "name": "Qtum"
+    },
+    "ZIL": {
+        "id": "ZIL",
+        "name": "Zilliqa"
+    },
+    "CAKE": {
+        "id": "CAKE",
+        "name": "PancakeSwap"
+    },
+    "XDYDX": {
+        "id": "XDYDX",
+        "name": "dYd"
+    },
+    "LRC": {
+        "id": "LRC",
+        "name": "Loopring"
+    }
+}
