@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: oa3-responses-validator
+Version: 1.0.0
+Summary: 
+Author: Pavel Anokhin
+Author-email: p.a.anokhin@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: openapi3 (>=1.8.1,<2.0.0)
+Description-Content-Type: text/markdown
+
+## OpenAPI3 Responses Validator
+
+
+### Checking if certain HTTP codes are specified in each of the responses for each route
+
+## Installation
+
+```bash
+pip install oa3-responses-validator
+```
+
+Usage:
+
+```bash
+oa3-responses-validator -i /path/to/openapi.yaml -c 400 -c 500 -c 2XX
+```
+
+You can use the 2XX code pattern to indicate that any 2XX code should be among the response codes

@@ -1,0 +1,3 @@
+[console_scripts]
+oa3-responses-validator=oa3_responses_validator.main:main
+
