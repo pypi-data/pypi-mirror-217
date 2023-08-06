@@ -1,0 +1,11 @@
+protomodel/__init__.py,sha256=4m4Dd_kxAVGx_xcOXx0WIkONQP9uDL-tMoRTE4u0Opo,108
+protomodel/grpc.py,sha256=5cx4pZS6zHE1UH06S7pgBZlHP9CdYB7EZYpKVLx_KtI,22
+protomodel/message.py,sha256=pkAAKYnd3C4OnrdzLEILyGKaZz20e6az47PL69ULges,950
+protomodel/protomodel/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+protomodel/service.py,sha256=UvEsZOPxUApuP_RPep4u0tYx87ZY_1sMR6ci-ALXn74,25
+protomodel/types/__init__.py,sha256=QjGqhOn5pWp52pGbkK6QLA7XC4Tzn4mOJLF3H2f9Rss,45
+protomodel/types/get_types.py,sha256=w2Bn7509dCQKiqutf7UNWh_SA44KLtnb7keg0UYrWmw,169
+protomodel/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+protomodel-0.0.1.dist-info/METADATA,sha256=k8aJTifGgk7itbY1gWGWktvQKOzlpmL25yMsXUtpa98,452
+protomodel-0.0.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+protomodel-0.0.1.dist-info/RECORD,,
