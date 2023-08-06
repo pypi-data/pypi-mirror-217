@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: re_it
+Version: 1.0.0.0
+Summary: 中文的python网络请求库！
+Home-page: https://pypi.org/user/SuiBo/
+Author: SuiBo
+Author-email: 534047068@qq.com
+License: UNKNOWN
+Description: # re_it  中文的python网络请求库！
+        >如果程序错了，请报告给534047068@qq.com。
+        ****
+        你可以按照以下步骤使用这个包，并在代码中添加注释以更好地理解其功能和用法：
+        导入 re_it 模块：`from re_it import 请求`<br>
+        创建一个请求对象实例：
+        ```ruby
+        我的请求实例 = 请求.我的请求()
+        ```
+        使用 `添加头部()` 方法为请求添加头部信息：
+        ```ruby
+        我的请求实例.添加头部('User-Agent', 'Mozilla/5.0')  # 添加User-Agent头部信息
+        我的请求实例.添加头部('Content-Type', 'application/json')  # 添加Authorization头部信息
+        ```
+        发送 GET 请求并获取响应内容：
+        ```ruby
+        网址 = "www.example.com"  # 设置目标网址
+        响应内容 = 我的请求实例.获取(网址)  # 发送GET请求并获取响应内容
+        print(响应内容)  # 打印响应内容
+        ```
+        发送 POST 请求并获取响应内容：
+        ```ruby
+        网址 = "www.example.com"  # 设置目标网址
+        数据 = "key1=value1&key2=value2"  # 设置POST请求的数据，可选参数
+        响应内容 = 我的请求实例.提交(网址, 数据)  # 发送POST请求并获取响应内容
+        print(响应内容)  # 打印响应内容
+        ```
+        ****
+        > version : 1.0.0.0
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
