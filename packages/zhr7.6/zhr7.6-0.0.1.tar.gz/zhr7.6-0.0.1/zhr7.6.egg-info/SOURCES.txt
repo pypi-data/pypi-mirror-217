@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+zhr7.6.egg-info/PKG-INFO
+zhr7.6.egg-info/SOURCES.txt
+zhr7.6.egg-info/dependency_links.txt
+zhr7.6.egg-info/top_level.txt
