@@ -1,0 +1,17 @@
+autoconf_language_server/__init__.py,sha256=rMKx7H96TzrjRu1d4Zqki-uDwnunDNcbT3KXPH5PcWU,403
+autoconf_language_server/__main__.py,sha256=eTPIUnXA36sHnNHgJnjcixSXciXvCZ6QZQfrN-6Zh_A,1087
+autoconf_language_server/_metainfo.py,sha256=kEO0gqT3OEOc-mI8-CPVkTskeb0PPPD6mZHyHgEv834,604
+autoconf_language_server/_version.py,sha256=1LmWOIRIipDRwt63Rd4fYP3hKkUXXOCBB_3JUTMCoEs,160
+autoconf_language_server/api.py,sha256=1_FLPsFk0zMklZRtfx5q72RaCU_ZPmFoaqUFowNbqH4,3477
+autoconf_language_server/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autoconf_language_server/server.py,sha256=H5fnf1VUtGe4ceirtsSpTvDP61AscyQED7sjI71Y8EE,5323
+autoconf_language_server/assets/json/autoconf.json,sha256=1bJWNFa7V4c4uf548NxcMyyBrVqf1CSHFezObgLm6U4,368917
+autoconf_language_server-0.0.7.data/data/share/bash-completion/completions/autoconf-language-server,sha256=2ItT7efhbW8CbSJMQg-JVaBFax1p0SIytyuVibPYvPY,4053
+autoconf_language_server-0.0.7.data/data/share/man/man1/autoconf-language-server.1,sha256=8SbThiABv93AaGfXb2okbdQdO67kqQwzhJELg7C9c3Q,447
+autoconf_language_server-0.0.7.data/data/share/zsh/site-functions/_autoconf-language-server,sha256=VhfcXmhQXZeZbNNnvl6arIBqWTTRaAuqwjZf9E04Gf0,1254
+autoconf_language_server-0.0.7.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+autoconf_language_server-0.0.7.dist-info/METADATA,sha256=eo1FgUYMHvg2R5CViNqw_Hj0PogqcngUvZDY3Ns76Xc,7400
+autoconf_language_server-0.0.7.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+autoconf_language_server-0.0.7.dist-info/entry_points.txt,sha256=8OtdDvbwKK3AKoFiLUXxpSsQSqlXfiKHoMd9guJBdSg,84
+autoconf_language_server-0.0.7.dist-info/top_level.txt,sha256=qwbhKf4JtQV79PDeXTdJ51GQc72esLFzoUXF6wqZFNM,25
+autoconf_language_server-0.0.7.dist-info/RECORD,,
