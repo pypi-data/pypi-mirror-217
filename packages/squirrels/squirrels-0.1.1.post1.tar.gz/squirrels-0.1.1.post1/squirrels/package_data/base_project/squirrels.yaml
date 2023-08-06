@@ -1,0 +1,22 @@
+modules: []
+
+project_variables:
+  product: sample
+  major_version: 1
+  minor_version: 0
+
+db_connections:
+  default: 
+    credential_key: null
+    url: 'sqlite://${username}:${password}@/./database/sample_database.db'
+
+datasets:
+  sample_dataset:
+    label: Sample Dataset
+    database_views:
+      database_view1: 
+        file: database_view1.sql.j2
+        db_connection: default
+    final_view: database_view1
+
+settings: {}
