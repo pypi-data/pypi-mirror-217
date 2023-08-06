@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: python-defer
+Version: 0.1.0
+Summary: Golang-style `defer` with no decorators!
+License: MIT
+Author: Yasyf Mohamedali
+Author-email: yasyfm@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: asttokens (>=2.2.1,<3.0.0)
+Requires-Dist: sorcery (>=0.2.2,<0.3.0)

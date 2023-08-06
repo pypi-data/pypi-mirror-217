@@ -1,0 +1,11 @@
+defer/__init__.py,sha256=LbnROWd3O3LcCQAaojEaQ3_oIOwCoF3bub8sIL5Mcdg,34
+defer/_defer.py,sha256=wXyxdsMHfsGc-8Y_LhqOzQ1WpR01aKRF39b11Cm7amA,935
+defer/defer.py,sha256=9ONUfaCfN0hcVyCRrwru8EPCNPLb4MRdRfoamsTYx98,563
+defer/errors.py,sha256=dZXKQ6ARZKT6CHZvRpN-xT7FDExIot7k_YxhUv4B79U,333
+defer/sugar/__init__.py,sha256=vPudOWtfFuWnAcNAna8nR8kjA_pHt79sjEIZZwGgZrk,232
+defer/sugar/_parse.py,sha256=vJrCua3fHhKW0BOuXFqUJzSYWAm_SOhHvE1mmQw4pME,2047
+defer/sugar/transformer.py,sha256=nv7gJSob_VHP7S4lQCfCsYvEToxILPfvUE0ZE7BDlYQ,1879
+defer/sugarfree/__init__.py,sha256=jIg9Kpo9ujbOUSrd9ZV5rzR9r2C2jAE2KJq0fPyWcqg,306
+python_defer-0.1.0.dist-info/METADATA,sha256=ZbglfxSt9EYbiBXcXrJ5IFxWyPZ_JCdbrsvZLxD7ZsY,436
+python_defer-0.1.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+python_defer-0.1.0.dist-info/RECORD,,
