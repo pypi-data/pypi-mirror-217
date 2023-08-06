@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: make-argocd-fly
+Version: 0.0.2
+Summary: A project to generate ArgoCD application resources
+Author-email: Andrei Lapin <karandash8@gmail.com>
+License: GPLv3+
+Keywords: argocd,kustomize,jinja2
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: PyYAML (==6.0)
+Requires-Dist: Jinja2 (==3.1.2)
+
+# make_argocd_fly
+A project to generate ArgoCD application resources
+
+# Install
+```
+python -m venv .venv
+. .venv/bin/activate
+python3 -m pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+# Run
+```
+python make_argocd_fly/main.py --root-dir <path>
+```
