@@ -1,0 +1,3 @@
+[console_scripts]
+holos=holos.client.main:app
+
