@@ -1,0 +1,4 @@
+[console_scripts]
+concatenate = gp2040ce_bintools.builder:concatenate
+edit-config = gp2040ce_bintools.gui:edit_config
+visualize-storage = gp2040ce_bintools.storage:visualize
