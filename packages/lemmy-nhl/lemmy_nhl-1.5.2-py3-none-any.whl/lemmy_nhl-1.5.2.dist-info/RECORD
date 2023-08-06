@@ -1,0 +1,10 @@
+lemmy_nhl/config.py,sha256=-j-XBfmC3ivgXFXf5LHVf-TR-BMBdGqGLuTq5F0sy0w,3030
+lemmy_nhl/draft_bot.py,sha256=ZAJWu-5FHtMHNCscx7YC9T1jkRRmvDVY9eoECITd3zc,6916
+lemmy_nhl/lemmy_nhl_bot_daemon.py,sha256=ZGJt_N_y33Z0-AY6NZd80PkP1Cv-IFY8shzy5YEJPPU,7741
+lemmy_nhl/post_body.py,sha256=b4EVAsYgEE2pt-PfPx63wOvKL4MFnBNcZqORoQ2l0T4,12604
+lemmy_nhl-1.5.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+lemmy_nhl-1.5.2.dist-info/METADATA,sha256=TGToaDgw2O_9UozuvdWwMZXnxDamz5bXUti_4IHJgSg,3431
+lemmy_nhl-1.5.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+lemmy_nhl-1.5.2.dist-info/entry_points.txt,sha256=bxes0u1amJJOv8ruGFsQbW6somUWHBDGfFKJ2t5E07E,162
+lemmy_nhl-1.5.2.dist-info/top_level.txt,sha256=6qwV1lo7KPl8VLVpAJdclV6exsAO8Ljti8WD_924Guo,10
+lemmy_nhl-1.5.2.dist-info/RECORD,,
