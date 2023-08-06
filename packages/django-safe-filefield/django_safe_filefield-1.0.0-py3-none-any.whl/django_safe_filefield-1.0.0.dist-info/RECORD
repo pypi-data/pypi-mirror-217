@@ -1,0 +1,12 @@
+safe_filefield/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+safe_filefield/clamav.py,sha256=At70RfDC4oQ4SuUKcoK4D7ttr66cAQ5ZbXgJwxxACo4,1084
+safe_filefield/default_settings.py,sha256=2jCNMsP26NV_4HDBVpvJ1iQksA-lYunJ4Nv88JOTwCw,74
+safe_filefield/forms.py,sha256=j9wmqpMQZrsZkgLJbCSb0JjaEUG4-c5MGibiMVZRtRo,904
+safe_filefield/models.py,sha256=yb-yxzdwx_8NywVA5NqRM2K9nrGnGZw6LtQLcyVPK48,1165
+safe_filefield/utils.py,sha256=lGXI3ON1lFaCWiKe5za5YPMWcLYOsW0iJTTkFO9yB1o,132
+safe_filefield/validators.py,sha256=Rdut-q774ixpR8ZgicthHYcw-OE96QGSOp5j4Ss9Cik,3666
+django_safe_filefield-1.0.0.dist-info/LICENSE,sha256=NWl7iyS3Mlg148Mm8kV8Qi4bemXs4Ms4N3yzEoUNtnw,1071
+django_safe_filefield-1.0.0.dist-info/METADATA,sha256=Xkd9ue8E7Mv7vxrd6RZUQTXcca4H7vekES39kO6gvqM,4625
+django_safe_filefield-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+django_safe_filefield-1.0.0.dist-info/top_level.txt,sha256=zSSfLBGAYaFpUzqMf_9f9GdHaxS1UXF6mHIhTj9D0ew,15
+django_safe_filefield-1.0.0.dist-info/RECORD,,
