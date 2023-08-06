@@ -1,0 +1,221 @@
+Metadata-Version: 2.1
+Name: yapairwise-testing
+Version: 0.1
+Summary: A library for pairwise testing package
+Home-page: https://github.com/claytonfraga/yapairwise_testing
+Author: Clayton Vieira Fraga Filho
+Author-email: claytonfraga@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+## Uso
+
+Para usar a função `pairwise_testing`, importe-a da seguinte maneira:
+
+from pairwise_testing import pairwise_testing
+
+A função pairwise_testing recebe três argumentos:
+
+input_variables: um dicionário onde as chaves são os nomes das variáveis e os valores são listas dos possíveis valores que as variáveis podem assumir.
+results_rules: um dicionário onde as chaves são os nomes dos resultados e os valores são funções que calculam os resultados com base nos valores das variáveis.
+csv_file: uma string que especifica o nome do arquivo CSV onde os casos de teste devem ser salvos.
+A função retorna um DataFrame do pandas que contém os casos de teste.
+
+Aqui está um exemplo de como usar a função:
+
+
+variables = {
+    "Peso": [50, 70, 90],
+    "Altura": [150, 170, 190]
+}
+
+def calculate_imc(test_case):
+    height_m = test_case["Altura"] / 100
+    return test_case["Peso"] / (height_m ** 2)
+
+results_rules = {
+    "IMC": calculate_imc,
+}
+
+df = pairwise_testing(variables, results_rules, 'test_cases.csv')
+
+Vamos a outro exemplo:
+
+
+Este exemplo demonstra o uso da biblioteca `pairwise_testing` para um sistema de delivery que oferece descontos com base no valor da compra, no tipo de produto e no dia da semana.
+
+Primeiro, as variáveis de entrada são definidas. O `Valor da compra` é um valor numérico positivo que representa o valor total da compra realizada pelo cliente. O `Tipo de produto` pode ser "comida", "bebida" ou "outros". O `Dia da semana` pode ser qualquer dia, de "segunda-feira" a "domingo".
+
+A seguir, são definidas as regras para o desconto com base nas variáveis de entrada. Há descontos específicos para diferentes faixas de valor da compra, diferentes tipos de produto, e diferentes dias da semana.
+
+A função `total_discount` calcula o desconto total, aplicando todas as regras de desconto e limitando o desconto total a 25% se a soma dos descontos for maior do que isso.
+
+Finalmente, a função `pairwise_testing` é chamada com as variáveis de entrada e as regras de desconto, e os casos de teste são gerados e salvos em um arquivo CSV.
+
+Essa abordagem garante que todas as combinações possíveis de pares de valores das variáveis apareçam pelo menos uma vez nos casos de teste, proporcionando uma cobertura eficiente com um número gerenciável de testes.
+
+from pairwise_testing import pairwise_testing
+
+# Definindo as variáveis de entrada
+variables = {
+    "Valor da compra": [50, 150, 250, 350],
+    "Tipo de produto": ["comida", "bebida", "outros"],
+    "Dia da semana": ["segunda-feira", "terça-feira", "quarta-feira", "quinta-feira", "sexta-feira", "sábado", "domingo"]
+}
+
+# Definindo a regra para Desconto por valor da compra
+def discount_by_value(test_case):
+    value = test_case["Valor da compra"]
+    if value > 300:
+        return min(20, 25)
+    elif value > 200:
+        return min(15, 25)
+    elif value > 100:
+        return min(10, 25)
+    else:
+        return 0
+
+# Definindo a regra para Desconto por tipo de produto
+def discount_by_product_type(test_case):
+    product_type = test_case["Tipo de produto"]
+    if product_type == "comida":
+        return min(5, 25)
+    elif product_type == "bebida":
+        return min(3, 25)
+    else:
+        return 0
+
+# Definindo a regra para Desconto por dia da semana
+def discount_by_day_of_week(test_case):
+    day_of_week = test_case["Dia da semana"]
+    if day_of_week == "segunda-feira":
+        return min(7, 25)
+    elif day_of_week == "terça-feira":
+        return min(6, 25)
+    elif day_of_week == "quarta-feira":
+        return min(5, 25)
+    elif day_of_week == "quinta-feira":
+        return min(4, 25)
+    elif day_of_week == "sexta-feira":
+        return min(3, 25)
+    elif day_of_week == "sábado":
+        return min(2, 25)
+    else:
+        return 0
+
+# Calculating total discount
+def total_discount(test_case):
+    discounts = [discount_by_value(test_case), discount_by_product_type(test_case), discount_by_day_of_week(test_case)]
+    return min(sum(discounts), 25)
+
+results_rules = {
+    "Desconto por valor da compra": discount_by_value,
+    "Desconto por tipo de produto": discount_by_product_type,
+    "Desconto por dia da semana": discount_by_day_of_week,
+    "Desconto total": total_discount
+}
+
+# Chamando a função
+df = pairwise_testing(variables, results_rules, 'test_cases.csv')
+
+
+Este script demonstra o uso da biblioteca pairwise_testing para um sistema de bilheteria que oferece descontos com base no tipo de ingresso, idade do cliente e categoria do cliente.
+
+Regra de Negócio: Sistema de Bilheteria com Desconto por Categoria de Cliente
+
+Variáveis:
+1. Tipo de ingresso (tipo_ingresso): Representa o tipo de ingresso que está sendo adquirido. Pode ser "inteiro", "meia-entrada" ou "VIP".
+2. Idade do cliente (idade_cliente): Representa a idade do cliente que está adquirindo o ingresso.
+3. Categoria do cliente (categoria_cliente): Representa a categoria do cliente, como "estudante", "idoso", "criança", "adulto", entre outras.
+
+Possíveis Valores:
+- tipo_ingresso: "inteiro", "meia-entrada" ou "VIP".
+- idade_cliente: Qualquer valor numérico inteiro positivo.
+- categoria_cliente: Valor que represente a categoria do cliente (pode ser uma string ou um código).
+
+Regras para o Desconto:
+1. Desconto por tipo de ingresso:
+   - Tipo_ingresso "meia-entrada": 50% de desconto.
+   - Tipo_ingresso "VIP": 20% de desconto.
+
+2. Desconto por categoria de cliente:
+   - Categoria_cliente "estudante": 30% de desconto.
+   - Categoria_cliente "idoso": 40% de desconto.
+   - Categoria_cliente "criança": 20% de desconto.
+   - Categoria_cliente "adulto": Sem desconto.
+
+3. Desconto por faixa etária:
+   - Idade_cliente abaixo de 12 anos: 15% de desconto.
+   - Idade_cliente entre 12 e 18 anos: 10% de desconto.
+   - Idade_cliente acima de 60 anos: 25% de desconto.
+
+Observações:
+- Os descontos podem ser cumulativos, ou seja, caso o cliente se enquadre em mais de uma regra de desconto, os descontos serão somados.
+- O desconto máximo total é de 50%. Caso a soma dos descontos seja maior, o desconto será limitado a 50%.
+- O sistema deve aplicar os descontos automaticamente com base nas variáveis fornecidas.
+
+
+Saída
+O script gera um conjunto de casos de teste que cobre todas as combinações possíveis de pares de valores das variáveis tipo_ingresso, idade_cliente e categoria_cliente. As regras de desconto são aplicadas para calcular o desconto para cada caso de teste. O desconto total é limitado a 50%, mesmo que a soma dos descontos seja maior. Os casos de teste são salvos em um arquivo CSV para referência futura.
+
+from pairwise_testing import pairwise_testing
+
+# Definindo as variáveis de entrada
+variables = {
+    "tipo_ingresso": ["inteiro", "meia-entrada", "VIP"],
+    "idade_cliente": [5, 15, 25, 35, 45, 55, 65, 75],
+    "categoria_cliente": ["estudante", "idoso", "criança", "adulto"]
+}
+
+# Definindo a regra para o desconto do tipo de ingresso
+def discount_ticket_type(test_case):
+    if test_case["tipo_ingresso"] == "meia-entrada":
+        return 50
+    elif test_case["tipo_ingresso"] == "VIP":
+        return 20
+    else:
+        return 0
+
+# Definindo a regra para o desconto pela categoria do cliente
+def discount_customer_category(test_case):
+    if test_case["categoria_cliente"] == "estudante":
+        return 30
+    elif test_case["categoria_cliente"] == "idoso":
+        return 40
+    elif test_case["categoria_cliente"] == "criança":
+        return 20
+    else:
+        return 0
+
+# Definindo a regra para o desconto pela idade do cliente
+def discount_customer_age(test_case):
+    if test_case["idade_cliente"] < 12:
+        return 15
+    elif 12 <= test_case["idade_cliente"] < 18:
+        return 10
+    elif test_case["idade_cliente"] >= 60:
+        return 25
+    else:
+        return 0
+
+# Definindo a regra para o desconto total
+def total_discount(test_case):
+    total = discount_ticket_type(test_case) + discount_customer_category(test_case) + discount_customer_age(test_case)
+    return min(total, 50)  # O desconto máximo é 50%
+
+results_rules = {
+    "Desconto Ingresso": discount_ticket_type,
+    "Desconto Categoria": discount_customer_category,
+    "Desconto Idade": discount_customer_age,
+    "Desconto Total": total_discount
+}
+
+# Chamando a função
+pairwise_testing(variables, results_rules, 'test_cases.csv')
+
+

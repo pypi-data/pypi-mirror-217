@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+yapairwise_testing/__init__.py
+yapairwise_testing/pairwise_testing.py
+yapairwise_testing.egg-info/PKG-INFO
+yapairwise_testing.egg-info/SOURCES.txt
+yapairwise_testing.egg-info/dependency_links.txt
+yapairwise_testing.egg-info/top_level.txt
