@@ -1,0 +1,5 @@
+numpy==1.23.5
+shap==0.41.0
+pandas==2.0.2
+scipy
+category_encoders
