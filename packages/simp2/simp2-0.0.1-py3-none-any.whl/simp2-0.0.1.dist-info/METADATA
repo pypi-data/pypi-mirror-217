@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: simp2
+Version: 0.0.1
+Summary: This is a simple implementation of linear regression
+Author-email: Cong Kha Nguyen <congkhanguyen@gmail.com>
+Project-URL: Homepage, https://github.com/congkhanguyen/simplelinearregress
+Project-URL: Bug Tracker, https://github.com/congkhanguyen/simplelinearregress/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (>=1.24.2)
+Requires-Dist: scikit-learn (>=1.0)
+Requires-Dist: matplotlib (>=3.7.1)
+Requires-Dist: Flask (>=2.3.2)
+Requires-Dist: requests (>=2.31.0)
+Requires-Dist: python-dotenv (>=1.0.0)
+
+# Simple Linear Regression
+## This is a simple implementation of linear regression
+1. Install package `simplelinearregression` package by `pip`. All dependent pakages have been already installed
+- `pip install -i https://test.pypi.org/simple/ simpleregres==0.0.1`
+2. Train model with diabetes dataset
+``` Python
+class MyClass
+end
+```
+3. 
