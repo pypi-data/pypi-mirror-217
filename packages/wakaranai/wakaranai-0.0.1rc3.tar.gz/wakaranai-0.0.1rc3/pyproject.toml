@@ -1,0 +1,42 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "wakaranai"
+authors = [
+  { name="Guilherme Dantas" },
+]
+description = "An educational tool for learning hiragana and katakana"
+readme = "README.md"
+dynamic = [
+    "version",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "colorama==0.4.6",
+]
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: Education",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Natural Language :: English",
+    "Natural Language :: Japanese",
+    "Operating System :: OS Independent",
+    "Topic :: Education",
+]
+keywords = [
+    "japanese",
+    "hiragana",
+    "katakana",
+    "education",
+    "learning",
+]
+
+[project.urls]
+"Source Code" = "https://github.com/guidanoli/wakaranai"
+"Bug Tracker" = "https://github.com/guidanoli/wakaranai/issues"
+
+[tool.hatch.version]
+path = "src/wakaranai/__init__.py"
