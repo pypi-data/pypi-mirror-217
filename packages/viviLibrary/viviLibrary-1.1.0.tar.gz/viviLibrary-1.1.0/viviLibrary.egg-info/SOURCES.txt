@@ -1,0 +1,6 @@
+README.md
+setup.py
+viviLibrary.egg-info/PKG-INFO
+viviLibrary.egg-info/SOURCES.txt
+viviLibrary.egg-info/dependency_links.txt
+viviLibrary.egg-info/top_level.txt
