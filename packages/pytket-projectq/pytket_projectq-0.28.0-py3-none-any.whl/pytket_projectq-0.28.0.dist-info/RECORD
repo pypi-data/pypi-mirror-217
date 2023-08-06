@@ -1,0 +1,11 @@
+pytket/extensions/projectq/__init__.py,sha256=nKqskpuAjL4Xsyte3HWyzvB-ZRua8migIyamcE7n0sU,920
+pytket/extensions/projectq/_metadata.py,sha256=D7ZcMd7UHMvvgP8QcHfCSfoHcLff8wlzNVtK1w1Qr14,72
+pytket/extensions/projectq/projectq_convert.py,sha256=KzK70gXzhZVdQjSHhupJF65pGCo9mrwaX4W6BqabdmE,13423
+pytket/extensions/projectq/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytket/extensions/projectq/backends/__init__.py,sha256=U5MhYaVNGLKql_CJSuQq26vv5EiYJDrfaXuvCm6oOqo,715
+pytket/extensions/projectq/backends/projectq_backend.py,sha256=kQsoY0gHb6EOTpgej6axXsZcO-ldoKFW4C0Dhwkq6ro,10205
+pytket_projectq-0.28.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pytket_projectq-0.28.0.dist-info/METADATA,sha256=qyN21acDhOTn1TBswZoUQ2jNNp_z26_OPh1ccVSqJKM,4062
+pytket_projectq-0.28.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pytket_projectq-0.28.0.dist-info/top_level.txt,sha256=GsvCQQpJ7P8Vrx4ydtbjs36yufXiD59vSbbQFtFgcQ0,7
+pytket_projectq-0.28.0.dist-info/RECORD,,
