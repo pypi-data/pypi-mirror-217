@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: tg_api_gen
+Version: 23.0.2
+Summary: lightweight skript that generates realistic device_model, app_verion, system_version for telegram
+Project-URL: Homepage, https://github.com/gmankab/tg_api_gen
+Author-email: gmanka <gmankab@gmail.com>
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# tg_api_gen
+
+lightweight skript that generates realistic device_model, app_verion, system_version for telegram
+
+thanks [opentele](https://github.com/thedemons/opentele)
+
