@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: micropython_hints
+Version: 0.0.5
+Summary: MicroPython type hints
+Home-page: https://github.com/miaobuao/micropython_hints
+Author: miaobuao
+Author-email: miaobuao@outlook.com
+License: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# MicroPython TypeHints

@@ -1,0 +1,9 @@
+README.md
+setup.py
+micropython_hints/__init__.py
+micropython_hints.egg-info/PKG-INFO
+micropython_hints.egg-info/SOURCES.txt
+micropython_hints.egg-info/dependency_links.txt
+micropython_hints.egg-info/entry_points.txt
+micropython_hints.egg-info/requires.txt
+micropython_hints.egg-info/top_level.txt
