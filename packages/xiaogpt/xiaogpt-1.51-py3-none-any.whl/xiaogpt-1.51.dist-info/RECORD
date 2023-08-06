@@ -1,0 +1,17 @@
+xiaogpt-1.51.dist-info/METADATA,sha256=7OOFi4_MDsknspD3Dd5w7kZ2lhFzc551vS9Saa-60Jw,12425
+xiaogpt-1.51.dist-info/WHEEL,sha256=g58cvAsF5_9d0VXJuk7F0rhl6nAjUc5P9vx880WkZtI,90
+xiaogpt-1.51.dist-info/entry_points.txt,sha256=zLFzA72qQ_eWBepdA2YU5vdXFqORH8wXhv2Ox1vnYP8,46
+xiaogpt-1.51.dist-info/licenses/LICENSE,sha256=XdClh516MvlnOf9749JZHCxSB7y6_fyXcWmLDz6IkZY,1063
+xiaogpt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xiaogpt/__main__.py,sha256=MSmt_5Xg84uHqzTN38JwgseJK8rsJn_11A8WD99VtEo,61
+xiaogpt/bot/__init__.py,sha256=A_kVOZY4tiW8V7V_MP85Ij8PyjS3KaUuCzRKMGeJr7Y,707
+xiaogpt/bot/base_bot.py,sha256=kzbUw1eQrgFqkE_eZZrWmcbPdwFrQezJBLm7cJAM8qw,554
+xiaogpt/bot/chatgptapi_bot.py,sha256=XcePzPpTo5ofVJtT6IBjSRjj0aoppdJ8Zs18spAc76o,3280
+xiaogpt/bot/glm_bot.py,sha256=u6vXAvsveHgqGcrDlY2TUnTWxMc8gI1VoXU4x2zlkaE,1252
+xiaogpt/bot/gpt3_bot.py,sha256=c_37SMs_karXH3lKuyeyNZA5iGyj5uzErVdbuGA1GtA,1638
+xiaogpt/bot/newbing_bot.py,sha256=OBTZYWEqd3sfPl_0BrQxXZC79l8-l-2ikYFIhc4plqI,1996
+xiaogpt/cli.py,sha256=qcVekNdynS-sxn5WqZGDcUweYd12JD4rUZm6FAIrxaA,3821
+xiaogpt/config.py,sha256=CioOI4UMHmFcvsEoGIZI41Gc1Z-oI0Yh3i3wc-1C93o,5366
+xiaogpt/utils.py,sha256=kJ8nOBkilEoo1i2uUSp9tkUWV4pWrd5_EzEicZXzNjY,2071
+xiaogpt/xiaogpt.py,sha256=_IQAxihPqjhVAhAuYcUFf1QlPZaGELqus0D9ioEUeeI,18700
+xiaogpt-1.51.dist-info/RECORD,,
