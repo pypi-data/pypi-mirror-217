@@ -1,0 +1,3 @@
+[console_scripts]
+energat=energat.__main__:main
+
