@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+polybius_square_pro/__init__.py
+polybius_square_pro.egg-info/PKG-INFO
+polybius_square_pro.egg-info/SOURCES.txt
+polybius_square_pro.egg-info/dependency_links.txt
+polybius_square_pro.egg-info/not-zip-safe
+polybius_square_pro.egg-info/top_level.txt
