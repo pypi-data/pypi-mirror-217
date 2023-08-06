@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+good_converter/__init__.py
+good_converter/__main__.py
+good_converter/ann_converter.py
+good_converter.egg-info/PKG-INFO
+good_converter.egg-info/SOURCES.txt
+good_converter.egg-info/dependency_links.txt
+good_converter.egg-info/top_level.txt

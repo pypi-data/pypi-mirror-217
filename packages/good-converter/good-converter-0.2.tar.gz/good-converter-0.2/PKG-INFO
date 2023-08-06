@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: good-converter
+Version: 0.2
+Summary: convert between multiple file formats of NLP, such as ann, bio and bmes
+Home-page: 
+Author: TangZhaoXiang
+Author-email: 
+Maintainer: 
+Maintainer-email: 
+License: MIT License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.0
+License-File: LICENSE
+
+2023.7.3
+V0.1: 提供2个基础的格式转换功能：
+**ann_to_bio**
+参数：
+- save_path：转换后的文件保存路径
+- input_file：输入的文件路径
+
+**ann_to_bmes**
+参数：
+- save_path：转换后的文件保存路径
+- input_file：输入的文件路径
