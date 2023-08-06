@@ -1,0 +1,11 @@
+_cephes4py.abi3.so,sha256=VY7rUehckA5DCWcLrFCWuqYJJoBWRBrMH_QubiMOsqs,408081
+cephes4py-0.0.2.dist-info/WHEEL,sha256=8eJX_dw73CNnmzNmAWEApJ6hir6NWsb8wy5U1gWNY8E,114
+cephes4py-0.0.2.dist-info/top_level.txt,sha256=a7hZ8fj59RPclZVrd2oRpo9hb1VXnMDX0P0PdNrVezs,35
+cephes4py-0.0.2.dist-info/RECORD,,
+cephes4py-0.0.2.dist-info/LICENSE,sha256=lV9QrIWl5GwkTWjX5J7a0Fnryo5gP-Wqrtr6XyVUF9Y,1076
+cephes4py-0.0.2.dist-info/METADATA,sha256=qRETeW_naJ5nsTHr0ubQWyUUpbEHElGxVvD-b0EFfBM,4226
+cephes4py/_test.py,sha256=0xyTKLTFrrBtHcJV0VL__Zf6uk0u0FKerr_3GJk9084,434
+cephes4py/interface.h,sha256=H13kely1UNw5ydcq9dnKdU1hrCBj-UBK1Nkpz3Py4Q4,5346
+cephes4py/__init__.py,sha256=sBxA9z_qAbN0qGsVs-cNSdXK4g4lRTMoB7ADt5ktSyg,8563
+cephes4py/build_hcephes.py,sha256=XTqPndMkfI2i6P4cYusoHpL861upqge2ei1uymCMM1U,4705
+cephes4py.libs/libhcephes-ae6048d5.so.0.4.1,sha256=sR7lQN5ZgzTr7SBY5Em-Lf8Y-rTUtt1X-m63PZnq_TM,154249
