@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+setup.py
+feeder/__init__.py
+feeder/cli.py
+feeder/feeder.py
+json_feeder.egg-info/PKG-INFO
+json_feeder.egg-info/SOURCES.txt
+json_feeder.egg-info/dependency_links.txt
+json_feeder.egg-info/entry_points.txt
+json_feeder.egg-info/requires.txt
+json_feeder.egg-info/top_level.txt
+tests/test_feed_fetch.py
+tests/test_generate.py
+tests/test_settings.py
