@@ -1,0 +1,6 @@
+include pyproject.toml
+include *.md
+include src/shiftlab_ocr/generator/content/*.png
+include src/shiftlab_ocr/generator/content/*.otf
+include src/shiftlab_ocr/generator/content/*.ttf
+include LICENSE
