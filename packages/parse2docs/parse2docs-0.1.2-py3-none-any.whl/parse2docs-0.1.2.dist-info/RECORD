@@ -1,0 +1,10 @@
+parse2docs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+parse2docs/app.py,sha256=0ZLjX18zyS1DmP9OibAZ_veK02moA9TZXJiofS1CSC4,1547
+parse2docs/argfinder.py,sha256=23_4SX2LIUi1MxOq7lGkbSAGozdJ8p6LMF0gWsmDu3w,1832
+parse2docs/markdown_renderer.py,sha256=xHZJtsYxRCIfQ_0pdfmOqFB8RuFUFt3Jjd3HjLF0KnU,3414
+parse2docs/module_loader.py,sha256=HfQ6_V1L4yuc6CvE2ns0hNgB9tfdjncewE21sR66XVM,687
+parse2docs-0.1.2.dist-info/entry_points.txt,sha256=3nfoYPNfXh7gR21lbayGMWrZo6gRgorOAqHY5NtGc9s,71
+parse2docs-0.1.2.dist-info/LICENSE,sha256=gxG7I4eoc_lAkOrqJgoQyuETkk7d63FBPodgCGvxy84,1067
+parse2docs-0.1.2.dist-info/METADATA,sha256=dlLuEse4Z6oNRqNuCfnTFqkppSF9i1NszGwnV0eiAus,2619
+parse2docs-0.1.2.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+parse2docs-0.1.2.dist-info/RECORD,,
