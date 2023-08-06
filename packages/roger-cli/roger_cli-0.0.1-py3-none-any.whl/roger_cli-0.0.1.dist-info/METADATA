@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: roger-cli
+Version: 0.0.1
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: openai (==0.27.4)
+
+# roger
+A CLI assistant using GPT.
