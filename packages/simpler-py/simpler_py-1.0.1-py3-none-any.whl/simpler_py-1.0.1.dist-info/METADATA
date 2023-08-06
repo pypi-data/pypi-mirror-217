@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: simpler_py
+Version: 1.0.1
+Summary: Provides an interface to the Simpler api.
+Author-email: Simpler Systems <support@simplersystems.com>
+License-File: LICENSE.txt
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+Provides an interface to the Simpler api.
