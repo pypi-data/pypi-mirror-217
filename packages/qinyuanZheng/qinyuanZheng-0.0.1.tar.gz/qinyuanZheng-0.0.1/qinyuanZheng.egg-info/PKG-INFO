@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: qinyuanZheng
+Version: 0.0.1
+Summary: A small example package
+Home-page: https://github.com/pypa/sampleproject
+Author: aishan1
+Author-email: 18094773132@189.cn
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# README
+
+this is the test of pypi
