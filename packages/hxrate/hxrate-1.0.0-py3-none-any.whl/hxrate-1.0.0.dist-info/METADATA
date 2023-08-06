@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: hxrate
+Version: 1.0.0
+Summary: HX Rate Fitting
+Author-email: SD <suggie@northwestern.edu>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib (==3.3.4)
+Requires-Dist: numpy (==1.20.2)
+Requires-Dist: numpyro (==0.8.0)
+Requires-Dist: pandas (==1.2.5)
+Requires-Dist: scikit-learn (==0.24.2)
+Requires-Dist: scipy (==1.6.2)
+Requires-Dist: pyyaml (==6.0)
+Requires-Dist: biopython (==1.79)
+Requires-Dist: molmass (==2021.6.18)
+Requires-Dist: jax (==0.2.25)
+Requires-Dist: jaxlib (==0.1.74)
+Requires-Dist: psutil (==5.8.0)
+
+HXRATE
+
+This package contains modules for hydrogen deuterium exchange (hdx) mass spectrometry data analysis. It contains:
+
+1. backexchange: for backexchange calculations
+2. ratefit: for fitting hdx rates
+3. openfe: for calculating opening free energy values from hdx rates
+4. hxdata: contains methods for reading and writing data
+5. methods: contains helper methods
+
+For usage, please refer to the following repository:
+https://github.com/sugyandixit/hxrate_pipeline
+
+Under scripts/hxrate/ there are python scripts that uses HXRATE package for rate fitting and opening free energy calculations
+
+You could also use hxrate_pipeline repository for distributed computing in High Performance Computing clusters
+(Please refer to README in hxrate_pipeline repository)
+
+Have fun fitting!
