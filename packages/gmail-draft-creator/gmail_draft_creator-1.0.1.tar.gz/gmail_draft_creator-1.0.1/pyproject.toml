@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "gmail_draft_creator"
+version = "1.0.1"
+description = "Create draft messages in Gmail"
+authors = ["Michael Bianco <mike@mikebian.co>"]
+license = "MIT"
+readme = "readme.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+google-api-python-client = "^2.21.0"
+python-decouple = "^3.5"
+google-auth-httplib2 = "^0.1.0"
+google-auth-oauthlib = "^0.4.6"
+click = "^8.1.3"
+markdown = "^3.4.3"
+
+[tool.poetry.group.dev.dependencies]
+ipdb = "^0.13.13"
+
+[tool.poetry.scripts]
+gmail-draft-creator = "gmail_draft_creator:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
