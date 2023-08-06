@@ -1,0 +1,30 @@
+[build-system]
+requires = [
+    "setuptools>=58.0.4",
+    "wheel>=0.37.0"
+]
+build-backend = "setuptools.build_meta"
+
+[tool.poetry]
+name = "ytdld"
+version = "0.0.1"
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/KasRoudra/ytdld/"
+include = ["README.md", "LICENSE", "ytdld.py"]
+description = "Just another youtube downloader"
+authors = ["KasRoudra <kasroudrakrd@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pytube = "^14.0.0"
+questionary = "^1.9.0"
+
+[tool.poetry.scripts]
+ytdld = "ytdld:main"
+
+[build-system.sdist]
+formats = ["gztar"]
+
+[build-system.bdist_wheel]
+universal = false
