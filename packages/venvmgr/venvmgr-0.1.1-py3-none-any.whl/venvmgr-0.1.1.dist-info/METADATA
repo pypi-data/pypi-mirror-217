@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: venvmgr
+Version: 0.1.1
+Summary: Manage Python virtual environments
+Home-page: https://github.com/andrewfowlie/venvmgr
+Author: Andrew Fowlie
+Author-email: Andrew Fowlie <andrew.fowlie@xjtlu.edu.cn>
+License: MIT License
+        
+        Copyright (c) 2023 Andrew Fowlie
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Bug Tracker, https://github.com/andrewfowlie/venvmgr/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click
+
+# venvmgr
+
+_👀 Manage Python virtual environments_
+
+## Install 💥
+
+```bash
+pipx install venvmgr
+```
+
+# Usage
+
+Create a venv named `example` using venvmgr
+
+```bash
+$ vm create example
+```
+Use it using venvmgr
+
+```bash
+$ vm python --venv example code.py
+```
+
+The associations between files and venvs are recorded so that
+
+```bash
+$ vm python code.py
+```
+now uses the `example` venv. We might want to install packages in this venv, e.g.,
+
+```bash
+$ vm pip --venv example scipy
+```
+
+We now might want to check the venvs:
+
+```bash
+$ vm ls
+example
+created at 2023-07-03 12:07:48.872147
+activate: source /home/user/.venvmgr/example/bin/activate
+used by: /home/user/code.py
+```
+For more information, try `vm ls -l`.
+
+Lastly, we might want to activate this venv
+
+```bash
+$ vm activate example
+```
+
+
