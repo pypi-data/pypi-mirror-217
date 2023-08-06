@@ -1,0 +1,17 @@
+src/llm-to-corpus/chatgpt.py,sha256=oehBltqyQ-2ejEBM5Yxxq2R_JWk5C65JA4B77GRb4zo,1305
+src/llm-to-corpus/cli.py,sha256=ZmwtuaN3HN6EVzCah4G90TtRYkaFktw76K27_q9eI7U,2343
+src/llm-to-corpus/huggingface.py,sha256=TZ2K5FvLYoQa_nnvToZIP2O1YsAx3jqn1E4wy5oilrI,722
+src/llm-to-corpus/version.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+src/llm_to_corpus/bloom.py,sha256=h1I8l7RUZqKxO1YXFfVGBlUvyFuba00RRm7ztwoaEws,1405
+src/llm_to_corpus/chatgpt.py,sha256=HouN5tym9rRdC7wc9zj1za5V7q0QatBJRRCw_mxMHPw,1215
+src/llm_to_corpus/cli.py,sha256=SCVojXTeN-LM34_rLC9jiSSvVQQL9MxW0IympfDd-Z8,3341
+src/llm_to_corpus/huggingface-falcon.py,sha256=JFnhj-Kdc2vnlMM0pHJqK2QAwg0SwAGFDSk0VinMKVo,778
+src/llm_to_corpus/huggingface.py,sha256=TZ2K5FvLYoQa_nnvToZIP2O1YsAx3jqn1E4wy5oilrI,722
+src/llm_to_corpus/models.py,sha256=5-yEcgJ1O_gRXY1iJUccyAz75Brd2GbWEupA3oJIoXs,931
+src/llm_to_corpus/version.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+llm_to_corpus-0.0.1.dist-info/LICENSE,sha256=fgVgP4GS9lRk3cMciqIJSbjN3bHVBUZ13SrozrlRe0E,1066
+llm_to_corpus-0.0.1.dist-info/METADATA,sha256=MFmQdM-d-n24LC0CJzdLvFImCfaK29fQudEDIIJROFE,2261
+llm_to_corpus-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+llm_to_corpus-0.0.1.dist-info/entry_points.txt,sha256=tmqiATQaf7B_KLqjXIqRm7khntVCYc14OyR09qXvmbY,61
+llm_to_corpus-0.0.1.dist-info/top_level.txt,sha256=59Q7PjW-9DoLV5ofSsZ6JZuteQO9QQQ285pBY-093Lc,18
+llm_to_corpus-0.0.1.dist-info/RECORD,,
