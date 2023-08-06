@@ -1,0 +1,9 @@
+s3cps3/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+s3cps3/commons.py,sha256=-lOoesjYrZrrRQe4_E93TSXVA28f42yQpekhtZ7pxLc,1210
+s3cps3/listbucket.py,sha256=jyREXJLjbmpz4_Uin0Y7bcoWloKcuebi1i2CyERHmxI,2217
+s3cps3/s3cps3.py,sha256=A9xkhgE53H5DD--P7PAcTPCp_2u91mqfgqDn9FWDceM,4150
+s3cps3-0.0.1.dist-info/LICENSE,sha256=ACwmltkrXIz5VsEQcrqljq-fat6ZXAMepjXGoe40KtE,1069
+s3cps3-0.0.1.dist-info/METADATA,sha256=RTvXfzXfT0xzu-qjTxsq6Pt4I5TzYJkFc9V2oy4lRfw,137
+s3cps3-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+s3cps3-0.0.1.dist-info/top_level.txt,sha256=CNsiUvrglJPIAW7Bc0sWoWfslJKlAFzPp6CqTNvo_VM,7
+s3cps3-0.0.1.dist-info/RECORD,,

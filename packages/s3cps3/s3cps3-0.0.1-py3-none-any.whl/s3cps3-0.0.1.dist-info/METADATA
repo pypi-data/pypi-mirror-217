@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: s3cps3
+Version: 0.0.1
+License-File: LICENSE
+Requires-Dist: awscli
+Requires-Dist: boto3
+Requires-Dist: click
+
