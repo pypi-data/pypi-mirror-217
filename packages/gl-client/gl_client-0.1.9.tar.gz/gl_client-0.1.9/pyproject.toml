@@ -1,0 +1,36 @@
+[project]
+name = "gl-client"
+
+dependencies = [
+    "protobuf>=3",
+    "grpcio==1.51.3",
+    "pyln-grpc-proto>=0.1",
+]
+
+[tool.poetry]
+name = "gl-client"
+version = "0.1.9"
+description = ""
+authors = ["Christian Decker <decker@blockstream.com>"]
+license = "MIT"
+
+packages = [
+    { include = "glclient" },
+]
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+
+[tool.poetry.dependencies]
+python = ">=3.7,<4"
+grpcio = "1.51.3"
+pyln-grpc-proto = "^0.1"
+
+# Yes, this is pinned to an older version. 1.53 and 1.54 appear to
+# have an issue with TLS (TSI corruption).
+grpcio-tools = "1.51.3"
+protobuf = ">=3"
+
+[build-system]
+requires = ["maturin>=0.11,<0.12"]
+build-backend = "maturin"
