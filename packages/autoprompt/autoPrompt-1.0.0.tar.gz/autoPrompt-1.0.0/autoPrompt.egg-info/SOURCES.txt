@@ -1,0 +1,8 @@
+setup.py
+autoPrompt/__init__.py
+autoPrompt/app.py
+autoPrompt.egg-info/PKG-INFO
+autoPrompt.egg-info/SOURCES.txt
+autoPrompt.egg-info/dependency_links.txt
+autoPrompt.egg-info/requires.txt
+autoPrompt.egg-info/top_level.txt
