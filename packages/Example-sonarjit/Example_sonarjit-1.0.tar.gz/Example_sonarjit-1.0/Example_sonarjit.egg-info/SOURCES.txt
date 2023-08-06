@@ -1,0 +1,5 @@
+setup.py
+Example_sonarjit.egg-info/PKG-INFO
+Example_sonarjit.egg-info/SOURCES.txt
+Example_sonarjit.egg-info/dependency_links.txt
+Example_sonarjit.egg-info/top_level.txt
