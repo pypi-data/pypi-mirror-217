@@ -1,0 +1,2 @@
+[console_scripts]
+pysuchsel = pysuchsel.__main__:main
