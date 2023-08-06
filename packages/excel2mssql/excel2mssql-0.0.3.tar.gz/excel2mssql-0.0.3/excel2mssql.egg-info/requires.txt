@@ -1,0 +1,5 @@
+pandas
+tqdm
+pyodbc
+sqlalchemy
+openpyxl

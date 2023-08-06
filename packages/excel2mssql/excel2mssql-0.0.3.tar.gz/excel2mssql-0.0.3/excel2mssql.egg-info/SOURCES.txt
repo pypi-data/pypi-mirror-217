@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+excel2mssql/__init__.py
+excel2mssql/worker.py
+excel2mssql.egg-info/PKG-INFO
+excel2mssql.egg-info/SOURCES.txt
+excel2mssql.egg-info/dependency_links.txt
+excel2mssql.egg-info/requires.txt
+excel2mssql.egg-info/top_level.txt
