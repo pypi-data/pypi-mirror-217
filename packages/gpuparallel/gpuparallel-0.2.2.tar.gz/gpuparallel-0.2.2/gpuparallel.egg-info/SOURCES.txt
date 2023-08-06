@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+gpuparallel/__init__.py
+gpuparallel/batch.py
+gpuparallel/gpuparallel.py
+gpuparallel/utils.py
+gpuparallel/version.py
+gpuparallel.egg-info/PKG-INFO
+gpuparallel.egg-info/SOURCES.txt
+gpuparallel.egg-info/dependency_links.txt
+gpuparallel.egg-info/requires.txt
+gpuparallel.egg-info/top_level.txt
+tests/tests_batch.py
+tests/tests_gpuparallel.py
