@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "prompt-pilot"
+version = "0.0.1"
+description = "Library for Prompt Engineering"
+authors = ["Amar <amar439412@gmail.com>"]
+readme = "README.md"
+packages = [{include = "prompt-pilot"}]
+license = "MIT"
+homepage = "https://github.com/Amar-89"
+repository = "https://github.com/Amar-89/prompt-pilot"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
