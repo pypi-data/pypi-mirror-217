@@ -1,0 +1,7 @@
+itsdangerous
+werkzeug
+PyJWT
+pyaes
+jinja2
+uuid
+veloadmin
