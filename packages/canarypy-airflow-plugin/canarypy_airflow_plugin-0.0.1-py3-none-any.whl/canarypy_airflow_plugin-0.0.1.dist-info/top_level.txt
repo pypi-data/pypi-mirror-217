@@ -1,0 +1,1 @@
+canarypy_airflow_plugin

@@ -1,0 +1,7 @@
+canarypy_airflow_plugin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+canarypy_airflow_plugin/canarypy_plugin.py,sha256=BNJlOhW8gUevMQ0hy-lG6IRWRHMcr1kEpzpkzOo6Bgc,3545
+canarypy_airflow_plugin-0.0.1.dist-info/METADATA,sha256=x3E8iVWo2eCctJlLujxsJ_ui3uFsfwRoDt3WgKvEGu8,3322
+canarypy_airflow_plugin-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+canarypy_airflow_plugin-0.0.1.dist-info/entry_points.txt,sha256=Twh-avBjSHyKW0hBynRQKWiE-FAxc4cbdw-BVgdI7wo,100
+canarypy_airflow_plugin-0.0.1.dist-info/top_level.txt,sha256=xSTHR81lerRLk_OqoPBQ_gT_bilAARoEhYZfAL3PhO0,24
+canarypy_airflow_plugin-0.0.1.dist-info/RECORD,,

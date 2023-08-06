@@ -1,0 +1,3 @@
+[airflow.plugins]
+canarypy-airflow-plugin = canarypy_airflow_plugin.canarypy_plugin:CanaryPyPlugin
+
