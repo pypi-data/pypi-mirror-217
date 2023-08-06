@@ -1,0 +1,15 @@
+django_tomselect/__init__.py,sha256=FJL6YJmnH2awJTScp7pOenn5BnskqXCz8F6FQogqakw,122
+django_tomselect/settings.py,sha256=pOA_q-NuHTaTfWplhe-VMc_oTxUOWaxLUF0A8QgnJQA,123
+django_tomselect/views.py,sha256=mIlqlr3FqPAjNZyN5SWj69zM3IfRd1zLkhA3UzFrbAg,4678
+django_tomselect/widgets.py,sha256=_IO8i-98_A9QZx_TtxHWpr5V8_VLE9Nwgc0Xi9ZSqn4,7686
+django_tomselect/static/django_tomselect/css/django-tomselect.css,sha256=8qs0-Pm3SNG7rOL9OKIfA-CshXE5xJb5sA1-9aKaea0,430
+django_tomselect/static/django_tomselect/js/django-tomselect.js,sha256=jOLwsuEFhnLbQ4bKxPsFO3PmGQK6flyGYluVvI0E9cw,148996
+django_tomselect/static/django_tomselect/vendor/tom-select/css/tom-select.bootstrap4.css,sha256=HWxCrISPH-FVyiH19dle7mXGsFN_LmP-4OswWZgPLFA,13682
+django_tomselect/static/django_tomselect/vendor/tom-select/css/tom-select.bootstrap4.css.map,sha256=cCuOLi33i9nHG_ojze-d5dTHLnYSPix1QW1gc0cD-Is,18762
+django_tomselect/static/django_tomselect/vendor/tom-select/css/tom-select.bootstrap5.css,sha256=upLV-nxoBO1uYvz61XOK63nlZ8YB4Z3GNQF6qAGL69s,17697
+django_tomselect/static/django_tomselect/vendor/tom-select/css/tom-select.bootstrap5.css.map,sha256=YwrJ8Wo6uI5EIBMSygVdxGgGuakHgMXwN2lz49JuG9A,23112
+django_tomselect-0.4.3.dist-info/LICENSE,sha256=VhVtfCI6Mb-W4RDyyhUM5K0cDQS_n2TLZ_kud2HfCgA,1094
+django_tomselect-0.4.3.dist-info/METADATA,sha256=02pPbKxxPfxYaEPgVp3TIoyGbC84zjke6Tz85qWS-2k,14874
+django_tomselect-0.4.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+django_tomselect-0.4.3.dist-info/top_level.txt,sha256=ug6gSEN-f2kCRoVEjGHW7cqJbR-wvnA2KUU_UFTeTQ8,17
+django_tomselect-0.4.3.dist-info/RECORD,,
