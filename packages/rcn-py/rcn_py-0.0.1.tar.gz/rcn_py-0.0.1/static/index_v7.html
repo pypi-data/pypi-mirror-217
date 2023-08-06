@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="https://neo4j-documentation.github.io/developer-resources/language-guides/assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" /> -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/1.1.2/css/bootstrap-multiselect.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" />
+    
+    <!-- Title -->
+    <title>RCN</title>    
+
+    <!-- Inline styles -->
+    <style>
+        .brand-lg {
+            font-size: 18px;
+        }
+        .nav-lg {
+            font-size: 16px;
+        }
+        .nav-sm {
+            font-size: 14px;
+        }
+        .navbar-form {
+          display: none;
+          align-items: center;
+          margin-bottom: 20px;
+        }
+        .navbar-form.active {
+          display: block;
+          align-items: center;
+          margin-bottom: 20px;
+        }
+        .navbar-brand {
+            position: absolute;
+            margin-top: 25px;
+        }
+        #menu_list {
+            position: absolute;
+            margin-left: 300px;
+        }
+        .navbar-nav {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .nav-item {
+        white-space: nowrap; /* Prevent menu item from wrapping */
+        }
+        
+        svg {
+            position: absolute;
+            left: -50%;
+            top: -50%;
+        }
+        .button {
+            background-color: #75a0c1;
+            border: none;
+            color: white;
+            /* padding: 0px 0px; */
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 8px;
+            border-radius: 8px;
+            margin: 4px ;
+            cursor: pointer;
+            transition-duration: 0.3s;
+            
+        }
+        .button1 {
+            background-color: white; 
+            color: black; 
+            border: 2px solid #75a0c1;
+        }
+        .button1:hover {
+            background-color: #75a0c1;
+            color: white;
+        }
+        .button2 {
+            background-color: white; 
+            color: black; 
+            font-size: 14px;
+            border: 2px solid #d68b81;
+        }
+        .button2:hover {
+            background-color: #d68b81;
+            color: white;
+        }
+        .button3 {
+            background-color: #75a0c1;
+            border: none;
+            color: white;
+            /* padding: 0px 0px; */
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            border-radius: 8px;
+            margin: 6px ;
+            cursor: pointer;
+            transition-duration: 0.3s;
+        }
+        .button3:hover {
+            background-color: #5883a4;
+            color: white;
+        }
+        
+        #sidebar {
+            background-color: #f1f1f1;
+            height: 100%;
+            position: fixed;
+            top: 50px;
+            left: 0;
+            width: 250px;
+            padding: 20px;
+            padding-top: 20px;
+            border-right: 1px solid #ccc;
+            z-index: 3;
+        }
+		
+        #menu {
+            top: 0;
+            height: 50px;
+            width: 100%;
+            padding: 20px;
+            border-bottom: 1px solid #ccc;
+            position: fixed;
+            z-index: 4;
+        }
+        #profile {
+            background-color: #f1f1f1;
+            padding-left: 260px;
+            padding-top: 10px;
+            padding-right: 0;
+            top: 50px;
+            height: 150px;
+            width: 100%;
+            border-bottom: 1px solid #ccc;
+            position: fixed;
+            z-index: 2;
+            visibility: hidden;
+        }
+        #name-title {
+            position: relative;
+            max-width: 400px;
+        }
+        
+        .metrics {
+            position: absolute;
+            top: 5px;
+            right: 60px;
+        }
+        .info-icon {
+            position: absolute;
+            right: 10px;
+            top: 0;
+            font-size: 2em;
+        }
+        #polarchart {
+            position: absolute;
+            top:10px;
+            right: 150px;
+        }
+        
+        .personal-work {
+            position: absolute;
+            top: 15px;
+            margin-left: 400px;
+            max-width: 15vw;
+        }
+        canvas {
+            background-color: #f1f1f1;
+	    }
+        .table-container {
+            max-height: 300px;
+            overflow: auto;
+        }
+        .table {
+            display: table;
+            max-width: 100vw;
+            margin-top: 10px;
+            border: none;
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid #ddd;
+            }
+        .table thead {
+            font-weight: bold;
+            background-color: #c2c2c2;
+        }
+        .row {
+            display: table-row;
+        }
+        .cell {
+            display: table-cell;
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        #tbody {
+            overflow:scroll;
+            overflow-y: auto;
+        }
+        
+        #graph {
+            top: 50px;
+            margin-left: 150px;
+            padding: 20px;
+            position: fixed;
+            z-index: 1;
+        }
+        #loadingNotice {
+            position: absolute;
+            margin-left: 150px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 20px;
+            color: #333;
+        }
+
+        #intro_title {
+            font-size: 32px; /* adjust size as needed */
+        }
+        #intro p {
+            font-size: 16px; /* adjust size as needed */
+            margin-right: 500px;
+        }
+
+      </style>
+</head>
+
+<body>
+
+    <div id="graph" style="display: none;">
+    </div>
+
+    <div id="loadingNotice" style="display: none;">Generating...</div>
+
+    <nav class="navbar navbar-expand-lg  bg-light" id="menu">
+            <a class="navbar-brand brand-lg">Research Collaboration Network</a>
+                    
+            <div class="collapse navbar-collapse" id="menu_list">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link nav-lg" id="home_page">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-lg" id="escience" data-menu="escience">RSD</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-lg" id="scopus" data-menu="scopus">Scopus</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-lg" id="openalex" data-menu="openalex">OpenAlex</a>
+                        </li>
+                    </ul>
+            </div>
+    </nav>
+
+    <div id="home" style="display: flex; flex-direction: column; align-items: center;">
+        <div id="intro" style="margin-top: 100px; margin-left: 30px;">
+            <h1 id="intro_title">Welcome to Research Collaboration Network</h1>
+            <br>
+            <p>
+                Utilizing comprehensive data from the prestigious Research Software Directory, Scopus, and OpenAlex, 
+                our service is dedicated to the visualization of research collaborations. 
+                Our primary features include advanced network search capabilities, which allow users to discover new 
+                research collaborations, and network generation functions, offering a unique visualization of complex 
+                research connections. 
+            </p>
+            <p>
+                By integrating our datasets and networks, users can explore a vast array of collaborative opportunities, 
+                tracking trends, and patterns in research development.
+            </p>
+        </div>
+    
+        <div id="start"  style="display: flex; flex-direction: column; justify-content: center; align-items: center; margin-top: 100px;">
+            <h2 style="margin-bottom: 20px;"> Start here: </h2>
+            <div>
+                <button class="button3" onclick="RSD_network()">RSD</button>
+                <button class="button3" onclick="Scopus_network()">Scopus</button>
+                <button class="button3" onclick="Openalex_network()">OpenAlex</button>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <div id="profile">
+        <div class="container">
+            <div class="person-vcard-wrapper">
+                
+                    <section class="profile" aria-label="persons information">
+                        <div class="information">
+                            <div class="header person-details">
+                                <h2 id="name-title" style="max-width: 500px;">
+                                </h2>
+                                
+                                <div class="rendering rendering_person rendering_personorcidrendererportal rendering_person_personorcidrendererportal" id="person_profile" style="display: none;">
+                                    <a href="" target="_blank" class="orcid" aria-label="Orcid" title="Orcid" id="orcid1">
+                                        <i class="fa-brands fa-orcid" style="color: #aecc54;"></i>
+                                        <span id="orcid2"></span>
+                                    </a>
+                                    <br>
+                                    <a href="" target="_blank" class="ror" aria-label="ror" title="ROR" id="ror">
+                                        <i class="fa-solid fa-building-columns" style="color: #5ea090;"></i>
+                                    </a>
+                                    <span id="affiliation"></span>
+
+                                </div> 
+
+                                <div class="rendering rendering_person rendering_personorcidrendererportal rendering_person_personorcidrendererportal" id="pub_profile" style="display: none;">
+                                    <label>DOI: </label>
+                                    <a href="" target="_blank" class="doi" aria-label="DOI" title="DOI" id="doi1">
+                                        <span id="doi2"></span>
+                                    </a>
+                                    <br>
+                                    <p id="pub_author_list"></p>
+                                    <br>
+
+                                </div> 
+
+                                <div class="rendering rendering_person rendering_personorcidrendererportal rendering_person_personorcidrendererportal" id="aff_profile" style="display: none;">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <span id="city-country"></span>
+                                    <br>
+                                    <a href="" target="_blank" class="ror" aria-label="ror" title="ror1" id="ror1">
+                                        <i class="fa-solid fa-building-columns" style="color: #5ea090;"></i>
+                                        <span id="ror2"></span>
+                                    </a>
+                                </div> 
+
+                            </div>     
+                        </div>
+                    </section>
+
+                    <section class="personal-work">
+                        <div class="table" id="person_table" style="display: none;">
+                            <div class="row" >
+                            <div class="cell" style="width: 5vw;" >H-Index</div>
+                            <div class="cell" style="width: 5vw;" >Citation Count</div>
+                            <div class="cell" style="width: 5vw;" >Work Count</div>
+                            </div>
+                            <div class="row">
+                            <div class="cell" style="width: 5vw;"  id="h-index-value">0</div>
+                            <div class="cell" style="width: 5vw;"  id="citation-count-value">0</div>
+                            <div class="cell" style="width: 5vw;"  id="work-count-value">0</div>
+                            </div>
+                        </div>
+<!-- 
+                        <div class="table" id="pub_table" style="display: none;">
+                            <div class="row">
+                            <div class="cell" style="width: 5vw;"  >Citation Count</div>
+                            </div>
+                            <div class="row">
+                            <div class="cell" style="width: 5vw;"  id="pub-citation-count">0</div>
+                            </div>
+                        </div> -->
+                    </section>
+
+                    <section class="metrics" aria-label="Person metrics section">
+                        <div id="polarchart">
+                            <!-- <p id="concept_link_score" style="position: relative; right:0px;">Concept link strength</p> -->
+                            <canvas id="myPolarChart" style="max-width:200px; width: 20vw; height: 110px; "></canvas>
+                        </div> 
+
+                        <div id="barchart">
+                            <p id="publication_per_year">Research activity per year</p>
+                            <canvas id="myBarChart" style="max-width:140px; width: 10vw; height: 90px;"></canvas> 
+                        </div>
+                                 
+                    </section>
+                    <span class="info-icon" data-toggle="popover" title="The statistics are based on OpenAlex." data-content="The statistics are based on OpenAlex.">
+                            <i class="fa-solid fa-circle-info" style="color: #8f8f8f;"></i>
+                    </span>
+
+                
+            </div>
+        </div>
+    </div>
+
+
+
+<div id="sidebar" style="display: none;">
+    <div class="sidebar-header" id="scopus-search-button">
+        <div class="button-group">
+            <button class="button button1" onclick="showForm('topic-search')">Topic</button>
+            <button class="button button1" onclick="showForm('author-search')">Author</button>
+            <button class="button button1" onclick="showForm('pub-search')">Publication</button>
+        </div>
+    </div>
+
+    <div class="sidebar-header" id="escience-search-button" style="display: none;">
+        <div class="button-group">
+            <button class="button button1" onclick="showForm('author-search')">Author</button>
+            <button class="button button1" onclick="showForm('pub-search')">Publication</button>
+        </div>
+    </div>
+   
+    <form class="navbar-form" id="topic-search", onsubmit="resetFields('topic')">
+        <div class="form-group">
+            <label for="keyword">Keyword:</label>
+            <input type="text" name="keyword" id="keyword" placeholder="Deep learning" class="form-control" minlength="3" maxlength="30">
+            <br>
+            <br>
+            <label for="year">
+                Year:
+            </label>
+            <select name="year" id="year" multiple>
+                <option value="2013">2013</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022" selected>2022</option>
+            </select>
+            <br>
+            <button class="button button2" type="submit" id="topic-submit-btn">Search</button>
+        </div>
+    </form>
+    <form class="navbar-form" id="author-search", onsubmit="resetFields('author')">
+        <div class="form-group">
+
+            <div>
+                <input type="radio" id="search-by-orcid" name="search-option" value="orcid" onclick="toggleSearchInput('orcid')" checked>
+                <label for="search-by-orcid">Search by ORCID:</label>
+                <input type="text" name="orcid" id="orcid" placeholder="0000-0000-0000-0000" class="form-control" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{3}[0-9X]">
+            </div>
+
+            <div>
+                <input type="radio" id="search-by-name" name="search-option" value="name" onclick="toggleSearchInput('author-name')">
+                <label for="search-by-name">Search by author name:</label>
+                <br>
+                <input type="text" name="firstname" id="firstname" placeholder="First Name" class="form-control" style="display:none">
+                <input type="text" name="surname" id="surname" placeholder="Last Name" class="form-control" style="display:none">
+            </div>
+
+            <br>
+            <button class="button button2" type="submit" id="author-submit-btn">Search</button>
+            <button class="button button2" onclick="Find_node('author')">Find</button>
+        </div>
+    </form>
+
+    <form class="navbar-form" id="pub-search", onsubmit="resetFields('publication')">
+        <div class="form-group">
+        <label for="publication">Search publication:</label>
+        <br>
+        <input type="text" name="doi" id="doi" placeholder="10.1117/12.2602737" class="form-control" required>
+        <br>
+        <br>
+        <button class="button button2" type="submit" id="pub-submit-btn">Search</button>
+        <button class="button button2" onclick="Find_node('publication')">Find</button>
+        </div>
+    </form>
+
+    <form class="navbar-form" id="aff-search", onsubmit="resetFields('affiliation')">
+        <div class="form-group">
+        <label for="affiliation">Search institution:</label>
+        <br>
+        <input type="text" name="aff" id="aff" placeholder="Netherlands eScience Center" class="form-control" required>
+        
+        <br>
+        <br>
+        
+        <label for="year_range">Publication Years:</label>
+        <table id="year_range">
+            <tr>
+                <td>
+                    <input type="text" name="start_year" id="start_year" value="2023" class="form-control" style="max-width: 50px;" required>
+                    to
+                    <input type="text" name="end_year" id="end_year" value="2023" class="form-control" style="max-width: 50px;" required>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <button class="button button2" type="submit" id="pub-submit-btn">Search</button>
+        <br>
+        </div>
+    
+    </form>
+
+    <label id="error-message" style="visibility: hidden; color: white; background-color: #5a5a5a; padding: 2px;">
+        Sorry, we couldn't find a matching node.
+    </label>
+
+    <label for="show_pub">Show research output nodes</label>
+    <input type="checkbox" id="show_pub" name="show_pub" onchange="check_show_pub()" checked><br>
+
+    <form>
+        <label for="col_count">
+            Collaboration minimum: 
+        </label>
+        <select name="col_count" id="col_count" onchange="collaMin()" size="1" disabled>
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+            <option value="25">25</option>
+            <option value="30">30</option>
+        </select>
+    </form>
+
+    <label for="mySlider">Repulsive force strength:</label>
+    <input type="range" id="mySlider" min="5" max="200" value="10" step="1">
+    <span id="sliderValue">10</span>
+
+    <!-- <input type="checkbox" id="show_topic_color" name="show_topic_color" onchange="node_topic_color()">
+    <label for="show_topic_color">Show node colors for topic clustering</label><br> -->
+   
+</div>
+
+<div id="toggle-buttons" style="display: none; z-index: 2; position: relative; margin-top: 200px; margin-left: 250px;">
+    <button id="publicationButton" class="button button1" style="background-color: #8398cd; color: white; border: 2px solid #8398cd;" onclick="toggleNodeType('publication')">Publication</button>
+    <button id="projectButton" class="button button1" style="background-color: #94bf91; color: white; border: 2px solid #94bf91;" onclick="toggleNodeType('project')">Project</button>
+    <button id="softwareButton" class="button button1" style="background-color: #c093bd; color: white; border: 2px solid #c093bd;" onclick="toggleNodeType('software')">Software</button>
+</div>
+
+
+  
+
+
+<!-- Node Infomation -->
+<div id="node-details" style="display: none; height: 600px; overflow: auto; position: absolute; right: 0; top: 210px;">
+    <table id="node_info" class="table table-striped table-hover" style="width: 0;
+                                                                        position: relative;
+                                                                        z-index: 1;
+                                                                        background-color: #f6f6f6;">
+        <thead>
+            <tr>
+                <th>Property</th>
+                <th>Value</th>
+            </tr>
+        </thead>
+
+        <tbody>
+        </tbody>
+    </table>
+</div>
+
+<div id="legend" style="display: none; position:fixed; bottom:0; left:0; width:250px; background-color:lightgray; padding:20px; z-index: 3;">
+    <ul style="list-style:none; padding:0;">
+        <li style="margin-bottom:5px;"><span style="background-color:#BBB; width:15px; height:15px; display:inline-block; display:inline-block; margin-right:5px;"></span>General Author</li>
+        <li style="margin-bottom:5px;"><span style="background-color:#e97c66; width:15px; height:15px; display:inline-block; display:inline-block; margin-right:5px;"></span>Selected Author</li>
+        <li style="margin-bottom:5px;"><span style="background-color:#e3b7c8; width:15px; height:15px; display:inline-block; display:inline-block; margin-right:5px;"></span>Co-Author</li>
+        <li style="margin-bottom:5px;"><span style="background-color:#8398cd; width:15px; height:15px; display:inline-block; display:inline-block; margin-right:5px;"></span>Publication</li>
+        <li style="margin-bottom:5px;"><span style="background-color:#94bf91; width:15px; height:15px; display:inline-block; display:inline-block; margin-right:5px;"></span>Project</li>
+        <li><span style="background-color:#c093bd; width:15px; height:15px; display:inline-block; display:inline-block; margin-right:5px;"></span>Software</li>
+    </ul>
+</div>
+
+<div id="topic_cluster_legend" style="display: none; position:fixed; bottom:0; left:0; width:250px; background-color:lightgray; padding:20px; z-index: 3;">
+        <ul id="legend_list" style="list-style:none; padding:0;"></ul>
+</div>
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.4/d3.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.15/js/bootstrap-multiselect.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+<!-- local js files -->
+
+<script src="/static/D3_js/networks/build_graph.js"></script>
+<script src="/static/D3_js/networks/search_function.js"></script>
+<script src="/static/D3_js/networks/side_bar_function.js"></script>
+<script src="/static/D3_js/profile/chart_table.js"></script>
+<script src="/static/D3_js/profile/profile.js"></script>
+<script src="/static/D3_js/interaction/tooltip.js"></script>
+<script src="/static/D3_js/interaction/canvas_move.js"></script>
+<script src="/static/D3_js/interaction/info_table.js"></script>
+<script src="/static/D3_js/interaction/node_move.js"></script>
+
+
+
+
+<script>
+
+    $(function() {
+        $('select[multiple]').multiselect();
+        $('[data-toggle="popover"]').popover();   
+    });
+
+    showForm('topic-search');
+
+</script>
+  
+
+<style type="text/css">
+    .topic-label {
+        font-size: 8px; /* Adjust the font size as needed */
+        background-color: #000000; /* Set the background color for the labels */
+        color: #ffffff; /* Set the text color for the labels */
+        padding: 4px; /* Adjust the padding as needed */
+        white-space: nowrap; /* Prevent line breaks */
+    }
+    .node.publication { fill: #8398cd; stroke: #6379b2;}
+    .node.project { fill: #94bf91; stroke: #71ac6e;}
+    .node.software { fill: #c093bd; stroke: #b07bae;}
+    .node.author_highlight { fill: #e97c66; stroke: #cc6753;}
+    .node.first_coauthor { fill: #e3b7c8; stroke: #c092a4;}
+    .node.second_coauthor { fill: #fff493; stroke: #9c9c9c;}
+    .node.author { fill: #BBB; stroke: #ffffff; }
+    .link { stroke: #999; stroke-opacity: .6; stroke-width: 0.8px; }
+</style>
+
+
+
+<script type="text/javascript">
+    // ####################### initial #######################
+
+    // Get the container element and set its initial scale
+    var container = document.getElementById("graph");
+    container.style.transform = "scale(0.8)";
+
+    // Define the width and height of the SVG canvas
+    const width = window.innerWidth*2, height =  window.innerHeight*2;
+
+    // Create the force simulation with initial forces
+    const force = d3.forceSimulation()
+            .force("charge", d3.forceManyBody().strength(-10))
+            .force("link", d3.forceLink().id(function(d) { return d.id; }).distance(50))
+            .force("center", d3.forceCenter().x(width / 2).y(height / 2).strength(0.5))
+            .force("collision", d3.forceCollide().radius(function(d) { return 10; }).iterations(0.5))
+            ;
+    
+    // Variables for translating and scaling the SVG canvas
+    var rsd = false;
+    var cluster = false;
+    var svgTranslate = [0, 0];
+    var curTranslate = [0, 0];
+    var svgScale = 1;
+    let isDragging = false;
+    var dx = 0, dy = 0,
+        zx = 0, zy = 0;
+    
+    // Track clicked and locked nodes
+    var clicked = {};
+    var lockked = {};
+    var last_clicked_node;
+    var last_d;
+    let maxId = 0;
+
+    // Variable for showing or hiding publication nodes
+    var show_pub = true;
+
+    // Variables for storing graph data
+    var graph_node;
+    var graph_link;
+    var coauthor_graph_node;
+    var coauthor_graph_link;
+
+    // Variables for storing chart objects
+    var myBarChart, myPolarChart;
+    var chartexist = false;
+
+    var selectedNodeTypes = {
+                publication: true,
+                project: true,
+                software: true,
+                author:true
+        };
+    // var slider_value;
+
+    var start, end;
+    let renderStart;
+
+    // Define the SVG canvas
+    var svg = d3.select("#graph").append("svg")
+            .attr("width", width).attr("height", height)
+            .attr("position", "absolute")
+            .attr("viewBox", `0 0 ${width} ${height}`)
+            .attr("pointer-events", "all")
+            .call(d3.drag()
+                .on("start", canvas_dragstarted)
+                .on("drag", canvas_dragged)
+                .on("end", canvas_dragended))
+            .call(d3.zoom()
+                .on("start", zoomstarted)
+                .on("zoom", zoomed)
+                .on("end", zoomended))
+            ;
+            
+    // Create a group for the network elements (nodes and links)
+    var network = svg.append('g').attr('class', 'type1');
+    
+    // Create a group for the arc elements (hide, link, lock)
+    var arcs = svg.append('g').attr('class', 'type2')
+            .selectAll("arcs")
+            .data([
+                { start: 0, end: 1/3, label: "hide", icon: '\uf00d'},
+                { start: 1/3, end: 2/3, label: "link", icon: '\uf047'},
+                { start: 2/3, end: 1, label: "lock", icon: ['\uf023', '\uf09c'] }
+            ])
+            .enter();
+            
+    
+    
+    function groupForce(nodes) {
+        var strength = 0.1;
+        var nodesByGroup;
+
+        function force() {
+            for (var i = 0, n = nodes.length; i < n; ++i) {
+                var node = nodes[i];
+                var groupNodes = nodesByGroup.get(node.group);
+
+                // Calculate the center of the group
+                var groupCenter = {
+                    x: d3.mean(groupNodes, d => d.x),
+                    y: d3.mean(groupNodes, d => d.y)
+                };
+
+                // Apply force to attract nodes towards the group center
+                node.vx += (groupCenter.x - node.x) * strength;
+                node.vy += (groupCenter.y - node.y) * strength;
+            }
+        }
+
+        // The initialize method is used to initialize the force with the nodes and group information. 
+        // The nodes are grouped by their group property using the d3.group function.
+        force.initialize = function(_) {
+            nodesByGroup = d3.group(_, d => d.group);
+        };
+        // The strength method allows setting the strength of the force. If an argument is provided, 
+        // it updates the strength and returns the force instance. 
+        // If no argument is provided, it returns the current strength.
+        force.strength = function(_) {
+            return arguments.length ? (strength = +_, force) : strength;
+        };
+
+        return force;
+    }
+
+    // ######################### Slider ############################
+    function updateSimulationStrength(strength) {
+        force.force("charge").strength(strength);
+
+        // Add an additional force for nodes without links
+        var repulsiveForce = d3.forceManyBody()
+                    .strength(strength*2)        
+        force.force("repulsion", repulsiveForce);
+        
+        force.alpha(1).restart(); // Restart the simulation to apply the changes
+        force.on("tick", tick);   
+    }
+    
+    const slider = document.getElementById('mySlider');
+        
+    slider.addEventListener('input', function(){
+        const sliderValue = document.getElementById('sliderValue');
+        sliderValue.textContent = slider.value;
+    })
+    slider.addEventListener('change', function() {
+        slider_value = slider.value * -1;
+        // Handle the slider value change
+        
+        console.log('Slider value:', slider_value);
+        updateSimulationStrength(slider_value);
+        // var aff_name = document.getElementById("name-title").textContent;
+        // slider_change(aff_name, slider_value);
+        
+    });
+    
+
+    // ##################### Initial network ######################
+    d3.select('#home').style('display', 'none');
+    d3.select('#sidebar').style('display', 'block');
+    d3.select('#graph').style('display', 'block');
+    d3.select('#loadingNotice').style('display', 'block');
+    d3.select('#legend').style('display', 'block');
+    
+    d3.json("/graph").then(function(graph) {
+        graph_node = graph.nodes;
+        graph_link = graph.links;
+        coauthor_graph_node = graph.coauthor_nodes;
+        coauthor_graph_link = graph.coauthor_links;
+        build_new_svg(graph_node, graph_link);
+        d3.select('#loadingNotice').style('display', 'none');
+    });
+
+    // d3.select('#home').style('display', 'block');
+    // d3.select('#sidebar').style('display', 'none');
+    // d3.select('#graph').style('display', 'none');
+    // d3.select('#loadingNotice').style('display', 'none');
+    // d3.select('#legend').style('display', 'none');
+
+    document.getElementById('home_page').addEventListener('click', function() {
+        // Refresh the page or perform necessary actions
+        refresh();
+        d3.select('#home').style('display', 'block');
+        d3.select('#sidebar').style('display', 'none');
+        d3.select('#graph').style('display', 'none');
+        d3.select('#loadingNotice').style('display', 'none');
+        d3.select('#legend').style('display', 'none');
+        d3.select('#topic_cluster_legend').style('display', 'none');
+        d3.select('#profile').style('visibility', 'hidden');
+    });
+
+
+    
+
+
+
+    // ####################### Search function #######################
+    $(document).ready(function(){
+
+        // ################### keyword search ###################
+        const form_topic = document.getElementById('topic-search');
+        form_topic.addEventListener('submit', function(event) {
+            renderStart = performance.now();
+            // console.time('Execution Time');
+            event.preventDefault(); // prevent the form from submitting and refreshing the page
+
+            d3.select('#node-details').style('display', 'none');
+            d3.select('#toggle-buttons').style('display', 'none');
+            document.getElementById("profile").style.visibility = "hidden";
+            const slider = document.getElementById('mySlider');
+            slider.value = 10;
+
+            field_search();
+            
+            // end = Date.now();
+            // console.log(`Execution time: ${end - start} ms`);
+            // console.timeEnd('Execution Time');
+        });
+
+        // ################### ORCID search ######################
+        const form_orcid = document.getElementById('author-search');
+        form_orcid.addEventListener('submit', function(event) {
+            renderStart = performance.now();
+            event.preventDefault(); // prevent the form from submitting and refreshing the page
+
+            d3.select('#node-details').style('display', 'none');
+            d3.select('#toggle-buttons').style('display', 'none');
+            document.getElementById("profile").style.visibility = "hidden";
+            const slider = document.getElementById('mySlider');
+            slider.value = 10;
+            
+            // call author_search() function
+            author_search();
+        }); 
+
+        // ################### DOI search ######################
+        const form_pub = document.getElementById('pub-search');
+        form_pub.addEventListener('submit', function(event) {
+            renderStart = performance.now();
+            event.preventDefault(); // prevent the form from submitting and refreshing the page
+            
+            d3.select('#node-details').style('display', 'none');
+            d3.select('#toggle-buttons').style('display', 'none');
+            document.getElementById("profile").style.visibility = "hidden";
+            const slider = document.getElementById('mySlider');
+            slider.value = 10;
+
+            pub_search();
+        });
+
+        // ####################### institution search #########################
+        const form_aff = document.getElementById('aff-search');
+        
+        form_aff.addEventListener('submit', function(event) {
+            renderStart = performance.now();
+            event.preventDefault(); // prevent the form from submitting and refreshing the page
+            
+            d3.select('#node-details').style('display', 'none');
+            document.getElementById("profile").style.visibility = "hidden";
+ 
+            var form = $('#aff-search');
+            var initial_aff_name = form.find("input[name='aff']").val();
+            var start_year = form.find("input[name='start_year']").val();
+            var end_year = form.find("input[name='end_year']").val();
+            const slider = document.getElementById('mySlider');
+            slider.value = 10;
+
+            aff_search(initial_aff_name, start_year, end_year);
+            
+        });
+        
+    })
+
+
+    function RSD_network() {
+
+        // Set the initial affiliation name
+        const initial_aff_name = "Netherlands eScience Center"
+        // Fetch JSON data using a specific URL
+        d3.json("/openalex-aff-search-profile-info?aff_name=" + initial_aff_name).then(function(graph) {
+            // Extract data from the retrieved JSON object
+            inst_profile(graph);
+        });
+
+        d3.json("/escience").then(function(graph) {
+            // Extract the required data from the retrieved JSON object
+            graph_node = graph.nodes;
+            graph_link = graph.links;
+            coauthor_graph_node = graph.coauthor_nodes;
+            coauthor_graph_link = graph.coauthor_links;
+            
+            // Check if the 'show_pub' flag is true
+            if (show_pub) {
+                // Build the SVG using the graph data
+                build_new_svg(graph_node, graph_link);
+
+                // Apply a custom force to the simulation based on the number of nodes in the same group
+                force.force('group', d3.forceManyBody().strength(function(d) {
+                    // Set the strength based on the number of nodes in the same group
+                    var sameGroupNodes = network.selectAll(".node").filter(function(node) {
+                        return node.group === d.group;
+                    });
+                    return -sameGroupNodes.length * 30;
+                }).distanceMax(100));
+            }
+            else {
+                // Build the SVG using the coauthor graph data
+                build_new_svg(coauthor_graph_node, coauthor_graph_link);
+            }
+        });
+
+        const slider = document.getElementById('mySlider');
+        slider.value = 10;
+
+        ResetNodeType();
+        d3.select('#toggle-buttons').style('display', 'block');
+    }
+
+
+    // ################### eScience ###################
+    // Add event listener to the 'escience' element
+    document.getElementById('escience').addEventListener('click', function() {
+        d3.select('#home').style('display', 'none');
+        d3.select('#sidebar').style('display', 'block');
+        d3.select('#graph').style('display', 'block');
+        d3.select("#topic_cluster_legend").style("display", "none");
+        d3.select('#legend').style('display', 'block');
+        
+        // Refresh the page or perform necessary actions
+        refresh();
+        rsd = true;
+        cluster = false;
+        
+        // Hide and show specific elements based on the clicked event
+        d3.select('#scopus-search-button').style('display', 'none');
+        d3.select('#escience-search-button').style('display', 'block');
+        d3.select('#node-details').style('display', 'none');
+        document.getElementById("profile").style.visibility = "hidden";
+        showForm('author-search');
+
+        // Show the profile of eScence Center and its network in 2023
+        RSD_network();
+    });
+
+
+    function Scopus_network() {
+
+        // Fetch graph data using a specific URL
+        d3.json("/graph").then(function(graph) {
+            // Extract the required data from the retrieved JSON object
+            graph_node = graph.nodes;
+            graph_link = graph.links;
+            coauthor_graph_node = graph.coauthor_nodes;
+            coauthor_graph_link = graph.coauthor_links;
+
+            // Check if the 'show_pub' checkbox is selected
+            if (show_pub) {
+                // Build the SVG using the graph data
+                build_new_svg(graph_node, graph_link);
+            }
+            else {
+                // Build the SVG using the coauthor graph data
+                build_new_svg(coauthor_graph_node, coauthor_graph_link);
+            }
+        });
+        
+    }
+
+    document.getElementById('scopus').addEventListener('click', function() {
+
+        d3.select('#home').style('display', 'none');
+        d3.select('#sidebar').style('display', 'block');
+        d3.select('#graph').style('display', 'block');
+        d3.select('#toggle-buttons').style('display', 'none');
+        d3.select("#topic_cluster_legend").style("display", "none");
+        d3.select("#legend").style("display", "block");
+        
+        // Perform actions when the 'scopus' element is clicked
+        refresh();
+        rsd = false;
+        cluster = false;
+        d3.select('#scopus-search-button').style('display', 'block');
+        d3.select('#escience-search-button').style('display', 'none');
+        d3.select('#node-details').style('display', 'none');
+        document.getElementById("profile").style.visibility = "hidden";
+        
+        const slider = document.getElementById('mySlider');
+        slider.value = 10;
+        showForm('topic-search');
+
+        Scopus_network();
+      
+    });
+
+
+    function Openalex_network() {
+
+        const initial_aff_name = "Netherlands eScience Center"
+        d3.json("/openalex-aff-search?aff_name=" + initial_aff_name +
+        "&start_year=2023&end_year=2023").then(function(graph) {
+            // Extract the required data from the retrieved JSON object
+
+            // Show the profile of the institution
+            inst_profile(graph);
+
+            // Get the node data and the link data of the network
+            graph_node = graph.nodes;
+            graph_link = graph.links;
+            coauthor_graph_node = graph.coauthor_nodes;
+            coauthor_graph_link = graph.coauthor_links;
+            topic_names = graph.topic_names;
+
+            // Check if the 'show_pub' flag is true
+            if (show_pub) {
+                // Build the SVG using the graph data
+                build_new_svg(graph_node, graph_link);
+
+                var filteredNodes = graph_node.filter(node => node.group !== undefined);
+                // Add a custom force to cluster nodes based on their group
+                var simulation = d3.forceSimulation(filteredNodes)
+                                .force("group", groupForce(filteredNodes).strength(0.1))
+
+                simulation.on("tick", tick).alphaDecay(0.05);
+                simulation.alpha(1).restart();
+            }
+            else {
+                build_new_svg(coauthor_graph_node, coauthor_graph_link);
+            }
+
+            // // clustering color
+            // node_topic_color();
+
+            // Set a new topic legend
+            var topic_colors = ['#ffadad', '#ffd6a5', '#fdffb6', '#caffbf', '#9bf6ff'];
+
+            d3.select('#legend').style('display', 'none');
+            d3.select("#legend_list").html("");
+
+            for(var i=0; i<5; i++){
+                var list_item = '<li style="margin-bottom:5px;"><span style="background-color:' + topic_colors[i] + 
+                    '; width:10px; height:10px; display:inline-block; margin-right:5px;"></span>' + topic_names[i] + '</li>';
+                d3.select("#legend_list").html(function(d) {
+                    return d3.select(this).html() + list_item;
+                });
+            }
+            d3.select("#topic_cluster_legend").style("display", "block");
+
+            // Reset the force slider
+            const slider = document.getElementById('mySlider');
+            slider.value = 10;
+
+        });
+        
+    }
+    document.getElementById('openalex').addEventListener('click', function() {
+
+        d3.select('#home').style('display', 'none');
+        d3.select('#sidebar').style('display', 'block');
+        d3.select('#graph').style('display', 'block');
+        
+        // Visibility of the nodes
+        selectedNodeTypes = {
+                publication: true,
+                project: true,
+                software: true,
+                author:true
+        };
+        d3.select('#toggle-buttons').style('display', 'none');
+        
+        // Perform when the 'openalex' element is clicked
+        refresh();
+
+        rsd = false;
+        cluster = true;
+        d3.select('#scopus-search-button').style('display', 'none');
+        d3.select('#escience-search-button').style('display', 'none');
+        d3.select('#node-details').style('display', 'none');
+        document.getElementById("profile").style.visibility = "hidden";
+        showForm('aff-search');
+
+        Openalex_network();
+    
+    });
+    
+
+
+</script>
+
+</body>
+</html>
