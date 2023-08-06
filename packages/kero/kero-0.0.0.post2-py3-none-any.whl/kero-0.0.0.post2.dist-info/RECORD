@@ -1,0 +1,9 @@
+kero/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kero/directory.py,sha256=RKUZXK82PPHTFPq50ljwO1cHPW8SSE0VlVE2BHVtYVk,1372
+kero/dummy.py,sha256=C3u2vd7joZaoPnCrFIiN9fjMs69tM1vzonW1NmBcAHw,1787
+kero/pandas.py,sha256=s7m8Vk7T652LypO8UtcPLn5BwHg0Z5xbQdBzgh0lkFI,734
+kero/utils.py,sha256=sbYW4at9LD9b_XdbFMh58i9ERfvViMK5AaHAQFsBDp4,60
+kero-0.0.0.post2.dist-info/METADATA,sha256=L_fHsano419Gepz9xP2UD6OettrCMbEssGiYe80_pK4,487
+kero-0.0.0.post2.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+kero-0.0.0.post2.dist-info/licenses/LICENSE,sha256=itrJ6qXQPV67P_Gy7UjoL1KRU4wKe--ncE58KbxVQkI,1063
+kero-0.0.0.post2.dist-info/RECORD,,
