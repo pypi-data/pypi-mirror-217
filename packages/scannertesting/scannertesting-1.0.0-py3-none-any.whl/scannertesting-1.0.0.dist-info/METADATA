@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: scannertesting
+Version: 1.0.0
+Summary: Testing the pip for cli
+Home-page: UNKNOWN
+Author: Hariharan
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: colorama
+Requires-Dist: requests
+
+UNKNOWN
+
