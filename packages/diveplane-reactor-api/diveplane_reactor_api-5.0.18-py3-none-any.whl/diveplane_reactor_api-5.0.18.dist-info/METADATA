@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: diveplane-reactor-api
+Version: 5.0.18
+Summary: Diveplane Reactor and Scikit Estimator for the interpretable Machine Learning and Artificial Intelligence API Diveplane.
+Home-page: https://www.diveplane.com
+Author: Diveplane Corporation
+Author-email: support@diveplane.com
+License: Diveplane Corporation Free Software License
+Project-URL: Documentation, https://docs.community.diveplane.com/
+Keywords: machine learning,artificial intelligence
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: Microsoft :: Windows :: Windows 11
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: certifi
+Requires-Dist: cryptography (>=2.9.2)
+Requires-Dist: deprecation (<3,>=2.1.0)
+Requires-Dist: Faker (>=4.1.1)
+Requires-Dist: humanize (>=4.0.0)
+Requires-Dist: mmh3
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pyjwt (<3,>=2.6.0)
+Requires-Dist: pyyaml (<7.0,>=5.4.1)
+Requires-Dist: rich (>=12.5.1)
+Requires-Dist: scikit-learn
+Requires-Dist: semantic-version (<3,>=2.8.5)
+Requires-Dist: typing-extensions (<5.0,>=4.1.0)
+Requires-Dist: urllib3 (<=2,>=1.26.2)
+Requires-Dist: diveplane-openapi-client (==23.0.6)
+Requires-Dist: diveplane-amalgam-api (==2.3.9)
+
+# Diveplane Reactor™
+
+Diveplane is an Understandable AI platform which is rooted in instance-based
+machine learning and harnesses a fast spatial query system and information
+theory for performance, accuracy, and auditability. With Diveplane, your data is
+the model. As such, your data is stored in memory and predictions about a new
+data point are made given its relationship to the original data. This enables
+powerful decision making based on historical observations, augmented by rich
+explanations to understand why those decisions were made. As an explainable AI
+toolkit, Diveplane's interpretability features provide users opportunities to
+evaluate which data contribute to predictions, identify similar data to the
+predictions, and determine if new data and predictions are surprising compared
+to the original data. Additional Diveplane capabilities include targetless
+learning, allowing users to characterize and predict any set of variables,
+real-time editing for online learning, data imputation, and discriminative and
+generative modeling. By combining the features of Diveplane, users can analyze
+their data in way not typically achievable using other state-of-the-art AI
+techniques.
+
+For questions or support, please email support@diveplane.com.
