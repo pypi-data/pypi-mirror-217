@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+seisclient/__init__.py
+seisclient/db.py
+seisclient/seisclient.py
+seisclient.egg-info/PKG-INFO
+seisclient.egg-info/SOURCES.txt
+seisclient.egg-info/dependency_links.txt
+seisclient.egg-info/requires.txt
+seisclient.egg-info/top_level.txt
