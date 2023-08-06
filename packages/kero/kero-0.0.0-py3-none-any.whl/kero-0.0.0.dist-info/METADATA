@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: kero
+Version: 0.0.0
+Summary: Utilities and things.
+Project-URL: Homepage, https://github.com/ericotjo001/kero.pypi
+Author-email: Erico Tjoa <ericotjoa@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# kero
+We're preparing this repository fresh from the oven.
