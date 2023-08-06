@@ -1,0 +1,13 @@
+LICENSE
+setup.py
+gajula/src/gajula.egg-info/PKG-INFO
+gajula/src/gajula.egg-info/SOURCES.txt
+gajula/src/gajula.egg-info/dependency_links.txt
+gajula/src/gajula.egg-info/requires.txt
+gajula/src/gajula.egg-info/top_level.txt
+gajula/src/gajula.py
+gajula/src/gajula.egg-info/PKG-INFO
+gajula/src/gajula.egg-info/SOURCES.txt
+gajula/src/gajula.egg-info/dependency_links.txt
+gajula/src/gajula.egg-info/requires.txt
+gajula/src/gajula.egg-info/top_level.txt
