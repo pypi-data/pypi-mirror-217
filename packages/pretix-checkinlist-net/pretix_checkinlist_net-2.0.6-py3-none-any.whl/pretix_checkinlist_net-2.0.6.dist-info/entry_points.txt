@@ -1,0 +1,2 @@
+[pretix.plugin]
+pretix_checkinlist_net = pretix_checkinlist_net:PretixPluginMeta
