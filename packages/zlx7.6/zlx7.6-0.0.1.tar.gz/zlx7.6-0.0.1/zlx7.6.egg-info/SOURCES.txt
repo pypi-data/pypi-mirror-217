@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+zlx7.6.egg-info/PKG-INFO
+zlx7.6.egg-info/SOURCES.txt
+zlx7.6.egg-info/dependency_links.txt
+zlx7.6.egg-info/top_level.txt
