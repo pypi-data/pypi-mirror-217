@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.py
+testmodule.py
+python_learning_demopackage.egg-info/PKG-INFO
+python_learning_demopackage.egg-info/SOURCES.txt
+python_learning_demopackage.egg-info/dependency_links.txt
+python_learning_demopackage.egg-info/top_level.txt
+testsublib/__init__.py
+testsublib/submodule.py
