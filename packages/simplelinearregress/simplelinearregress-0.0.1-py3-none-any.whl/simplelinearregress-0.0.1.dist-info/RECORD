@@ -1,0 +1,9 @@
+linear_reg/__init__.py,sha256=5R2X3fKzefsl6QOaFBFTKhK59McQRc0uef-Aevi9rDM,85
+linear_reg/main.py,sha256=bFnadpB36lpEwaJdoefuc1msQZ-SGfS4V0pNs8JcfAQ,3382
+linear_reg/simple_linear_regr.py,sha256=LqaYjz45pS6kvvQamsJH6Ax7p8b9nMcoCrc64sE3IYI,3524
+linear_reg/simple_linear_regr_utils.py,sha256=sytO7eYwTbcW5slSY2NukCqbgYNChugsPlZboqkDjjI,1838
+simplelinearregress-0.0.1.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+simplelinearregress-0.0.1.dist-info/METADATA,sha256=tPYBkdOsDt5sqreXMAwXdlyROZUbJaCB9_7brvjFgR4,4931
+simplelinearregress-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+simplelinearregress-0.0.1.dist-info/top_level.txt,sha256=-xPXlFDYlEjfIADUVYYj-qDo6s4yaLE-5BjiszpV3RU,11
+simplelinearregress-0.0.1.dist-info/RECORD,,
