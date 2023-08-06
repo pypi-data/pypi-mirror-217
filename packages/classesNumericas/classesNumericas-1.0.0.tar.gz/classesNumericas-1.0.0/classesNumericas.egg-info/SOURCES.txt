@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+classesNumericas/__init__.py
+classesNumericas/classesNumericas.py
+classesNumericas.egg-info/PKG-INFO
+classesNumericas.egg-info/SOURCES.txt
+classesNumericas.egg-info/dependency_links.txt
+classesNumericas.egg-info/top_level.txt

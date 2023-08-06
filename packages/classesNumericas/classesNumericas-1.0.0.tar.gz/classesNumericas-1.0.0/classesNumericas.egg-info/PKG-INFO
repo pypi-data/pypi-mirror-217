@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: classesNumericas
+Version: 1.0.0
+Summary: Um coletor de classes numéricas de um inteiro.
+Author: Wanderson Renê
+Author-email: wanderson.rene12@gmail.com
+License: MIT
+Keywords: coletar a classe ou as classes do inteiro rene classesNumericas
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: Portuguese (Brazilian)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Internationalization
+Classifier: Topic :: Database
+License-File: LICENSE.txt
+
+Um coletor de classes numéricas de um inteiro passado como parâmetro na função classes_numericas, a fim de suas classes
