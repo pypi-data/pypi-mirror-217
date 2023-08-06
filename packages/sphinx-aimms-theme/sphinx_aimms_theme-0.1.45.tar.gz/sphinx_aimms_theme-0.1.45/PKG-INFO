@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: sphinx_aimms_theme
+Version: 0.1.45
+Summary: AIMMS theme for Sphinx
+Home-page: https://github.com/aimms/sphinx-aimms-theme
+Author: AIMMS User Support
+Author-email: support@aimms.com
+License: MIT
+Description: Please refer to https://github.com/aimms/sphinx-aimms-theme#readme
+Platform: UNKNOWN
