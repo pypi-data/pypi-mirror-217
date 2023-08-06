@@ -1,0 +1,6 @@
+[console_scripts]
+sdmutil=pylibsdm.cli:app
+
+[pylibsdm.tags]
+ntag424dna=pylibsdm.tag.ntag424dna:Tag
+
