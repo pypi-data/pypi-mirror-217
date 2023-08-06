@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: hpmoc
+Version: 1.0a1
+Summary: HPMOC is an ultra high-performance, cross-platform toolset for working with
+Author-email: Stefan Trklja Countryman <stefan.countryman@gmail.com>
+Maintainer-email: Albert Zhang <alchzh@gmail.com>
+Requires-Python: >=3.6
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: IPython
+Classifier: Framework :: Jupyter
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Typing :: Typed
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: astropy
+Requires-Dist: astropy-healpix
+Requires-Dist: astroquery ; extra == "astroquery"
+Requires-Dist: flit ; extra == "dev"
+Requires-Dist: sphinx ; extra == "dev"
+Requires-Dist: sphinx_rtd_theme ; extra == "dev"
+Requires-Dist: nbsphinx ; extra == "dev"
+Requires-Dist: astroquery ; extra == "dev"
+Requires-Dist: ligo-gracedb ; extra == "dev"
+Requires-Dist: ligo-gracedb ; extra == "gracedb"
+Requires-Dist: healpy ; extra == "healpy"
+Requires-Dist: jupyter ; extra == "jup"
+Requires-Dist: ipython ; extra == "jup"
+Requires-Dist: pytest ; extra == "test"
+Requires-Dist: pytest-cov ; extra == "test"
+Requires-Dist: h5py ; extra == "test"
+Requires-Dist: PyYAML ; extra == "test"
+Requires-Dist: mhealpy ; extra == "test"
+Project-URL: Documentation, https://hpmoc.stc.sh/
+Project-URL: Homepage, https://github.com/markalab/hpmoc
+Project-URL: Repository, https://github.com/markalab/hpmoc.git
+Provides-Extra: astroquery
+Provides-Extra: dev
+Provides-Extra: gracedb
+Provides-Extra: healpy
+Provides-Extra: jup
+Provides-Extra: test
