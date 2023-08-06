@@ -1,0 +1,9 @@
+dbpystream/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dbpystream/method.py,sha256=sY1IMH89x4eYX5LrEsce1EWtiVfJgOCw2MgGwUitFTM,59
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test.py,sha256=lvQ9UprzQwy2sOLAL2s47xoSHoox0tCaPrtxby81yd4,14
+zqyTestFunction-1.0.0.dist-info/LICENSE,sha256=iheYQ5uq9uena88CK8Ae9IM_EHp-3YNSRZErppsTfBU,1092
+zqyTestFunction-1.0.0.dist-info/METADATA,sha256=5g8uklSTowzqFZAuZjrqX2AtWUpEBmfGPwrgN8REeaw,792
+zqyTestFunction-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+zqyTestFunction-1.0.0.dist-info/top_level.txt,sha256=O_gev9xdIvDAuciqGv_jAHFCAiHxC7SAvgP8_5mweBY,16
+zqyTestFunction-1.0.0.dist-info/RECORD,,
