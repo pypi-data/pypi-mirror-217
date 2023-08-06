@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: haystack-entailment-checker
+Version: 0.0.1
+Summary: Haystack node for checking the entailment between a statement and a list of Documents
+Project-URL: Documentation, https://github.com/unknown/haystack-entailment-checker#readme
+Project-URL: Issues, https://github.com/unknown/haystack-entailment-checker/issues
+Project-URL: Source, https://github.com/unknown/haystack-entailment-checker
+Author-email: anakin87 <stefanofiorucci@gmail.com>
+License-Expression: Apache-2.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: farm-haystack[inference]>=1.18.1
