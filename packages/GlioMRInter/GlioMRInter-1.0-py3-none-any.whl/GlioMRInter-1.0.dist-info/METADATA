@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: GlioMRInter
+Version: 1.0
+Summary: UNKNOWN
+Home-page: https://github.com/GlioMRInter/GlioMRInter
+Author: Kacper Stasiełuk
+Author-email: kacperstasieluk@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: pydicom
+Requires-Dist: opencv-python
+Requires-Dist: sklearn
+Requires-Dist: statsmodels
+Requires-Dist: skfeature
+Requires-Dist: tensorflow
+Requires-Dist: tensorflow-io
+Requires-Dist: Keras
+Requires-Dist: pymrmr
+Requires-Dist: ReliefF
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: matplotlib-venn
+
+UNKNOWN
+
