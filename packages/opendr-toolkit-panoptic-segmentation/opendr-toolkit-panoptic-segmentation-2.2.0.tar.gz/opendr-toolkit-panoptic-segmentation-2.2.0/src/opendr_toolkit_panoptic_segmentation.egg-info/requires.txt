@@ -1,0 +1,14 @@
+cityscapesscripts>=2.2.0
+pycocotools
+future
+tensorboard
+torchvision==0.14.1
+torch==1.13.1
+pillow>=8.3.2
+scikit-image
+matplotlib
+protobuf<=3.20.0
+mmcv==0.5.9
+opendr-toolkit-engine
+tqdm
+terminaltables
