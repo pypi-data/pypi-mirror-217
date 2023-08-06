@@ -1,0 +1,6 @@
+README.md
+setup.py
+update_notify.egg-info/PKG-INFO
+update_notify.egg-info/SOURCES.txt
+update_notify.egg-info/dependency_links.txt
+update_notify.egg-info/top_level.txt
