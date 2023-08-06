@@ -1,0 +1,13 @@
+switcheroo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+switcheroo/custom_keygen.py,sha256=gCYa04GeufCNZAVpqAzdnM66p07E6YetTM9-XiEVJwY,1746
+switcheroo/publisher/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+switcheroo/publisher/__main__.py,sha256=Mxwt7Tfnl-TFzrPKE85Vs9ExJRV8Pl7F2SQoABHtrrM,1503
+switcheroo/publisher/key_publisher.py,sha256=Pbkr107knBJ6c0bhORVrHU9wRyy2BT-zDmAXKS-XGOk,2288
+switcheroo/server/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+switcheroo/server/data_stores.py,sha256=xS0yf-dUfsFX5NcWxAU4iaRWDPRsiKHc8MaXQkYJc7A,2917
+switcheroo/server/retrieve_public_keys.py,sha256=ar7KzVka6H_Y4qs3nwR-3OEad90fC6j6sL08zcKbFVY,1093
+switcheroo/server/server.py,sha256=qAXc1WKeA9T5_SC8H1tNToZut7e6g9-4iJrb8OrTAKI,5324
+switcheroo/util.py,sha256=SePkx0afmYvbH9ObFZyTazuzjx7GeNWyL5eLpzUVNCw,1934
+key_switcheroo-0.0.2a4.dist-info/METADATA,sha256=wArM__-ouycNwVYe3n4rIslV8Bn8JH86GJ-st48y0u8,561
+key_switcheroo-0.0.2a4.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+key_switcheroo-0.0.2a4.dist-info/RECORD,,
