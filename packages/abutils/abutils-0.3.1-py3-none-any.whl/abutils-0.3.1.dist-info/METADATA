@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: abutils
+Version: 0.3.1
+Summary: Utilities for analysis of antibody NGS data
+Home-page: https://www.github.com/briney/abutils
+Author: Bryan Briney
+Author-email: briney@scripps.edu
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+License-File: LICENSE
+Requires-Dist: baltic
+Requires-Dist: biopython (>=1.78)
+Requires-Dist: celery
+Requires-Dist: ete3
+Requires-Dist: matplotlib
+Requires-Dist: natsort
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: paramiko
+Requires-Dist: parasail
+Requires-Dist: pymongo
+Requires-Dist: pytest
+Requires-Dist: python-circos
+Requires-Dist: pyyaml
+Requires-Dist: sample-sheet
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: seaborn (>=0.11)
+Requires-Dist: smart-open
+
