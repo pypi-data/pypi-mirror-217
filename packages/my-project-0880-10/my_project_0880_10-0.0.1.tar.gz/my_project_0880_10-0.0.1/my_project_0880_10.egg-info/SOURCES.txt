@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+my_project_0880_10.egg-info/PKG-INFO
+my_project_0880_10.egg-info/SOURCES.txt
+my_project_0880_10.egg-info/dependency_links.txt
+my_project_0880_10.egg-info/requires.txt
+my_project_0880_10.egg-info/top_level.txt
+src/__init__.py
