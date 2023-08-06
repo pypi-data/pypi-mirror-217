@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+cephes4py/__init__.py
+cephes4py/_test.py
+cephes4py/build_hcephes.py
+cephes4py/interface.h
+cephes4py.egg-info/PKG-INFO
+cephes4py.egg-info/SOURCES.txt
+cephes4py.egg-info/dependency_links.txt
+cephes4py.egg-info/not-zip-safe
+cephes4py.egg-info/requires.txt
+cephes4py.egg-info/top_level.txt
