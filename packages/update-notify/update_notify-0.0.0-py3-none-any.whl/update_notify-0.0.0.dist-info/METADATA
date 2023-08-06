@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: update-notify
+Version: 0.0.0
+Home-page: https://github.com/sderev/update-notify
+Author: Sébastien De Revière
+License: Apache Licence, Version 2.0
+Project-URL: Documentation, https://github.com/sderev/update-notify
+Project-URL: Issues, http://github.com/sderev/update-notify/issues
+Project-URL: Changelog, https://github.com/sderev/update-notify/releases
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
