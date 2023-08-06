@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/pyhubio.py
+src/pyhubio.egg-info/PKG-INFO
+src/pyhubio.egg-info/SOURCES.txt
+src/pyhubio.egg-info/dependency_links.txt
+src/pyhubio.egg-info/requires.txt
+src/pyhubio.egg-info/top_level.txt
