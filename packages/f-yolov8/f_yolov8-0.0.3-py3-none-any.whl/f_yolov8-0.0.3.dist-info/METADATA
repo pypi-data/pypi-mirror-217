@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: f-yolov8
+Version: 0.0.3
+Author: jskim1102
+Author-email: deepi.contact.us@gmail.com
+Requires-Python: >=3.8
+Requires-Dist: opencv-python
+Requires-Dist: pillow (==9.4.0)
+Requires-Dist: numpy (==1.23.4)
+Requires-Dist: matplotlib (==3.7.1)
+Requires-Dist: ultralytics
+
+sample
