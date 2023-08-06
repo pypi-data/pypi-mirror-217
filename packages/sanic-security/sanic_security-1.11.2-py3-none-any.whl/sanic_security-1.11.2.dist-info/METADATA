@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: sanic-security
+Version: 1.11.2
+Summary: An effective, simple, and async security library for the Sanic framework.
+Author: Aidan Stewart
+Author-email: na.stewart365@gmail.com
+Requires-Python: >=3.6
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: crypto
+Provides-Extra: dev
+Requires-Dist: argon2-cffi (>=20.1.0)
+Requires-Dist: black ; extra == "dev"
+Requires-Dist: blacken-docs ; extra == "dev"
+Requires-Dist: captcha
+Requires-Dist: cryptography (>=3.3.1) ; extra == "dev" or extra == "crypto"
+Requires-Dist: httpx (>=0.13.0) ; extra == "dev"
+Requires-Dist: pdoc3 ; extra == "dev"
+Requires-Dist: pyjwt (>=1.7.0)
+Requires-Dist: sanic (>=21.3.0)
+Requires-Dist: tortoise-orm (>=0.17.0)
