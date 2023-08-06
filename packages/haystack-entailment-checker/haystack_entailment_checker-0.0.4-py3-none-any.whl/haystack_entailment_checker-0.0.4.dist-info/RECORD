@@ -1,0 +1,5 @@
+haystack_entailment_checker/__init__.py,sha256=Kl_sAQxZkBVqJZlz1kt4K5ixXSDiHpoV0Tvu_vU6eCA,50
+haystack_entailment_checker/entailment_checker.py,sha256=v14CoFEb8iiZz0wCT3Z4U-6iYuHBeH7sXpnTueekK6k,6106
+haystack_entailment_checker-0.0.4.dist-info/METADATA,sha256=E17r_ni7T-frFJvs_rNriPBxcbC8uwsVWMMk1NqnCd0,4168
+haystack_entailment_checker-0.0.4.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+haystack_entailment_checker-0.0.4.dist-info/RECORD,,
