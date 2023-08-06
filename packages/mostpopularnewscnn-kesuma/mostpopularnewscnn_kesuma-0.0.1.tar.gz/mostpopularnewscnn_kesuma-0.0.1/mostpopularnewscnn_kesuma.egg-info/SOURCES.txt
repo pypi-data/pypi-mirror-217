@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+mostpopularnewscnn/__init__.py
+mostpopularnewscnn_kesuma.egg-info/PKG-INFO
+mostpopularnewscnn_kesuma.egg-info/SOURCES.txt
+mostpopularnewscnn_kesuma.egg-info/dependency_links.txt
+mostpopularnewscnn_kesuma.egg-info/top_level.txt
