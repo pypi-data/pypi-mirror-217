@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: HALchemy
+Version: 0.1.0
+Summary: Toolkit for creating clients of HAL based Hypermedia APIs.
+Home-page: https://github.com/pointw-dev/HALchemy
+Author: Michael Ottoson
+Author-email: michael@pointw.com
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Framework :: Flask
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+Classifier: Topic :: Software Development :: Code Generators
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+
+# HALchemy
+Toolkit for creating clients of Hypermedia APIs using HAL
