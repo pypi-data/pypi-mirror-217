@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+pymelo/__init__.py
+pymelo.egg-info/PKG-INFO
+pymelo.egg-info/SOURCES.txt
+pymelo.egg-info/dependency_links.txt
+pymelo.egg-info/top_level.txt
