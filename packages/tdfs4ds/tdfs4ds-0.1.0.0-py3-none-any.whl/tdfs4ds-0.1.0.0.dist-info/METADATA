@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: tdfs4ds
+Version: 0.1.0.0
+Summary: A python package to simplify the usage of feature store using Teradata Vantage ...
+Author: Denis Molin
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: teradataml (>=17.20)
+Requires-Dist: pandas
+Requires-Dist: numpy
+
+# tdfs4ds : A Feature Store Library for Data Scientists working with Clearscape Analytics
+
+The tdfs library is a Python package designed for managing and utilizing Feature Stores in a Teradata Database. With a set of easy-to-use functions, tdfs enables the efficient creation, registration, and storage of features. It also simplifies the process of preparing feature data for ingestion, building datasets for data analysis, and obtaining already existing features.
+
+## Getting Started
+
+Install the tdfs package via pip:
+
+```bash
+pip install tdfs4ds
+```
+
+To utilize the functionality of the tdfs package, import it in your Python script:
+
+```python
+import tdfs4ds
+```
+
+## Key Features
+
+Here are the key methods available in the tdfs package:
+
+1. **`feature_store_catalog_creation(schema, if_exists='replace', table_name='FS_FEATURE_CATALOG')`**: Creates a feature store catalog table in the Teradata database.
+
+2. **`get_feature_store_table_name(entity_id, feature_type)`**: Generates table and view names for a feature store table based on the provided entity ID and feature type.
+
+3. **`feature_store_table_creation(entity_id, feature_type, schema, if_exists='replace', feature_catalog_name='FS_FEATURE_CATALOG')`**: Creates a feature store table and a corresponding view in a Teradata database schema.
+
+4. **`register_features(entity_id, feature_names_types, schema, feature_catalog_name='FS_FEATURE_CATALOG')`**: Registers features in the feature catalog table of a Teradata database.
+
+5. **`prepare_feature_ingestion(df, entity_id, feature_names, feature_version_default='dev.0.0', feature_versions=None, **kwargs)`**: Prepares feature data for ingestion into the feature store.
+
+6. **`store_feature(entity_id, prepared_features, schema, feature_catalog_name='FS_FEATURE_CATALOG', **kwargs)`**: Stores feature data in the corresponding feature tables in a Teradata database.
+
+7. **`build_dataset(entity_id, selected_features, schema, view_name, feature_catalog_name='FS_FEATURE_CATALOG', **kwargs)`**: Builds a dataset view in a Teradata database based on the selected features and entity ID.
+
+8. **`GetAlreadyExistingFeatureNames(feature_name, schema, table_name='FS_FEATURE_CATALOG')`**: Obtains already existing feature names.
+
+9. **`Gettdtypes(tddf, features_columns, schema, table_name='FS_FEATURE_CATALOG')`**: Obtains Teradata types.
+
+
+
+
