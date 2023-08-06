@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: xsarsea
+Version: 0.6
+Summary: cmod, detrend, and others sar processing tools over ocean
+Home-page: https://github.com/umr-lops/xsarsea
+Author: Olivier Archer
+Author-email: Olivier.Archer@ifremer.fr
+License: MIT
+License-File: LICENSE
