@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "weekshot-lottery-winner-selection"
+version = "0.1.1"
+description = "Weekshot Lottery Winner Selection"
+authors = ["Pavel Fedorovich <pa.fedorovich@heapix.com>"]
+readme = "README.md"
+license = "Apache License 2.0"
+homepage = "https://github.com/Weekshot/Weekshot-Lottery-Winner-Selection"
+repository = "https://github.com/Weekshot/Weekshot-Lottery-Winner-Selection"
+include = [
+    "LICENSE",
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+httpx = "^0.24.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
