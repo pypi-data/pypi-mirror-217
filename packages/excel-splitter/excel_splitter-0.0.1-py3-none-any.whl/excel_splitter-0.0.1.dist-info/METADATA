@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: excel_splitter
+Version: 0.0.1
+Summary: A Tool to Quickly Split an Excel Sheet into Multiple Sheets or Separate Files
+Project-URL: Homepage, https://github.com/Guitarman-Waiting-In-The-Sky/excel_splitter
+Author-email: Jason Yearry <jasonyearry@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: openpyxl>=3.0.10
+Description-Content-Type: text/markdown
+
+# Excel Splitter
+
+This is a package which will allow you to quickly split a single Excel sheet into either separate tabs of the same report or into different Excel reports.
