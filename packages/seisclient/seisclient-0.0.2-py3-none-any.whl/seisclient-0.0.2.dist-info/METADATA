@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: seisclient
+Version: 0.0.2
+Summary: Python package to request accurate 3D Greens' function and synthetic waveform from SeisCloud.
+Home-page: https://seis.cloud
+Author: Liang Ding
+Author-email: myliang.ding@mail.utoronto.ca
+Project-URL: Bug Tracker, https://github.com/Liang-Ding/seisclient/issues
+Keywords: seismology
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: obspy
+Requires-Dist: h5py
+Requires-Dist: seisgen
+
+Python package to request accurate 3D Greens' function and synthetic waveform from SeisCloud.
