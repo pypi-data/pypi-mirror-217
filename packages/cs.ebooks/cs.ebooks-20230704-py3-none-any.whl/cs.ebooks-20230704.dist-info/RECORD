@@ -1,0 +1,11 @@
+cs/ebooks/__init__.py,sha256=AiWGkDy_4G1vdVBREI4_Lt0tlLJf-E_gGsRum_6nDhg,10079
+cs/ebooks/__main__.py,sha256=SFSYm4rYvR7hyVWPqeAICpLVLIJn4jeA3bw_9Lftmoo,555
+cs/ebooks/apple.py,sha256=cRiVOfk94sAHplCVNJf4lQkjA5KiBnA8eQuFbmjNHfg,8225
+cs/ebooks/calibre.py,sha256=cR2fC47rQXd8qdwEOvS-8iroKRvwyzfnCvrMPtpQCQM,57781
+cs/ebooks/dedrm.py,sha256=Vo98QOgV2BM9UiKAtXgsMaCTV7WjgOsl1w5l6P4-ruU,19643
+cs/ebooks/kindle.py,sha256=E64NDCr9tRiw8JmeIqJv33bCGB4Wj9pyQGZk5JBgWKs,28033
+cs/ebooks/mobi.py,sha256=jS_vJDGdfkDVzZJI74R-sRMk27tXORC5PKgupTczcPI,5360
+cs.ebooks-20230704.dist-info/METADATA,sha256=tetKAgdm3a-Y0er4E2xqvZFvqvuBv2sPYvtTjTY3KFA,12886
+cs.ebooks-20230704.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+cs.ebooks-20230704.dist-info/top_level.txt,sha256=MJn10B_hUOb4f5hIJP5wKj_mMYsOQ6NUWqo9vSLmwcQ,3
+cs.ebooks-20230704.dist-info/RECORD,,
