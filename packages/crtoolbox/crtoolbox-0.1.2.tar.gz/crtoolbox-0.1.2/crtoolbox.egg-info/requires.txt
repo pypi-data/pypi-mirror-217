@@ -1,0 +1,7 @@
+matplotlib
+nibabel
+nilean
+numpy
+pandas
+plotly
+pyyaml
