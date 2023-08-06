@@ -1,0 +1,2 @@
+[console_scripts]
+dimjournal = dimjournal.__main__:cli
