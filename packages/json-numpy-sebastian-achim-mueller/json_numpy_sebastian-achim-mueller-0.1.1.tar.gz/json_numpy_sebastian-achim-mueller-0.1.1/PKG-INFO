@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: json_numpy_sebastian-achim-mueller
+Version: 0.1.1
+Summary: Dumps and loads numpy-arrays into or from json
+Home-page: https://github.com/cherenkov-plenoscope/json_numpy
+Author: Sebastian Achim Mueller
+Author-email: sebastian-achim.mueller@mpi-hd.mpg.de
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+JSON-NUMPY
+==========
+
+Transparent ```dumps``` and ```loads``` of ```numpy-arrays```.
+
+```Encoder``` 
+-------------
+to dump with ```json.dumps()```.
+
+```object_hook```
+-----------------
+to load with ```json.loads()```.
+
+example
+-------
+```python
+import numpy
+import json_numpy
+
+obj = json_numpy.loads(s='{"a": [1.0, NaN]}')
+assert isinstance(obj["a"], numpy.ndarray)
+
+json_numpy.dumps(obj)
+'{"a": [1.0, NaN]}'
+```
