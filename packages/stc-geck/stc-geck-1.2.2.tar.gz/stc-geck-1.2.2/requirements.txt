@@ -1,0 +1,6 @@
+aiohttp
+aiosumma>=2.44.0
+ipfs-hamt-directory-py
+summa-embed>=0.17.6
+termcolor
+fire
