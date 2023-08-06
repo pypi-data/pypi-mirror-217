@@ -1,0 +1,9 @@
+setup.py
+Cubic_solver/Cubic_Function.py
+Cubic_solver/__init__.py
+Cubic_solver/test.py
+Cubic_solver.egg-info/PKG-INFO
+Cubic_solver.egg-info/SOURCES.txt
+Cubic_solver.egg-info/dependency_links.txt
+Cubic_solver.egg-info/not-zip-safe
+Cubic_solver.egg-info/top_level.txt
