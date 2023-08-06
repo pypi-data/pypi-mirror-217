@@ -1,0 +1,10 @@
+PyCharacterAI/__init__.py,sha256=3ByULg1BgmWLKMX7ZhAvsoUFTEL1JS2Op5q_OHVtSYQ,62
+PyCharacterAI/chat.py,sha256=jMDnA6yMrQZQV3s-XLnQT_syJbaNbIXKlp81MschivY,11509
+PyCharacterAI/client.py,sha256=Hhn6IPhCpz3fV7pV1yOYs-HFGkd_impO3JzuMVub7f8,9262
+PyCharacterAI/message.py,sha256=hZvtPzUZQTvdIN1MhhOf74RZyhP4XjU6kFn3OizMmks,4897
+PyCharacterAI/requester.py,sha256=lV2YvAFr3dZDUfFFwbpqgrphOqG5QXaZWuBBE_VZNv8,5081
+PyCharacterAI-1.0.0.dist-info/LICENSE,sha256=bbvibJu_ZoX0eBmyaea-z-6MletmrgSsipEr3zZfYlc,1061
+PyCharacterAI-1.0.0.dist-info/METADATA,sha256=I1Wj_wD1RDh4WywQ62_vHAJRIdutcvE9M6XMLcNoOCY,2720
+PyCharacterAI-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+PyCharacterAI-1.0.0.dist-info/top_level.txt,sha256=m8_ZGwQBDNhWtAlbsgWpTwJW4qpk8_gFz7QUy5lxp7U,14
+PyCharacterAI-1.0.0.dist-info/RECORD,,
