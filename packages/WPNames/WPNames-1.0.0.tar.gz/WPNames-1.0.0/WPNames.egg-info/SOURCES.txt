@@ -1,0 +1,9 @@
+README.md
+setup.py
+WPNames/__init__.py
+WPNames/app.py
+WPNames.egg-info/PKG-INFO
+WPNames.egg-info/SOURCES.txt
+WPNames.egg-info/dependency_links.txt
+WPNames.egg-info/requires.txt
+WPNames.egg-info/top_level.txt
