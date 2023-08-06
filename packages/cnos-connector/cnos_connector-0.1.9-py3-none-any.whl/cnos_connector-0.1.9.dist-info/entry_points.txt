@@ -1,0 +1,3 @@
+[sqlalchemy.dialects]
+cnosdb=cnosdb_connector.sqlalchemy:CnosDBDialect
+
