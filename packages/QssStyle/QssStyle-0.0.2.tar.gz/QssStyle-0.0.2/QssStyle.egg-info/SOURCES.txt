@@ -1,0 +1,8 @@
+pyproject.toml
+setup.cfg
+setup.py
+QssStyle.egg-info/PKG-INFO
+QssStyle.egg-info/SOURCES.txt
+QssStyle.egg-info/dependency_links.txt
+QssStyle.egg-info/top_level.txt
+core/main.py
