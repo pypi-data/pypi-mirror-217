@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pput
+Version: 0.1.1
+Summary: Test how to use setup.py.
+Author: jhzg
+Author-email: jhzg02200059@163.com
+License: GPLv3
+Keywords: pput
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Pypi_project_upload_test
+Test how I upload software packages to pypi.
