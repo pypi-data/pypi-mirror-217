@@ -1,0 +1,10 @@
+pyomorfi/__init__.py,sha256=8hGGSbnmZdBbB-MIWGG7T8omWxZvVGqiq0xjvp_MZQw,1166
+pyomorfi/omorfi.analyse.att,sha256=wrE3TVTltJYGTsnTOL1Qsqa6X-G00xBjj5rsH3Qau9I,6083963
+pyomorfi/omorfi.describe.att,sha256=G7qPfqsznFG81BHUJmorJT5jxkamu7NbjCgjKgyveOg,29250538
+pyomorfi/omorfi.generate.att,sha256=rFH-XZymiU2o7orwaE68GVO9C7hwuM_XYa-ynwJ9YMw,29009707
+pyomorfi/omorfi.segment.att,sha256=I9g6ieg0Vc6BB3Lil-5sDyjnhEeWrDS8aSg4nhapP94,12330330
+pyomorfi-0.9.9a0.dist-info/LICENSE,sha256=OevXWYaIOKiQVrbM7dZTb5G1gnQ0RF0fbWc2XW0q2ig,35140
+pyomorfi-0.9.9a0.dist-info/METADATA,sha256=nNjMNcCYFOdniwQE-6WRU65u328wZkjEOlg9BwBDo9M,2152
+pyomorfi-0.9.9a0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pyomorfi-0.9.9a0.dist-info/top_level.txt,sha256=HCqCLhw7G3Avpg4A3pAYy9uCaR2kg1eIjfPFdeAVYqE,9
+pyomorfi-0.9.9a0.dist-info/RECORD,,
