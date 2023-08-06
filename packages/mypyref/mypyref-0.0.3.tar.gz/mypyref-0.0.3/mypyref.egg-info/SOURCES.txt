@@ -1,0 +1,12 @@
+.version
+README.md
+pyproject.toml
+mypyref/__init__.py
+mypyref/__main__.py
+mypyref/handler.py
+mypyref/xbar.py
+mypyref.egg-info/PKG-INFO
+mypyref.egg-info/SOURCES.txt
+mypyref.egg-info/dependency_links.txt
+mypyref.egg-info/entry_points.txt
+mypyref.egg-info/top_level.txt
