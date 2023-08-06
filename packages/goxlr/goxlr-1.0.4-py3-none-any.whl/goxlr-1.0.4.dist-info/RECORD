@@ -1,0 +1,10 @@
+goxlr/__init__.py,sha256=7ZhRROjkQ0gKDiVmJMOvxmTXnNanfu4rYa0EtDHwkRA,26
+goxlr/error.py,sha256=ttPaFY06GWthj9941mI-BDJ_mrpOzctxc3AOTmq3jhw,41
+goxlr/goxlr.py,sha256=HxLOu2tylDSiRGlLdgMjP_1f6UH36rXPNRpPZWnbzWg,27172
+goxlr/types.py,sha256=KVlDzU22JfEON4c3lgzQv_uSvF2u5-35LnEYWyq3Llg,11669
+goxlr/ws.py,sha256=_NPf1_A_cH2L77bTTNICfmL134vUjj0IchlTnvQakG8,2171
+goxlr-1.0.4.dist-info/LICENSE.txt,sha256=WY2BXoseVhjSB1O_CBSBhFjaLePp_IhDZUl9g6YzdRw,1089
+goxlr-1.0.4.dist-info/METADATA,sha256=WbD46XYecLtZz5D0_TQ6BQosnBpfniqTU3armWcTLZc,2269
+goxlr-1.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+goxlr-1.0.4.dist-info/top_level.txt,sha256=dbD2tzzNF-Sm7RjyarJ626DaIOkQw4e_RfsFeb9e8Eg,6
+goxlr-1.0.4.dist-info/RECORD,,
