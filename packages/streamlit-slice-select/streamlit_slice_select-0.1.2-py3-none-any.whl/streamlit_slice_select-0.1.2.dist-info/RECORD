@@ -1,0 +1,11 @@
+streamlit_slice_select/__init__.py,sha256=78UqB2OSpjbjS1rnfLqCd7d9YrlzZpAz5OTnMNZFN3Y,895
+streamlit_slice_select/frontend/dist/bootstrap.min.css,sha256=fx038NkLY4U1TCrBDiu5FWPEa9eiZu01EiLryshJbCo,232914
+streamlit_slice_select/frontend/dist/index.html,sha256=NMk9kB2hp3Zv5gNTmtB3CJMTJDK55fbKomTf7YONhl4,176
+streamlit_slice_select/frontend/dist/slicer.js,sha256=f5VcrAGac0pOMiQ5k0b5DfPFaRfAJWViAZfJr0rUxbk,998163
+streamlit_slice_select/frontend/dist/slicer.js.LICENSE.txt,sha256=s-XL8Zem1680kJa9h1APqx4H7gsVsSS7Fv65dThWkwg,542
+streamlit_slice_select/frontend/dist/style.css,sha256=TQ0Qp6MjkrpA-7UyaZ2O74TNIRookeFBPU9j3gTXilE,48
+streamlit_slice_select-0.1.2.dist-info/LICENSE.txt,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+streamlit_slice_select-0.1.2.dist-info/METADATA,sha256=FWdZ6d9DatLHt5fbrMmyE6VhBxWe1_0aR79RXalVJHQ,13345
+streamlit_slice_select-0.1.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+streamlit_slice_select-0.1.2.dist-info/top_level.txt,sha256=hbW1g6t8vPZbuLzJ3CzRxTzhhH2e_oHJtSDCPa0Dkgk,23
+streamlit_slice_select-0.1.2.dist-info/RECORD,,
