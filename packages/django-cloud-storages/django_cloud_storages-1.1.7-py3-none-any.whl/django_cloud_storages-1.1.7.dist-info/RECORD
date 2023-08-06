@@ -1,0 +1,9 @@
+cloud_storages/__init__.py,sha256=BotRjjwBRRBSNi45o6tXA21zLvR8fX4x2dwenXZHU5E,21
+cloud_storages/utils.py,sha256=6-VfznfhQ5IZJumtO6MXwnV32qdVQUnfOiSlztna4uE,2449
+cloud_storages/backends/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloud_storages/backends/appwrite.py,sha256=d1m2iwkmwgsFGCVvW3FeIZ21pRWoJfUbXSuighWuXgY,11518
+cloud_storages/backends/dropbox.py,sha256=ETx4DEIJJDu12_F1Kqqoy-G8_EQKmdGgeOg68NgANVI,10464
+django_cloud_storages-1.1.7.dist-info/METADATA,sha256=6N9Wf9QeRM6kdh9as_CKUL896_ahcbzh4hV-XwXXHjU,2885
+django_cloud_storages-1.1.7.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+django_cloud_storages-1.1.7.dist-info/licenses/LICENSE,sha256=mlJ5BhBwGJY5Mg0xXG3ky2NY6zR6AENKJPpwpP-Qwpo,1106
+django_cloud_storages-1.1.7.dist-info/RECORD,,
