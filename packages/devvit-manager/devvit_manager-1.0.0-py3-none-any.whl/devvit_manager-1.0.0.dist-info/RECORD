@@ -1,0 +1,11 @@
+devvit_mgr/__init__.py,sha256=jhyGgYl8JA8q_Mm0tORYHoR_6heVzWtTJwI4SLoa84g,136
+devvit_mgr/cli.py,sha256=ZNxamGf-MxQzNtyXxPaitTYJPDwbxdev90x4lNgmNpw,2553
+devvit_mgr/const.py,sha256=jnXqHBxtwQCmfYSjTdlAws18P9H9QPE0KLUBgV01kT4,363
+devvit_mgr/manager.py,sha256=xan6gqEwFTRvo6zyyGlO2ZhzcTSd5Vi8Ai7-9fpTqkQ,2507
+devvit_mgr/models.py,sha256=BcaioQIEooA7NNQ-mLqV74RcZzzvi1yFv6zWrsQtCEE,2727
+devvit_manager-1.0.0.dist-info/LICENSE.txt,sha256=rca07kuHL7yGVwUauxmjIZpi1Dh1b2-oESTuXnnEcc8,1298
+devvit_manager-1.0.0.dist-info/METADATA,sha256=BBE7x1vrH96SICC0H-NOsJfwP8l2XlbJ1rwntmnvTOI,3523
+devvit_manager-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+devvit_manager-1.0.0.dist-info/entry_points.txt,sha256=e7TaN1DQlXqZQ8W3zS3DYW4vuvmSc06-2fs7jZyzCHU,51
+devvit_manager-1.0.0.dist-info/top_level.txt,sha256=G0MsHZe7mmmph130-CRtNIRPOlRUpdoPRqOkImfEHUU,11
+devvit_manager-1.0.0.dist-info/RECORD,,
