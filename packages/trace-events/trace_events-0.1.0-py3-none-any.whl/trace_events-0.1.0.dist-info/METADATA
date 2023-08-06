@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: trace-events
+Version: 0.1.0
+Summary: Python event tracing using the Trace Event Format supported by Chromium browsers
+Home-page: https://github.com/JonathanHiggs/trace_events
+Author: Jonathan Higgs
+Author-email: jonathan.higgs.11@mail.wbs.ac.uk
+License: MIT
+Project-URL: Source, https://github.com/JonathanHiggs/trace_events
+Project-URL: Bug Tracker, https://github.com/JonathanHiggs/trace_events/issues
+Keywords: trace tracing event profile profiler
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Debuggers
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Trace Events
+
+Python event tracing using the [Trace Event Format](https://docs.google.com/document/d/1CvAClvFfyA5R-PhYUmn5OOQtYMH4h6I0nSsKchNAySU/edit)
+which is supported by Chromium browsers and other tools
+
+## Installing
+
+Install and update using [pip](https://pypi.org/project/pip/)
+
+## Usage
+
+Add tracing to sections of your code and execute to generate a `json` trace file
+
+```python
+import time
+from trace_events import Profiler, profile, timeit
+
+@profile
+def foo():
+    # ... do some work
+
+@profile(category='suspected-slow')
+def bar():
+    time.sleep(1)
+
+def baz(value):
+    with timeit('baz::foo'):
+        foo()
+
+    with timeit('baz::bar', value=value):
+        bar()
+
+if __name__ == '__main__':
+    baz(10)
+
+    Profiler.global_profiler().save_trace('trace.json')
+```
+
+Traces are saved `atexit` to a default `trace.json` file, or can be configured with a call to `init_trace`
+
+```python
+import trace_events
+
+trace_events.init_trace(
+    trace_file_dir='./my-traces',
+    trace_file_name='my-trace.json',
+    # save_at_exit = True
+    # overwrite_trace_files=False,
+    # logger=logging.getLogger("trace_events")
+)
+```
+
+Open up a Chromium browser to [chrome://tracing](chrome://tracing) and load the file to view the trace
+
+![Example image](media/example.png)
+
+More examples in the examples folder
+
+- [Basic Example](examples/basic-example.py)
+- [Logging Example](examples/logging-example.py)
+- [Tracing Disabled](examples/tracing-disabled.py)
