@@ -1,0 +1,9 @@
+setup.py
+estratega_utils.egg-info/PKG-INFO
+estratega_utils.egg-info/SOURCES.txt
+estratega_utils.egg-info/dependency_links.txt
+estratega_utils.egg-info/requires.txt
+estratega_utils.egg-info/top_level.txt
+utils/__init__.py
+utils/objetos.py
+utils/strings.py
