@@ -1,0 +1,10 @@
+CHANGELOG.md
+MANIFEST.in
+pyproject.toml
+setup.cfg
+src/authzee/__init__.py
+src/authzee.egg-info/PKG-INFO
+src/authzee.egg-info/SOURCES.txt
+src/authzee.egg-info/dependency_links.txt
+src/authzee.egg-info/requires.txt
+src/authzee.egg-info/top_level.txt
