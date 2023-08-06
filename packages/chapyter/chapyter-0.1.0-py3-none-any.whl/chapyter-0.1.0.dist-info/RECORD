@@ -1,0 +1,16 @@
+chapyter/__init__.py,sha256=wd0Brvp0Vf29nVqXlhxXg8W7nhgCdHonPzcpUZ2x2zI,697
+chapyter/_version.py,sha256=ac3tgjoOzsODOlacRPCwz99LbZv0NK7ZYAaBWulFo7E,171
+chapyter/magic.py,sha256=lCmImkoFQwGU7nXPJGd0fS1bGpKUh--UBjZvOWgV0gA,5139
+chapyter-0.1.0.data/data/share/jupyter/labextensions/@shannon-shen/chapyter/package.json,sha256=qRk1rVs4UGNrET2NDBkpOF6kGJh5spmcPXFQSIRuZkc,5606
+chapyter-0.1.0.data/data/share/jupyter/labextensions/@shannon-shen/chapyter/schemas/@shannon-shen/chapyter/package.json.orig,sha256=NSRfqXvi6c12OqVg12dKXQIImhUdzePh1B9AqM1Nko4,6340
+chapyter-0.1.0.data/data/share/jupyter/labextensions/@shannon-shen/chapyter/schemas/@shannon-shen/chapyter/plugin.json,sha256=Kw0KOvjLIshCpCKTvryDb1J-spngqsYuI3UK2uTjzjo,197
+chapyter-0.1.0.data/data/share/jupyter/labextensions/@shannon-shen/chapyter/static/568.04d9948dc125c7e2d743.js,sha256=BNmUjcElx-LXQ18VGnsa5dvIsTZrnEd3mQ2AWTPobKE,963
+chapyter-0.1.0.data/data/share/jupyter/labextensions/@shannon-shen/chapyter/static/747.bd8a1fe94349dedc4878.js,sha256=vYof6UNJ3txIePtmXzJOZ6oL8ERj4uWEdQXbk9vTgrg,4024
+chapyter-0.1.0.data/data/share/jupyter/labextensions/@shannon-shen/chapyter/static/remoteEntry.0533892366b0db85c992.js,sha256=BTOJI2aw24XJksNwz5jEc-fSulLzCwHbx8L71R-85Cw,6482
+chapyter-0.1.0.data/data/share/jupyter/labextensions/@shannon-shen/chapyter/static/style.js,sha256=d0EpOAHFNWmOnNZKrACZAllVps1dqlR6630yXDziuJU,165
+chapyter-0.1.0.data/data/share/jupyter/labextensions/@shannon-shen/chapyter/static/third-party-licenses.json,sha256=5z5gY0sStbT_P2WqbrAlmEtTHDPn0-v6dtp4O8CCBTs,2452
+chapyter-0.1.0.data/data/share/jupyter/labextensions/@shannon-shen/chapyter/install.json,sha256=Z3mZutgwsEYNYs_3jnXcFfNV_WyrCHDI3vn_MEh1FUM,177
+chapyter-0.1.0.dist-info/METADATA,sha256=-sYEjv20rsdxW0UCgpX-KSToHV4tSldoBAwWDo5T4Ak,2904
+chapyter-0.1.0.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+chapyter-0.1.0.dist-info/licenses/LICENSE,sha256=6cAmzJ5ysm8sXNdUY-XqZQOfp-2mR9fxUm0rpHyB7LI,1516
+chapyter-0.1.0.dist-info/RECORD,,
