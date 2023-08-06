@@ -1,0 +1,12 @@
+amazon_services/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+amazon_services/amazon_manager.py,sha256=LvhagaJe8dIG8xNf7JpPLKm6yEWxv9TLJGVQc0LeSZg,955
+amazon_services/login.py,sha256=9DUIGG0-OGIXFwneZLSQCP4IETstCU2jYIaHeulALSQ,4754
+utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+utils/driver.py,sha256=K9SDTyHKljGFk9a23zuDuUIFc2U83-GKDL6sBWmppNU,2481
+utils/gmail_helper.py,sha256=Rxzt875236WFkiidzvpop8wAGN3EDvswce1Pn05fY2c,4784
+utils/webdriver_actions.py,sha256=FDzAiG8Ps48JlxfgAR0gIbizG3a_gLm2kLrJvcYcizg,1942
+amazon_login-0.2.dist-info/LICENSE,sha256=pGR83ZX3A3jVgApNDWoOVPPyo-g3kbFjqnMz8Rm4S-w,1093
+amazon_login-0.2.dist-info/METADATA,sha256=s4gMn9swojrWaMg-L8Nekq0wupk3j6lGdVJUpxGlfFI,1983
+amazon_login-0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+amazon_login-0.2.dist-info/top_level.txt,sha256=HxkU6uBGE5G5MzIPyqvugIrw6iMyk2IhPxT1FBhOCik,22
+amazon_login-0.2.dist-info/RECORD,,
