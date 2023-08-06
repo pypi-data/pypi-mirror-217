@@ -1,0 +1,11 @@
+cosmian_py_ggml-1.2.0.dist-info/METADATA,sha256=XDtS5t8v8_uz2iuAbnMud4EvIVtntq91VCJvR1reY2c,2145
+cosmian_py_ggml-1.2.0.dist-info/LICENSE,sha256=Z0wEwlIqJt-ulg5-OWzUBniisSSS6B_bRz_PWVktGMQ,1064
+cosmian_py_ggml-1.2.0.dist-info/RECORD,,
+cosmian_py_ggml-1.2.0.dist-info/WHEEL,sha256=Pakn5EYkUcLl97jUMw4FC8DAw0ZnXzfAMJoDBnx1DlE,165
+cosmian_py_ggml/falcon.py,sha256=R-v_9qVSqSnOw1j-HFwRztDEOxFxvAZbWUiOpjBZO1Q,4229
+cosmian_py_ggml/mpt.py,sha256=kxT2RSCgsL3uDS5tuMrNEi6K6Xnw0S5aFodqwxcaNfA,4207
+cosmian_py_ggml/gpt_neox.py,sha256=pPBM9AVgU73AYQrgY4Axw_B2q5VeShTnst66TZxEhdE,4240
+cosmian_py_ggml/ggml_shared_lib.py,sha256=mQpU0z0KBeZBz_HsOehEKCRkhP4qzH8-VjFy_hVzaks,2039
+cosmian_py_ggml/libggml-bindings.so,sha256=m1DECXiWObOM19NnSH4UDnYoWhVrBRdQHpTcTdcojmQ,848280
+cosmian_py_ggml/py.typed,sha256=bWew9mHgMy8LqMu7RuqQXFXLBxh2CRx0dUbSx-3wE48,27
+cosmian_py_ggml/__init__.py,sha256=qRA5RkkwLKNPpxBXBzXFWrNkLPjMKchEG5gJx0BAYD8,142
