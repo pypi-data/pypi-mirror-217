@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: android-sdk-platform-tools-supporter
+Version: 0.0.2
+Summary: Android sdk platform tools supporter
+Home-page: https://github.com/automatethem/android-sdk-platform-tools-supporter
+Author: Sang Ki Kwon
+Author-email: automatethem@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+
+# android-sdk-platform-tools-supporter
+
+```
+import sys
+sys.path.append("/opt")
+import common
+
+https://www.bangseongbeom.com/sys-path-pythonpath.html
+```
