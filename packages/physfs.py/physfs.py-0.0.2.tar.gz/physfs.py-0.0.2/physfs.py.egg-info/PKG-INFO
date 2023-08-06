@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: physfs.py
+Version: 0.0.2
+Summary: PhysFS.py is a python wrapper for the PhysicsFS library.
+Home-page: https://github.com/shabbywu/physfs.py
+Author: shabbywu
+Author-email: shabbywu@qq.com
+Requires-Python: >=3.7
+Provides-Extra: test
+License-File: LICENSE
