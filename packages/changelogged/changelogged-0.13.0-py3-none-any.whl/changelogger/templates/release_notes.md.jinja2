@@ -1,0 +1,9 @@
+{% for name, notes in sections.items() -%}
+{% if notes -%}
+#### {{ name.title() }}
+{% for note in notes -%}
+- {{ note }}
+{% endfor %}
+{% endif %}
+
+{%- endfor -%}
