@@ -1,0 +1,5 @@
+[console_scripts]
+theoval=theoval.__main__:main
+theoval-binary=theoval.__main__:binary
+theoval-preference=theoval.__main__:preference
+
