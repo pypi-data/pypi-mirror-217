@@ -1,0 +1,98 @@
+Metadata-Version: 2.1
+Name: adeso
+Version: 0.0.2
+Summary: Application for Decryption, Encryption and Steganographic Operations
+Project-URL: Github, https://github.com/HartmanAnalytics/adeso
+Project-URL: Documentation, https://HartmanAnalytics.github.io/adeso/
+Author-email: Eric Jay Hartman <ericjayhartman@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11.1
+Requires-Dist: bitarray==2.7.6
+Requires-Dist: blinker==1.6.2
+Requires-Dist: certifi==2023.5.7
+Requires-Dist: cffi==1.15.1
+Requires-Dist: charset-normalizer==3.1.0
+Requires-Dist: click==8.1.3
+Requires-Dist: colorama==0.4.6
+Requires-Dist: cryptography==41.0.1
+Requires-Dist: flask-cors==4.0.0
+Requires-Dist: flask==2.3.2
+Requires-Dist: ghp-import==2.1.0
+Requires-Dist: idna==3.4
+Requires-Dist: itsdangerous==2.1.2
+Requires-Dist: jinja2==3.1.2
+Requires-Dist: markdown==3.3.7
+Requires-Dist: markupsafe==2.1.3
+Requires-Dist: mergedeep==1.3.4
+Requires-Dist: mkdocs-material-extensions==1.1.1
+Requires-Dist: mkdocs-material==9.1.18
+Requires-Dist: mkdocs==1.4.3
+Requires-Dist: numpy==1.25.0
+Requires-Dist: packaging==23.1
+Requires-Dist: pillow==10.0.0
+Requires-Dist: pycparser==2.21
+Requires-Dist: pygments==2.15.1
+Requires-Dist: pymdown-extensions==10.0.1
+Requires-Dist: python-dateutil==2.8.2
+Requires-Dist: pyyaml-env-tag==0.1
+Requires-Dist: pyyaml==6.0
+Requires-Dist: regex==2023.6.3
+Requires-Dist: requests==2.31.0
+Requires-Dist: six==1.16.0
+Requires-Dist: urllib3==2.0.3
+Requires-Dist: watchdog==3.0.0
+Requires-Dist: werkzeug==2.3.6
+Description-Content-Type: text/markdown
+
+<div class="text-column">
+ <h2 style="margin-top: 5px; text-indent: 390px; font-size: 3em">A.D.E.S.O.</h2>
+ <h2 style="margin-top: 5px; text-indent: 150px">
+     <b>A</b>pplication for
+     <b>D</b>ecryption, <b>E</b>ncryption and
+     <b>S</b>teganographic <b>O</b>perations
+ </h2>
+ <h2 style="margin-top: 50px;"><b>Summary:</b></h2>
+ <p style="margin-top: 0px;">
+  <a href="https://csrc.nist.gov/glossary/term/steganography">Steganography</a>
+  is the practice of concealing information within another message to avoid detection.
+  <br><br><a href="https://www.nist.gov/cryptography">Encryption</a>
+  is the process of converting plaintext into ciphertext, which is unreadable.
+  <br><br> This application provides both of these functionalities.  Users can first encrypt their data, via
+  a password using an AES-128 algorithm in CBC mode. <br><br>Then, users can hide the encrypted data (ciphertext)
+  within an image of their choice via steganography.
+ </p>
+ <h2 style="margin-top: 30px;"><b>Key Features:</b></h2>
+ <ul style="margin-top: 5px;">
+  <li>A web interface is provided to paste large plaintext objects without a terminal buffer limit.</li>
+  <br>
+  <li>All encryption, decryption, encoding and decoding is done in memory.</li>
+ </ul>
+ <h2 style="margin-top: 30px;"><b>Tools Used:</b></h2>
+ <ul style="margin-top: 5px;">
+  <li>Front end: <a href="https://svelte.dev/">Svelte</a> using <a href="https://kit.svelte.dev/">SvelteKit</a> </li>
+  <br>
+  <li>API: <a href="https://www.python.org/">Python 3.11.1 </a> using <a href="https://pypi.org/project/Flask/">Flask 2.3.2</a> </li>
+  <br>
+  <li>Cryptography: <a href="https://pypi.org/project/cryptography/">cryptography 41.0.1</a> </li>
+  <br>
+  <li>Steganography using <a href="https://wiki.bi0s.in/forensics/lsb/">LSB</a></li>
+ </ul>
+ <h2 style="margin-top: 30px;"><b>Gotchas:</b></h2>
+ <ul style="margin-top: 5px;">
+  <li>Large ciphertext and images can result in API lag or lockups for steganography.</li>
+  <br>
+  <li>The decode operation is done on the file selected, not the image displayed on the UI.</li>
+ </ul>
+ <h2 style="margin-top: 50px;"><b>Links:</b></h2>
+ <p style="margin-top: 0px;">
+ <li><a href="https://wiki.bi0s.in/forensics/lsb/">Read the Docs</a></li>
+ <br>
+ <li><a href="https://wiki.bi0s.in/forensics/lsb/">PyPi Production</a></li>
+ <br>
+ <li><a href="https://wiki.bi0s.in/forensics/lsb/">PyPi Test</a></li>
+ <h2 style="margin-top: 30px;"><b>Installation:</b></h2>
+ <code>pip install adeso</code>
+</div>
