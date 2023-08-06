@@ -1,0 +1,9 @@
+1.1 (2023-07-05)
+----------------
+
+- long description type set [Urtzi Odriozola <uodriozola@codesyntax.com>]
+
+
+
+1.0 (2023-07-05)
+----------------
