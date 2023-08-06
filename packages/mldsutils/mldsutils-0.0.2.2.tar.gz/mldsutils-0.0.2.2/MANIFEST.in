@@ -1,0 +1,5 @@
+include MANIFEST.in
+
+# exclude from sdist
+recursive-exclude venv *
+recursive-exclude .git *

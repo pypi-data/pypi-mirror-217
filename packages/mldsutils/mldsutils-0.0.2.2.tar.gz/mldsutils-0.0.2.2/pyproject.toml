@@ -1,0 +1,22 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools==65.5"]
+
+[project]
+name = "mldsutils"
+version = "0.0.2.2"
+authors = [
+  { name="Baris Gün Sürmeli", email="baris.suermeli@th-owl.de" },
+]
+description = "A toolkit for various machine learning tasks."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/barisguns/MachineLearningUtils"
+"Bug Tracker" = "https://github.com/barisguns/MachineLearningUtils/issues"
