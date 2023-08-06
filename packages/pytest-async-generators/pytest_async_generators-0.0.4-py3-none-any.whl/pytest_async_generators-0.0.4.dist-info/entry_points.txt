@@ -1,0 +1,3 @@
+[pytest11]
+subscribe_to_messages=pytest_async_generators.subscribe_to_messages
+
