@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+ciscopykit/__init__.py
+ciscopykit/app.py
+ciscopykit/device.py
+ciscopykit/interface.py
+ciscopykit.egg-info/PKG-INFO
+ciscopykit.egg-info/SOURCES.txt
+ciscopykit.egg-info/dependency_links.txt
+ciscopykit.egg-info/entry_points.txt
+ciscopykit.egg-info/requires.txt
+ciscopykit.egg-info/top_level.txt
+ciscopykit/templates/placeholder.txt
