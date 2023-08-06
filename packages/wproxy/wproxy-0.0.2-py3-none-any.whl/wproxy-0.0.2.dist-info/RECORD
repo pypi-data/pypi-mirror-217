@@ -1,0 +1,9 @@
+wproxy/__init__.py,sha256=t3Zeac2swbsD4o05rTvV7iFC5yLouXzGYy_1gnCcdIw,50
+wproxy/__main__.py,sha256=66VDtoBvOQsFFayB19yrxAiFf8YF3q4cCxix5CK8TrY,61
+wproxy/runner.py,sha256=zsfp2yA9AJI_IZG7omK5Gf8IoaPOUBZgxFswqeTnByQ,781
+wproxy/wproxy.py,sha256=wNMSsmfA9PaYYFpxVjEJl5OFp5p8b_XnhAwS3YoiYo0,1802
+wproxy-0.0.2.dist-info/METADATA,sha256=DBKGgiy7h9PjyZu3Gkpf8es5nin-0L8vH3bVX3uE3-A,1133
+wproxy-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+wproxy-0.0.2.dist-info/entry_points.txt,sha256=7ne1mFg-g36L54kbIGrL6rDsPzHwfKDAwDFyuooZ5Pc,38
+wproxy-0.0.2.dist-info/top_level.txt,sha256=U7A2mud5C5MZUY0KPYFXVlHwrQZzHja6qhjq504SINU,7
+wproxy-0.0.2.dist-info/RECORD,,
