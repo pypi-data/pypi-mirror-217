@@ -1,0 +1,14 @@
+ttcal/__init__.py,sha256=TTZrDVogiQJYn_RiXcFDaWqHT_BrlUsEPjh2OeDf13A,522
+ttcal/calfns.py,sha256=rLq7L0SHk8XsClq_gECwB_OeAJzmUIIPr-Se-eAPcfs,1778
+ttcal/day.py,sha256=kElEApj0Y_TtBwEhknulRyuJ-0Ow3JDl6Y-6UYJZ2vY,15869
+ttcal/duration.py,sha256=bBeB7TrumOGG9s8KtLWW3Aow5pgImYq4sdnzuXk21Ic,9262
+ttcal/month.py,sha256=ituSHF1xopZSHwP_Ui9OFLY06ewLYKZad2hvsm1HAa4,10783
+ttcal/week.py,sha256=QiLwAeVsWKcpAf6fIawIrNx28rcQN9iKAzktDtLyDy8,6399
+ttcal/year.py,sha256=96qw20i0fb5mJT5ADWR8fbPwDvOQ50ohwsycaHUwwsk,8524
+ttcal/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ttcal/templatetags/ttcal_tags.py,sha256=z_0D1NaO9p3xQKAM1Jzq9H1VJDvWSPaHH4tmBFXnGPg,989
+ttcal-2.0.5.dist-info/LICENSE,sha256=_rh6LgwwXeNGTMRAd9pTk8UtjKY2LTdCcVfQTsb0UQ0,1057
+ttcal-2.0.5.dist-info/METADATA,sha256=CaxKdP3Ev973BFcLOJCB_UOD6G2ZQen90skItMWTrj0,1869
+ttcal-2.0.5.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+ttcal-2.0.5.dist-info/top_level.txt,sha256=rFXSK63oFJVGxh_8qwCfKbmS0m3VXf3lIueRg56R9FA,6
+ttcal-2.0.5.dist-info/RECORD,,
