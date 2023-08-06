@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+pypiqe/__init__.py
+pypiqe/piqe.py
+pypiqe.egg-info/PKG-INFO
+pypiqe.egg-info/SOURCES.txt
+pypiqe.egg-info/dependency_links.txt
+pypiqe.egg-info/top_level.txt
