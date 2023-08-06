@@ -1,0 +1,7 @@
+bootstrapping_tools/__init__.py,sha256=xcD0EKMe3IoOkb__kfdHIG_rQUe4Vkg2UqOAU_99S0U,137
+bootstrapping_tools/bootstrapping.py,sha256=4isOjf22Na_hRNj4oT8Imy9JipWxKrs-z4do-TvroWU,11811
+bootstrapping_tools/resample_by_blocks.py,sha256=Y_rLJingsQB7Oql6y44AciVe4oZsSkcYiekZaRyQ4gM,859
+bootstrapping_tools-1.1.1.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+bootstrapping_tools-1.1.1.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+bootstrapping_tools-1.1.1.dist-info/METADATA,sha256=ndn3R5WZbu6VDjNutCn5iKATUiVikBk3PwHHXDyHPLg,698
+bootstrapping_tools-1.1.1.dist-info/RECORD,,
