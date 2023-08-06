@@ -1,0 +1,10 @@
+pyappbundler/__init__.py,sha256=5WWAu3G3gGSd3Juldf7tLtLIuEU98Ns3b5XVw9fT49g,62
+pyappbundler/__main__.py,sha256=9gGTYgtHbPOHOK0qx3XubPerhmza6QdzUqCjo97F0wo,2553
+pyappbundler/_version.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+pyappbundler/pyappbundler.py,sha256=rAYQPuUnp-6KaXaZ8NKakxph6Ptnn6_fSxYpOLLeMTg,3578
+pyappbundler/templates/iss.tmpl,sha256=BlWx99VNpvrMTdCpGncXKVuofq6PiiPNigr-5jrsCEk,1537
+pyappbundler-0.1.0.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+pyappbundler-0.1.0.dist-info/METADATA,sha256=Qo6g2xNIeoOakBFIdlv4rocBB6zwTnICb8LRwgfTf4M,804
+pyappbundler-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pyappbundler-0.1.0.dist-info/top_level.txt,sha256=Fc9MTxfw_6DqZn1VAOTPNTqnNbkOfA-uj_O6toHO4_4,13
+pyappbundler-0.1.0.dist-info/RECORD,,
