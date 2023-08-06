@@ -1,0 +1,11 @@
+appdirs>=1.4.4
+certifi==2021.10.8
+click>=7.1.2
+cma>=3.0.3
+pip>=20.3.4
+pylpsd>=0.1.4
+requests<=2.25.1
+linien-common==0.8.0rc6
+
+[:platform_machine == "armv7l"]
+pyrp3>=1.1.0
