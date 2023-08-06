@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+qiskit_debugger/qiskit_debugger.egg-info/PKG-INFO
+qiskit_debugger/qiskit_debugger.egg-info/SOURCES.txt
+qiskit_debugger/qiskit_debugger.egg-info/dependency_links.txt
+qiskit_debugger/qiskit_debugger.egg-info/top_level.txt
