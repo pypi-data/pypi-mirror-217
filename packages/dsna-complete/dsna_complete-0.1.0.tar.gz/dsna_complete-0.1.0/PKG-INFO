@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: dsna_complete
+Version: 0.1.0
+Summary: "Automate machine learning!"
+Author: vestech
+Requires-Python: >=3.10
+Provides-Extra: automl
