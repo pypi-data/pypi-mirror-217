@@ -1,0 +1,13 @@
+chroma_datasets/__init__.py,sha256=D3_H0Mr2J8gp1DH5m6ZDFhkuddpolDjVTe-B8KaD6so,200
+chroma_datasets/types.py,sha256=-lTpWL4Zcq8c-VPhAfR_G7jBJHzwbTLa4FObHBIaXTU,1681
+chroma_datasets/utils.py,sha256=0O53LxApRbJajw5grp2mr-ex30ngpExB8ZuhNzFxw3I,8127
+chroma_datasets/__pycache__/__init__.cpython-310.pyc,sha256=soQwfVAxdJqFry1F3n_p6roELndYtKuARmtR-I4VBzs,395
+chroma_datasets/datasets/glue.py,sha256=baFNrtWIjbk2UI3cfDFHUgRklDIPmDc5An7XVtqkoMs,1432
+chroma_datasets/datasets/paul_graham_essay.py,sha256=hci5bnlfemm9mafQsWNvhu-r38d3FIUWXITW7oZqxNk,1555
+chroma_datasets/datasets/sciq.py,sha256=TMB7A9zmELxOA0rZzUNg7tWp5QAOBRtfr5T6gjloiXY,1812
+chroma_datasets/datasets/state_of_the_union.py,sha256=HlgOJSafNNPUQZzZO_8vekuJPl7q-JEST22qbuper_g,1484
+chroma_datasets-0.1.4.dist-info/LICENSE.md,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+chroma_datasets-0.1.4.dist-info/METADATA,sha256=Uf7TrsX1sNRDVSq8O52qeEUkGYev6_ixYhXarZ-qvsI,5967
+chroma_datasets-0.1.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+chroma_datasets-0.1.4.dist-info/top_level.txt,sha256=rgotBbhV31OuYxSZdlYUttmMpiKga8UoJ-jZTiMCpS8,16
+chroma_datasets-0.1.4.dist-info/RECORD,,
