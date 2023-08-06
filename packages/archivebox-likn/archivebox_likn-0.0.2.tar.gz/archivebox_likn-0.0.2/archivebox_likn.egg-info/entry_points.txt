@@ -1,0 +1,3 @@
+[console_scripts]
+archivebox_likn = archivebox.cli:main
+
