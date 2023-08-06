@@ -1,0 +1,104 @@
+Metadata-Version: 2.1
+Name: devvit-manager
+Version: 1.0.0
+Summary: Devvit Manager is a Python package that enables you to easily utilize
+Author: Joel Payne
+Author-email: lilspazjoekp@gmail.com
+License: Simplified BSD License
+Keywords: devvit manager reddit
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Utilities
+Requires-Python: ~=3.8
+Provides-Extra: ci
+Provides-Extra: dev
+Provides-Extra: lint
+License-File: LICENSE.txt
+
+Devvit Manager: A Utility for Devvit Projects
+=============================================
+
+.. image:: https://img.shields.io/pypi/v/devvit-manager.svg
+    :alt: Latest Devvit Manager Version
+    :target: https://pypi.python.org/pypi/devvit-manager
+
+.. image:: https://img.shields.io/pypi/pyversions/devvit-manager
+    :alt: Supported Python Versions
+    :target: https://pypi.python.org/pypi/devvit-manager
+
+.. image:: https://img.shields.io/pypi/dm/devvit-manager
+    :alt: PyPI - Downloads - Monthly
+    :target: https://pypi.python.org/pypi/devvit-manager
+
+.. image:: https://github.com/LilSpazJoekp/devvit-manager/workflows/CI/badge.svg
+    :alt: GitHub Actions Status
+    :target: https://github.com/LilSpazJoekp/devvit-manager/actions?query=branch%3Amaster
+
+.. image:: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
+    :alt: pre-commit
+    :target: https://github.com/pre-commit/pre-commit
+
+.. image:: https://api.securityscorecards.dev/projects/github.com/LilSpazJoekp/devvit-manager/badge
+    :alt: OpenSSF Scorecard
+    :target: https://api.securityscorecards.dev/projects/github.com/LilSpazJoekp/devvit-manager
+
+Devvit Manager is a Python package that enables you to easily utilize devvit with
+multiple Reddit user accounts.
+
+.. _installation:
+
+Installation
+------------
+
+Devvit Manager is supported on Python 3.8+.
+
+.. code-block:: bash
+
+    pip install devvit-manager
+
+To install the latest development version of Devvit Manager run the following instead:
+
+.. code-block:: bash
+
+    pip install --upgrade https://github.com/LilSpazJoekp/devvit-manager/archive/master.zip
+
+Usage
+-----
+
+For a full list of commands and options run:
+
+.. code-block:: bash
+
+    devvit-mgr --help
+
+To login a new user run:
+
+.. code-block:: bash
+
+    devvit-mgr login
+
+To switch users run:
+
+.. code-block:: bash
+
+    devvit-mgr switch
+
+To logout a user run:
+
+.. code-block:: bash
+
+    devvit-mgr remove
+
+All commands except ``login`` can accept a single parameter for specifying a username
+(case-sensitive). If one isn't provided, you will be prompted for one. All the commands
+above can be run with the ``--help`` option to get more information.

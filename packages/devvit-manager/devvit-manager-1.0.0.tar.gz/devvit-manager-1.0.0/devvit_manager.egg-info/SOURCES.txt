@@ -1,0 +1,17 @@
+CHANGES.rst
+LICENSE.txt
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+devvit_manager.egg-info/PKG-INFO
+devvit_manager.egg-info/SOURCES.txt
+devvit_manager.egg-info/dependency_links.txt
+devvit_manager.egg-info/entry_points.txt
+devvit_manager.egg-info/requires.txt
+devvit_manager.egg-info/top_level.txt
+devvit_mgr/__init__.py
+devvit_mgr/cli.py
+devvit_mgr/const.py
+devvit_mgr/manager.py
+devvit_mgr/models.py
