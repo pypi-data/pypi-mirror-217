@@ -1,0 +1,11 @@
+setup.cfg
+setup.py
+ovk_grapher/Binomialdistribution.py
+ovk_grapher/Gaussiandistribution.py
+ovk_grapher/Generaldistribution.py
+ovk_grapher/__init__.py
+ovk_grapher.egg-info/PKG-INFO
+ovk_grapher.egg-info/SOURCES.txt
+ovk_grapher.egg-info/dependency_links.txt
+ovk_grapher.egg-info/not-zip-safe
+ovk_grapher.egg-info/top_level.txt
