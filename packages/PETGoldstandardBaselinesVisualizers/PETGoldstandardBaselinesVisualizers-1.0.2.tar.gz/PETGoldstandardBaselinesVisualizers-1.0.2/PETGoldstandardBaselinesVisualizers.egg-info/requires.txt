@@ -1,0 +1,5 @@
+numpy~=1.25.0
+PETAnnotationDataset~=0.0.1a3
+Pillow~=10.0.0
+matplotlib~=3.7.1
+requests~=2.31.0
