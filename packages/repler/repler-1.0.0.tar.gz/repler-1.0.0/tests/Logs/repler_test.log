@@ -1,0 +1,746 @@
+06:48:39[INFO ] repler_test    :263 main_loop                 -> Expected results:{'in_sourse': {'C:\\Users\\Alex\\source\\repos\\report-handler\\tests\\RandomTest\\SelfTest1': ['file.log']}, 'in_archive': {'C:\\Users\\Alex\\source\\repos\\report-handler\\tests\\RandomTest\\SelfTest1\\Archive': ['file.yyy', 'file.txt', 'file.zzz']}}
+06:48:39[INFO ] repler         :23  info                      -> Archivation...
+06:48:39[INFO ] repler         :23  info                      -> Created zip file: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1\Archive\archive_1688312919.958905.zip
+06:48:39[INFO ] repler         :23  info                      -> Created archive name archive_1688312919.958905.zip
+06:48:39[INFO ] repler_test    :306 verify_expected           -> Verifying results...
+06:48:39[INFO ] repler_test    :325 verify_expected           -> ==========PASS==========
+06:48:39[INFO ] repler_test    :261 main_loop                 -> Current action:clean
+06:48:39[INFO ] repler_test    :357 get_expected_FSM          -> Starting expect results FSM
+06:48:39[INFO ] repler_test    :359 get_expected_FSM          -> --------------FSM state: INIT
+06:48:39[INFO ] repler_test    :364 get_expected_FSM          -> Next FSM state: DEFINE_ACTION
+06:48:39[INFO ] repler_test    :366 get_expected_FSM          -> --------------FSM state: DEFINE_ACTION
+06:48:39[INFO ] repler_test    :375 get_expected_FSM          -> Next FSM state: EXPECT_CLEAN_AFTER_ARCHIVE
+06:48:39[INFO ] repler_test    :415 get_expected_FSM          -> --------------FSM state: EXPECT_CLEAN_AFTER_ARCHIVE
+06:48:39[INFO ] repler_test    :345 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2\file.txt is 0 hours.
+06:48:39[INFO ] repler_test    :345 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2\file.txt is 0 hours.
+06:48:39[INFO ] repler_test    :339 _is_old                   -> The candidat for delition: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2\file.txt is too yong.
+06:48:39[INFO ] repler_test    :345 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2\file.log is 0 hours.
+06:48:39[INFO ] repler_test    :345 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2\file.log is 0 hours.
+06:48:39[INFO ] repler_test    :339 _is_old                   -> The candidat for delition: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2\file.log is too yong.
+06:48:39[INFO ] repler_test    :420 get_expected_FSM          -> Next FSM state: END
+06:48:39[INFO ] repler_test    :422 get_expected_FSM          -> --------------FSM state: END
+06:48:39[INFO ] repler_test    :263 main_loop                 -> Expected results:{'in_sourse': {'C:\\Users\\Alex\\source\\repos\\report-handler\\tests\\RandomTest\\SelfTest2': ['file.log', 'file.txt', 'file.zzz']}, 'in_archive': {}}
+06:48:39[INFO ] repler         :23  info                      -> Cleaning files...
+06:48:39[INFO ] repler         :23  info                      -> Deletting extentions: ['txt', 'log']
+06:48:39[INFO ] repler_test    :306 verify_expected           -> Verifying results...
+06:48:39[INFO ] repler_test    :325 verify_expected           -> ==========PASS==========
+06:48:39[INFO ] repler_test    :250 main_loop                 -> 
+
+Start loop #10423
+06:48:39[INFO ] repler_test    :252 main_loop                 -> Order: ['archivator', 'cleaner', 'archivator', 'archivator', 'archivator']
+06:48:39[INFO ] repler_test    :254 main_loop                 -> Actions: ('clean',)
+06:48:39[INFO ] repler_test    :445 apply_policy              -> Applying policys on folders.
+06:48:39[INFO ] repler_test    :467 apply_policy              -> Aplying archivator on C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest
+06:48:39[INFO ] repler_test    :468 apply_policy              -> 	Create archive in C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest\Archive
+06:48:39[INFO ] repler_test    :469 apply_policy              -> 	Archive prefix: archive
+06:48:39[INFO ] repler_test    :470 apply_policy              -> 	Extentions to archive: ['zzz', 'txt']
+06:48:39[INFO ] repler_test    :471 apply_policy              -> 	Delete archived files after succefull archivation:                    False
+06:48:39[INFO ] repler         :23  info                      -> Aplying cleaner on C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1
+06:48:39[INFO ] repler         :23  info                      -> 	age_before_del_hour: 1
+06:48:40[INFO ] repler         :23  info                      -> 	Extention to delete: ['zzz', 'log']
+06:48:40[INFO ] repler_test    :467 apply_policy              -> Aplying archivator on C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1
+06:48:40[INFO ] repler_test    :468 apply_policy              -> 	Create archive in C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1\Archive
+06:48:40[INFO ] repler_test    :469 apply_policy              -> 	Archive prefix: archive
+06:48:40[INFO ] repler_test    :470 apply_policy              -> 	Extentions to archive: ['yyy']
+06:48:40[INFO ] repler_test    :471 apply_policy              -> 	Delete archived files after succefull archivation:                    False
+06:48:40[INFO ] repler         :23  info                      -> The archivator with sourse path C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest allready exist.
+06:48:40[INFO ] repler         :23  info                      -> Updating ext_to_arch = ['log']
+06:48:40[INFO ] repler_test    :467 apply_policy              -> Aplying archivator on C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2
+06:48:40[INFO ] repler_test    :468 apply_policy              -> 	Create archive in C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2\Archive
+06:48:40[INFO ] repler_test    :469 apply_policy              -> 	Archive prefix: archive
+06:48:40[INFO ] repler_test    :470 apply_policy              -> 	Extentions to archive: ['txt', 'log', 'zzz']
+06:48:40[INFO ] repler_test    :471 apply_policy              -> 	Delete archived files after succefull archivation:                    True
+06:48:40[INFO ] repler         :23  info                      -> ============================================
+06:48:40[INFO ] repler         :23  info                      -> Archivator #1
+06:48:40[INFO ] repler         :23  info                      -> 	Sourse path: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest
+06:48:40[INFO ] repler         :23  info                      -> 	Archive path: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest\Archive
+06:48:40[INFO ] repler         :23  info                      -> 	Archive prefix: archive
+06:48:40[INFO ] repler         :23  info                      -> 	ext_to_arch: ['zzz', 'txt']
+06:48:40[INFO ] repler         :23  info                      -> ============================================
+06:48:40[INFO ] repler         :23  info                      -> Archivator #2
+06:48:40[INFO ] repler         :23  info                      -> 	Sourse path: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1
+06:48:40[INFO ] repler         :23  info                      -> 	Archive path: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1\Archive
+06:48:40[INFO ] repler         :23  info                      -> 	Archive prefix: archive
+06:48:40[INFO ] repler         :23  info                      -> 	ext_to_arch: ['yyy']
+06:48:40[INFO ] repler         :23  info                      -> ============================================
+06:48:40[INFO ] repler         :23  info                      -> Archivator #3
+06:48:40[INFO ] repler         :23  info                      -> 	Sourse path: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2
+06:48:40[INFO ] repler         :23  info                      -> 	Archive path: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2\Archive
+06:48:40[INFO ] repler         :23  info                      -> 	Archive prefix: archive
+06:48:40[INFO ] repler         :23  info                      -> 	ext_to_arch: ['txt', 'log', 'zzz']
+06:48:40[INFO ] repler         :23  info                      -> ============================================
+06:48:40[INFO ] repler         :23  info                      -> Cleaner #1
+06:48:40[INFO ] repler         :23  info                      -> 	Path: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1
+06:48:40[INFO ] repler         :23  info                      -> 	age_before_del_hour: 1
+06:48:40[INFO ] repler         :23  info                      -> 	ext_to_del: ['zzz', 'log']
+06:48:40[INFO ] repler_test    :283 rand_pre_test             -> Running pretest settings.
+06:48:40[INFO ] repler_test    :302 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest: ['file.txt', 'file.yyy']
+06:48:40[INFO ] repler_test    :302 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1: ['file.log', 'file.txt', 'file.yyy', 'file.zzz']
+06:48:40[INFO ] repler_test    :302 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2: ['file.log', 'file.yyy', 'file.zzz']
+06:48:40[INFO ] repler_test    :302 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1: ['file.log', 'file.txt', 'file.yyy', 'file.zzz']
+06:48:40[INFO ] repler_test    :261 main_loop                 -> Current action:clean
+06:48:40[INFO ] repler_test    :357 get_expected_FSM          -> Starting expect results FSM
+06:48:40[INFO ] repler_test    :359 get_expected_FSM          -> --------------FSM state: INIT
+06:48:40[INFO ] repler_test    :364 get_expected_FSM          -> Next FSM state: DEFINE_ACTION
+06:48:40[INFO ] repler_test    :366 get_expected_FSM          -> --------------FSM state: DEFINE_ACTION
+06:48:40[INFO ] repler_test    :375 get_expected_FSM          -> Next FSM state: EXPECT_CLEAN
+06:48:40[INFO ] repler_test    :400 get_expected_FSM          -> --------------FSM state: EXPECT_CLEAN
+06:48:40[INFO ] repler_test    :413 get_expected_FSM          -> Next FSM state: END
+06:48:40[INFO ] repler_test    :422 get_expected_FSM          -> --------------FSM state: END
+06:48:40[INFO ] repler_test    :263 main_loop                 -> Expected results:{'in_sourse': {'C:\\Users\\Alex\\source\\repos\\report-handler\\tests\\RandomTest\\SelfTest1': ['file.log', 'file.txt', 'file.yyy', 'file.zzz']}, 'in_archive': {}}
+06:48:40[INFO ] repler         :23  info                      -> Cleaning files...
+06:48:40[INFO ] repler         :23  info                      -> Same path of archivator and cleaner: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1
+06:48:40[INFO ] repler         :23  info                      -> The archivator not run yet. Postpone clean after archivation
+06:48:40[INFO ] repler_test    :306 verify_expected           -> Verifying results...
+06:48:40[INFO ] repler_test    :325 verify_expected           -> ==========PASS==========
+06:48:40[INFO ] repler_test    :250 main_loop                 -> 
+
+Start loop #10424
+06:48:40[INFO ] repler_test    :252 main_loop                 -> Order: ['cleaner', 'archivator', 'archivator', 'archivator', 'cleaner']
+06:48:40[INFO ] repler_test    :254 main_loop                 -> Actions: ('archive',)
+06:48:40[INFO ] repler_test    :445 apply_policy              -> Applying policys on folders.
+06:48:40[INFO ] repler         :23  info                      -> Aplying cleaner on C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1
+06:48:40[INFO ] repler         :23  info                      -> 	age_before_del_hour: 1
+06:48:40[INFO ] repler         :23  info                      -> 	Extention to delete: ['txt']
+06:48:40[INFO ] repler_test    :467 apply_policy              -> Aplying archivator on C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest
+06:48:40[INFO ] repler_test    :468 apply_policy              -> 	Create archive in C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest\Archive
+06:48:40[INFO ] repler_test    :469 apply_policy              -> 	Archive prefix: archive
+06:48:40[INFO ] repler_test    :470 apply_policy              -> 	Extentions to archive: ['yyy', 'zzz']
+06:48:40[INFO ] repler_test    :471 apply_policy              -> 	Delete archived files after succefull archivation:                    False
+06:48:40[INFO ] repler_test    :467 apply_policy              -> Aplying archivator on C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2
+06:48:40[INFO ] repler_test    :468 apply_policy              -> 	Create archive in C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2\Archive
+06:48:40[INFO ] repler_test    :469 apply_policy              -> 	Archive prefix: archive
+06:48:40[INFO ] repler_test    :470 apply_policy              -> 	Extentions to archive: ['zzz', 'yyy']
+06:48:40[INFO ] repler_test    :471 apply_policy              -> 	Delete archived files after succefull archivation:                    True
+06:48:40[INFO ] repler         :23  info                      -> The archivator with sourse path C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2 allready exist.
+06:48:40[INFO ] repler         :23  info                      -> Updating ext_to_arch = ['log', 'txt', 'yyy']
+06:48:40[INFO ] repler         :23  info                      -> The cleaner with path C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1 allready exist.
+06:48:40[INFO ] repler         :23  info                      -> 	Updating ext_to_del = ['log'].
+06:48:40[INFO ] repler         :23  info                      -> ============================================
+06:48:40[INFO ] repler         :23  info                      -> Archivator #1
+06:48:40[INFO ] repler         :23  info                      -> 	Sourse path: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest
+06:48:40[INFO ] repler         :23  info                      -> 	Archive path: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest\Archive
+06:48:40[INFO ] repler         :23  info                      -> 	Archive prefix: archive
+06:48:40[INFO ] repler         :23  info                      -> 	ext_to_arch: ['yyy', 'zzz']
+06:48:40[INFO ] repler         :23  info                      -> ============================================
+06:48:40[INFO ] repler         :23  info                      -> Archivator #2
+06:48:40[INFO ] repler         :23  info                      -> 	Sourse path: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2
+06:48:40[INFO ] repler         :23  info                      -> 	Archive path: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2\Archive
+06:48:40[INFO ] repler         :23  info                      -> 	Archive prefix: archive
+06:48:40[INFO ] repler         :23  info                      -> 	ext_to_arch: ['zzz', 'yyy']
+06:48:40[INFO ] repler         :23  info                      -> ============================================
+06:48:40[INFO ] repler         :23  info                      -> Cleaner #1
+06:48:40[INFO ] repler         :23  info                      -> 	Path: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1
+06:48:40[INFO ] repler         :23  info                      -> 	age_before_del_hour: 1
+06:48:40[INFO ] repler         :23  info                      -> 	ext_to_del: ['log']
+06:48:40[INFO ] repler_test    :283 rand_pre_test             -> Running pretest settings.
+06:48:40[INFO ] repler_test    :302 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest: ['file.txt', 'file.yyy', 'file.zzz']
+06:48:40[INFO ] repler_test    :302 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2: ['file.zzz']
+06:48:40[INFO ] repler_test    :302 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1: ['file.log', 'file.txt', 'file.yyy']
+06:48:40[INFO ] repler_test    :261 main_loop                 -> Current action:archive
+06:48:40[INFO ] repler_test    :357 get_expected_FSM          -> Starting expect results FSM
+06:48:40[INFO ] repler_test    :359 get_expected_FSM          -> --------------FSM state: INIT
+06:48:40[INFO ] repler_test    :364 get_expected_FSM          -> Next FSM state: DEFINE_ACTION
+06:48:40[INFO ] repler_test    :366 get_expected_FSM          -> --------------FSM state: DEFINE_ACTION
+06:48:40[INFO ] repler_test    :375 get_expected_FSM          -> Next FSM state: EXPECT_ARCHIVE
+06:48:40[INFO ] repler_test    :377 get_expected_FSM          -> --------------FSM state: EXPECT_ARCHIVE
+06:48:40[INFO ] repler_test    :398 get_expected_FSM          -> Next FSM state: END
+06:48:40[INFO ] repler_test    :422 get_expected_FSM          -> --------------FSM state: END
+06:48:40[INFO ] repler_test    :263 main_loop                 -> Expected results:{'in_sourse': {'C:\\Users\\Alex\\source\\repos\\report-handler\\tests\\RandomTest\\SelfTest': ['file.txt', 'file.yyy', 'file.zzz'], 'C:\\Users\\Alex\\source\\repos\\report-handler\\tests\\RandomTest\\SelfTest2': []}, 'in_archive': {'C:\\Users\\Alex\\source\\repos\\report-handler\\tests\\RandomTest\\SelfTest\\Archive': ['file.yyy', 'file.zzz'], 'C:\\Users\\Alex\\source\\repos\\report-handler\\tests\\RandomTest\\SelfTest2\\Archive': ['file.zzz']}}
+06:48:40[INFO ] repler         :23  info                      -> Archivation...
+06:48:40[INFO ] repler         :23  info                      -> Created zip file: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest\Archive\archive_1688312920.1049867.zip
+06:48:40[INFO ] repler         :23  info                      -> Created archive name archive_1688312920.1049867.zip
+06:48:40[INFO ] repler         :23  info                      -> Created zip file: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2\Archive\archive_1688312920.111661.zip
+06:48:40[INFO ] repler         :23  info                      -> Created archive name archive_1688312920.111661.zip
+06:48:40[INFO ] repler_test    :306 verify_expected           -> Verifying results...
+06:48:40[INFO ] repler_test    :325 verify_expected           -> ==========PASS==========
+06:48:40[INFO ] repler_test    :250 main_loop                 -> 
+
+Start loop #10425
+06:48:40[INFO ] repler_test    :252 main_loop                 -> Order: ['cleaner', 'cleaner', 'cleaner', 'archivator']
+06:48:40[INFO ] repler_test    :254 main_loop                 -> Actions: ('clean', 'archive')
+06:48:40[INFO ] repler_test    :445 apply_policy              -> Applying policys on folders.
+06:48:40[INFO ] repler         :23  info                      -> Aplying cleaner on C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2
+06:48:40[INFO ] repler         :23  info                      -> 	age_before_del_hour: 1
+06:48:40[INFO ] repler         :23  info                      -> 	Extention to delete: ['yyy', 'txt', 'zzz']
+06:48:40[INFO ] repler         :23  info                      -> Aplying cleaner on C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest
+06:48:40[INFO ] repler         :23  info                      -> 	age_before_del_hour: 0
+06:48:40[INFO ] repler         :23  info                      -> 	Extention to delete: ['zzz', 'txt', 'yyy', 'log']
+06:48:40[INFO ] repler         :23  info                      -> Aplying cleaner on C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1
+06:48:40[INFO ] repler         :23  info                      -> 	age_before_del_hour: 1
+06:48:40[INFO ] repler         :23  info                      -> 	Extention to delete: ['log', 'zzz', 'txt', 'yyy']
+06:48:40[INFO ] repler_test    :467 apply_policy              -> Aplying archivator on C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2
+06:48:40[INFO ] repler_test    :468 apply_policy              -> 	Create archive in C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2\Archive
+06:48:40[INFO ] repler_test    :469 apply_policy              -> 	Archive prefix: archive
+06:48:40[INFO ] repler_test    :470 apply_policy              -> 	Extentions to archive: ['txt', 'zzz', 'yyy', 'log']
+06:48:40[INFO ] repler_test    :471 apply_policy              -> 	Delete archived files after succefull archivation:                    True
+06:48:40[INFO ] repler         :23  info                      -> ============================================
+06:48:40[INFO ] repler         :23  info                      -> Archivator #1
+06:48:40[INFO ] repler         :23  info                      -> 	Sourse path: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2
+06:48:40[INFO ] repler         :23  info                      -> 	Archive path: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2\Archive
+06:48:40[INFO ] repler         :23  info                      -> 	Archive prefix: archive
+06:48:40[INFO ] repler         :23  info                      -> 	ext_to_arch: ['txt', 'zzz', 'yyy', 'log']
+06:48:40[INFO ] repler         :23  info                      -> ============================================
+06:48:40[INFO ] repler         :23  info                      -> Cleaner #1
+06:48:40[INFO ] repler         :23  info                      -> 	Path: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2
+06:48:40[INFO ] repler         :23  info                      -> 	age_before_del_hour: 1
+06:48:40[INFO ] repler         :23  info                      -> 	ext_to_del: ['yyy', 'txt', 'zzz']
+06:48:40[INFO ] repler         :23  info                      -> ============================================
+06:48:40[INFO ] repler         :23  info                      -> Cleaner #2
+06:48:40[INFO ] repler         :23  info                      -> 	Path: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest
+06:48:40[INFO ] repler         :23  info                      -> 	age_before_del_hour: 0
+06:48:40[INFO ] repler         :23  info                      -> 	ext_to_del: ['zzz', 'txt', 'yyy', 'log']
+06:48:40[INFO ] repler         :23  info                      -> ============================================
+06:48:40[INFO ] repler         :23  info                      -> Cleaner #3
+06:48:40[INFO ] repler         :23  info                      -> 	Path: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1
+06:48:40[INFO ] repler         :23  info                      -> 	age_before_del_hour: 1
+06:48:40[INFO ] repler         :23  info                      -> 	ext_to_del: ['log', 'zzz', 'txt', 'yyy']
+06:48:40[INFO ] repler_test    :283 rand_pre_test             -> Running pretest settings.
+06:48:40[INFO ] repler_test    :302 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2: ['file.txt', 'file.yyy']
+06:48:40[INFO ] repler_test    :302 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2: ['file.log', 'file.txt', 'file.yyy', 'file.zzz']
+06:48:40[INFO ] repler_test    :302 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest: ['file.zzz']
+06:48:40[INFO ] repler_test    :302 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1: ['file.log', 'file.zzz']
+06:48:40[INFO ] repler_test    :261 main_loop                 -> Current action:clean
+06:48:40[INFO ] repler_test    :357 get_expected_FSM          -> Starting expect results FSM
+06:48:40[INFO ] repler_test    :359 get_expected_FSM          -> --------------FSM state: INIT
+06:48:40[INFO ] repler_test    :364 get_expected_FSM          -> Next FSM state: DEFINE_ACTION
+06:48:40[INFO ] repler_test    :366 get_expected_FSM          -> --------------FSM state: DEFINE_ACTION
+06:48:40[INFO ] repler_test    :375 get_expected_FSM          -> Next FSM state: EXPECT_CLEAN
+06:48:40[INFO ] repler_test    :400 get_expected_FSM          -> --------------FSM state: EXPECT_CLEAN
+06:48:40[INFO ] repler_test    :345 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest\file.zzz is 0 hours.
+06:48:40[INFO ] repler_test    :345 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest\file.zzz is 0 hours.
+06:48:40[INFO ] repler_test    :337 _is_old                   -> The candidat for delition: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest\file.zzz, age: 0
+06:48:40[INFO ] repler_test    :345 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1\file.log is 0 hours.
+06:48:40[INFO ] repler_test    :345 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1\file.log is 0 hours.
+06:48:40[INFO ] repler_test    :339 _is_old                   -> The candidat for delition: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1\file.log is too yong.
+06:48:40[INFO ] repler_test    :345 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1\file.zzz is 0 hours.
+06:48:40[INFO ] repler_test    :345 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1\file.zzz is 0 hours.
+06:48:40[INFO ] repler_test    :339 _is_old                   -> The candidat for delition: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1\file.zzz is too yong.
+06:48:40[INFO ] repler_test    :413 get_expected_FSM          -> Next FSM state: END
+06:48:40[INFO ] repler_test    :422 get_expected_FSM          -> --------------FSM state: END
+06:48:40[INFO ] repler_test    :263 main_loop                 -> Expected results:{'in_sourse': {'C:\\Users\\Alex\\source\\repos\\report-handler\\tests\\RandomTest\\SelfTest2': ['file.log', 'file.txt', 'file.yyy', 'file.zzz'], 'C:\\Users\\Alex\\source\\repos\\report-handler\\tests\\RandomTest\\SelfTest': [], 'C:\\Users\\Alex\\source\\repos\\report-handler\\tests\\RandomTest\\SelfTest1': ['file.log', 'file.zzz']}, 'in_archive': {}}
+06:48:40[INFO ] repler         :23  info                      -> Cleaning files...
+06:48:40[INFO ] repler         :23  info                      -> Same path of archivator and cleaner: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2
+06:48:40[INFO ] repler         :23  info                      -> The archivator not run yet. Postpone clean after archivation
+06:48:40[INFO ] repler         :23  info                      -> Deletting extentions: ['zzz', 'txt', 'yyy', 'log']
+06:48:40[INFO ] repler         :23  info                      -> Deletting C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest\file.zzz...
+06:48:40[INFO ] repler         :23  info                      -> Deletting extentions: ['log', 'zzz', 'txt', 'yyy']
+06:48:40[INFO ] repler_test    :306 verify_expected           -> Verifying results...
+06:48:40[INFO ] repler_test    :325 verify_expected           -> ==========PASS==========
+06:48:40[INFO ] repler_test    :261 main_loop                 -> Current action:archive
+06:48:40[INFO ] repler_test    :357 get_expected_FSM          -> Starting expect results FSM
+06:48:40[INFO ] repler_test    :359 get_expected_FSM          -> --------------FSM state: INIT
+06:48:40[INFO ] repler_test    :364 get_expected_FSM          -> Next FSM state: DEFINE_ACTION
+06:48:40[INFO ] repler_test    :366 get_expected_FSM          -> --------------FSM state: DEFINE_ACTION
+06:48:40[INFO ] repler_test    :375 get_expected_FSM          -> Next FSM state: EXPECT_ARCHIVE
+06:48:40[INFO ] repler_test    :377 get_expected_FSM          -> --------------FSM state: EXPECT_ARCHIVE
+06:48:40[INFO ] repler_test    :398 get_expected_FSM          -> Next FSM state: END
+06:48:40[INFO ] repler_test    :422 get_expected_FSM          -> --------------FSM state: END
+06:48:40[INFO ] repler_test    :263 main_loop                 -> Expected results:{'in_sourse': {'C:\\Users\\Alex\\source\\repos\\report-handler\\tests\\RandomTest\\SelfTest2': []}, 'in_archive': {'C:\\Users\\Alex\\source\\repos\\report-handler\\tests\\RandomTest\\SelfTest2\\Archive': ['file.txt', 'file.zzz', 'file.yyy', 'file.log']}}
+06:48:40[INFO ] repler         :23  info                      -> Archivation...
+06:48:40[INFO ] repler         :23  info                      -> Created zip file: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2\Archive\archive_1688312920.222659.zip
+06:48:40[INFO ] repler         :23  info                      -> Created archive name archive_1688312920.222659.zip
+06:48:40[INFO ] repler         :23  info                      -> Run cleaner for C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2
+06:48:40[INFO ] repler_test    :306 verify_expected           -> Verifying results...
+06:48:40[INFO ] repler_test    :325 verify_expected           -> ==========PASS==========
+06:48:40[INFO ] repler_test    :250 main_loop                 -> 
+
+Start loop #10426
+06:48:40[INFO ] repler_test    :252 main_loop                 -> Order: ['archivator', 'archivator', 'cleaner', 'cleaner']
+06:48:40[INFO ] repler_test    :254 main_loop                 -> Actions: ('clean',)
+06:48:40[INFO ] repler_test    :445 apply_policy              -> Applying policys on folders.
+06:48:40[INFO ] repler_test    :467 apply_policy              -> Aplying archivator on C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest
+06:48:40[INFO ] repler_test    :468 apply_policy              -> 	Create archive in C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest\Archive
+06:48:40[INFO ] repler_test    :469 apply_policy              -> 	Archive prefix: archive
+06:48:40[INFO ] repler_test    :470 apply_policy              -> 	Extentions to archive: ['zzz', 'yyy']
+06:48:40[INFO ] repler_test    :471 apply_policy              -> 	Delete archived files after succefull archivation:                    False
+06:48:40[INFO ] repler_test    :467 apply_policy              -> Aplying archivator on C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2
+06:48:40[INFO ] repler_test    :468 apply_policy              -> 	Create archive in C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2\Archive
+06:48:40[INFO ] repler_test    :469 apply_policy              -> 	Archive prefix: archive
+06:48:40[INFO ] repler_test    :470 apply_policy              -> 	Extentions to archive: ['zzz', 'txt']
+06:48:40[INFO ] repler_test    :471 apply_policy              -> 	Delete archived files after succefull archivation:                    True
+06:48:40[INFO ] repler         :23  info                      -> Aplying cleaner on C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1
+06:48:40[INFO ] repler         :23  info                      -> 	age_before_del_hour: 1
+06:48:40[INFO ] repler         :23  info                      -> 	Extention to delete: ['txt', 'log', 'zzz']
+06:48:40[INFO ] repler         :23  info                      -> Aplying cleaner on C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest
+06:48:40[INFO ] repler         :23  info                      -> 	age_before_del_hour: 0
+06:48:40[INFO ] repler         :23  info                      -> 	Extention to delete: ['yyy', 'txt']
+06:48:40[INFO ] repler         :23  info                      -> ============================================
+06:48:40[INFO ] repler         :23  info                      -> Archivator #1
+06:48:40[INFO ] repler         :23  info                      -> 	Sourse path: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest
+06:48:40[INFO ] repler         :23  info                      -> 	Archive path: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest\Archive
+06:48:40[INFO ] repler         :23  info                      -> 	Archive prefix: archive
+06:48:40[INFO ] repler         :23  info                      -> 	ext_to_arch: ['zzz', 'yyy']
+06:48:40[INFO ] repler         :23  info                      -> ============================================
+06:48:40[INFO ] repler         :23  info                      -> Archivator #2
+06:48:40[INFO ] repler         :23  info                      -> 	Sourse path: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2
+06:48:40[INFO ] repler         :23  info                      -> 	Archive path: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2\Archive
+06:48:40[INFO ] repler         :23  info                      -> 	Archive prefix: archive
+06:48:40[INFO ] repler         :23  info                      -> 	ext_to_arch: ['zzz', 'txt']
+06:48:40[INFO ] repler         :23  info                      -> ============================================
+06:48:40[INFO ] repler         :23  info                      -> Cleaner #1
+06:48:40[INFO ] repler         :23  info                      -> 	Path: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1
+06:48:40[INFO ] repler         :23  info                      -> 	age_before_del_hour: 1
+06:48:40[INFO ] repler         :23  info                      -> 	ext_to_del: ['txt', 'log', 'zzz']
+06:48:40[INFO ] repler         :23  info                      -> ============================================
+06:48:40[INFO ] repler         :23  info                      -> Cleaner #2
+06:48:40[INFO ] repler         :23  info                      -> 	Path: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest
+06:48:40[INFO ] repler         :23  info                      -> 	age_before_del_hour: 0
+06:48:40[INFO ] repler         :23  info                      -> 	ext_to_del: ['yyy', 'txt']
+06:48:40[INFO ] repler_test    :283 rand_pre_test             -> Running pretest settings.
+06:48:40[INFO ] repler_test    :302 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest: ['file.log', 'file.txt', 'file.yyy', 'file.zzz']
+06:48:40[INFO ] repler_test    :302 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2: ['file.log', 'file.txt', 'file.yyy', 'file.zzz']
+06:48:40[INFO ] repler_test    :302 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1: ['file.log', 'file.txt', 'file.yyy']
+06:48:40[INFO ] repler_test    :302 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest: ['file.log', 'file.txt', 'file.yyy', 'file.zzz']
+06:48:40[INFO ] repler_test    :261 main_loop                 -> Current action:clean
+06:48:40[INFO ] repler_test    :357 get_expected_FSM          -> Starting expect results FSM
+06:48:40[INFO ] repler_test    :359 get_expected_FSM          -> --------------FSM state: INIT
+06:48:40[INFO ] repler_test    :364 get_expected_FSM          -> Next FSM state: DEFINE_ACTION
+06:48:40[INFO ] repler_test    :366 get_expected_FSM          -> --------------FSM state: DEFINE_ACTION
+06:48:40[INFO ] repler_test    :375 get_expected_FSM          -> Next FSM state: EXPECT_CLEAN
+06:48:40[INFO ] repler_test    :400 get_expected_FSM          -> --------------FSM state: EXPECT_CLEAN
+06:48:40[INFO ] repler_test    :345 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1\file.txt is 0 hours.
+06:48:40[INFO ] repler_test    :345 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1\file.txt is 0 hours.
+06:48:40[INFO ] repler_test    :339 _is_old                   -> The candidat for delition: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1\file.txt is too yong.
+06:48:40[INFO ] repler_test    :345 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1\file.log is 0 hours.
+06:48:40[INFO ] repler_test    :345 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1\file.log is 0 hours.
+06:48:40[INFO ] repler_test    :339 _is_old                   -> The candidat for delition: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1\file.log is too yong.
+06:48:40[INFO ] repler_test    :413 get_expected_FSM          -> Next FSM state: END
+06:48:40[INFO ] repler_test    :422 get_expected_FSM          -> --------------FSM state: END
+06:48:40[INFO ] repler_test    :263 main_loop                 -> Expected results:{'in_sourse': {'C:\\Users\\Alex\\source\\repos\\report-handler\\tests\\RandomTest\\SelfTest1': ['file.log', 'file.txt', 'file.yyy'], 'C:\\Users\\Alex\\source\\repos\\report-handler\\tests\\RandomTest\\SelfTest': ['file.log', 'file.txt', 'file.yyy', 'file.zzz']}, 'in_archive': {}}
+06:48:40[INFO ] repler         :23  info                      -> Cleaning files...
+06:48:40[INFO ] repler         :23  info                      -> Deletting extentions: ['txt', 'log', 'zzz']
+06:48:40[INFO ] repler         :23  info                      -> Same path of archivator and cleaner: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest
+06:48:40[INFO ] repler         :23  info                      -> The archivator not run yet. Postpone clean after archivation
+06:48:40[INFO ] repler_test    :306 verify_expected           -> Verifying results...
+06:48:40[INFO ] repler_test    :325 verify_expected           -> ==========PASS==========
+06:48:40[INFO ] repler_test    :250 main_loop                 -> 
+
+Start loop #10427
+06:48:40[INFO ] repler_test    :252 main_loop                 -> Order: ['archivator', 'archivator', 'cleaner', 'cleaner', 'archivator']
+06:48:40[INFO ] repler_test    :254 main_loop                 -> Actions: ('archive', 'clean')
+06:48:40[INFO ] repler_test    :445 apply_policy              -> Applying policys on folders.
+06:48:40[INFO ] repler_test    :467 apply_policy              -> Aplying archivator on C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest
+06:48:40[INFO ] repler_test    :468 apply_policy              -> 	Create archive in C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest\Archive
+06:48:40[INFO ] repler_test    :469 apply_policy              -> 	Archive prefix: archive
+06:48:40[INFO ] repler_test    :470 apply_policy              -> 	Extentions to archive: ['zzz']
+06:48:40[INFO ] repler_test    :471 apply_policy              -> 	Delete archived files after succefull archivation:                    False
+06:48:40[INFO ] repler_test    :467 apply_policy              -> Aplying archivator on C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2
+06:48:40[INFO ] repler_test    :468 apply_policy              -> 	Create archive in C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2\Archive
+06:48:40[INFO ] repler_test    :469 apply_policy              -> 	Archive prefix: archive
+06:48:40[INFO ] repler_test    :470 apply_policy              -> 	Extentions to archive: ['txt', 'log', 'yyy', 'zzz']
+06:48:40[INFO ] repler_test    :471 apply_policy              -> 	Delete archived files after succefull archivation:                    False
+06:48:40[INFO ] repler         :23  info                      -> Aplying cleaner on C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1
+06:48:40[INFO ] repler         :23  info                      -> 	age_before_del_hour: 1
+06:48:40[INFO ] repler         :23  info                      -> 	Extention to delete: ['yyy', 'log', 'txt', 'zzz']
+06:48:40[INFO ] repler         :23  info                      -> The cleaner with path C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1 allready exist.
+06:48:40[INFO ] repler         :23  info                      -> 	Updating ext_to_del = ['log', 'txt', 'zzz', 'yyy'].
+06:48:40[INFO ] repler         :23  info                      -> The archivator with sourse path C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2 allready exist.
+06:48:40[INFO ] repler         :23  info                      -> Updating ext_to_arch = ['txt', 'yyy']
+06:48:40[INFO ] repler         :23  info                      -> ============================================
+06:48:40[INFO ] repler         :23  info                      -> Archivator #1
+06:48:40[INFO ] repler         :23  info                      -> 	Sourse path: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest
+06:48:40[INFO ] repler         :23  info                      -> 	Archive path: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest\Archive
+06:48:40[INFO ] repler         :23  info                      -> 	Archive prefix: archive
+06:48:40[INFO ] repler         :23  info                      -> 	ext_to_arch: ['zzz']
+06:48:40[INFO ] repler         :23  info                      -> ============================================
+06:48:40[INFO ] repler         :23  info                      -> Archivator #2
+06:48:40[INFO ] repler         :23  info                      -> 	Sourse path: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2
+06:48:40[INFO ] repler         :23  info                      -> 	Archive path: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2\Archive
+06:48:40[INFO ] repler         :23  info                      -> 	Archive prefix: archive
+06:48:40[INFO ] repler         :23  info                      -> 	ext_to_arch: ['txt', 'log', 'yyy', 'zzz']
+06:48:40[INFO ] repler         :23  info                      -> ============================================
+06:48:40[INFO ] repler         :23  info                      -> Cleaner #1
+06:48:40[INFO ] repler         :23  info                      -> 	Path: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1
+06:48:40[INFO ] repler         :23  info                      -> 	age_before_del_hour: 1
+06:48:40[INFO ] repler         :23  info                      -> 	ext_to_del: ['log', 'txt', 'zzz', 'yyy']
+06:48:40[INFO ] repler_test    :283 rand_pre_test             -> Running pretest settings.
+06:48:40[INFO ] repler_test    :302 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest: ['file.log', 'file.txt', 'file.yyy']
+06:48:40[INFO ] repler_test    :302 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2: ['file.log', 'file.txt', 'file.yyy', 'file.zzz']
+06:48:40[INFO ] repler_test    :302 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1: ['file.log', 'file.txt']
+06:48:40[INFO ] repler_test    :261 main_loop                 -> Current action:archive
+06:48:40[INFO ] repler_test    :357 get_expected_FSM          -> Starting expect results FSM
+06:48:40[INFO ] repler_test    :359 get_expected_FSM          -> --------------FSM state: INIT
+06:48:40[INFO ] repler_test    :364 get_expected_FSM          -> Next FSM state: DEFINE_ACTION
+06:48:40[INFO ] repler_test    :366 get_expected_FSM          -> --------------FSM state: DEFINE_ACTION
+06:48:40[INFO ] repler_test    :375 get_expected_FSM          -> Next FSM state: EXPECT_ARCHIVE
+06:48:40[INFO ] repler_test    :377 get_expected_FSM          -> --------------FSM state: EXPECT_ARCHIVE
+06:48:40[INFO ] repler_test    :398 get_expected_FSM          -> Next FSM state: END
+06:48:40[INFO ] repler_test    :422 get_expected_FSM          -> --------------FSM state: END
+06:48:40[INFO ] repler_test    :263 main_loop                 -> Expected results:{'in_sourse': {'C:\\Users\\Alex\\source\\repos\\report-handler\\tests\\RandomTest\\SelfTest': ['file.log', 'file.txt', 'file.yyy'], 'C:\\Users\\Alex\\source\\repos\\report-handler\\tests\\RandomTest\\SelfTest2': ['file.log', 'file.txt', 'file.yyy', 'file.zzz']}, 'in_archive': {'C:\\Users\\Alex\\source\\repos\\report-handler\\tests\\RandomTest\\SelfTest\\Archive': [], 'C:\\Users\\Alex\\source\\repos\\report-handler\\tests\\RandomTest\\SelfTest2\\Archive': ['file.txt', 'file.log', 'file.yyy', 'file.zzz']}}
+06:48:40[INFO ] repler         :23  info                      -> Archivation...
+06:48:40[INFO ] repler         :23  info                      -> Created zip file: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest\Archive\archive_1688312920.3329735.zip
+06:48:40[INFO ] repler         :23  info                      -> Created archive name archive_1688312920.3329735.zip
+06:48:40[INFO ] repler         :23  info                      -> Created zip file: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2\Archive\archive_1688312920.3349276.zip
+06:48:40[INFO ] repler         :23  info                      -> Created archive name archive_1688312920.3349276.zip
+06:48:40[INFO ] repler_test    :306 verify_expected           -> Verifying results...
+06:48:40[INFO ] repler_test    :325 verify_expected           -> ==========PASS==========
+06:48:40[INFO ] repler_test    :261 main_loop                 -> Current action:clean
+06:48:40[INFO ] repler_test    :357 get_expected_FSM          -> Starting expect results FSM
+06:48:40[INFO ] repler_test    :359 get_expected_FSM          -> --------------FSM state: INIT
+06:48:40[INFO ] repler_test    :364 get_expected_FSM          -> Next FSM state: DEFINE_ACTION
+06:48:40[INFO ] repler_test    :366 get_expected_FSM          -> --------------FSM state: DEFINE_ACTION
+06:48:40[INFO ] repler_test    :375 get_expected_FSM          -> Next FSM state: EXPECT_CLEAN_AFTER_ARCHIVE
+06:48:40[INFO ] repler_test    :415 get_expected_FSM          -> --------------FSM state: EXPECT_CLEAN_AFTER_ARCHIVE
+06:48:40[INFO ] repler_test    :345 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1\file.log is 0 hours.
+06:48:40[INFO ] repler_test    :345 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1\file.log is 0 hours.
+06:48:40[INFO ] repler_test    :339 _is_old                   -> The candidat for delition: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1\file.log is too yong.
+06:48:40[INFO ] repler_test    :345 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1\file.txt is 0 hours.
+06:48:40[INFO ] repler_test    :345 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1\file.txt is 0 hours.
+06:48:40[INFO ] repler_test    :339 _is_old                   -> The candidat for delition: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1\file.txt is too yong.
+06:48:40[INFO ] repler_test    :420 get_expected_FSM          -> Next FSM state: END
+06:48:40[INFO ] repler_test    :422 get_expected_FSM          -> --------------FSM state: END
+06:48:40[INFO ] repler_test    :263 main_loop                 -> Expected results:{'in_sourse': {'C:\\Users\\Alex\\source\\repos\\report-handler\\tests\\RandomTest\\SelfTest1': ['file.log', 'file.txt']}, 'in_archive': {}}
+06:48:40[INFO ] repler         :23  info                      -> Cleaning files...
+06:48:40[INFO ] repler         :23  info                      -> Deletting extentions: ['log', 'txt', 'zzz', 'yyy']
+06:48:40[INFO ] repler_test    :306 verify_expected           -> Verifying results...
+06:48:40[INFO ] repler_test    :325 verify_expected           -> ==========PASS==========
+06:48:40[INFO ] repler_test    :250 main_loop                 -> 
+
+Start loop #10428
+06:48:40[INFO ] repler_test    :252 main_loop                 -> Order: ['cleaner', 'archivator', 'cleaner', 'cleaner']
+06:48:40[INFO ] repler_test    :254 main_loop                 -> Actions: ('clean',)
+06:48:40[INFO ] repler_test    :445 apply_policy              -> Applying policys on folders.
+06:48:40[INFO ] repler         :23  info                      -> Aplying cleaner on C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest
+06:48:40[INFO ] repler         :23  info                      -> 	age_before_del_hour: 0
+06:48:40[INFO ] repler         :23  info                      -> 	Extention to delete: ['log', 'zzz', 'yyy']
+06:48:40[INFO ] repler_test    :467 apply_policy              -> Aplying archivator on C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2
+06:48:40[INFO ] repler_test    :468 apply_policy              -> 	Create archive in C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2\Archive
+06:48:40[INFO ] repler_test    :469 apply_policy              -> 	Archive prefix: archive
+06:48:40[INFO ] repler_test    :470 apply_policy              -> 	Extentions to archive: ['log', 'yyy']
+06:48:40[INFO ] repler_test    :471 apply_policy              -> 	Delete archived files after succefull archivation:                    True
+06:48:40[INFO ] repler         :23  info                      -> The cleaner with path C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest allready exist.
+06:48:40[INFO ] repler         :23  info                      -> 	Updating ext_to_del = ['yyy', 'log', 'zzz'].
+06:48:40[INFO ] repler         :23  info                      -> The cleaner with path C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest allready exist.
+06:48:40[INFO ] repler         :23  info                      -> 	Updating ext_to_del = ['txt', 'log', 'yyy', 'zzz'].
+06:48:40[INFO ] repler         :23  info                      -> ============================================
+06:48:40[INFO ] repler         :23  info                      -> Archivator #1
+06:48:40[INFO ] repler         :23  info                      -> 	Sourse path: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2
+06:48:40[INFO ] repler         :23  info                      -> 	Archive path: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2\Archive
+06:48:40[INFO ] repler         :23  info                      -> 	Archive prefix: archive
+06:48:40[INFO ] repler         :23  info                      -> 	ext_to_arch: ['log', 'yyy']
+06:48:40[INFO ] repler         :23  info                      -> ============================================
+06:48:40[INFO ] repler         :23  info                      -> Cleaner #1
+06:48:40[INFO ] repler         :23  info                      -> 	Path: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest
+06:48:40[INFO ] repler         :23  info                      -> 	age_before_del_hour: 0
+06:48:40[INFO ] repler         :23  info                      -> 	ext_to_del: ['txt', 'log', 'yyy', 'zzz']
+06:48:40[INFO ] repler_test    :283 rand_pre_test             -> Running pretest settings.
+06:48:40[INFO ] repler_test    :302 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2: ['file.log', 'file.txt', 'file.yyy']
+06:48:40[INFO ] repler_test    :302 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest: ['file.txt', 'file.yyy', 'file.zzz']
+06:48:40[INFO ] repler_test    :261 main_loop                 -> Current action:clean
+06:48:40[INFO ] repler_test    :357 get_expected_FSM          -> Starting expect results FSM
+06:48:40[INFO ] repler_test    :359 get_expected_FSM          -> --------------FSM state: INIT
+06:48:40[INFO ] repler_test    :364 get_expected_FSM          -> Next FSM state: DEFINE_ACTION
+06:48:40[INFO ] repler_test    :366 get_expected_FSM          -> --------------FSM state: DEFINE_ACTION
+06:48:40[INFO ] repler_test    :375 get_expected_FSM          -> Next FSM state: EXPECT_CLEAN
+06:48:40[INFO ] repler_test    :400 get_expected_FSM          -> --------------FSM state: EXPECT_CLEAN
+06:48:40[INFO ] repler_test    :345 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest\file.txt is 0 hours.
+06:48:40[INFO ] repler_test    :345 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest\file.txt is 0 hours.
+06:48:40[INFO ] repler_test    :337 _is_old                   -> The candidat for delition: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest\file.txt, age: 0
+06:48:40[INFO ] repler_test    :345 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest\file.yyy is 0 hours.
+06:48:40[INFO ] repler_test    :345 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest\file.yyy is 0 hours.
+06:48:40[INFO ] repler_test    :337 _is_old                   -> The candidat for delition: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest\file.yyy, age: 0
+06:48:40[INFO ] repler_test    :345 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest\file.zzz is 0 hours.
+06:48:40[INFO ] repler_test    :345 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest\file.zzz is 0 hours.
+06:48:40[INFO ] repler_test    :337 _is_old                   -> The candidat for delition: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest\file.zzz, age: 0
+06:48:40[INFO ] repler_test    :413 get_expected_FSM          -> Next FSM state: END
+06:48:40[INFO ] repler_test    :422 get_expected_FSM          -> --------------FSM state: END
+06:48:40[INFO ] repler_test    :263 main_loop                 -> Expected results:{'in_sourse': {'C:\\Users\\Alex\\source\\repos\\report-handler\\tests\\RandomTest\\SelfTest': []}, 'in_archive': {}}
+06:48:40[INFO ] repler         :23  info                      -> Cleaning files...
+06:48:40[INFO ] repler         :23  info                      -> Deletting extentions: ['txt', 'log', 'yyy', 'zzz']
+06:48:40[INFO ] repler         :23  info                      -> Deletting C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest\file.txt...
+06:48:40[INFO ] repler         :23  info                      -> Deletting C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest\file.yyy...
+06:48:40[INFO ] repler         :23  info                      -> Deletting C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest\file.zzz...
+06:48:40[INFO ] repler_test    :306 verify_expected           -> Verifying results...
+06:48:40[INFO ] repler_test    :325 verify_expected           -> ==========PASS==========
+06:48:40[INFO ] repler_test    :250 main_loop                 -> 
+
+Start loop #10429
+06:48:40[INFO ] repler_test    :252 main_loop                 -> Order: ['archivator', 'cleaner', 'archivator', 'cleaner']
+06:48:40[INFO ] repler_test    :254 main_loop                 -> Actions: ('archive', 'clean')
+06:48:40[INFO ] repler_test    :445 apply_policy              -> Applying policys on folders.
+06:48:40[INFO ] repler_test    :467 apply_policy              -> Aplying archivator on C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1
+06:48:40[INFO ] repler_test    :468 apply_policy              -> 	Create archive in C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1\Archive
+06:48:40[INFO ] repler_test    :469 apply_policy              -> 	Archive prefix: archive
+06:48:40[INFO ] repler_test    :470 apply_policy              -> 	Extentions to archive: ['yyy', 'zzz']
+06:48:40[INFO ] repler_test    :471 apply_policy              -> 	Delete archived files after succefull archivation:                    True
+06:48:40[INFO ] repler         :23  info                      -> Aplying cleaner on C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1
+06:48:40[INFO ] repler         :23  info                      -> 	age_before_del_hour: 0
+06:48:40[INFO ] repler         :23  info                      -> 	Extention to delete: ['txt', 'log', 'yyy', 'zzz']
+06:48:40[INFO ] repler_test    :467 apply_policy              -> Aplying archivator on C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2
+06:48:40[INFO ] repler_test    :468 apply_policy              -> 	Create archive in C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2\Archive
+06:48:40[INFO ] repler_test    :469 apply_policy              -> 	Archive prefix: archive
+06:48:40[INFO ] repler_test    :470 apply_policy              -> 	Extentions to archive: ['log', 'zzz']
+06:48:40[INFO ] repler_test    :471 apply_policy              -> 	Delete archived files after succefull archivation:                    False
+06:48:40[INFO ] repler         :23  info                      -> Aplying cleaner on C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest
+06:48:40[INFO ] repler         :23  info                      -> 	age_before_del_hour: 0
+06:48:40[INFO ] repler         :23  info                      -> 	Extention to delete: ['txt', 'log']
+06:48:40[INFO ] repler         :23  info                      -> ============================================
+06:48:40[INFO ] repler         :23  info                      -> Archivator #1
+06:48:40[INFO ] repler         :23  info                      -> 	Sourse path: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1
+06:48:40[INFO ] repler         :23  info                      -> 	Archive path: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1\Archive
+06:48:40[INFO ] repler         :23  info                      -> 	Archive prefix: archive
+06:48:40[INFO ] repler         :23  info                      -> 	ext_to_arch: ['yyy', 'zzz']
+06:48:40[INFO ] repler         :23  info                      -> ============================================
+06:48:40[INFO ] repler         :23  info                      -> Archivator #2
+06:48:40[INFO ] repler         :23  info                      -> 	Sourse path: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2
+06:48:40[INFO ] repler         :23  info                      -> 	Archive path: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2\Archive
+06:48:40[INFO ] repler         :23  info                      -> 	Archive prefix: archive
+06:48:40[INFO ] repler         :23  info                      -> 	ext_to_arch: ['log', 'zzz']
+06:48:40[INFO ] repler         :23  info                      -> ============================================
+06:48:40[INFO ] repler         :23  info                      -> Cleaner #1
+06:48:40[INFO ] repler         :23  info                      -> 	Path: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1
+06:48:40[INFO ] repler         :23  info                      -> 	age_before_del_hour: 0
+06:48:40[INFO ] repler         :23  info                      -> 	ext_to_del: ['txt', 'log', 'yyy', 'zzz']
+06:48:40[INFO ] repler         :23  info                      -> ============================================
+06:48:40[INFO ] repler         :23  info                      -> Cleaner #2
+06:48:40[INFO ] repler         :23  info                      -> 	Path: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest
+06:48:40[INFO ] repler         :23  info                      -> 	age_before_del_hour: 0
+06:48:40[INFO ] repler         :23  info                      -> 	ext_to_del: ['txt', 'log']
+06:48:40[INFO ] repler_test    :283 rand_pre_test             -> Running pretest settings.
+06:48:40[INFO ] repler_test    :302 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1: ['file.log', 'file.txt', 'file.yyy']
+06:48:40[INFO ] repler_test    :302 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2: ['file.log', 'file.txt', 'file.yyy', 'file.zzz']
+06:48:40[INFO ] repler_test    :302 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1: ['file.log', 'file.txt', 'file.yyy', 'file.zzz']
+06:48:40[INFO ] repler_test    :302 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest: ['file.log', 'file.txt', 'file.zzz']
+06:48:40[INFO ] repler_test    :261 main_loop                 -> Current action:archive
+06:48:40[INFO ] repler_test    :357 get_expected_FSM          -> Starting expect results FSM
+06:48:40[INFO ] repler_test    :359 get_expected_FSM          -> --------------FSM state: INIT
+06:48:40[INFO ] repler_test    :364 get_expected_FSM          -> Next FSM state: DEFINE_ACTION
+06:48:40[INFO ] repler_test    :366 get_expected_FSM          -> --------------FSM state: DEFINE_ACTION
+06:48:40[INFO ] repler_test    :375 get_expected_FSM          -> Next FSM state: EXPECT_ARCHIVE
+06:48:40[INFO ] repler_test    :377 get_expected_FSM          -> --------------FSM state: EXPECT_ARCHIVE
+06:48:40[INFO ] repler_test    :398 get_expected_FSM          -> Next FSM state: END
+06:48:40[INFO ] repler_test    :422 get_expected_FSM          -> --------------FSM state: END
+06:48:40[INFO ] repler_test    :263 main_loop                 -> Expected results:{'in_sourse': {'C:\\Users\\Alex\\source\\repos\\report-handler\\tests\\RandomTest\\SelfTest1': ['file.log', 'file.txt'], 'C:\\Users\\Alex\\source\\repos\\report-handler\\tests\\RandomTest\\SelfTest2': ['file.log', 'file.txt', 'file.yyy', 'file.zzz']}, 'in_archive': {'C:\\Users\\Alex\\source\\repos\\report-handler\\tests\\RandomTest\\SelfTest1\\Archive': ['file.yyy', 'file.zzz'], 'C:\\Users\\Alex\\source\\repos\\report-handler\\tests\\RandomTest\\SelfTest2\\Archive': ['file.log', 'file.zzz']}}
+06:48:40[INFO ] repler         :23  info                      -> Archivation...
+06:48:40[INFO ] repler         :23  info                      -> Created zip file: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1\Archive\archive_1688312920.4463465.zip
+06:48:40[INFO ] repler         :23  info                      -> Created archive name archive_1688312920.4463465.zip
+06:48:40[INFO ] repler         :23  info                      -> Created zip file: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2\Archive\archive_1688312920.4489586.zip
+06:48:40[INFO ] repler         :23  info                      -> Created archive name archive_1688312920.4489586.zip
+06:48:40[INFO ] repler_test    :306 verify_expected           -> Verifying results...
+06:48:40[INFO ] repler_test    :325 verify_expected           -> ==========PASS==========
+06:48:40[INFO ] repler_test    :261 main_loop                 -> Current action:clean
+06:48:40[INFO ] repler_test    :357 get_expected_FSM          -> Starting expect results FSM
+06:48:40[INFO ] repler_test    :359 get_expected_FSM          -> --------------FSM state: INIT
+06:48:40[INFO ] repler_test    :364 get_expected_FSM          -> Next FSM state: DEFINE_ACTION
+06:48:40[INFO ] repler_test    :366 get_expected_FSM          -> --------------FSM state: DEFINE_ACTION
+06:48:40[INFO ] repler_test    :375 get_expected_FSM          -> Next FSM state: EXPECT_CLEAN_AFTER_ARCHIVE
+06:48:40[INFO ] repler_test    :415 get_expected_FSM          -> --------------FSM state: EXPECT_CLEAN_AFTER_ARCHIVE
+06:48:40[INFO ] repler_test    :345 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1\file.txt is 0 hours.
+06:48:40[INFO ] repler_test    :345 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1\file.txt is 0 hours.
+06:48:40[INFO ] repler_test    :337 _is_old                   -> The candidat for delition: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1\file.txt, age: 0
+06:48:40[INFO ] repler_test    :345 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1\file.log is 0 hours.
+06:48:40[INFO ] repler_test    :345 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1\file.log is 0 hours.
+06:48:40[INFO ] repler_test    :337 _is_old                   -> The candidat for delition: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1\file.log, age: 0
+06:48:40[INFO ] repler_test    :345 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest\file.txt is 0 hours.
+06:48:40[INFO ] repler_test    :345 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest\file.txt is 0 hours.
+06:48:40[INFO ] repler_test    :337 _is_old                   -> The candidat for delition: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest\file.txt, age: 0
+06:48:40[INFO ] repler_test    :345 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest\file.log is 0 hours.
+06:48:40[INFO ] repler_test    :345 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest\file.log is 0 hours.
+06:48:40[INFO ] repler_test    :337 _is_old                   -> The candidat for delition: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest\file.log, age: 0
+06:48:40[INFO ] repler_test    :420 get_expected_FSM          -> Next FSM state: END
+06:48:40[INFO ] repler_test    :422 get_expected_FSM          -> --------------FSM state: END
+06:48:40[INFO ] repler_test    :263 main_loop                 -> Expected results:{'in_sourse': {'C:\\Users\\Alex\\source\\repos\\report-handler\\tests\\RandomTest\\SelfTest1': [], 'C:\\Users\\Alex\\source\\repos\\report-handler\\tests\\RandomTest\\SelfTest': ['file.zzz']}, 'in_archive': {}}
+06:48:40[INFO ] repler         :23  info                      -> Cleaning files...
+06:48:40[INFO ] repler         :23  info                      -> Same path of archivator and cleaner: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1
+06:48:40[INFO ] repler         :23  info                      -> Resetting flag 'archivator_finished' = False
+06:48:40[INFO ] repler         :23  info                      -> Deletting extentions: ['txt', 'log', 'yyy', 'zzz']
+06:48:40[INFO ] repler         :23  info                      -> Deletting C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1\file.log...
+06:48:40[INFO ] repler         :23  info                      -> Deletting C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1\file.txt...
+06:48:40[INFO ] repler         :23  info                      -> Deletting extentions: ['txt', 'log']
+06:48:40[INFO ] repler         :23  info                      -> Deletting C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest\file.log...
+06:48:40[INFO ] repler         :23  info                      -> Deletting C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest\file.txt...
+06:48:40[INFO ] repler_test    :306 verify_expected           -> Verifying results...
+06:48:40[INFO ] repler_test    :325 verify_expected           -> ==========PASS==========
+06:48:40[INFO ] repler_test    :250 main_loop                 -> 
+
+Start loop #10430
+06:48:40[INFO ] repler_test    :252 main_loop                 -> Order: ['archivator', 'cleaner', 'cleaner']
+06:48:40[INFO ] repler_test    :254 main_loop                 -> Actions: ('clean',)
+06:48:40[INFO ] repler_test    :445 apply_policy              -> Applying policys on folders.
+06:48:40[INFO ] repler_test    :467 apply_policy              -> Aplying archivator on C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest
+06:48:40[INFO ] repler_test    :468 apply_policy              -> 	Create archive in C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest\Archive
+06:48:40[INFO ] repler_test    :469 apply_policy              -> 	Archive prefix: archive
+06:48:40[INFO ] repler_test    :470 apply_policy              -> 	Extentions to archive: ['log', 'yyy', 'txt', 'zzz']
+06:48:40[INFO ] repler_test    :471 apply_policy              -> 	Delete archived files after succefull archivation:                    False
+06:48:40[INFO ] repler         :23  info                      -> Aplying cleaner on C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2
+06:48:40[INFO ] repler         :23  info                      -> 	age_before_del_hour: 0
+06:48:40[INFO ] repler         :23  info                      -> 	Extention to delete: ['log', 'zzz', 'txt']
+06:48:40[INFO ] repler         :23  info                      -> The cleaner with path C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2 allready exist.
+06:48:40[INFO ] repler         :23  info                      -> 	Updating ext_to_del = ['log', 'txt', 'yyy', 'zzz'].
+06:48:40[INFO ] repler         :23  info                      -> ============================================
+06:48:40[INFO ] repler         :23  info                      -> Archivator #1
+06:48:40[INFO ] repler         :23  info                      -> 	Sourse path: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest
+06:48:40[INFO ] repler         :23  info                      -> 	Archive path: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest\Archive
+06:48:40[INFO ] repler         :23  info                      -> 	Archive prefix: archive
+06:48:40[INFO ] repler         :23  info                      -> 	ext_to_arch: ['log', 'yyy', 'txt', 'zzz']
+06:48:40[INFO ] repler         :23  info                      -> ============================================
+06:48:40[INFO ] repler         :23  info                      -> Cleaner #1
+06:48:40[INFO ] repler         :23  info                      -> 	Path: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2
+06:48:40[INFO ] repler         :23  info                      -> 	age_before_del_hour: 0
+06:48:40[INFO ] repler         :23  info                      -> 	ext_to_del: ['log', 'txt', 'yyy', 'zzz']
+06:48:40[INFO ] repler_test    :283 rand_pre_test             -> Running pretest settings.
+06:48:40[INFO ] repler_test    :302 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest: ['file.txt', 'file.yyy', 'file.zzz']
+06:48:40[INFO ] repler_test    :302 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2: ['file.zzz']
+06:48:40[INFO ] repler_test    :261 main_loop                 -> Current action:clean
+06:48:40[INFO ] repler_test    :357 get_expected_FSM          -> Starting expect results FSM
+06:48:40[INFO ] repler_test    :359 get_expected_FSM          -> --------------FSM state: INIT
+06:48:40[INFO ] repler_test    :364 get_expected_FSM          -> Next FSM state: DEFINE_ACTION
+06:48:40[INFO ] repler_test    :366 get_expected_FSM          -> --------------FSM state: DEFINE_ACTION
+06:48:40[INFO ] repler_test    :375 get_expected_FSM          -> Next FSM state: EXPECT_CLEAN
+06:48:40[INFO ] repler_test    :400 get_expected_FSM          -> --------------FSM state: EXPECT_CLEAN
+06:48:40[INFO ] repler_test    :345 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2\file.zzz is 0 hours.
+06:48:40[INFO ] repler_test    :345 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2\file.zzz is 0 hours.
+06:48:40[INFO ] repler_test    :337 _is_old                   -> The candidat for delition: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2\file.zzz, age: 0
+06:48:40[INFO ] repler_test    :413 get_expected_FSM          -> Next FSM state: END
+06:48:40[INFO ] repler_test    :422 get_expected_FSM          -> --------------FSM state: END
+06:48:40[INFO ] repler_test    :263 main_loop                 -> Expected results:{'in_sourse': {'C:\\Users\\Alex\\source\\repos\\report-handler\\tests\\RandomTest\\SelfTest2': []}, 'in_archive': {}}
+06:48:40[INFO ] repler         :23  info                      -> Cleaning files...
+06:48:40[INFO ] repler         :23  info                      -> Deletting extentions: ['log', 'txt', 'yyy', 'zzz']
+06:48:40[INFO ] repler         :23  info                      -> Deletting C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2\file.zzz...
+06:48:40[INFO ] repler_test    :306 verify_expected           -> Verifying results...
+06:48:40[INFO ] repler_test    :325 verify_expected           -> ==========PASS==========
+06:48:40[INFO ] repler_test    :250 main_loop                 -> 
+
+Start loop #10431
+06:48:40[INFO ] repler_test    :252 main_loop                 -> Order: ['cleaner']
+06:48:40[INFO ] repler_test    :254 main_loop                 -> Actions: ('clean',)
+06:48:40[INFO ] repler_test    :445 apply_policy              -> Applying policys on folders.
+06:48:40[INFO ] repler         :23  info                      -> Aplying cleaner on C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2
+06:48:40[INFO ] repler         :23  info                      -> 	age_before_del_hour: 1
+06:48:40[INFO ] repler         :23  info                      -> 	Extention to delete: ['log', 'txt', 'yyy', 'zzz']
+06:48:40[INFO ] repler         :23  info                      -> ============================================
+06:48:40[INFO ] repler         :23  info                      -> Cleaner #1
+06:48:40[INFO ] repler         :23  info                      -> 	Path: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2
+06:48:40[INFO ] repler         :23  info                      -> 	age_before_del_hour: 1
+06:48:40[INFO ] repler         :23  info                      -> 	ext_to_del: ['log', 'txt', 'yyy', 'zzz']
+06:48:40[INFO ] repler_test    :283 rand_pre_test             -> Running pretest settings.
+06:48:40[INFO ] repler_test    :302 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2: ['file.zzz']
+06:48:40[INFO ] repler_test    :261 main_loop                 -> Current action:clean
+06:48:40[INFO ] repler_test    :357 get_expected_FSM          -> Starting expect results FSM
+06:48:40[INFO ] repler_test    :359 get_expected_FSM          -> --------------FSM state: INIT
+06:48:40[INFO ] repler_test    :364 get_expected_FSM          -> Next FSM state: DEFINE_ACTION
+06:48:40[INFO ] repler_test    :366 get_expected_FSM          -> --------------FSM state: DEFINE_ACTION
+06:48:40[INFO ] repler_test    :375 get_expected_FSM          -> Next FSM state: EXPECT_CLEAN
+06:48:40[INFO ] repler_test    :400 get_expected_FSM          -> --------------FSM state: EXPECT_CLEAN
+06:48:40[INFO ] repler_test    :345 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2\file.zzz is 0 hours.
+06:48:40[INFO ] repler_test    :345 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2\file.zzz is 0 hours.
+06:48:40[INFO ] repler_test    :339 _is_old                   -> The candidat for delition: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2\file.zzz is too yong.
+06:48:40[INFO ] repler_test    :413 get_expected_FSM          -> Next FSM state: END
+06:48:40[INFO ] repler_test    :422 get_expected_FSM          -> --------------FSM state: END
+06:48:40[INFO ] repler_test    :263 main_loop                 -> Expected results:{'in_sourse': {'C:\\Users\\Alex\\source\\repos\\report-handler\\tests\\RandomTest\\SelfTest2': ['file.zzz']}, 'in_archive': {}}
+06:48:40[INFO ] repler         :23  info                      -> Cleaning files...
+06:48:40[INFO ] repler         :23  info                      -> Deletting extentions: ['log', 'txt', 'yyy', 'zzz']
+06:48:40[INFO ] repler_test    :306 verify_expected           -> Verifying results...
+06:48:40[INFO ] repler_test    :325 verify_expected           -> ==========PASS==========
+06:48:40[INFO ] repler_test    :250 main_loop                 -> 
+
+Start loop #10432
+06:48:40[INFO ] repler_test    :252 main_loop                 -> Order: ['archivator']
+06:48:40[INFO ] repler_test    :254 main_loop                 -> Actions: ('clean',)
+06:48:40[INFO ] repler_test    :445 apply_policy              -> Applying policys on folders.
+06:48:40[INFO ] repler_test    :467 apply_policy              -> Aplying archivator on C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2
+06:48:40[INFO ] repler_test    :468 apply_policy              -> 	Create archive in C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2\Archive
+06:48:40[INFO ] repler_test    :469 apply_policy              -> 	Archive prefix: archive
+06:48:40[INFO ] repler_test    :470 apply_policy              -> 	Extentions to archive: ['log', 'yyy', 'txt']
+06:48:40[INFO ] repler_test    :471 apply_policy              -> 	Delete archived files after succefull archivation:                    True
+06:48:40[INFO ] repler         :23  info                      -> ============================================
+06:48:40[INFO ] repler         :23  info                      -> Archivator #1
+06:48:40[INFO ] repler         :23  info                      -> 	Sourse path: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2
+06:48:40[INFO ] repler         :23  info                      -> 	Archive path: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2\Archive
+06:48:40[INFO ] repler         :23  info                      -> 	Archive prefix: archive
+06:48:40[INFO ] repler         :23  info                      -> 	ext_to_arch: ['log', 'yyy', 'txt']
+06:48:40[INFO ] repler_test    :283 rand_pre_test             -> Running pretest settings.
+06:48:40[INFO ] repler_test    :302 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2: ['file.txt', 'file.yyy', 'file.zzz']
+06:48:40[INFO ] repler_test    :261 main_loop                 -> Current action:clean
+06:48:40[INFO ] repler_test    :357 get_expected_FSM          -> Starting expect results FSM
+06:48:40[INFO ] repler_test    :359 get_expected_FSM          -> --------------FSM state: INIT
+06:48:40[INFO ] repler_test    :364 get_expected_FSM          -> Next FSM state: DEFINE_ACTION
+06:48:40[INFO ] repler_test    :366 get_expected_FSM          -> --------------FSM state: DEFINE_ACTION
+06:48:40[INFO ] repler_test    :375 get_expected_FSM          -> Next FSM state: EXPECT_CLEAN
+06:48:40[INFO ] repler_test    :400 get_expected_FSM          -> --------------FSM state: EXPECT_CLEAN
+06:48:40[INFO ] repler_test    :413 get_expected_FSM          -> Next FSM state: END
+06:48:40[INFO ] repler_test    :422 get_expected_FSM          -> --------------FSM state: END
+06:48:40[INFO ] repler_test    :263 main_loop                 -> Expected results:{'in_sourse': {}, 'in_archive': {}}
+06:48:40[INFO ] repler         :23  info                      -> Cleaning files...
+06:48:40[INFO ] repler_test    :306 verify_expected           -> Verifying results...
+06:48:40[INFO ] repler_test    :325 verify_expected           -> ==========PASS==========
+06:48:40[INFO ] repler_test    :250 main_loop                 -> 
+
+Start loop #10433
+06:48:40[INFO ] repler_test    :252 main_loop                 -> Order: ['cleaner', 'archivator', 'archivator', 'cleaner']
+06:48:40[INFO ] repler_test    :254 main_loop                 -> Actions: ('archive',)
+06:48:40[INFO ] repler_test    :445 apply_policy              -> Applying policys on folders.
+06:48:40[INFO ] repler         :23  info                      -> Aplying cleaner on C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1
+06:48:40[INFO ] repler         :23  info                      -> 	age_before_del_hour: 0
+06:48:40[INFO ] repler         :23  info                      -> 	Extention to delete: ['yyy']
+06:48:40[INFO ] repler_test    :467 apply_policy              -> Aplying archivator on C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2
+06:48:40[INFO ] repler_test    :468 apply_policy              -> 	Create archive in C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2\Archive
+06:48:40[INFO ] repler_test    :469 apply_policy              -> 	Archive prefix: archive
+06:48:40[INFO ] repler_test    :470 apply_policy              -> 	Extentions to archive: ['zzz', 'yyy', 'txt', 'log']
+06:48:40[INFO ] repler_test    :471 apply_policy              -> 	Delete archived files after succefull archivation:                    True
+06:48:40[INFO ] repler_test    :467 apply_policy              -> Aplying archivator on C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest
+06:48:40[INFO ] repler_test    :468 apply_policy              -> 	Create archive in C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest\Archive
+06:48:40[INFO ] repler_test    :469 apply_policy              -> 	Archive prefix: archive
+06:48:40[INFO ] repler_test    :470 apply_policy              -> 	Extentions to archive: ['log', 'txt', 'yyy', 'zzz']
+06:48:40[INFO ] repler_test    :471 apply_policy              -> 	Delete archived files after succefull archivation:                    False
+06:48:40[INFO ] repler         :23  info                      -> Aplying cleaner on C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2
+06:48:40[INFO ] repler         :23  info                      -> 	age_before_del_hour: 1
+06:48:40[INFO ] repler         :23  info                      -> 	Extention to delete: ['log', 'yyy', 'txt']
+06:48:40[INFO ] repler         :23  info                      -> ============================================
+06:48:40[INFO ] repler         :23  info                      -> Archivator #1
+06:48:40[INFO ] repler         :23  info                      -> 	Sourse path: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2
+06:48:40[INFO ] repler         :23  info                      -> 	Archive path: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2\Archive
+06:48:40[INFO ] repler         :23  info                      -> 	Archive prefix: archive
+06:48:40[INFO ] repler         :23  info                      -> 	ext_to_arch: ['zzz', 'yyy', 'txt', 'log']
+06:48:40[INFO ] repler         :23  info                      -> ============================================
+06:48:40[INFO ] repler         :23  info                      -> Archivator #2
+06:48:40[INFO ] repler         :23  info                      -> 	Sourse path: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest
+06:48:40[INFO ] repler         :23  info                      -> 	Archive path: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest\Archive
+06:48:40[INFO ] repler         :23  info                      -> 	Archive prefix: archive
+06:48:40[INFO ] repler         :23  info                      -> 	ext_to_arch: ['log', 'txt', 'yyy', 'zzz']
+06:48:40[INFO ] repler         :23  info                      -> ============================================
+06:48:40[INFO ] repler         :23  info                      -> Cleaner #1
+06:48:40[INFO ] repler         :23  info                      -> 	Path: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1
+06:48:40[INFO ] repler         :23  info                      -> 	age_before_del_hour: 0
+06:48:40[INFO ] repler         :23  info                      -> 	ext_to_del: ['yyy']
+06:48:40[INFO ] repler         :23  info                      -> ============================================
+06:48:40[INFO ] repler         :23  info                      -> Cleaner #2
+06:48:40[INFO ] repler         :23  info                      -> 	Path: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2
+06:48:40[INFO ] repler         :23  info                      -> 	age_before_del_hour: 1
+06:48:40[INFO ] repler         :23  info                      -> 	ext_to_del: ['log', 'yyy', 'txt']
+06:48:40[INFO ] repler_test    :283 rand_pre_test             -> Running pretest settings.
+06:48:40[INFO ] repler_test    :302 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2: ['file.log']
+06:48:40[INFO ] repler_test    :302 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest: ['file.txt', 'file.yyy', 'file.zzz']
+06:48:40[INFO ] repler_test    :302 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest1: ['file.log', 'file.txt', 'file.yyy', 'file.zzz']
+06:48:40[INFO ] repler_test    :302 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2: ['file.log', 'file.txt', 'file.zzz']
+06:48:40[INFO ] repler_test    :261 main_loop                 -> Current action:archive
+06:48:40[INFO ] repler_test    :357 get_expected_FSM          -> Starting expect results FSM
+06:48:40[INFO ] repler_test    :359 get_expected_FSM          -> --------------FSM state: INIT
+06:48:40[INFO ] repler_test    :364 get_expected_FSM          -> Next FSM state: DEFINE_ACTION
+06:48:40[INFO ] repler_test    :366 get_expected_FSM          -> --------------FSM state: DEFINE_ACTION
+06:48:40[INFO ] repler_test    :375 get_expected_FSM          -> Next FSM state: EXPECT_ARCHIVE
+06:48:40[INFO ] repler_test    :377 get_expected_FSM          -> --------------FSM state: EXPECT_ARCHIVE
+06:48:40[INFO ] repler_test    :398 get_expected_FSM          -> Next FSM state: END
+06:48:40[INFO ] repler_test    :422 get_expected_FSM          -> --------------FSM state: END
+06:48:40[INFO ] repler_test    :263 main_loop                 -> Expected results:{'in_sourse': {'C:\\Users\\Alex\\source\\repos\\report-handler\\tests\\RandomTest\\SelfTest2': [], 'C:\\Users\\Alex\\source\\repos\\report-handler\\tests\\RandomTest\\SelfTest': ['file.txt', 'file.yyy', 'file.zzz']}, 'in_archive': {'C:\\Users\\Alex\\source\\repos\\report-handler\\tests\\RandomTest\\SelfTest2\\Archive': ['file.zzz', 'file.txt', 'file.log'], 'C:\\Users\\Alex\\source\\repos\\report-handler\\tests\\RandomTest\\SelfTest\\Archive': ['file.txt', 'file.yyy', 'file.zzz']}}
+06:48:40[INFO ] repler         :23  info                      -> Archivation...
+06:48:40[INFO ] repler         :23  info                      -> Created zip file: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2\Archive\archive_1688312920.6566982.zip
+06:48:40[INFO ] repler         :23  info                      -> Created archive name archive_1688312920.6566982.zip
+06:48:40[INFO ] repler         :23  info                      -> Created zip file: C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest\Archive\archive_1688312920.6616995.zip
+06:48:40[INFO ] repler         :23  info                      -> Created archive name archive_1688312920.6616995.zip
+06:48:40[INFO ] repler_test    :306 verify_expected           -> Verifying results...
+06:48:40[INFO ] repler_test    :325 verify_expected           -> ==========PASS==========
+06:48:40[INFO ] repler_test    :250 main_loop                 -> 
+
+Start loop #10434
+06:48:40[INFO ] repler_test    :252 main_loop                 -> Order: ['archivator', 'archivator', 'cleaner', 'archivator', 'archivator']
+06:48:40[INFO ] repler_test    :254 main_loop                 -> Actions: ('clean', 'archive')
+06:48:40[INFO ] repler_test    :445 apply_policy              -> Applying policys on folders.
+06:48:40[INFO ] repler_test    :467 apply_policy              -> Aplying archivator on C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2
+06:48:40[INFO ] repler_test    :468 apply_policy              -> 	Create archive in C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest2\Archive
+06:48:40[INFO ] repler_test    :469 apply_policy              -> 	Archive prefix: archive
+06:48:40[INFO ] repler_test    :470 apply_policy              -> 	Extentions to archive: ['txt', 'log']
+06:48:40[INFO ] repler_test    :471 apply_policy              -> 	Delete archived files after succefull archivation:                    True
+06:48:40[INFO ] repler_test    :467 apply_policy              -> Aplying archivator on C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest
+06:48:40[INFO ] repler_test    :468 apply_policy              -> 	Create archive in C:\Users\Alex\source\repos\report-handler\tests\RandomTest\SelfTest\Archive
