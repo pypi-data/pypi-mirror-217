@@ -1,0 +1,10 @@
+backup_juggler/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+backup_juggler/files_manager.py,sha256=m6nAfFctBflNQQe-bg-91mgkRHQTHz7WFNphl6ZAzQw,6902
+backup_juggler/juggler_cli.py,sha256=SU9FzZ0gDlfoj8sWCOLBOx1vuoG_9KqhUAnSV2KiMfk,2283
+backup_juggler/paths_manager.py,sha256=Z3IvJete3Bvq5D1Brk4ZuMPJCxHYGNZ_oldoCNE1Ni8,2001
+backup_juggler/progress_viewer.py,sha256=3Q1DJ4ADKklpDNfXMWBGh8KvCIiQVp9k8tB1fZNhhlA,1162
+backup_juggler-0.2.1.dist-info/entry_points.txt,sha256=EXorzMzZKyMOiFRQ0Af_Okz_Xl1zV-Oies5_D6x22zg,53
+backup_juggler-0.2.1.dist-info/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+backup_juggler-0.2.1.dist-info/METADATA,sha256=QCuh9qo1k9wtV6m6msdZ74gQHEd5laidpvWlc1VeSP4,3359
+backup_juggler-0.2.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+backup_juggler-0.2.1.dist-info/RECORD,,
