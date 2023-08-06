@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+meow_base/__init__.py
+meow_base/version.py
+meow_base.egg-info/PKG-INFO
+meow_base.egg-info/SOURCES.txt
+meow_base.egg-info/dependency_links.txt
+meow_base.egg-info/requires.txt
+meow_base.egg-info/top_level.txt
