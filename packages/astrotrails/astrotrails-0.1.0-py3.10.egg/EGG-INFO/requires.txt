@@ -1,0 +1,4 @@
+Pillow
+ffmpeg
+numpy
+progress
