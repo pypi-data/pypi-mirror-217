@@ -1,0 +1,7 @@
+streamlit
+
+[dev]
+mypy
+pylint
+pytest
+build
