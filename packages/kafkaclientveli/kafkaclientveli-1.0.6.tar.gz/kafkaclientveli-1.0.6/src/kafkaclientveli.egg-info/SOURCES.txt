@@ -1,0 +1,13 @@
+MANIFEST.in
+readme.md
+setup.py
+src/events/__init__.py
+src/events/base.py
+src/events/triptracker.py
+src/kafkaclientveli.egg-info/PKG-INFO
+src/kafkaclientveli.egg-info/SOURCES.txt
+src/kafkaclientveli.egg-info/dependency_links.txt
+src/kafkaclientveli.egg-info/top_level.txt
+src/topics/__init__.py
+src/topics/topics.py
+src/topics/triptracker.py
