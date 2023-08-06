@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: wakaranai
+Version: 0.0.1rc1
+Summary: An educational tool for learning hiragana and katakana
+Project-URL: Source Code, https://github.com/guidanoli/wakaranai
+Project-URL: Bug Tracker, https://github.com/guidanoli/wakaranai/issues
+Author: Guilherme Dantas
+License-File: LICENSE
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Natural Language :: Japanese
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Education
+Requires-Python: >=3.8
+Requires-Dist: colorama==0.4.6
+Description-Content-Type: text/markdown
+
+わからない (wakaranai) literally means "I don't understand" in Japanese.
+It is a phrase worth learning, specially if you plan to visit Japan anytime soon.
+If you'd like to learn more than just a couple of key phrases,
+it might be useful to learn hiragana and katakana as well.
+This Python package, called `wakaranai`, helps non-Japanese speakers
+learn these two syllabaries by generating and applying random tests.
