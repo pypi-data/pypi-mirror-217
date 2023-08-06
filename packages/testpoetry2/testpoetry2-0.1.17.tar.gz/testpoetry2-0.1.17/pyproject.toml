@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "testpoetry2"
+version = "0.1.17"
+description = "Password generator CLI and library"
+authors = ["Bill.Avramenko <billavramenko@gmail.com>"]
+readme = "README.md"
+packages = [{include = "testpoetry2"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+questionary = "^1.10.0"
+
+[tool.poetry.scripts]
+pwgen_test = "testpoetry2.test:main"
+pwgen = "testpoetry2:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
