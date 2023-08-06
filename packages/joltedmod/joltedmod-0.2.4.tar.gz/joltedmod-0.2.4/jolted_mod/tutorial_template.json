@@ -1,0 +1,57 @@
+{
+  "blocks": [
+    {
+      "type": "SeedBlock",
+      "identity": "professor of computer science",
+      "topic": "Intro to for loops in python",
+      "target_audience": "first year computer science students"
+    },
+    {
+      "type": "ExplanatoryBlock",
+      "topic": "Intro to for loops in python",
+      "knowledge_component": "A conceptual understanding of Intro to for loops in python",
+      "instructional_event": "a metaphor without code",
+      "target_audience": "first year computer science students",
+      "context": null,
+      "cell_type": "MARKDOWN"
+    },
+    {
+      "type": "ExplanatoryBlock",
+      "topic": "Intro to for loops in python",
+      "knowledge_component": "A concrete understanding of the syntax of Intro to for loops in python",
+      "instructional_event": "A detailed breakdown of an example of the syntax of Intro to for loops in python. It should be like the anatomy of Intro to for loops in python's syntax",
+      "target_audience": "first year computer science students",
+      "context": null,
+      "cell_type": "MARKDOWN"
+    },
+    {
+      "type": "ExplanatoryBlock",
+      "topic": "Intro to for loops in python",
+      "knowledge_component": "A concrete understanding of how to use Intro to for loops in python to solve real-world problems",
+      "instructional_event": "A series of worked examples based on real-world use cases explained with highly detailed and well documented code",
+      "target_audience": "first year computer science students",
+      "context": null,
+      "cell_type": "MARKDOWN"
+    },
+    {
+      "type": "KnowledgeTestingBlock",
+      "n": 1,
+      "question_type": "programming problem",
+      "topic": "Intro to for loops in python",
+      "knowledge_component": "How to apply Intro to for loops in python to solve real-world problems",
+      "target_audience": "first year computer science students",
+      "context": null,
+      "cell_type": "MARKDOWN"
+    },
+    {
+      "type": "KnowledgeTestingBlock",
+      "n": 1,
+      "question_type": "programming problem",
+      "topic": "Intro to for loops in python",
+      "knowledge_component": "How to apply Intro to for loops in python to solve real-world problems",
+      "target_audience": "first year computer science students",
+      "context": 4,
+      "cell_type": "CODE"
+    }
+  ]
+}
