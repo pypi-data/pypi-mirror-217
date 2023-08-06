@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+caliatestpy.egg-info/PKG-INFO
+caliatestpy.egg-info/SOURCES.txt
+caliatestpy.egg-info/dependency_links.txt
+caliatestpy.egg-info/top_level.txt
