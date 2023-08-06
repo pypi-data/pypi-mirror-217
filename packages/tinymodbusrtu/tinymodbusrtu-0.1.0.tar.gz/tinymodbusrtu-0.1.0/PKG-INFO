@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: tinymodbusrtu
+Version: 0.1.0
+Summary: Modbus RTU over Serial Only
+Home-page: https://tinymodbusrtu.readthedocs.io/
+Author: Keil Hubbard
+Author-email: keilhubbard@outlook.com
+License: MIT
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# tiny-modbus-rtu
+Modbus RTU Client library for communicating with Modbus RTU Servers over Serial
+
+Developed as an alternative to the existing modbus libraries that include support for all Modbus Protocols and do not allow custom messages. TinyModbusRTU supports only a single protocol and transmission layer.  
+
+Designed specifically to allow support for custom function codes and messages.
+
+
+## Features:
+* Standard MODBUS-RTU Read Requests
+* Standard MODBUS-RTU Write Requests
+* Custom Function Code MODBUS-RTU Requests
+  * Requests containing only a custom function code can be used to trigger certain actions from a server
+* Fully Customizable MODBUS-RTU Requests
+* Optionally Disable the CRC16 Validity check for Hobbyist Development
+  * Note: Disables CRC16 Check for both requests and responses
+
+
+## Requirements:
+* python >= 3.6.0
+* pySerial >= 3.0
+
+
+## Not-Supported:
+* MODBUS-ASCII
+* MODBUS OVER TCP

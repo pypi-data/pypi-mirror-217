@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+tinymodbusrtu/__init__.py
+tinymodbusrtu/rtumessage.py
+tinymodbusrtu/tinymodbusrtu.py
+tinymodbusrtu.egg-info/PKG-INFO
+tinymodbusrtu.egg-info/SOURCES.txt
+tinymodbusrtu.egg-info/dependency_links.txt
+tinymodbusrtu.egg-info/requires.txt
+tinymodbusrtu.egg-info/top_level.txt
