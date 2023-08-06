@@ -1,0 +1,7 @@
+README.md
+setup.py
+pyconcurrent.egg-info/PKG-INFO
+pyconcurrent.egg-info/SOURCES.txt
+pyconcurrent.egg-info/dependency_links.txt
+pyconcurrent.egg-info/requires.txt
+pyconcurrent.egg-info/top_level.txt
