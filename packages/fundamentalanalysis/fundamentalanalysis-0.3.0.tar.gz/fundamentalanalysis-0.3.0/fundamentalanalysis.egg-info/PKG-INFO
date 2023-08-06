@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: fundamentalanalysis
+Version: 0.3.0
+Summary: Fully-fledged Fundamental Analysis package capable of collecting 20 years of Company Profiles,    Financial Statements, Ratios and Stock Data of 20.000+ companies.
+Home-page: https://github.com/JerBouma/FundamentalAnalysis
+Author: JerBouma
+Author-email: jer.bouma@gmail.com
+License: MIT
+Keywords: fundamental,analysis,finance
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Topic :: Office/Business :: Financial :: Investment
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Fundamental Analysis
+
+This package has been depreciated and has been improved through the FinanceToolkit. Please use `pip install financetoolkit` instead. For more information, see: https://github.com/JerBouma/FinanceToolkit
+
+To find symbols of specific sectors and/or industries have a look at my [Finance Database](https://github.com/JerBouma/FinanceDatabase).
