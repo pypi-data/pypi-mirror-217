@@ -1,0 +1,7 @@
+selenium
+requests
+selenium_profiles>=2.2.7.2
+websockets
+
+[dev]
+check-manifest
