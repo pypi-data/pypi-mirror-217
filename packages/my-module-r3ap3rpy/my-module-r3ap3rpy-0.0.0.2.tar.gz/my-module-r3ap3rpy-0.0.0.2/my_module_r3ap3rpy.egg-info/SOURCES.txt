@@ -1,0 +1,13 @@
+README.md
+setup.py
+my_module/__init__.py
+my_module/add.py
+my_module/divide.py
+my_module/modulo.py
+my_module/multiply.py
+my_module/power.py
+my_module/subtract.py
+my_module_r3ap3rpy.egg-info/PKG-INFO
+my_module_r3ap3rpy.egg-info/SOURCES.txt
+my_module_r3ap3rpy.egg-info/dependency_links.txt
+my_module_r3ap3rpy.egg-info/top_level.txt
