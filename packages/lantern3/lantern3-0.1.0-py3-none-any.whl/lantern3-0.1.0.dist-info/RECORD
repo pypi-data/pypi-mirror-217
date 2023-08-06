@@ -1,0 +1,9 @@
+lantern3/__init__.py,sha256=mw-ouAmPxCcnkDGDqblI60HLHoL3xchCiguYiKXQ2Tc,128
+lantern3/main.py,sha256=5mfUq7TT-_X9kConvKzagAWsRvJpCyLL2mmK_actGTA,4296
+lantern3/builder/__init__.py,sha256=E73TZEBBamFf1D0cDN4TOJ6Ubt49w0QtVH84rw6sHvs,1641
+lantern3/builder/flashbots.py,sha256=Kut0CD2FmlAVmNl30iiRlAmv0uhpmKgKd0vJgrYsQxs,1536
+lantern3-0.1.0.dist-info/LICENSE,sha256=HBejvVHp0JduF00PPOBKO0i-pUvCrNn7me6BVaqsK20,1069
+lantern3-0.1.0.dist-info/METADATA,sha256=d63MdTQ39IWfgpFiG1YctDqLoNdxbR5dRjwGynsw16Y,2437
+lantern3-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+lantern3-0.1.0.dist-info/top_level.txt,sha256=XInIQH-TjA5XvOuQKv5Yc8-h-zVCd0X9fRBxgNzUneU,9
+lantern3-0.1.0.dist-info/RECORD,,
