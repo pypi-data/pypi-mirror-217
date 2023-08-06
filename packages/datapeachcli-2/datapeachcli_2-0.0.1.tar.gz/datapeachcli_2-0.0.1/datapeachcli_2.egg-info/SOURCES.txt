@@ -1,0 +1,5 @@
+setup.py
+datapeachcli_2.egg-info/PKG-INFO
+datapeachcli_2.egg-info/SOURCES.txt
+datapeachcli_2.egg-info/dependency_links.txt
+datapeachcli_2.egg-info/top_level.txt
