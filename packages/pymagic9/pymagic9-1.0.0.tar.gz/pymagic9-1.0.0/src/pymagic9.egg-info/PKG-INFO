@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pymagic9
+Version: 1.0.0
+Summary: Utility for checking the localization of the voice acting of the game Dreamfall Chapters for PS4.
+Home-page: https://github.com/sammnnz
+Author: Nazarov Semen
+Author-email: drozdosam@mail.ru
+License: MIT
+Keywords: Dreamfall Chapters,PS4,Russian voice
+Platform: any
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Dreamfall Chapters VO Cheaker.
+
+Utilities for checking the quality of voice localization.

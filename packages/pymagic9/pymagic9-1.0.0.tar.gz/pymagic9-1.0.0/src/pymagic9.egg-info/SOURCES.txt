@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/DFChaptersVOCheaker/__init__.py
+src/DFChaptersVOCheaker/dfcvocheaker.py
+src/pymagic9.egg-info/PKG-INFO
+src/pymagic9.egg-info/SOURCES.txt
+src/pymagic9.egg-info/dependency_links.txt
+src/pymagic9.egg-info/not-zip-safe
+src/pymagic9.egg-info/top_level.txt
+tests/tests_dfcvocheaker.py
