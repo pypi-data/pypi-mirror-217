@@ -1,0 +1,25 @@
+httpx>=0.20
+pandas>=0.16.2
+pydantic<2,>=1.10
+tqdm>=4.62
+nest-asyncio>=1.5.6
+
+[:python_version < "3.10"]
+typing-extensions>=3.10
+
+[dev]
+black
+nox
+pip-tools
+pylint
+
+[lint]
+pylint
+mypy
+pandas-stubs
+
+[test]
+coverage
+pytest
+pytest-asyncio
+python-dotenv

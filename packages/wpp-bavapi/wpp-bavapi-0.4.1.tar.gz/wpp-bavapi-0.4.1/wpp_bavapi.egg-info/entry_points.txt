@@ -1,0 +1,2 @@
+[console_scripts]
+bavapi-get-refs = bavapi.reference.generate_reference:main
