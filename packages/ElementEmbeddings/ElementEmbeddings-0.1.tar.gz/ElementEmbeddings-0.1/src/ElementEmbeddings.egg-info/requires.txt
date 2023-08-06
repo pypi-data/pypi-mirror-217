@@ -1,0 +1,8 @@
+numpy
+scipy
+pymatgen
+seaborn
+matplotlib
+scikit-learn
+umap-learn
+adjustText
