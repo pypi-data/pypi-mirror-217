@@ -1,0 +1,7 @@
+build/__pycache__/*
+*.pdf
+*.zip
+RPA for Simon/*
+dist/*
+*.egg*
+*.pyc

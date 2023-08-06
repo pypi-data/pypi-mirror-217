@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: JWaves
+Version: 0.0.1
+Summary: Random Phase Approximation for Spin Waves and Dispersive Crystal Electric Fields
+Home-page: UNKNOWN
+Author: Jakob Lass
+Author-email: lass.jakob@gmail.com
+License: MPL-2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.5
+License-File: LICENSE
+
+# Random Phase Approximation
+
+A Random Phase Approximation for calculating the inelastic neutron scattering cross section from magnetic crystals.
+
