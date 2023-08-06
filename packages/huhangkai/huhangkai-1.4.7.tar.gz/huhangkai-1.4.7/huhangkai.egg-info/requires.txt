@@ -1,0 +1,13 @@
+faker
+openpyxl
+apscheduler
+rsa
+pyDes
+pycryptodome
+xlsxwriter
+pandas
+apache-beam
+pytest
+setuptools
+twine
+requests==2.29.0
