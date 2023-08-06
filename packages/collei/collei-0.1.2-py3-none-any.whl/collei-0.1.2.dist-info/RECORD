@@ -1,0 +1,15 @@
+collei/__init__.py,sha256=Svgxoo1TK7_ExeS42hAV_cQUoMz2S2_ZWIAjkFuBFF0,335
+collei/clients.py,sha256=YQdJ_Ja1NYTLy2WSfiDUEj3debyUu_-jkNS-bxGdMMQ,412
+collei/managers/__init__.py,sha256=4LqLcvNhtvT3HceKC3pXBHW91E4XbKrWBLoTQghHVAM,6
+collei/managers/nsfw.py,sha256=0v060Bpoby6p2LyKNxtPDQFgut92dCyE-8m2jem3wb4,433
+collei/managers/sfw.py,sha256=tDtmL3YfF97B6K5SeViVok3RrnUn-1tizuzDBXefW8Y,426
+collei/models/__init__.py,sha256=4LqLcvNhtvT3HceKC3pXBHW91E4XbKrWBLoTQghHVAM,6
+collei/models/enums/__init__.py,sha256=4LqLcvNhtvT3HceKC3pXBHW91E4XbKrWBLoTQghHVAM,6
+collei/models/enums/categories/__init__.py,sha256=4LqLcvNhtvT3HceKC3pXBHW91E4XbKrWBLoTQghHVAM,6
+collei/models/enums/categories/nsfw.py,sha256=J6E98_GlmDjAnpd8p4zwtPnuWHfaosjXlMAZL8gtRDs,168
+collei/models/enums/categories/sfw.py,sha256=Yrru-mGNbqlfRVb45T_YEbp4kzILqlaAmh0V3iyVSdg,714
+collei/models/images.py,sha256=J5oh1WvzUn4OVyhYTZn4nhchMY_AJoeHoDATG2feXHM,61
+collei-0.1.2.dist-info/LICENSE,sha256=PRMdGkElj6eqhzMAATLaz84OdbHRSw-CyGkhl4Fgl_g,1086
+collei-0.1.2.dist-info/METADATA,sha256=VO1GHeikpkZp7l8mInHSXIXc1TI9MNmfK6MBiNl7JsQ,1508
+collei-0.1.2.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+collei-0.1.2.dist-info/RECORD,,
