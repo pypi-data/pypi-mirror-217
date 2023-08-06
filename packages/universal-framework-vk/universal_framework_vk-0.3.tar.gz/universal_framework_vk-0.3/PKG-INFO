@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: universal_framework_vk
+Version: 0.3
+Summary: universal framework
+Author: Viral Killer
+Author-email: jules3313@gmail.com
+License: MIT
+Requires-Python: >=3.10.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# _Universal_Framework
+universal framework for HTML, CSS, databases and payment processing, along with coding practices
