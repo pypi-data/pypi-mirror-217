@@ -1,0 +1,11 @@
+napari_workshop_browser/__init__.py,sha256=D0SFwVVA5jY3O1K-Ta3W90yUMWncR6uOPraFKfAszzM,95
+napari_workshop_browser/_widget.py,sha256=w-YpIZNMPMmakDhTiUZ38PQW6hMrqOBX-omfp0Zbucs,6682
+napari_workshop_browser/napari.yaml,sha256=1IKt3HHCtLl9mb4qy1jG4plr42l12hti_3I4S06dcnE,350
+napari_workshop_browser/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+napari_workshop_browser/_tests/test_widget.py,sha256=FW4UUpkH5TrThTLVzEP3L-mreCQEEf1gCPQH_MFsW44,1256
+napari_workshop_browser-0.0.1.dist-info/LICENSE,sha256=J-KumcohP5g1V8sGkRvy9S0DwFxONpP-D7Jw6-T0bFY,1490
+napari_workshop_browser-0.0.1.dist-info/METADATA,sha256=ZpwT6ysCOfN18PmM60U1-ggFnrXO89aCwWd4skVBH4M,4450
+napari_workshop_browser-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+napari_workshop_browser-0.0.1.dist-info/entry_points.txt,sha256=F6MB25LnaAPOgGlF6KsirAFHZeDNQovrT5MZmXE-9xM,80
+napari_workshop_browser-0.0.1.dist-info/top_level.txt,sha256=Q1_760sgeGy8b1cy83zByxgU8MwRKxa1HL2Uc2DHyq8,24
+napari_workshop_browser-0.0.1.dist-info/RECORD,,

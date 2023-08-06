@@ -1,0 +1,10 @@
+name: napari-workshop-browser
+display_name: Napari Workshop Browser
+contributions:
+  commands:
+    - id: napari-workshop-browser.make_qwidget
+      python_name: napari_workshop_browser._widget:WorkshopWidget
+      title: Open a napari workshop
+  widgets:
+    - command: napari-workshop-browser.make_qwidget
+      display_name: Open a napari workshop
