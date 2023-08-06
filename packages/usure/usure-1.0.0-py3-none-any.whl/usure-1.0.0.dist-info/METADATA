@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: usure
+Version: 1.0.0
+License-File: LICENSE.txt
+Requires-Dist: requests
+Requires-Dist: igraph
+Requires-Dist: importlib-metadata ; python_version < "3.8"
+
