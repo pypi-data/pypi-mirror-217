@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: dimjournal
+Version: 1.0.7
+Summary: Archive utility for Midjourney
+Home-page: https://pypi.org/project/dimjournal/
+Author: Adam Twardoch
+Author-email: adam+github@twardoch.com
+License: Apache-2.0
+Project-URL: Documentation, https://twardoch.github.io/dimjournal/
+Project-URL: Source, https://github.com/twardoch/dimjournal
+Project-URL: Download, https://pypi.org/project/dimjournal
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+License-File: LICENSE.txt
+Requires-Dist: beautifulsoup4 (>=4.12.2)
+Requires-Dist: fire (>=0.5.0)
+Requires-Dist: numpy (>=1.25.0)
+Requires-Dist: Pillow (>=10.0.0)
+Requires-Dist: pymtpng (>=1.0)
+Requires-Dist: pytest (>=7.3.1)
+Requires-Dist: python-slugify (>=8.0.1)
+Requires-Dist: selenium (>=4.10.0)
+Requires-Dist: setuptools (>=67.6.1)
+Requires-Dist: tqdm (>=4.65.0)
+Requires-Dist: undetected-chromedriver (>=3.5.0)
+Provides-Extra: testing
+Requires-Dist: setuptools ; extra == 'testing'
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+
+# dimjournal
+
+dimjournal is a Python utility for automatically downloading upscaled images from Midjourney into a local archive (folder tree). 
+
+Note: the terms of use of Midjourney disallow any automation!
+
+dimjournal uses the Selenium WebDriver to log into the Midjourney website, fetch user data, and download job information and images. The files are stored in the `midjourney/dimjournal` subfolder inside your `Pictures`/`My Pictures` folder, or in a folder of your choice if you specify it.
+
+## Changelog
+
+- v1.0.6: Fixes
+- v1.0.3: Tested on macOS in July 2023
+
+## Installation
+
+Stable version:
+
+```
+pip install dimjournal
+```
+
+Development version:
+
+```
+python3 -m pip install git+https://github.com/twardoch/dimjournal
+```
+
+## Usage
+
+### Command Line Interface (CLI)
+
+```bash
+python3 -m dimjournal --archive_folder /path/to/your/archive/folder
+```
+
+### Python
+
+You can also use Dimjournal in your Python scripts. Here is an example of how to import and use the `download` function:
+
+```python
+from dimjournal import download
+
+# Specify the directory where you want to store the data
+archive_folder = "/path/to/your/archive/folder"
+
+# Download the data
+download(archive_folder)
+```
+
+## License
+
+- Licensed under the [Apache-2.0 License](./LICENSE.txt)
+- Written with assistance from ChatGPT
+
