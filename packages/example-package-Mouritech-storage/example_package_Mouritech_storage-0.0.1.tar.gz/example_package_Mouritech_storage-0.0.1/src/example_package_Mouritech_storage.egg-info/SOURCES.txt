@@ -1,0 +1,9 @@
+LICENCE.txt
+README.md
+pyproject.toml
+src/example_package_Mouritech_storage.egg-info/PKG-INFO
+src/example_package_Mouritech_storage.egg-info/SOURCES.txt
+src/example_package_Mouritech_storage.egg-info/dependency_links.txt
+src/example_package_Mouritech_storage.egg-info/top_level.txt
+src/example_package_YOUR_USERNAME_HERE/__init__.py
+src/example_package_YOUR_USERNAME_HERE/example.py

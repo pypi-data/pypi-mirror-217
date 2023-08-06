@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: example_package_Mouritech_storage
+Version: 0.0.1
+Summary: A Mouritech package
+Author-email: Prasanth <kambham.prasanth@gmail.com>
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+
+At the moment, our code is capable of storing the files in the database. However, this is not a desirable practice. With time our database will get "fat" and slow, and we do not want that to happen. Images haven't been stored in databases as blobs for a while now, and you'll typically save images on your own server where the application is hosted on, or on an external server or service such as AWS's S3.
+
+Multiple file input 
+from django.forms import ModelForm, ClearableFileInput
+from .models import Beast
+
+class BeastForm(ModelForm):
+    class Meta: 
+        model = Beast
+		fields = '__all__'
+        widgets = {
+            'media': ClearableFileInput(attrs={'multiple': True})
+        }
+
+# 
