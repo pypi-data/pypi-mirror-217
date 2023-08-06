@@ -1,0 +1,6 @@
+qxxkey/__init__.py,sha256=92QwhrXawV7yN3jcFghhj9FwWYVu9ChzhfiPcjk9vs4,24
+qxxkey/remote/__init__.py,sha256=7DsEXYbZuG_MO91SkSEZq-vY3niXzo43pOICq67voYM,1348
+qxxkey/vault.py,sha256=_6Lsh9_4N5VfoUQrlbSQAIQqLWc7gsZPMhr73xojQDY,1753
+qxxkey-0.0.5.dist-info/METADATA,sha256=Z7snby1ba278i3uQl8AFEj0uj9y-2Co9_L5IJtyZAjE,293
+qxxkey-0.0.5.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+qxxkey-0.0.5.dist-info/RECORD,,
