@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+omnivoreql/__init__,py
+omnivoreql/omnivoreql.py
+omnivoreql/schema.gql
+omnivoreql.egg-info/PKG-INFO
+omnivoreql.egg-info/SOURCES.txt
+omnivoreql.egg-info/dependency_links.txt
+omnivoreql.egg-info/requires.txt
+omnivoreql.egg-info/top_level.txt
