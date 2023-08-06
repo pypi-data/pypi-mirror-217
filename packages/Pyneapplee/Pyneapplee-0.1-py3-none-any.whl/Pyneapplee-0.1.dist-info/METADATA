@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: Pyneapplee
+Version: 0.1
+Summary: Description of my package
+Home-page: https://github.com/Yongyi-Liu/Pyneapple
+Author: Author Name
+Author-email: yongyil1998@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: numpy (>=1.11.1)
+Requires-Dist: matplotlib (>=1.5.1)
+
+UNKNOWN
+
