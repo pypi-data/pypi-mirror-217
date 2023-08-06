@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: hegel
+Version: 0.0.2
+Summary: Supercharge your LLM with a frictionless wrapper
+Home-page: https://github.com/hegelai/hegel
+Author: Hegel AI
+Author-email: Hegel AI <team@hegel-ai.com>
+License: Proprietary
+Project-URL: Homepage, https://github.com/hegelai/hegel
+Project-URL: Bug Tracker, https://github.com/hegelai/hegel
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# hegel
+
+Welcome to `hegel`, the python client library for [Hegel AI](https://hegel-ai.com/).
+This library adds the full functionality of our Dialectic product to your LLM,
+including observability, computing metrics, and tracking customer feedback.
+
+## Monitoring your LLM
+
+To use `hegel`, you'll wrap your current call to an LLM API with the `HegelScribe` object.
+`HegelScribe` helps record the input and response of a LLM call with
+minimal overhead. The call to the LLM's API is not routed through our server;
+only the input and response are captured and written to the database
+through a separate thread without blocking the main thread.
+
+```python
+import openai
+from hegel.scribe import HegelScribe
+
+scribe = HegelScribe(completion_fn=openai.ChatCompletion.create)
+response = scribe(
+    model= "gpt-3.5-turbo",
+    messages = [  
+      {"role": "system", "content": "You are a helpful assistant."},
+      {"role": "user", "content": "Who won the world series in 2020?"},
+    ])
+```
+
+### Setting your API key
+An OpenAI API key is needed if you would like to use OpenAI's API (we do not store or track your API key in anyway).
+A separate Hegel API key is needed to use our service. You can get a key by [contacting us](mailto:team@hegel-ai.com). 
+
+To set your API keys:
+```bash
+# Starting from this `hegel` directory
+cp .env.example .env
+```
+
+Edit the `.env` file to include your keys. Avoid sharing that file.
+
+
+### Viewing Logs and Metrics
+
+Scribe collects metrics, monitors failures, and helps gather customer feedback. 
+You can view aggregate metrics, drill into logs, and more on the [Hegel Dashboard](https://app.hegel-ai.com/).
+
+## Contributing
+
+We welcome PRs and suggestions! Don't hesitate to open a PR/issue or to reach out to us [via email](mailto:team@hegel-ai.com).
+
+## Usage and Feedback
+
+We will be delighted to work with early adopters to shape our designs. Please reach out to us [via email](mailto:team@hegel-ai.com) if you're
+interested in using this tooling for your project or have any feedback.
+
+## License
+
+We will be gradually releasing more components to the open-source community. The current license can be found in the  [LICENSE](LICENSE) file. If there is any concern, please [contact us](mailto:team@hegel-ai.com) and we will be happy to work with you.
+
