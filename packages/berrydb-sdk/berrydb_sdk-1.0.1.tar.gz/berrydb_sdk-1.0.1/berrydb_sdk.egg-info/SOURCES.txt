@@ -1,0 +1,8 @@
+BerryDB.py
+README.md
+setup.py
+berrydb_sdk.egg-info/PKG-INFO
+berrydb_sdk.egg-info/SOURCES.txt
+berrydb_sdk.egg-info/dependency_links.txt
+berrydb_sdk.egg-info/requires.txt
+berrydb_sdk.egg-info/top_level.txt
