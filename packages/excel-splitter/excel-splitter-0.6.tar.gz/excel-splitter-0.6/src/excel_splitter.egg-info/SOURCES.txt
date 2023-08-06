@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+src/Split_Excel_Package/__init__.py
+src/Split_Excel_Package/excel_splitter.py
+src/excel_splitter.egg-info/PKG-INFO
+src/excel_splitter.egg-info/SOURCES.txt
+src/excel_splitter.egg-info/dependency_links.txt
+src/excel_splitter.egg-info/requires.txt
+src/excel_splitter.egg-info/top_level.txt
