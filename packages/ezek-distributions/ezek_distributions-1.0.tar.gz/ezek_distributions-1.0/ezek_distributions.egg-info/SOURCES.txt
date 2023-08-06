@@ -1,0 +1,10 @@
+setup.py
+ezek_distributions/Binomialdistribution.py
+ezek_distributions/Gaussiandistribution.py
+ezek_distributions/Generaldistribution.py
+ezek_distributions/__init__.py
+ezek_distributions.egg-info/PKG-INFO
+ezek_distributions.egg-info/SOURCES.txt
+ezek_distributions.egg-info/dependency_links.txt
+ezek_distributions.egg-info/not-zip-safe
+ezek_distributions.egg-info/top_level.txt
