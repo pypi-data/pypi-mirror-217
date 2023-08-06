@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: stocks-cli
+Version: 0.1.1
+Summary: Command Line Interface to the STOCKS server
+Home-page: https://www.embl.org/research/units/genome-biology/genome-biology-computational-support/
+Author: GBCS
+Author-email: gbcs@embl.de
+License-File: LICENSE.txt
+Requires-Dist: jsonpickle (==3.0.1)
+Requires-Dist: jsonschema (==4.17.3)
+Requires-Dist: mdocfile (==0.0.8)
+Requires-Dist: numpy (==1.24.3)
+Requires-Dist: pandas (==2.0.1)
+Requires-Dist: pydantic (==1.10.7)
+Requires-Dist: PyJWT (==2.7.0)
+Requires-Dist: python-dateutil (==2.8.2)
+Requires-Dist: pytz (==2023.3)
+Requires-Dist: PyYAML (==6.0)
+Requires-Dist: requests (==2.30.0)
+Requires-Dist: typer (==0.9.0)
+Provides-Extra: dev
+Requires-Dist: setuptools (==67.7.2) ; extra == 'dev'
+
