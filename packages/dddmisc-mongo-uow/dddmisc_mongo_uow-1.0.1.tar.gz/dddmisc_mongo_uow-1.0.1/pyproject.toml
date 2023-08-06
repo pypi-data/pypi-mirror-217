@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "dddmisc-mongo-uow"
+version = "1.0.1"
+description = ""
+authors = ["Aziz <walkingonadream2012@mail.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+motor = "3.*"
+ddd-misc = "^0.8.1"
+
+[tool.poetry.group.dev.dependencies]
+poethepoet = "^0.20.0"
+pylama = "^8.4.1"
+pytest = "^7.2.0"
+python-dotenv = "^1.0.0"
+pytest-cov = {extras = ["toml"], version = "^4.0.0"}
+pydantic-settings = "^2.0.0"
+pytest-asyncio = "^0.21.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poe.tasks]
+lint = "poetry run pylama ./src/dddmisc_mongo_uow --ignore E501,W0611 --linters print,pyflakes --format pylint"
+test = "poetry run pytest --cov=. --cov-report=term-missing --cov-report=xml --junitxml=test-report.xml tests"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
