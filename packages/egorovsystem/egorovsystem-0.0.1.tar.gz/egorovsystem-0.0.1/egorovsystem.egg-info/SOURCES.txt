@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+egolocal/main.py
+egorovsystem/__init__.py
+egorovsystem.egg-info/PKG-INFO
+egorovsystem.egg-info/SOURCES.txt
+egorovsystem.egg-info/dependency_links.txt
+egorovsystem.egg-info/entry_points.txt
+egorovsystem.egg-info/requires.txt
+egorovsystem.egg-info/top_level.txt
+egoserver/manage.py
+egoserver/run.py
