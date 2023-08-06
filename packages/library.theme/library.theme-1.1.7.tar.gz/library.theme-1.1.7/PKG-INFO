@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: library.theme
+Version: 1.1.7
+Summary: A theme for buildout.library
+Home-page: https://pypi.python.org/pypi/library.theme
+Author: Nicolas Demonte
+Author-email: support@imio.be
+License: GPL version 2
+Keywords: Python Plone
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Plone
+Classifier: Framework :: Plone :: 5.1
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Provides-Extra: test
+License-File: LICENSE.GPL
+License-File: LICENSE.rst
