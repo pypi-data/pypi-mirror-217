@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "hdss"
+version = "1.1.1"
+description = "HDSS - Hand-Drawn Shape Simulation"
+authors = ["Boris Kravtsov <kravtsov.development@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+opencv-python-headless = "^4.8.0.74"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
