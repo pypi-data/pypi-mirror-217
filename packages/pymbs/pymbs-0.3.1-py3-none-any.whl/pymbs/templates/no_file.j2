@@ -1,0 +1,10 @@
+{% if ipython_status %}
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <p>No {{ file_type }} exists for Series {{ series_id }} at {{ json_file }}</p>
+</body>
+</html>
+{% else %}
+No {{ file_type }} exists for Series {{ series_id }} at {{ json_file }}
+{% endif %}

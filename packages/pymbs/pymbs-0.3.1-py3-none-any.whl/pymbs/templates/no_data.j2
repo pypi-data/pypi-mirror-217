@@ -1,0 +1,10 @@
+{% if ipython_status %}
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <p>No {{ data }} has been loaded yet. Please load a {{ data }} before continuing.</p>
+</body>
+</html>
+{% else %}
+No {{ data }} has been loaded yet. Please load a {{ data }} before continuing.
+{% endif %}
