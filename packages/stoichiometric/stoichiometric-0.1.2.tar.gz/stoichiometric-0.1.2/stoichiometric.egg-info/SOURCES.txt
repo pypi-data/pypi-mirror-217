@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+stoichiometric/__init__.py
+stoichiometric/stoichiometric.py
+stoichiometric.egg-info/PKG-INFO
+stoichiometric.egg-info/SOURCES.txt
+stoichiometric.egg-info/dependency_links.txt
+stoichiometric.egg-info/requires.txt
+stoichiometric.egg-info/top_level.txt
