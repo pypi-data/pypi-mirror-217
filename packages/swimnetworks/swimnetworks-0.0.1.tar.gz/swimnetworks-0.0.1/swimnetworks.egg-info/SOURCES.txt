@@ -1,0 +1,9 @@
+LICENSE
+README.rst
+pyproject.toml
+requirements.txt
+swimnetworks.egg-info/PKG-INFO
+swimnetworks.egg-info/SOURCES.txt
+swimnetworks.egg-info/dependency_links.txt
+swimnetworks.egg-info/requires.txt
+swimnetworks.egg-info/top_level.txt
