@@ -1,0 +1,78 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "\u88dd\u7f6e\u5df2\u7d93\u8a2d\u5b9a\u5b8c\u6210",
+            "no_plants": "\u5e33\u865f\u4e2d\u627e\u4e0d\u5230\u4efb\u4f55\u690d\u7269"
+        },
+        "error": {
+            "invalid_auth": "\u8eab\u4efd\u9a57\u8b49\u7121\u6548"
+        },
+        "step": {
+            "plant": {
+                "data": {
+                    "plant_id": "\u690d\u7269"
+                },
+                "title": "\u9078\u64c7\u690d\u7269"
+            },
+            "user": {
+                "data": {
+                    "name": "\u540d\u7a31",
+                    "password": "\u5bc6\u78bc",
+                    "url": "\u7db2\u5740",
+                    "username": "\u4f7f\u7528\u8005\u540d\u7a31"
+                },
+                "title": "\u8f38\u5165 Growatt \u8cc7\u8a0a"
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "tlx_statement_of_charge": {
+                "name": "\u5145\u96fb\u72c0\u614b (SoC)"
+            },
+            "tlx_temperature_1": {
+                "name": "\u6eab\u5ea6 1"
+            },
+            "tlx_temperature_2": {
+                "name": "\u6eab\u5ea6 2"
+            },
+            "tlx_temperature_3": {
+                "name": "\u6eab\u5ea6 3"
+            },
+            "tlx_temperature_4": {
+                "name": "\u6eab\u5ea6 4"
+            },
+            "tlx_temperature_5": {
+                "name": "\u6eab\u5ea6 5"
+            },
+            "tlx_voltage_input_1": {
+                "name": "\u8f38\u5165 \uff11 \u96fb\u58d3"
+            },
+            "tlx_voltage_input_2": {
+                "name": "\u8f38\u5165 2 \u96fb\u58d3"
+            },
+            "tlx_voltage_input_3": {
+                "name": "\u8f38\u5165 3 \u96fb\u58d3"
+            },
+            "tlx_voltage_input_4": {
+                "name": "\u8f38\u5165 4 \u96fb\u58d3"
+            },
+            "tlx_wattage_input_1": {
+                "name": "\u8f38\u5165 \uff11 \u74e6\u6578"
+            },
+            "tlx_wattage_input_2": {
+                "name": "\u8f38\u5165 2 \u74e6\u6578"
+            },
+            "tlx_wattage_input_3": {
+                "name": "\u8f38\u5165 3 \u74e6\u6578"
+            },
+            "tlx_wattage_input_4": {
+                "name": "\u8f38\u5165 4 \u74e6\u6578"
+            },
+            "total_output_power": {
+                "name": "\u8f38\u51fa\u529f\u7387"
+            }
+        }
+    },
+    "title": "Growatt \u4f3a\u670d\u5668"
+}
