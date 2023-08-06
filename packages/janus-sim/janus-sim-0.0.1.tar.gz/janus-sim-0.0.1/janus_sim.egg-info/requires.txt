@@ -1,0 +1,9 @@
+jax>=0.4.6
+jaxlib>=0.4.6
+jaxtyping
+numpy
+equinox
+
+[test]
+pytest
+neuron
