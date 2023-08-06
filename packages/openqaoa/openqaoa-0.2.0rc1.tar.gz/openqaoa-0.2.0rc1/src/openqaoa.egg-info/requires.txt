@@ -1,0 +1,5 @@
+openqaoa-braket==0.2.0-rc1
+openqaoa-azure==0.2.0-rc1
+openqaoa-pyquil==0.2.0-rc1
+openqaoa-core==0.2.0-rc1
+openqaoa-qiskit==0.2.0-rc1
