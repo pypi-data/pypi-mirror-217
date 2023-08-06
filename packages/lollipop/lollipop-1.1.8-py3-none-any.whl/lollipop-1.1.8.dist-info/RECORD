@@ -1,0 +1,13 @@
+lollipop/__init__.py,sha256=yTpBN0_FSQojRv90S5BYqFcplv4KVXVusE2maBjUIwk,50
+lollipop/compat.py,sha256=hmr13BtiN6-UAssx2BnRmS5YPs8xWmlplfEX-YtVhNE,949
+lollipop/errors.py,sha256=1lMBasB6UoQPROYoKG4DLDeG6i7mnIiIKCtemktnpFE,5749
+lollipop/ordereddict.py,sha256=Dga6UPOpXpk2SSjrPc6gMWpCd6jCBlYhpzs_aQseT4A,4312
+lollipop/type_registry.py,sha256=-sa7hqxtDvDncWEj2DblDPSoNkaY1ckceR8oQkmELOg,1946
+lollipop/types.py,sha256=h1T2-U_0v8lLGK3iXyAq6HlCExuHM3onYRHeTE0nDtE,63049
+lollipop/utils.py,sha256=Q0P5cLigiug2ojoriojERQg4QyqhCk4cnko1uYSdsqk,4891
+lollipop/validators.py,sha256=ixlECmSBujNk0TAvGIFbh0CVisNdbH5N60RrEWE61cc,12008
+lollipop-1.1.8.dist-info/LICENSE,sha256=eAo7DIRtgvXNVdCLhuxGcwBPzqUrYfXKvO_0CLxbMPs,1079
+lollipop-1.1.8.dist-info/METADATA,sha256=GnlaUOY7Xf5HmyayrgWUD4GlmE5WehYogh4HfE9w5VU,4541
+lollipop-1.1.8.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+lollipop-1.1.8.dist-info/top_level.txt,sha256=lpT7zJydX9RetokAeDp99_WNqkKlVGeXIEPanjuE7t4,9
+lollipop-1.1.8.dist-info/RECORD,,
