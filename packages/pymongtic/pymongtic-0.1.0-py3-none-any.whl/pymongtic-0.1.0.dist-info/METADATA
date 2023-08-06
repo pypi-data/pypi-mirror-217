@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pymongtic
+Version: 0.1.0
+Summary: A simple object data mapping that uses Pydantic and pymongo to simplify integrating MongoDB with Pydantic and FastAPI
+License: MIT
+Author: Paul J DeCoursey
+Author-email: paul@decoursey.net
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: pydantic[dotenv,email] (>=1.10.6,<2.0.0)
+Requires-Dist: python-dateutil (>=2.8.2,<3.0.0)
+Description-Content-Type: text/markdown
+
+# pymongtic
+
+Simple pymongo ODM that uses pydantic for validation
+

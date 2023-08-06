@@ -1,0 +1,11 @@
+pymongtic/__init__.py,sha256=qOx-9RcwW0w53lLuoJxR8JGC9aIYMVVnDCbPXIKmrOc,469
+pymongtic/base.py,sha256=nsrgUawB4NcL9KfE_fpc2Wn1iSlSLTgbSvqnwVv9I6A,6050
+pymongtic/config.py,sha256=PT-F1Glp7WFkv5tsFpsXKedZQcwghS60_988DSJ64nM,745
+pymongtic/connect.py,sha256=6JlTIgssk6r-v0KQmmDZ9QeGB9GurRbyp7jJuBJF7Ms,1047
+pymongtic/decorators.py,sha256=QRW0U2XUIXLGS_iHcMTYekJGNCZtvgmay5unL4_DlEE,1187
+pymongtic/exceptions.py,sha256=Iw32GXWQmclT38q3lQXa8_0_97hr7SvAAQRuD6OCFfk,155
+pymongtic/indexes.py,sha256=zolpZo9Z0Bq-98AUfSsCn4eKlBba2W7Kxg8wdOitPwY,1591
+pymongtic/views.py,sha256=U7X10IkQ139MF7S9j8_G2bKonbj3jELNVeYxGstXCP4,2580
+pymongtic-0.1.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+pymongtic-0.1.0.dist-info/METADATA,sha256=YEP-jFhS2bHcJV_4jyauPtD8X7rQ7oQqwskLnKJmbhI,642
+pymongtic-0.1.0.dist-info/RECORD,,
