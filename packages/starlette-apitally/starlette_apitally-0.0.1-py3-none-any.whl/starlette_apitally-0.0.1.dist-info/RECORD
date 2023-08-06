@@ -1,0 +1,7 @@
+starlette_apitally/__init__.py,sha256=qc3cT6f4mtlN0NdXLe3d8ozKGzzPwwNJRk4pQ8TwInM,118
+starlette_apitally/metrics.py,sha256=YRnEHBfI91PQQgK1jG4ZkyigKZ_jiTyOMDMG6-qmM4U,3920
+starlette_apitally/middleware.py,sha256=tO27bZRQcQ-VI0BSxld4XDdUzMKL0NfJsLiFNx0UsIA,2430
+starlette_apitally-0.0.1.dist-info/LICENSE,sha256=vbLzC-4TddtXX-_AFEBKMYWRlxC_MN0g66QhPxo8PgY,1065
+starlette_apitally-0.0.1.dist-info/METADATA,sha256=ilfd0lYO171-M_zxUE6cAbDfowtGcSVclhRRWmA6818,1986
+starlette_apitally-0.0.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+starlette_apitally-0.0.1.dist-info/RECORD,,
