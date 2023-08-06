@@ -1,0 +1,11 @@
+setup.py
+simulator/__init__.py
+simulator/emulator.py
+simulator/helpers.py
+simulator/imaging.py
+simulator/simulator.py
+skyrmions.egg-info/PKG-INFO
+skyrmions.egg-info/SOURCES.txt
+skyrmions.egg-info/dependency_links.txt
+skyrmions.egg-info/requires.txt
+skyrmions.egg-info/top_level.txt
