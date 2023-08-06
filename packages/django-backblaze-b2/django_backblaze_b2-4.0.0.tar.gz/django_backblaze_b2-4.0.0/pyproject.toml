@@ -1,0 +1,71 @@
+[tool.black]
+line-length = 120
+
+[tool.poetry]
+name = "django-backblaze-b2"
+version = "4.0.0"
+description = "A Django app to use backblaze b2 as storage."
+authors = ["Etienne H <django_backblaze_b2@internet-e-mail.com>"]
+maintainers = ["Etienne H <django_backblaze_b2@internet-e-mail.com>"]
+license = "BSD-2-Clause"
+readme = "README.md"
+homepage = "https://github.com/ehossack/django-backblaze-b2/"
+repository = "https://github.com/ehossack/django-backblaze-b2/"
+keywords = [
+    "django",
+    "storage",
+    "backblaze",
+    "b2",
+    "cloud"
+]
+classifiers = [
+    "Environment :: Web Environment",
+    "Framework :: Django",
+    "Framework :: Django :: 3.0",
+    "Framework :: Django :: 3.1",
+    "Framework :: Django :: 3.2",
+    "Framework :: Django :: 4.0",
+    "Framework :: Django :: 4.1",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Development Status :: 5 - Production/Stable",
+    "Typing :: Typed",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+include = ["py.typed"]
+
+[tool.poetry.dependencies]
+python = "^3.7.1"
+b2sdk = ">=1.11.0"
+django = ">=3.2"
+typing-extensions = "^4.0.1"
+
+[tool.poetry.dev-dependencies]
+isort = "^5.11.5"
+pytest = "^7.3"
+mypy = ">=0.8"
+black = "^23.3"
+django-stubs = "^4.2.0"
+flake8 = "^5.0"
+pytest-cov = "^4.0"
+pytest-django = "^4.5"
+pytest-pythonpath = "^0.7"
+docutils = "^0.19"
+toml = "^0.10.2"
+
+[tool.poetry.group.dev.dependencies]
+pep8-naming = "^0.13.3"
+
+[build-system]
+requires = ["poetry>=1.2.0"]
+build-backend = "poetry.masonry.api"
