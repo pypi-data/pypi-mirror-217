@@ -1,0 +1,9 @@
+windbg2df/README.MD,sha256=-4nkQRSrxpWsp-P7FsoWgErsDpkUQpdR_0PkTpoEIKg,18816
+windbg2df/__init__.py,sha256=DVK0koIiZTlqDHSGNqDndWme01bewGAvcOpQuD4x5ZM,37983
+windbg2df/requirements.txt,sha256=JC6dCNNYmucxht3p417qvz_87MBPYUu-UNZumpI9K14,150
+windbg2df/thirdparty.json,sha256=httD9NTRypeSkW_FgsyKMaXjwEWKfpEdZwi-3ZP9lZM,72775
+windbg2df-0.10.dist-info/LICENSE.rst,sha256=57krgYrI6h5a_2WXQgGcjWo8PExV4ONSi1SPUj9Jk1g,1148
+windbg2df-0.10.dist-info/METADATA,sha256=U73jeeWSGH4HZ-1nfG4CsdX25K3J67w7QjS97MCgsVE,19822
+windbg2df-0.10.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+windbg2df-0.10.dist-info/top_level.txt,sha256=FR4MqdWhL1lp1kSs4x3_Ahatl_R0AX8DtCLd_Mt-nX8,10
+windbg2df-0.10.dist-info/RECORD,,
