@@ -1,0 +1,19 @@
+[build-system]
+requires = ['poetry-core>=1.0.0']
+build-backend = 'poetry.core.masonry.api'
+
+[tool.poetry]
+name = 'bambooapi-client'
+version = '0.0.0'
+description = 'Bamboo Flexibility API'
+authors = ['BambooEnergy <development@bambooenergy.tech>']
+license='MIT'
+# repository = 'https://github.com/bambooenergy/mvp-api-client'
+keywords = ['OpenAPI', 'OpenAPI-Generator', 'Bamboo Flexibility API']
+classifiers=[
+    'Operating System :: OS Independent',
+    'Programming Language :: Python :: 3',
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8"
