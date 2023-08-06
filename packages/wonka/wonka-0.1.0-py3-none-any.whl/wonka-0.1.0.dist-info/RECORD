@@ -1,0 +1,14 @@
+__init__.py,sha256=uCyMLcVlJFVA2E_F3XlUdtxMkl8vxsWj_QlFdnNrfaM,1218
+base.py,sha256=ac97GbSJZ4gwF3FVLRddENyUOtfQd3o_v15heVIdMXo,6095
+configuration.py,sha256=8F_8X0Gn4ew3NzWnslhVJqcQnBTBSUHvguRzwKe3xGQ,4665
+dispatchers.py,sha256=ic5XbW1UkMcq2Uj9m49cxJ7VWCeB8BXQ6HhqbEUEOLg,7620
+managers.py,sha256=xnKpu-764oxk1FW3Fnj8ZLKMA1akNxizpAH0QZj8S9Q,2919
+producers.py,sha256=VCgIkmLx3Ilh7Inn4I3e0KhNx93mm_i3aKsxNhxc_Xo,4959
+prototypers.py,sha256=Sy9Ub6la8kyKB8BeQAoOURVvQefVFyjAaA7oqRVLOyA,2052
+registries.py,sha256=CivFGCRLegrV5ZjJmdGS4Io4ZtJtHi7fGhjs02gfvx0,5568
+shared.py,sha256=G1nTbdPvpGG5vYvescjDpMyNJBJ9nkJY3i-OlPXZoyA,4352
+storage.py,sha256=icRvqbg7FXdcMDUYKIFvmhgFIC6feCFV0H93IHrizqI,3393
+wonka-0.1.0.dist-info/METADATA,sha256=Pch4HH8dCZVNkVxG7IVp60AxLFOrv3DCMphetD7nsL8,21135
+wonka-0.1.0.dist-info/WHEEL,sha256=g58cvAsF5_9d0VXJuk7F0rhl6nAjUc5P9vx880WkZtI,90
+wonka-0.1.0.dist-info/licenses/LICENSE,sha256=l_5BuqDFypvzOSg3To4UZrsxw3sU2K93LmlbNXSKuRs,10247
+wonka-0.1.0.dist-info/RECORD,,
