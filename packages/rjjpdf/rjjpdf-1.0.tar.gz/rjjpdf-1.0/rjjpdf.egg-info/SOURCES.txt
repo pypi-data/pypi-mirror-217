@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+rjjpdf.egg-info/PKG-INFO
+rjjpdf.egg-info/SOURCES.txt
+rjjpdf.egg-info/dependency_links.txt
+rjjpdf.egg-info/top_level.txt
