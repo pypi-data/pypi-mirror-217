@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: datarobot-mlflow
+Version: 0.1.dev1
+Summary: datarobot-mlflow client to synchronize an MLFlow model with DataRobot model
+Home-page: https://datarobot.com
+Author: DataRobot
+Author-email: support+mlflow@datarobot.com
+Maintainer: DataRobot
+Maintainer-email: info+mlflow@datarobot.com
+License: DataRobot Tool and Utility Agreement
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: mlflow (>=1.0)
+Requires-Dist: requests
+Provides-Extra: azure
+Requires-Dist: azure-ai-ml ; extra == 'azure'
+Requires-Dist: azureml-mlflow ; extra == 'azure'
+
+# mlflow-integration
+
+This script and library exports a model from an MLflow model registry,
+and uploads key-values to an existing DataRobot model package.
+
+## Setup
+* Python 3.7 or later
+* `pip install datarobot-mlflow`
+  * if using Azure: `pip install "datarobot-mlflow[azure]"`
+
+## DataRobot information
+* URL of DataRobot instance, example `https://app.datarobot.com`
+* ID of DataRobot model package to post key-values; example: `64227b4bf82db411c90c3209`
+* `export MLOPS_API_TOKEN=<API token from DataRobot Developer Tools>`
+
+## Local MLflow information
+* MLflow tracking URI; example `"file:///Users/me/mlflow/examples/mlruns"`
+* Model name; example `"cost-model"`
+* Model version; example `"2"`
+
+## Azure DataBricks MLFlow with Service Principal information
+* MLflow tracking URI; example `"azureml://region.api.azureml.ms/mlflow/v1.0/subscriptions/subscription-id/resourceGroups/resource-group-name/providers/Microsoft.MachineLearningServices/workspaces/azure-ml-workspace-name'"`
+* Model name; example `"cost-model"`
+* Model version; example `"2"`
+* Provide service principal details in environment:
+  * `export AZURE_TENANT_ID="<tenant-id>"`
+  * `export AZURE_CLIENT_ID="<client-id>"`
+  * `export AZURE_CLIENT_SECRET="<secret>"`
+
+## Invocation
+```sh
+ACTION=sync  # other actions: delete-all-dr-keys, list-mlflow-keys
+
+DR_MODEL_ID="<MODEL_PACKAGE_ID>"
+
+drflow-cli \
+	--mlflow-url http://localhost:8080 \
+ 	--mlflow-model diabetes-1  \
+        --mlflow-model-version 1 \
+        --dr-model $DR_MODEL_ID \
+        --dr-url https://app.datarobot.com \
+        --with-artifacts \
+        --verbose \
+	--action $ACTION
+```
+
+## Reference scripts
+* `type run.sh` as an example, to see installed location
+* `run.sh` uses the drflow CLI to sync key-values
+* `validate-auth.sh` uses the CLI to validate Azure credentials only
