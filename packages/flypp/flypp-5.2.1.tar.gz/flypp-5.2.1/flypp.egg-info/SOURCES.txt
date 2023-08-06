@@ -1,0 +1,10 @@
+LICENSE
+README.rst
+setup.py
+flypp/__init__.py
+flypp/main.py
+flypp.egg-info/PKG-INFO
+flypp.egg-info/SOURCES.txt
+flypp.egg-info/dependency_links.txt
+flypp.egg-info/entry_points.txt
+flypp.egg-info/top_level.txt
