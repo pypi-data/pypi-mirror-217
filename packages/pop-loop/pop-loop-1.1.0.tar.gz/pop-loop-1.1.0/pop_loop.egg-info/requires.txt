@@ -1,0 +1,35 @@
+nest-asyncio
+pop>=19.0.0
+sniffio
+
+[curio]
+curio
+
+[full]
+twisted
+trio>=0.19.0
+curio
+qasync
+trio-asyncio
+tornado>5
+
+[full:os_name != "nt"]
+uvloop
+
+[qt]
+qasync
+
+[tornado]
+tornado>5
+
+[trio]
+trio>=0.19.0
+trio-asyncio
+
+[twisted]
+twisted
+
+[uvloop]
+
+[uvloop:os_name != "nt"]
+uvloop
