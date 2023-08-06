@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/multilogue/__init__.py
+src/multilogue.egg-info/PKG-INFO
+src/multilogue.egg-info/SOURCES.txt
+src/multilogue.egg-info/dependency_links.txt
+src/multilogue.egg-info/top_level.txt
