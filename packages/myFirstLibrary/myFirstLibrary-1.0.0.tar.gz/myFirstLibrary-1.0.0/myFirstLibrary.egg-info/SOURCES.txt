@@ -1,0 +1,8 @@
+README.md
+setup.py
+myFirstLibrary/__init__.py
+myFirstLibrary/math_operations.py
+myFirstLibrary.egg-info/PKG-INFO
+myFirstLibrary.egg-info/SOURCES.txt
+myFirstLibrary.egg-info/dependency_links.txt
+myFirstLibrary.egg-info/top_level.txt
