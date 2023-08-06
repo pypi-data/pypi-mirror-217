@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pmotif_lib"
+version = "1.0.1"
+authors = [
+  { name="Tim Garrels", email="tim.garrels@protonmail.com" },
+]
+description = "Perform motif detection, either with traditional frequency, or with positional metrics for each graphlet occurrence."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "networkx==3.1",
+    "tqdm==4.65.0",
+    "pandas==2.0.0",
+    "scipy==1.10.1",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/timgarrels/pmotif_lib"
+"documentation" = "https://github.com/timgarrels/pmotif_lib/wiki"
+"Bug Tracker" = "https://github.com/timgarrels/pmotif_lib/issues"
+"Repository" = "https://github.com/timgarrels/pmotif_lib"

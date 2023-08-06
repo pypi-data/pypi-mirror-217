@@ -1,0 +1,15 @@
+.idea/
+.venv/
+__pycache__/
+datasets/
+datasets
+output/
+output
+
+experiment_data/
+.ipynb_checkpoints/
+notebook_reports/
+
+pmotif_detection/*.batch
+
+showcase/artifacts/showcase_output/
