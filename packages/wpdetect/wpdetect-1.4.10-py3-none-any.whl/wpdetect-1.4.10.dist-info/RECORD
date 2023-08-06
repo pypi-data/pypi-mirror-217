@@ -1,0 +1,13 @@
+wpdetect/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wpdetect/__main__.py,sha256=EuGo401JOlq1Y33pK6hBUVp2jimlIceQOoxlSFVFu8E,1700
+wpdetect/cli_store.py,sha256=HV-tjwBa1J8c1nKwGqYetudNHMMDy9y0ZktsYlcCdf0,208
+wpdetect/constants.py,sha256=TXtMn4zLXabaiizp_zUacKdm9Osb_x5SOGcWkuS2b8Q,448
+wpdetect/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wpdetect/utils/print.py,sha256=XvT65pZ2GTREinL5uu5TUwgRQdst8YjHNnrwYH74Nww,637
+wpdetect/utils/url.py,sha256=U5KrBJxty4-Drgt_4Vq72YYbEv8CgnzwgeA6uqq1A7Y,1424
+wpdetect/utils/wp.py,sha256=ryl1tv7j4Nz6xiM-KJnQ_NqmVlKJxTNLJkUlAhdmuPo,3680
+wpdetect-1.4.10.dist-info/METADATA,sha256=CeqwI8v3owKAFcpzOD12RfmdHVF0rCYm5ZswJz02Y_c,4707
+wpdetect-1.4.10.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+wpdetect-1.4.10.dist-info/entry_points.txt,sha256=5OyH6ctpB51KK8PKSBD-TflQJAbm7K-Zv-2x5-UXrBk,52
+wpdetect-1.4.10.dist-info/licenses/LICENSE.txt,sha256=01sNw_oS2xnCZIwlqWxmzRTRMYpDHVUPJbzcHu2J0oE,1057
+wpdetect-1.4.10.dist-info/RECORD,,
