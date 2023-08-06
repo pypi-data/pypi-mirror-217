@@ -1,0 +1,13 @@
+asgi-logger>=0.1.0
+fastapi>=0.52.1
+
+[dev]
+flake8
+mypy
+build
+pytest
+pytest-asyncio
+pytest-cov
+coverage-lcov
+mock
+types-mock
