@@ -1,0 +1,35 @@
+{
+  "postbuero": {
+    "menu_title": "Mails",
+    "mail_addresses": {
+      "menu_title": "Manage mail addresses",
+      "title_plural": "Manage own mail addresses",
+      "data_table": {
+        "mail_address": "Mail address",
+        "domain": "Domain",
+        "local_part": "Local part",
+        "errors": {
+          "local_part_invalid_characters": "This field can only include alphanumeric characters plus the following ones: .!#$%&'*+-/=?^_`{|}~",
+          "local_part_disallowed": "This local part name is disallowed."
+        }
+      },
+      "create": "Create new mail address"
+    },
+    "mail_domains": {
+      "title_plural": "Manage mail domains",
+      "data_table": {
+        "domain": "Domain",
+        "is_public": "Public",
+        "filters": {
+          "show_all": "Show all",
+          "only_public": "Only public domains",
+          "only_non_public": "Only non-public domains"
+        },
+        "errors": {
+          "domain_invalid": "This field is required and has to be a valid domain name."
+        }
+      },
+      "create": "Create new mail domain"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+query mailAddressesForUser($orderBy: [String], $filters: JSONString) {
+  items: mailAddressesForUser(orderBy: $orderBy, filters: $filters) {
+    id
+    domain {
+      id
+      domain
+    }
+    localPart
+    canEdit
+    canDelete
+  }
+}
+
+query mailDomainsForUser {
+  mailDomains: mailDomainsForUser {
+    id
+    domain
+  }
+}
+
+query disallowedLocalParts {
+  disallowedLocalParts
+}
+
+mutation createMailAddress($input: CreateMailAddressInput!) {
+  createMailAddress(input: $input) {
+    mailAddress {
+      id
+      domain {
+        id
+        domain
+      }
+      localPart
+      canEdit
+      canDelete
+    }
+  }
+}

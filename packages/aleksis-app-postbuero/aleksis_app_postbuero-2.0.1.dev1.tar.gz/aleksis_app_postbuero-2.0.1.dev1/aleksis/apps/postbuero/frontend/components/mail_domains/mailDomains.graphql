@@ -1,0 +1,39 @@
+query editableMailDomainsForUser($orderBy: [String], $filters: JSONString) {
+  items: editableMailDomainsForUser(orderBy: $orderBy, filters: $filters) {
+    id
+    domain
+    isPublic
+    canEdit
+    canDelete
+  }
+}
+
+mutation createMailDomain($input: CreateMailDomainInput!) {
+  createMailDomain(input: $input) {
+    mailDomain {
+      id
+      domain
+      isPublic
+      canEdit
+      canDelete
+    }
+  }
+}
+
+mutation patchMailDomain($input: [BatchPatchMailDomainInput]!) {
+  batchMutation: batchPatchMailDomain(input: $input) {
+    items: mailDomains {
+      id
+      domain
+      isPublic
+      canEdit
+      canDelete
+    }
+  }
+}
+
+mutation deleteMailDomain($id: ID!) {
+  deleteMailDomain(id: $id) {
+    ok
+  }
+}

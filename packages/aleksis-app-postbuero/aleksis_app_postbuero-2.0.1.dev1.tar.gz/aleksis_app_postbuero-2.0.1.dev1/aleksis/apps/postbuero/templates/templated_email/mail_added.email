@@ -1,0 +1,24 @@
+{% extends "templated_email/base.email" %}
+
+{% load i18n %}
+
+{% block subject_content %}{% blocktrans with address=address %}New email address: {{ address }}{% endblocktrans %}{% endblock %}
+
+
+{% block plain_content %}
+    {% blocktrans with username=user.username full_name=user.person.full_name %}
+    The user {{ username }} ({{ full_name }}) has registered the following email address:
+    {% endblocktrans %}
+    {{ address }}
+{% endblock %}
+
+{% block html_content %}
+    <p>
+        {% blocktrans with username=person.user.username full_name=person.full_name %}
+            The user {{ username }} ({{ full_name }}) has registered the following email address:
+        {% endblocktrans %}
+    </p>
+    <div>
+        <h4>{{ address }}</h4>
+    </div>
+{% endblock %}
