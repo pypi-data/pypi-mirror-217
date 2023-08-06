@@ -1,0 +1,10 @@
+tootapari/__init__.py,sha256=ufWpizJMeON1PpRaYVIQ0QPXWVd_HkZCemTmtiNpoYo,96
+tootapari/napari.yaml,sha256=XWsNcICDKvwH6P5G_Q19JjF9D0uF5fNqoSIf1FDJOXk,272
+tootapari/widget.py,sha256=IQOtAiRKCtyA-DWQuruwxkiVKNAS8lJ3CbNCJSKCjng,2682
+tootapari/_tests/__init__.py,sha256=yZ4cbDVMXFn9MJoKM_Ar4Ynss-Q32WKkuMlIZTZwXsg,181
+tootapari-0.0.1.dist-info/LICENSE,sha256=J-KumcohP5g1V8sGkRvy9S0DwFxONpP-D7Jw6-T0bFY,1490
+tootapari-0.0.1.dist-info/METADATA,sha256=XvH7cRtjYdNnIguwh2xrmy_qVixH_MKKnud3iObrrEI,4105
+tootapari-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+tootapari-0.0.1.dist-info/entry_points.txt,sha256=fOYuesrFeWk-qBG5VNGJ1WyAWZuwdKM8xtk1QP42Bfc,52
+tootapari-0.0.1.dist-info/top_level.txt,sha256=uu5rRQ6nYdSopGpITJxfdMQWsyZKMvWlQKhB9rlvPIc,10
+tootapari-0.0.1.dist-info/RECORD,,
