@@ -1,0 +1,9 @@
+README.md
+setup.py
+SendSingleW10/Funciones.py
+SendSingleW10/__init__.py
+SendSingleW10.egg-info/PKG-INFO
+SendSingleW10.egg-info/SOURCES.txt
+SendSingleW10.egg-info/dependency_links.txt
+SendSingleW10.egg-info/requires.txt
+SendSingleW10.egg-info/top_level.txt
