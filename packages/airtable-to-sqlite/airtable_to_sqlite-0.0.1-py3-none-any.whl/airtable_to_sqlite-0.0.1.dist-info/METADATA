@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: airtable-to-sqlite
+Version: 0.0.1
+Summary: Export Airtable bases to an sqlite database
+Project-URL: Documentation, https://github.com/kanedata/airtable-to-sqlite#readme
+Project-URL: Issues, https://github.com/kanedata/airtable-to-sqlite/issues
+Project-URL: Source, https://github.com/kanedata/airtable-to-sqlite
+Author-email: David Kane <david@dkane.net>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Requires-Dist: click
+Requires-Dist: diskcache
+Requires-Dist: pyairtable
+Requires-Dist: python-dotenv
+Requires-Dist: sqlite-utils
+Requires-Dist: tqdm
+Description-Content-Type: text/markdown
+
+# Airtable to SQlite
+
+[![PyPI - Version](https://img.shields.io/pypi/v/airtable-to-sqlite.svg)](https://pypi.org/project/airtable-to-sqlite)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/airtable-to-sqlite.svg)](https://pypi.org/project/airtable-to-sqlite)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install airtable-to-sqlite
+```
+
+## License
+
+`airtable-to-sqlite` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
