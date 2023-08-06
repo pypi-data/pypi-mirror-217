@@ -1,0 +1,11 @@
+pyrarecomb/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyrarecomb/compare_enrichment.py,sha256=BdOeH2OuTo_TuIe0VDbAxwDpndyNAq4YzShJyLoMH2w,10379
+pyrarecomb/compare_enrichment_depletion.py,sha256=K1dkeqVYc8q-keaMoJrB2yerLt1HZbKPBNisUoHiZso,9576
+pyrarecomb/compare_enrichment_modifiers.py,sha256=SSdc0UDkDunqHACaR0MgnQrY8gj4IRCZBwg2yx2Qjqo,10423
+pyrarecomb/helpers.py,sha256=OadJrla-tsBHNdgOR0dPYC6LsNZ6ohqT5FfhTRqFHjM,6483
+pyrarecomb/run_apriori_freqitems.py,sha256=Yrqw-fICXCAuDMW9vODhVKj3AEURjaqN5MMitbAxthA,2766
+pyrarecomb-0.0.1.dist-info/LICENSE,sha256=XJ1ZhKrIAguer4uzzCYXpNaLZ8XkOzw7Via0QrwVGu4,1072
+pyrarecomb-0.0.1.dist-info/METADATA,sha256=UEU-Pu9Gs0LOnxq54VVNNPOWfawb2Uc6Wmmn5xoOsv8,3579
+pyrarecomb-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pyrarecomb-0.0.1.dist-info/top_level.txt,sha256=HS4Av1zoIAKBRfUeR3gXmlj2DKchxEUE3bt41y_x5rU,11
+pyrarecomb-0.0.1.dist-info/RECORD,,
