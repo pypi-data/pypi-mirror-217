@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/tupack/__init__.py
+src/tupack/dates.py
+src/tupack.egg-info/PKG-INFO
+src/tupack.egg-info/SOURCES.txt
+src/tupack.egg-info/dependency_links.txt
+src/tupack.egg-info/top_level.txt
