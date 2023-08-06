@@ -1,0 +1,15 @@
+dalec_caldav/__init__.py,sha256=Zn1KFblwuFHiDRdRAiRnDBRkbPttWh44jKa5zG2ov0E,22
+dalec_caldav/apps.py,sha256=3jnFPhXF222dcBCqc48c4QEHjp5Nm1CTJUsSQR-Aodo,155
+dalec_caldav/proxy.py,sha256=1JyX-mp9HwBRvkFMzgIwJS1wTCxsc-aHBjN6EA4WFDA,6445
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/apps.py,sha256=NyMhKeM1B5EQaghDeLQeMRPbuKRsE7IjxsIQIxBcz6E,147
+tests/models.py,sha256=18PxK2PWGtAM84NYgW9Pk3od_MnlV7dc1EP3TJ_UQRE,167
+tests/settings.py,sha256=NSHNSRW3S1ABoRRrcBwzSaCbyUzD9-yiV4xYuH03Q8s,1649
+tests/tests.py,sha256=QIR1738HAzHfLWdAjgd-CB57w9uQp7Mpw0G1QVgEbqI,10106
+tests/urls.py,sha256=7GHhZLpx9F0iwJQjkyc9ZYf9w2zfQVv52NkLBRCkcjs,100
+dalec_caldav-0.2.0.dist-info/AUTHORS,sha256=25lepNhsPRAynhbju9D_uWjBXW66UAg2nwZ9TbFuc80,172
+dalec_caldav-0.2.0.dist-info/LICENSE,sha256=EGN4gy6PXEDM3E_s_EAMw2BKzz-Stkoebv6sPBZ9ma4,1528
+dalec_caldav-0.2.0.dist-info/METADATA,sha256=k8evwyvy25ZlZ88ism3aCtuXlG18obcy-opXHxtY26U,4791
+dalec_caldav-0.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+dalec_caldav-0.2.0.dist-info/top_level.txt,sha256=w5vRkXY6UdP62w1pK44HPG3lMsCDoHAQtaEBJQkxEJE,19
+dalec_caldav-0.2.0.dist-info/RECORD,,
