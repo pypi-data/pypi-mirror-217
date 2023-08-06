@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: fastws
+Version: 0.1.1
+Summary: FastWS framework. A WebSocket wrapper around FastAPI with auto-documentation using AsyncAPI.
+Author: Endre Krohn
+Author-email: endre@skript.no
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: fastapi (==0.100.0-beta3)
+Description-Content-Type: text/markdown
+
+
