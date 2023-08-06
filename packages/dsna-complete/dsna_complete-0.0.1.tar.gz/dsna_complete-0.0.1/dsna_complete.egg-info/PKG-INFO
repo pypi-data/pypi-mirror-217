@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: dsna-complete
+Version: 0.0.1
+Summary: "Automate machine learning"
+Requires-Python: >=3.10
+Provides-Extra: automl
