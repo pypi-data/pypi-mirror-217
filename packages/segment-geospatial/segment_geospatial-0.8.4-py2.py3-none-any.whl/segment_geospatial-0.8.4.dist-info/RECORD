@@ -1,0 +1,10 @@
+samgeo/__init__.py,sha256=bl-IDmw1V16c9fmDTShbeqUGwhJbFOOnw_1NnB8h3P8,157
+samgeo/common.py,sha256=YKGTRPinTcD7Fbpq7HHGOcb_p_9grbzocosZOnWKg_E,92951
+samgeo/samgeo.py,sha256=nBp8tNlDlkqXFTM9dJphW6xCm6P_bYU0T4zL_uMOL0I,30723
+samgeo/text_sam.py,sha256=-GuVQpBg-zqVEdq-tA8c8d0HVjg65Lb9fwz4sKkpWmA,19497
+segment_geospatial-0.8.4.dist-info/LICENSE,sha256=vN2L5U7cZ6ZkOHFmc8WiGlsogWsZc5dllMeNxnKVOZg,1070
+segment_geospatial-0.8.4.dist-info/METADATA,sha256=4Ffiaq513tj5E8vnh7oPodIRAWIjWe30TdZFGN61id4,8501
+segment_geospatial-0.8.4.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+segment_geospatial-0.8.4.dist-info/dependency_links.txt,sha256=nnyTq-_n2ekoHTqAhMWlG4tqYzWdKEgwNEJzqaGEP6s,122
+segment_geospatial-0.8.4.dist-info/top_level.txt,sha256=qmuxRrJ2s8MYWBdoBivlvEHHQkmhqLlXWqOyzEGP9XA,7
+segment_geospatial-0.8.4.dist-info/RECORD,,
