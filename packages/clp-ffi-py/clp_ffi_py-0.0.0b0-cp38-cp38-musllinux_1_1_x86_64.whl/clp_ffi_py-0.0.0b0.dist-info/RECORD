@@ -1,0 +1,15 @@
+clp_ffi_py.libs/libstdc++-a9383cce.so.6.0.28,sha256=Wy9UCdwS1rwI9GU5e7qE61S0AkRqqwti1q_adWSs-Rk,2447393
+clp_ffi_py.libs/libgcc_s-a04fdf82.so.1,sha256=YxqJNaesQMhDswHEQpXsiLnVvMBBbYO6KYMDZFPWKSM,81257
+clp_ffi_py-0.0.0b0.dist-info/METADATA,sha256=WHA26jSNIzXzGCGXR24VCNh9TmgJGrdoI2bMedTazxo,4398
+clp_ffi_py-0.0.0b0.dist-info/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+clp_ffi_py-0.0.0b0.dist-info/top_level.txt,sha256=oJlQf7Hnz9l2Yum2B9WNNVFDMdgnuqibAtxChyZJtc8,11
+clp_ffi_py-0.0.0b0.dist-info/WHEEL,sha256=NOAhgw20kYU5I9Nb1TPKWuNrdVfBibm59YwSQWPYWAU,111
+clp_ffi_py-0.0.0b0.dist-info/RECORD,,
+clp_ffi_py/utils.py,sha256=T_-97Fw7vT6pN4TUA_qiN3hzW_hQ_vs4mBzaa8dpVcw,1079
+clp_ffi_py/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clp_ffi_py/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clp_ffi_py/FileReader.py,sha256=8wEbXmehDk4eeuHx0ilIT0LDwctuwWX-lff59cCM0iI,2765
+clp_ffi_py/CLPFourByteEncoder.cpython-38-x86_64-linux-gnu.so,sha256=hsUtcoE-aYP06tZeNXgme8GDUPgoRe91LBTH4rmwY24,2835121
+clp_ffi_py/CLPIRDecoder.pyi,sha256=ytek9-3Yve4TkghoCTc8nSkdVcJrAFIyF16ojbnJXJc,930
+clp_ffi_py/CLPIRDecoder.cpython-38-x86_64-linux-gnu.so,sha256=wIuFgcIIcxhJmj_mWtWz_mK1ONBbFi6PgmoZSjKDPSw,5877217
+clp_ffi_py/CLPFourByteEncoder.pyi,sha256=5Pu-7hM5TKW-mMJsJXoRO-zXTRKVYlMfaGwH9L0TKH0,303
