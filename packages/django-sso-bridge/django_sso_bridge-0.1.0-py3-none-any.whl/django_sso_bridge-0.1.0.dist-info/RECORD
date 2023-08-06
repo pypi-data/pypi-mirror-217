@@ -1,0 +1,9 @@
+django_sso_bridge/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_sso_bridge/access_token_response.py,sha256=ttzKiPrvSgScqZptJhF1UD3qUlyA2RZyfc-I5r5f0LY,713
+django_sso_bridge/auth_sso.py,sha256=qBDhBFlm0YeVs0dCZjiX8JW-vDtS2Dy6owXxSWfsrhk,3351
+django_sso_bridge/auth_user.py,sha256=896oFyk0LdFjRZtxENlo8S84dAyWgVXmsPp6GewV5Lw,690
+django_sso_bridge-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+django_sso_bridge-0.1.0.dist-info/METADATA,sha256=B8j0FK3tcUusbwMT0EW_kmlJgDABwqkhPs_o1sgBaeQ,403
+django_sso_bridge-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+django_sso_bridge-0.1.0.dist-info/top_level.txt,sha256=1ofdNyOzLeSFpvLMx9TZtJdxMFpcX6VdVQjC5Uc0Al8,18
+django_sso_bridge-0.1.0.dist-info/RECORD,,
