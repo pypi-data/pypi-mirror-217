@@ -1,0 +1,11 @@
+metoffice_weather_cli/__init__.py,sha256=gsjJfV3aDy0pn1Y_0gqio9xYFLdi9dIV86I4iFS57ac,34
+metoffice_weather_cli/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+metoffice_weather_cli/configurator.py,sha256=JYp8jDFfNxJx3rJj3uaRDjTuu3xkvTYbcFKBMXRHRXE,2214
+metoffice_weather_cli/main.py,sha256=GOVb3sZ0tm4F_Lz11IK2frzp3BVei98j1lt-n5Okpds,2675
+metoffice_weather_cli/weather.py,sha256=wlJyfrW6yHMAnnxh5YVnJ-GcoWYilE2mjxT8f2bV-XA,3897
+metoffice_weather_cli/weathercodes.py,sha256=j5Yq-thpFY5q5zaCs7K5-hDelnRQSFIwPEaWivbI-Yw,1451
+metoffice_weather_cli-0.1.0.dist-info/LICENSE,sha256=oO50YGSwbQnKsHaBFuwmX9DUUmHUCHya0saYoHx6rA4,35803
+metoffice_weather_cli-0.1.0.dist-info/METADATA,sha256=1yk24IjALWExeUu0ga3XJx8QnuX__SuhhfBkSM-EqVw,43098
+metoffice_weather_cli-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+metoffice_weather_cli-0.1.0.dist-info/top_level.txt,sha256=-NsU1PDuNvQFvupI1oNGiaFHinsZqsQNtoRoNw8Y1X4,22
+metoffice_weather_cli-0.1.0.dist-info/RECORD,,
