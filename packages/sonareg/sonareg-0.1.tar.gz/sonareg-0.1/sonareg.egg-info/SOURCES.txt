@@ -1,0 +1,5 @@
+setup.py
+sonareg.egg-info/PKG-INFO
+sonareg.egg-info/SOURCES.txt
+sonareg.egg-info/dependency_links.txt
+sonareg.egg-info/top_level.txt
