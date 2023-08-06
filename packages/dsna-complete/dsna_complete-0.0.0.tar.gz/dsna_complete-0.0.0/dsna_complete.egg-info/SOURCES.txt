@@ -1,0 +1,14 @@
+pyproject.toml
+setup.cfg
+setup.py
+automl/__init__.py
+automl/generate.py
+automl/process.py
+automl/test.py
+automl/train.py
+base/utils/servant.py
+dsna_complete.egg-info/PKG-INFO
+dsna_complete.egg-info/SOURCES.txt
+dsna_complete.egg-info/dependency_links.txt
+dsna_complete.egg-info/requires.txt
+dsna_complete.egg-info/top_level.txt
