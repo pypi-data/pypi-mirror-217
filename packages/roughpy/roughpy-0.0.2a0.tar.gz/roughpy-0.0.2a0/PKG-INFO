@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: roughpy
+Version: 0.0.2a0
+Keywords: data streams rough paths signatures
+License: BSD-3-Clause
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Description-Content-Type: text/markdown
+
+Version 0.0.2-alpha:
+  - Added datetime and timedelta object support to tick data parsing
+  - Expanded build system to include more versions of Python
+  - Stabilised compilation on all three platforms.
+  - Fixed numerous bugs in the build system
+
+Version 0.0.1-alpha:
+  - First alpha release
