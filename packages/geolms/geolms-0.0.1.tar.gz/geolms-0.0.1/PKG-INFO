@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: geolms
+Version: 0.0.1
+Summary: A python package for mapping
+Home-page: https://github.com/masauso2/geolms
+Author: Masauso Sakala
+Author-email: masauso2@gmail.com
+License: MIT license
+Keywords: geolms
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# geolms
+
+
+[![image](https://img.shields.io/pypi/v/geolms.svg)](https://pypi.python.org/pypi/geolms)
+[![image](https://img.shields.io/conda/vn/conda-forge/geolms.svg)](https://anaconda.org/conda-forge/geolms)
+
+
+**A python package for mapping**
+
+
+-   Free software: MIT license
+-   Documentation: https://masauso2.github.io/geolms
+    
+
+## Features
+
+-   TODO
