@@ -1,0 +1,5 @@
+[console_scripts]
+invenio-subjects-fast = invenio_subjects_fast.cli:cli
+
+[invenio_rdm_records.fixtures]
+invenio_subjects_fast = invenio_subjects_fast.vocabularies
