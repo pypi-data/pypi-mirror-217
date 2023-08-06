@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mypyref"
+authors = [
+    {name = "Steampunk Wizard", email = "mypyref@steampunkwizard.ca"}
+]
+description = "Standard Python reference documentation in a local server"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+dependencies = [
+    # "platformdirs >=3.2.0",
+    # "wizlib >=0.2.2",
+    # "windows-curses; platform_system=='Windows'",
+    # "reportlab >=4.0.4"
+]
+dynamic = ["version"]
+
+[tool.setuptools.package-dir]
+mypyref = "mypyref"
+
+[project.scripts]
+mypyref = "mypyref.handler:main"
+
+[tool.setuptools.dynamic]
+version = {file = [".version"]}
