@@ -1,0 +1,5 @@
+nepali_datetime
+
+[dev]
+pytest>=7.4
+twine
