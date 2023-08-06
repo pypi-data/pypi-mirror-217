@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: symagen
+Version: 0.1.0
+Summary: Synthetic manifold generation.
+Author: Morgan Prior <meprior424@gmail.com>, Najib Ishaq <najib_ishaq@zoho.com>
+Author-email: Morgan Prior <meprior424@gmail.com>, Najib Ishaq <najib_ishaq@zoho.com>
+License: MIT
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# SyMaGen
+
+Synthetic manifold generation.
+
