@@ -1,0 +1,13 @@
+tensorboard>=2.4.1
+torch==1.13.1
+opendr-toolkit-compressive-learning
+imageio>=2.6.0
+tqdm
+protobuf<=3.20.0
+opendr-toolkit-engine
+opencv-python
+librosa==0.8.0
+tensorboard==2.4.1
+torchvision==0.14.1
+opendr-toolkit-object-detection-2d
+imageio==2.6.0
