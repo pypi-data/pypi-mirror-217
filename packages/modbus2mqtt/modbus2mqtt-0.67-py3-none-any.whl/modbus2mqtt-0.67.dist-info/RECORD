@@ -1,0 +1,10 @@
+modbus2mqtt/__init__.py,sha256=-JIt3g1eBf4bVQNNQd4JBeQNA7o0LK0W9tYKKX_r5s8,22
+modbus2mqtt/__main__.py,sha256=jiCPGJ1VB_PmEns80t0QJwJK9fvLZbOM-HCbbT69MLQ,59
+modbus2mqtt/addToHomeAssistant.py,sha256=qfkte3bGLToZMFw27Egzd0KmJPgDj3NYhJ9CdpsZgxA,2425
+modbus2mqtt/modbus2mqtt.py,sha256=_3yK6gC5uiin1QxdxzwB3iVqmBM9zTGWg6GOYMrzrfo,37823
+modbus2mqtt-0.67.dist-info/LICENSE,sha256=VurVKNXkHLRHNvBZphHcEH2tt6aWVQPg0niDGXlr0QY,1199
+modbus2mqtt-0.67.dist-info/METADATA,sha256=ImW0PNta1LUlCHP0RYORfXXZ8jG3wvvsu235zUjQLg4,278
+modbus2mqtt-0.67.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+modbus2mqtt-0.67.dist-info/entry_points.txt,sha256=ap6oi9paTP_v3uJwUSTfKR5AarndPBetJib5SuOJddU,61
+modbus2mqtt-0.67.dist-info/top_level.txt,sha256=Pp2tAMLzuQr0NgTvOO2inmMLGgYecUNR8Ga-hwGwe4Y,12
+modbus2mqtt-0.67.dist-info/RECORD,,
