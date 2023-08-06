@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+audio_stats/__init__.py
+audio_stats/audio_stats.py
+audio_stats/flac_reader.py
+audio_stats/wav_reader.py
+audio_stats.egg-info/PKG-INFO
+audio_stats.egg-info/SOURCES.txt
+audio_stats.egg-info/dependency_links.txt
+audio_stats.egg-info/requires.txt
+audio_stats.egg-info/top_level.txt
