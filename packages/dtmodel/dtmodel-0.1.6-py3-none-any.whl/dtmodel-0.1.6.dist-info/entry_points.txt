@@ -1,0 +1,3 @@
+[console_scripts]
+devtest=mypackage:test.run_tests[test]
+
