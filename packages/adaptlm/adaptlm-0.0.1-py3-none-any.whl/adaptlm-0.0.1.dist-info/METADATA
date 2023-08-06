@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: adaptlm
+Version: 0.0.1
+Summary: Easy library for adapting and optimizing large models for production on specific domains
+Home-page: http://github.com/vietanhdev/adaptlm
+Author: Viet Anh Nguyen
+Author-email: vietanh.dev@gmail.com
+License: MIT
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+License-File: LICENSE
+
