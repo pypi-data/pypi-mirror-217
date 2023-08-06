@@ -1,0 +1,13 @@
+micomputing/__init__.py,sha256=yyyq5e8skuSOGGCoxCxIUzuui8J57RWfpiuqDOXOy6Q,2361
+micomputing/data.py,sha256=3WdXIjealwDZXmO2vfC8gv7gCzwmIjHVZyWcNk_5Mxs,29365
+micomputing/funcs.py,sha256=t_59ACCdyOljQL87Jc0VhnMRgTzJFlqYVIgTwgr6ppo,37891
+micomputing/metrics.py,sha256=tLu1uN8DNvWbDyBXT52qWa_fEpLpDU1Y-aXbyz4uA2Y,54244
+micomputing/network.py,sha256=svvRkZCWOl_raEqPcfjPxPblhUDp0b9NnoChDHa4tb4,23556
+micomputing/plot.py,sha256=8P8xbVS7fXIjpw_6LuHgvMq4JHD8AEftdhj65fQaK14,23394
+micomputing/stdio.py,sha256=Y-PX__1f2TN4VGSBNIo8P_zCqscqiMgirMnU6lhV5y4,41826
+micomputing/test.py,sha256=IZfxTzMDIoomK4nztAjJNVNQZjem-OBciv656on3uuI,1215
+micomputing/trans.py,sha256=lxUTZbOcvGP5wIvwT0R26uLO1BZyfeslXSz9ml0oclQ,98769
+micomputing-1.1.36.dist-info/METADATA,sha256=R2h8mA2SD1wa-t3lvaURu3mmNrU1RVNHOcY1rmnTNtQ,1358
+micomputing-1.1.36.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+micomputing-1.1.36.dist-info/top_level.txt,sha256=OqgyD-HTrb02KLyuW_FpHBTnfGMQ5JWDQpV2yrQJos0,12
+micomputing-1.1.36.dist-info/RECORD,,
