@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: call-openai-gpt
+Version: 1.0.0
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: python-dotenv
+
+```markdown
+# Call OpenAI GPT, OpenAI GPT Python Wrapper
+用 Python 以 API 的方式呼叫 OpenAI 的 GPT 服務。
+
+## 前置需求
+1. Python 3.6 或以上
+2. `requests` 套件
+3. `python-dotenv` 套件
+4. OPENAI_API_KEY，在 `.env` 檔案中設定
+
+## 安裝
+使用 pip 從 GitHub 安裝：
+
+```bash
+python3 -m pip install call-openai-gpt
+```
+
+## call_openai_gpt 參數
+```
+1. `prompt` (必需): 這是模型的輸入，模型會根據這個輸入來進行生成。你可以給任何的提示、問題，或甚至是故事的開盤等。
+2. `model` (預設值: "gpt-4"): 這是你希望使用的模型。
+3. `temperature` (預設值: 0): 此參數表示生成的隨機性。若將此參數設為高值，將造成生成結果更多變化和創新，但可能較不相關或不合理。若設為較低的值，則生成的輸出較確定且一致，但可能較缺乏創新。
+4. `max_tokens` (預設值: 無): 這個參數可以設定生成的最大字數。如果你有特定的長度需求，可以考慮設定此參數。請注意，設定此參數的數值太高或太低都可能導致生成結果品質下降。
+```
+
+```python
+from call_openai_gpt import call_openai_gpt
+prompt = "你好!用繁體中文打招呼吧~"
+response = call_openai_gpt(prompt)
+print(response)
+```
