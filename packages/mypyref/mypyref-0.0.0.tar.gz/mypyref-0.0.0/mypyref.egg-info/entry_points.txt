@@ -1,0 +1,2 @@
+[console_scripts]
+mypyref = mypyref.handler:main
