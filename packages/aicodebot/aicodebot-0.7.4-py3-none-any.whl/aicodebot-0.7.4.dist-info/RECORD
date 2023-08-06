@@ -1,0 +1,17 @@
+aicodebot/.aicodebot.template,sha256=3E3DOKF-zEnAkB1rlEN4rjCicIi1PoSB_QoiUeC7-2M,119
+aicodebot/__init__.py,sha256=TxKRqX_aXiyIxSna5QKWDFuH3UX9LPWLtc4w7PXiBg4,18
+aicodebot/agents.py,sha256=S3u3i7k3OivFizZ7-C5sEglwtZ7bvlP4qaIbZUHlIK4,1576
+aicodebot/cli.py,sha256=4unQURvJMF-Zdcf4O87A_8l2d4Jmgx7v-9ASbeZ4LRM,15281
+aicodebot/helpers.py,sha256=ytfL8YpHmnk86hnJiSOIjl5rFkuWG4oPgodEg990CkY,2934
+aicodebot/prompts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aicodebot/prompts/alignment.yaml,sha256=6XGdPcVVsLNT7V--pohZ1Pa3AvbfO6rDH6dw7Y5w8do,814
+aicodebot/prompts/commit_message.yaml,sha256=lFj9MWr6BViQ69yP0srjkq5M-Bbap48Z1wU0hKYxpaA,1423
+aicodebot/prompts/debug.yaml,sha256=0w3XBDndIpNa4b003HnPN7K1dccRN14SNvHpRcWDr_U,387
+aicodebot/prompts/fun_fact.yaml,sha256=ERl5ICSq7MQ2wKIEjEi0mcZ6o3c7MsO_WosjEg1Tfy0,245
+aicodebot/prompts/review.yaml,sha256=fi0QExWjscJ20pKZvpC4OA_KZYopsBzWZ86SSwE2j54,1394
+aicodebot-0.7.4.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+aicodebot-0.7.4.dist-info/METADATA,sha256=IExhezneYbGp45viM0Q_FaUmoO21HFAgUs3bcuxT3rY,10948
+aicodebot-0.7.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+aicodebot-0.7.4.dist-info/entry_points.txt,sha256=tpMRSyq_j-gOc7VOPImCnLdrbp8rJeYfhBbkvomhTnM,48
+aicodebot-0.7.4.dist-info/top_level.txt,sha256=7cCIgwqJaGkr8JzvTvtEsJGqIEepBHEYWx5aG6D09jQ,10
+aicodebot-0.7.4.dist-info/RECORD,,
