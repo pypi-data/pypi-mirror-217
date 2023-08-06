@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: cmeel-metis
+Version: 5.1.0
+Summary: cmeel distribution for METIS
+Requires-Python: >= 3.8
+License-Expression: Apache-2.0
+Home-page: https://github.com/cmake-wheel/cmeel-metis
+Project-URL: Repository, https://github.com/cmake-wheel/cmeel-metis.git
+Requires-Dist: cmeel
+Description-Content-Type: text/markdown
+
+# CMeel METIS
+
+[![PyPI version](https://badge.fury.io/py/cmeel-metis.svg)](https://pypi.org/project/cmeel-metis)
+[![Release](https://github.com/cmake-wheel/cmeel-metis/actions/workflows/release.yml/badge.svg)](https://github.com/cmake-wheel/cmeel-metis/actions/workflows/release.yml)
+
+[METIS](http://glaros.dtc.umn.edu/gkhome/metis/metis/overview) distribution for cmeel packages.
