@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: memotools
+Version: 0.0.1
+Summary: Tools for memoizing computations
+Home-page: https://github.com/wuthefwasthat/memotools
+Author: Jeffrey Wu
+Requires-Python: >=3.7
+License-File: LICENSE

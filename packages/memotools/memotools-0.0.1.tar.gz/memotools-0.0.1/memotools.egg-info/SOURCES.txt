@@ -1,0 +1,11 @@
+.gitignore
+LICENSE
+README.md
+setup.py
+memotools/__init__.py
+memotools/tag.py
+memotools.egg-info/PKG-INFO
+memotools.egg-info/SOURCES.txt
+memotools.egg-info/dependency_links.txt
+memotools.egg-info/top_level.txt
+tests/test_main.py
