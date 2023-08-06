@@ -1,0 +1,3 @@
+include psychopy_phidgets/experiment/components/phidgets/classic/*.png
+include psychopy_phidgets/experiment/components/phidgets/dark/*.png
+include psychopy_phidgets/experiment/components/phidgets/light/*.png

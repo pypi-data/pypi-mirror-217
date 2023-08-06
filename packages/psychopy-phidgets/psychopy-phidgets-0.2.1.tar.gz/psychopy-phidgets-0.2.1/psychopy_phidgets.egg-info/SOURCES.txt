@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+psychopy_phidgets/__init__.py
+psychopy_phidgets/phidgets.py
+psychopy_phidgets.egg-info/PKG-INFO
+psychopy_phidgets.egg-info/SOURCES.txt
+psychopy_phidgets.egg-info/dependency_links.txt
+psychopy_phidgets.egg-info/entry_points.txt
+psychopy_phidgets.egg-info/not-zip-safe
+psychopy_phidgets.egg-info/requires.txt
+psychopy_phidgets.egg-info/top_level.txt
+psychopy_phidgets/component/__init__.py
+psychopy_phidgets/component/phidgets.py
