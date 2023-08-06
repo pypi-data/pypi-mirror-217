@@ -1,0 +1,114 @@
+Metadata-Version: 2.1
+Name: sinkove
+Version: 0.0.2
+Summary: Library for interacting with Sinkove datasets
+Home-page: https://github.com/sinkove/sk-sdk-python.git
+Author: Luan
+Author-email: luan@sinkove.com
+License: MIT
+Keywords: datasets,machinelearning,medical,images,sdk,synthetic
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+Requires-Dist: typing-extensions (>=4.0.1)
+Provides-Extra: dev
+Requires-Dist: bumpversion ; extra == 'dev'
+Requires-Dist: ipython ; extra == 'dev'
+Requires-Dist: ipdb ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+Requires-Dist: build ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: pyright ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: dagger-io ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: docutils ; extra == 'docs'
+Requires-Dist: sphinx-autobuild ; extra == 'docs'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: pytest-mock ; extra == 'test'
+Requires-Dist: coverage ; extra == 'test'
+Requires-Dist: flake8 ; extra == 'test'
+
+# Sinkove Python Library
+
+This repository contains Sinkove's Python client.
+
+## Installing the project 
+
+#### Requirements
+- **python** >= 3.10
+- **make** >= 4.3
+
+1. Clone this repository.
+2. Go to the project folder and run the following command to create a new virtual environment.
+	```bash
+	python -m venv .venv
+	```
+3. Activate your new virtual environment.
+	```bash
+	source ./venv/bin/activate
+	```
+4. Configure your environmet using make.
+	```bash
+	make setup 
+	```
+
+## Tests
+
+### Running tests on your system
+
+#### Dependencies
+
+- **make** >= 4.3
+- **python** == 3.10
+
+```bash
+make setup
+make test
+```
+
+### Running test on docker
+
+- **make** >= 4.3
+- **docker** >= 20.10.17
+
+```bash
+pip install dagger-io
+make dagger-test
+```
+
+## Releases
+
+We use `bumpversion` for version management. `bumpversion` is a tool that
+creates a new git tag for the current release and changes the code to
+replace the version where it's necessary. After merging all the changes
+into the branch main, to release a new version, follow these steps:
+
+1. Update the branch main locally.
+    ```bash
+    git checkout main
+    git pull origin main
+    ```
+2. Activate your previously configured virtual environment.
+    ```bash
+    source .venv/bin/activate
+    ```
+3. Run `bumpversion` according to the **semantic version** pattern. You
+	have the options `major`, `minor` and `patch`.
+    ```bash
+    bumpversion minor
+    ```
+4. Push the generated tag to the remote.
+    ```bash
+    git push origin main --tags
+    ```
+5. The CI/CD pipeline is configured to deploy a new package everytime a
+new tag is pushed. You can check the pipeline progress on the Github Actions UI.
