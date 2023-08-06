@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: diveplane-amalgam-api
+Version: 2.3.9
+Summary: A direct interface with Amalgam compiled dll or so.
+Home-page: https://www.diveplane.com
+Author: Diveplane Corporation
+Author-email: support@diveplane.com
+License: UNKNOWN
+Project-URL: Documentation, https://docs.community.diveplane.com/
+Keywords: artificial intelligence,machine learning
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: Microsoft :: Windows :: Windows 11
+Classifier: Operating System :: POSIX :: Linux
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy (>=1)
+Requires-Dist: semantic-version (>=2.8.5)
+Provides-Extra: dev
+Requires-Dist: pip-tools ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pytest-mock ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+
+# Amalgam python api
+
+This module loads an amalgam library, and exposes an api for communicating to it.
+
+## Setup
+
+The default location for the amalgam library files is _~/.diveplane/lib/dev/amlg/_ ie _~/.diveplane/lib/dev/amlg/amalgam.so_ for linux and _~/.diveplane/lib/dev/amlg/Amalgam.dll for windows.
+
+If download is set to True (and no library_path is set), then the wrapper will attempt to retrieve the correct library file from the appropriate repository.  Pass in the download_apikey parameter to the Amalgam constructor or set the __DP_CONFIG_DIVEPLANE_AMLG_APIKEY__ environment variable to set the apikey to access the repository.
+
+```python
+return Amalgam(version='10.0.3', download=True, debug=True)
+```
+
+Setting version to 'latest' can be used to automatically update to the latest on every use.
+
+
+## Build Status 
+
+[![Build Status](https://diveplane.visualstudio.com/dp/_apis/build/status/components/amalgam-py?branchName=master)](https://diveplane.visualstudio.com/dp/_build/latest?definitionId=43&branchName=master)
+
+## Versioning
+
+Versioning will occur automatically.  Patch versions are the default, change the PR name suffix to MAJOR/MINOR to change the incremented version level.  Use the PR pipeline build to validate the resulting version.
+
+## CHANGELOG
+
+The CHANGELOG.md will update automatically from PR/Merge-commit information.
+
