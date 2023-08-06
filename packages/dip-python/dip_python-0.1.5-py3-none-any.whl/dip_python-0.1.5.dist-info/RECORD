@@ -1,0 +1,15 @@
+dippy/__init__.py,sha256=3rovyfmwXPc0LSFMdHARPUKJ3IjZDDNrl6G8tujrWso,361
+dippy/algorithms/convert.py,sha256=3PjBL_qdITnYMGSsu4srhOJv92UDpJXjS_EGSEZGoNY,4239
+dippy/algorithms/dft.py,sha256=tY_mA1fff-BQt7FJWjlJKvbGAbkrWPoP6-ZaS-fNs3w,399
+dippy/algorithms/dithering.py,sha256=9krydZ0FQjQYOrpy5g_sKtv0pNsuYB60XvDtBLxvVfo,9945
+dippy/algorithms/filtering.py,sha256=2spDUJF9UWbMBGE1vQzQfzqJfPDTpouRZLTObgkzfh0,761
+dippy/algorithms/kmeans.py,sha256=EttQFKnc0zwPUCrwcIIUPm03BRmG3f-tDjZkZVWQVys,624
+dippy/algorithms/match.py,sha256=PixQHnShAs0Ph7HlO1XsjKPaaPrkeFStK0zBePDt7_s,466
+dippy/algorithms/resize.py,sha256=KoGQ4NdsSZCDtd1FxT5OVWW9akr0WmHLyQtgA5feafc,990
+dippy/utils/io.py,sha256=v0uDw2qfjgKXOumV2NjIL6ytb-DpHgJWBSpWKuP-Q6w,15047
+dippy/utils/jpeg.py,sha256=qTbwXAqwCbFNtVQyBg-_o6tkuUTQvyXlv3W6foun6to,1555
+dippy/utils/print.py,sha256=s1uwfj2yghAEhJIJ4a8Jl5qCqIIKqPNlbN93u4s8C9o,2178
+dip_python-0.1.5.dist-info/METADATA,sha256=oiUsWywuFuF02AHNK9pXtAldYq9fYsTAEkfzty8Kk9w,2288
+dip_python-0.1.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dip_python-0.1.5.dist-info/top_level.txt,sha256=o8l9PmhB-VTmdj9jJkypkmveqop_yecYiPwmzVvdw04,35
+dip_python-0.1.5.dist-info/RECORD,,
