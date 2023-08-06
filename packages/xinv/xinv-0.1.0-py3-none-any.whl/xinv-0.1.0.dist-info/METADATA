@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: xinv
+Version: 0.1.0
+Summary: A CLI tool for generating customized invoices
+Author-email: Kamil Turek <kamil.turek@hotmail.com>
+License: MIT
+Keywords: cli,invoice
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click
+Requires-Dist: Jinja2
+Requires-Dist: pdfkit
+Requires-Dist: pydantic (<2)
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: diff-pdf-visually ; extra == 'dev'
+
+# xinv
+
+A CLI tool for generating customized invoices. The content is hardcoded in
+a configuration file but can be overridden with command options.
+
+Created specifically for personal needs, so probably not suitable for others.
+The tool officially supports and is distributed only for macOS. Very likely,
+it works also on other Unix-like systems but no quality checks are done
+for them.
+
+## Usage
+
+```sh
+$ xinv
+Usage: xinv [OPTIONS] COMMAND [ARGS]...
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  create
+  init
+```
+
+## Contributing
+
+### Running Tests
+
+Besides Python packages required for testing, extra tools have to be installed
+in your system in order to successfully run regression tests.
+Please follow the instructions below.
+
+### macOS
+
+```sh
+brew install wkhtmltopdf imagemagick poppler
+```

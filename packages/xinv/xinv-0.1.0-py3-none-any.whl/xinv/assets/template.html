@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>Document</title>
+    <style>
+      {% include 'style.css' %}
+    </style>
+  </head>
+  <body>
+    <div id="container-date-and-place">
+      <table>
+        <tbody>
+          <tr>
+            <td class="table-header">Place of issue</td>
+          </tr>
+          <tr>
+            <td class="bold">{{ place_of_issue }}</td>
+          </tr>
+          <tr>
+            <td class="table-header">Date of issue</td>
+          </tr>
+          <tr>
+            <td class="bold">{{ date_of_issue }}</td>
+          </tr>
+          <tr>
+            <td class="table-header">Date of sale</td>
+          </tr>
+          <tr>
+            <td class="bold">{{ date_of_sale }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div id="container-seller-and-buyer">
+      <table>
+        <thead>
+          <tr>
+            <th class="table-header">Seller</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              {{ seller.name }}
+              <br />
+              VAT ID: {{ seller.vat_id }}
+              <br />
+              {{ seller.address1 }}
+              <br />
+              {{ seller.address2 }}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table>
+        <thead>
+          <tr>
+            <th class="table-header">Buyer</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              {{ buyer.name }}
+              <br />
+              VAT ID: {{ buyer.vat_id }}
+              <br />
+              {{ buyer.address1 }}
+              <br />
+              {{ buyer.address2 }}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <h1 id="invoice-title">VAT invoice {{ invoice_number }}</h1>
+    <div id="container-items">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Description</th>
+            <th>Unit</th>
+            <th>Quantity</th>
+            <th>Unit net price</th>
+            <th>Total net price</th>
+            <th>VAT rate</th>
+            <th>VAT amount</th>
+            <th>Total gross price</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for item in items %}
+          <tr>
+            <td>{{ loop.index }}</td>
+            <td>{{ item.description }}</td>
+            <td>{{ item.unit }}</td>
+            <td>{{ item.quantity }}</td>
+            <td>{{ item.unit_net_price|localize_decimal }}</td>
+            <td>{{ item.total_net_price|localize_decimal }}</td>
+            <td>{{ item.vat_rate }}</td>
+            <td>{{ item.vat_amount|localize_decimal }}</td>
+            <td>{{ item.total_gross_price|localize_decimal }}</td>
+          </tr>
+          {% endfor %}
+          <tr>
+            <td class="no-border"></td>
+            <td class="no-border"></td>
+            <td class="no-border"></td>
+            <td class="no-border"></td>
+            <td class="no-border bold align-right">Taxrate</td>
+            <td>{{ taxrate.total_net_price|localize_decimal }}</td>
+            <td>{{ taxrate.vat_rate }}</td>
+            <td>{{ taxrate.vat_amount|localize_decimal }}</td>
+            <td>{{ taxrate.total_gross_price|localize_decimal }}</td>
+          </tr>
+          <tr>
+            <td class="no-border"></td>
+            <td class="no-border"></td>
+            <td class="no-border"></td>
+            <td class="no-border"></td>
+            <td class="no-border bold align-right">Total</td>
+            <td>{{ total.total_net_price|localize_decimal }}</td>
+            <td></td>
+            <td>{{ total.vat_amount|localize_decimal }}</td>
+            <td>{{ total.total_gross_price|localize_decimal }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="container-summary">
+      <table>
+        <tbody>
+          <tr>
+            <td>Method of payment</td>
+            <td>transfer</td>
+          </tr>
+          <tr>
+            <td>Account number</td>
+            <td>PL03187010452078106870910003</td>
+          </tr>
+        </tbody>
+      </table>
+      <table>
+        <tbody>
+          <tr class="bold">
+            <td>Total due</td>
+            <td>{{ total.total_gross_price|localize_decimal }} {{ currency }}</td>
+          </tr>
+          <tr>
+            <td>Amount in words</td>
+            <td>{{ total.amount_in_words }} {{ currency }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
