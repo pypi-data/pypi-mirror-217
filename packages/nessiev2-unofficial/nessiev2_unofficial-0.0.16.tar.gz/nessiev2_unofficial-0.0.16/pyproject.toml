@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nessiev2_unofficial"
+version = "0.0.16"
+authors = [
+  { name="Alex Merced", email="alex.merced@dremio.com" },
+]
+description = "An unofficial example of a Nessie V2 Client"
+readme = "readme.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies=[
+  "requests ~=2.28.2",
+  "requests-aws4auth ~=1.2.3",
+  "botocore ~=1.29.159"
+
+]
+
+[project.urls]
+"Homepage" = "https://github.com/AlexMercedCoder/UnofficialNessieV2ClientPython"
+"Bug Tracker" = "https://github.com/AlexMercedCoder/UnofficialNessieV2ClientPython"
