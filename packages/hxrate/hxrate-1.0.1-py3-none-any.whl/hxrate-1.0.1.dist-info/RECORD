@@ -1,0 +1,11 @@
+hxrate/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hxrate/backexchange.py,sha256=UF7laZ659gieLFI842h7sTMOYpGR2-FWNViK7uFtDfQ,7025
+hxrate/hxdata.py,sha256=X2Ioh6jxZ574CSc1_zwodMEN0uQezQhZZgMmP2ZnFxs,5632
+hxrate/methods.py,sha256=JfDpQ-NHgM0cxBs9q87-Bex-7d8POYvaF_Ohvqy_K7o,66655
+hxrate/openfe.py,sha256=r13s5id30QQP3A7R1CfIoAOnsjLtr9LJyOfZGppIQo4,7754
+hxrate/ratefit.py,sha256=9YGe0XLmkp9Gh6PRkX8lcJ2UwMPkpWb8mvq54vYcLsk,89853
+hxrate-1.0.1.dist-info/LICENSE,sha256=ACwmltkrXIz5VsEQcrqljq-fat6ZXAMepjXGoe40KtE,1069
+hxrate-1.0.1.dist-info/METADATA,sha256=KqZqd-tI_xLWvhtJQ2NFmj3qoGCjQ71WeoMAUuoNuY8,1528
+hxrate-1.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+hxrate-1.0.1.dist-info/top_level.txt,sha256=W0t_MxWl5APEiuXZAxwsmBI0sv0Ma_OW3UseBDvEG1s,7
+hxrate-1.0.1.dist-info/RECORD,,
