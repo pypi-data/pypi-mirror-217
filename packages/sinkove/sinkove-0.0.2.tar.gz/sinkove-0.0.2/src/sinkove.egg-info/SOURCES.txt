@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/sinkove/__init__.py
+src/sinkove/__main__.py
+src/sinkove.egg-info/PKG-INFO
+src/sinkove.egg-info/SOURCES.txt
+src/sinkove.egg-info/dependency_links.txt
+src/sinkove.egg-info/not-zip-safe
+src/sinkove.egg-info/requires.txt
+src/sinkove.egg-info/top_level.txt
+tests/__init__.py
+tests/conftest.py
+tests/dummy_test.py

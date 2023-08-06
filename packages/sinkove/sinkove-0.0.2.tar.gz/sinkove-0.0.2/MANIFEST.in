@@ -1,0 +1,4 @@
+include *.py
+include tests/*.py
+include *.md
+include *.toml
