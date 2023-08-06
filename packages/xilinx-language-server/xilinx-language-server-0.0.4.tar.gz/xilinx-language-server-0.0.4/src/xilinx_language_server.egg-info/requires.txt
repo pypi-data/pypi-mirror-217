@@ -1,0 +1,6 @@
+platformdirs
+pygls
+
+[dev]
+neovim
+pytest-cov
