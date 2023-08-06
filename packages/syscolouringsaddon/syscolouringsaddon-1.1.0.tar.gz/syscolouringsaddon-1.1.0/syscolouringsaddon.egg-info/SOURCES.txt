@@ -1,0 +1,6 @@
+setup.py
+syscolouringsaddon/__init__.py
+syscolouringsaddon.egg-info/PKG-INFO
+syscolouringsaddon.egg-info/SOURCES.txt
+syscolouringsaddon.egg-info/dependency_links.txt
+syscolouringsaddon.egg-info/top_level.txt
