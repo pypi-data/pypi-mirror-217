@@ -1,0 +1,9 @@
+from nerdcore.ncdefs import VERSION
+from nerdcore.base_entitiies.command_class import Command
+from nerdcore.utils.nerd.theme_functions import print_t
+
+
+class Version(Command):
+
+    def run(self):
+        print_t(f"Nerd CLI v{VERSION}", 'nerd')
