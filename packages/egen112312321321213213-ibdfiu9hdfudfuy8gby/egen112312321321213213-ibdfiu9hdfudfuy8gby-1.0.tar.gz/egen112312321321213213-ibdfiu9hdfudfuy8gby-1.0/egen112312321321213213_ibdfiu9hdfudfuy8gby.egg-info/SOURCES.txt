@@ -1,0 +1,7 @@
+setup.py
+egen112312321321213213_ibdfiu9hdfudfuy8gby.egg-info/PKG-INFO
+egen112312321321213213_ibdfiu9hdfudfuy8gby.egg-info/SOURCES.txt
+egen112312321321213213_ibdfiu9hdfudfuy8gby.egg-info/dependency_links.txt
+egen112312321321213213_ibdfiu9hdfudfuy8gby.egg-info/top_level.txt
+project/__init__.py
+project/main.py
