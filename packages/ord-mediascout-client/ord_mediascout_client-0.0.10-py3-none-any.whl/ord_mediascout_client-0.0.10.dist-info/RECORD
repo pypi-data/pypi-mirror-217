@@ -1,0 +1,9 @@
+ord_mediascout_client/.env.example.env,sha256=qzDtG_8SS5j4RLLrWrK0opkF_De4WsNXzANfnBdGr0A,73
+ord_mediascout_client/__init__.py,sha256=aVw-3ypyPuhC4W6YRrm9xewBm3L0eW4vDj3Hp07_t7s,3663
+ord_mediascout_client/client.py,sha256=WCpiIHleoko9ge_mC7MrGE0NFgSHzl8wvQSFq9oS-iA,11570
+ord_mediascout_client/config.py,sha256=mK7_3cWvtiUXBEY9fv3gLD66zWKLkHTymyY6IvC7Hi4,362
+ord_mediascout_client/models.py,sha256=T829Ua1lZRgV7pJxdj2bJ6B9MU4j8tMK9dTINbgQ7bQ,28213
+ord_mediascout_client-0.0.10.dist-info/METADATA,sha256=WtCaGjR9Gdez9-0-hhbxTzuvgwiOsnZ_G0K1dIWz5Kw,2083
+ord_mediascout_client-0.0.10.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+ord_mediascout_client-0.0.10.dist-info/licenses/LICENSE.txt,sha256=hFxqsGxtRZhrSjEOVzVCRy2ggLvxHyT4w823SGW6Nic,1076
+ord_mediascout_client-0.0.10.dist-info/RECORD,,
