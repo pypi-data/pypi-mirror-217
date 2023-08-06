@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: smol-dev
+Version: 0.0.2
+Summary: python module of smol developer
+License: MIT
+Author: swyx
+Author-email: swyx@dontemail.me
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+## smol-dev
+
+this is a stub for a smol developer package. dont use for now.
+
+
+## publishing
+
+```bash
+pip install build
+
+make
+
+python3 -m pip install --upgrade twine
+python3 -m twine upload dist/*
+```
