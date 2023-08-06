@@ -1,0 +1,7 @@
+numpy
+scipy
+pulp
+pyDOE
+sklearn
+pycddlib
+pyparc
