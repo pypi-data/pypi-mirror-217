@@ -1,0 +1,5 @@
+[console_scripts]
+oligo-hil=openoligo.scripts.hil:main
+oligo-runner=openoligo.scripts.runner:main
+oligo-server=openoligo.scripts.server:main
+
