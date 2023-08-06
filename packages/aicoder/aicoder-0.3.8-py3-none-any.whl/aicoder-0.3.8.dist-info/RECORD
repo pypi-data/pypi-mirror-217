@@ -1,0 +1,12 @@
+aicoder/AICoder.py,sha256=83hZ7Sdvyd0wtiJE5kPLSaAt7wIC6BlN8MVYaaehwiw,12662
+aicoder/AICoderFull.py,sha256=VjCIDZZMCVoCsnn1XVVyizhplfxDLlS-V30iW3r0TCk,8087
+aicoder/AICoderPartial.py,sha256=nClKfFoVbRZpoM2rLIeQoOtllSD8dMAHNuiFyLj-kcA,7160
+aicoder/AICoderPrompts.py,sha256=EyVLCIKkUDACV0swEHWVfRPNU_cQwYbLIIQ8nFI2VJY,3571
+aicoder/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aicoder/main.py,sha256=iNm9RVeWfLgEqO-OKTJuw4KWLh3BdI2vwHmR4WBxE54,14753
+aicoder-0.3.8.dist-info/LICENSE,sha256=nGKG3YDYTyar3KKwoaLPInTfnNQtuvh4aMwTADTd0L8,18809
+aicoder-0.3.8.dist-info/METADATA,sha256=VeVctvtJVl53llSu2G8NOQnaoZX_AR8uAvCAI3Rz4Nk,473
+aicoder-0.3.8.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+aicoder-0.3.8.dist-info/entry_points.txt,sha256=m__okhQaM4kZ8CCfSA5VGUyQ0gf7TIGax6DhXdTnAeA,46
+aicoder-0.3.8.dist-info/top_level.txt,sha256=B8Pf-hhM5icZE_7vMCXD5mXWG0MAqt5ImotI1aNXdWQ,8
+aicoder-0.3.8.dist-info/RECORD,,
