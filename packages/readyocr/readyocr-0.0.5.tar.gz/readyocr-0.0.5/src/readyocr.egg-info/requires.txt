@@ -1,0 +1,11 @@
+numpy
+
+[all]
+amazon-textract-response-parser
+google-cloud-documentai
+
+[documentai]
+google-cloud-documentai
+
+[textract]
+amazon-textract-response-parser
