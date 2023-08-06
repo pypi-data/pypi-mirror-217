@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+jysPackage/__init__.py
+jysPackage/theFirstFunction.py
+jysPackage.egg-info/PKG-INFO
+jysPackage.egg-info/SOURCES.txt
+jysPackage.egg-info/dependency_links.txt
+jysPackage.egg-info/top_level.txt
