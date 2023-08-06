@@ -1,0 +1,16 @@
+MANIFEST.in
+README.rst
+pyvenv.cfg
+setup.py
+docs/COPYRIGHT.txt
+docs/HISTORY.rst
+docs/LICENSE.txt
+src/http_session_redis/__init__.py
+src/http_session_redis/store.py
+src/http_session_redis.egg-info/PKG-INFO
+src/http_session_redis.egg-info/SOURCES.txt
+src/http_session_redis.egg-info/dependency_links.txt
+src/http_session_redis.egg-info/not-zip-safe
+src/http_session_redis.egg-info/requires.txt
+src/http_session_redis.egg-info/top_level.txt
+tests/test_store.py

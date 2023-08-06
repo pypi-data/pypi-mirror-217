@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: http_session_redis
+Version: 0.1
+Summary: Session handling using redis as a backend
+Home-page: https://github.com/HorsemanWSGI/http-session-redis
+Author: Souheil Chelfouh
+Author-email: trollfot@gmail.com
+License: UNKNOWN
+Keywords: HTTP,Session,Redis
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI
+Provides-Extra: test
+License-File: docs/LICENSE.txt
+
+http-session-redis
+******************
+
+Implementation of HTTP sessions using Redis as a backend.
+
+Changelog
+=========
+
+0.1 (2023-07-06)
+----------------
+
+  - First release
+
+

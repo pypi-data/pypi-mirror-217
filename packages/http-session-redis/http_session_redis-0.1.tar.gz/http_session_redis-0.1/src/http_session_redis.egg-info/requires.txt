@@ -1,0 +1,7 @@
+cromlech.marshallers
+http_session
+redis
+
+[test]
+pytest
+pytest-redis>=2.0
