@@ -1,0 +1,6 @@
+colorama
+openai
+gpt4all
+pdoc3
+pytest
+pytest-timeout
