@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: pizazz
+Version: 1.3.3
+Summary: Easy configuration and control of 74HC595 Shift Registers on a Raspberry Pi
+Home-page: https://github.com/stephen-ra-king/pizazz
+Download-URL: 
+Author: Stephen R A King
+Author-email: sking.github@gmail.com
+Maintainer: Stephen R A King
+Maintainer-email: sking.github@gmail.com
+License: MIT
+Keywords: utility,74HC595,GPIO,Raspberry,Pi
+Platform: Linux
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS.md
