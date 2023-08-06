@@ -1,0 +1,16 @@
+vars:
+  orgId:
+  tenantId:
+  provider: 
+    providerInstanceId:
+    applicationId:
+    applicationSecret:
+  network:
+    vNetId:
+    tenantCIDRs: []
+  desktop:
+    markerId:
+    streamId:
+    templateType:
+    vmSkuName:
+  userEmails: []
