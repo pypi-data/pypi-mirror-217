@@ -1,0 +1,10 @@
+certifi==2023.5.7
+charset-normalizer==3.1.0
+humanize==4.7.0
+idna==3.4
+prettyformatter==2.0.13
+pyqt5-qt5==5.15.2
+pyqt5-sip==12.12.1
+pyqt5==5.15.9
+requests==2.31.0
+urllib3==2.0.3
