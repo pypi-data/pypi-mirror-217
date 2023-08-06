@@ -1,0 +1,9 @@
+README.md
+setup.py
+scrapy_crawlbase/__init__.py
+scrapy_crawlbase/crawlbase.py
+scrapy_crawlbase/request.py
+scrapy_crawlbase_middleware.egg-info/PKG-INFO
+scrapy_crawlbase_middleware.egg-info/SOURCES.txt
+scrapy_crawlbase_middleware.egg-info/dependency_links.txt
+scrapy_crawlbase_middleware.egg-info/top_level.txt
