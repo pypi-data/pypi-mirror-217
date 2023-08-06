@@ -1,0 +1,6 @@
+aiohttp>=3.8.4
+certifi>=2023.5.7
+ujson>=5.8.0
+pytz==2022.1
+qrcode[pil]>=7.3.1
+aioredis>=2.0.1
