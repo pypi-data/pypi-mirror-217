@@ -1,0 +1,3 @@
+[fedora.messages]
+wiki.article.edit.v1=mediawiki_messages.article:ArticleEditV1
+
