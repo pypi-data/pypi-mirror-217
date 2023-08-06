@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: sreddit
+Version: 1.0.1
+Summary: Web scraper for subreddits
+Home-page: https://github.com/Mandy-cyber/sreddit
+Author: Mandy-cyber
+Author-email: 
+Keywords: python,selenium,reddit,subreddit
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: selenium
+Requires-Dist: get-chrome-driver
+
+# sreddit
+Web scraper for subreddits
