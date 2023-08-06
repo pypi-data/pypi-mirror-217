@@ -1,0 +1,7 @@
+setup.py
+hellorynepkg.egg-info/PKG-INFO
+hellorynepkg.egg-info/SOURCES.txt
+hellorynepkg.egg-info/dependency_links.txt
+hellorynepkg.egg-info/top_level.txt
+libname/__init__.py
+libname/hello.py
