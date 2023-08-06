@@ -1,0 +1,29 @@
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core"]
+
+[tool.poetry]
+authors = ["liblaf <i@liblaf.me>"]
+description = "My Package Manager"
+documentation = "https://liblaf.github.io/ipkg/"
+license = "MIT"
+name = "ipkg"
+readme = "README.md"
+repository = "https://github.com/liblaf/ipkg"
+version = "0.2.0"
+
+[tool.poetry.dependencies]
+httpie = "^3.2.2"
+pygithub = "^1.59.0"
+python = ">=3.11,<3.12"
+requests = "^2.31.0"
+rich = "^13.4.2"
+tenacity = "^8.2.2"
+typer = "^0.7.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+isort = "^5.12.0"
+nuitka = "^1.7"
+pyinstaller = "^5.13.0"
+typer-cli = "^0.0.13"
