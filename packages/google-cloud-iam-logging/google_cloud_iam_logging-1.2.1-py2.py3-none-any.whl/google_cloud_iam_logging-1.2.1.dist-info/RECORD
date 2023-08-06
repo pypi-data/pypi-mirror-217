@@ -1,0 +1,17 @@
+google_cloud_iam_logging-1.2.1-py3.9-nspkg.pth,sha256=b0D5dZk3RUzK54tZ9iZDvLm7u8ltc5EzYrGCmhsuoNw,1698
+google/cloud/iam_logging/__init__.py,sha256=PBuvO0ZI7Tn5zG6alYVTndcwPaQiDff5Rq65ud3ITys,808
+google/cloud/iam_logging/gapic_version.py,sha256=urBG-t6_LG-KYZrcnLl7mEHKWraNvLuNlfq3FD4-lXE,652
+google/cloud/iam_logging/py.typed,sha256=zQM9tNyDCalfM-SXSrzeSzNNjx5AxWsmKCU9dcbVnCM,85
+google/cloud/iam_logging_v1/__init__.py,sha256=mUkzHE3ceJ23dddEoaXbwCP7VN8Gd_impZ5h-uU6dO8,784
+google/cloud/iam_logging_v1/gapic_metadata.json,sha256=otzj3AkaaTWZjumKwkqUWTus3g08E1wZVCBg0IKv9MQ,237
+google/cloud/iam_logging_v1/gapic_version.py,sha256=urBG-t6_LG-KYZrcnLl7mEHKWraNvLuNlfq3FD4-lXE,652
+google/cloud/iam_logging_v1/py.typed,sha256=zQM9tNyDCalfM-SXSrzeSzNNjx5AxWsmKCU9dcbVnCM,85
+google/cloud/iam_logging_v1/services/__init__.py,sha256=cy2W0ArG0dH2c6GO6MSWmmdZDYSu0lnc4KfvgYxp0ak,600
+google/cloud/iam_logging_v1/types/__init__.py,sha256=yHuJXemsdZ5vAP59VlyYDWXyD_vVHFj38DMXoqg5FMw,660
+google/cloud/iam_logging_v1/types/audit_data.py,sha256=ITBn4ueavnCvI-2eeaCNNnZ-kOdl3dml7-Hil85MAz0,1452
+google_cloud_iam_logging-1.2.1.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+google_cloud_iam_logging-1.2.1.dist-info/METADATA,sha256=bAIg-7iV0DdQSrDq1w6A39dn0bcXHSbM7itPS9tm7zU,5000
+google_cloud_iam_logging-1.2.1.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+google_cloud_iam_logging-1.2.1.dist-info/namespace_packages.txt,sha256=v8IaYqRE2a0onAGJIpZeFkkH83wXSWZRR9eOyfMwoTc,20
+google_cloud_iam_logging-1.2.1.dist-info/top_level.txt,sha256=_1QvSJIhFAGfxb79D6DhB7SUw2X6T4rwnz_LLrbcD3c,7
+google_cloud_iam_logging-1.2.1.dist-info/RECORD,,
