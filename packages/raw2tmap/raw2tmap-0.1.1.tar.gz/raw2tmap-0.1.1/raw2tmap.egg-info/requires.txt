@@ -1,0 +1,9 @@
+click
+ome-zarr
+pydantic>=2
+scikit-image
+tifffile
+tqdm
+
+[dzi]
+pyvips
