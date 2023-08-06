@@ -1,0 +1,8 @@
+README.md
+setup.py
+browser_driver_manager/browser_driver_manager.py
+browser_driver_manager.egg-info/PKG-INFO
+browser_driver_manager.egg-info/SOURCES.txt
+browser_driver_manager.egg-info/dependency_links.txt
+browser_driver_manager.egg-info/requires.txt
+browser_driver_manager.egg-info/top_level.txt
