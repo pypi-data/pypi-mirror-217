@@ -1,0 +1,10 @@
+dexcolor/Ansi.py,sha256=jNYfI2ZZqjrKPvSYq3mF-hrsLMlbsaU4V57F_BPw4bs,3903
+dexcolor/__init__.py,sha256=EIgXKqVpBluk4H1JUI1LRJsOq4tbTSeJWNiykclrzsU,130
+dexcolor/ansitowin32.py,sha256=Wbnb6010283kliJhjhmuiqdYmwRYsWFWJVc6SI4j7Kw,2600
+dexcolor/initialize.py,sha256=K1SbbWgOXWKued226ziqZcdcm0NrSL3cE_HLsyugbBc,1325
+dexcolor/tests/test_dexcolor.py,sha256=KzG221pZNNgNYdzwPNQWFHQGvb4v7P0ZTRlN-MKCZsg,1331
+dexcolor-0.1.9.dist-info/LICENSE,sha256=uXcIjfYbG221dRZulYmPz8fD8bs47hjP3DOOMpbK7tk,1085
+dexcolor-0.1.9.dist-info/METADATA,sha256=SZrDvlGCtOIcBYFXlE1u7Ji8ROShr6u9WzJz5h5109E,3344
+dexcolor-0.1.9.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+dexcolor-0.1.9.dist-info/top_level.txt,sha256=h6hrDM9tYy3NiOZxJuTck6MgdSp6DtdEu5W7zEGIVVg,9
+dexcolor-0.1.9.dist-info/RECORD,,
