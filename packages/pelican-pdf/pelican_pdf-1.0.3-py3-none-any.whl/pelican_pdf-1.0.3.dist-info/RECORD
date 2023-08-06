@@ -1,0 +1,11 @@
+pelican/plugins/pdf/__init__.py,sha256=bmU28RuWYG5pz3Tg96o8l-wQ5z7gho_XNoUcRRMR09Q,27
+pelican/plugins/pdf/pdf.py,sha256=3qz8TyLFpn8MpIFRbUvZNnffc8Poi8PA2AlP3xUONOE,4803
+pelican/plugins/pdf/test_data/testfile.md,sha256=sMz_3baUYD-7ZFS5hjmagHNlBrEdV3lt3HxQ1VZLINA,431
+pelican/plugins/pdf/test_data/testfile.rst,sha256=ZFuDu9ctllsUk7V0lngbAWuNccMW9bt2l85VaFKZvYw,468
+pelican/plugins/pdf/test_data/testfile_link.md,sha256=zAOdFYaAf7fqILmVSpXau7WYihPDH0cFB92W5mfXEkE,294
+pelican/plugins/pdf/test_data/testfile_link.rst,sha256=t8szf9JDUJDsD2dnUSCQSzZ8GbVVvgilSL2oHizDuIs,329
+pelican/plugins/pdf/test_pdf.py,sha256=90boP3Jt__SMzNsRQT_hbKE0vQMicAuqjp5ovLlR1rs,1158
+pelican_pdf-1.0.3.dist-info/LICENSE,sha256=xvirOUAbcWD8xNqygABDkqbBrcN2OYO5fZlXRnGp3hc,34674
+pelican_pdf-1.0.3.dist-info/METADATA,sha256=iMc1VPGdhs7IL5Ru-RtQRNtiha-wOrITwXDaAwqHXuM,3325
+pelican_pdf-1.0.3.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+pelican_pdf-1.0.3.dist-info/RECORD,,
