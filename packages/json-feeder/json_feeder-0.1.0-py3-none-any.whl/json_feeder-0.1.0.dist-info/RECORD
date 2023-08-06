@@ -1,0 +1,8 @@
+feeder/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+feeder/cli.py,sha256=gElE7mM5hlel4ghSV7eBEKw7RZ1jjXKxul7U98Ss6iE,1229
+feeder/feeder.py,sha256=I3RqGlOQkd8pBJ2HeExhVZUjPqUZfYujl1u9yGYfl2w,3490
+json_feeder-0.1.0.dist-info/METADATA,sha256=ie520Bfv_MxhuGNDmN_YkPJuYBFL-jRfVx3-xUs-MXk,1833
+json_feeder-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+json_feeder-0.1.0.dist-info/entry_points.txt,sha256=CZTy2N3hfCbk1G8kRjCKQYXBQFxmUzZMnr87KTJE2Uc,42
+json_feeder-0.1.0.dist-info/top_level.txt,sha256=S8MBro0_Pdv3uDaGieo9GKFmAYQMrtbe7VNLmUe1DzQ,7
+json_feeder-0.1.0.dist-info/RECORD,,
