@@ -1,0 +1,15 @@
+basictdf/__init__.py,sha256=AS3wAiMc7poBlSMeywMULg1r6eGDIA19k5DCqggXXx0,2956
+basictdf/basictdf.py,sha256=X0fUhrJm3_KzemuTOmuf5RjizfRgvqG3R06X7_Lg3QE,17639
+basictdf/tdfBlock.py,sha256=N34Om038RulhsGFmbE0xgLjNH4Hv_hPGSLzgCXE0H7I,3499
+basictdf/tdfCalibrationData.py,sha256=tZsljiJZz6F7ZGsJnncNmExKnEqny1a-HkUKz2WuO1Y,12235
+basictdf/tdfData3D.py,sha256=F8bYvLMDngGG5Z9OYQYPQh3eU4SJmNqciY5AazhXUXI,12413
+basictdf/tdfEMG.py,sha256=yX6DO1OxOmZt6qLfYcWTEp9xvhIY8BsATnzyJ9Pfn0w,6907
+basictdf/tdfEvents.py,sha256=XGmL3anta4yjnWHqun8YBVEX8THeJQe-JtnQGspZBR4,3938
+basictdf/tdfForce3D.py,sha256=5smfCxUAF8LvyNuUB9ZpVvg3bLLkV5ojQZSyirjS0BI,10735
+basictdf/tdfForcePlatformsCalibration.py,sha256=G9Z07P3EaqRi6HAGO8jQQKoSFXM08OqcZqEg3HBBg30,7743
+basictdf/tdfOpticalSystem.py,sha256=fIbZylHi2qeAbRdPaUlV79mUk-kLMQqIVdTp6c57EQE,5627
+basictdf/tdfTypes.py,sha256=MJIKJmvuDYrIopSdxmJaNxMNASIWFxLAFP23ns-6He8,6587
+basictdf/tdfUtils.py,sha256=l4lA3d-Nks6BXSyLMs-uJs-Nc_mogqYeYVMzCiqVhBs,1434
+basictdf-0.1.5.dist-info/METADATA,sha256=vZOR-Dp_uRwcvctE8sA2dNJCmRet9Iv-dDQzmJAFKmM,865
+basictdf-0.1.5.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+basictdf-0.1.5.dist-info/RECORD,,
