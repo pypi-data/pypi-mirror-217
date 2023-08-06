@@ -1,0 +1,17 @@
+pywolai/__init__.py,sha256=pmtZLR78OWp1zmhwzaH7P8yDmYxDkk8c8lbtJg9tq6o,32
+pywolai/api.py,sha256=hRgvmG86tjGAvJeAkx1j7vNbUPVPbQya05zPrW2gwp0,5509
+pywolai/block.py,sha256=lsrsX3grjjRCcPD9g99s2kB7_quzJN3RONfZ3J2Chow,1266
+pywolai/block_format.py,sha256=kKqpGNTLk5yHpyw0RuiVHHkAFYtUnHpNcPfaiQWfwGU,1656
+pywolai/enums/__init__.py,sha256=B0wSr7oSG8_yUO26CBRlx1TFOXBpuAnYIsgSrzMNeOI,419
+pywolai/enums/block_align.py,sha256=ZYiv7jSyvB7FkxJDQJAUgdne6nPizOQjr1PAeX_-Y5c,145
+pywolai/enums/block_back_colors.py,sha256=ojJCbnXS0XYIicIXxTRQc2Et9MrzQe82KBXy2Hn6Pxw,1354
+pywolai/enums/block_front_colors.py,sha256=QKiylsv5S46iMJRyzLHu2X5PtsE5g2-WO201Y9IKuvE,447
+pywolai/enums/block_type.py,sha256=rShSHd24PiRrAXiAvOdQ4ktLZL1SJDmebreKXr5ULlM,1197
+pywolai/enums/error_code.py,sha256=uX1w1eJFn1UPJFVRcyFZKOVhziDt-gzxIe07kXhLPEw,813
+pywolai/enums/inline_title_type.py,sha256=KqpQ-7V2kcOs8NC-T2ohCc8-2wJk5xXY15MuufxUXPI,510
+pywolai/enums/rich_text.py,sha256=zf4H0AdHOY65MUMTM18COSMsLUn0wXff4i-ChtmcbL0,639
+pywolai/enums/text_align.py,sha256=6v6Vxw-MWmMqUtIvVtJzB8HvoTn6ReW5OcWJWIpIXDs,78
+pywolai-0.1.0.dist-info/METADATA,sha256=FWUmGyPUNXT9rngByZ1wSMeSspXMhlGIrF8YYDsL9vw,166
+pywolai-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pywolai-0.1.0.dist-info/top_level.txt,sha256=y1dx6Wn_kiCTs7sLA1r2ENpEn5KQMOiw52ON7NyfrZM,8
+pywolai-0.1.0.dist-info/RECORD,,
