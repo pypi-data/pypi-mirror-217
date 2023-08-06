@@ -1,0 +1,461 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pymbs.api &#8212; PyMBS 0.3.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/alabaster.css" />
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <h1>Source code for pymbs.api</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">PyMBS is a Python library for use in modeling Mortgage-Backed Securities.</span>
+
+<span class="sd">Copyright (C) 2019  Brian Farrell</span>
+
+<span class="sd">This program is free software: you can redistribute it and/or modify</span>
+<span class="sd">it under the terms of the GNU Affero General Public License as published</span>
+<span class="sd">by the Free Software Foundation, either version 3 of the License, or</span>
+<span class="sd">(at your option) any later version.</span>
+
+<span class="sd">This program is distributed in the hope that it will be useful,</span>
+<span class="sd">but WITHOUT ANY WARRANTY; without even the implied warranty of</span>
+<span class="sd">MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span>
+<span class="sd">GNU Affero General Public License for more details.</span>
+
+<span class="sd">You should have received a copy of the GNU Affero General Public License</span>
+<span class="sd">along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.</span>
+
+<span class="sd">Contact: brian.farrell@me.com</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">copy</span> <span class="kn">import</span> <span class="n">deepcopy</span>
+<span class="kn">import</span> <span class="nn">decimal</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">NoReturn</span><span class="p">,</span> <span class="n">Optional</span><span class="p">,</span> <span class="n">Union</span>
+
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">HTML</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="kn">from</span> <span class="nn">pymbs</span> <span class="kn">import</span> <span class="n">core</span>
+<span class="kn">from</span> <span class="nn">pymbs.config</span> <span class="kn">import</span> <span class="n">config</span>
+<span class="kn">from</span> <span class="nn">pymbs.enums</span> <span class="kn">import</span> <span class="n">ALL_GROUPS</span><span class="p">,</span> <span class="n">ExitCode</span>
+<span class="kn">from</span> <span class="nn">pymbs.exceptions</span> <span class="kn">import</span> <span class="n">handle_gracefully</span>
+<span class="kn">from</span> <span class="nn">pymbs.log</span> <span class="kn">import</span> <span class="n">get_logger</span>
+<span class="kn">from</span> <span class="nn">pymbs.tranche</span> <span class="kn">import</span> <span class="n">IndexRate</span><span class="p">,</span> <span class="n">Tranche</span>
+<span class="kn">from</span> <span class="nn">pymbs.utils</span> <span class="kn">import</span> <span class="n">TSDecimalDecoder</span><span class="p">,</span> <span class="n">DecimalEncoder</span>
+
+<span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;load_deal&#39;</span><span class="p">,</span> <span class="s1">&#39;load_assumed_collat&#39;</span><span class="p">,</span> <span class="s1">&#39;load_model&#39;</span><span class="p">,</span> <span class="s1">&#39;run_collat_cf&#39;</span><span class="p">,</span>
+           <span class="s1">&#39;run_wals&#39;</span><span class="p">,</span> <span class="s1">&#39;show_wals&#39;</span><span class="p">,</span> <span class="s1">&#39;load_tranches&#39;</span><span class="p">,</span> <span class="s1">&#39;disperse_cf&#39;</span><span class="p">]</span>
+
+<span class="n">logger</span> <span class="o">=</span> <span class="n">get_logger</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+
+<span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.max_rows&#39;</span><span class="p">,</span> <span class="n">config</span><span class="o">.</span><span class="n">max_rows</span><span class="p">)</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.precision&#39;</span><span class="p">,</span> <span class="n">config</span><span class="o">.</span><span class="n">precision</span><span class="p">)</span>
+
+
+<div class="viewcode-block" id="load_deal"><a class="viewcode-back" href="../../pymbs.api.html#pymbs.api.load_deal">[docs]</a><span class="k">def</span> <span class="nf">load_deal</span><span class="p">(</span><span class="n">series_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Load the Terms Sheet for the REMIC Series name provided.</span>
+
+<span class="sd">    The Terms Sheet is essential for modeling the deal. If this function is</span>
+<span class="sd">    not called at the start, most of the other functions will fail.</span>
+
+<span class="sd">    Within the project_dir, specified in the user&#39;s configuration file, it is</span>
+<span class="sd">    expected that there will be one subdirectory for each REMIC Series name.</span>
+<span class="sd">    Inside the Series directory, it is expected that the Terms Sheet will be</span>
+<span class="sd">    a file named ``series_ts.json``, where &#39;series&#39; refers to the actual</span>
+<span class="sd">    Series name.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        series_id: The REMIC Series id. Note that this value is passed</span>
+<span class="sd">        as a string, so it need not be strictly an integer value, i.e. &#39;T-074&#39;.</span>
+<span class="sd">        The value *must* be the same as the name of the deal directory, which</span>
+<span class="sd">        is a subdirectory of the project_directory.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        A dictionary object, representing the Terms Sheet.  All numerical</span>
+<span class="sd">        values related to the model and represented as Strings in the Terms</span>
+<span class="sd">        Sheet will be converted to a Python Decimal type in the dictionary</span>
+<span class="sd">        that is returned.</span>
+
+<span class="sd">        If the Terms Sheet file is not located, returns Exit Code 66.</span>
+
+<span class="sd">    Example:</span>
+<span class="sd">        Given: REMIC Series Name is ``&#39;2618&#39;``</span>
+
+<span class="sd">        Path: ``/project_dir/2618/2618_ts.json``</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">ts_json</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span>
+        <span class="n">config</span><span class="o">.</span><span class="n">project_dir</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">series_id</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">series_id</span><span class="si">}</span><span class="s2">_ts.json&quot;</span>
+    <span class="p">)</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">ts_json</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">tsj</span><span class="p">:</span>
+            <span class="n">config</span><span class="o">.</span><span class="n">terms_sheet</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">tsj</span><span class="p">,</span> <span class="bp">cls</span><span class="o">=</span><span class="n">TSDecimalDecoder</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">FileNotFoundError</span><span class="p">:</span>
+        <span class="n">handle_gracefully</span><span class="p">(</span>
+            <span class="n">config</span><span class="o">.</span><span class="n">_ipython_active</span><span class="p">,</span>
+            <span class="n">logger</span><span class="p">,</span>
+            <span class="s1">&#39;no_terms&#39;</span><span class="p">,</span>
+            <span class="n">series_id</span><span class="o">=</span><span class="n">series_id</span><span class="p">,</span>
+            <span class="n">json_file</span><span class="o">=</span><span class="n">ts_json</span><span class="p">,</span>
+            <span class="n">exit_code</span><span class="o">=</span><span class="n">ExitCode</span><span class="o">.</span><span class="n">EX_NOINPUT</span>
+        <span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">config</span><span class="o">.</span><span class="n">terms_sheet</span></div>
+
+
+<div class="viewcode-block" id="load_assumed_collat"><a class="viewcode-back" href="../../pymbs.api.html#pymbs.api.load_assumed_collat">[docs]</a><span class="k">def</span> <span class="nf">load_assumed_collat</span><span class="p">(</span>
+        <span class="n">group_id</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">int</span><span class="p">]]</span> <span class="o">=</span> <span class="n">ALL_GROUPS</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Load the Assumed Collateral replines from the Terms Sheet.</span>
+
+<span class="sd">    This assumes that the Terms Sheet has already been loaded, using the</span>
+<span class="sd">    ``load_deal()`` function.</span>
+
+<span class="sd">    This will *only* load Assumed Collateral. PyMBS does not yet have the</span>
+<span class="sd">    ability to handle Known Collateral or Securitzed Collateral. It can</span>
+<span class="sd">    however handle multiple Assumed replines per group.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">assumed_collat</span> <span class="o">=</span> <span class="n">core</span><span class="o">.</span><span class="n">_load_assumed_collat</span><span class="p">(</span><span class="n">group_id</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">assumed_collat</span></div>
+
+
+<div class="viewcode-block" id="load_model"><a class="viewcode-back" href="../../pymbs.api.html#pymbs.api.load_model">[docs]</a><span class="k">def</span> <span class="nf">load_model</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Load the structured cash flow model from the Terms Sheet, supplemented</span>
+<span class="sd">    by the model file.</span>
+
+<span class="sd">    The Terms sheet does NOT include the pay rule waterfall or specific</span>
+<span class="sd">    benchmark interest rate information used by the model. These are provided</span>
+<span class="sd">    in a separate JSON file.</span>
+
+<span class="sd">    Within the project_dir, specified in the user&#39;s configuration file, it is</span>
+<span class="sd">    expected that there will be one subdirectory for each REMIC Series name.</span>
+<span class="sd">    Inside the Series directory, it is expected that the Model File named as</span>
+<span class="sd">    provided as argument to this function will exist.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        model_json: The name of the model file inside the Series directory.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        A dictionary object, representing the structured cash flow model.</span>
+
+<span class="sd">        If the Model file is not located, returns Exit Code 66.</span>
+
+<span class="sd">    Example:</span>
+<span class="sd">        Given: ``model_json = 2618_model.json``</span>
+
+<span class="sd">        Path: ``/project_dir/2618/2618_model.json``</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">config</span><span class="o">.</span><span class="n">terms_sheet</span><span class="p">:</span>
+        <span class="n">handle_gracefully</span><span class="p">(</span>
+            <span class="n">config</span><span class="o">.</span><span class="n">_ipython_active</span><span class="p">,</span>
+            <span class="n">logger</span><span class="p">,</span>
+            <span class="s1">&#39;no_deal&#39;</span><span class="p">,</span>
+            <span class="n">exit_code</span><span class="o">=</span><span class="n">ExitCode</span><span class="o">.</span><span class="n">EX_CONFIG</span>
+        <span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">ts</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">terms_sheet</span>
+    <span class="n">series_id</span> <span class="o">=</span> <span class="n">ts</span><span class="p">[</span><span class="s1">&#39;deal&#39;</span><span class="p">][</span><span class="s1">&#39;series_id&#39;</span><span class="p">]</span>
+    <span class="n">model_json</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span>
+        <span class="n">config</span><span class="o">.</span><span class="n">project_dir</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">series_id</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">series_id</span><span class="si">}</span><span class="s2">_model.json&quot;</span>
+    <span class="p">)</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">model_json</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">mj</span><span class="p">:</span>
+            <span class="n">mf</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">mj</span><span class="p">,</span> <span class="n">parse_float</span><span class="o">=</span><span class="n">decimal</span><span class="o">.</span><span class="n">Decimal</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">FileNotFoundError</span><span class="p">:</span>
+        <span class="n">handle_gracefully</span><span class="p">(</span>
+            <span class="n">config</span><span class="o">.</span><span class="n">_ipython_active</span><span class="p">,</span>
+            <span class="n">logger</span><span class="p">,</span>
+            <span class="s1">&#39;no_model_file&#39;</span><span class="p">,</span>
+            <span class="n">series_id</span><span class="o">=</span><span class="n">series_id</span><span class="p">,</span>
+            <span class="n">json_file</span><span class="o">=</span><span class="n">model_json</span><span class="p">,</span>
+            <span class="n">exit_code</span><span class="o">=</span><span class="n">ExitCode</span><span class="o">.</span><span class="n">EX_NOINPUT</span>
+        <span class="p">)</span>
+    <span class="n">groups</span> <span class="o">=</span> <span class="n">deepcopy</span><span class="p">(</span><span class="n">ts</span><span class="p">[</span><span class="s1">&#39;groups&#39;</span><span class="p">])</span>
+
+    <span class="n">indices</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">for</span> <span class="n">group</span> <span class="ow">in</span> <span class="n">groups</span><span class="p">:</span>
+        <span class="n">tranches</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="k">if</span> <span class="n">group</span> <span class="o">!=</span> <span class="s2">&quot;R&quot;</span><span class="p">:</span>
+            <span class="n">groups</span><span class="p">[</span><span class="n">group</span><span class="p">][</span><span class="s1">&#39;collat_cf&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+            <span class="n">groups</span><span class="p">[</span><span class="n">group</span><span class="p">][</span><span class="s1">&#39;waterfall&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="n">groups</span><span class="p">[</span><span class="n">group</span><span class="p">][</span><span class="s1">&#39;waterfall&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">mf</span><span class="p">[</span><span class="s1">&#39;waterfall&#39;</span><span class="p">][</span><span class="n">group</span><span class="p">])</span>
+        <span class="k">for</span> <span class="n">tranche</span> <span class="ow">in</span> <span class="n">groups</span><span class="p">[</span><span class="n">group</span><span class="p">][</span><span class="s1">&#39;tranches&#39;</span><span class="p">]:</span>
+            <span class="n">tranche_obj</span> <span class="o">=</span> <span class="n">Tranche</span><span class="p">(</span>
+                <span class="n">group_id</span><span class="o">=</span><span class="n">group</span><span class="p">,</span>
+                <span class="o">**</span><span class="n">tranche</span><span class="p">,</span>
+                <span class="n">dated_date</span><span class="o">=</span><span class="n">ts</span><span class="p">[</span><span class="s1">&#39;deal&#39;</span><span class="p">][</span><span class="s1">&#39;issue_date&#39;</span><span class="p">],</span>
+                <span class="n">next_payment_date</span><span class="o">=</span><span class="n">groups</span><span class="p">[</span><span class="n">group</span><span class="p">][</span><span class="s1">&#39;first_payment_date&#39;</span><span class="p">]</span>
+            <span class="p">)</span>
+            <span class="n">tranches</span><span class="p">[</span><span class="n">tranche</span><span class="p">[</span><span class="s1">&#39;class_id&#39;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">tranche_obj</span>
+        <span class="n">groups</span><span class="p">[</span><span class="n">group</span><span class="p">][</span><span class="s1">&#39;tranches&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">tranches</span>
+    <span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="n">mf</span><span class="p">[</span><span class="s1">&#39;indices&#39;</span><span class="p">]:</span>
+        <span class="n">indices</span><span class="p">[</span><span class="n">index</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">IndexRate</span><span class="p">(</span><span class="o">**</span><span class="n">index</span><span class="p">)</span>
+    <span class="n">config</span><span class="o">.</span><span class="n">model</span><span class="p">[</span><span class="s1">&#39;groups&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">groups</span>
+    <span class="n">config</span><span class="o">.</span><span class="n">model</span><span class="p">[</span><span class="s1">&#39;indices&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">indices</span>
+
+    <span class="k">return</span> <span class="n">config</span><span class="o">.</span><span class="n">model</span></div>
+
+
+<div class="viewcode-block" id="run_collat_cf"><a class="viewcode-back" href="../../pymbs.api.html#pymbs.api.run_collat_cf">[docs]</a><span class="k">def</span> <span class="nf">run_collat_cf</span><span class="p">(</span>
+        <span class="n">group_id</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">int</span><span class="p">]]</span> <span class="o">=</span> <span class="n">ALL_GROUPS</span><span class="p">,</span>
+        <span class="n">repline_num</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Run cash flows from Assumed Collateral replines specified in the</span>
+<span class="sd">    Terms Sheet. A Pandas DataFrame is created for each cash flow prepayment</span>
+<span class="sd">    scenario, as specified in the Prepayment Scenarios JSON file.</span>
+
+<span class="sd">    The Terms sheet does NOT include the pay rule waterfall or specific</span>
+<span class="sd">    benchmark interest rate information used by the model. These are provided</span>
+<span class="sd">    in a separate JSON file.</span>
+
+<span class="sd">    Within the project_dir, specified in the user&#39;s configuration file, it is</span>
+<span class="sd">    expected that there will be one subdirectory for each REMIC Series name.</span>
+<span class="sd">    Inside the Series directory, it is expected that the Model File named as</span>
+<span class="sd">    provided as argument to this function will exist.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        group_id: The number of the Group for which to run the cash flows.</span>
+<span class="sd">                  By default, this value is set to &#39;ALL_GROUPS&#39;, which will</span>
+<span class="sd">                  run cash flows for all of the groups in the deal at the</span>
+<span class="sd">                  Prepayment Scenarios specified for each group.</span>
+
+<span class="sd">        repline_num: Optionally, the user may specify running the cash flows</span>
+<span class="sd">                     for a specific repline in a specific group, if the group</span>
+<span class="sd">                     has more than one assumed repline. As with ``group_id``,</span>
+<span class="sd">                     the ``repline_num`` is set to -1 by default, which will</span>
+<span class="sd">                     run cash flows for ALL replines associated with a group.</span>
+<span class="sd">                     When run together, the cash flows for each repline will</span>
+<span class="sd">                     be aggregated into one final cash flow which is the one</span>
+<span class="sd">                     that is returned for the group.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        A dictionary object, containing a Pandas Dataframe for the cash flow</span>
+<span class="sd">        calculated at each Prepayment Scenario.</span>
+
+<span class="sd">    Example:</span>
+<span class="sd">        Path: ``/project_dir/2618/2618_pps.json``</span>
+
+<span class="sd">    TODO: Run collateral cash flows for known collateral.</span>
+
+<span class="sd">    TODO: Run collateral cash flows for securitzed collateral.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">group_id</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">group_id</span><span class="p">)</span>
+    <span class="n">cash_flows</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">if</span> <span class="n">group_id</span> <span class="o">==</span> <span class="n">ALL_GROUPS</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">group</span> <span class="ow">in</span> <span class="n">config</span><span class="o">.</span><span class="n">terms_sheet</span><span class="p">[</span><span class="s1">&#39;groups&#39;</span><span class="p">]:</span>
+            <span class="k">if</span> <span class="n">group</span> <span class="o">!=</span> <span class="s1">&#39;R&#39;</span><span class="p">:</span>
+                <span class="n">cf</span> <span class="o">=</span> <span class="n">core</span><span class="o">.</span><span class="n">_run_collat_cf</span><span class="p">(</span><span class="n">group</span><span class="p">,</span> <span class="n">repline_num</span><span class="p">)</span>
+                <span class="n">cash_flows</span><span class="p">[</span><span class="n">group</span><span class="p">]</span> <span class="o">=</span> <span class="n">cf</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">cf</span> <span class="o">=</span> <span class="n">core</span><span class="o">.</span><span class="n">_run_collat_cf</span><span class="p">(</span><span class="n">group_id</span><span class="p">,</span> <span class="n">repline_num</span><span class="p">)</span>
+        <span class="n">cash_flows</span><span class="p">[</span><span class="n">group_id</span><span class="p">]</span> <span class="o">=</span> <span class="n">cf</span>
+
+    <span class="k">return</span> <span class="n">cash_flows</span></div>
+
+
+<span class="k">def</span> <span class="nf">run_residual_cf</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Not yet implemented.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">pass</span>
+
+
+<div class="viewcode-block" id="run_wals"><a class="viewcode-back" href="../../pymbs.api.html#pymbs.api.run_wals">[docs]</a><span class="k">def</span> <span class="nf">run_wals</span><span class="p">(</span>
+        <span class="n">group_id</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">int</span><span class="p">]]</span> <span class="o">=</span> <span class="n">ALL_GROUPS</span><span class="p">,</span>
+        <span class="n">precision</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">round_precision</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Get the WALs as a dictionary and return them as JSON</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">_wals</span> <span class="o">=</span> <span class="n">core</span><span class="o">.</span><span class="n">_get_wals</span><span class="p">(</span><span class="n">group_id</span><span class="p">,</span> <span class="n">precision</span><span class="p">)</span>
+    <span class="n">wals</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">_wals</span><span class="p">,</span> <span class="bp">cls</span><span class="o">=</span><span class="n">DecimalEncoder</span><span class="p">,</span> <span class="n">separators</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="s1">&#39;:&#39;</span><span class="p">))</span>
+
+    <span class="k">return</span> <span class="n">wals</span></div>
+
+
+<div class="viewcode-block" id="show_wals"><a class="viewcode-back" href="../../pymbs.api.html#pymbs.api.show_wals">[docs]</a><span class="k">def</span> <span class="nf">show_wals</span><span class="p">(</span>
+        <span class="n">group_id</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">int</span><span class="p">]]</span> <span class="o">=</span> <span class="n">ALL_GROUPS</span><span class="p">,</span>
+        <span class="n">precision</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">round_precision</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">NoReturn</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Get the WALs as a Pandas DataFrame and display them in</span>
+<span class="sd">    a Jupyter Notebook.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">wals</span> <span class="o">=</span> <span class="n">core</span><span class="o">.</span><span class="n">_get_wals</span><span class="p">(</span><span class="n">group_id</span><span class="p">,</span> <span class="n">precision</span><span class="p">,</span> <span class="n">data_frame_flag</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&lt;p&gt;&lt;pre&gt;</span><span class="se">\n</span><span class="s2">&lt;/pre&gt;&lt;/p&gt;&quot;</span><span class="p">))</span>
+    <span class="k">for</span> <span class="n">group</span> <span class="ow">in</span> <span class="n">wals</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">wals</span><span class="p">[</span><span class="n">group</span><span class="p">])</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&lt;p&gt;&lt;pre&gt;</span><span class="se">\n\n</span><span class="s2">&lt;/pre&gt;&lt;/p&gt;&quot;</span><span class="p">))</span></div>
+
+
+<div class="viewcode-block" id="load_tranches"><a class="viewcode-back" href="../../pymbs.api.html#pymbs.api.load_tranches">[docs]</a><span class="k">def</span> <span class="nf">load_tranches</span><span class="p">(</span>
+        <span class="n">group_id</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">int</span><span class="p">]]</span> <span class="o">=</span> <span class="n">ALL_GROUPS</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Load the tranches for the deal, or for the group specified, into a</span>
+<span class="sd">    Pandas Dataframe for easy display in the Jupyter Notebook.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        group_id: The number of the Group for which to load the tranches.</span>
+<span class="sd">                  By default, this value is set to &#39;ALL_GROUPS&#39;, which will</span>
+<span class="sd">                  load the tranches for all of the groups in the deal. As per</span>
+<span class="sd">                  convention, the Residual tranches will appear in</span>
+<span class="sd">                  Group &#39;0&#39;.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        A Pandas Dataframe showing Tranche details for each tranche queried.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">config</span><span class="o">.</span><span class="n">terms_sheet</span><span class="p">:</span>
+        <span class="n">handle_gracefully</span><span class="p">(</span>
+            <span class="n">config</span><span class="o">.</span><span class="n">_ipython_active</span><span class="p">,</span>
+            <span class="n">logger</span><span class="p">,</span>
+            <span class="s1">&#39;no_deal&#39;</span><span class="p">,</span>
+            <span class="n">exit_code</span><span class="o">=</span><span class="n">ExitCode</span><span class="o">.</span><span class="n">EX_CONFIG</span>
+        <span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">ts</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">terms_sheet</span>
+
+    <span class="n">group_id</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">group_id</span><span class="p">)</span>
+    <span class="n">tranches</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="k">if</span> <span class="n">group_id</span> <span class="o">==</span> <span class="n">ALL_GROUPS</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">group</span> <span class="ow">in</span> <span class="n">ts</span><span class="p">[</span><span class="s1">&#39;groups&#39;</span><span class="p">]:</span>
+            <span class="k">if</span> <span class="n">tranches</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">tranches</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
+                    <span class="n">ts</span><span class="p">[</span><span class="s1">&#39;groups&#39;</span><span class="p">][</span><span class="n">group</span><span class="p">][</span><span class="s1">&#39;tranches&#39;</span><span class="p">]</span>
+                <span class="p">)</span>
+                <span class="n">tranches</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;group_id&quot;</span><span class="p">,</span> <span class="n">group</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">tr</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">ts</span><span class="p">[</span><span class="s1">&#39;groups&#39;</span><span class="p">][</span><span class="n">group</span><span class="p">][</span><span class="s1">&#39;tranches&#39;</span><span class="p">])</span>
+                <span class="n">tr</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;group_id&quot;</span><span class="p">,</span> <span class="n">group</span><span class="p">)</span>
+                <span class="n">tranches</span> <span class="o">=</span> <span class="n">tranches</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+                    <span class="n">tr</span><span class="p">,</span>
+                    <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span>
+                <span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">tranches</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">ts</span><span class="p">[</span><span class="s1">&#39;groups&#39;</span><span class="p">][</span><span class="n">group_id</span><span class="p">][</span><span class="s1">&#39;tranches&#39;</span><span class="p">])</span>
+        <span class="n">tranches</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;group_id&quot;</span><span class="p">,</span> <span class="n">group_id</span><span class="p">)</span>
+
+    <span class="n">tranches</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">tranches</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">tranches</span></div>
+
+
+<div class="viewcode-block" id="disperse_cf"><a class="viewcode-back" href="../../pymbs.api.html#pymbs.api.disperse_cf">[docs]</a><span class="k">def</span> <span class="nf">disperse_cf</span><span class="p">(</span>
+        <span class="n">model</span><span class="p">:</span> <span class="nb">dict</span><span class="p">,</span>
+        <span class="n">group_id</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">int</span><span class="p">]]</span> <span class="o">=</span> <span class="n">ALL_GROUPS</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">NoReturn</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Make all payments of Interest and Principal, based on the rules</span>
+<span class="sd">    enumerated in the model.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        model: The structured cash flow model containing the payment rules</span>
+<span class="sd">               waterfall for the group(s)</span>
+
+<span class="sd">        group_id: The number of the Group for which to load the tranches.</span>
+<span class="sd">                  By default, this value is set to &#39;ALL_GROUPS&#39;, which will</span>
+<span class="sd">                  load the tranches for all of the groups in the deal. As per</span>
+<span class="sd">                  convention, the Residual tranches will appear in</span>
+<span class="sd">                  Group &#39;0&#39;.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">group_id</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">group_id</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">group_id</span> <span class="o">==</span> <span class="n">ALL_GROUPS</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">group</span> <span class="ow">in</span> <span class="n">model</span><span class="p">[</span><span class="s1">&#39;groups&#39;</span><span class="p">]:</span>
+            <span class="n">cash_flows</span> <span class="o">=</span> <span class="n">run_collat_cf</span><span class="p">(</span><span class="n">group</span><span class="p">)</span>
+            <span class="n">model</span><span class="p">[</span><span class="s1">&#39;groups&#39;</span><span class="p">][</span><span class="n">group</span><span class="p">][</span><span class="s1">&#39;collat_cf&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">cash_flows</span><span class="p">)</span>
+            <span class="n">tranches</span> <span class="o">=</span> <span class="n">core</span><span class="o">.</span><span class="n">_get_regular_tranches</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">group</span><span class="p">)</span>
+            <span class="n">core</span><span class="o">.</span><span class="n">_make_payments</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">group</span><span class="p">,</span> <span class="n">cash_flows</span><span class="p">,</span> <span class="n">tranches</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">cash_flows</span> <span class="o">=</span> <span class="n">run_collat_cf</span><span class="p">(</span><span class="n">group_id</span><span class="p">)</span>
+        <span class="n">model</span><span class="p">[</span><span class="s1">&#39;groups&#39;</span><span class="p">][</span><span class="n">group_id</span><span class="p">][</span><span class="s1">&#39;collat_cf&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">cash_flows</span><span class="p">)</span>
+        <span class="n">tranches</span> <span class="o">=</span> <span class="n">core</span><span class="o">.</span><span class="n">_get_regular_tranches</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">group_id</span><span class="p">)</span>
+        <span class="n">core</span><span class="o">.</span><span class="n">_make_payments</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">group_id</span><span class="p">,</span> <span class="n">cash_flows</span><span class="p">,</span> <span class="n">tranches</span><span class="p">)</span></div>
+</pre></div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">PyMBS</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../project.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pymbs.html">pymbs package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../todo.html">Known Issues &amp; Enhancements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../changes.html">Change Log</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../index.html">Module code</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019-2023, Brian Farrell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.0.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

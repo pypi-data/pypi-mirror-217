@@ -1,0 +1,531 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>pymbs.config &#8212; PyMBS 0.3.0 documentation</title>
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <h1>Source code for pymbs.config</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">PyMBS is a Python library for use in modeling Mortgage-Backed Securities.</span>
+
+<span class="sd">Copyright (C) 2019  Brian Farrell</span>
+
+<span class="sd">This program is free software: you can redistribute it and/or modify</span>
+<span class="sd">it under the terms of the GNU Affero General Public License as published</span>
+<span class="sd">by the Free Software Foundation, either version 3 of the License, or</span>
+<span class="sd">(at your option) any later version.</span>
+
+<span class="sd">This program is distributed in the hope that it will be useful,</span>
+<span class="sd">but WITHOUT ANY WARRANTY; without even the implied warranty of</span>
+<span class="sd">MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span>
+<span class="sd">GNU Affero General Public License for more details.</span>
+
+<span class="sd">You should have received a copy of the GNU Affero General Public License</span>
+<span class="sd">along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.</span>
+
+<span class="sd">Contact: brian.farrell@me.com</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">from</span> <span class="nn">pathlib</span> <span class="k">import</span> <span class="n">Path</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="kn">import</span> <span class="nn">yaml</span>
+
+<span class="kn">from</span> <span class="nn">pymbs.enums</span> <span class="k">import</span> <span class="n">URL</span>
+<span class="kn">from</span> <span class="nn">pymbs.exceptions</span> <span class="k">import</span> <span class="n">handle_gracefully</span>
+<span class="kn">from</span> <span class="nn">pymbs.log</span> <span class="k">import</span> <span class="n">get_logger</span>
+
+<span class="n">logger</span> <span class="o">=</span> <span class="n">get_logger</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+
+<span class="c1"># Python Decimal Module</span>
+<span class="n">DEFAULT_PRECISION</span> <span class="o">=</span> <span class="mi">18</span>
+<span class="n">DEFAULT_EMAX</span> <span class="o">=</span> <span class="mi">12</span>
+<span class="n">DEFAULT_EMIN</span> <span class="o">=</span> <span class="o">-</span><span class="mi">10</span>
+<span class="n">DEFAULT_ROUND_PRECISION</span> <span class="o">=</span> <span class="mi">10</span>
+
+<span class="c1"># Pandas</span>
+<span class="n">DEFAULT_MAX_ROWS</span> <span class="o">=</span> <span class="mi">400</span>
+
+
+<div class="viewcode-block" id="Config"><a class="viewcode-back" href="../../pymbs.config.html#pymbs.config.Config">[docs]</a><span class="k">class</span> <span class="nc">Config</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;The Config object holds all configuration values for PyMBS, except for</span>
+<span class="sd">    those related to Logging, which are stored in the ``pymbs.log`` module.</span>
+<span class="sd">    See the documentation for that module in regards to the Logging settings.</span>
+
+<span class="sd">    The user is able to customize settings via the ``config.yaml`` file, which</span>
+<span class="sd">    is located in a subdirectory of the user&#39;s HOME directory, and is</span>
+<span class="sd">    described further in the :ref:`setup_modeling` section of this</span>
+<span class="sd">    documentation.</span>
+
+<span class="sd">    Many of the settings in the config object *may* be specifed in</span>
+<span class="sd">    environment variables. If a value for a setting is specified simultaneously</span>
+<span class="sd">    in the ``config.yaml`` file *and* as an environment variable, the</span>
+<span class="sd">    value from the environment variable will be used.</span>
+
+<span class="sd">    As noted below, some of the properties set in the ``config`` object are</span>
+<span class="sd">    actually attributes of the ``Context`` object in Python&#39;s ``Decimal``</span>
+<span class="sd">    module.</span>
+
+<span class="sd">    For more information on the Decimal Context object, see:</span>
+
+<span class="sd">    https://docs.python.org/3/library/decimal.html#decimal.Context</span>
+
+<span class="sd">    Some of the properties set in the ``config`` object are actually options</span>
+<span class="sd">    in the ``Pandas`` library.</span>
+
+<span class="sd">    For more information, see:</span>
+
+<span class="sd">    https://pandas.pydata.org/pandas-docs/stable/user_guide/options.html#available-options</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">_platform</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">platform</span>
+    <span class="n">_config_dir</span> <span class="o">=</span> <span class="s1">&#39;pymbs&#39;</span>
+    <span class="n">_config_file</span> <span class="o">=</span> <span class="s1">&#39;config.yaml&#39;</span>
+    <span class="n">_rel_config_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">_config_dir</span><span class="p">,</span> <span class="n">_config_file</span><span class="p">)</span>
+    <span class="n">_user_home_dir</span> <span class="o">=</span> <span class="n">Path</span><span class="o">.</span><span class="n">home</span><span class="p">()</span>
+    <span class="n">_config_file_mode</span> <span class="o">=</span> <span class="mo">0o774</span>
+
+    <span class="k">if</span> <span class="n">_platform</span> <span class="o">!=</span> <span class="s1">&#39;win32&#39;</span><span class="p">:</span>
+        <span class="n">_user_app_config_dir</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">_user_home_dir</span><span class="p">,</span> <span class="s1">&#39;.config&#39;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">_user_app_config_dir</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">_user_home_dir</span><span class="p">,</span> <span class="s1">&#39;AppData&#39;</span><span class="p">,</span> <span class="s1">&#39;Local&#39;</span><span class="p">)</span>
+
+    <span class="n">_pymbs_config_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span>
+        <span class="n">_user_app_config_dir</span><span class="p">,</span> <span class="n">_rel_config_path</span>
+    <span class="p">)</span>
+
+    <span class="n">_ipython_active</span> <span class="o">=</span> <span class="kc">False</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">Config</span><span class="o">.</span><span class="n">_detect_ipython</span><span class="p">()</span>
+        <span class="n">_config</span> <span class="o">=</span> <span class="n">Config</span><span class="o">.</span><span class="n">_load_config</span><span class="p">()</span>
+
+        <span class="c1"># PyMBS Config</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_project_dir</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_terms_sheet</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_model</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_cache</span> <span class="o">=</span> <span class="p">{}</span>
+
+        <span class="c1"># Pandas Config</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_precision</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_emax</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_emin</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_round_precision</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_max_rows</span> <span class="o">=</span> <span class="kc">None</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_configure</span><span class="p">(</span><span class="n">_config</span><span class="p">)</span>
+
+    <span class="c1">########################</span>
+    <span class="c1">##### PyMBS Config #####</span>
+    <span class="c1">########################</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">project_dir</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;The project_dir *must* be set, as it can not be known or</span>
+<span class="sd">        discovered in advance.</span>
+
+<span class="sd">        The project directory is a dicrecotry in the file system that contains</span>
+<span class="sd">        one subdirectory for each deal modeled with PyMBS. By convention,</span>
+<span class="sd">        each subdirectory is named using the name of the deal being modeled.</span>
+<span class="sd">        For more information about the directory structure, see the</span>
+<span class="sd">        :ref:`setup` section of this documentation.</span>
+
+<span class="sd">        This may set in the ``config.yaml`` file, or via the</span>
+<span class="sd">        ``PYMBS_PROJECT_DIR`` environment variable.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_project_dir</span>
+
+    <span class="nd">@project_dir</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">project_dir</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;Setting project_dir in config: </span><span class="si">{value}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_project_dir</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">terms_sheet</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;The terms_sheet value should *never* be set directly. This value</span>
+<span class="sd">        is set by calling the ``api.load_deal(series_name)`` function,</span>
+<span class="sd">        passing the name of the directory that holds the files for the deal.</span>
+
+<span class="sd">        The ``load_deal`` function deserializes the ``series_ts.json`` file</span>
+<span class="sd">        and converts all ``Float`` values into ``Decimal`` values, using</span>
+<span class="sd">        Python&#39;s Decimal module.</span>
+
+<span class="sd">        The Terms Sheet structure may be viewed as a Python dictionary by</span>
+<span class="sd">        referencing the ``config.terms_sheet`` property.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_terms_sheet</span>
+
+    <span class="nd">@terms_sheet</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">terms_sheet</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">value</span><span class="p">:</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+                <span class="n">f</span><span class="s2">&quot;Setting terms_sheet in config: &quot;</span>
+                <span class="n">f</span><span class="s2">&quot;Series: </span><span class="si">{value[&#39;deal&#39;][&#39;series_id&#39;]}</span><span class="s2"> | &quot;</span>
+                <span class="n">f</span><span class="s2">&quot;TS Version: </span><span class="si">{value[&#39;deal&#39;][&#39;ts_version&#39;]}</span><span class="s2"> | &quot;</span>
+                <span class="n">f</span><span class="s2">&quot;Underwriter: </span><span class="si">{value[&#39;deal&#39;][&#39;lead_underwriter&#39;]}</span><span class="s2">&quot;</span>
+            <span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;Setting terms_sheet in config to None&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_terms_sheet</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">model</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;The model value should *never* be set directly. This value</span>
+<span class="sd">        is set by calling the ``api.load_model(model_json)`` function,</span>
+<span class="sd">        passing the name of the JSON file that holds the model for the deal.</span>
+
+<span class="sd">        The ``load_model`` function deserializes the JSON data into Python</span>
+<span class="sd">        data types, for use in all subsequent function calls to compute the</span>
+<span class="sd">        outputs of the model.</span>
+
+<span class="sd">        The model structure may be viewed as a Python dictionary by</span>
+<span class="sd">        referencing the ``config.model`` property.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_model</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">cache</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;The cache value should *never* be set directly. This Python</span>
+<span class="sd">        dictionary is referenced and modified by private functions throughout</span>
+<span class="sd">        the PyMBS code.</span>
+
+<span class="sd">        The values in this dictionary change quicky when running the model, so</span>
+<span class="sd">        viewing it by referencing the ``config.cache`` property may not make</span>
+<span class="sd">        sense, except in a debugging context.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cache</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">round_precision</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;round_precision is the number of decimals to round to, when</span>
+<span class="sd">        rounding a decimal value. It is *not* part of the specification</span>
+<span class="sd">        described in the Python Decimal Module, but is a custom value</span>
+<span class="sd">        created and used by PyMBS.</span>
+
+<span class="sd">        This value is used in the custom ``_round_dec()`` function, located</span>
+<span class="sd">        in the ``pymbs.utils`` module.</span>
+
+<span class="sd">        This may set in the ``config.yaml`` file, or via the</span>
+<span class="sd">        ``PYMBS_ROUND_PRECISION`` environment variable.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_round_precision</span>
+
+    <span class="nd">@round_precision</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">round_precision</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;Setting round_precision in config: </span><span class="si">{value}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_round_precision</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="c1">#################################</span>
+    <span class="c1">##### Python Decimal Config #####</span>
+    <span class="c1">#################################</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">precision</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;prec[ision] is an attribute of the ``Context`` object in Python&#39;s</span>
+<span class="sd">        Decimal module.</span>
+
+<span class="sd">        The precision is an integer in the range [1, MAX_PREC]</span>
+<span class="sd">        that sets the precision for arithmetic operations in the context.</span>
+
+<span class="sd">        This may set in the ``config.yaml`` file, or via the</span>
+<span class="sd">        ``PYMBS_PRECISION`` environment variable.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_precision</span>
+
+    <span class="nd">@precision</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">precision</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;Setting precision in config: </span><span class="si">{value}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_precision</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">emax</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Emax is an attribute of the ``Context`` object in Python&#39;s</span>
+<span class="sd">        Decimal module. The Emax field is an integer specifying the outer</span>
+<span class="sd">        limit allowable for the max exponent.</span>
+
+<span class="sd">        Emax must be in the range [0, MAX_EMAX].</span>
+
+<span class="sd">        This may set in the ``config.yaml`` file, or via the ``PYMBS_EMAX``</span>
+<span class="sd">        environment variable.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_emax</span>
+
+    <span class="nd">@emax</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">emax</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;Setting emax in config: </span><span class="si">{value}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_emax</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">emin</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Emin is an attribute of the ``Context`` object in Python&#39;s</span>
+<span class="sd">        Decimal module. The Emin field is an integer specifying the outer</span>
+<span class="sd">        limit allowable for the min exponent.</span>
+
+<span class="sd">        Emin must be in the range [MIN_EMIN, 0].</span>
+
+<span class="sd">        This may set in the ``config.yaml`` file, or via the ``PYMBS_EMIN``</span>
+<span class="sd">        environment variable.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_emin</span>
+
+    <span class="nd">@emin</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">emin</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;Setting emin in config: </span><span class="si">{value}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_emin</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="c1">#########################</span>
+    <span class="c1">##### Pandas Config #####</span>
+    <span class="c1">#########################</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">max_rows</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;This sets the maximum number of rows Pandas should output when</span>
+<span class="sd">        printing out various output. For example, this value determines</span>
+<span class="sd">        whether the repr() for a dataframe prints out fully or just a</span>
+<span class="sd">        truncated or summary repr. ‘None’ value means unlimited.</span>
+
+<span class="sd">        The Pandas default is 60.</span>
+
+<span class="sd">        The PyMBS default for this value is 400, which was determined by</span>
+<span class="sd">        rounding up from 360, which is the number of monthly periods in a</span>
+<span class="sd">        30-year cash flow.</span>
+
+<span class="sd">        This may set in the ``config.yaml`` file, or via the ``PYMBS_MAX_ROWS``</span>
+<span class="sd">        environment variable.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_max_rows</span>
+
+    <span class="nd">@max_rows</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">max_rows</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;Setting max_rows in config: </span><span class="si">{value}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_max_rows</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="k">def</span> <span class="nf">_configure</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">_config</span><span class="p">):</span>
+        <span class="n">_env_project_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s1">&#39;PYMBS_PROJECT_DIR&#39;</span><span class="p">)</span>
+
+        <span class="n">_env_precision</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s1">&#39;PYMBS_PRECISION&#39;</span><span class="p">)</span>
+        <span class="n">_env_emax</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s1">&#39;PYMBS_EMAX&#39;</span><span class="p">)</span>
+        <span class="n">_env_emin</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s1">&#39;PYMBS_EMIN&#39;</span><span class="p">)</span>
+        <span class="n">_env_round_precision</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s1">&#39;PYMBS_ROUND_PRECISION&#39;</span><span class="p">)</span>
+        <span class="n">_env_max_rows</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s1">&#39;PYMBS_MAX_ROWS&#39;</span><span class="p">)</span>
+
+        <span class="n">_file_project_dir</span> <span class="o">=</span> <span class="kc">None</span>
+
+        <span class="n">_file_precision</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="n">_file_emax</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="n">_file_emin</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="n">_file_round_precision</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="n">_file_max_rows</span> <span class="o">=</span> <span class="kc">None</span>
+
+        <span class="n">pymbs_config</span> <span class="o">=</span> <span class="n">_config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;pymbs&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">pymbs_config</span><span class="p">:</span>
+            <span class="n">_file_project_dir</span> <span class="o">=</span> <span class="n">pymbs_config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;project directory&#39;</span><span class="p">)</span>
+
+        <span class="n">pandas_config</span> <span class="o">=</span> <span class="n">_config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;pandas&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">pandas_config</span><span class="p">:</span>
+            <span class="n">_file_precision</span> <span class="o">=</span> <span class="n">pandas_config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;precision&#39;</span><span class="p">)</span>
+            <span class="n">_file_emax</span> <span class="o">=</span> <span class="n">pandas_config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;emax&#39;</span><span class="p">)</span>
+            <span class="n">_file_emin</span> <span class="o">=</span> <span class="n">pandas_config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;emin&#39;</span><span class="p">)</span>
+            <span class="n">_file_round_precision</span> <span class="o">=</span> <span class="n">pandas_config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;round precision&#39;</span><span class="p">)</span>
+            <span class="n">_file_max_rows</span> <span class="o">=</span> <span class="n">pandas_config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;max rows&#39;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">_env_project_dir</span> <span class="ow">and</span> <span class="n">_file_project_dir</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">project_dir</span> <span class="o">=</span> <span class="n">_env_project_dir</span>
+        <span class="k">elif</span> <span class="n">_env_project_dir</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">project_dir</span> <span class="o">=</span> <span class="n">_env_project_dir</span>
+        <span class="k">elif</span> <span class="n">_file_project_dir</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">project_dir</span> <span class="o">=</span> <span class="n">_file_project_dir</span>
+
+        <span class="k">if</span> <span class="n">_env_precision</span> <span class="ow">and</span> <span class="n">_file_precision</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">precision</span> <span class="o">=</span> <span class="n">_env_precision</span>
+        <span class="k">elif</span> <span class="n">_env_precision</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">precision</span> <span class="o">=</span> <span class="n">_env_precision</span>
+        <span class="k">elif</span> <span class="n">_file_precision</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">precision</span> <span class="o">=</span> <span class="n">_file_precision</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">precision</span> <span class="o">=</span> <span class="n">DEFAULT_PRECISION</span>
+
+        <span class="k">if</span> <span class="n">_env_emax</span> <span class="ow">and</span> <span class="n">_file_emax</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">emax</span> <span class="o">=</span> <span class="n">_env_emax</span>
+        <span class="k">elif</span> <span class="n">_env_emax</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">emax</span> <span class="o">=</span> <span class="n">_env_emax</span>
+        <span class="k">elif</span> <span class="n">_file_emax</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">emax</span> <span class="o">=</span> <span class="n">_file_emax</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">emax</span> <span class="o">=</span> <span class="n">DEFAULT_EMAX</span>
+
+        <span class="k">if</span> <span class="n">_env_emin</span> <span class="ow">and</span> <span class="n">_file_emin</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">emin</span> <span class="o">=</span> <span class="n">_env_emin</span>
+        <span class="k">elif</span> <span class="n">_env_emin</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">emin</span> <span class="o">=</span> <span class="n">_env_emin</span>
+        <span class="k">elif</span> <span class="n">_file_emin</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">emin</span> <span class="o">=</span> <span class="n">_file_emin</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">emin</span> <span class="o">=</span> <span class="n">DEFAULT_EMIN</span>
+
+        <span class="k">if</span> <span class="n">_env_round_precision</span> <span class="ow">and</span> <span class="n">_file_round_precision</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">round_precision</span> <span class="o">=</span> <span class="n">_env_round_precision</span>
+        <span class="k">elif</span> <span class="n">_env_round_precision</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">round_precision</span> <span class="o">=</span> <span class="n">_env_round_precision</span>
+        <span class="k">elif</span> <span class="n">_file_round_precision</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">round_precision</span> <span class="o">=</span> <span class="n">_file_round_precision</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">round_precision</span> <span class="o">=</span> <span class="n">DEFAULT_ROUND_PRECISION</span>
+
+        <span class="k">if</span> <span class="n">_env_max_rows</span> <span class="ow">and</span> <span class="n">_file_max_rows</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">max_rows</span> <span class="o">=</span> <span class="n">_env_max_rows</span>
+        <span class="k">elif</span> <span class="n">_env_max_rows</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">max_rows</span> <span class="o">=</span> <span class="n">_env_max_rows</span>
+        <span class="k">elif</span> <span class="n">_file_max_rows</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">max_rows</span> <span class="o">=</span> <span class="n">_file_max_rows</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">max_rows</span> <span class="o">=</span> <span class="n">DEFAULT_MAX_ROWS</span>
+
+    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">_detect_ipython</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Detect if we are running inside IPython or not.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">cfg</span> <span class="o">=</span> <span class="n">get_ipython</span><span class="p">()</span><span class="o">.</span><span class="n">config</span>  <span class="c1"># noqa</span>
+            <span class="bp">cls</span><span class="o">.</span><span class="n">_ipython_active</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="k">except</span> <span class="ne">NameError</span><span class="p">:</span>
+            <span class="bp">cls</span><span class="o">.</span><span class="n">_ipython_active</span> <span class="o">=</span> <span class="kc">False</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">_load_config</span><span class="p">():</span>
+        <span class="n">alt_config_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s1">&#39;PYMBS_CONFIG_PATH&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">alt_config_path</span><span class="p">:</span>
+            <span class="n">_pymbs_config_path</span> <span class="o">=</span> <span class="n">alt_config_path</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">_pymbs_config_path</span> <span class="o">=</span> <span class="n">Config</span><span class="o">.</span><span class="n">_pymbs_config_path</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">_pymbs_config_path</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">stream</span><span class="p">:</span>
+                <span class="n">data</span> <span class="o">=</span> <span class="n">yaml</span><span class="o">.</span><span class="n">full_load</span><span class="p">(</span><span class="n">stream</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">FileNotFoundError</span><span class="p">:</span>
+            <span class="n">pymbs_config_dir</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span>
+                <span class="n">Config</span><span class="o">.</span><span class="n">_user_app_config_dir</span><span class="p">,</span> <span class="n">Config</span><span class="o">.</span><span class="n">_config_dir</span>
+            <span class="p">)</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">pymbs_config_dir</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
+                <span class="n">pymbs_config_dir</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span>
+                    <span class="n">mode</span><span class="o">=</span><span class="n">Config</span><span class="o">.</span><span class="n">_config_file_mode</span><span class="p">,</span> <span class="n">parents</span><span class="o">=</span><span class="kc">True</span>
+                <span class="p">)</span>
+            <span class="n">_pymbs_config_path</span><span class="o">.</span><span class="n">touch</span><span class="p">()</span>
+            <span class="n">handle_gracefully</span><span class="p">(</span>
+                <span class="n">Config</span><span class="o">.</span><span class="n">_ipython_active</span><span class="p">,</span>
+                <span class="n">logger</span><span class="p">,</span>
+                <span class="s1">&#39;no_config&#39;</span><span class="p">,</span>
+                <span class="n">pymbs_config_path</span><span class="o">=</span><span class="n">_pymbs_config_path</span><span class="p">,</span>
+                <span class="n">help_url</span><span class="o">=</span><span class="n">URL</span><span class="o">.</span><span class="n">SETUP_MODELING</span><span class="o">.</span><span class="n">value</span>
+            <span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">data</span><span class="p">:</span>
+                <span class="k">return</span> <span class="n">data</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">handle_gracefully</span><span class="p">(</span>
+                    <span class="n">Config</span><span class="o">.</span><span class="n">_ipython_active</span><span class="p">,</span>
+                    <span class="n">logger</span><span class="p">,</span>
+                    <span class="s1">&#39;no_config_data&#39;</span><span class="p">,</span>
+                    <span class="n">pymbs_config_path</span><span class="o">=</span><span class="n">_pymbs_config_path</span><span class="p">,</span>
+                    <span class="n">help_url</span><span class="o">=</span><span class="n">URL</span><span class="o">.</span><span class="n">SETUP_MODELING</span><span class="o">.</span><span class="n">value</span>
+                <span class="p">)</span></div>
+
+
+<span class="n">config</span> <span class="o">=</span> <span class="n">Config</span><span class="p">()</span>
+</pre></div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">PyMBS</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../project.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pymbs.html">pymbs package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../todo.html">Known Issues &amp; Enhancements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../changes.html">Change Log</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../index.html">Module code</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Brian Farrell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

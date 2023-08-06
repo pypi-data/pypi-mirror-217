@@ -1,0 +1,547 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>pymbs.tranche &#8212; PyMBS 0.3.0 documentation</title>
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <h1>Source code for pymbs.tranche</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">PyMBS is a Python library for use in modeling Mortgage-Backed Securities.</span>
+
+<span class="sd">Copyright (C) 2019  Brian Farrell</span>
+
+<span class="sd">This program is free software: you can redistribute it and/or modify</span>
+<span class="sd">it under the terms of the GNU Affero General Public License as published</span>
+<span class="sd">by the Free Software Foundation, either version 3 of the License, or</span>
+<span class="sd">(at your option) any later version.</span>
+
+<span class="sd">This program is distributed in the hope that it will be useful,</span>
+<span class="sd">but WITHOUT ANY WARRANTY; without even the implied warranty of</span>
+<span class="sd">MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span>
+<span class="sd">GNU Affero General Public License for more details.</span>
+
+<span class="sd">You should have received a copy of the GNU Affero General Public License</span>
+<span class="sd">along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.</span>
+
+<span class="sd">Contact: brian.farrell@me.com</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">collections</span> <span class="k">import</span> <span class="n">OrderedDict</span>
+<span class="kn">import</span> <span class="nn">decimal</span>
+
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="kn">from</span> <span class="nn">pymbs.log</span> <span class="k">import</span> <span class="n">get_logger</span>
+
+<span class="n">logger</span> <span class="o">=</span> <span class="n">get_logger</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+
+<span class="n">dec</span> <span class="o">=</span> <span class="n">decimal</span><span class="o">.</span><span class="n">Decimal</span>
+<span class="n">d0</span> <span class="o">=</span> <span class="n">dec</span><span class="p">(</span><span class="s1">&#39;0&#39;</span><span class="p">)</span>
+<span class="n">d1200</span> <span class="o">=</span> <span class="n">dec</span><span class="p">(</span><span class="s1">&#39;1200&#39;</span><span class="p">)</span>
+<span class="n">cleanup</span> <span class="o">=</span> <span class="n">dec</span><span class="p">(</span><span class="s1">&#39;1E-2&#39;</span><span class="p">)</span>
+
+<span class="c1"># TODO: Get the initial rate from the model and get the subsequent rates</span>
+<span class="c1"># from a FRED lookup</span>
+<span class="n">LIBOR</span> <span class="o">=</span> <span class="mf">1.31</span>
+
+
+<div class="viewcode-block" id="Tranche"><a class="viewcode-back" href="../../pymbs.tranche.html#pymbs.tranche.Tranche">[docs]</a><span class="k">class</span> <span class="nc">Tranche</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;The Tranche object represents a tranche in the deal.</span>
+<span class="sd">    It is used to store all pertinent information about the tranche,</span>
+<span class="sd">    including any cash flows calculated for it.</span>
+
+<span class="sd">    The current design of this object provides an experimental &#39;child tranche&#39;</span>
+<span class="sd">    option, which allows for the creation of pseudo tranches, to enable a</span>
+<span class="sd">    true tree-like representation of the cash flow structure and the payment</span>
+<span class="sd">    waterfall.</span>
+
+<span class="sd">    Generally speaking, when reversing a deal, the cash flow structure is</span>
+<span class="sd">    flattened so that only the tranches disclosed in the Prospectus Supplement</span>
+<span class="sd">    are included in the model.</span>
+
+<span class="sd">    The tree representation with its attending pseudo tranches offeres a truer</span>
+<span class="sd">    rendition of the model, but may not be necessary and requires a greater</span>
+<span class="sd">    understanding of structured cash flow models. This functionality *may*</span>
+<span class="sd">    be deprecated and removed in future releases.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_assumed_price</span> <span class="o">=</span> <span class="n">dec</span><span class="p">(</span><span class="s1">&#39;1.00&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_cash_flows</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_child_tranches</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_coupon</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;coupon&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_cusip</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;cusip&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_dated_date</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;dated_date&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_delay</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;delay&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_final_payment_date</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;final_payment_date&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_floater_cap</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;floater_cap&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_floater_floor</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;floater_floor&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_floater_formula</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;floater_formula&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_group_id</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;group_id&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_id</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;class_id&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_int_type</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;int_type&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_macr</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;macr&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_next_payment_date</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;next_payment_date&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_notional_with</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;notional_with&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_original_upb</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;upb&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_periodic_cf</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_periodic_prepay_scenario</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_price_at_issuance</span> <span class="o">=</span> <span class="n">dec</span><span class="p">(</span><span class="s1">&#39;1.00&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_prin_type</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;prin_type&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_pro_rated_ratio</span> <span class="o">=</span> <span class="n">dec</span><span class="p">(</span><span class="s1">&#39;0&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_retail</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;retail&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_schedule</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;schedule&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_strips</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_upb</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;upb&#39;</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">assumed_price</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_assumed_price</span>
+
+    <span class="nd">@assumed_price</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">assumed_price</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_assumed_price</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">cash_flows</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cash_flows</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">child_tranches</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_child_tranches</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">coupon</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_coupon</span>
+
+    <span class="nd">@coupon</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">coupon</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_coupon</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">cusip</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cusip</span>
+
+    <span class="nd">@cusip</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">cusip</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_cusip</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">dated_date</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dated_date</span>
+
+    <span class="nd">@dated_date</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">dated_date</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_dated_date</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">delay</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_delay</span>
+
+    <span class="nd">@delay</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">delay</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_delay</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">final_payment_date</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_final_payment_date</span>
+
+    <span class="nd">@final_payment_date</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">final_payment_date</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_final_payment_date</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">floater_cap</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_floater_cap</span>
+
+    <span class="nd">@floater_cap</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">floater_cap</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_floater_cap</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">floater_floor</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_floater_floor</span>
+
+    <span class="nd">@floater_floor</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">floater_floor</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_floater_floor</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">floater_formula</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_floater_formula</span>
+
+    <span class="nd">@floater_formula</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">floater_formula</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_floater_formula</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">group_id</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_group_id</span>
+
+    <span class="nd">@group_id</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">group_id</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_floater_floor</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">id</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_id</span>
+
+    <span class="nd">@id</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">id</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_floater_floor</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">int_type</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_int_type</span>
+
+    <span class="nd">@int_type</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">int_type</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_int_type</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">macr</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_macr</span>
+
+    <span class="nd">@macr</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">macr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_macr</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">next_payment_date</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_next_payment_date</span>
+
+    <span class="nd">@next_payment_date</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">next_payment_date</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_next_payment_date</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">notional_with</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_notional_with</span>
+
+    <span class="nd">@notional_with</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">notional_with</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_notional_with</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_notional_with</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">original_upb</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_original_upb</span>
+
+    <span class="nd">@original_upb</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">original_upb</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_original_upb</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">periodic_cf</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_periodic_cf</span>
+
+    <span class="nd">@periodic_cf</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">periodic_cf</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_periodic_cf</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">periodic_prepay_scenario</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_periodic_prepay_scenario</span>
+
+    <span class="nd">@periodic_prepay_scenario</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">periodic_prepay_scenario</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_periodic_prepay_scenario</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">price_at_issuance</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_price_at_issuance</span>
+
+    <span class="nd">@price_at_issuance</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">price_at_issuance</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_price_at_issuance</span> <span class="o">=</span> <span class="n">dec</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">prin_type</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_prin_type</span>
+
+    <span class="nd">@prin_type</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">prin_type</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_prin_type</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">pro_rated_ratio</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_pro_rated_ratio</span>
+
+    <span class="nd">@pro_rated_ratio</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">pro_rated_ratio</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_pro_rated_ratio</span> <span class="o">=</span> <span class="n">dec</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">retail</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_retail</span>
+
+    <span class="nd">@retail</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">retail</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_retail</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">schedule</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_schedule</span>
+
+    <span class="nd">@schedule</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">schedule</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_schedule</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">strips</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;This is a list of Notional tranches, whose interest was stripped</span>
+<span class="sd">        from this tranche. It is the corollary to the &#39;notional_with&#39;</span>
+<span class="sd">        attribute.</span>
+
+<span class="sd">        TODO: Need to actually populate this list during the loading of the</span>
+<span class="sd">        model!</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_strips</span>
+
+    <span class="nd">@strips</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">strips</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_strips</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">upb</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_upb</span>
+
+    <span class="nd">@upb</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">upb</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_upb</span> <span class="o">=</span> <span class="n">value</span>
+
+<div class="viewcode-block" id="Tranche.new_child_tranche"><a class="viewcode-back" href="../../pymbs.tranche.html#pymbs.tranche.Tranche.new_child_tranche">[docs]</a>    <span class="k">def</span> <span class="nf">new_child_tranche</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="n">group_id</span><span class="p">,</span> <span class="nb">id</span><span class="p">,</span> <span class="n">upb</span><span class="p">,</span> <span class="n">coupon</span><span class="p">,</span> <span class="n">floater_formula</span><span class="p">,</span> <span class="n">floater_cap</span><span class="p">,</span>
+        <span class="n">floater_floor</span><span class="p">,</span> <span class="n">prin_type</span><span class="p">,</span> <span class="n">int_type</span><span class="p">,</span> <span class="n">notional_with</span><span class="p">,</span> <span class="n">delay</span><span class="p">,</span> <span class="n">retail</span><span class="p">,</span> <span class="n">macr</span><span class="p">,</span>
+        <span class="n">final_payment_date</span><span class="p">,</span> <span class="n">cusip</span><span class="p">,</span> <span class="n">schedule</span><span class="p">,</span>
+        <span class="n">dated_date</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">next_payment_date</span><span class="o">=</span><span class="kc">None</span>
+    <span class="p">):</span>
+        <span class="n">tranche</span> <span class="o">=</span> <span class="n">Tranche</span><span class="p">(</span>
+            <span class="n">group_id</span><span class="p">,</span> <span class="nb">id</span><span class="p">,</span> <span class="n">upb</span><span class="p">,</span> <span class="n">coupon</span><span class="p">,</span> <span class="n">floater_formula</span><span class="p">,</span> <span class="n">floater_cap</span><span class="p">,</span>
+            <span class="n">floater_floor</span><span class="p">,</span> <span class="n">prin_type</span><span class="p">,</span> <span class="n">int_type</span><span class="p">,</span> <span class="n">notional_with</span><span class="p">,</span> <span class="n">delay</span><span class="p">,</span> <span class="n">retail</span><span class="p">,</span>
+            <span class="n">macr</span><span class="p">,</span> <span class="n">final_payment_date</span><span class="p">,</span> <span class="n">cusip</span><span class="p">,</span> <span class="n">schedule</span><span class="p">,</span>
+            <span class="n">dated_date</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">next_payment_date</span><span class="o">=</span><span class="kc">None</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">child_tranches</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">tranche</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">tranche</span></div>
+
+<div class="viewcode-block" id="Tranche.end_periodic_cf"><a class="viewcode-back" href="../../pymbs.tranche.html#pymbs.tranche.Tranche.end_periodic_cf">[docs]</a>    <span class="k">def</span> <span class="nf">end_periodic_cf</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">cash_flows</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">periodic_prepay_scenario</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">periodic_cf</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+        <span class="p">)</span></div>
+
+<div class="viewcode-block" id="Tranche.new_periodic_cf"><a class="viewcode-back" href="../../pymbs.tranche.html#pymbs.tranche.Tranche.new_periodic_cf">[docs]</a>    <span class="k">def</span> <span class="nf">new_periodic_cf</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">prepay_scenario</span><span class="p">,</span> <span class="n">period</span><span class="p">,</span> <span class="n">payment_date</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">prepay_scenario</span> <span class="o">!=</span> <span class="bp">self</span><span class="o">.</span><span class="n">periodic_prepay_scenario</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">periodic_prepay_scenario</span> <span class="o">=</span> <span class="n">prepay_scenario</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">cash_flows</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">periodic_prepay_scenario</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">upb</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">original_upb</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">periodic_cf</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_initialize_periodic_flow</span><span class="p">(</span><span class="n">period</span><span class="p">,</span> <span class="n">payment_date</span><span class="p">)</span></div>
+
+    <span class="k">def</span> <span class="nf">_initialize_periodic_flow</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">period</span><span class="p">,</span> <span class="n">payment_date</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">periodic_cf</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">()</span><span class="o">.</span><span class="n">fromkeys</span><span class="p">(</span>
+            <span class="p">[</span>
+                <span class="s1">&#39;period&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;payment_date&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;beginning_balance&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;interest&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;accrual&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;principal&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;ending_balance&#39;</span>
+            <span class="p">]</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">periodic_cf</span><span class="p">[</span><span class="s1">&#39;period&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">period</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">periodic_cf</span><span class="p">[</span><span class="s1">&#39;payment_date&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">payment_date</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">periodic_cf</span><span class="p">[</span><span class="s1">&#39;beginning_balance&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">upb</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">periodic_cf</span><span class="p">[</span><span class="s1">&#39;interest&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">dec</span><span class="p">(</span><span class="s1">&#39;0&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">periodic_cf</span><span class="p">[</span><span class="s1">&#39;accrual&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">dec</span><span class="p">(</span><span class="s1">&#39;0&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">periodic_cf</span><span class="p">[</span><span class="s1">&#39;principal&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">dec</span><span class="p">(</span><span class="s1">&#39;0&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">periodic_cf</span><span class="p">[</span><span class="s1">&#39;ending_balance&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">upb</span>
+
+<div class="viewcode-block" id="Tranche.pay_accrue"><a class="viewcode-back" href="../../pymbs.tranche.html#pymbs.tranche.Tranche.pay_accrue">[docs]</a>    <span class="k">def</span> <span class="nf">pay_accrue</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">periodic_cf</span><span class="p">[</span><span class="s1">&#39;accrual&#39;</span><span class="p">]</span> <span class="o">+=</span> <span class="bp">self</span><span class="o">.</span><span class="n">periodic_cf</span><span class="p">[</span><span class="s1">&#39;interest&#39;</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">periodic_cf</span><span class="p">[</span><span class="s1">&#39;ending_balance&#39;</span><span class="p">]</span> <span class="o">+=</span> <span class="bp">self</span><span class="o">.</span><span class="n">periodic_cf</span><span class="p">[</span><span class="s1">&#39;accrual&#39;</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">upb</span> <span class="o">+=</span> <span class="bp">self</span><span class="o">.</span><span class="n">periodic_cf</span><span class="p">[</span><span class="s1">&#39;accrual&#39;</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">periodic_cf</span><span class="p">[</span><span class="s1">&#39;interest&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">dec</span><span class="p">(</span><span class="s1">&#39;0&#39;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Tranche.pay_interest"><a class="viewcode-back" href="../../pymbs.tranche.html#pymbs.tranche.Tranche.pay_interest">[docs]</a>    <span class="k">def</span> <span class="nf">pay_interest</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">collat_net_interest</span><span class="p">):</span>
+        <span class="n">balance</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">upb</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">floater_formula</span><span class="p">:</span>
+            <span class="n">coupon</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span>
+                <span class="nb">max</span><span class="p">(</span><span class="n">dec</span><span class="p">(</span><span class="nb">eval</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">floater_formula</span><span class="p">)),</span> <span class="bp">self</span><span class="o">.</span><span class="n">floater_floor</span><span class="p">),</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">floater_cap</span>
+            <span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">coupon</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">coupon</span>
+        <span class="n">interest_payment</span> <span class="o">=</span> <span class="n">balance</span> <span class="o">*</span> <span class="p">(</span><span class="n">coupon</span> <span class="o">/</span> <span class="n">d1200</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">periodic_cf</span><span class="p">[</span><span class="s1">&#39;interest&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">interest_payment</span>
+        <span class="n">collat_net_interest</span> <span class="o">-=</span> <span class="n">interest_payment</span>
+
+        <span class="k">return</span> <span class="n">collat_net_interest</span></div>
+
+<div class="viewcode-block" id="Tranche.pay_principal"><a class="viewcode-back" href="../../pymbs.tranche.html#pymbs.tranche.Tranche.pay_principal">[docs]</a>    <span class="k">def</span> <span class="nf">pay_principal</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">principal_payment</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">upb</span> <span class="o">-=</span> <span class="n">principal_payment</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">upb</span> <span class="o">&lt;=</span> <span class="n">cleanup</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">upb</span> <span class="o">=</span> <span class="n">d0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">periodic_cf</span><span class="p">[</span><span class="s1">&#39;principal&#39;</span><span class="p">]</span> <span class="o">+=</span> <span class="n">principal_payment</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">periodic_cf</span><span class="p">[</span><span class="s1">&#39;ending_balance&#39;</span><span class="p">]</span> <span class="o">-=</span> <span class="n">principal_payment</span></div>
+
+<div class="viewcode-block" id="Tranche.reduce_notional_balance"><a class="viewcode-back" href="../../pymbs.tranche.html#pymbs.tranche.Tranche.reduce_notional_balance">[docs]</a>    <span class="k">def</span> <span class="nf">reduce_notional_balance</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">pass</span></div>
+
+<div class="viewcode-block" id="Tranche.tabulate_cf"><a class="viewcode-back" href="../../pymbs.tranche.html#pymbs.tranche.Tranche.tabulate_cf">[docs]</a>    <span class="k">def</span> <span class="nf">tabulate_cf</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">prepay_scenario</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">cash_flows</span><span class="p">:</span>
+            <span class="n">cash_flow_table</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="o">.</span><span class="n">from_dict</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">cash_flows</span><span class="p">[</span><span class="n">prepay_scenario</span><span class="p">]</span>
+            <span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">cash_flows</span><span class="p">[</span><span class="n">prepay_scenario</span><span class="p">]</span> <span class="o">=</span> <span class="n">cash_flow_table</span></div></div>
+
+
+<div class="viewcode-block" id="IndexRate"><a class="viewcode-back" href="../../pymbs.tranche.html#pymbs.tranche.IndexRate">[docs]</a><span class="k">class</span> <span class="nc">IndexRate</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Create and Index rate object for each Benchmark Index used in the deal.</span>
+
+<span class="sd">    Traditionally, the most popular index for Mortgage-Backed Securites has</span>
+<span class="sd">    been 1-Month LIBOR (The London Inter-bank Offered Rate).</span>
+<span class="sd">    However, in light of recent revelations reagrding LIBOR-fixing</span>
+<span class="sd">    by market makers, it is being phased-out, in favor of SOFR -</span>
+<span class="sd">    the Secured Overnight Financing Rate.</span>
+
+<span class="sd">    Other Index Rate Benchmarks may be used as well.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">benchmark</span><span class="p">,</span> <span class="n">fred_ticker</span><span class="p">,</span> <span class="n">initial_rate</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_benchmark</span> <span class="o">=</span> <span class="n">benchmark</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_fred_ticker</span> <span class="o">=</span> <span class="n">fred_ticker</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_initial_rate</span> <span class="o">=</span> <span class="n">initial_rate</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_name</span>
+
+    <span class="nd">@name</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_name</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">benchmark</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_benchmark</span>
+
+    <span class="nd">@benchmark</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">benchmark</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_benchmark</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">fred_ticker</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fred_ticker</span>
+
+    <span class="nd">@fred_ticker</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">fred_ticker</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_fred_ticker</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">initial_rate</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_initial_rate</span>
+
+    <span class="nd">@initial_rate</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">initial_rate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_initial_rate</span> <span class="o">=</span> <span class="n">value</span></div>
+</pre></div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">PyMBS</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../project.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pymbs.html">pymbs package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../todo.html">Known Issues &amp; Enhancements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../changes.html">Change Log</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../index.html">Module code</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Brian Farrell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

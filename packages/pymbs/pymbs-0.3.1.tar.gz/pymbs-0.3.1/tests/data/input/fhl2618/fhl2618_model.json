@@ -1,0 +1,21 @@
+{
+    "indices": [
+        {
+            "name": "LIBOR",
+            "benchmark": "BBA15",
+            "fred_ticker": "USD1MTD156N", 
+            "initial_rate": 1.31
+        }
+    ],
+    "waterfall": {
+        "1": [],
+        "2": [],
+        "3": [
+            "pay_accrue(['Z'])",
+            "calculate(['V3'], 'COLL_PRINCIPAL + Z_ACCRUAL')",
+            "pay_pro_rata(['V3'], ['AB', 'FB'])",
+            "pay_sequential(['V3'], ['Z'])"
+        ],
+        "4": []
+    }
+}

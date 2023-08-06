@@ -1,0 +1,368 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>pymbs.tranche module &#8212; PyMBS 0.3.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="pymbs.utils module" href="pymbs.utils.html" />
+    <link rel="prev" title="pymbs.payment_rules module" href="pymbs.payment_rules.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-pymbs.tranche">
+<span id="pymbs-tranche-module"></span><h1>pymbs.tranche module<a class="headerlink" href="#module-pymbs.tranche" title="Permalink to this heading">¶</a></h1>
+<p>PyMBS is a Python library for use in modeling Mortgage-Backed Securities.</p>
+<p>Copyright (C) 2019  Brian Farrell</p>
+<p>This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published
+by the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.</p>
+<p>This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.</p>
+<p>You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see &lt;<a class="reference external" href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>&gt;.</p>
+<p>Contact: <a class="reference external" href="mailto:brian&#46;farrell&#37;&#52;&#48;me&#46;com">brian<span>&#46;</span>farrell<span>&#64;</span>me<span>&#46;</span>com</a></p>
+<dl class="py class">
+<dt class="sig sig-object py" id="pymbs.tranche.IndexRate">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pymbs.tranche.</span></span><span class="sig-name descname"><span class="pre">IndexRate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">benchmark</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fred_ticker</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial_rate</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pymbs/tranche.html#IndexRate"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pymbs.tranche.IndexRate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Create and Index rate object for each Benchmark Index used in the deal.</p>
+<p>Traditionally, the most popular index for Mortgage-Backed Securites has
+been 1-Month LIBOR (The London Inter-bank Offered Rate).
+However, in light of recent revelations reagrding LIBOR-fixing
+by market makers, it is being phased-out, in favor of SOFR -
+the Secured Overnight Financing Rate.</p>
+<p>Other Index Rate Benchmarks may be used as well.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="pymbs.tranche.IndexRate.benchmark">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">benchmark</span></span><a class="headerlink" href="#pymbs.tranche.IndexRate.benchmark" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pymbs.tranche.IndexRate.fred_ticker">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">fred_ticker</span></span><a class="headerlink" href="#pymbs.tranche.IndexRate.fred_ticker" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pymbs.tranche.IndexRate.initial_rate">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">initial_rate</span></span><a class="headerlink" href="#pymbs.tranche.IndexRate.initial_rate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pymbs.tranche.IndexRate.name">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#pymbs.tranche.IndexRate.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pymbs.tranche.Tranche">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pymbs.tranche.</span></span><span class="sig-name descname"><span class="pre">Tranche</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pymbs/tranche.html#Tranche"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pymbs.tranche.Tranche" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>The Tranche object represents a tranche in the deal.
+It is used to store all pertinent information about the tranche,
+including any cash flows calculated for it.</p>
+<p>The current design of this object provides an experimental ‘child tranche’
+option, which allows for the creation of pseudo tranches, to enable a
+true tree-like representation of the cash flow structure and the payment
+waterfall.</p>
+<p>Generally speaking, when reversing a deal, the cash flow structure is
+flattened so that only the tranches disclosed in the Prospectus Supplement
+are included in the model.</p>
+<p>The tree representation with its attending pseudo tranches offeres a truer
+rendition of the model, but may not be necessary and requires a greater
+understanding of structured cash flow models. This functionality <em>may</em>
+be deprecated and removed in future releases.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="pymbs.tranche.Tranche.assumed_price">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">assumed_price</span></span><a class="headerlink" href="#pymbs.tranche.Tranche.assumed_price" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pymbs.tranche.Tranche.cash_flows">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">cash_flows</span></span><a class="headerlink" href="#pymbs.tranche.Tranche.cash_flows" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pymbs.tranche.Tranche.child_tranches">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">child_tranches</span></span><a class="headerlink" href="#pymbs.tranche.Tranche.child_tranches" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pymbs.tranche.Tranche.coupon">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">coupon</span></span><a class="headerlink" href="#pymbs.tranche.Tranche.coupon" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pymbs.tranche.Tranche.cusip">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">cusip</span></span><a class="headerlink" href="#pymbs.tranche.Tranche.cusip" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pymbs.tranche.Tranche.dated_date">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">dated_date</span></span><a class="headerlink" href="#pymbs.tranche.Tranche.dated_date" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pymbs.tranche.Tranche.delay">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">delay</span></span><a class="headerlink" href="#pymbs.tranche.Tranche.delay" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pymbs.tranche.Tranche.end_periodic_cf">
+<span class="sig-name descname"><span class="pre">end_periodic_cf</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/pymbs/tranche.html#Tranche.end_periodic_cf"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pymbs.tranche.Tranche.end_periodic_cf" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pymbs.tranche.Tranche.final_payment_date">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">final_payment_date</span></span><a class="headerlink" href="#pymbs.tranche.Tranche.final_payment_date" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pymbs.tranche.Tranche.floater_cap">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">floater_cap</span></span><a class="headerlink" href="#pymbs.tranche.Tranche.floater_cap" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pymbs.tranche.Tranche.floater_floor">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">floater_floor</span></span><a class="headerlink" href="#pymbs.tranche.Tranche.floater_floor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pymbs.tranche.Tranche.floater_formula">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">floater_formula</span></span><a class="headerlink" href="#pymbs.tranche.Tranche.floater_formula" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pymbs.tranche.Tranche.group_id">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">group_id</span></span><a class="headerlink" href="#pymbs.tranche.Tranche.group_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pymbs.tranche.Tranche.id">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">id</span></span><a class="headerlink" href="#pymbs.tranche.Tranche.id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pymbs.tranche.Tranche.int_type">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">int_type</span></span><a class="headerlink" href="#pymbs.tranche.Tranche.int_type" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pymbs.tranche.Tranche.macr">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">macr</span></span><a class="headerlink" href="#pymbs.tranche.Tranche.macr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pymbs.tranche.Tranche.new_child_tranche">
+<span class="sig-name descname"><span class="pre">new_child_tranche</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">group_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">upb</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coupon</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">floater_formula</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">floater_cap</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">floater_floor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prin_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">int_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">notional_with</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">delay</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">retail</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">macr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">final_payment_date</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cusip</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">schedule</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dated_date</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">next_payment_date</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pymbs/tranche.html#Tranche.new_child_tranche"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pymbs.tranche.Tranche.new_child_tranche" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pymbs.tranche.Tranche.new_periodic_cf">
+<span class="sig-name descname"><span class="pre">new_periodic_cf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prepay_scenario</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">period</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">payment_date</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pymbs/tranche.html#Tranche.new_periodic_cf"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pymbs.tranche.Tranche.new_periodic_cf" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pymbs.tranche.Tranche.next_payment_date">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">next_payment_date</span></span><a class="headerlink" href="#pymbs.tranche.Tranche.next_payment_date" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pymbs.tranche.Tranche.notional_with">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">notional_with</span></span><a class="headerlink" href="#pymbs.tranche.Tranche.notional_with" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pymbs.tranche.Tranche.original_upb">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">original_upb</span></span><a class="headerlink" href="#pymbs.tranche.Tranche.original_upb" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pymbs.tranche.Tranche.pay_accrue">
+<span class="sig-name descname"><span class="pre">pay_accrue</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/pymbs/tranche.html#Tranche.pay_accrue"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pymbs.tranche.Tranche.pay_accrue" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pymbs.tranche.Tranche.pay_interest">
+<span class="sig-name descname"><span class="pre">pay_interest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">collat_net_interest</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pymbs/tranche.html#Tranche.pay_interest"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pymbs.tranche.Tranche.pay_interest" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pymbs.tranche.Tranche.pay_principal">
+<span class="sig-name descname"><span class="pre">pay_principal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">principal_payment</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pymbs/tranche.html#Tranche.pay_principal"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pymbs.tranche.Tranche.pay_principal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pymbs.tranche.Tranche.periodic_cf">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">periodic_cf</span></span><a class="headerlink" href="#pymbs.tranche.Tranche.periodic_cf" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pymbs.tranche.Tranche.periodic_prepay_scenario">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">periodic_prepay_scenario</span></span><a class="headerlink" href="#pymbs.tranche.Tranche.periodic_prepay_scenario" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pymbs.tranche.Tranche.price_at_issuance">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">price_at_issuance</span></span><a class="headerlink" href="#pymbs.tranche.Tranche.price_at_issuance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pymbs.tranche.Tranche.prin_type">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">prin_type</span></span><a class="headerlink" href="#pymbs.tranche.Tranche.prin_type" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pymbs.tranche.Tranche.pro_rated_ratio">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">pro_rated_ratio</span></span><a class="headerlink" href="#pymbs.tranche.Tranche.pro_rated_ratio" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pymbs.tranche.Tranche.reduce_notional_balance">
+<span class="sig-name descname"><span class="pre">reduce_notional_balance</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/pymbs/tranche.html#Tranche.reduce_notional_balance"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pymbs.tranche.Tranche.reduce_notional_balance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pymbs.tranche.Tranche.retail">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">retail</span></span><a class="headerlink" href="#pymbs.tranche.Tranche.retail" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pymbs.tranche.Tranche.schedule">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">schedule</span></span><a class="headerlink" href="#pymbs.tranche.Tranche.schedule" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pymbs.tranche.Tranche.strips">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">strips</span></span><a class="headerlink" href="#pymbs.tranche.Tranche.strips" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is a list of Notional tranches, whose interest was stripped
+from this tranche. It is the corollary to the ‘notional_with’
+attribute.</p>
+<p>TODO: Need to actually populate this list during the loading of the
+model!</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pymbs.tranche.Tranche.tabulate_cf">
+<span class="sig-name descname"><span class="pre">tabulate_cf</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/pymbs/tranche.html#Tranche.tabulate_cf"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pymbs.tranche.Tranche.tabulate_cf" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pymbs.tranche.Tranche.upb">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">upb</span></span><a class="headerlink" href="#pymbs.tranche.Tranche.upb" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">PyMBS</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="project.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="pymbs.html">pymbs package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="pymbs.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pymbs.html#module-pymbs">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="todo.html">Known Issues &amp; Enhancements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes.html">Change Log</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="pymbs.html">pymbs package</a><ul>
+  <li><a href="modules.html">pymbs</a><ul>
+      <li>Previous: <a href="pymbs.payment_rules.html" title="previous chapter">pymbs.payment_rules module</a></li>
+      <li>Next: <a href="pymbs.utils.html" title="next chapter">pymbs.utils module</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019-2023, Brian Farrell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.0.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/pymbs.tranche.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,16 @@
+{% if ipython_status %}
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <p>You have requested to round the WALs to <span style="color:green"><b>{{ requested_precision }}</b></span> places, but the total precision allowed by your PyMBS configuration is <b>{{ config_precision }}</b>.  At least <i>some</i> of the resulting values would be nonsensical, so PyMBS has rounded all of the WALs to <span style="color:DarkViolet"><b>{{ max_allowed_precision }}</b></span> places instead.</p>
+    <p>For more information on configuring PyMBS, please see <a href="{{ pymbs_config_url }}">{{ pymbs_config_url }}</a></p>
+    <p>For more information on this error, please see <a href="{{ quantize_help_url }}">{{ quantize_help_url }}</a></p>
+</body>
+</html>
+{% else %}
+You have requested to round the WALs to {{ requested_precision }} places, but the total precision allowed by your PyMBS configuration is {{ config_precision }}.  At least some of the resulting values would be nonsensical, so PyMBS has rounded all of the WALs to {{ max_allowed_precision }} places instead.
+
+For more information on configuring PyMBS, please see https://brianfarrell.gitlab.io/pymbs/pymbs.config.html
+
+For more information on this error, please see https://docs.python.org/3/library/decimal.html#decimal.Decimal.quantize
+{% endif %}

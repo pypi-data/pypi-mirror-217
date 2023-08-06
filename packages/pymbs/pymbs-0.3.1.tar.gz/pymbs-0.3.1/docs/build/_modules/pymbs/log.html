@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>pymbs.log &#8212; PyMBS 0.3.0 documentation</title>
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <h1>Source code for pymbs.log</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">PyMBS is a Python library for use in modeling Mortgage-Backed Securities.</span>
+
+<span class="sd">Copyright (C) 2019  Brian Farrell</span>
+
+<span class="sd">This program is free software: you can redistribute it and/or modify</span>
+<span class="sd">it under the terms of the GNU Affero General Public License as published</span>
+<span class="sd">by the Free Software Foundation, either version 3 of the License, or</span>
+<span class="sd">(at your option) any later version.</span>
+
+<span class="sd">This program is distributed in the hope that it will be useful,</span>
+<span class="sd">but WITHOUT ANY WARRANTY; without even the implied warranty of</span>
+<span class="sd">MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span>
+<span class="sd">GNU Affero General Public License for more details.</span>
+
+<span class="sd">You should have received a copy of the GNU Affero General Public License</span>
+<span class="sd">along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.</span>
+
+<span class="sd">Contact: brian.farrell@me.com</span>
+
+<span class="sd">The log module reads-in the pymbs_logging.json file that comes with the</span>
+<span class="sd">distribution and sets up logging for PyMBS. This default file should suffice</span>
+<span class="sd">for most installations, but the user *is* able to cutomize logging through</span>
+<span class="sd">the use of environment variables.</span>
+
+<span class="sd">If you would like to specify your own logging config file, in JSON format,</span>
+<span class="sd">you can specify the location of that custom config file with the</span>
+<span class="sd">``PYMBS_LOG_CONFIG`` environment variable.</span>
+
+<span class="sd">By default, the log level is set to ``INFO``. If you would like to change the</span>
+<span class="sd">level, you may set it using the ``PYMBS_LOG_LEVEL`` environment variable.</span>
+
+<span class="sd">.. include:: ../source/log_file.rst</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">logging</span>
+<span class="kn">import</span> <span class="nn">logging.config</span>
+<span class="kn">from</span> <span class="nn">pathlib</span> <span class="k">import</span> <span class="n">Path</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="kn">from</span> <span class="nn">pymbs.enums</span> <span class="k">import</span> <span class="n">ExitCode</span>
+
+<span class="n">platform</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">platform</span>
+
+<span class="n">PYMBS_BASE_PATH</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">parent</span>
+
+<span class="n">log_dir</span> <span class="o">=</span> <span class="s1">&#39;pymbs&#39;</span>
+<span class="n">log_file</span> <span class="o">=</span> <span class="s1">&#39;pymbs.log&#39;</span>
+<span class="n">rel_log_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">log_dir</span><span class="p">,</span> <span class="n">log_file</span><span class="p">)</span>
+<span class="n">user_home_dir</span> <span class="o">=</span> <span class="n">Path</span><span class="o">.</span><span class="n">home</span><span class="p">()</span>
+<span class="n">log_dir_mode</span> <span class="o">=</span> <span class="mo">0o774</span>
+
+<span class="k">if</span> <span class="n">platform</span> <span class="o">==</span> <span class="s1">&#39;darwin&#39;</span><span class="p">:</span>
+    <span class="n">pymbs_log_dir</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">user_home_dir</span><span class="p">,</span> <span class="s1">&#39;.local&#39;</span><span class="p">,</span> <span class="s1">&#39;log&#39;</span><span class="p">,</span> <span class="n">log_dir</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">platform</span> <span class="o">==</span> <span class="s1">&#39;linux&#39;</span><span class="p">:</span>
+    <span class="n">pymbs_log_dir</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">user_home_dir</span><span class="p">,</span> <span class="s1">&#39;.local&#39;</span><span class="p">,</span> <span class="s1">&#39;log&#39;</span><span class="p">,</span> <span class="n">log_dir</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">platform</span> <span class="o">==</span> <span class="s1">&#39;win32&#39;</span><span class="p">:</span>
+    <span class="n">pymbs_log_dir</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">user_home_dir</span><span class="p">,</span> <span class="s1">&#39;AppData&#39;</span><span class="p">,</span> <span class="s1">&#39;Local&#39;</span><span class="p">,</span> <span class="n">log_dir</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="ow">not</span> <span class="n">pymbs_log_dir</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
+    <span class="n">pymbs_log_dir</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="n">log_dir_mode</span><span class="p">,</span> <span class="n">parents</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">PYMBS_LOG_FILE</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">pymbs_log_dir</span><span class="p">,</span> <span class="n">log_file</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="ow">not</span> <span class="n">PYMBS_LOG_FILE</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
+    <span class="n">PYMBS_LOG_FILE</span><span class="o">.</span><span class="n">touch</span><span class="p">()</span>
+
+<span class="n">PYMBS_LOG_CONFIG</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">PYMBS_BASE_PATH</span><span class="p">,</span> <span class="s1">&#39;config&#39;</span><span class="p">,</span> <span class="s1">&#39;pymbs_logging.json&#39;</span><span class="p">)</span>
+
+<span class="n">PYMBS_LOG_LEVEL</span> <span class="o">=</span> <span class="s1">&#39;INFO&#39;</span>
+
+
+<span class="k">def</span> <span class="nf">_get_logging_config</span><span class="p">(</span><span class="n">env_log_level</span><span class="o">=</span><span class="s1">&#39;PYMBS_LOG_LEVEL&#39;</span><span class="p">,</span>
+                        <span class="n">env_log_config</span><span class="o">=</span><span class="s1">&#39;PYMBS_LOG_CONFIG&#39;</span><span class="p">,</span>
+                        <span class="n">env_log_file</span><span class="o">=</span><span class="s1">&#39;PYMBS_LOG_FILE&#39;</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Setup logging configuration.&quot;&quot;&quot;</span>
+    <span class="n">value</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="n">env_log_config</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">value</span><span class="p">:</span>
+        <span class="n">log_config_path</span> <span class="o">=</span> <span class="n">value</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">log_config_path</span> <span class="o">=</span> <span class="n">PYMBS_LOG_CONFIG</span>
+
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">log_config_path</span><span class="p">,</span> <span class="s1">&#39;rt&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">logging_config</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">OSError</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;Failed to open PyMBS logging configuration file at &quot;</span>
+              <span class="n">f</span><span class="s2">&quot;</span><span class="si">{log_config_path}</span><span class="se">\n</span><span class="s2">Exiting...</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">ExitCode</span><span class="o">.</span><span class="n">EX_NOINPUT</span><span class="p">)</span>
+
+    <span class="n">value</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="n">env_log_file</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">value</span><span class="p">:</span>
+        <span class="n">pymbs_log_file</span> <span class="o">=</span> <span class="n">value</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">pymbs_log_file</span> <span class="o">=</span> <span class="n">PYMBS_LOG_FILE</span>
+    <span class="n">logging_config</span><span class="p">[</span><span class="s1">&#39;handlers&#39;</span><span class="p">][</span><span class="s1">&#39;default_handler&#39;</span><span class="p">][</span><span class="s1">&#39;filename&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pymbs_log_file</span>
+
+    <span class="n">value</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="n">env_log_level</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">value</span><span class="p">:</span>
+        <span class="n">pymbs_log_level</span> <span class="o">=</span> <span class="n">value</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">pymbs_log_level</span> <span class="o">=</span> <span class="n">PYMBS_LOG_LEVEL</span>
+    <span class="n">logging_config</span><span class="p">[</span><span class="s1">&#39;loggers&#39;</span><span class="p">][</span><span class="s1">&#39;pymbs&#39;</span><span class="p">][</span><span class="s1">&#39;level&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pymbs_log_level</span>
+
+    <span class="k">return</span> <span class="n">logging_config</span>
+
+
+<span class="n">logging</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">dictConfig</span><span class="p">(</span><span class="n">_get_logging_config</span><span class="p">())</span>
+
+
+<div class="viewcode-block" id="get_logger"><a class="viewcode-back" href="../../pymbs.log.html#pymbs.log.get_logger">[docs]</a><span class="k">def</span> <span class="nf">get_logger</span><span class="p">(</span><span class="n">logger_name</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Return a logger instance named ``logger_name``</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="n">logger_name</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">logger</span></div>
+</pre></div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">PyMBS</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../project.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pymbs.html">pymbs package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../todo.html">Known Issues &amp; Enhancements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../changes.html">Change Log</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../index.html">Module code</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Brian Farrell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

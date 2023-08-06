@@ -1,0 +1,73 @@
+
+# Build
+_build/
+build/
+!docs/build/
+downloads/
+eggs/
+dist/
+*.egg-info
+sdist/
+wheels/
+
+# Caches
+*.cache
+*.pytest_cache
+__pycache__
+tests/__pycache__
+*.sublime-workspace
+*_version.py
+
+# Dependencies
+*node_modules
+
+# Databases
+*.sqlite*
+
+# Docker
+*docker-compose.override.yaml
+
+# IPython
+profile_default/
+ipython_config.py
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# MacOS
+.DS_Store
+
+# Miscellaneous
+*.graffle
+*.pdf
+*.xlsx
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Private
+*.env*
+*.envrc*
+env/
+*.secret*
+config.yaml
+*.pem
+
+# Project-specific
+
+# Test
+cover/
+.coverage
+**coverage.xml
+htmlcov/
+.pytest_cache/
+**/coverage/html/
+
+# Reference/Sandbox
+legal/
+reference/
+research/
+notes.text
+temp.py

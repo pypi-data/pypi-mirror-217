@@ -1,0 +1,378 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>pymbs.utils &#8212; PyMBS 0.3.0 documentation</title>
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <h1>Source code for pymbs.utils</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">PyMBS is a Python library for use in modeling Mortgage-Backed Securities.</span>
+
+<span class="sd">Copyright (C) 2019  Brian Farrell</span>
+
+<span class="sd">This program is free software: you can redistribute it and/or modify</span>
+<span class="sd">it under the terms of the GNU Affero General Public License as published</span>
+<span class="sd">by the Free Software Foundation, either version 3 of the License, or</span>
+<span class="sd">(at your option) any later version.</span>
+
+<span class="sd">This program is distributed in the hope that it will be useful,</span>
+<span class="sd">but WITHOUT ANY WARRANTY; without even the implied warranty of</span>
+<span class="sd">MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span>
+<span class="sd">GNU Affero General Public License for more details.</span>
+
+<span class="sd">You should have received a copy of the GNU Affero General Public License</span>
+<span class="sd">along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.</span>
+
+<span class="sd">Contact: brian.farrell@me.com</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">collections</span> <span class="k">import</span> <span class="n">namedtuple</span>
+<span class="kn">import</span> <span class="nn">decimal</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">re</span>
+
+<span class="kn">from</span> <span class="nn">pymbs.config</span> <span class="k">import</span> <span class="n">config</span>
+<span class="kn">from</span> <span class="nn">pymbs.enums</span> <span class="k">import</span> <span class="n">URL</span>
+<span class="kn">from</span> <span class="nn">pymbs.exceptions</span> <span class="k">import</span> <span class="n">handle_gracefully</span><span class="p">,</span> <span class="n">PayRuleError</span>
+<span class="kn">from</span> <span class="nn">pymbs.log</span> <span class="k">import</span> <span class="n">get_logger</span>
+
+<span class="n">logger</span> <span class="o">=</span> <span class="n">get_logger</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+
+<span class="n">dec</span> <span class="o">=</span> <span class="n">decimal</span><span class="o">.</span><span class="n">Decimal</span>
+
+<span class="n">ACNT</span> <span class="o">=</span> <span class="n">namedtuple</span><span class="p">(</span><span class="s1">&#39;AssumedRepline&#39;</span><span class="p">,</span> <span class="p">[</span>
+    <span class="s1">&#39;group_id&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;repline&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;upb&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;coupon&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;original_term&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;wac&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;wam&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;wala&#39;</span>
+<span class="p">])</span>
+
+<span class="n">PNT</span> <span class="o">=</span> <span class="n">namedtuple</span><span class="p">(</span><span class="s1">&#39;Pandas&#39;</span><span class="p">,</span> <span class="p">[</span>
+    <span class="s1">&#39;Index&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;period&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;payment_date&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;beginning_balance&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;smm&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;scheduled_payment&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;net_interest&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;scheduled_principal&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;prepayment&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;total_principal&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;cash_flow&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;ending_balance&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;buckets&#39;</span>
+<span class="p">])</span>
+
+
+<span class="k">def</span> <span class="nf">_round_dec</span><span class="p">(</span><span class="n">decimal_value</span><span class="p">,</span> <span class="n">precision</span><span class="o">=</span><span class="n">config</span><span class="o">.</span><span class="n">round_precision</span><span class="p">):</span>
+    <span class="n">places</span> <span class="o">=</span> <span class="n">dec</span><span class="p">(</span><span class="s1">&#39;10&#39;</span><span class="p">)</span> <span class="o">**</span> <span class="n">dec</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;{-precision}&quot;</span><span class="p">)</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">rounded_value</span> <span class="o">=</span> <span class="n">decimal_value</span><span class="o">.</span><span class="n">quantize</span><span class="p">(</span><span class="n">places</span><span class="p">)</span>
+    <span class="k">except</span> <span class="n">decimal</span><span class="o">.</span><span class="n">InvalidOperation</span><span class="p">:</span>
+        <span class="n">ctx</span> <span class="o">=</span> <span class="n">decimal</span><span class="o">.</span><span class="n">getcontext</span><span class="p">()</span>
+        <span class="n">dv_rep</span> <span class="o">=</span> <span class="n">decimal_value</span><span class="o">.</span><span class="n">as_tuple</span><span class="p">()</span>
+        <span class="n">len_integer_part</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">dv_rep</span><span class="o">.</span><span class="n">digits</span><span class="p">)</span> <span class="o">+</span> <span class="n">dv_rep</span><span class="o">.</span><span class="n">exponent</span>
+        <span class="n">max_allowed_precision</span> <span class="o">=</span> <span class="n">ctx</span><span class="o">.</span><span class="n">prec</span> <span class="o">-</span> <span class="n">len_integer_part</span>
+        <span class="n">places</span> <span class="o">=</span> <span class="n">dec</span><span class="p">(</span><span class="s1">&#39;10&#39;</span><span class="p">)</span> <span class="o">**</span> <span class="n">dec</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;{-max_allowed_precision}&quot;</span><span class="p">)</span>
+        <span class="n">rounded_value</span> <span class="o">=</span> <span class="n">decimal_value</span><span class="o">.</span><span class="n">quantize</span><span class="p">(</span><span class="n">places</span><span class="p">)</span>
+        <span class="n">handle_gracefully</span><span class="p">(</span>
+            <span class="n">config</span><span class="o">.</span><span class="n">_ipython_active</span><span class="p">,</span>
+            <span class="n">logger</span><span class="p">,</span>
+            <span class="s1">&#39;rounding_error&#39;</span><span class="p">,</span>
+            <span class="n">decimal_value</span><span class="o">=</span><span class="n">decimal_value</span><span class="p">,</span>
+            <span class="n">precision</span><span class="o">=</span><span class="n">precision</span><span class="p">,</span>
+            <span class="n">config_precision</span><span class="o">=</span><span class="n">config</span><span class="o">.</span><span class="n">precision</span><span class="p">,</span>
+            <span class="n">max_allowed_precision</span><span class="o">=</span><span class="n">max_allowed_precision</span><span class="p">,</span>
+            <span class="n">pymbs_config_url</span><span class="o">=</span><span class="n">URL</span><span class="o">.</span><span class="n">PYMBS_CONFIG</span><span class="o">.</span><span class="n">value</span><span class="p">,</span>
+            <span class="n">quantize_help_url</span><span class="o">=</span><span class="n">URL</span><span class="o">.</span><span class="n">QUANTIZE_HELP</span><span class="o">.</span><span class="n">value</span><span class="p">,</span>
+            <span class="n">no_exit</span><span class="o">=</span><span class="kc">True</span>
+        <span class="p">)</span>
+    <span class="k">return</span> <span class="n">rounded_value</span>
+
+
+<span class="k">def</span> <span class="nf">_parse_waterfall</span><span class="p">(</span><span class="n">waterfall</span><span class="p">):</span>
+    <span class="n">wf</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">rule</span> <span class="ow">in</span> <span class="n">waterfall</span><span class="p">:</span>
+        <span class="n">pr</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span>
+            <span class="sa">r</span><span class="s1">&#39;(?P&lt;full_rule&gt;(?P&lt;pay_rule&gt;\w+)\(&#39;</span>
+            <span class="sa">r</span><span class="s1">&#39;(?P&lt;buckets&gt;\[(?:</span><span class="se">\&#39;</span><span class="s1">\w+</span><span class="se">\&#39;</span><span class="s1">(?:,\s|\]))*)&#39;</span>
+            <span class="sa">r</span><span class="s1">&#39;(?:,\s(?P&lt;tranches&gt;\[(?:</span><span class="se">\&#39;</span><span class="s1">\w+</span><span class="se">\&#39;</span><span class="s1">(?:,\s|\]))*))?(?:(?:,\s)&#39;</span>
+            <span class="sa">r</span><span class="s1">&#39;(?:</span><span class="se">\&#39;</span><span class="s1">(?P&lt;expression&gt;.*)</span><span class="se">\&#39;</span><span class="s1">))?\))&#39;</span><span class="p">,</span>
+            <span class="n">rule</span><span class="p">,</span>
+            <span class="n">re</span><span class="o">.</span><span class="n">S</span>
+        <span class="p">)</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">pr</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">PayRuleError</span><span class="p">(</span><span class="n">rule</span><span class="p">,</span> <span class="s1">&#39;no_parse&#39;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">pr</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="s1">&#39;pay_rule&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;pay_accrue&#39;</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">pr</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="s1">&#39;tranches&#39;</span><span class="p">)</span> <span class="ow">or</span> <span class="n">pr</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="s1">&#39;expression&#39;</span><span class="p">):</span>
+                <span class="k">raise</span> <span class="n">PayRuleError</span><span class="p">(</span><span class="n">pr</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="s1">&#39;full_rule&#39;</span><span class="p">),</span> <span class="s1">&#39;invalid&#39;</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">func</span> <span class="o">=</span> <span class="n">pr</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="s1">&#39;full_rule&#39;</span><span class="p">)</span>
+                <span class="c1"># In the case of the pay_accrue rule, the tranches to accrue</span>
+                <span class="c1"># are captured by the &#39;buckets&#39; group</span>
+                <span class="n">tranches</span> <span class="o">=</span> <span class="n">pr</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="s1">&#39;buckets&#39;</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">pr</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="s1">&#39;pay_rule&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;calculate&#39;</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">pr</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="s1">&#39;tranches&#39;</span><span class="p">):</span>
+                <span class="k">raise</span> <span class="n">PayRuleError</span><span class="p">(</span><span class="n">pr</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="s1">&#39;full_rule&#39;</span><span class="p">),</span> <span class="s1">&#39;invalid&#39;</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">func</span> <span class="o">=</span> <span class="n">pr</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="s1">&#39;full_rule&#39;</span><span class="p">)</span>
+                <span class="n">tranches</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">pr</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="s1">&#39;pay_rule&#39;</span><span class="p">)</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;pay_accrue&#39;</span><span class="p">,</span> <span class="s1">&#39;calculate&#39;</span><span class="p">]:</span>
+                <span class="k">if</span> <span class="n">pr</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="s1">&#39;expression&#39;</span><span class="p">)</span> <span class="ow">or</span> <span class="ow">not</span> \
+                        <span class="p">(</span><span class="n">pr</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="s1">&#39;buckets&#39;</span><span class="p">)</span> <span class="ow">and</span> <span class="n">pr</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="s1">&#39;tranches&#39;</span><span class="p">)):</span>
+                    <span class="k">raise</span> <span class="n">PayRuleError</span><span class="p">(</span><span class="n">pr</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="s1">&#39;full_rule&#39;</span><span class="p">),</span> <span class="s1">&#39;invalid&#39;</span><span class="p">)</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">func</span> <span class="o">=</span> <span class="n">pr</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="s1">&#39;full_rule&#39;</span><span class="p">)</span>
+                    <span class="n">tranches</span> <span class="o">=</span> <span class="n">pr</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="s1">&#39;tranches&#39;</span><span class="p">)</span>
+        <span class="n">wf</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">tranches</span><span class="o">=</span><span class="n">tranches</span><span class="p">,</span> <span class="n">func</span><span class="o">=</span><span class="n">func</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">wf</span>
+
+
+<span class="k">def</span> <span class="nf">_parse_expression</span><span class="p">(</span><span class="n">exp</span><span class="p">):</span>
+    <span class="n">expr_tokens</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span>
+        <span class="sa">r</span><span class="s1">&#39;(?P&lt;first_term&gt;(?:COLL|(?:^COLL|[A-Za-z0-9]))+?_&#39;</span>
+        <span class="sa">r</span><span class="s1">&#39;(?:PRINCIPAL|ACCRUAL|PREPAY|BALANCE|SCHEDULED|VAR))&#39;</span>
+        <span class="sa">r</span><span class="s1">&#39;(?:\s(?P&lt;operator&gt;\+|\-|\*|\/)\s)&#39;</span>
+        <span class="sa">r</span><span class="s1">&#39;(?=(?:(?:COLL|(?:^COLL|[A-Za-z0-9])+)_&#39;</span>
+        <span class="sa">r</span><span class="s1">&#39;(?:PRINCIPAL|ACCRUAL|PREPAY|BALANCE|SCHEDULED|VAR)))&#39;</span>
+        <span class="sa">r</span><span class="s1">&#39;(?&lt;=(?:\s(?:\+|\-|\*|\/)\s))&#39;</span>
+        <span class="sa">r</span><span class="s1">&#39;(?P&lt;second_term&gt;(?:COLL|(?:^COLL|[A-Za-z0-9]))+?_&#39;</span>
+        <span class="sa">r</span><span class="s1">&#39;(?:PRINCIPAL|ACCRUAL|PREPAY|BALANCE|SCHEDULED|VAR))&#39;</span><span class="p">,</span> <span class="n">exp</span><span class="p">,</span> <span class="n">re</span><span class="o">.</span><span class="n">S</span><span class="p">)</span>
+
+    <span class="n">first_term_tokens</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span>
+        <span class="sa">r</span><span class="s1">&#39;(?P&lt;token&gt;[A-Za-z0-9]+)&#39;</span><span class="p">,</span> <span class="n">expr_tokens</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="s1">&#39;first_term&#39;</span><span class="p">),</span> <span class="n">re</span><span class="o">.</span><span class="n">S</span><span class="p">)</span>
+
+    <span class="n">second_term_tokens</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span>
+        <span class="sa">r</span><span class="s1">&#39;(?P&lt;token&gt;[A-Za-z0-9]+)&#39;</span><span class="p">,</span> <span class="n">expr_tokens</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="s1">&#39;second_term&#39;</span><span class="p">),</span> <span class="n">re</span><span class="o">.</span><span class="n">S</span><span class="p">)</span>
+
+    <span class="c1"># If the first token is &#39;COLL&#39;, then we assume that it is referring to the</span>
+    <span class="c1"># collater cash flow passed to the calling function</span>
+    <span class="k">if</span> <span class="n">first_term_tokens</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;COLL&#39;</span><span class="p">:</span>
+        <span class="n">ft_1</span> <span class="o">=</span> <span class="s1">&#39;payment&#39;</span>
+    <span class="c1"># If the first token is NOT COLL and the second token is NOT VAR, then we</span>
+    <span class="c1"># assume that it is referreing to cash flow of a Tranche in the same</span>
+    <span class="c1"># group as the one for which the waterfall is being run</span>
+    <span class="k">if</span> <span class="n">first_term_tokens</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">&#39;COLL&#39;</span> <span class="ow">and</span> <span class="n">first_term_tokens</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">&#39;VAR&#39;</span><span class="p">:</span>
+        <span class="n">ft_1</span> <span class="o">=</span> <span class="p">(</span><span class="n">f</span><span class="s2">&quot;model[&#39;groups&#39;][group_id][&#39;tranches&#39;]&quot;</span>
+                <span class="n">f</span><span class="s2">&quot;[&#39;</span><span class="si">{first_term_tokens[0]}</span><span class="s2">&#39;].periodic_cf&quot;</span><span class="p">)</span>
+
+    <span class="c1"># If the second token is VAR, then the first token is the name of the</span>
+    <span class="c1"># variable being evaluated</span>
+    <span class="k">if</span> <span class="n">first_term_tokens</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;VAR&#39;</span><span class="p">:</span>
+        <span class="n">ft_1</span> <span class="o">=</span> <span class="n">first_term_tokens</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">ft_2</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+    <span class="k">elif</span> <span class="n">first_term_tokens</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;PRINCIPAL&#39;</span><span class="p">:</span>
+        <span class="n">ft_2</span> <span class="o">=</span> <span class="s1">&#39;total_principal&#39;</span>
+    <span class="k">elif</span> <span class="n">first_term_tokens</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;ACCRUAL&#39;</span><span class="p">:</span>
+        <span class="n">ft_2</span> <span class="o">=</span> <span class="s1">&#39;accrual&#39;</span>
+    <span class="k">elif</span> <span class="n">first_term_tokens</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;PREPAY&#39;</span><span class="p">:</span>
+        <span class="n">ft_2</span> <span class="o">=</span> <span class="s1">&#39;prepayment&#39;</span>
+    <span class="k">elif</span> <span class="n">first_term_tokens</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;BALANCE&#39;</span><span class="p">:</span>
+        <span class="n">ft_2</span> <span class="o">=</span> <span class="s1">&#39;beginning_balance&#39;</span>
+    <span class="k">elif</span> <span class="n">first_term_tokens</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;SCHEDULED&#39;</span><span class="p">:</span>
+        <span class="n">ft_2</span> <span class="o">=</span> <span class="s1">&#39;scheduled_principal&#39;</span>
+
+    <span class="c1"># If the first token is &#39;COLL&#39;, then we assume that it is referring to the</span>
+    <span class="c1"># collater cash flow passed to the calling function</span>
+    <span class="k">if</span> <span class="n">second_term_tokens</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;COLL&#39;</span><span class="p">:</span>
+        <span class="n">st_1</span> <span class="o">=</span> <span class="s1">&#39;payment&#39;</span>
+    <span class="c1"># If the first token is NOT COLL and the second token is NOT VAR, then we</span>
+    <span class="c1"># assume that it is referreing to cash flow of a Tranche in the same</span>
+    <span class="c1"># group as the one for which the waterfall is being run</span>
+    <span class="k">if</span> <span class="n">second_term_tokens</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">&#39;COLL&#39;</span> <span class="ow">and</span> <span class="n">first_term_tokens</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">&#39;VAR&#39;</span><span class="p">:</span>
+        <span class="n">st_1</span> <span class="o">=</span> <span class="p">(</span><span class="n">f</span><span class="s2">&quot;model[&#39;groups&#39;][group_id][&#39;tranches&#39;]&quot;</span>
+                <span class="n">f</span><span class="s2">&quot;[&#39;</span><span class="si">{second_term_tokens[0]}</span><span class="s2">&#39;].periodic_cf&quot;</span><span class="p">)</span>
+
+    <span class="c1"># If the second token is VAR, then the first token is the name of the</span>
+    <span class="c1"># variable being evaluated</span>
+    <span class="k">if</span> <span class="n">second_term_tokens</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;VAR&#39;</span><span class="p">:</span>
+        <span class="n">st_1</span> <span class="o">=</span> <span class="n">second_term_tokens</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">st_2</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+    <span class="k">elif</span> <span class="n">second_term_tokens</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;PRINCIPAL&#39;</span><span class="p">:</span>
+        <span class="n">st_2</span> <span class="o">=</span> <span class="s1">&#39;total_principal&#39;</span>
+    <span class="k">elif</span> <span class="n">second_term_tokens</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;ACCRUAL&#39;</span><span class="p">:</span>
+        <span class="n">st_2</span> <span class="o">=</span> <span class="s1">&#39;accrual&#39;</span>
+    <span class="k">elif</span> <span class="n">second_term_tokens</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;PREPAY&#39;</span><span class="p">:</span>
+        <span class="n">st_2</span> <span class="o">=</span> <span class="s1">&#39;prepayment&#39;</span>
+    <span class="k">elif</span> <span class="n">second_term_tokens</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;BALANCE&#39;</span><span class="p">:</span>
+        <span class="n">st_2</span> <span class="o">=</span> <span class="s1">&#39;beginning_balance&#39;</span>
+    <span class="k">elif</span> <span class="n">second_term_tokens</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;SCHEDULED&#39;</span><span class="p">:</span>
+        <span class="n">st_2</span> <span class="o">=</span> <span class="s1">&#39;scheduled_principal&#39;</span>
+
+    <span class="k">if</span> <span class="n">ft_2</span> <span class="o">==</span> <span class="s1">&#39;&#39;</span><span class="p">:</span>
+        <span class="n">term_1</span> <span class="o">=</span> <span class="n">f</span><span class="s2">&quot;</span><span class="si">{ft_1}</span><span class="s2"> &quot;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">term_1</span> <span class="o">=</span> <span class="n">f</span><span class="s2">&quot;</span><span class="si">{ft_1}</span><span class="s2">.</span><span class="si">{ft_2}</span><span class="s2">&quot;</span>
+
+    <span class="k">if</span> <span class="n">st_2</span> <span class="o">==</span> <span class="s1">&#39;&#39;</span><span class="p">:</span>
+        <span class="n">term_2</span> <span class="o">=</span> <span class="n">f</span><span class="s2">&quot;</span><span class="si">{st_1}</span><span class="s2"> &quot;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">term_2</span> <span class="o">=</span> <span class="n">f</span><span class="s2">&quot;</span><span class="si">{st_1}</span><span class="s2">[&#39;</span><span class="si">{st_2}</span><span class="s2">&#39;]&quot;</span>
+
+    <span class="n">operator</span> <span class="o">=</span> <span class="n">f</span><span class="s2">&quot; {expr_tokens.group(&#39;operator&#39;)} &quot;</span>
+
+    <span class="k">return</span> <span class="n">f</span><span class="s2">&quot;</span><span class="si">{term_1}{operator}{term_2}</span><span class="s2">&quot;</span>
+
+
+<div class="viewcode-block" id="DecimalEncoder"><a class="viewcode-back" href="../../pymbs.utils.html#pymbs.utils.DecimalEncoder">[docs]</a><span class="k">class</span> <span class="nc">DecimalEncoder</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">JSONEncoder</span><span class="p">):</span>
+<div class="viewcode-block" id="DecimalEncoder.default"><a class="viewcode-back" href="../../pymbs.utils.html#pymbs.utils.DecimalEncoder.default">[docs]</a>    <span class="k">def</span> <span class="nf">default</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">o</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">o</span><span class="p">,</span> <span class="n">decimal</span><span class="o">.</span><span class="n">Decimal</span><span class="p">):</span>
+            <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="n">o</span><span class="p">)</span>
+        <span class="k">return</span> <span class="nb">super</span><span class="p">(</span><span class="n">DecimalEncoder</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">default</span><span class="p">(</span><span class="n">o</span><span class="p">)</span></div></div>
+
+
+<div class="viewcode-block" id="TSDecimalDecoder"><a class="viewcode-back" href="../../pymbs.utils.html#pymbs.utils.TSDecimalDecoder">[docs]</a><span class="k">class</span> <span class="nc">TSDecimalDecoder</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">JSONDecoder</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;TSDecimalDecoder is a custom JSON decoder for the Terms Sheet</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">json</span><span class="o">.</span><span class="n">JSONDecoder</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">object_hook</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">object_hook</span><span class="p">)</span>
+
+<div class="viewcode-block" id="TSDecimalDecoder.object_hook"><a class="viewcode-back" href="../../pymbs.utils.html#pymbs.utils.TSDecimalDecoder.object_hook">[docs]</a>    <span class="k">def</span> <span class="nf">object_hook</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">obj</span><span class="p">):</span>
+        <span class="n">dict_keys</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;deal&#39;</span><span class="p">,</span> <span class="s1">&#39;pricing_speed&#39;</span><span class="p">,</span> <span class="p">]</span>
+        <span class="n">list_dict_keys</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="s1">&#39;assumed&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;known&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;notional_with&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;securitized&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;schedules&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;tranches&#39;</span>
+        <span class="p">]</span>
+        <span class="n">list_str_keys</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;range&#39;</span><span class="p">,</span> <span class="s1">&#39;values&#39;</span><span class="p">]</span>
+
+        <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">obj</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="k">if</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">dict_keys</span><span class="p">:</span>
+                <span class="n">item</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">decimalize_dict</span><span class="p">(</span><span class="n">obj</span><span class="p">[</span><span class="n">k</span><span class="p">])</span>
+                <span class="n">obj</span><span class="p">[</span><span class="n">k</span><span class="p">]</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">list_dict_keys</span><span class="p">:</span>
+                <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">item</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">obj</span><span class="p">[</span><span class="n">k</span><span class="p">]):</span>
+                    <span class="n">item</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">decimalize_dict</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+                    <span class="n">obj</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="n">idx</span><span class="p">]</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">list_str_keys</span><span class="p">:</span>
+                <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">item</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">obj</span><span class="p">[</span><span class="n">k</span><span class="p">]):</span>
+                    <span class="n">item</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">decimalize</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+                    <span class="n">obj</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="n">idx</span><span class="p">]</span> <span class="o">=</span> <span class="n">item</span>
+        <span class="k">return</span> <span class="n">obj</span></div>
+
+<div class="viewcode-block" id="TSDecimalDecoder.decimalize"><a class="viewcode-back" href="../../pymbs.utils.html#pymbs.utils.TSDecimalDecoder.decimalize">[docs]</a>    <span class="k">def</span> <span class="nf">decimalize</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">value</span> <span class="o">=</span> <span class="n">decimal</span><span class="o">.</span><span class="n">Decimal</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+        <span class="k">except</span> <span class="p">(</span><span class="n">decimal</span><span class="o">.</span><span class="n">InvalidOperation</span><span class="p">,</span> <span class="ne">TypeError</span><span class="p">):</span>
+            <span class="k">pass</span>
+        <span class="k">return</span> <span class="n">value</span></div>
+
+<div class="viewcode-block" id="TSDecimalDecoder.decimalize_dict"><a class="viewcode-back" href="../../pymbs.utils.html#pymbs.utils.TSDecimalDecoder.decimalize_dict">[docs]</a>    <span class="k">def</span> <span class="nf">decimalize_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dct</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">dct</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">dct</span><span class="p">[</span><span class="n">k</span><span class="p">],</span> <span class="nb">str</span><span class="p">):</span>
+                <span class="k">try</span><span class="p">:</span>
+                    <span class="n">value</span> <span class="o">=</span> <span class="n">decimal</span><span class="o">.</span><span class="n">Decimal</span><span class="p">(</span><span class="n">dct</span><span class="p">[</span><span class="n">k</span><span class="p">])</span>
+                <span class="k">except</span> <span class="p">(</span><span class="n">decimal</span><span class="o">.</span><span class="n">InvalidOperation</span><span class="p">,</span> <span class="ne">TypeError</span><span class="p">):</span>
+                    <span class="k">pass</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">dct</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="k">return</span> <span class="n">dct</span></div></div>
+</pre></div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">PyMBS</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../project.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pymbs.html">pymbs package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../todo.html">Known Issues &amp; Enhancements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../changes.html">Change Log</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../index.html">Module code</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Brian Farrell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

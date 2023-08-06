@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>pymbs.api module &#8212; PyMBS 0.3.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="pymbs.config module" href="pymbs.config.html" />
+    <link rel="prev" title="pymbs" href="modules.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-pymbs.api">
+<span id="pymbs-api-module"></span><span id="api"></span><h1>pymbs.api module<a class="headerlink" href="#module-pymbs.api" title="Permalink to this heading">¶</a></h1>
+<p>PyMBS is a Python library for use in modeling Mortgage-Backed Securities.</p>
+<p>Copyright (C) 2019  Brian Farrell</p>
+<p>This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published
+by the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.</p>
+<p>This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.</p>
+<p>You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see &lt;<a class="reference external" href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>&gt;.</p>
+<p>Contact: <a class="reference external" href="mailto:brian&#46;farrell&#37;&#52;&#48;me&#46;com">brian<span>&#46;</span>farrell<span>&#64;</span>me<span>&#46;</span>com</a></p>
+<dl class="py function">
+<dt class="sig sig-object py" id="pymbs.api.disperse_cf">
+<span class="sig-prename descclassname"><span class="pre">pymbs.api.</span></span><span class="sig-name descname"><span class="pre">disperse_cf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">group_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'ALL_GROUPS'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">NoReturn</span></span></span><a class="reference internal" href="_modules/pymbs/api.html#disperse_cf"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pymbs.api.disperse_cf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Make all payments of Interest and Principal, based on the rules
+enumerated in the model.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><dl class="simple">
+<dt>model: The structured cash flow model containing the payment rules</dt><dd><p>waterfall for the group(s)</p>
+</dd>
+<dt>group_id: The number of the Group for which to load the tranches.</dt><dd><p>By default, this value is set to ‘ALL_GROUPS’, which will
+load the tranches for all of the groups in the deal. As per
+convention, the Residual tranches will appear in
+Group ‘0’.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pymbs.api.load_assumed_collat">
+<span class="sig-prename descclassname"><span class="pre">pymbs.api.</span></span><span class="sig-name descname"><span class="pre">load_assumed_collat</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">group_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'ALL_GROUPS'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DataFrame</span></span></span><a class="reference internal" href="_modules/pymbs/api.html#load_assumed_collat"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pymbs.api.load_assumed_collat" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load the Assumed Collateral replines from the Terms Sheet.</p>
+<p>This assumes that the Terms Sheet has already been loaded, using the
+<code class="docutils literal notranslate"><span class="pre">load_deal()</span></code> function.</p>
+<p>This will <em>only</em> load Assumed Collateral. PyMBS does not yet have the
+ability to handle Known Collateral or Securitzed Collateral. It can
+however handle multiple Assumed replines per group.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pymbs.api.load_deal">
+<span class="sig-prename descclassname"><span class="pre">pymbs.api.</span></span><span class="sig-name descname"><span class="pre">load_deal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">series_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="reference internal" href="_modules/pymbs/api.html#load_deal"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pymbs.api.load_deal" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load the Terms Sheet for the REMIC Series name provided.</p>
+<p>The Terms Sheet is essential for modeling the deal. If this function is
+not called at the start, most of the other functions will fail.</p>
+<p>Within the project_dir, specified in the user’s configuration file, it is
+expected that there will be one subdirectory for each REMIC Series name.
+Inside the Series directory, it is expected that the Terms Sheet will be
+a file named <code class="docutils literal notranslate"><span class="pre">series_ts.json</span></code>, where ‘series’ refers to the actual
+Series name.</p>
+<dl>
+<dt>Args:</dt><dd><p>series_id: The REMIC Series id. Note that this value is passed
+as a string, so it need not be strictly an integer value, i.e. ‘T-074’.
+The value <em>must</em> be the same as the name of the deal directory, which
+is a subdirectory of the project_directory.</p>
+</dd>
+<dt>Returns:</dt><dd><p>A dictionary object, representing the Terms Sheet.  All numerical
+values related to the model and represented as Strings in the Terms
+Sheet will be converted to a Python Decimal type in the dictionary
+that is returned.</p>
+<p>If the Terms Sheet file is not located, returns Exit Code 66.</p>
+</dd>
+<dt>Example:</dt><dd><p>Given: REMIC Series Name is <code class="docutils literal notranslate"><span class="pre">'2618'</span></code></p>
+<p>Path: <code class="docutils literal notranslate"><span class="pre">/project_dir/2618/2618_ts.json</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pymbs.api.load_model">
+<span class="sig-prename descclassname"><span class="pre">pymbs.api.</span></span><span class="sig-name descname"><span class="pre">load_model</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="reference internal" href="_modules/pymbs/api.html#load_model"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pymbs.api.load_model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load the structured cash flow model from the Terms Sheet, supplemented
+by the model file.</p>
+<p>The Terms sheet does NOT include the pay rule waterfall or specific
+benchmark interest rate information used by the model. These are provided
+in a separate JSON file.</p>
+<p>Within the project_dir, specified in the user’s configuration file, it is
+expected that there will be one subdirectory for each REMIC Series name.
+Inside the Series directory, it is expected that the Model File named as
+provided as argument to this function will exist.</p>
+<dl>
+<dt>Args:</dt><dd><p>model_json: The name of the model file inside the Series directory.</p>
+</dd>
+<dt>Returns:</dt><dd><p>A dictionary object, representing the structured cash flow model.</p>
+<p>If the Model file is not located, returns Exit Code 66.</p>
+</dd>
+<dt>Example:</dt><dd><p>Given: <code class="docutils literal notranslate"><span class="pre">model_json</span> <span class="pre">=</span> <span class="pre">2618_model.json</span></code></p>
+<p>Path: <code class="docutils literal notranslate"><span class="pre">/project_dir/2618/2618_model.json</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pymbs.api.load_tranches">
+<span class="sig-prename descclassname"><span class="pre">pymbs.api.</span></span><span class="sig-name descname"><span class="pre">load_tranches</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">group_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'ALL_GROUPS'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DataFrame</span></span></span><a class="reference internal" href="_modules/pymbs/api.html#load_tranches"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pymbs.api.load_tranches" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load the tranches for the deal, or for the group specified, into a
+Pandas Dataframe for easy display in the Jupyter Notebook.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><dl class="simple">
+<dt>group_id: The number of the Group for which to load the tranches.</dt><dd><p>By default, this value is set to ‘ALL_GROUPS’, which will
+load the tranches for all of the groups in the deal. As per
+convention, the Residual tranches will appear in
+Group ‘0’.</p>
+</dd>
+</dl>
+</dd>
+<dt>Returns:</dt><dd><p>A Pandas Dataframe showing Tranche details for each tranche queried.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pymbs.api.run_collat_cf">
+<span class="sig-prename descclassname"><span class="pre">pymbs.api.</span></span><span class="sig-name descname"><span class="pre">run_collat_cf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">group_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'ALL_GROUPS'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">repline_num</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">-</span> <span class="pre">1</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="reference internal" href="_modules/pymbs/api.html#run_collat_cf"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pymbs.api.run_collat_cf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run cash flows from Assumed Collateral replines specified in the
+Terms Sheet. A Pandas DataFrame is created for each cash flow prepayment
+scenario, as specified in the Prepayment Scenarios JSON file.</p>
+<p>The Terms sheet does NOT include the pay rule waterfall or specific
+benchmark interest rate information used by the model. These are provided
+in a separate JSON file.</p>
+<p>Within the project_dir, specified in the user’s configuration file, it is
+expected that there will be one subdirectory for each REMIC Series name.
+Inside the Series directory, it is expected that the Model File named as
+provided as argument to this function will exist.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><dl class="simple">
+<dt>group_id: The number of the Group for which to run the cash flows.</dt><dd><p>By default, this value is set to ‘ALL_GROUPS’, which will
+run cash flows for all of the groups in the deal at the
+Prepayment Scenarios specified for each group.</p>
+</dd>
+<dt>repline_num: Optionally, the user may specify running the cash flows</dt><dd><p>for a specific repline in a specific group, if the group
+has more than one assumed repline. As with <code class="docutils literal notranslate"><span class="pre">group_id</span></code>,
+the <code class="docutils literal notranslate"><span class="pre">repline_num</span></code> is set to -1 by default, which will
+run cash flows for ALL replines associated with a group.
+When run together, the cash flows for each repline will
+be aggregated into one final cash flow which is the one
+that is returned for the group.</p>
+</dd>
+</dl>
+</dd>
+<dt>Returns:</dt><dd><p>A dictionary object, containing a Pandas Dataframe for the cash flow
+calculated at each Prepayment Scenario.</p>
+</dd>
+<dt>Example:</dt><dd><p>Path: <code class="docutils literal notranslate"><span class="pre">/project_dir/2618/2618_pps.json</span></code></p>
+</dd>
+</dl>
+<p>TODO: Run collateral cash flows for known collateral.</p>
+<p>TODO: Run collateral cash flows for securitzed collateral.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pymbs.api.run_wals">
+<span class="sig-prename descclassname"><span class="pre">pymbs.api.</span></span><span class="sig-name descname"><span class="pre">run_wals</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">group_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'ALL_GROUPS'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">precision</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/pymbs/api.html#run_wals"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pymbs.api.run_wals" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the WALs as a dictionary and return them as JSON</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pymbs.api.show_wals">
+<span class="sig-prename descclassname"><span class="pre">pymbs.api.</span></span><span class="sig-name descname"><span class="pre">show_wals</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">group_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'ALL_GROUPS'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">precision</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">NoReturn</span></span></span><a class="reference internal" href="_modules/pymbs/api.html#show_wals"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pymbs.api.show_wals" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the WALs as a Pandas DataFrame and display them in
+a Jupyter Notebook.</p>
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">PyMBS</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="project.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="pymbs.html">pymbs package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="pymbs.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pymbs.html#module-pymbs">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="todo.html">Known Issues &amp; Enhancements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes.html">Change Log</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="pymbs.html">pymbs package</a><ul>
+  <li><a href="modules.html">pymbs</a><ul>
+      <li>Previous: <a href="modules.html" title="previous chapter">pymbs</a></li>
+      <li>Next: <a href="pymbs.config.html" title="next chapter">pymbs.config module</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019-2023, Brian Farrell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.0.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/pymbs.api.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

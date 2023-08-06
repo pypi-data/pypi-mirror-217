@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Change Log &#8212; PyMBS 0.3.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Known Issues &amp; Enhancements" href="todo.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="change-log">
+<h1>Change Log<a class="headerlink" href="#change-log" title="Permalink to this heading">¶</a></h1>
+<section id="id1">
+<h2>0.3.1<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h2>
+<section id="changes">
+<h3>Changes:<a class="headerlink" href="#changes" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Update dependencies to recent versions</p></li>
+<li><p>Update code base to handle Pandas 2.0</p></li>
+<li><p>Update URLs in Documentation</p></li>
+<li><p>Add stub for payment to a schedule in payment rules</p></li>
+</ul>
+</section>
+<section id="fixed">
+<h3>Fixed:<a class="headerlink" href="#fixed" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Fixed bug in setup.py that resulted in omission of Jinja template files</p></li>
+</ul>
+</section>
+</section>
+<section id="id2">
+<h2>0.3.0<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+<section id="id3">
+<h3>Changes:<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h3>
+<ul>
+<li><p>Version 0.3.0 introduces a new Terms Sheet format that is <strong>NOT</strong>
+backwards-compatible with prior versions of PyMBS. This new format stores
+tabular data as lists of dictionaries. All numerical values that are inputs
+to the model are stored as String values and converted into Python Decimal
+objects when the JSON is parsed.</p>
+<p>See <a class="reference external" href="https://docs.python.org/3/library/decimal.html">https://docs.python.org/3/library/decimal.html</a> for more information on
+Python’s decimal module for fixed point and floating point arithmetic.</p>
+</li>
+</ul>
+</section>
+</section>
+<section id="id4">
+<h2>0.2.1<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
+<section id="id5">
+<h3>Changes:<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Revised the way that we deal with some exceptions so that they are handled
+gracefully across various IPython kernels, including the Jupyter Notebook.
+Exceptions encountered when used outside of IPython/Jupyter are handled
+better as well.</p></li>
+</ul>
+</section>
+</section>
+<section id="id6">
+<h2>0.2.0<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h2>
+<section id="id7">
+<h3>Changes:<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Changed all references to group_id to string values</p></li>
+</ul>
+</section>
+</section>
+<section id="id8">
+<h2>0.1.5<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h2>
+<section id="id9">
+<h3>Changes:<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Fixed an issue with missing package config/data</p></li>
+</ul>
+</section>
+</section>
+<section id="id10">
+<h2>0.1.0<a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h2>
+<section id="id11">
+<h3>Changes:<a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Significant update to Configuration management. Created new Config object
+to hold configuration settings. Provide ability to set settings via YAML
+file and/or environment variables.</p></li>
+<li><p>Added some basic logging, especially in the Config object.</p></li>
+<li><p>Significant updates to documentation.</p></li>
+</ul>
+</section>
+</section>
+<section id="id12">
+<h2>0.0.2<a class="headerlink" href="#id12" title="Permalink to this heading">¶</a></h2>
+<section id="id13">
+<h3>Changes:<a class="headerlink" href="#id13" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Significant update to intital architecture, but still in alpa stage.</p></li>
+<li><p>Run cash flows for <em>Assumed Collateral</em> replines only.</p></li>
+<li><dl class="simple">
+<dt>Implement payment functionality for the following payment rule types:</dt><dd><ul>
+<li><p>Calculate (<em>Basic</em> functioanlity for calulating buckets of cash)</p></li>
+<li><p>Pay Accrue, for Z bond accrual</p></li>
+<li><p>Pay Pro Rata</p></li>
+<li><p>Pay Sequential</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>Generates cash flows for any waterfall that makes use of the above rules.</p></li>
+<li><p>Introduces the Tranche object, to enable flexibilty when making payments
+to tranches from the waterfall. This appears to be a much better approach
+than trying to use Pandas DataFrames for this task. Once the cash flows
+have been generated for the tranche, they are converted to a DataFrame
+for display and use in a Jupyter Notebook.</p></li>
+<li><p>Calculate Weighted Average Lives (WALs) for all tranches in the model that
+are paid using one of the pay rules described above.</p></li>
+</ul>
+</section>
+</section>
+<section id="id14">
+<h2>0.0.1<a class="headerlink" href="#id14" title="Permalink to this heading">¶</a></h2>
+<section id="id15">
+<h3>Changes:<a class="headerlink" href="#id15" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Initial version.</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">PyMBS</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="project.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pymbs.html">pymbs package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="todo.html">Known Issues &amp; Enhancements</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Change Log</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">0.3.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">0.3.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">0.2.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">0.2.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id8">0.1.5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id10">0.1.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id12">0.0.2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id14">0.0.1</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="todo.html" title="previous chapter">Known Issues &amp; Enhancements</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019-2023, Brian Farrell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.0.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/changes.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

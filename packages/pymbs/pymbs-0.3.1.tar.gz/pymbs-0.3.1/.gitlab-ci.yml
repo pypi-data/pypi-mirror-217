@@ -1,0 +1,43 @@
+stages:
+  - test
+  - deploy
+
+pytest:
+  before_script:
+    - python --version
+    - pip install -r requirements-dev.txt
+  stage: test
+  image: "python:3.7"
+  script:
+  - pwd
+  - export PYTHONPATH="$PYTHONPATH:."
+  - export PYMBS_CONFIG_PATH="/builds/brianfarrell/pymbs/tests/data/config/config.yaml"
+  - pytest --junitxml=./results.xml
+  artifacts:
+    paths:
+      - results.xml
+    reports:
+      junit: results.xml
+
+coverage:
+  before_script:
+    - python --version
+    - pip install -r requirements-dev.txt
+  stage: test
+  image: "python:3.7"
+  allow_failure: true
+  script:
+  - pwd
+  - export PYTHONPATH="$PYTHONPATH:."
+  - export PYMBS_CONFIG_PATH="/builds/brianfarrell/pymbs/tests/data/config/config.yaml"
+  - pytest --cov-report term-missing --cov=pymbs
+
+pages:
+  stage: deploy
+  script:
+    - cp -r docs/build/* public/
+  artifacts:
+    paths:
+    - public
+  only:
+  - master

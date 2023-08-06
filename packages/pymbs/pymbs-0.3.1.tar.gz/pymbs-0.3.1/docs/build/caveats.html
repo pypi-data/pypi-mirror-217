@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Caveats and Limitations &#8212; PyMBS 0.3.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Set up your environment" href="setup.html" />
+    <link rel="prev" title="Getting Started" href="getting_started.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="caveats-and-limitations">
+<span id="caveats"></span><h1>Caveats and Limitations<a class="headerlink" href="#caveats-and-limitations" title="Permalink to this heading">¶</a></h1>
+<ul>
+<li><p>Collat replines must consist of assumptions only - PyMBS cannot yet make the
+calculations necessary for Known Collateral (Pool IDs) or Securitzed Collateral (ReREMICs).</p></li>
+<li><p>Payment functions for all of the possible types of rules to be found in a deal’s
+waterfall have not yet been implemented. In part, this is because the current
+implementation is designed merely to serve as a POC.</p></li>
+<li><p>PyMBS cureently makes use of the <code class="docutils literal notranslate"><span class="pre">eval</span></code> function to translate a payment
+rule from the waterfall into a function call in the library. Use of <code class="docutils literal notranslate"><span class="pre">eval</span></code>
+<em>can</em> be dangerous and is generally discouraged, especially in a production
+environment. This is mitigated to some extent by the fact that the eval
+statement is only used to call functions in the payment_rules module, however,
+it will be removed competely in a future release. In a production environment,
+PyMBS would implement a Domain Specific Language (DSL) that would allow for
+(relatively) simple syntax to be mapped to robust functionality behind the scenes.
+This task is non-trivial, if it is to be implemented correctly.</p></li>
+<li><p>Floating rate and Inverse Floating rate tranches are similarly limited in the types of
+floater formulas that can be created. Basically, the formula must take the form of a
+spread to a benchmark, limited by a cap and a floor. The benchmark is limited to a
+static value at this time, although providing for benchmark scenarios or live, online
+lookups for historical data should be relatively easy to implement.</p></li>
+<li><p>Prepayment scenarios are limited to multiples of the PSA benchmark. Allowing for CPR and
+SMM scenarios, as well as custom prepayment vectors should also be relatively easy to
+implement.</p></li>
+<li><p>The refence deal that is being used during initial development is the <a class="reference external" href="https://freddiemac.mbs-securities.com/api/download/FRE/135984/2618oc">Freddie Mac REMIC
+Series 2618</a>,
+issued in May of 2003. At the moment, the Weighted Average Lives (WALs) for
+the tranches are within a slight variance of those disclosed in the Prospectus Supplement.
+At this point, working in isolation, without the beenfit of input from other Subject Matter
+Experts (SMEs), it is thought that these calculations are as close as can be achieved.</p></li>
+<li><p>Freddie Mac does not offer a RESTful API for accessing Security-related
+information from their website. The files that they offer are in antiquated formats that
+would require customized parsers to be built in order to read-in the data disclosed on their
+website. In order to avoid writing custom parsers at this stage, and as a means to show
+a better way, the deal-related data required for modeling the reference deal was converted
+into a JSON format. This is what would be expected from a REST API, and has the added benefit
+of not needing a custom parser. In addition, the JSON files are much smaller in size.</p></li>
+<li><p>MACRs and Notional Classes are loaded into the model, but are not yet handled by the payment
+functions. These classes will not be displayed in the Weighted Average Lives table. The cash
+flows for notional classes can be run, but they will NOT be correct.</p></li>
+<li><p>In addition to the Prospectus Supplement, the reference material used includes two books on the
+subject matter:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Collateralized Mortgage Obligations: Structures and Analysis, 3rd Edition</strong>,
+by Frank J. Fabozzi and Chuck Ramsey <a class="footnote-reference brackets" href="#f1" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></p></li>
+<li><p><strong>Fixed Income Mathematics: Analytical and Statistical Techniques, 3rd Edition</strong>,
+by Frank J. Fabozzi <a class="footnote-reference brackets" href="#f2" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a></p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p class="rubric">Footnotes</p>
+<aside class="footnote brackets" id="f1" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<div class="line-block">
+<div class="line"><a class="reference external" href="https://www.wiley.com/en-us/Collateralized+Mortgage+Obligations%3A+Structures+and+Analysis%2C+3rd+Edition-p-9781883249625">Publisher Website for Collateralized Mortgage Obligations: Structures and Analysis</a></div>
+</div>
+</aside>
+<aside class="footnote brackets" id="f2" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">2</a><span class="fn-bracket">]</span></span>
+<div class="line-block">
+<div class="line"><a class="reference external" href="https://www.amazon.com/Fixed-Income-Mathematics-Analytical-Statistical/dp/007146073X/ref=sr_1_1?keywords=Fixed+Income+Mathematics%3A+Analytical+and+Statistical+Techniques&amp;qid=1566797581&amp;s=books&amp;sr=1-1">Amazon Website for Fixed Income Mathematics: Analytical and Statistical Techniques</a></div>
+</div>
+</aside>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">PyMBS</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="project.html">Introduction</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="getting_started.html">Getting Started</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Caveats and Limitations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setup.html">Set up your environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="run_the_model.html">Run the Model</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pymbs.html">pymbs package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="todo.html">Known Issues &amp; Enhancements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes.html">Change Log</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="getting_started.html">Getting Started</a><ul>
+      <li>Previous: <a href="getting_started.html" title="previous chapter">Getting Started</a></li>
+      <li>Next: <a href="setup.html" title="next chapter">Set up your environment</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019-2023, Brian Farrell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.0.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/caveats.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

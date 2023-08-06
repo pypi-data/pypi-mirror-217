@@ -1,0 +1,16 @@
+{% if ipython_status %}
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <p>You have requested that the decimal value <span style="color:green">{{ decimal_value }}</span> be rounded to {{ precision }} places, but the total precision allowed by your PyMBS configuration is {{ config_precision }}.  The resulting value would be nonsensical, so PyMBS has rounded the value to {{ max_allowed_precision }} places instead.</p>
+    <p>For more information on configuring PyMBS, please see <a href="{{ pymbs_config_url }}">{{ pymbs_config_url }}</a></p>
+    <p>For more information on the error encountered, please see <a href="{{ quantize_help_url }}">{{ quantize_help_url }}</a></p>
+</body>
+</html>
+{% else %}
+You have requested that the decimal value {{ decimal_value }} be rounded to {{ precision }} places, but the total precision allowed by your PyMBS configuration is {{ config_precision }}.  The resulting value would be nonsensical, so PyMBS has rounded the value to {{ max_allowed_precision }} places instead.
+
+For more information on configuring PyMBS, please see https://brianfarrell.gitlab.io/pymbs/pymbs.config.html
+
+For more information on the error encountered, please see https://docs.python.org/3/library/decimal.html#decimal.Decimal.quantize
+{% endif %}

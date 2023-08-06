@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>pymbs.enums &#8212; PyMBS 0.3.0 documentation</title>
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <h1>Source code for pymbs.enums</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">PyMBS is a Python library for use in modeling Mortgage-Backed Securities.</span>
+
+<span class="sd">Copyright (C) 2019  Brian Farrell</span>
+
+<span class="sd">This program is free software: you can redistribute it and/or modify</span>
+<span class="sd">it under the terms of the GNU Affero General Public License as published</span>
+<span class="sd">by the Free Software Foundation, either version 3 of the License, or</span>
+<span class="sd">(at your option) any later version.</span>
+
+<span class="sd">This program is distributed in the hope that it will be useful,</span>
+<span class="sd">but WITHOUT ANY WARRANTY; without even the implied warranty of</span>
+<span class="sd">MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span>
+<span class="sd">GNU Affero General Public License for more details.</span>
+
+<span class="sd">You should have received a copy of the GNU Affero General Public License</span>
+<span class="sd">along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.</span>
+
+<span class="sd">Contact: brian.farrell@me.com</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">enum</span> <span class="k">import</span> <span class="n">Enum</span><span class="p">,</span> <span class="n">IntEnum</span>
+
+<span class="n">ALL_GROUPS</span> <span class="o">=</span> <span class="s2">&quot;ALL_GROUPS&quot;</span>
+
+
+<div class="viewcode-block" id="ExitCode"><a class="viewcode-back" href="../../pymbs.enums.html#pymbs.enums.ExitCode">[docs]</a><span class="k">class</span> <span class="nc">ExitCode</span><span class="p">(</span><span class="n">IntEnum</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Enumeration of exit codes.</span>
+
+<span class="sd">    This class implements POSIX error codes, as found in</span>
+<span class="sd">    /usr/include/sysexits.h on the Linux platform and</span>
+<span class="sd">    described in the manual page for sysexit on BSD systems,</span>
+<span class="sd">    including Darwin (macOS).</span>
+
+<span class="sd">    Additional information is availble from The Linux Documnetation Project</span>
+<span class="sd">    at http://tldp.org/LDP/abs/html/exitcodes.html</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">EX_SUCCESS</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c1"># command exits successfully</span>
+    <span class="n">EX_GENERAL</span> <span class="o">=</span> <span class="mi">1</span>  <span class="c1"># catchall for general errors</span>
+    <span class="n">EX_USAGE</span> <span class="o">=</span> <span class="mi">64</span>  <span class="c1"># command line usage error</span>
+    <span class="n">EX_DATAERR</span> <span class="o">=</span> <span class="mi">65</span>  <span class="c1"># data format error</span>
+    <span class="n">EX_NOINPUT</span> <span class="o">=</span> <span class="mi">66</span>  <span class="c1"># cannot open input</span>
+    <span class="n">EX_NOUSER</span> <span class="o">=</span> <span class="mi">67</span>  <span class="c1"># addressee unknown</span>
+    <span class="n">EX_NOHOST</span> <span class="o">=</span> <span class="mi">68</span>  <span class="c1"># host name unknown</span>
+    <span class="n">EX_UNAVAILABLE</span> <span class="o">=</span> <span class="mi">69</span>  <span class="c1"># service unavailable</span>
+    <span class="n">EX_SOFTWARE</span> <span class="o">=</span> <span class="mi">70</span>  <span class="c1"># internal software error</span>
+    <span class="n">EX_OSERR</span> <span class="o">=</span> <span class="mi">71</span>  <span class="c1"># system error (e.g., can&#39;t fork)</span>
+    <span class="n">EX_OSFILE</span> <span class="o">=</span> <span class="mi">72</span>  <span class="c1"># critical OS file missing</span>
+    <span class="n">EX_CANTCREAT</span> <span class="o">=</span> <span class="mi">73</span>  <span class="c1"># can&#39;t create (user) output file</span>
+    <span class="n">EX_IOERR</span> <span class="o">=</span> <span class="mi">74</span>  <span class="c1"># input/output error</span>
+    <span class="n">EX_TEMPFAIL</span> <span class="o">=</span> <span class="mi">75</span>  <span class="c1"># temp failure; user is invited to retry</span>
+    <span class="n">EX_PROTOCOL</span> <span class="o">=</span> <span class="mi">76</span>  <span class="c1"># remote error in protocol</span>
+    <span class="n">EX_NOPERM</span> <span class="o">=</span> <span class="mi">77</span>  <span class="c1"># permission denied</span>
+    <span class="n">EX_CONFIG</span> <span class="o">=</span> <span class="mi">78</span>  <span class="c1"># configuration error</span>
+    <span class="n">EX_SIGINT</span> <span class="o">=</span> <span class="mi">130</span>  <span class="c1"># keyboard interrupt</span></div>
+
+
+<div class="viewcode-block" id="PrepayBenchmark"><a class="viewcode-back" href="../../pymbs.enums.html#pymbs.enums.PrepayBenchmark">[docs]</a><span class="k">class</span> <span class="nc">PrepayBenchmark</span><span class="p">(</span><span class="n">Enum</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;docstring for PrepayBenchmark&quot;&quot;&quot;</span>
+    <span class="n">CPR</span> <span class="o">=</span> <span class="s1">&#39;CPR&#39;</span>
+    <span class="n">PSA</span> <span class="o">=</span> <span class="s1">&#39;PSA&#39;</span></div>
+
+
+<div class="viewcode-block" id="URL"><a class="viewcode-back" href="../../pymbs.enums.html#pymbs.enums.URL">[docs]</a><span class="k">class</span> <span class="nc">URL</span><span class="p">(</span><span class="n">Enum</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;docstring for URL&quot;&quot;&quot;</span>
+    <span class="n">SETUP_MODELING</span> <span class="o">=</span> <span class="s1">&#39;https://brianfarrell.gitlab.io/pymbs/setup_modeling.html&#39;</span>
+    <span class="n">PYMBS_CONFIG</span> <span class="o">=</span> <span class="s1">&#39;https://brianfarrell.gitlab.io/pymbs/pymbs.config.html&#39;</span>
+    <span class="n">QUANTIZE_HELP</span> <span class="o">=</span> <span class="p">(</span>
+        <span class="s1">&#39;https://docs.python.org/3/library/decimal.html&#39;</span>
+        <span class="s1">&#39;#decimal.Decimal.quantize&#39;</span>
+    <span class="p">)</span></div>
+</pre></div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">PyMBS</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../project.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pymbs.html">pymbs package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../todo.html">Known Issues &amp; Enhancements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../changes.html">Change Log</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../index.html">Module code</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Brian Farrell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>
