@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ddreport
+Version: 4.2
+Summary: pytest测试报告
+Home-page: https://blog.csdn.net/weixin_43975720/article/details/130559489
+Author: duanliangcong
+Author-email: 137562703@qq.com
+License: MIT Licence
+Keywords: pip,pytest,testReport
+Platform: any
+
+1.解决动态参数化逻辑判断bug；2.环境变量db改写mysql，方便以后区分各种类型的配置；3.新增json_in、json_contain两类型断言；
+
