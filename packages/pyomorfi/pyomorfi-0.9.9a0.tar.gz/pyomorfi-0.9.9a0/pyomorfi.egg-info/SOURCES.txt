@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+pyomorfi/__init__.py
+pyomorfi/omorfi.analyse.att
+pyomorfi/omorfi.describe.att
+pyomorfi/omorfi.generate.att
+pyomorfi/omorfi.segment.att
+pyomorfi.egg-info/PKG-INFO
+pyomorfi.egg-info/SOURCES.txt
+pyomorfi.egg-info/dependency_links.txt
+pyomorfi.egg-info/requires.txt
+pyomorfi.egg-info/top_level.txt
