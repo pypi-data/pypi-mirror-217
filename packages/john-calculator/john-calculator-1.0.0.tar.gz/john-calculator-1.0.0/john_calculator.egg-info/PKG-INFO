@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: john-calculator
+Version: 1.0.0
+Summary: A simple calculator
+Author: John
+Author-email: 4461921@qq.com
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
