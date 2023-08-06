@@ -1,0 +1,2 @@
+[console_scripts]
+digit = digit._internal.main:main
