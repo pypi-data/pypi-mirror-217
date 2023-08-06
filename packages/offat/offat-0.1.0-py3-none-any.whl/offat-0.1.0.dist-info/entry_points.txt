@@ -1,0 +1,3 @@
+[console_scripts]
+pyhtools=offat.__main__:start
+
