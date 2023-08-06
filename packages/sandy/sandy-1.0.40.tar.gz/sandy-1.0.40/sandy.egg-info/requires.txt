@@ -1,0 +1,17 @@
+numpy>=1.9
+scipy
+pandas
+tables
+pyyaml
+
+[doc]
+sphinx
+
+[notebook]
+jupyter>=1.0.0
+matplotlib
+seaborn
+
+[test]
+pytest
+numpydoc
