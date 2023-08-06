@@ -1,0 +1,8 @@
+include LICENSE.txt
+include README.md
+include CREDITS.md
+include CHANGES.txt
+
+graft PyMulti/English/assets
+graft PyMulti/System/assets
+graft PyMulti/Traffic/assets
