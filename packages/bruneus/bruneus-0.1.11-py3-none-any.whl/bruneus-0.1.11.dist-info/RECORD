@@ -1,0 +1,11 @@
+bruneus/__init__.py,sha256=Zmt-cjTjIuN2SfMJ52igXv3bRjUHy-M5j6BWKYfUc0Y,219
+bruneus/bruneus.py,sha256=qq4SngkHFIDlzXkmnMtN2Z_EBPJt03HVOyrSIZviiRE,277
+bruneus/create_table.py,sha256=mG8dS0oWDgykED56YBJwi9KN4ac0tm0qmsA2e9ekjzA,1280
+bruneus/export_table.py,sha256=xxOHEIp4IZDxHmEz2aIWL1xKDHeky6IgTE3wtMxYMgk,1755
+bruneus/naming.py,sha256=yC6Fm6vF03rWKlgUTqTlLiIUE98-sdN3bIItGMIoeaU,285
+bruneus/select.py,sha256=V0tbpxcky1_6is5_5JBcaoRsiAlk9PgH_dKfhDiEK9o,2815
+bruneus-0.1.11.dist-info/LICENSE,sha256=COECOL7WzpvaFnxI5a9h84T_8l-pZlAo5WspNxSxfVA,1062
+bruneus-0.1.11.dist-info/METADATA,sha256=5MIArW28VtnNmyRRPgbnMR8IAMOVRQIcREUjWOQ3WqU,1752
+bruneus-0.1.11.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+bruneus-0.1.11.dist-info/top_level.txt,sha256=9gsic6li1PhUSFlzRlYnvZf5oIO9pLl_Rhl3EeBJX24,8
+bruneus-0.1.11.dist-info/RECORD,,
