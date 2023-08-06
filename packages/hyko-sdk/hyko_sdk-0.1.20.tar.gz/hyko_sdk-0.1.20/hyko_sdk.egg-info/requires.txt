@@ -1,0 +1,4 @@
+pydantic
+pillow
+soundfile
+numpy
