@@ -1,0 +1,9 @@
+liburlparser-0.2.0.dist-info/RECORD,,
+liburlparser-0.2.0.dist-info/METADATA,sha256=x9IdMRfx9TpwRk9QadspQZPnWeo0j9O8iKI_48dV5f0,7604
+liburlparser-0.2.0.dist-info/WHEEL,sha256=aWAIfm3lkh-h4bFiYzCYBeA3g5d5pZDIHoYH7Tiwg98,151
+liburlparser-0.2.0.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+liburlparser-0.2.0.dist-info/licenses/LICENSE,sha256=SBNiCMUPOkN74CrKaGEJk1CNXzPemZ76Qsm106kwI1E,2182
+liburlparser/_core.cpython-39-x86_64-linux-gnu.so,sha256=l5miZm8sevWio_vDQRuDenDZyxypIXN4q69P8dIO5rc,239056
+liburlparser/__main__.py,sha256=DEFcP1qk5scvLEmvviDqBErEoWdthg2_lL1xl0vGowQ,927
+liburlparser/__init__.py,sha256=9JCarZcU7dCL-v0ebry90NPEf-B4hpPRNbYs1wa8A24,882
+liburlparser/public_suffix_list.dat,sha256=NpAOKVJ70xRE0WLQ7WED1FBcgrvVSbyg58KkEYXr91o,239744
