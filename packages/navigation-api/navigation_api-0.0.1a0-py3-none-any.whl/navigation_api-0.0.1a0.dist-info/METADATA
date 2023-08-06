@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: navigation-api
+Version: 0.0.1a0
+Summary: Package for location search and navigation
+Home-page: https://github.com/d-mcknight/navigation-api
+Author: Daniel McKnight
+Author-email: daniel@mcknight.tech
+License: BSD-3-Clause
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: geopy (~=2.3)
+Requires-Dist: openrouteservice (~=2.3)
+
+# Navigation API
+Implements helper classes to get locations and navigation using
+OpenStreetMap and OpenRouteService.
