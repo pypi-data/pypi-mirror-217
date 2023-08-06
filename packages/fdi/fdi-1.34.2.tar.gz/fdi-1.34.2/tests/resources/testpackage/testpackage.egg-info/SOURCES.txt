@@ -1,0 +1,16 @@
+setup.py
+testpackage.egg-info/PKG-INFO
+testpackage.egg-info/SOURCES.txt
+testpackage.egg-info/dependency_links.txt
+testpackage.egg-info/top_level.txt
+testpackage/one/__init__.py
+testpackage/one/module1.py
+testpackage/one/resource1.txt
+testpackage/one/resource1/resource1.1.txt
+testpackage/two/__init__.py
+testpackage/two/resource2.1.jsn
+testpackage/two/resource2.2.json
+testpackage/two/resource2.txt
+testpackage/two/four/__init__.py
+testpackage/two/four/resource4.csv
+testpackage/two/four/five/resource5.jsn
