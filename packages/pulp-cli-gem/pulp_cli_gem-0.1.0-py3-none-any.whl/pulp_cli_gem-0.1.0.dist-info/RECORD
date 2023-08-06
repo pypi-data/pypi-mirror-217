@@ -1,0 +1,11 @@
+pulpcore/cli/gem/__init__.py,sha256=2p3qCcjLcrr3BM8KwekqxvS7Hn0AWVjya5-38t7ar0c,807
+pulpcore/cli/gem/content.py,sha256=R0H1Cmgjy3JLpqo_9oE6nEZ64RFuJIOxbdF-WQxMj6o,3829
+pulpcore/cli/gem/distribution.py,sha256=kDpvkpZ5EUvSsxxmO3VZP-r0mwuQiWTr31pF7RRWuGU,2725
+pulpcore/cli/gem/publication.py,sha256=EkQLXA16H29JxBKdL46ssx74Yex7WofNM4ej6hkC5hY,1603
+pulpcore/cli/gem/remote.py,sha256=oSmPbobeyIUdSfKMm-E3Bu0EnrxHU5jhoRJa-4zBM30,2171
+pulpcore/cli/gem/repository.py,sha256=U0qrlHC2EE9YsLJ3mYsvywsccOGFoSFTuh0_O6HdN1M,4798
+pulp_cli_gem-0.1.0.dist-info/METADATA,sha256=D9vcxQiCEMR5k5lH-O9NnFUQa4jrdDr7RXu8g_Bo0rA,700
+pulp_cli_gem-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pulp_cli_gem-0.1.0.dist-info/entry_points.txt,sha256=VAIKttsgOikNJMzX23L-9Dc8mRDkrDO-WVjIRCpulew,42
+pulp_cli_gem-0.1.0.dist-info/top_level.txt,sha256=v1J0AeNxNhm8YE5-xQe1G1YbfoMRZ_u9DAg_Gi7omeY,9
+pulp_cli_gem-0.1.0.dist-info/RECORD,,
