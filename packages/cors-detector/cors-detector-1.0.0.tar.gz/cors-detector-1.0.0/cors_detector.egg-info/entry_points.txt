@@ -1,0 +1,3 @@
+[console_scripts]
+cors-detector = lib.cors:main
+
