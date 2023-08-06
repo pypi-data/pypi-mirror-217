@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: smallstep-py
+Version: 0.1.0
+Summary: Python library to interact with smallstep private ca
+Author-Email: Clayton Rosenthal <clayrosenthal@gmail.com>
+License: GPLv3+
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Topic :: Security
+Classifier: Topic :: Internet :: WWW/HTTP
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+# python-step
+Python interface to smallstep API
