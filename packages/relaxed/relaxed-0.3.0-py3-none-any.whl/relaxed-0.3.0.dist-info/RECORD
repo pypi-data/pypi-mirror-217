@@ -1,0 +1,12 @@
+relaxed/__init__.py,sha256=ULCWqmlLzEVrQFt6cla1tRt1nepuo68AknUa351Pnhg,431
+relaxed/infer.py,sha256=UKJ7WhC6rREwTlFSCQwwR_B1EMSWvx1zSM7phCBsozM,4228
+relaxed/metrics.py,sha256=hecVuRLrA5Z0O4SMxIxfqWY0rjfBhGwrDK4Kdpa3Sao,2462
+relaxed/mle.py,sha256=IFWWNvM8E2cRtjmBtGrXfo6lxkHV72H25PLW31x6qRM,3383
+relaxed/ops.py,sha256=hM2OzJ31vfY3BNKb7T5pFRssQSj3YnfpbDFF-xs4J_M,4215
+relaxed/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+relaxed/_compat/__init__.py,sha256=pI7gAW6PCcjiT44evXiKvb_kcsPSwoS285u5Kb2mhsc,161
+relaxed/_compat/typing.py,sha256=s0H-ycg3JpKSAhOcyh60t2381h0AJp3TpzOzB29bsYQ,519
+relaxed-0.3.0.dist-info/METADATA,sha256=f3MfsZ6R9HeniC-aCivuYpKNlDEozr9qwo4aeNXba6Q,7615
+relaxed-0.3.0.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+relaxed-0.3.0.dist-info/licenses/LICENSE,sha256=pSp4oTSKhflw4XS1V2i4kgQG9Rn_aM2QPVPEL2N2VHg,1524
+relaxed-0.3.0.dist-info/RECORD,,
