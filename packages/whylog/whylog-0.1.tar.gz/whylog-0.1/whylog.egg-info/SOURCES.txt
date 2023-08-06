@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+whylog/__init__.py
+whylog.egg-info/PKG-INFO
+whylog.egg-info/SOURCES.txt
+whylog.egg-info/dependency_links.txt
+whylog.egg-info/top_level.txt
+whylog/src/__init__.py
+whylog/src/whylog.py
