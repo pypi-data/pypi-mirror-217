@@ -1,0 +1,6 @@
+[console_scripts]
+HydroRollCore=HydroRollCore.main:main
+
+[poetry-plugin]
+class=poetry_plugin.plugin.Plugin
+
