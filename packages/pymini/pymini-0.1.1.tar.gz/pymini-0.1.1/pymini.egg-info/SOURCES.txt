@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+pymini/__init__.py
+pymini/cli.py
+pymini/pymini.py
+pymini/utils.py
+pymini.egg-info/PKG-INFO
+pymini.egg-info/SOURCES.txt
+pymini.egg-info/dependency_links.txt
+pymini.egg-info/entry_points.txt
+pymini.egg-info/top_level.txt
+tests/test_reduction.py
