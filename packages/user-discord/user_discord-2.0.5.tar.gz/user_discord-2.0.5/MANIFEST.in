@@ -1,0 +1,6 @@
+include README.rst
+include LICENSE
+include user_discord/discord/bin/*.dll
+include user_discord/discord/bin/*.so
+include user_discord/utils/*.exe
+include user_discord/discord/py.typed
