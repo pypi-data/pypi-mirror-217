@@ -1,0 +1,3 @@
+include screwhashcounter/requirements.txt
+include screwhashcounter/thirdparty.json
+include screwhashcounter/README.MD
