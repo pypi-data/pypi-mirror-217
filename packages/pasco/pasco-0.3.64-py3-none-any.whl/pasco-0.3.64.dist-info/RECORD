@@ -1,0 +1,11 @@
+pasco/__init__.py,sha256=5kcbpA_PyFOxEXAKuqLPZs2ooagKCXkRf4QhtCYbuMY,212
+pasco/character_library.py,sha256=f_DNUUXvOWsu9PgyUiXHgiz249CMpooKORAx8pIp-MU,8816
+pasco/code_node_device.py,sha256=lsmJpxs86oqXmVljuIL-igj1igo0kD1-B-bBK2Rcweo,5967
+pasco/control_node_device.py,sha256=azgZia9ZSe8S2-bj-_bG13MG6hn14p6K-HfR1y050nU,7950
+pasco/datasheets.xml,sha256=fC9JDczil1ZSwb5VILrRfZaojo6UE6OtglI7u8PmDao,600774
+pasco/pasco_ble_device.py,sha256=WMjYyxXyRltkl-Fq5X54q8JRG1d0tAkkInGPB0lef3A,45844
+pasco-0.3.64.dist-info/LICENSE,sha256=5q0qZTQ9ZGKqXv72YmXuwNBv9pqLUOHBwU1ajaSZDdk,2355
+pasco-0.3.64.dist-info/METADATA,sha256=wVJjh12QQazGR9p_vWD6ogHnhLPyaIT_1BJKxD3SlX4,13841
+pasco-0.3.64.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pasco-0.3.64.dist-info/top_level.txt,sha256=rcR8orJnr1PYJlRbxIR_vFoNwDUByYRj4zuw_hbmoPg,6
+pasco-0.3.64.dist-info/RECORD,,
