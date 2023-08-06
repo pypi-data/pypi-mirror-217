@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "anymusic"
+version = "0.0.1"
+description = "Music from the very basic."
+authors = ["Yi Cao <me@ycao.top>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.4.1"
+black = "^23.3.0"
+pylint = "^2.17.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+target-version = ['py311']

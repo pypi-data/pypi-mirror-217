@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: anymusic
+Version: 0.0.1
+Summary: Music from the very basic.
+Author: Yi Cao
+Author-email: me@ycao.top
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# AnyMusic
+
+*Music from the very basic.*
+
+AnyMusic aims to provide a set of tools to make programmatic sounds that are more generalized.
+
