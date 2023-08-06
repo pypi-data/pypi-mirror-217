@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "gradoptics"
+version = "0.0.4"
+authors = [
+  { name="Sean Gasiorowski", email="sgaz@slac.stanford.edu" },
+  { name="Michael Kagan", email="makagan@slac.stanford.edu" },
+  { name="Maxime Vandegar", email="maxime.vandegar@slac.stanford.edu" },
+  { name="Sanha Cheong", email="sanha@stanford.edu" }
+]
+description = "Differentiable Optics via Ray Tracing"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/magis-slac/gradoptics"
+"Bug Tracker" = "https://github.com/pypa/magis-slac/gradoptics"
