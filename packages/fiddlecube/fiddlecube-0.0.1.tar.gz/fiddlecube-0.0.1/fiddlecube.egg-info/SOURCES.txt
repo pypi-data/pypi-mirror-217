@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.py
+soothsayer.py
+app/__init__.py
+app/__main__.py
+app/application.py
+fiddlecube.egg-info/PKG-INFO
+fiddlecube.egg-info/SOURCES.txt
+fiddlecube.egg-info/dependency_links.txt
+fiddlecube.egg-info/entry_points.txt
+fiddlecube.egg-info/requires.txt
+fiddlecube.egg-info/top_level.txt
