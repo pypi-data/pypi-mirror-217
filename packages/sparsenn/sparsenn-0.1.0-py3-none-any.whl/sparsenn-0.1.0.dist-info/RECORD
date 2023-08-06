@@ -1,0 +1,9 @@
+sparsenn/__init__.py,sha256=5dYP0pWSURDwvz6p2dgA3qy8KUC9FF78C3ClfvGTGmE,377
+sparsenn/ad.py,sha256=aft8ratww1LZxlDoKdXpT_kKL-a--NfeP3NaS6ZEago,12233
+sparsenn/custom_types.py,sha256=CmoweHe5vjnmIgE6TnsLOW4am5sAbaw9BQYOmeyAJe0,907
+sparsenn/linear.py,sha256=tpzudu0Oe3JkQrwPJrIk86fsneKqX4PQsj2w-myTKE8,8897
+sparsenn/opt.py,sha256=0su3TnRxmmQguIrsRNlIEY12HIMuGjPf2c8VqVAyz4E,2908
+sparsenn/utils.py,sha256=529DO9Tw84im3cJywdEyKEDiRPG2saOOKukP2GJ16po,202
+sparsenn-0.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+sparsenn-0.1.0.dist-info/METADATA,sha256=kNgMU6Ek8sGOEzz7o7-kf3DnMDhl_XLB16YL8IdzOYM,455
+sparsenn-0.1.0.dist-info/RECORD,,
