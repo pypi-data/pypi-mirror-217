@@ -1,0 +1,3 @@
+include windbg2df/requirements.txt
+include windbg2df/thirdparty.json
+include windbg2df/README.MD

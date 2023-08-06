@@ -1,0 +1,14 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+windbg2df/README.MD
+windbg2df/__init__.py
+windbg2df/requirements.txt
+windbg2df/thirdparty.json
+windbg2df.egg-info/PKG-INFO
+windbg2df.egg-info/SOURCES.txt
+windbg2df.egg-info/dependency_links.txt
+windbg2df.egg-info/requires.txt
+windbg2df.egg-info/top_level.txt
