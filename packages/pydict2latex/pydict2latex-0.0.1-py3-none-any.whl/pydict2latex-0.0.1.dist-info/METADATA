@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pydict2latex
+Version: 0.0.1
+Summary: Acces python dictionaries from latex
+Home-page: 
+Author: Damien Masson
+License: BSD 2-clause
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Text Processing :: Markup :: LaTeX
+License-File: LICENSE
+Requires-Dist: numpy
+
