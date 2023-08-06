@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+h5dataframe/__init__.py
+h5dataframe/_typing.py
+h5dataframe/block.py
+h5dataframe/dataframe.py
+h5dataframe/manager.py
+h5dataframe/patch.py
+h5dataframe.egg-info/PKG-INFO
+h5dataframe.egg-info/SOURCES.txt
+h5dataframe.egg-info/dependency_links.txt
+h5dataframe.egg-info/requires.txt
+h5dataframe.egg-info/top_level.txt
+tests/test_creation.py
+tests/test_functions.py
+tests/test_read_write.py

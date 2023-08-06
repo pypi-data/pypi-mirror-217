@@ -1,0 +1,70 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "h5dataframe"
+description = "Drop-in replacement for pandas DataFrames that allows to store data on an hdf5 file and manipulate data directly from that h5df file without loading it in memory."
+version = "0.1"
+requires-python = ">=3.7"
+license = {file = "LICENSE"}
+authors = [
+    {name = "Matteo Bouvier", email = "m.bouvier@vidium-solutions.com"}
+]
+maintainers = [
+    {name = "Matteo Bouvier", email = "m.bouvier@vidium-solutions.com"}
+]
+readme = {file = "README.md", content-type="text/markdown"}
+dependencies = [
+    "ch5mpy",
+    "numpy",
+    "pandas>=2.0.3",
+]
+keywords = [
+    "h5df",
+    "h5py",
+    "pandas",
+    "dataframe",
+    "data manipulation",
+    "storage"
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: CeCILL-B Free Software License Agreement (CECILL-B)",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Scientific/Engineering",
+    "Typing :: Typed"
+]
+
+[project.urls]
+Source = "https://github.com/Vidium/h5dataframe"
+
+[tool.setuptools.packages.find]
+include = ["h5dataframe*"]
+
+[tool.vulture]
+paths = ["h5dataframe", "vulture_whitelist.py"]
+
+[tool.ruff]
+line-length = 120
+
+[tool.mypy]
+strict = true
+namespace_packages = true
+disable_error_code = [
+    "method-assign"
+]
+
+[[tool.mypy.overrides]]
+module = [
+    'numpy_indexed',
+    'h5py'
+]
+ignore_missing_imports = true
