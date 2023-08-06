@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+dexcolor/Ansi.py
+dexcolor/__init__.py
+dexcolor/ansitowin32.py
+dexcolor/initialize.py
+dexcolor.egg-info/PKG-INFO
+dexcolor.egg-info/SOURCES.txt
+dexcolor.egg-info/dependency_links.txt
+dexcolor.egg-info/top_level.txt
+dexcolor/tests/test_dexcolor.py
