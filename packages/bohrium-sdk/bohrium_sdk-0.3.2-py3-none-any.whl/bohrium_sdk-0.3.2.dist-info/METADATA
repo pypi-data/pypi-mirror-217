@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: bohrium-sdk
+Version: 0.3.2
+Summary: bohrium openapi python sdk
+Home-page: https://github.com/dingzhoahan
+Author: dingzhaohan
+Author-email: dingzh@dp.tech
+Requires-Python: >=3.7
+Requires-Dist: pyhumps (==3.8.0)
+Requires-Dist: rich
+
