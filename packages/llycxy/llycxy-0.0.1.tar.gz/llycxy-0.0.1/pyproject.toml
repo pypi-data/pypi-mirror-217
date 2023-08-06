@@ -1,0 +1,7 @@
+[project]
+name = "llycxy"   #名字
+version = "0.0.1"   #版本
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
