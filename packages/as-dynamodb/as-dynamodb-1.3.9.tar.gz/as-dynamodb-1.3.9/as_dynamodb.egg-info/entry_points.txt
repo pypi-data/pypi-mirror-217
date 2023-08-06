@@ -1,0 +1,4 @@
+
+    [console_scripts]
+    as-dynamodb=dz_dynamodb:main
+    
