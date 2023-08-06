@@ -1,0 +1,12 @@
+xagg/__init__.py,sha256=89jOrtPN6cKyntvNEvDYDwsBEI0pJUpSfUqecOOGmRc,347
+xagg/_version.py,sha256=OYVqZwtPEoUDMerMUbov7YIQtNq5aiOhhJjI4v7BuRE,44
+xagg/aux.py,sha256=qgzPEPAJF_oSfl56OvNJBW9kA4WtpfZxA9hgJni6zyQ,15827
+xagg/classes.py,sha256=PWaROfc0U5swsNQRr4HcvzZCGsy8HyS_D83CGfp39UQ,3435
+xagg/core.py,sha256=lYXRJdSRbglfBCsi6loLRc2HVHAsqBvitRyEBtbDgpM,30911
+xagg/export.py,sha256=GPaVxN8Zcw4zk1O10G5E49HJaAPGIYZeWgC1D3UyMaw,11695
+xagg/wrappers.py,sha256=OpmUYEYR2VKIhlIIkcjp7Ay9l3onG-eZbMWU1xr5BO4,3600
+xagg-0.3.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+xagg-0.3.1.dist-info/METADATA,sha256=16u77LyNT3CTl4vMLi53RY7BQPijw8lOrxAiE4vj9zY,6927
+xagg-0.3.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+xagg-0.3.1.dist-info/top_level.txt,sha256=bHcTGLYxojRi-wZpTtdi4qahsgzF804LsVjXUZBD4io,5
+xagg-0.3.1.dist-info/RECORD,,
