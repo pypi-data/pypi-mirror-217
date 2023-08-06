@@ -1,0 +1,9 @@
+ask_orex/__init__.py,sha256=Rlo_ObZq8Xb3pkPR5REmJLd4bK2f6nTJ8jVlDorsV7I,47
+ask_orex/__main__.py,sha256=cOlbCyzy3rvMVTG310t57-E1w8pXyrRCNBpnZ-ldKZk,65
+ask_orex/constants.py,sha256=3_LvtOiyjfB8M1L1vQzL-dwCD9eCDHEa6DDTQMypb4M,698
+ask_orex/orex.py,sha256=KM7gZaLDoQAhInkc6g15POgUapg2B1HVGoMsObSZTL0,5587
+ask_orex-1.1.0.dist-info/LICENSE,sha256=I9EF1Aa6ITnAckDEuTYXXEx4p3VxukJ2HKQ0_6wRNn4,1065
+ask_orex-1.1.0.dist-info/METADATA,sha256=qwmbNXoxSV6aH0k22FZowQ1-7eVuNIxjVMKEXz2Lv_E,5146
+ask_orex-1.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ask_orex-1.1.0.dist-info/top_level.txt,sha256=dWQaVBfBDC6Wx3qrtWjV9yo0ysdRWiIA9O01kaaRw3Q,9
+ask_orex-1.1.0.dist-info/RECORD,,
