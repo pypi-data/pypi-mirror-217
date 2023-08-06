@@ -1,0 +1,6 @@
+README.md
+setup.py
+metriclog.egg-info/PKG-INFO
+metriclog.egg-info/SOURCES.txt
+metriclog.egg-info/dependency_links.txt
+metriclog.egg-info/top_level.txt
