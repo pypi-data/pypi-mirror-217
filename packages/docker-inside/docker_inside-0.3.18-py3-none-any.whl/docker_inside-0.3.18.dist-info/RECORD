@@ -1,0 +1,11 @@
+dockerinside/__init__.py,sha256=F9bnxIKA6nrPrfMeu2XaAJ3jOgB_WxHMBovDFzcs6YM,22221
+dockerinside/__main__.py,sha256=fr-CFAsvUaq-F1nICslExsfLggcTfrfCuU_MUBrHZdQ,58
+dockerinside/dockerutils.py,sha256=kMaLOgSw99KFkWk2i-McA7RE-jUhqBp9HAkCc3rlURU,7180
+dockerinside/setup/__init__.py,sha256=VPdnAJ_6JpfZD6bUjGiiIw3CGrGwdQL-gxdblQ07eVo,5798
+dockerinside/setup/__main__.py,sha256=WIg-h8tlMHTl18f2c10-JcBXIhiZ6JUoEFV7cBqZZnI,70
+docker_inside-0.3.18.dist-info/LICENSE,sha256=u5Nu1e5U_eX5-YtXAIdLz4Y0bOVvWqsVTUiubTTaCso,1069
+docker_inside-0.3.18.dist-info/METADATA,sha256=KlcnWBw4dQwjcOxI7L8D9ByJ4NvmbYZT4CHqJCp3_M4,4824
+docker_inside-0.3.18.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+docker_inside-0.3.18.dist-info/entry_points.txt,sha256=_WK1OKHd4L8s_St9KN0uXeqJiSXV-bQ0Sdq8mmXHVmE,352
+docker_inside-0.3.18.dist-info/top_level.txt,sha256=XF-oAYwGC6eAG0WWlQuqQvM0RSnWctuEjTEtPByVQfY,13
+docker_inside-0.3.18.dist-info/RECORD,,
