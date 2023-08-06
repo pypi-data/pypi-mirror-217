@@ -1,0 +1,14 @@
+include src/ddeq/data/sources.csv
+include src/ddeq/data/INPUT_ORG
+include src/ddeq/data/SMARTCARB-CO2-emissions.csv
+include src/ddeq/data/SMARTCARB-NO2-emissions.csv
+include notebooks/tutorial-introduction-to-ddeq.ipynb
+include notebooks/example_divergence.ipynb
+include notebooks/example_download_tropomi.ipynb
+include notebooks/example_gauss.ipynb
+include notebooks/example-compare-csf-lcsf-ime-gp-method.ipynb
+include notebooks/example-hakkarainen-2022-fig-01.ipynb
+include notebooks/example-lcsf-method.ipynb
+include notebooks/data/cosmo_2d_2015042311.nc
+include notebooks/data/Sentinel_7_CO2_2015042311_o1670_l0483.nc
+include notebooks/data/SMARTCARB_winds_2015042311.nc
