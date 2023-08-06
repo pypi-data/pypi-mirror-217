@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: jupyter-on-golem
+Version: 0.1.0
+Summary: Jupyter Python kernel running on Golem network (https://www.golem.network/)
+License: LGPL-3.0-or-later
+Keywords: golem,jupyter,kernel,notebook
+Author: GolemFactory
+Author-email: contact.jupyter@golem.network
+Requires-Python: >=3.8.0,<4.0.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: AsyncIO
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Distributed Computing
+Requires-Dist: golem-api-python (==0.1.1)
+Requires-Dist: humanize (==4.*)
+Requires-Dist: jupyter (==1.0.0)
+Requires-Dist: pytimeparse (==1.*)
+Requires-Dist: websockets (==10.*)
