@@ -1,0 +1,5 @@
+Time (s),Type,ID,State,Value,Units
+ 3.66318E+01,DEVC,Spr_46                                                      ,T, 7.40214E+01,C
+ 3.66318E+01,CTRL,Act46                                                       ,T
+ 4.46791E+01,DEVC,Spr_36                                                      ,T, 7.40335E+01,C
+ 4.46791E+01,CTRL,Act36                                                       ,T
