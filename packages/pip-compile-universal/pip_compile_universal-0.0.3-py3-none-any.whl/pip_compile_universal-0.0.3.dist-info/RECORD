@@ -1,0 +1,5 @@
+pip_compile_universal-0.0.3.data/scripts/pip_compile_universal,sha256=eoJymscWgkL1XHKJ6N8oHLHoo5oB11upCdtDUHYBss8,20437
+pip_compile_universal-0.0.3.dist-info/METADATA,sha256=GdeSm82NVL2Nw43B9o20q6Rh_SRcfOG8aInsZ3iJfWs,2512
+pip_compile_universal-0.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pip_compile_universal-0.0.3.dist-info/top_level.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pip_compile_universal-0.0.3.dist-info/RECORD,,
