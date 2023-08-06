@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#container-date-and-place {
+  width: 100%;
+  display: -webkit-box;
+  -webkit-box-pack: end;
+}
+
+#container-date-and-place table {
+  width: 45%;
+  text-align: center;
+}
+
+#container-seller-and-buyer {
+  margin-top: 50px;
+  width: 100%;
+  display: -webkit-box;
+  -webkit-box-pack: justify;
+}
+
+#container-seller-and-buyer table {
+  width: 45%;
+}
+
+#invoice-title {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#container-items table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+
+#container-items th {
+  background-color: #ddd;
+  border: 1px solid gray;
+  border-bottom: none;
+  padding: 7px;
+}
+
+#container-items td {
+  border: 1px solid gray;
+  border-top: none;
+  padding: 2px 5px;
+}
+
+#container-summary {
+  margin-top: 50px;
+  width: 100%;
+  display: -webkit-box;
+  -webkit-box-pack: justify;
+}
+
+#container-summary table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 45%;
+}
+
+#container-summary td {
+  border-top: 0.75pt solid gray;
+  padding: 5px;
+}
+
+.no-border {
+  border: none !important;
+}
+
+.align-right {
+  text-align: right !important;
+}
+
+.table-header {
+  background-color: #ddd;
+  border-top: 1px solid gray;
+}
+
+.bold {
+  font-weight: bold;
+}

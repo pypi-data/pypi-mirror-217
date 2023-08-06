@@ -1,0 +1,9 @@
+click
+Jinja2
+pdfkit
+pydantic<2
+
+[dev]
+pytest
+pytest-cov
+diff-pdf-visually

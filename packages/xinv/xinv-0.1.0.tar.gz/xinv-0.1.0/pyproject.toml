@@ -1,0 +1,53 @@
+[project]
+name = "xinv"
+authors = [{name = "Kamil Turek", email = "kamil.turek@hotmail.com"}]
+description = "A CLI tool for generating customized invoices"
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["cli", "invoice"]
+license = {text = "MIT"}
+dynamic = ["version"]
+classifiers = [
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: MacOS",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+dependencies = [
+    "click",
+    "Jinja2",
+    "pdfkit",
+    "pydantic<2",
+]
+
+[project.scripts]
+xinv = "xinv.main:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-cov",
+    "diff-pdf-visually",
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.dynamic]
+version = {attr="xinv.__version__"}
+
+[tool.mypy]
+python_version = "3.8"
+warn_unused_configs = true
+warn_unused_ignores = true
+check_untyped_defs = true
+show_error_context = true
+pretty = true
+
+[tool.pytest.ini_options]
+addopts = "--cov-report term-missing"
