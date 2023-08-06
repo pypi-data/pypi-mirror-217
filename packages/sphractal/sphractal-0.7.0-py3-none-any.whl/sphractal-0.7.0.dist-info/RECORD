@@ -1,0 +1,16 @@
+setup.py,sha256=Ws6XuKS1oExPyqBAdNWzANxSjeBLFmq3VGNt2sFaEG0,736
+sphractal/__init__.py,sha256=WzMCZqh0DMC-0en4xTU1XCjLV44_Z7CK51UKNi-MBfo,1406
+sphractal/boxCnt.py,sha256=8JKZI-WBlKY7BMKow34Ci9KGw46n2__BGHqxAh87KW4,22696
+sphractal/constants.py,sha256=muPTSnx2GfiuGxFn3IlYNuZb5l37qvmDAq9PVnn_OY0,4302
+sphractal/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sphractal/data/example.xyz,sha256=01wIjVL73St73qRsmlLVakKXd3GRkbebqDMsShIf0yk,20105
+sphractal/datasets.py,sha256=uvPxMxCGXqNLn0B7La2RdxwyvOHkKz3sdNSL23ULNJE,279
+sphractal/surfExact.py,sha256=VpfpVx_0xlBCUHMm9Bf15ZFEoiw7LxEU30lIMo9snHc,8953
+sphractal/surfPointClouds.py,sha256=Z9pe9ublM_MM96Az9r711kKvwYw1AhGwQISuGOPNqRY,8119
+sphractal/utils.py,sha256=A8-2TOxaTFTgvueHHBJv5NPfbvxcSOQ2OiVWbaXH0Tk,11480
+tests/fixtures.py,sha256=0e7c3tpNKHIzCrq6E3rUY9B9lR6JQv6sztaarTnjXaU,94223
+tests/test_sphractal.py,sha256=M6XaLduMjeYC7PtHHBoUjyPp7J3qooDE6N3ykF9tDB8,17688
+sphractal-0.7.0.dist-info/LICENSE,sha256=39TPaZFmIFXTbWFXECkx_58CsZnID1myklQ1sDYt4J8,1082
+sphractal-0.7.0.dist-info/METADATA,sha256=7CKD-1Vx5Fu4sR8XZZd2kDmqziUF8BQgFj0WD0J2Jy4,5284
+sphractal-0.7.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+sphractal-0.7.0.dist-info/RECORD,,
