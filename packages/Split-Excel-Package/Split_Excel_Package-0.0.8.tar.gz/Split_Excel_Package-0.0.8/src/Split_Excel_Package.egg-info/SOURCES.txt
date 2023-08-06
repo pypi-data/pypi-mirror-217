@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/Split_Excel_Package/__init__.py
+src/Split_Excel_Package/excel_splitter.py
+src/Split_Excel_Package.egg-info/PKG-INFO
+src/Split_Excel_Package.egg-info/SOURCES.txt
+src/Split_Excel_Package.egg-info/dependency_links.txt
+src/Split_Excel_Package.egg-info/top_level.txt
