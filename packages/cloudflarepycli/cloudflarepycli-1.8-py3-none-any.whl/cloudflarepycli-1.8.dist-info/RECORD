@@ -1,0 +1,8 @@
+cloudflarepycli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloudflarepycli/__main__.py,sha256=c9NQ4CR4DVt0hmuManMDUEr27a-J7BagG4eiXBgePj0,1521
+cloudflarepycli/cloudflareclass.py,sha256=tLQokn_K2OrBIRWzUM-vMZU_DnonHme5hDas0zrXlfY,8107
+cloudflarepycli-1.8.dist-info/METADATA,sha256=UPDY-aML7U0psw1ZyZLJ3cwXEPLGmPmFnTxysBd5Yw0,4186
+cloudflarepycli-1.8.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+cloudflarepycli-1.8.dist-info/entry_points.txt,sha256=gRjok0eL6n3xSFd4TxNtMBB-ryTKd93d7QaUXYe3BX0,62
+cloudflarepycli-1.8.dist-info/top_level.txt,sha256=MincSVcieSSoNjoTOtd7jxZu6EJPPXqVi4zBiQrtDGc,16
+cloudflarepycli-1.8.dist-info/RECORD,,
