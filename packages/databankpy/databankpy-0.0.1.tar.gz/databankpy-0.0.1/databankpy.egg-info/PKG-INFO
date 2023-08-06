@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: databankpy
+Version: 0.0.1
+Summary: DatabankPy is a set of utilities for programmatic access to the DNP databank
+Author-email: Joshua Unrau <contact@joshuaunrau.com>
+License: MIT
+Project-URL: Documentation, https://github.com/DouglasNeuroInformatics/DatabankPy#readme
+Project-URL: Issues, https://github.com/DouglasNeuroInformatics/DatabankPy/issues
+Project-URL: Source, https://github.com/DouglasNeuroInformatics/DatabankPy
+Keywords: Douglas,Databank,DNP,Data,Bank
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE.txt
+
+# DatabankPy
+
+[![PyPI - Version](https://img.shields.io/pypi/v/databankpy.svg)](https://pypi.org/project/databankpy)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/databankpy.svg)](https://pypi.org/project/databankpy)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```shell
+pip install databankpy
+```
+
+## Development Setup
+
+### Install Dependencies
+
+```shell
+pip install ".[dev]"
+```
+
+### Build
+
+```shell
+python -m build
+```

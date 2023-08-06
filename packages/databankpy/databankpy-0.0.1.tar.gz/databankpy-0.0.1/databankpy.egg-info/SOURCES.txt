@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+databankpy/__init__.py
+databankpy/main.py
+databankpy.egg-info/PKG-INFO
+databankpy.egg-info/SOURCES.txt
+databankpy.egg-info/dependency_links.txt
+databankpy.egg-info/requires.txt
+databankpy.egg-info/top_level.txt
