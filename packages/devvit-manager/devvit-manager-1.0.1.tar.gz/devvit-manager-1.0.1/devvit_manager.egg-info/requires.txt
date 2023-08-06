@@ -1,0 +1,15 @@
+click==8.*
+pick==2.*
+praw==7.*
+
+[ci]
+docutils==0.8.*
+packaging==23.*
+
+[dev]
+docutils==0.8.*
+packaging==23.*
+pre-commit
+
+[lint]
+pre-commit
