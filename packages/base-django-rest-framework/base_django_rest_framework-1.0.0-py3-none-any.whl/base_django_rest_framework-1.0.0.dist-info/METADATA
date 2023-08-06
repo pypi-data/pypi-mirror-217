@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: base-django-rest-framework
+Version: 1.0.0
+Summary: Base Django Rest Framework Project Setup
+Home-page: https://github.com/evnskc/base-django-rest-framework
+License: GPL-3.0-or-later
+Keywords: base,django,django rest framework
+Author: Evans
+Author-email: evans@fundi.dev
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: authlib (>=1.2.1,<2.0.0)
+Requires-Dist: django (>=4.2.3,<5.0.0)
+Requires-Dist: djangorestframework (>=3.14.0,<4.0.0)
+Requires-Dist: hiredis (>=2.2.3,<3.0.0)
+Requires-Dist: pillow (>=10.0.0,<11.0.0)
+Requires-Dist: psycopg (>=3.1.9,<4.0.0)
+Requires-Dist: redis (>=4.6.0,<5.0.0)
+Requires-Dist: sentry-sdk[django] (>=1.27.0,<2.0.0)
+Project-URL: Documentation, https://github.com/evnskc/base-django-rest-framework
+Project-URL: Repository, https://github.com/evnskc/base-django-rest-framework
+Description-Content-Type: text/markdown
+
+[![Test](https://github.com/evnskc/base-django-rest-framework/actions/workflows/test.yml/badge.svg)](https://github.com/evnskc/base-django-rest-framework/actions/workflows/test.yml)
+[![Publish](https://github.com/evnskc/base-django-rest-framework/actions/workflows/publish.yml/badge.svg)](https://github.com/evnskc/base-django-rest-framework/actions/workflows/publish.yml)
+[![PyPI](https://img.shields.io/pypi/v/base-django-rest-framework)](https://pypi.org/project/base-django-rest-framework/)
+
+# Base Django Rest Framework Project Setup
+
+## Installation
+
+Using ```pip```
+
+```commandline
+pip install base-django-rest-framework
+```
+
+Using ```poetry```
+
+```commandline
+poetry add base-django-rest-framework
+```
+
+## Usage
+
+In your project's settings.py
+
+```python
+# ...
+
+INSTALLED_APPS = [
+    # ...
+    "rest_framework",
+    "base_django_rest_framework",
+    # ...
+]
+
+# ...
+
+# Default base_django_rest_framework configurations
+from base_django_rest_framework.conf import *  # NOQA
+```
