@@ -1,0 +1,7 @@
+setup.py
+ai_image/__init__.py
+ai_images.egg-info/PKG-INFO
+ai_images.egg-info/SOURCES.txt
+ai_images.egg-info/dependency_links.txt
+ai_images.egg-info/requires.txt
+ai_images.egg-info/top_level.txt
