@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: naneos-devices
+Version: 0.3
+Summary: Python client for naneos particle solutions gmbh devices.
+Home-page: https://github.com/pyscaffold/pyscaffold/
+Author: huegi
+Author-email: m.huegi@outlook.com
+License: MIT
+Project-URL: Documentation, https://pyscaffold.org/
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+License-File: LICENSE.txt
+Requires-Dist: pyserial (>=3.3)
+Requires-Dist: pandas (>=1.2.1)
+Requires-Dist: bleak (>=0.12.0)
+Requires-Dist: importlib-metadata ; python_version < "3.8"
+Provides-Extra: testing
+Requires-Dist: setuptools ; extra == 'testing'
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+
+# partector2
+
+This package works with the namespace naneos. The structure in the src folder is applied to obtain this result.
+
+
+## Description
+
+A longer description of your project goes here...
+
+
+<!-- pyscaffold-notes -->
+
+## Note
+
+This project has been set up using PyScaffold 4.2.1. For details and usage
+information on PyScaffold see https://pyscaffold.org/.

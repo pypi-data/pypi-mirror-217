@@ -1,0 +1,15 @@
+naneos/partector2/__init__.py,sha256=kzmCF0aJA2Xbi6aGk-zs4MFA0O15TTGebGnWFJEJjd4,147
+naneos/partector2/_data_structure.py,sha256=sCBE8E_PwxY8iQv3e7Iih9StnYMnTJSHR6yj7SsEZvQ,642
+naneos/partector2/_lambda_upload.py,sha256=Rb7y3P0JJ_uLWZWf36X6d9tH6LafqhZ-dnT6V_AYbtY,1419
+naneos/partector2/partector2.py,sha256=yMsIdE-fWso4ObCKXwmW_iMQbm5OVatmrQ_C0xNKG_Q,6800
+naneos/partector2/scan_for_p2.py,sha256=HfdwaWbHzNrIdHWqu6qgkmTG5F3HXYNsid5zzLfzBmQ,1044
+naneos/partector2_ble/__init__.py,sha256=B72dKill9rBP9A4Qx5B_p2jpnyOQJv4Z-iL7PQf633U,74
+naneos/partector2_ble/_lambda_upload.py,sha256=zi7Wsem8Qtw6BCuZCCJfBQpV1LQQrM6UosiqIKeWUr0,1471
+naneos/partector2_ble/partector2_ble.py,sha256=d_nDyu_D-1ctvZ1gXJBaXB9n7cQiMgc046WVdu2OYFU,6473
+naneos/serial_utils/__init__.py,sha256=zl2wYGgtmXsuliX2rveAIM-3n4dkRcYv8ku0_QiOH1Y,85
+naneos/serial_utils/list_serial_ports.py,sha256=3QNfmyv8JpJpw4BHoE_39CWgzyw3UJwl0CN1gSInrAg,1019
+naneos_devices-0.3.dist-info/LICENSE.txt,sha256=B5Ib_mnKjjpfHSqalujFIInwr0VMjnO_Ii_Vl2EP4MQ,1093
+naneos_devices-0.3.dist-info/METADATA,sha256=YhB0j0xkLW1mVEQiBsrSSklsMxdeWbioM3EBATMTuM0,1162
+naneos_devices-0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+naneos_devices-0.3.dist-info/top_level.txt,sha256=C5MVrYbocXoleI56LCWEZNx-DdB7izDwFrI3eUspnOk,7
+naneos_devices-0.3.dist-info/RECORD,,
