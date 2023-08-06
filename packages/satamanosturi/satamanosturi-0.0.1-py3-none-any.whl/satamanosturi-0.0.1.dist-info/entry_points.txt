@@ -1,0 +1,2 @@
+[console_scripts]
+satamanosturi = satamanosturi.__main__:main

@@ -1,0 +1,13 @@
+satamanosturi/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+satamanosturi/__main__.py,sha256=GDrHSOtjoSTlEOvioGan1eiwt1Lzglh9fdPYchkBuYM,264
+satamanosturi/docker.py,sha256=W_NewZ2JnehIxTBBo-d51dZtvgNKjK4tnQjbP9mhijg,723
+satamanosturi/images.py,sha256=2MH8Q8utyRECoeD8wD0zrqXpfCLqWbMOJ33DLoeAucA,197
+satamanosturi/models.py,sha256=onHujzrJrsz8TlGgWwCl8JohMraj-oz0aHUc9BO1L30,1107
+satamanosturi/repos.py,sha256=CuNob6gZLeNypg_AN9DFaNm_fMsE6EfTk9N29qy2OBI,262
+satamanosturi/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+satamanosturi/commands/copy_image.py,sha256=Bl5SLn2dzB0Gq0ajevftahOJxQ2-YfhO8lGzpXn9kQ0,2413
+satamanosturi-0.0.1.dist-info/METADATA,sha256=c8o0RFvxsWsf_bbLP51rjQYGgOPdInjWiT2c6AQy43c,1596
+satamanosturi-0.0.1.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+satamanosturi-0.0.1.dist-info/entry_points.txt,sha256=IdwEIPEdQvXt_2m_AJOOKFLEc-o6pRosRYWuIt4Yay4,62
+satamanosturi-0.0.1.dist-info/licenses/LICENSE,sha256=xH3qjs5wPt9tULYPiuft4if7DBv5j8ZvebkSsUZUDqw,1094
+satamanosturi-0.0.1.dist-info/RECORD,,

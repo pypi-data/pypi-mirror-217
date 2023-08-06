@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: satamanosturi
+Version: 0.0.1
+Project-URL: Documentation, https://github.com/akx/satamanosturi#readme
+Project-URL: Issues, https://github.com/akx/satamanosturi/issues
+Project-URL: Source, https://github.com/akx/satamanosturi
+Author-email: Aarni Koskela <akx@iki.fi>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.9
+Requires-Dist: boto3
+Requires-Dist: boto3-stubs[ecr]
+Requires-Dist: click
+Requires-Dist: docker
+Description-Content-Type: text/markdown
+
+# Satamanosturi
+
+Satamanosturi (Finnish for "harbor crane") is a tool to copy Docker images from one place to another.
+
+Initially, ECR-to-ECR copies are supported, and unfortunately only with the help of a local Docker daemon.
+
+## Usage example
+
+For example, 
+```
+$ python -m satamanosturi copy-image --source-repo ecr:first-repo --dest-repo ecr:other-repo \
+  --source-tag latest-master --copy-tags --skip-tag latest-master --add-tag latest
+```
+would copy the latest image in the ECR `first-repo` repository tagged with `latest-master` to
+`other-repo:latest`, and also copy all tags from the source image to the destination image,
+except the `latest-master` tag.
+
+You can add `--dry-run` to skip the actual pushing.s
