@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "pymongtic"
+version = "0.1.0"
+description = "A simple object data mapping that uses Pydantic and pymongo to simplify integrating MongoDB with Pydantic and FastAPI"
+authors = ["Paul J DeCoursey <paul@decoursey.net>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic = {extras = ["dotenv", "email"], version = "^1.10.6"}
+python-dateutil = "^2.8.2"
+
+
+[tool.poetry.group.dev.dependencies]
+mkdocs = "^1.4.2"
+mkdocs-material = "^9.1.3"
+mkdocstrings = {extras = ["python"], version = "^0.20.0"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
