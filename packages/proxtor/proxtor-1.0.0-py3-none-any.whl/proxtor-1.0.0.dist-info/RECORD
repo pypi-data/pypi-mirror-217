@@ -1,0 +1,7 @@
+proxtor/Dockerfile,sha256=5ZOPvYHkEmlIa-pfg5r6wN_xnSUsBU8m5CINN0zQ7b0,779
+proxtor/main.py,sha256=7twYpa_D2Vwj_qHxoSdHTfJHANttmKnHHflQo6nYO1o,5149
+proxtor/tests.py,sha256=KdsaaVv64i0rxec8fLPQxlDlgUlagBmwreaDNxCV8FU,1078
+proxtor-1.0.0.dist-info/LICENSE,sha256=5p_m6iPSjDybHgSjjN9LdX8drFL2iw8U-ngxgmdgTTs,1068
+proxtor-1.0.0.dist-info/METADATA,sha256=U_CGNbiVNg5vtKaRxaZCByd2aJJsfLIDhbh74xltAUc,2855
+proxtor-1.0.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+proxtor-1.0.0.dist-info/RECORD,,
