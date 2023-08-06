@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: notebook_setup
+Version: 1.1
+Summary: Tools to setup and configure jupyter notebooks (ipynb files) with line and cell magic
+Project-URL: homepage, https://github.com/1081/notebook_setup
+License-Expression: MIT
+License-File: LICENSE
+Keywords: autoreload,cell magic,ipynb,jupyter,line magic,notebook,plotly render
+Requires-Python: >=3.7
+Requires-Dist: ipykernel
+Requires-Dist: ipython
+Description-Content-Type: text/markdown
+
+# notebook_setup
+Tools to setup and configure jupyter notebooks (ipynb files) with line and cell magic
