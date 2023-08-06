@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: Cliente
+Version: 0.0.5
+Summary: Módulo que representa a classe Cliente do sistema bancário
+Description-Content-Type: text/markdown
+
+# Pacote Cliente
+
+Classe que representa a entidade Cliente de um sistema bancÃ¡rio. O Cliente contÃ©m os atributos:
+- Nome: Nome do cliente
+- Idade: Idade do cliente em anos
+- Data de nascimento: Data em que o cliente nasceu
+- id: Identificador Ãºnico do cliente
+- Children: Quantidade de crianÃ§as/ filhos que o cliente possui
+- Dias trabalhados: Quantidade de dias trabalhados que o cliente possui
+- Education: NÃ­vel de escolaridade do cliente
+- Education id: Identificador Ãºnico do atributo "Education"
+- Status familiar: Classe que representa o status civil do cliente
+- Status familiar id: Identificador Ãºnico do atributo "Status familiar id"
+- GÃªnero (Masculino, Feminino ou XMA)
+- Tipo de trabalho: CLT, PJ, etc...
+- dÃ­vida: Se o cliente apresenta ou nÃ£o algum tipo de dÃ­vida
+- Renda mensal total
+- purpose: PropÃ³sito em que o cliente apresenta o desejo em alcanÃ§ar uma linha de crÃ©dito
+- RepositÃ³rio de contas do cliente
+
+## Uso:
+
+CriaÃ§Ã£o de um objeto:
+
+    cliente = Cliente("JoÃ£o", 30, "01/01/1990", 2, 1000, 30, "Ensino MÃ©dio", 1, "Casado", 1, "Masculino","Assalariado", False, 5000, "Comprar uma casa")
+
+Adicionando uma conta:
+
+    conta = Conta(saldo=1000, limite_saques=3)
+    cliente.adicionar_conta(conta)
+
+Listar as contas do cliente:
+
+    contas = cliente.listar_contas()
+    for conta in contas:
+        print(conta.saldo)
+        print(conta.limite_saques)
+
+Removendo a conta do cliente:
+
+    # Altere "conta_id" pelo identificador Ãºnico da conta
+    cliente.remover_conta(conta_id)
+
