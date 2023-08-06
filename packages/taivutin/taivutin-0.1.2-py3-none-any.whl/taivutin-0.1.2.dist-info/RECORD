@@ -1,0 +1,16 @@
+taivutin/__init__.py,sha256=hXDb701m0I8xyNpySdIqa1CsMlJivDr5mqV_MUuIJjg,467
+taivutin/arvain.py,sha256=XLAlcKSpW9FpFwYodngWa0pxl1JKZ0E1BfsmNUC1h5o,10579
+taivutin/asteet.py,sha256=WJUQ6upvZDp4RxnLhnTig9fA8QSgesIEJtSsrQCIq2k,4418
+taivutin/muodot.py,sha256=QC6PQLeZo4zdTeYTlXNEYa2bt7Sbyws1X3m6VL49Rz0,837
+taivutin/muotojen_lukeminen.py,sha256=YojfnwmEAi2IADmDkedm7wALMJN_xfCbEGZUKFDYnLE,2029
+taivutin/sanakirja.py,sha256=nTef-16urfah-ghPlwlXKge7nCuQ5ntuSG2XHJ1yOYs,3010
+taivutin/taivutin.py,sha256=zE8V6j81PwAxjO5JXYwpvpCsOZRDWSltjqi_9Su7c_4,5765
+taivutin/trie.py,sha256=eTG45ZTVaQ9oz4SCVrdFClh8azpTc_TWY07ctPAndlc,3875
+taivutin/utils.py,sha256=38tlftVsjVBUsD06KkhG0jsCBobfPkX9fuNn3w2DkZA,1143
+taivutin/vakiot.py,sha256=2rpADJMbhuzObFt4cjp5IqU69XFFC2p0NUnodQe3lyE,666626
+taivutin-0.1.2.dist-info/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+taivutin-0.1.2.dist-info/METADATA,sha256=0xWp5Xn4z1eiH5Jbvyxbm6Nx8Ztf15mQj24CX3e7mQI,14657
+taivutin-0.1.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+taivutin-0.1.2.dist-info/entry_points.txt,sha256=CWAvczCQ14mZAPvdXvDN6JN6YpK0bdldPYXf7mF8UH0,71
+taivutin-0.1.2.dist-info/top_level.txt,sha256=Lw0dWo_xZEswJebzgou-e3YGzr27ze0d0CyiyfAacjs,9
+taivutin-0.1.2.dist-info/RECORD,,

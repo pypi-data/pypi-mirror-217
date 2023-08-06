@@ -1,0 +1,2 @@
+[console_scripts]
+my-script = vakioiden_leivonta:generoi_vakiotiedosto
