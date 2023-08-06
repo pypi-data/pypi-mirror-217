@@ -1,0 +1,16 @@
+biodatatypes/__init__.py,sha256=xY6OBytzNF9LVHlQfHPW_tRSQmnyVxEBtVL6FZOlDag,195
+biodatatypes/constants/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+biodatatypes/constants/aminoacid.py,sha256=WIq0_3UX_Dm6JGbf-lFrpNoouByUlsaACCS0-iRBgYw,2957
+biodatatypes/constants/codon.py,sha256=MEDfNBbyqLp-6Jw-fQAmms6Add9ANlXeXqKAPqOoK_w,5725
+biodatatypes/constants/nucleotide.py,sha256=BFt-FUD7hJNJWXQ4nDrjXd87sl-nk9iTLAqSf54R8_g,1069
+biodatatypes/sequence/__init__.py,sha256=FiKSt8CtzOenQgoqRoHnXafrRSBQk-__d4kegWbovFY,93
+biodatatypes/sequence/types.py,sha256=a5om3kw6zDwq5OrnRrpJsTx5oOta_y6P2iRZpZ3fyBo,48757
+biodatatypes/unit/__init__.py,sha256=CKnHLY2ZBqYDxa5Z2wsRtC3tptodbirg9BOHBE4x4D8,65
+biodatatypes/unit/base.py,sha256=kRv3VCJedIkSKj08oIeq_0Ag8t3ET-na9OgWjQlLexY,26593
+biodatatypes/unit/mixins.py,sha256=_WQGL94v4Z4Q-Bm_rVf89gZu24LhJ4BawCm6XIJfBfI,1384
+biodatatypes/unit/types.py,sha256=bJ37eS82PndMGWEhz-Y2slwniAa3IH_30iUS3KaSmu0,46240
+biodatatypes-0.2.1.dist-info/LICENSE,sha256=kH-iF4RJeXQjGlDK78xuzSflqETlCzloSSSLxBSHPF8,1071
+biodatatypes-0.2.1.dist-info/METADATA,sha256=iA-gnUFUEfqXG8p9I32o1lIyl1LWqMXmAaz0mM5m-Ko,8400
+biodatatypes-0.2.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+biodatatypes-0.2.1.dist-info/top_level.txt,sha256=gC8SM_BfsUVEabEmLollsVlblRDIdrqXNTctaUnReHc,13
+biodatatypes-0.2.1.dist-info/RECORD,,
