@@ -1,0 +1,6 @@
+setup.py
+pycolorpackage/__init__.py
+pycolorpackage.egg-info/PKG-INFO
+pycolorpackage.egg-info/SOURCES.txt
+pycolorpackage.egg-info/dependency_links.txt
+pycolorpackage.egg-info/top_level.txt
