@@ -1,0 +1,4 @@
+wheel
+opendr-toolkit-engine
+matplotlib
+numpy<=1.23.5
