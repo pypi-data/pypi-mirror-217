@@ -1,0 +1,2 @@
+hirmeos-clients>=0.1.6
+httplib2==0.12.1
