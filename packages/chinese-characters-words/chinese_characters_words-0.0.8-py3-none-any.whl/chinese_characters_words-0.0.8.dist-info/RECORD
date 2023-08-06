@@ -1,0 +1,11 @@
+chinese_characters_words/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chinese_characters_words/字典.py,sha256=fsWN0iyGQ9CmOFDYqchOHu5mlxSlx55zJmkm83Fn7qE,3010
+chinese_characters_words/词典.py,sha256=qma0I65wrsjkVNxe1VgFiIFniEalwXp-ldAnSkXv8KA,1092
+chinese_characters_words/数据/IDS-UCS-Basic.txt,sha256=pvqHeIq0ppjeOcg870bXWuRcyD-NywL5Ji1IGz9qslQ,447267
+chinese_characters_words/数据/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chinese_characters_words/数据/字典.json,sha256=iuNFPqzFsPP9-6R-rIu2hs1zkU0njouFGubvgQgvgOc,27354320
+chinese_characters_words/数据/成语.json,sha256=HUtPRUzhxBbWoasjadbmbA_5ngQ5AXLu9weQSZ4hzhk,10319857
+chinese_characters_words-0.0.8.dist-info/METADATA,sha256=HpM3MBDlw9blJF68VWThRjiAAytydgEAH9qevU3hazk,2008
+chinese_characters_words-0.0.8.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+chinese_characters_words-0.0.8.dist-info/licenses/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+chinese_characters_words-0.0.8.dist-info/RECORD,,
