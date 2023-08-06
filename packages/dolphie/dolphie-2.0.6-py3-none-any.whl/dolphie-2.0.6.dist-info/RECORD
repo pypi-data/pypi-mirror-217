@@ -1,0 +1,16 @@
+dolphie/Database.py,sha256=rF5EVwQbhoe_Wht_9qljucGKcVpOvOb9R7e9I5YStKY,1347
+dolphie/Functions.py,sha256=BFS0utoOp2pCBcreXP948TOVY6wCxEDx3AWb0l8z59Y,2826
+dolphie/KBHit.py,sha256=KNsl4JklFBNw6rEQr33wh6gJ9Tbi2SfrV9OGAL8P258,2002
+dolphie/Panels/dashboard_panel.py,sha256=Bgi9WSHO8VHYGR8sOl6829tajDMyMMdhHADErEjy2sM,16417
+dolphie/Panels/innodb_io_panel.py,sha256=B19l482GLG9S0JH5YEZ5XrCaBOZ_ysxagj6yDhqOkWc,11491
+dolphie/Panels/innodb_locks_panel.py,sha256=1bX0qwFpQP6BsR-enrYAdutVvmGdMVJkperWrq7RNeA,5323
+dolphie/Panels/processlist_panel.py,sha256=j9uzgqYhUSTjYsNOq_f2lo1X1FWGUdCpFqMi46xu9iU,10063
+dolphie/Panels/replica_panel.py,sha256=1TBxtTphi18XlOxFFEdhKa4WgCnVY5rTSd864KLQQnY,11948
+dolphie/Queries.py,sha256=jT_9IgvW-fXMxls11aZvAIEvUenz2bIXrAYO2Icpqt0,8209
+dolphie/__init__.py,sha256=IBD6DmG9D5SJkSK24-eM4U4xDvUw0wrVsBUHieM5jtE,51459
+dolphie/app.py,sha256=S0pNP8g_DvcRUTqnc1Q2p-cNqCBUtH9K25A-LXYc6bE,15807
+dolphie-2.0.6.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+dolphie-2.0.6.dist-info/METADATA,sha256=_QG7GY0Adj8PU41r2UaNMJ8vSrw6X4ckjjGuw7qpTOQ,7965
+dolphie-2.0.6.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+dolphie-2.0.6.dist-info/entry_points.txt,sha256=jkUo3gbaTiVqKJAwaDgGtveJerGx8YELOR46BPAqS1g,44
+dolphie-2.0.6.dist-info/RECORD,,
