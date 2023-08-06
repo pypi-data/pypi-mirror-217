@@ -1,0 +1,5 @@
+numpy
+felupe
+
+[test]
+sympy
