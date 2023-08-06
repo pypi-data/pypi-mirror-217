@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "refiners"
+version = "0.0.1"
+description = ""
+authors = ["The Finegrain Team"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "refiners", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
