@@ -1,0 +1,9 @@
+lyrics_transcriber/__init__.py,sha256=bIRjsXAzlghS1rQxWNLU0wppZy0T_iciN9EclHLwNrQ,94
+lyrics_transcriber/transcriber.py,sha256=lVMIMLtgCzLcid_WeeYBgHTffy825TYzjPRFvn3lejc,13003
+lyrics_transcriber/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lyrics_transcriber/utils/cli.py,sha256=QjROZD6HiiGnkjv8vyKmUK_3Jd98is52S_uAG60Vx1g,3849
+lyrics_transcriber-0.5.1.dist-info/LICENSE,sha256=BiPihPDxhxIPEx6yAxVfAljD5Bhm_XG2teCbPEj_m0Y,1069
+lyrics_transcriber-0.5.1.dist-info/METADATA,sha256=gZCDZIC2VMiN8wkaJ-aNHiEPVb2n9_TlwBiegELhNq0,4574
+lyrics_transcriber-0.5.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+lyrics_transcriber-0.5.1.dist-info/entry_points.txt,sha256=lh6L-iR5CGELaNcouDK94X78eS5Ua_tK9lI4UEkza-k,72
+lyrics_transcriber-0.5.1.dist-info/RECORD,,
