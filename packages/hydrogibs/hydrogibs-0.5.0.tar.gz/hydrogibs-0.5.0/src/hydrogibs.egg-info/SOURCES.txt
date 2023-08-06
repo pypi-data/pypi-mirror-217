@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/hydrogibs.egg-info/PKG-INFO
+src/hydrogibs.egg-info/SOURCES.txt
+src/hydrogibs.egg-info/dependency_links.txt
+src/hydrogibs.egg-info/top_level.txt
