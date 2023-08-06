@@ -1,0 +1,8 @@
+LICENSE
+setup.py
+india_cities_pincode.egg-info/PKG-INFO
+india_cities_pincode.egg-info/SOURCES.txt
+india_cities_pincode.egg-info/dependency_links.txt
+india_cities_pincode.egg-info/top_level.txt
+package/__init__.py
+package/scripts.py
