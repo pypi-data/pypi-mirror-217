@@ -1,0 +1,16 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "screentronic"
+version = "0.1.0"
+description = "A python library for interfacing with ScreenTronic blinds by CONTROLtronic via IP"
+authors = ["Simon Billemont <simon@angelcorp.be>"]
+license = "BSD-4-Clause"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+asyncio-dgram = "^2.1"
+cachetools = "^5"
