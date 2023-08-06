@@ -1,0 +1,4 @@
+pyside2==5.15.2
+phylib==2.4.3
+numpy
+debugpy
