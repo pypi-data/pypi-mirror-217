@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/optastic/__init__.py
+src/optastic/models.py
+src/optastic/suggestions.py
+src/optastic.egg-info/PKG-INFO
+src/optastic.egg-info/SOURCES.txt
+src/optastic.egg-info/dependency_links.txt
+src/optastic.egg-info/top_level.txt
