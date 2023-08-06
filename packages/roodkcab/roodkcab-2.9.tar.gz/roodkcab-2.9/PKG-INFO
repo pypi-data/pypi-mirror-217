@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: roodkcab
+Version: 2.9
+Summary: Tryed Fixing import Bug inside the package!
+Author-email: LuxxDEV <lkgames256@gmail.com>
+Project-URL: Homepage, https://github.com/lkgames256/roodkcab
+Project-URL: Bug Tracker, https://github.com/lkgames256/roodkcab/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ROODKCAB
+
+## CHANGELOG
+
+Oky i am way to lazy to write anithyng here during testing so if i got to actual pypi the i will.
+
+1. Updated test.ps1 to include while true >> To keep the programm running. **26.06.2023 18:21:00**
+
+2. Rewritten Every code for pip package => **I DIDIN'T delete the code ...**
+
+3. Removed threading module from dependencies 
+
+## USAGE
+
+1. May be coming soon...
