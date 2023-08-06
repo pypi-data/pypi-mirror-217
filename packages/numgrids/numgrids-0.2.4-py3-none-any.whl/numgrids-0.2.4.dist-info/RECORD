@@ -1,0 +1,14 @@
+numgrids/__init__.py,sha256=icjUdiNwHn4EpE9FCaO6AP2pQlJy0pxYgTfZMcR8dnk,169
+numgrids/api.py,sha256=_hKQVD-1BsSn4zg5OdigAYsoHVFT5zWIomB9pwQzTCA,4402
+numgrids/axes.py,sha256=D99H0cFdB4_QNkz6UVDHSiWeTDUpKZE8tKH0Kt61Ews,7127
+numgrids/diff.py,sha256=VeM85q8WFQPQjGrlSCdghxiJCJCaie-Xbc4ZTYVIn4U,5157
+numgrids/grids.py,sha256=ey_pc2RlXAQhmol9oEpoZ1um4jqGy6YnjvMxfmfTA3k,4311
+numgrids/integration.py,sha256=47OxFoY47_95pz_g2hihoE2a9ppQcrdQSfQ1N2Gh6j4,1995
+numgrids/interpol.py,sha256=pHz5luz1WsI_NgwUvMCiG_UGQAJbgoD4PQjQAX2HsgA,2001
+numgrids/plots.py,sha256=BPmV96flD21mOPYrRzSqQccIw0miepC8X0KDDeGGZXc,957
+numgrids/utils.py,sha256=D4tAWtGskXTZJXJPbEeNWEk_atCO7k2WbBLAZv4guJc,163
+numgrids-0.2.4.dist-info/LICENSE,sha256=ACwmltkrXIz5VsEQcrqljq-fat6ZXAMepjXGoe40KtE,1069
+numgrids-0.2.4.dist-info/METADATA,sha256=YyYwzsEStAjeTdGiF1lT8_Pm9b9W8_w5X_9PhX9QKhA,1091
+numgrids-0.2.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+numgrids-0.2.4.dist-info/top_level.txt,sha256=e4NKwbOftvQMgrRIOZFzwiaSnzgX2lydgM1eplXVUwk,9
+numgrids-0.2.4.dist-info/RECORD,,
