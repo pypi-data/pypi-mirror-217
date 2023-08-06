@@ -1,0 +1,6 @@
+httpx
+requests
+numpy
+pandas
+pymysql
+redis
