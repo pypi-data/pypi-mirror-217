@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+visionscript/__init__.py
+visionscript/grammar.py
+visionscript/lang.py
+visionscript/usage.py
+visionscript.egg-info/PKG-INFO
+visionscript.egg-info/SOURCES.txt
+visionscript.egg-info/dependency_links.txt
+visionscript.egg-info/requires.txt
+visionscript.egg-info/top_level.txt
