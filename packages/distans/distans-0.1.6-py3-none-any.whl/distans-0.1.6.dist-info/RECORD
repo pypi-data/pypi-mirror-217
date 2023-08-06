@@ -1,0 +1,10 @@
+distans/__init__.py,sha256=0yPHjcDqNGrZgO0chLwan123In7nt5CA9M7QD0G5vds,65
+distans/edit.py,sha256=u9rtp8E4LR6c5a6MBZ4vnQ-qRfYJxwhOpDhos1i6gY0,1300
+distans/lp_space.py,sha256=tN3Q_rH_oAEg_OcLob8fl8rqQMGeTRXyioydOB6yWWk,789
+distans/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+distans/stuff.py,sha256=BLTmIEB4r4I4JZZt3kTpvR15vm3WrZC9E9Tz64jE-qU,833
+distans/utils.py,sha256=kzg7YS26OghkQskecrliCxPw1sAtD9Q3hX2DuKWgAyE,62
+distans-0.1.6.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+distans-0.1.6.dist-info/METADATA,sha256=ezXK4zPE_JlFABqhRpTGNJqWV38HErJdLDc777-Jk8M,1023
+distans-0.1.6.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+distans-0.1.6.dist-info/RECORD,,
