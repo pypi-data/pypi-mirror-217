@@ -1,0 +1,4 @@
+pandas==1.4.0
+octopusagile==0.0.6
+entsoe-py==0.5.9
+aiopvpc==4.2.1
