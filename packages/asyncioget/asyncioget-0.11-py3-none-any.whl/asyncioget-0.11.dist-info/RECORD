@@ -1,0 +1,9 @@
+asyncioget/README.MD,sha256=p91PcT9y1M02hS8aK7-6DBx7ghb5C7dyxPjduzOQE0k,12220
+asyncioget/__init__.py,sha256=EUxSUd_IVAVwr4MuUy4sUJHZILjtGsQpsPcr8LPhFuU,1891
+asyncioget/requirements.txt,sha256=7HJCDfXfvc5BEfcVyWM43zt8t19Y5HjSRJyXIOVg3ow,8
+asyncioget/thirdparty.json,sha256=7p6XA8SuIb4t3GEGrdeays6NtSv1blJzIxm8kYLMSU8,10447
+asyncioget-0.11.dist-info/LICENSE.rst,sha256=57krgYrI6h5a_2WXQgGcjWo8PExV4ONSi1SPUj9Jk1g,1148
+asyncioget-0.11.dist-info/METADATA,sha256=Hfm9EUNgyW9tNv3vqmYpmBESYOA9UjHcXgHAVyoDRbU,12961
+asyncioget-0.11.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+asyncioget-0.11.dist-info/top_level.txt,sha256=onGCo-NZxx60v_bnWXMqPwQ5RsKiwy35AGjiuBMKzdA,11
+asyncioget-0.11.dist-info/RECORD,,

@@ -1,0 +1,240 @@
+Metadata-Version: 2.1
+Name: asyncioget
+Version: 0.11
+Summary: simplifies the process of downloading multiple URLs concurrently, provides control over concurrency, and offers flexibility for customization
+Home-page: https://github.com/hansalemaos/asyncioget
+Author: Johannes Fischer
+Author-email: aulasparticularesdealemaosp@gmail.com
+License: MIT
+Keywords: requests,asyncio
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+License-File: LICENSE.rst
+Requires-Dist: requests
+
+
+# simplifies the process of downloading multiple URLs concurrently, provides control over concurrency, and offers flexibility for customization
+
+## pip install asyncioget
+
+### Asynchronous Execution: 
+
+The function allows for concurrent execution of multiple downloads, which can significantly improve the overall performance and reduce the total execution time, especially when dealing with a large number of URLs.
+
+### Concurrency Control: 
+
+The function utilizes a semaphore to limit the number of concurrent downloads. This helps prevent overwhelming the network or the target server with too many simultaneous requests. It allows you to control the level of concurrency and avoid potential bottlenecks or performance issues.
+
+### Randomized Sleep Time: 
+
+The function includes a random sleep time before each download, specified by the sleeptime argument. This can be useful when you want to simulate more realistic download behavior or when dealing with rate limits imposed by the target server.
+
+### Error Handling: 
+
+The function catches exceptions that may occur during the download process and provides an optional verbose mode to print error messages. This allows for better error handling and troubleshooting when encountering issues during the downloads.
+
+
+	
+```python
+
+urls = [
+    "https://github.com/hansalemaos/catmapper#start-of-content",
+    "https://github.com/dashboard",
+    "https://github.com/issues",
+    "https://github.com/pulls",
+    "https://github.com/discussions",
+    "https://github.com/explore",
+    "https://github.com/marketplace",
+    "https://gh.io/navigation-update",
+    "https://github.com/about",
+    "https://github.blog/",
+    "https://docs.github.com/site-policy/github-terms/github-terms-of-service",
+    "https://docs.github.com/site-policy/privacy-policies/github-privacy-statement",
+    "https://github.com/security",
+    "https://www.githubstatus.com/",
+    "https://github.com/",
+    "https://github.com/hansalemaos",
+    "https://github.com/hansalemaos/catmapper",
+    "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax",
+    "https://github.com/new",
+    "https://github.com/new/import",
+    "https://github.com/codespaces/new",
+    "https://gist.github.com/",
+    "https://github.com/account/organizations/new",
+    "https://github.com/notifications",
+    "https://github.com/hansalemaos?tab=repositories",
+    "https://github.com/hansalemaos?tab=projects",
+    "https://github.com/codespaces",
+    "https://github.com/hansalemaos?tab=stars",
+    "https://github.com/sponsors/accounts",
+    "https://gist.github.com/mine",
+    "https://github.com/settings/profile",
+    "https://docs.github.com/",
+    "https://support.github.com/",
+    "https://github.com/logout",
+    "https://github.com/hansalemaos/catmapper/issues",
+    "https://github.com/hansalemaos/catmapper/pulls",
+    "https://github.com/hansalemaos/catmapper/actions",
+    "https://github.com/hansalemaos/catmapper/projects",
+    "https://github.com/hansalemaos/catmapper/wiki",
+    "https://github.com/hansalemaos/catmapper/security",
+    "https://github.com/hansalemaos/catmapper/pulse",
+    "https://github.com/hansalemaos/catmapper/settings",
+    "https://github.com/hansalemaos/catmapper/fork",
+    "https://pypi.org/project/catmapper/",
+    "https://github.com/hansalemaos/catmapper/blob/main/LICENSE",
+    "https://github.com/hansalemaos/catmapper/stargazers",
+    "https://github.com/hansalemaos/catmapper/forks",
+    "https://github.com/hansalemaos/catmapper/activity",
+    "https://github.dev/",
+    "https://github.com/codespaces/new/hansalemaos/catmapper?resume=1",
+    "https://github.com/hansalemaos/catmapper/branches",
+    "https://github.com/hansalemaos/catmapper/tags",
+    "https://github.com/hansalemaos/catmapper?search=1",
+    "https://github.com/hansalemaos/catmapper/upload/main",
+    "https://docs.github.com/articles/which-remote-url-should-i-use",
+    "https://github.com/settings/ssh/new",
+    "https://cli.github.com/",
+    "x-github-client://openRepo/https://github.com/hansalemaos/catmapper",
+    "git-client://clone?repo=https%3A%2F%2Fgithub.com%2Fhansalemaos%2Fcatmapper",
+    "https://github.com/hansalemaos/catmapper/archive/refs/heads/main.zip",
+    "https://desktop.github.com/",
+    "https://developer.apple.com/xcode/",
+    "https://github.com/hansalemaos/catmapper/commits?author=hansalemaos",
+    "https://github.com/hansalemaos/catmapper/commit/aadfeb98b6c76dd5914ba6f30a47fdd2d6b0dd82",
+    "https://github.com/hansalemaos/catmapper/commits/main",
+    "https://github.com/hansalemaos/catmapper/tree/aadfeb98b6c76dd5914ba6f30a47fdd2d6b0dd82",
+    "https://github.com/hansalemaos/catmapper/commit/9a4a3424d3b4dc2d11995a8b53a78fa9fcd1b68a",
+    "https://github.com/hansalemaos/catmapper/blob/main/README.MD",
+    "https://github.com/hansalemaos/catmapper/blob/main/__init__.py",
+    "https://github.com/hansalemaos/catmapper/blob/main/requirements.txt",
+    "https://github.com/hansalemaos/catmapper/blob/main/thirdparty.json",
+    "https://github.com/hansalemaos/catmapper#maps-the-elements-of-an-iterable-to-categories-using-bisect",
+    "https://github.com/hansalemaos/catmapper#pip-install-catmapper",
+    "https://github.com/hansalemaos/catmapper#tested-against-windows-10--python-310--anaconda",
+    "https://github.com/hansalemaos/catmapper#readme",
+    "https://github.com/hansalemaos/catmapper/edit/main/README.MD",
+    "https://github.com/topics/mapping",
+    "https://github.com/topics/bisect",
+    "https://github.com/hansalemaos/catmapper/watchers",
+    "https://github.com/hansalemaos/catmapper/search?l=python",
+    "https://support.github.com/?tags=dotcom-footer",
+    "https://github.com/pricing",
+    "https://services.github.com/",
+]
+
+from asyncioget import downloadlinks
+alldown = downloadlinks(urls, threads=5, sleeptime=(0.1, 0.2), verbose=True)
+print(alldown)
+
+# [('https://github.com/hansalemaos/catmapper#start-of-content',
+#   <Response [200]>),
+#  ('https://github.com/dashboard', <Response [200]>),
+#  ('https://github.com/issues', <Response [404]>),
+#  ('https://github.com/pulls', <Response [404]>),
+#  ('https://github.com/discussions', <Response [200]>),
+#  ('https://github.com/explore', <Response [200]>),
+#  ('https://github.com/marketplace', <Response [200]>),
+#  ('https://gh.io/navigation-update', <Response [200]>),
+#  ('https://github.com/about', <Response [200]>),
+#  ('https://github.blog/', <Response [200]>),
+#  ('https://docs.github.com/site-policy/github-terms/github-terms-of-service',
+#   <Response [200]>),
+#  ('https://docs.github.com/site-policy/privacy-policies/github-privacy-statement',
+#   <Response [200]>),
+#  ('https://github.com/security', <Response [200]>),
+#  ('https://www.githubstatus.com/', <Response [200]>),
+#  ('https://github.com/', <Response [200]>),
+#  ('https://github.com/hansalemaos', <Response [200]>),
+#  ('https://github.com/hansalemaos/catmapper', <Response [200]>),
+#  ('https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax',
+#   <Response [200]>),
+#  ('https://github.com/new', <Response [200]>),
+#  ('https://github.com/new/import', <Response [200]>),
+#  ('https://github.com/codespaces/new', <Response [200]>),
+#  ('https://gist.github.com/', <Response [200]>),
+#  ('https://github.com/account/organizations/new', <Response [200]>),
+#  ('https://github.com/notifications', <Response [200]>),
+#  ('https://github.com/hansalemaos?tab=repositories', <Response [200]>),
+#  ('https://github.com/hansalemaos?tab=projects', <Response [200]>),
+#  ('https://github.com/codespaces', <Response [200]>),
+#  ('https://github.com/hansalemaos?tab=stars', <Response [200]>),
+#  ('https://github.com/sponsors/accounts', <Response [200]>),
+#  ('https://gist.github.com/mine', <Response [200]>),
+#  ('https://github.com/settings/profile', <Response [200]>),
+#  ('https://docs.github.com/', <Response [200]>),
+#  ('https://support.github.com/', <Response [200]>),
+#  ('https://github.com/logout', <Response [200]>),
+#  ('https://github.com/hansalemaos/catmapper/issues', <Response [200]>),
+#  ('https://github.com/hansalemaos/catmapper/pulls', <Response [200]>),
+#  ('https://github.com/hansalemaos/catmapper/actions', <Response [200]>),
+#  ('https://github.com/hansalemaos/catmapper/projects', <Response [200]>),
+#  ('https://github.com/hansalemaos/catmapper/wiki', <Response [200]>),
+#  ('https://github.com/hansalemaos/catmapper/security', <Response [200]>),
+#  ('https://github.com/hansalemaos/catmapper/pulse', <Response [200]>),
+#  ('https://github.com/hansalemaos/catmapper/settings', <Response [404]>),
+#  ('https://github.com/hansalemaos/catmapper/fork', <Response [200]>),
+#  ('https://pypi.org/project/catmapper/', <Response [200]>),
+#  ('https://github.com/hansalemaos/catmapper/blob/main/LICENSE',
+#   <Response [200]>),
+#  ('https://github.com/hansalemaos/catmapper/stargazers', <Response [200]>),
+#  ('https://github.com/hansalemaos/catmapper/forks', <Response [200]>),
+#  ('https://github.com/hansalemaos/catmapper/activity', <Response [404]>),
+#  ('https://github.dev/', <Response [200]>),
+#  ('https://github.com/codespaces/new/hansalemaos/catmapper?resume=1',
+#   <Response [200]>),
+#  ('https://github.com/hansalemaos/catmapper/branches', <Response [200]>),
+#  ('https://github.com/hansalemaos/catmapper/tags', <Response [200]>),
+#  ('https://github.com/hansalemaos/catmapper?search=1', <Response [200]>),
+#  ('https://github.com/hansalemaos/catmapper/upload/main', <Response [200]>),
+#  ('https://docs.github.com/articles/which-remote-url-should-i-use',
+#   <Response [200]>),
+#  ('https://github.com/settings/ssh/new', <Response [200]>),
+#  ('https://cli.github.com/', <Response [200]>),
+#  ('x-github-client://openRepo/https://github.com/hansalemaos/catmapper', None),
+#  ('git-client://clone?repo=https%3A%2F%2Fgithub.com%2Fhansalemaos%2Fcatmapper',
+#   None),
+#  ('https://github.com/hansalemaos/catmapper/archive/refs/heads/main.zip',
+#   <Response [200]>),
+#  ('https://desktop.github.com/', <Response [200]>),
+#  ('https://developer.apple.com/xcode/', <Response [200]>),
+#  ('https://github.com/hansalemaos/catmapper/commits?author=hansalemaos',
+#   <Response [200]>),
+#  ('https://github.com/hansalemaos/catmapper/commit/aadfeb98b6c76dd5914ba6f30a47fdd2d6b0dd82',
+#   <Response [200]>),
+#  ('https://github.com/hansalemaos/catmapper/commits/main', <Response [200]>),
+#  ('https://github.com/hansalemaos/catmapper/tree/aadfeb98b6c76dd5914ba6f30a47fdd2d6b0dd82',
+#   <Response [200]>),
+#  ('https://github.com/hansalemaos/catmapper/commit/9a4a3424d3b4dc2d11995a8b53a78fa9fcd1b68a',
+#   <Response [200]>),
+#  ('https://github.com/hansalemaos/catmapper/blob/main/README.MD',
+#   <Response [200]>),
+#  ('https://github.com/hansalemaos/catmapper/blob/main/__init__.py',
+#   <Response [200]>),
+#  ('https://github.com/hansalemaos/catmapper/blob/main/requirements.txt',
+#   <Response [200]>),
+#  ('https://github.com/hansalemaos/catmapper/blob/main/thirdparty.json',
+#   <Response [200]>),
+#  ('https://github.com/hansalemaos/catmapper#maps-the-elements-of-an-iterable-to-categories-using-bisect',
+#   <Response [200]>),
+#  ('https://github.com/hansalemaos/catmapper#pip-install-catmapper',
+#   <Response [200]>),
+#  ('https://github.com/hansalemaos/catmapper#tested-against-windows-10--python-310--anaconda',
+#   <Response [200]>),
+#  ('https://github.com/hansalemaos/catmapper#readme', <Response [200]>),
+#  ('https://github.com/hansalemaos/catmapper/edit/main/README.MD',
+#   <Response [200]>),
+#  ('https://github.com/topics/mapping', <Response [200]>),
+#  ('https://github.com/topics/bisect', <Response [200]>),
+#  ('https://github.com/hansalemaos/catmapper/watchers', <Response [200]>),
+#  ('https://github.com/hansalemaos/catmapper/search?l=python',
+#   <Response [200]>),
+#  ('https://support.github.com/?tags=dotcom-footer', <Response [200]>),
+#  ('https://github.com/pricing', <Response [200]>),
+#  ('https://services.github.com/', <Response [200]>)]
+
+```
