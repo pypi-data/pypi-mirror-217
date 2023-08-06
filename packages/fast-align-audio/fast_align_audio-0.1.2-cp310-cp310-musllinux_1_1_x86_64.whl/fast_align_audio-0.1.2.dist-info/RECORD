@@ -1,0 +1,9 @@
+_fast_align_audio.abi3.so,sha256=WvUFZWFBERoY1uDn7bO0hmftLlcm7hugXKnmOZgB3Eg,43680
+fast_align_audio/_alignment_cffi.py,sha256=VLtY2LeKLwyIiYpiKJbyKbTF3xgrdPVHCFiz0jnJPWA,592
+fast_align_audio/__init__.py,sha256=4kJCUxDgnZyf_w_9Luh4oOS8WG_pBrFiFE4x-3gD8OQ,65
+fast_align_audio/alignment.py,sha256=JtgakX2aaBeanx9Tn4wd_5WGj-LnuQY9o_stzyAq-wY,3284
+fast_align_audio-0.1.2.dist-info/METADATA,sha256=8CI8ggtGtdjkYVAgOD22EeojP2OjFyITcU4v10KJ9P0,2445
+fast_align_audio-0.1.2.dist-info/LICENSE,sha256=pB_J99wW_t27qqWR63vDfF-a6uaQCUGwfFEmVg3amss,748
+fast_align_audio-0.1.2.dist-info/top_level.txt,sha256=Ll1Ggww3-RoLC_LESKBjfjTd1cbVlwQEjljxtvCzz7w,35
+fast_align_audio-0.1.2.dist-info/WHEEL,sha256=kP5iU3R6mT7t5J52tTplGZgHu_6osn1zKFuzyiW5OyY,113
+fast_align_audio-0.1.2.dist-info/RECORD,,
