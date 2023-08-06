@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+example990420.egg-info/PKG-INFO
+example990420.egg-info/SOURCES.txt
+example990420.egg-info/dependency_links.txt
+example990420.egg-info/top_level.txt
+taibun/__init__.py
+taibun/taibun.py
+taibun/data/simplified.json
+taibun/data/words.json
