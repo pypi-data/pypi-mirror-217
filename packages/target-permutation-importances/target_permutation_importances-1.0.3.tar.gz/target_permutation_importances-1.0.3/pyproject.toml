@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "target-permutation-importances"
+version = "1.0.3"
+description = "Compute (Target) Permutation Importances of a machine learning model"
+authors = ["Anthony Chiu <kingychiu@gmail.com>"]
+readme = "README.md"
+packages = [{include = "target_permutation_importances"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+numpy = "^1.25.0"
+pandas = "^2.0.3"
+tqdm = "^4.65.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.0.275"
+black = "^23.3.0"
+isort = "^5.12.0"
+mypy = "^1.4.1"
+pytest = "^7.4.0"
+pytest-cov = "^4.1.0"
+datasets = "^2.13.1"
+scikit-learn = "^1.3.0"
+pandas-stubs = "^2.0.2.230605"
+types-tqdm = "^4.65.0.1"
+xgboost = "^1.7.6"
+catboost = "^1.2"
+cmake = "^3.26.4"
+lightgbm = "^3.3.5"
+coverage-badge = "^1.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
