@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools", "wheel", "build"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spacetimedb_sdk"
+authors = [
+    {name = "Derek Brinkmann", email = "derek@clockworklabs.io"},
+]
+dependencies = [
+    "websocket-client",
+    "configparser",
+]
+version = "0.5.0"
+readme = "README.md"
