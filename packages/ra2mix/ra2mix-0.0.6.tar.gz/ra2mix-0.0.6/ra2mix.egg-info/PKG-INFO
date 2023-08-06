@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ra2mix
+Version: 0.0.6
+Summary: ra2mix is a python library for working with Red Alert 2 / Yuri's Revenge *.mix files
+Author-email: nyte_owl <nyteowldev@gmail.com>
+Project-URL: Homepage, https://github.com/endless-creation/ra2mix
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ra2mix
+A python library for working with Red Alert 2 / Yuri's Revenge *.mix files
