@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hello_world_cc"
+authors = [
+    # {name = "haaai", email = ""}, # TODO: add email
+    {name = "chenchen", email = "chen1233216@hotmail.com"},
+]
+# description = "the Official W3bstream Client for Python"
+description = "a Hello World Test Module"
+readme = "README.md"
+requires-python = ">=3.7"
+keywords = ["w3bstream"]
+license = {file = "LICENSE"}
+dependencies = [
+    "requests",
+    "typeguard",
+]
+version = "0.0.3"
+# dynamic = ["version"]
