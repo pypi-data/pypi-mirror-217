@@ -1,0 +1,4 @@
+[console_scripts]
+oligo-runner=scripts.runner:main
+oligo-server=scripts.server:main
+
