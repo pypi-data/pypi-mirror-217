@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+hkwTestFunction/__init__.py
+hkwTestFunction/theFirstFunction.py
+hkwTestFunction.egg-info/PKG-INFO
+hkwTestFunction.egg-info/SOURCES.txt
+hkwTestFunction.egg-info/dependency_links.txt
+hkwTestFunction.egg-info/top_level.txt

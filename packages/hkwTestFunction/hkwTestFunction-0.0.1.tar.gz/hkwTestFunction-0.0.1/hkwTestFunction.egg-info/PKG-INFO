@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: hkwTestFunction
+Version: 0.0.1
+Summary: A small example package
+Home-page: https://gitee.com/zqy0315/pypi-test
+Author: KewenHua
+Author-email: 3063348936@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# README
+
+this is the test of pypi
+
+```
+This is a simple example package by hkw.
+```
