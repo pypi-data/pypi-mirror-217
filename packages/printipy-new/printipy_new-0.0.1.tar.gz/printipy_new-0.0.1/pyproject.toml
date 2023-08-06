@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "PrintiPy_New"
+version = "0.0.1"
+description = "PrintiPy is a wrapper for the rest API of Printify"
+authors = ["Dario Bräuning"]
+readme = "README.md"
+classifiers = [
+        "Development Status :: 2 - Pre-Alpha",
+        "Programming Language :: Python :: 3",
+        "Operating System :: Unix",
+        "Operating System :: MacOS :: MacOS X",
+        "Operating System :: Microsoft :: Windows",
+    ]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+opencv-python = "^4.8.0.74"
+requests = "^2.31.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
