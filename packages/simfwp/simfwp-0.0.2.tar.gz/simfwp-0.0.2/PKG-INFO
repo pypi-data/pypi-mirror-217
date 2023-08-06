@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: simfwp
+Version: 0.0.2
+Summary: Makes Reading, Writing, Adding to files easier.
+Home-page: 
+Author: Jacob Meyers
+Author-email: jakejem@outlook.com
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+
+Makes writing, reading, and adding onto files easy. 
+
+How to write files quickly: use simfwp.w(locationofnewfilehere, writingtofilehere). 
+
+How to read files quickly: use simfwp.r(locationofnewfilehere). 
+
+How to add to files quickly: use simfwp.a(locationofnewfilehere, addingtofilehere).
