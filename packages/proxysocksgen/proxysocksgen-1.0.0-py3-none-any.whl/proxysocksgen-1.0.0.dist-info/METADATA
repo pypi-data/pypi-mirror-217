@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: proxysocksgen
+Version: 1.0.0
+Summary: Collect socks5 proxies from github repositories and return 1 proxy
+Author: zelt-dev
+Author-email: fgytre14@gmail.com
+Requires-Dist: aiohttp
+
