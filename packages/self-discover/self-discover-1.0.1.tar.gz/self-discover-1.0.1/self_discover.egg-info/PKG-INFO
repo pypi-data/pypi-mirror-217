@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: self-discover
+Version: 1.0.1
+Summary: Self Discover serves autodiscover (Outlook) and autoconfig (Thunderbird) XML files for mail auto-configuration.
+Home-page: https://github.com/CyberfusionIO/Self-Discover
+Author: William Edwards
+Author-email: support@cyberfusion.nl
+License: MIT
+Keywords: cyberfusion,fastapi,mail,email,outlook,thunderbird,autodiscover,autoconfig
+Platform: linux
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Self Discover
+
+Self Discover serves autodiscover (Outlook) and autoconfig (Thunderbird) XML files for mail auto-configuration.
+
+# Install
+
+## Generic
+
+Run the following command to create a source distribution:
+
+    python3 setup.py sdist
+
+## PyPI
+
+Run the following command to install the package from PyPI:
+
+    pip3 install self-discover
+
+# Configure
+
+Pass the following environment variables:
+
+* `IMAP_SERVER_HOSTNAME`
+* `POP3_SERVER_HOSTNAME`
+* `SMTP_SERVER_HOSTNAME`
+
+# Usage
+
+Run the app using an ASGI server such as Uvicorn.
+
+# Tests
+
+Run tests with pytest:
+
+    pytest tests/
+
+
+
