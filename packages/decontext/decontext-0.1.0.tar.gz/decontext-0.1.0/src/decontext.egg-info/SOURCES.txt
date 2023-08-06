@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+src/decontext/__init__.py
+src/decontext/py.typed
+src/decontext.egg-info/PKG-INFO
+src/decontext.egg-info/SOURCES.txt
+src/decontext.egg-info/dependency_links.txt
+src/decontext.egg-info/requires.txt
+src/decontext.egg-info/top_level.txt
