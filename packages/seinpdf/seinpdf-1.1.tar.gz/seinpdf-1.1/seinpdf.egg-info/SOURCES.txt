@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+seinpdf/__init__.py
+seinpdf/pdf2image.py
+seinpdf/pdf2text.py
+seinpdf.egg-info/PKG-INFO
+seinpdf.egg-info/SOURCES.txt
+seinpdf.egg-info/dependency_links.txt
+seinpdf.egg-info/top_level.txt
