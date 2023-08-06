@@ -1,0 +1,14 @@
+redactor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+redactor/mixins.py,sha256=XKnWwbvLfBS8MpaJTuyvj3arKedN5OfvcMIA8AD0WlA,889
+redactor/models.py,sha256=xFxTo82ah9KEfqn4PbD24WV28dqfb--Z5HrBcglV0N4,467
+redactor/urls.py,sha256=18fnMQ8ELHXlduWEdNd0M6KeaUimlveBY9ZHOpEf4TA,171
+redactor/views.py,sha256=1FwJw2FdDc56IyV2yQQXbYDPpnhHkRZ9yP-2uB2neYk,2199
+redactor/migrations/0001_initial.py,sha256=fjfA7r_RIMeFnl7XQtLXqPA1zMoj1KknmG2rN6l5_l4,822
+redactor/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+redactor/static/redactor/admin-redactor.css,sha256=zKRwkjR6KEisX6unrj0BQaHufvHZSzGo7e4MrZrf0ms,310
+redactor/static/redactor/admin-redactor.js,sha256=qH6338OdtSCir-gnjVU8jCHMsWFS8Rok87Ngmp6ZCsY,576
+ax3_redactor-2.0.0.dist-info/LICENCE,sha256=iu9-ZewgX3FA4l1MOYb_I08rofaBW9Q0fFwQlYkx1Bk,1064
+ax3_redactor-2.0.0.dist-info/METADATA,sha256=qPb8x9T_sPTdaSmzXMpD_OIp3qMlpMBqBSMgAdqw5BM,2442
+ax3_redactor-2.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ax3_redactor-2.0.0.dist-info/top_level.txt,sha256=kZUmNXZU3HcaSHrlQmV90pJHee2WWAeoOVLGDJVL064,9
+ax3_redactor-2.0.0.dist-info/RECORD,,
