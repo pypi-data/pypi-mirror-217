@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: bilibili-up
+Version: 0.2.1.2
+Summary: bilibili_up获取bilibili视频信息的爬虫！
+Home-page: https://pypi.org/user/SuiBo/
+Author: SuiBo
+Author-email: 534047068@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: requests
+
+UNKNOWN
+
+
