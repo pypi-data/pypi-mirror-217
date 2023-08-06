@@ -1,0 +1,16 @@
+LICENSE,sha256=5-dAiJQmyaimd8-s1kF0r00i0bvz-9fNkqY-U4w4nq8,1087
+polykin/__init__.py,sha256=dfALqlLrM3TR1Ubr2jhTkbZawcvUQVzQ89H7YHc-7g8,457
+polykin/base.py,sha256=4DjJJcsoSk5-LDyudM8ONxijpoGYM7Svo4ikSJ7tOGk,530
+polykin/coefficients.py,sha256=M__Ig1V1Pjka4GX2iCiLWjrhEx7yd6d_iu3kn-QJKGg,26025
+polykin/copolymerization/__init__.py,sha256=7EBFGjN8-NL0bRtbwhUi0SUvLtlVpo-MhA2FqaSc-90,209
+polykin/copolymerization/baseclasses.py,sha256=sEqdl88SerHmlszVGvipyvHL6rxbsxpujtXWpUwuTmc,4229
+polykin/distributions/__init__.py,sha256=Tc0D20eGUJPFJUwlzdQxAd90G5woceuNu3HQyM_ocJ8,459
+polykin/distributions/analyticaldistributions.py,sha256=90wHXZMj-TP-q5zcRgDfukQv2ssWBBfl5hoKZVekX0Y,7183
+polykin/distributions/baseclasses.py,sha256=bgNMEZmZtLhnAbzsM3yLipRAoPtDZKVdSOW7dNWv9yw,27570
+polykin/distributions/datadistribution.py,sha256=o07XQbJDYwir6tDEB17ANqXwyCJxduyCYk0LfrgQDj0,7241
+polykin/distributions/sampledata.py,sha256=NejsUXuv6CRu59G4lToTffubtV7VTruyfHRzAn0i9r4,31167
+polykin/utils.py,sha256=3mm0KYuqmTBXxW4oZ-LWkfe7eJCoxbu2gXGt3he4_D8,6912
+polykin-0.2.0.dist-info/LICENSE,sha256=5-dAiJQmyaimd8-s1kF0r00i0bvz-9fNkqY-U4w4nq8,1087
+polykin-0.2.0.dist-info/METADATA,sha256=Yec2hRZsYufqeScZ9fZkOymGPv49B-OO4cbuddRZEdI,2815
+polykin-0.2.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+polykin-0.2.0.dist-info/RECORD,,
