@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: test_bench_control
+Version: 0.0.3
+Summary: For controlling our test bench camera and motor
+Author-email: David Hecht <david.lucca@web.de>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+_____________________________________________________________________________
+Package for controlling our test bench with:
+
+- Raspberry Pi 4B (Raspberry Pi OS 64-bit) 
+- Nema 23 stepper motor with TB6600 Driver
+- 2 IMX477 Raspberry Pi Cameras and Arducam 4x Multiplexer V2.2
+_____________________________________________________________________________
+How to install and setup:
+
+- pip install test_bench_control
+- in config.txt change 'camera_auto_detect=1' to 'camera_auto_detect=0'
+- in config.txt add 'dtoverlay=camera-mux-4port,cam0-imx477,cam1-imx477'
+_____________________________________________________________________________
+How to use:
+
+from test_bench_control import camera,motor
+
+motor.rotate(degree=-8.6,slope=0.2,rpm_max=200)
+camera.take_picture(0,"road/to/pic","my_pic.jpg")
+ 
