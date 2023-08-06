@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: goxlr
+Version: 1.0.2
+Summary: A Python wrapper for the GoXLR Utility API.
+Home-page: https://github.com/samcarsonx/goxlr
+Author: Sam Carson
+Author-email: sam@samcarson.co.uk
+License: None
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# GoXLR Utility API Python Wrapper
+
+The following example sets the headphone volume to 50%:
+```
+import asyncio
+from goxlr import GoXLR
+from goxlr.types import ChannelName
+
+async def main():
+    async with GoXLR() as xlr:
+        await xlr.set_volume(ChannelName.Headphones, 127)
+
+if __name__ == "__main__":
+    asyncio.run(main())
+```
+
+
+Proper documentation coming soonâ„¢
+
