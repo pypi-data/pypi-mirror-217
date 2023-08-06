@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: cj_test_pypi
+Version: 0.1.1
+Summary: cj_test_pypi
+Home-page: https://www.cj_test_pypi.com/
+Author: chenjing
+Author-email: 471476942@qq.com
+License: UNKNOWN
+Keywords: boilerplate
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+
+
+#test
+
