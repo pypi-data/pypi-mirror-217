@@ -1,0 +1,14 @@
+clera/__init__.py,sha256=EVVOC9tlkAEygnqz7TmhI2APPpCplQFgSmOAUzQVmbw,160
+clera/core.py,sha256=NCwSNciAy-RxToODMt6uMg1DXWLXnX69ZSjlVaEJrfw,60519
+clera/widgets.py,sha256=ppKpPtzmRBkXnKjK8um-pURhxu3nqpQffbjtCwbAt0w,27761
+clera/utils/__init__.py,sha256=9yzlNeKtcWWk-7sWlG1cD-BgaDh2MUTgHuHw0at4yhs,121
+clera/utils/exceptions.py,sha256=gr_aRk0ld8XNpfsppCb3CszdEpY7AW-r2K6PvchydVI,129
+clera/utils/handlers.py,sha256=cRs7E9bnIpH8pM2eTThNtbyi-iYN635Mjw9htORZUXs,18834
+clera/utils/keys.py,sha256=NbA9V4n2XMA9SPhz6bofgrBA1QLmFV9rmhrp9Vgrv04,1071
+clera/utils/procr.py,sha256=dl_g2wO0HxPNhUMR04ZJj3nnoiLNBPgqOuvDCB_UfI4,6431
+clera/utils/style.py,sha256=DT6KGKEhP3jBKQXlOjUlU4Pg2FQzbbX1HvpiCycOV84,4295
+clera-0.0.8.dist-info/LICENCE.txt,sha256=pWgb-bBdsU2Gd2kwAXxketnm5W_2u8_fIeWEgojfrxs,7651
+clera-0.0.8.dist-info/METADATA,sha256=PCLjjFqTp2BFjSGsBCTVcWmnpgzRdboDhHtaWrtZv9U,2940
+clera-0.0.8.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+clera-0.0.8.dist-info/top_level.txt,sha256=GenhgYHDfbpF9WcyYyN9XL1YhEzSY0OTtfeAUrggL04,6
+clera-0.0.8.dist-info/RECORD,,
