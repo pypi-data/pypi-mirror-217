@@ -1,0 +1,2 @@
+[console_scripts]
+pyyapi_sdk = pyyapi_sdk.cli:main
