@@ -1,0 +1,9 @@
+spacy_huggingface_hub/__init__.py,sha256=XgL2ChY4XYfJeosh_V8TqFCeQ_x8lMZ0ube1NgzABnI,37
+spacy_huggingface_hub/__main__.py,sha256=RhfBwfmugF--a9fP9Ft_gtrHWFpVnm7QlGYByVjwVM0,135
+spacy_huggingface_hub/push.py,sha256=AsRWZuO5Lg2Evo41TVqQa4-QqDbJYaAcE0cxLNMnu5g,10835
+spacy_huggingface_hub-0.0.10.dist-info/LICENSE,sha256=5Tdcm4Tvsf_kNBigEy-La8_spYk5_z90rDB-0ex-T0c,1102
+spacy_huggingface_hub-0.0.10.dist-info/METADATA,sha256=WdOoFeH0pFpSoHP1bPrrcHPhn9_kDysguA6Vv74KhG8,5481
+spacy_huggingface_hub-0.0.10.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+spacy_huggingface_hub-0.0.10.dist-info/entry_points.txt,sha256=4f1RrFe1fI5WlTUPvpYB_hURqvoXHeQ_eadcbN17YY0,82
+spacy_huggingface_hub-0.0.10.dist-info/top_level.txt,sha256=zfjM_pdrQP3-BIjiteypYqe-e2DtMaCuxJTmQbsTN-8,22
+spacy_huggingface_hub-0.0.10.dist-info/RECORD,,
