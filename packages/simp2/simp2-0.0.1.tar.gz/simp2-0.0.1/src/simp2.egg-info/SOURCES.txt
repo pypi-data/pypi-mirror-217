@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/linear_reg/__init__.py
+src/linear_reg/main.py
+src/linear_reg/simple_linear_regr.py
+src/linear_reg/simple_linear_regr_utils.py
+src/simp2.egg-info/PKG-INFO
+src/simp2.egg-info/SOURCES.txt
+src/simp2.egg-info/dependency_links.txt
+src/simp2.egg-info/requires.txt
+src/simp2.egg-info/top_level.txt
