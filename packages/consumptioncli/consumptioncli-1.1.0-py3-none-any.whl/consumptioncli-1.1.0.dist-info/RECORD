@@ -1,0 +1,10 @@
+consumptioncli/CLIHandling.py,sha256=or1JgUHLMS-IaRn_vcsMj5_yVyyGqsi-o2HxfufPY-I,9086
+consumptioncli/SubdictAction.py,sha256=_UtYsBsZW4dKyVxFE913fKl6T1gfxPobsh0tj1G5Wsg,996
+consumptioncli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+consumptioncli/__main__.py,sha256=xXCTQYm0JS4Tle7EZj7Hd3N1ZKoYsKn2F13cheASzJs,561
+consumptioncli/parsers.py,sha256=_CZzC5uLQoBpK8xSY15zTWgKAYYuStbinrfFFwifdHI,4814
+consumptioncli-1.1.0.dist-info/METADATA,sha256=hfa5MSp1ESY1Iy0HhmsUrr305veBHAGBfKZqCtfG6s8,11551
+consumptioncli-1.1.0.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+consumptioncli-1.1.0.dist-info/entry_points.txt,sha256=tiMX4xNUaX3pEZSd5Y5hoE9GjngiKnYFedSt8imdp28,54
+consumptioncli-1.1.0.dist-info/licenses/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+consumptioncli-1.1.0.dist-info/RECORD,,
