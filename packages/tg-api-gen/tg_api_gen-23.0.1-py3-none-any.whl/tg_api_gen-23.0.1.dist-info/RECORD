@@ -1,0 +1,5 @@
+tg_api_gen/__init__.py,sha256=c05Wyz9RHPRbXQ8HuSUaO41t7qXSMtqFo9wVhTihGuM,4937
+tg_api_gen/android_devices.txt,sha256=5iVvYMGazZTp5VA9ahi3YqAfA7qbG6lT0mJyDNAGsZQ,85252
+tg_api_gen-23.0.1.dist-info/METADATA,sha256=GhNCRrfVlgMOSRTejDVsfbT_pqjrAEJ0fEqrvgR94y8,595
+tg_api_gen-23.0.1.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+tg_api_gen-23.0.1.dist-info/RECORD,,
