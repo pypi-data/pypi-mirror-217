@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: timespan-python
+Version: 0.1.2
+Summary: A Python module for conversion between .NET TimeSpan objects and Python datetime.timedelta objects
+Home-page: https://github.com/microsoft/dotnet-timespan-python
+Author: Mattan Serry
+Author-email: maserry@microsoft.com
+License: MIT License
+Keywords: TimeSpan
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Utilities
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
