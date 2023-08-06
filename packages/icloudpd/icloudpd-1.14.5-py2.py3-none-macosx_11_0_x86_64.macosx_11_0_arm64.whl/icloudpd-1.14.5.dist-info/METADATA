@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: icloudpd
+Version: 1.14.5
+Summary: icloudpd is a command-line tool to download photos and videos from iCloud.
+Author: The iCloud Photo Downloader Authors
+Project-URL: Homepage, https://github.com/icloud-photos-downloader/icloud_photos_downloader
+Keywords: icloud,photo
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=2
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Requires-Dist: wheel (<0.41,>=0.40.0) ; extra == 'dev'
+
