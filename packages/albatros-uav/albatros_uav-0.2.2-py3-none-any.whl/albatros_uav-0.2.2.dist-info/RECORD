@@ -1,0 +1,14 @@
+albatros/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+albatros/commands.py,sha256=ID0UqUkWxFjuZ426tf-hHEZM3NPAxlotqWzEm86qiYY,5944
+albatros/enums.py,sha256=CL5XFfgHF0-YrcR9k02RM93eDl7a93YUo2fxx4rTuh8,7312
+albatros/message_models.py,sha256=P0r_riopEvgT8_WtvzrW0Hzc-ZP4YeZPYhzKOv4S-wI,10188
+albatros/nav/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+albatros/nav/position.py,sha256=eC_5MFSW4BV1Zsu-wl208wBjps4igHgJnBRRKh-L540,1410
+albatros/receive_loop.py,sha256=DIEb5Z08oCm7Lv1qL1CVO6kOGH_4L3yuyY-8BotkJxw,1492
+albatros/setup_logging.py,sha256=5IKHDazV4Rm7oxXOzuYa9jSfIKsyPEesiGBkVni9JnQ,175
+albatros/telemetry.py,sha256=x8568siP3GjZOLgxXMwUSE8UZ17BHShiwE06xrUHNi0,2037
+albatros/uav.py,sha256=cSUQIuPkE_lm0QmHxqWQlUMkI2d9ROpGQaiWwGiNCM4,7292
+albatros/uav_data.py,sha256=LyUst-0SnPCRuP0843358J5D63TbE9hwAw7vjQyk7wY,3249
+albatros_uav-0.2.2.dist-info/METADATA,sha256=MAmFo5QSGAa8PW9lldCVRIfwGM2lUKQ4cFF40lHcsiM,12847
+albatros_uav-0.2.2.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+albatros_uav-0.2.2.dist-info/RECORD,,
