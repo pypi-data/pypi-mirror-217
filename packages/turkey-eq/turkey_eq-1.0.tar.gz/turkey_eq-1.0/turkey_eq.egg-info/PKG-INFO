@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: turkey-eq
+Version: 1.0
+Summary: A library for processing Turkey earthquake data
+Home-page: https://github.com/Egor-Yarygin/turkey-earthquake-lib
+Author: Egor Yarygin
+Author-email: egoryarygin2003@mail.ru
+License: MIT
+Requires-Python: >=3
+License-File: LICENSE

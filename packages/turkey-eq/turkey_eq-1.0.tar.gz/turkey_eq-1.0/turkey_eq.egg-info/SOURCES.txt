@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+test/test.py
+turkey_eq.egg-info/PKG-INFO
+turkey_eq.egg-info/SOURCES.txt
+turkey_eq.egg-info/dependency_links.txt
+turkey_eq.egg-info/requires.txt
+turkey_eq.egg-info/top_level.txt
