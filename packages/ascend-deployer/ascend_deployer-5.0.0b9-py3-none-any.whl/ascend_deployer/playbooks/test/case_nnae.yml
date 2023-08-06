@@ -1,0 +1,33 @@
+- set_fact:
+    test_dict: "{{test_dict|default({})|combine({'nnae':'OK'})}}"
+
+- name: test if toolbox installed
+  find:
+    paths:
+      - "{{ ascend_install_path }}/toolbox"
+    recurse: yes
+    file_type: file
+    use_regex: yes
+    patterns: "ascend-dmi"
+  register: ascend_dmi
+
+- name: test if nnae installed
+  find:
+    paths:
+      - "{{ ascend_install_path }}/nnae"
+    recurse: yes
+    file_type: file
+    use_regex: yes
+    patterns: "ascend_nnae_install.info"
+  register: nnae
+
+- name: message
+  debug:
+    msg:
+    - "toolbox or nnae not installed, please install first"
+  when: ascend_dmi.matched == 0 or nnae.matched == 0
+
+- set_fact:
+    test_dict: "{{test_dict|default({})|combine({'nnae':'not installed'})}}"
+  when: nnae.matched == 0
+

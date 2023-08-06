@@ -1,0 +1,34 @@
+- set_fact:
+    test_dict: "{{test_dict|default({})|combine({'toolkit':'OK'})}}"
+
+- name: test if toolbox installed
+  find:
+    paths:
+      - "{{ ascend_install_path }}/toolbox"
+    recurse: yes
+    file_type: file
+    use_regex: yes
+    patterns: "ascend-dmi"
+  register: ascend_dmi
+
+- name: test if toolkit installed
+  find:
+    paths:
+      - "{{ ascend_install_path }}/ascend-toolkit"
+    recurse: yes
+    file_type: file
+    use_regex: yes
+    patterns: "ascend_toolkit_install.info"
+  register: toolkit
+
+- name: message
+  debug:
+    msg:
+    - "toolbox or toolkit not installed, please install first"
+  when: ascend_dmi.matched == 0 or toolkit.matched == 0
+
+- set_fact:
+    test_dict: "{{test_dict|default({})|combine({'toolkit':'not installed'})}}"
+  when: toolkit.matched == 0
+
+
