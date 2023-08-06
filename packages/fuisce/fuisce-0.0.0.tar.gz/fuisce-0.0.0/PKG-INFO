@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: fuisce
+Version: 0.0.0
+Summary: ...
+Project-URL: Download, https://pypi.org/project/fuisce
+Project-URL: Homepage, https://github.com/mitchnegus/fuisce
+Project-URL: Repository, https://github.com/mitchnegus/fuisce
+Project-URL: Changelog, https://github.com/mitchnegus/fuisce/blob/main/CHANGELOG.md
+Author-email: Mitch Negus <mitchnegus57@gmail.com>
+License: GNU GPLv3
+License-File: COPYING
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Flask
+Classifier: Framework :: Pytest
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Requires-Python: <3.11,>=3.9
+Requires-Dist: flask>=2.2.2
+Requires-Dist: sqlalchemy-views>=0.3.2
+Requires-Dist: sqlalchemy>=2.0.0
+Description-Content-Type: text/markdown
+
+# Fuisce
+
+Full README incoming...
+
+
+## Installation
+
+_Fuisce_ is registered on the [Python Package Index (PyPI)](https://pypi.org/project/fuisce) for easy installation.
+To install the package, simply run
+
+```
+$ pip install fuisce
+```
+
+The package requires a recent version of Python (3.9+).
+
+
+## License
+
+This project is licensed under the GNU General Public License, Version 3.
+It is fully open-source, and while you are more than welcome to fork, add, modify, etc. it is required that you keep any distributed changes and additions open-source.
+
+
+## Changes
+
+Changes between versions are tracked in the [changelog](https://github.com/mitchnegus/fuisce/blob/main/CHANGELOG.md).
