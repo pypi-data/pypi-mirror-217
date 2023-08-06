@@ -1,0 +1,15 @@
+[project]
+name = "AIAISN"
+version = "0.1.11"
+authors = [
+  { name="Xingzhuo Chen", email="chenxingzhuo@tamu.edu"},
+  { name="Lifan Wang", email="lifan@tamu.edu"},
+  { name="Lei Hu", email="hulei@pmo.ac.cn"},
+  { name="Peter Brown", email="grbpeter@yahoo.com"}
+]
+
+
+
+
+
+

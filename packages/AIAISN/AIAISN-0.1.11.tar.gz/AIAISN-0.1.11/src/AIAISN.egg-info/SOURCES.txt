@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+src/AIAISN/Fitting.py
+src/AIAISN/GaussianNetworkKit.py
+src/AIAISN/Predictor.py
+src/AIAISN/__init__.py
+src/AIAISN/fittingFunc.py
+src/AIAISN/predictFunc.py
+src/AIAISN/sequenceFunc.py
+src/AIAISN/sequenceSpecFunc.py
+src/AIAISN/tardisWrap.py
+src/AIAISN.egg-info/PKG-INFO
+src/AIAISN.egg-info/SOURCES.txt
+src/AIAISN.egg-info/dependency_links.txt
+src/AIAISN.egg-info/top_level.txt
