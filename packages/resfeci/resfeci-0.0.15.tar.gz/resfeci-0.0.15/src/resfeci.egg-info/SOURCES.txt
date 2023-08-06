@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/resfeci/__init__.py
+src/resfeci/excel_split.py
+src/resfeci.egg-info/PKG-INFO
+src/resfeci.egg-info/SOURCES.txt
+src/resfeci.egg-info/dependency_links.txt
+src/resfeci.egg-info/top_level.txt
