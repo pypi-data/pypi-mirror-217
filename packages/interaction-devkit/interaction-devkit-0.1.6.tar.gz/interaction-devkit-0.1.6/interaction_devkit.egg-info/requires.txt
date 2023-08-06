@@ -1,0 +1,14 @@
+defusedxml
+geopandas
+matplotlib
+pandas
+pyproj
+shapely>=2.0.0
+
+[dev]
+black
+bumpver
+flake8
+isort
+pip-tools
+pytest
