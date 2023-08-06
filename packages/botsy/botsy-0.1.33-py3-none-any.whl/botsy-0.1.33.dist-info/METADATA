@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: botsy
+Version: 0.1.33
+Summary: An interactive chat program
+Author: John Furr
+Author-email: john.furr@gmail.com
+Requires-Python: >=3.8.1,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# Botsy
+
+![alt text](../media/botsy_logo.png?raw=true)
+
