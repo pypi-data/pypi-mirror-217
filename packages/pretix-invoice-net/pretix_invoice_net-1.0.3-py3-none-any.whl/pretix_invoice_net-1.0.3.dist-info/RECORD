@@ -1,0 +1,15 @@
+pretix_invoice_net/__init__.py,sha256=2plzdEEb24FLjE2I2XyBBcJEPYWHccNL4SgtLC_6erg,22
+pretix_invoice_net/apps.py,sha256=c80R7MdVeaLRqJ5dfM3t4G8rq0g64ggA09flW8gKxUE,568
+pretix_invoice_net/invoice.py,sha256=srnvuiS9T_w0EgslaA66S4MoBYQ9j50sdteUpvl5BLA,17056
+pretix_invoice_net/signals.py,sha256=3LrReeZUQUWfZS6MKGQkEiIB0-hhxEnVB7zbn5J-0aQ,967
+pretix_invoice_net/locale/de/LC_MESSAGES/django.po,sha256=hDozrLLJJSdAZ_NkUpscCN2HCRT0Hg-IRYiU0vu2iv4,312
+pretix_invoice_net/locale/de_Informal/.gitkeep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pretix_invoice_net/locale/de_Informal/LC_MESSAGES/django.po,sha256=hDozrLLJJSdAZ_NkUpscCN2HCRT0Hg-IRYiU0vu2iv4,312
+pretix_invoice_net/static/pretix_invoice_net/.gitkeep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pretix_invoice_net/templates/pretix_invoice_net/.gitkeep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pretix_invoice_net-1.0.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pretix_invoice_net-1.0.3.dist-info/METADATA,sha256=z_1T8e6uff1hhR2fNVjfdzlVq8snG5Ef4qAq3N0xCGw,2807
+pretix_invoice_net-1.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pretix_invoice_net-1.0.3.dist-info/entry_points.txt,sha256=DJNdhNmoGpPxs_FpfLjyOi39U3RcQNoEYDD-UU1YKfs,73
+pretix_invoice_net-1.0.3.dist-info/top_level.txt,sha256=T88vm56YOeoE4mxo0ghemypecy1LXazyJgKjHxNr_SE,19
+pretix_invoice_net-1.0.3.dist-info/RECORD,,

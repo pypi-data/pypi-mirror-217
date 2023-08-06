@@ -1,0 +1,2 @@
+[pretix.plugin]
+pretix_invoice_net = pretix_invoice_net:PretixPluginMeta
