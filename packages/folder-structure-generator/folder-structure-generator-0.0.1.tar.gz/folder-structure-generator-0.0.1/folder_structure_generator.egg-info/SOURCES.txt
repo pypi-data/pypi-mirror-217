@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+folder_structure/__init__.py
+folder_structure/folder_structure_generator.py
+folder_structure_generator.egg-info/PKG-INFO
+folder_structure_generator.egg-info/SOURCES.txt
+folder_structure_generator.egg-info/dependency_links.txt
+folder_structure_generator.egg-info/top_level.txt
