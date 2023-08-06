@@ -1,0 +1,13 @@
+.gitignore
+README.rst
+pyproject.toml
+wproxy/__init__.py
+wproxy/__main__.py
+wproxy/runner.py
+wproxy/wproxy.py
+wproxy.egg-info/PKG-INFO
+wproxy.egg-info/SOURCES.txt
+wproxy.egg-info/dependency_links.txt
+wproxy.egg-info/entry_points.txt
+wproxy.egg-info/requires.txt
+wproxy.egg-info/top_level.txt

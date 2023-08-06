@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: wproxy
+Version: 0.0.2
+Summary: Websocket proxy
+Author-email: Ferdinand Silva <ferdinandsilva@ferdinandsilva.com>
+Project-URL: Home, https://github.com/six519/wproxy
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+
+wproxy
+======
+
+A Python 3 websocket proxy
+
+Installing Through PyPi
+=======================
+::
+
+    pip3 install wproxy
+
+Using the library
+=================
+::
+
+    from wproxy import WProxy
+
+    this_proxy = WProxy(
+        host="0.0.0.0",
+        port=9002,
+        url="wss://urltoproxy.com",
+        ssl_cert="cert.pem", # optional
+        ssl_key="priv.pem", # optional
+    )
+
+    this_proxy.run()
+
+Running the console script
+==========================
+::
+
+    wproxy --url wss://urltoproxy.com:8888 --port 9002 --headers "Sec-WebSocket-Protocol:sip" --ssl_cert fullchain1.pem --ssl_key privkey1.pem 
