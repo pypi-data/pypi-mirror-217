@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+git_dl.egg-info/PKG-INFO
+git_dl.egg-info/SOURCES.txt
+git_dl.egg-info/dependency_links.txt
+git_dl.egg-info/entry_points.txt
+git_dl.egg-info/top_level.txt
