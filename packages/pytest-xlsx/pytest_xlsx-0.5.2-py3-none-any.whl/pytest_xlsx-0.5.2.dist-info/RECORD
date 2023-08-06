@@ -1,0 +1,14 @@
+pytest_xlsx/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_xlsx/_plugin.py,sha256=xOUzNvBl4vF8qJtl05-PbhUkS_f9oP1hAjIklnkwHWE,2727
+pytest_xlsx/file.py,sha256=KGiwWotVtjQelhc2VL1yQv54jMsisrZdAfSNxsbn4n8,7962
+pytest_xlsx/funcs.py,sha256=6A_d8ErhFS_sYHVshnIT3VcI97FKzM9gxAlkV_Zric4,7104
+pytest_xlsx/hooks.py,sha256=5QGE9qwv-bFYEy847MAYs1Jyyz3b5AVUXpM8DQM7PQ0,673
+pytest_xlsx/models.py,sha256=XxfNvbZYjdlZFDQyUYzl7SaOMBzAoRz2sSW_kMfAh9U,218
+pytest_xlsx/plugin.py,sha256=Q_RLOhwrFrCKid-iYcDsIiinB-vN4DhQYjBz-HFhRt8,2782
+pytest_xlsx/runner.py,sha256=pT2bZjmma2k3fzoAUlEZgG0fSQnVf9YP3uTAuNBbYfw,328
+pytest_xlsx/settings.py,sha256=05a0kHyMI9qUoIVk70caY9wCbi6poP1bvQw-w-F1M4M,559
+pytest_xlsx-0.5.2.dist-info/entry_points.txt,sha256=PkBf7zbtxAqd-aOE4jOqyj1Rh2m9Geb6Ehs1Nys9xVg,36
+pytest_xlsx-0.5.2.dist-info/WHEEL,sha256=B19PGBCYhWaz2p_UjAoRVh767nYQfk14Sn4TpIZ-nfU,87
+pytest_xlsx-0.5.2.dist-info/METADATA,sha256=7TkjIhCN-cZFruDa4AdrCW6U-XOLFMs6Kw8_DEJpY98,1297
+pytest_xlsx-0.5.2.dist-info/licenses/LICENSE.md,sha256=6qhOc97sqEXSxt28gu1PqN796LEMcgvHvdkh9drcpXc,11341
+pytest_xlsx-0.5.2.dist-info/RECORD,,
