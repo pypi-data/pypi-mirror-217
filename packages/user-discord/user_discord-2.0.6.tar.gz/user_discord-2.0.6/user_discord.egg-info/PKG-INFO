@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: user-discord
+Version: 2.0.6
+Summary: Library for discord bots.
+Home-page: https://github.com/nxSlayer/user-discord
+Author: nxSlayer
+Author-email: princediscordslay@gmail.com
+License: MIT
+Keywords: user_discord,user-discord
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+
+By: nxslayer
+Install: pip install user_discord
