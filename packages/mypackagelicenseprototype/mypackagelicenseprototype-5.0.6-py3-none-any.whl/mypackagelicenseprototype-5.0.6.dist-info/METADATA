@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: mypackagelicenseprototype
+Version: 5.0.6
+Requires-Dist: numpy
+Requires-Dist: scipy
+
