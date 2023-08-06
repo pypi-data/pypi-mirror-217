@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: calculator-beau28713
+Version: 0.1.2
+Summary: Simple gui calculator that does basic math
+Author: Beau
+Author-email: beau28713@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: Kivy (>=2.2.1,<3.0.0)
+Description-Content-Type: text/markdown
+
+## Title
+GUI Calculator
+
+## Description 
+GUI calculator built using Kivy 2.1.0
+
+## Purpose  
+To learn the basics of the Kivy GUI framwork
+
+## Requirments
+Python 3.11  
+Kivy 2.1.0
+
+## How to Install
+`pip install calculator-beau28713`
+
+## How to run
+`python -m calculator_beau28713`  
+
+
+
+
+---------------------------------------
+
+
+![Image](https://github.com/Beau28713/Calculator_beau28713/blob/main/Calc.PNG)
+
