@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: lbj
+Version: 0.0.1
+Summary: A small example package
+Home-page: https://gitee.com/zqy0315/pypi-test
+Author: lbj2735172678
+Author-email: 2735172678@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# README
+
+this is the test of pypi
+
+abcdefghijklmnop
