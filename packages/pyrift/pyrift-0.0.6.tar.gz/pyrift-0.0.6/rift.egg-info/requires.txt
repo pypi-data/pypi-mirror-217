@@ -1,0 +1,12 @@
+aiohttp
+pydantic[dotenv]==1.*
+python-dotenv
+rich
+fire
+gpt4all==0.3.4
+tiktoken
+sentencepiece
+transformers
+
+[hf]
+torch
