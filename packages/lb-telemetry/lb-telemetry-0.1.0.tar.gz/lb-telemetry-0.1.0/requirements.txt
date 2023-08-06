@@ -1,0 +1,9 @@
+logzero==1.7.0
+mypy==1.4.1
+mypy-extensions==1.0.0
+pre-commit==3.3.3
+pytest==7.4.0
+pytest-cov==4.1.0
+requests==2.31.0
+ruff==0.0.277
+types-requests==2.31.0.1
