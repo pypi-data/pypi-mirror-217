@@ -1,0 +1,10 @@
+nvitop
+redis
+transformers
+datasets
+evaluate
+pandas
+torch
+dingtalkchatbot
+psutil
+nltk
