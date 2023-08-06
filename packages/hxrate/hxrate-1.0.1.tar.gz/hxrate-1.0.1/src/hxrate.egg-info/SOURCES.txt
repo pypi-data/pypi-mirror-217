@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/hxrate/__init__.py
+src/hxrate/backexchange.py
+src/hxrate/hxdata.py
+src/hxrate/methods.py
+src/hxrate/openfe.py
+src/hxrate/ratefit.py
+src/hxrate.egg-info/PKG-INFO
+src/hxrate.egg-info/SOURCES.txt
+src/hxrate.egg-info/dependency_links.txt
+src/hxrate.egg-info/requires.txt
+src/hxrate.egg-info/top_level.txt

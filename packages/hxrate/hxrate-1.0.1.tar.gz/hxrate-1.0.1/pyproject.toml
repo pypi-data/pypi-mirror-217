@@ -1,0 +1,37 @@
+[project]
+name = "hxrate"
+version = "1.0.1"
+
+authors = [
+  { name="SD", email="suggie@northwestern.edu" },
+]
+
+description = "HX Rate Fitting"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+  "matplotlib == 3.3.4",
+  "numpy == 1.20.2",
+  "numpyro == 0.8.0",
+  "pandas == 1.2.5",
+  "scikit-learn == 0.24.2",
+  "scipy == 1.6.2",
+  "pyyaml == 6.0",
+  "biopython == 1.79",
+  "molmass == 2021.6.18",
+  "jax == 0.2.25",
+  "jaxlib == 0.1.74",
+  "psutil == 5.8.0",
+]
+
+[build-system]
+# These are the assumed default build requirements from pip:
+# https://pip.pypa.io/en/stable/reference/pip/#pep-517-and-518-support
+requires = ["setuptools>=43.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
