@@ -1,0 +1,33 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:genericsetup="http://namespaces.zope.org/genericsetup">
+
+  <!-- -*- extra stuff goes here -*- -->
+  <!--<genericsetup:upgradeStep
+    source="*"
+    destination="1001"
+    title="Reload GS profiles"
+    description=""
+    profile="library.policy:default"
+    handler=".upgrades.reload_gs_profile"
+    />-->
+
+
+  <genericsetup:upgradeStep
+    source="*"
+    destination="1002"
+    title="Change language"
+    description="Change objects (and root) language fr-be to fr"
+    profile="library.policy:default"
+    handler=".upgrades.change_language"
+  />
+
+  <genericsetup:upgradeStep
+    source="1002"
+    destination="1003"
+    title="reimport faceted"
+    description="Reimport faceted explorer configuration"
+    profile="library.policy:default"
+    handler=".upgrades.configure_faceted"
+  />
+</configure>
