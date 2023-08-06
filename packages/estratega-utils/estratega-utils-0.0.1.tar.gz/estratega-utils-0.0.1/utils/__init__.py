@@ -1,0 +1,1 @@
+from objetos import Obj
