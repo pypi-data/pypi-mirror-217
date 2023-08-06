@@ -1,0 +1,7 @@
+cstruct
+
+[dev]
+check-manifest
+
+[test]
+coverage
