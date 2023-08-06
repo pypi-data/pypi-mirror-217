@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+qianxun/Emoji.py
+qianxun/SDK.py
+qianxun/__init__.py
+qianxun_wechat_sdk.egg-info/PKG-INFO
+qianxun_wechat_sdk.egg-info/SOURCES.txt
+qianxun_wechat_sdk.egg-info/dependency_links.txt
+qianxun_wechat_sdk.egg-info/top_level.txt
