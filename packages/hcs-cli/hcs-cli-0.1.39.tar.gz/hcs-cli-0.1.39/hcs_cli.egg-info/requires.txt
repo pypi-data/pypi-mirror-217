@@ -1,0 +1,8 @@
+authlib==1.2.1
+coloredlogs==15.0.1
+pyOpenSSL==23.2.0
+PyYAML==6.0
+questionary==1.10.0
+setuptools==65.6.3
+setuptools_scm==7.1.0
+ulid==1.1
