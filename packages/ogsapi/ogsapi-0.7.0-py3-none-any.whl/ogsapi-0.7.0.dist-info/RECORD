@@ -1,0 +1,10 @@
+ogsapi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ogsapi/client.py,sha256=UhjYqnippVzoLjROZu-ZIO2u36y5ghpPK8H2LnM4IcQ,22207
+ogsapi/ogs_api_exception.py,sha256=0CeRg0g0_SHdqMTfW72TPS_3zaVNTBC0h6talkfBpqo,131
+ogsapi/ogsgame.py,sha256=GOhe9amfaSbXJ90R8TuZebcJ2-w8-AFg56YX0On53DA,14931
+ogsapi/ogssocket.py,sha256=MnjHTbahXmWcZU0Xu9lokzJsstDgB3-tcBmpcWPW7JE,6726
+ogsapi-0.7.0.dist-info/LICENSE,sha256=stm-oLaWkZo4f4MaCLi3hEsAT23sgblDPgvFaWStjhg,35082
+ogsapi-0.7.0.dist-info/METADATA,sha256=uPBUSTXuP8nM7BGEZuXAjQOE74segVBBzjtQBAW0WrI,5696
+ogsapi-0.7.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ogsapi-0.7.0.dist-info/top_level.txt,sha256=1UKIeNelUv5Cu6ZOVBpH7pQKIQ7rLJWeQF9T1C-SYC0,7
+ogsapi-0.7.0.dist-info/RECORD,,
