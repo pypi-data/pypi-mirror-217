@@ -1,0 +1,12 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/roger/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/roger/colors.py,sha256=BbddfZzzeHqH4YxIk1BcO2nDMR7ypzkxX8ol9ngbwDc,148
+src/roger/key_manager.py,sha256=I6N7k87GxeQJxBcKWeittJE9OtPvrxdKH4Ye4cbnMzk,1666
+src/roger/roger.py,sha256=jkg9WO-9-aO8aATR-yXU-ttdb1FquyUm2zvbofIIUOY,5078
+src/roger/utils.py,sha256=NMWLaUQbZa9tStrXhcmcZu0CWJTj9Jm9V86rUm5hxIc,782
+roger_cli-0.1.0.dist-info/LICENSE,sha256=vJZ8_jggNgRbvFB0hJo9GmQxu6jU2MvpVNkSEQlYlNI,1065
+roger_cli-0.1.0.dist-info/METADATA,sha256=Uz_u6Fg-4v0VmVUQyOCYt3_M6kgSY5-5siYvxnKGhYs,223
+roger_cli-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+roger_cli-0.1.0.dist-info/entry_points.txt,sha256=70GF5_TJoBBDfCDM8OK8vUHvLUrQXw6tqEvqIirFkxg,47
+roger_cli-0.1.0.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+roger_cli-0.1.0.dist-info/RECORD,,
