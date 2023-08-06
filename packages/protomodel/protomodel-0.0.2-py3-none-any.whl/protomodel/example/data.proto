@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package app.proto;
+
+message Product {
+	int32 id = 1;
+	string name = 2;
+	int32 brand_id = 3;
+	float price = 4;
+	int32 category_id = 5;
+}
+
+message GetProductRequest {
+	int32 product_id = 1;
+}
+
+message GetProductResponse {
+	Product product = 1;
+}
+
+message GetProductsResponse {
+	repetead Product products = 1;
+}
+
