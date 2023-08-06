@@ -1,0 +1,8 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/package/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/package/timespan.py,sha256=_41fiskjYmL6x3dB47t6o4N2awNSZaziJNdPm6GqKtc,7822
+timespan_python-0.1.1.dist-info/LICENSE,sha256=mQaUD2Gx8LUz-n2ZuvVReLKAj74RPqUd-_rYVyzNXys,1162
+timespan_python-0.1.1.dist-info/METADATA,sha256=WySKsLiRVWxtH46TEy-6cn6VATnvSAWe9LYuCUZzZ3A,2254
+timespan_python-0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+timespan_python-0.1.1.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+timespan_python-0.1.1.dist-info/RECORD,,
