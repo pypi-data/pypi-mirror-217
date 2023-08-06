@@ -1,0 +1,10 @@
+## 变量命名工具
+
+输入关键字 `vn` 中文变量名，如：
+```angular2html
+➜ vn 我和我的祖国
+小驼峰法 | meAndMyMotherland 
+大驼峰法 | MeAndMyMotherland 
+下划线法 | me_and_my_motherland 
+前下划线法 | _me_and_my_motherland 
+```
