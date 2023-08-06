@@ -1,0 +1,5 @@
+ipykernel
+nbformat
+papermill
+pyyaml
+watchdog
