@@ -1,0 +1,5 @@
+countess<0.1,>=0.0.31
+sequence_align==0.1.0
+
+[dev]
+countess[dev]<0.1,>=0.0.31
