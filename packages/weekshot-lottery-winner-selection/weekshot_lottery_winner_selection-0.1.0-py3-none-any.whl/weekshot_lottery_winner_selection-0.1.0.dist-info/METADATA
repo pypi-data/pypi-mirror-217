@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: weekshot-lottery-winner-selection
+Version: 0.1.0
+Summary: Weekshot Lottery Winner Selection
+Home-page: https://github.com/Weekshot/Weekshot-Lottery-Winner-Selection
+License: Apache-2.0
+Author: Pavel Fedorovich
+Author-email: pa.fedorovich@heapix.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Project-URL: Repository, https://github.com/Weekshot/Weekshot-Lottery-Winner-Selection
+Description-Content-Type: text/markdown
+
+# Weekshot-Lottery-Winner-Selection
