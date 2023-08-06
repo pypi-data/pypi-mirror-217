@@ -1,0 +1,2 @@
+[console_scripts]
+pymini = pymini.cli:main
