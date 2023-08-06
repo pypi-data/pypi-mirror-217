@@ -1,0 +1,5 @@
+setup.py
+xinfernce.egg-info/PKG-INFO
+xinfernce.egg-info/SOURCES.txt
+xinfernce.egg-info/dependency_links.txt
+xinfernce.egg-info/top_level.txt
