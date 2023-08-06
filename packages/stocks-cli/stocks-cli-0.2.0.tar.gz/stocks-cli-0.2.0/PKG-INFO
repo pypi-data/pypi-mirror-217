@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: stocks-cli
+Version: 0.2.0
+Summary: Command Line Interface to the STOCKS server
+Home-page: https://www.embl.org/research/units/genome-biology/genome-biology-computational-support/
+Author: GBCS
+Author-email: gbcs@embl.de
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE.txt
+
+# STOCKS CLI
+
+**stocks-cli** - CLI tool for interacting with the STOCKS server.
+
+## Description
+
+stocks-cli is a command-line interface (CLI) tool designed to facilitate seamless communication and interaction with the STOCKS server. The tool provides various commands and options to perform common operations and tasks related to the STOCKS server, including fetching information of items, data registration, and export data to repositories.
+
+## Features
+
+- **Config Command**: Use the `config` command to manage the configuration settings of the stocks-cli tool. Set up server details, authentication credentials, and other parameters to customize the tool according to your needs.
+
+- **Export Command**: The `export` command allows you to export data from the STOCKS server. Choose specific datasets or define filters to extract the desired data in various formats for further analysis and processing.
+
+- **Fetch Command**: With the `fetch` command, you can retrieve data from the STOCKS server. Specify the datasets or filters to fetch the required information and receive the data in real-time for immediate use.
+
+- **Register Command**: The `register` command enables you to register new data or resources with the STOCKS server. Use this command to provide relevant details and metadata for the resources you want to add to the server.
+
+## Installation
+
+You can install stocks-cli using pip, the Python package installer.
+
+```shell
+pip install stocks-cli
+```
+
+## Usage
+
+Once installed, you can use the stocks-cli tool with various commands and options. Here are some examples:
+
+- To display the available commands and options, use the `stocks --help` command.
+
+- To configure the stocks-cli tool, run `stocks config` and follow the interactive prompts to set up the necessary server details and authentication credentials.
+
+- To export data from the STOCKS server, use the `stocks export` command followed by specific parameters and filters as needed.
+
+- To fetch data from the STOCKS server, execute the `stocks fetch` command with appropriate dataset or filter specifications.
+
+- To register new data or resources with the STOCKS server, utilize the `stocks register` command and provide the required details and metadata.
+
+## Additional Information
+
+For more information, detailed usage instructions, and advanced options, please refer to the [stocks-cli documentation](https://stocks.embl.de/docs/training/topics/cli/).
+
+## License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
