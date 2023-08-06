@@ -1,0 +1,8 @@
+numpy
+python-dotenv
+Mastodon.py
+
+[testing]
+tox
+pytest
+pytest-cov

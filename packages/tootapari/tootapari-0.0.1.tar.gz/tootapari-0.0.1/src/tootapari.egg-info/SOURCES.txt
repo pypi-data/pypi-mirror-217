@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/tootapari/__init__.py
+src/tootapari/napari.yaml
+src/tootapari/widget.py
+src/tootapari.egg-info/PKG-INFO
+src/tootapari.egg-info/SOURCES.txt
+src/tootapari.egg-info/dependency_links.txt
+src/tootapari.egg-info/entry_points.txt
+src/tootapari.egg-info/requires.txt
+src/tootapari.egg-info/top_level.txt
+src/tootapari/_tests/__init__.py
