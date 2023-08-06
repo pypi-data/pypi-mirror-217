@@ -1,0 +1,104 @@
+Metadata-Version: 2.1
+Name: audioscrape
+Version: 0.2.0
+Summary: Scrape online audio with a simple command-line interface.
+Author-email: Carl Thomé <carlthome@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2023 Carl Thomé
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/carlthome/audio-scraper
+Project-URL: Bugs, https://github.com/carlthome/audioscrape/issues
+Keywords: audio,music,sound
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Multimedia :: Sound/Audio
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: mediapipe (>=0.10.1)
+Requires-Dist: requests (>=2.31.0)
+Requires-Dist: soundcloud-lib (>=0.6.1)
+Requires-Dist: soundfile (>=0.12.1)
+Requires-Dist: tqdm (>=4.65.0)
+Requires-Dist: yt-dlp (>=2023.6.22)
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+
+# Audioscrape
+
+Scrape audio from various websites with a simple command-line interface.
+
+## Usage
+
+First make sure Python is installed, then run:
+
+```sh
+pip install audioscrape
+```
+
+Then you can use the program as:
+
+```sh
+audioscrape "acoustic guitar"
+```
+
+See `audioscrape --help` for more details.
+
+### Python API
+
+You can also use the scraper directly in Python, as:
+
+```python
+import audioscrape
+
+audioscrape.download(query="Cerulean Crayons",
+                     include=["guitar"],
+                     exclude=["remix"],
+                     quiet=True)
+```
+
+## Develop
+
+First clone the repo and set it as working directory. Then install the package in development mode (preferably within its own virtual environment):
+
+```sh
+pip install -e .
+```
+
+If you have `direnv` installed, you can run `direnv allow` to automatically create and activate a Python virtual environment when you enter the directory.
+
+### Test
+
+```sh
+pytest
+```
+
+### Lint
+
+```sh
+pre-commit run --all-files
+```
+
+Or `pre-commit install` to run automatically on `git commit`.

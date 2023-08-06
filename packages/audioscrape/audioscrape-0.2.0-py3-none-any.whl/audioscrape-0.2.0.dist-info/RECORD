@@ -1,0 +1,14 @@
+audioscrape/__init__.py,sha256=xbwxh-nKLKuaPTEhqcLoKPslVsZFvQME2f5iVe7b48k,143
+audioscrape/__main__.py,sha256=dRpIMG5uZwo4B8vrvqulwMxru3zsMppnpJjWuygQiow,1835
+audioscrape/classify.py,sha256=mF_ezZOTMC_XGOGXS3lDo-8hCe-6Z_H3Ckl12s1_Xd4,1072
+audioscrape/freesound.py,sha256=DkeLUlrb7rGx3nZ04aADU9HXXu5mZTf_DBwT0xhzIv4,7
+audioscrape/soundcloud.py,sha256=6YSFnkgFKJ5cajHtTUWF4c0zIaK2qDNTHkgsX6yDgvk,4337
+audioscrape/version.py,sha256=dQUHa1PGpJsNE2x_SQFxtOX-jousEqplwH1bdsk6mnE,160
+audioscrape/yamnet.tflite,sha256=EMleo-uae7TLi932_rAjJQOBAIF3rBYs4WlpTQXDF94,4126810
+audioscrape/youtube.py,sha256=IWF8XH4TUR8fKZtt6pz1ZAeH3IT3jopL8RRDxE_Feew,2701
+audioscrape-0.2.0.dist-info/LICENSE,sha256=hpv3FiBFm0niut2eBe_7V870Qk582OR9vZp4E1JFO6U,1068
+audioscrape-0.2.0.dist-info/METADATA,sha256=gABZyVrbgY1qaHFY5A75Zp7gUY5UGixJXkUISAyazng,3269
+audioscrape-0.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+audioscrape-0.2.0.dist-info/entry_points.txt,sha256=Ki-cYCHATe8vqfYj2Gfwn9YdY5R8SOf23zZ0xdJ0lm0,57
+audioscrape-0.2.0.dist-info/top_level.txt,sha256=RwhTI_XbFRwIzPSAFUQc2XkPMSgBevCoLIPgjwbl5C0,12
+audioscrape-0.2.0.dist-info/RECORD,,
