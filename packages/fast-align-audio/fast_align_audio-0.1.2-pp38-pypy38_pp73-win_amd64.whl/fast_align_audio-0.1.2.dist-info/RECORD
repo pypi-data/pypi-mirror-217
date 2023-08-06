@@ -1,0 +1,9 @@
+_fast_align_audio.pypy38-pp73-win_amd64.pyd,sha256=DXJTC4J6FlGWDSXbz13d9ACIVJRCFvJfbePDIOOrCgE,11776
+fast_align_audio/__init__.py,sha256=PdczRZiBp0xDiiXqLH6H3zMlXp-0MEsxrYp0ZXS4CUY,68
+fast_align_audio/_alignment_cffi.py,sha256=wxkZEshCgPjq3R1nHAGlCgkAFzHzFcCSTilAfoUrY5I,618
+fast_align_audio/alignment.py,sha256=BnNKk7MBPE0uFu76vJGL47OwytiYhzVYokKr29qlMXM,3379
+fast_align_audio-0.1.2.dist-info/LICENSE,sha256=tPBrKL5kSF5qsi2Sigy2FBz6E5Vj72tIAOUV63e8d5w,761
+fast_align_audio-0.1.2.dist-info/METADATA,sha256=3X5LCkU9LJxS6w4EwE46dkJgXH0roDYgpwDCbcQbS1s,2510
+fast_align_audio-0.1.2.dist-info/WHEEL,sha256=VdGht2tAV-pZeKh01R_AzgNm9hOgkZNK5FJALyJVlrI,107
+fast_align_audio-0.1.2.dist-info/top_level.txt,sha256=Ll1Ggww3-RoLC_LESKBjfjTd1cbVlwQEjljxtvCzz7w,35
+fast_align_audio-0.1.2.dist-info/RECORD,,
