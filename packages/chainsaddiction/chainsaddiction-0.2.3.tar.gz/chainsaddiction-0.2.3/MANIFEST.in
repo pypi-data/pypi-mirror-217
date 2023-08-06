@@ -1,0 +1,2 @@
+include src/chainsaddiction/py.typed
+include CHANGELOG.md
