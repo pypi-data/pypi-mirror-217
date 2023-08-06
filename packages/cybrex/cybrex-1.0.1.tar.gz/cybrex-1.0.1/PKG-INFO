@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: cybrex
+Version: 1.0.1
+Summary: Cybrex is an AI allowing to chat with science
+Author: Interdimensional Walker
+Project-URL: Homepage, https://github.com/nexus-stc/stc
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Cybrex AI
+
+## Install
+
+```bash
+pip install cybrex
+```
+
+## Usage
+
+```bash
+# Summarize document
+OPENAI_API_KEY=... cybrex sum-doc --doi 10.1155/2022/7138756
+
+# Question a document
+OPENAI_API_KEY=... python3 cybrex chat-doc --doi 10.1155/2022/7138756 \
+  --question "What is the antivirus effect of resveratrol?"
+```
