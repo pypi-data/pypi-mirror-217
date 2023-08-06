@@ -1,0 +1,5 @@
+astropy
+numpy
+
+[test]
+pytest-doctestplus
