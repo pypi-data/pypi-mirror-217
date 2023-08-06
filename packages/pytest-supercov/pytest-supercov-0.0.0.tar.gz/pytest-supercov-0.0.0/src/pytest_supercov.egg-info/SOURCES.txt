@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/pytest_supercov.egg-info/PKG-INFO
+src/pytest_supercov.egg-info/SOURCES.txt
+src/pytest_supercov.egg-info/dependency_links.txt
+src/pytest_supercov.egg-info/top_level.txt
+src/supercov/__init__.py
