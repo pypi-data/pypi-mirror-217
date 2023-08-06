@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: XRDimage
+Version: 0.0.1.2
+Summary: XRDImage is a Python 3 package developed by the SDLE Research Center at Case Western Reserve University in Cleveland, OH.
+Home-page: http://engineering.case.edu/centers/sdle/
+Author: Weiqi Yue, Gabriel Ponon, Zhuldyz Ualikhankyzy, Nathaniel K. Tomczak, Pawan K. Tripathi, Roger H. French
+Author-email: wxy215@case.edu, pkt19@case.edu, roger.french@case.edu
+License: MIT License
+Project-URL: Documentation, https://xrdimage-doc.readthedocs.io/en/latest/
+Project-URL: Bugtracker, https://bitbucket.org/cwrusdle/xrd-image/src/main/
+Platform: UNKNOWN
+Requires-Python: >=3.8
+License-File: LICENSE
+
+UNKNOWN
+
