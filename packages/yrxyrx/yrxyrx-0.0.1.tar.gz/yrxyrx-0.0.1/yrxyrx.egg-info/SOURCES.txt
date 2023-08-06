@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+yrxyrx/76.py
+yrxyrx/__init__.py
+yrxyrx/theFirstFunction.py
+yrxyrx.egg-info/PKG-INFO
+yrxyrx.egg-info/SOURCES.txt
+yrxyrx.egg-info/dependency_links.txt
+yrxyrx.egg-info/top_level.txt
