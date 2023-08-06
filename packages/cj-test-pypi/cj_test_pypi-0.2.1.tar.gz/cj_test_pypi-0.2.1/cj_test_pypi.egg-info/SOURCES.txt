@@ -1,0 +1,7 @@
+README.md
+setup.py
+cj_test_pypi.egg-info/PKG-INFO
+cj_test_pypi.egg-info/SOURCES.txt
+cj_test_pypi.egg-info/dependency_links.txt
+cj_test_pypi.egg-info/requires.txt
+cj_test_pypi.egg-info/top_level.txt
