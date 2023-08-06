@@ -1,0 +1,2 @@
+recursive-include RamseyTheoryRL/data *.csv
+recursive-include RamseyTheoryRL/data *.g6
