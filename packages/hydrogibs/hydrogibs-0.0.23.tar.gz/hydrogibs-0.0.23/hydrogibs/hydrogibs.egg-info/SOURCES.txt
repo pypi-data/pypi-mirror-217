@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+hydrogibs/hydrogibs.egg-info/PKG-INFO
+hydrogibs/hydrogibs.egg-info/SOURCES.txt
+hydrogibs/hydrogibs.egg-info/dependency_links.txt
+hydrogibs/hydrogibs.egg-info/requires.txt
+hydrogibs/hydrogibs.egg-info/top_level.txt
