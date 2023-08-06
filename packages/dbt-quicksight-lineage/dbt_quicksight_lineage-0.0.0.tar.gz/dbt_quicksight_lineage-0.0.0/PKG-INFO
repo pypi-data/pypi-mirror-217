@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: dbt-quicksight-lineage
+Version: 0.0.0
+Project-URL: Documentation, https://github.com/mashiike/dbt-quicksight-lineage#readme
+Project-URL: Issues, https://github.com/mashiike/dbt-quicksight-lineage/issues
+Project-URL: Source, https://github.com/mashiike/dbt-quicksight-lineage
+Author-email: mashiike <ikeda-masashi@kayac.com>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.10
+Requires-Dist: boto3~=1.26.164
+Requires-Dist: click~=8.1.3
+Requires-Dist: colorlog~=6.7.0
+Requires-Dist: dbt-core~=1.5.2
+Requires-Dist: ruamel-yaml~=0.17.32
+Description-Content-Type: text/markdown
+
+# dbt_quicksight_lineage
+
+[![PyPI - Version](https://img.shields.io/pypi/v/dbt-quicksight-lineage.svg)](https://pypi.org/project/dbt-quicksight-lineage)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/dbt-quicksight-lineage.svg)](https://pypi.org/project/dbt-quicksight-lineage)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install dbt-quicksight-lineage
+```
+
+## License
+
+`dbt-quicksight-lineage` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.

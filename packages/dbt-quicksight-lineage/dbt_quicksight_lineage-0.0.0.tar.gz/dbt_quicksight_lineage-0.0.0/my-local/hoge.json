@@ -1,0 +1,1361 @@
+{
+    "Status": 200,
+    "DataSet": {
+        "Arn": "arn:aws:quicksight:ap-northeast-1:572273579432:dataset/876ffe26-0436-4753-b385-a3f498c3b921",
+        "DataSetId": "876ffe26-0436-4753-b385-a3f498c3b921",
+        "Name": "大会詳細情報",
+        "CreatedTime": "2022-02-23T01:03:51.868000+09:00",
+        "LastUpdatedTime": "2023-04-18T14:59:24.647000+09:00",
+        "PhysicalTableMap": {
+            "9c550730-c252-41a6-b77f-714172d063a0": {
+                "RelationalTable": {
+                    "DataSourceArn": "arn:aws:quicksight:ap-northeast-1:572273579432:datasource/05745d42-1c46-432b-b66e-4b5d6d98e02c",
+                    "Schema": "mart__bi",
+                    "Name": "competition_access_metrics",
+                    "InputColumns": [
+                        {
+                            "Name": "competition_id",
+                            "Type": "STRING"
+                        },
+                        {
+                            "Name": "page_view_count",
+                            "Type": "INTEGER"
+                        },
+                        {
+                            "Name": "first_access_at",
+                            "Type": "DATETIME"
+                        },
+                        {
+                            "Name": "last_access_at",
+                            "Type": "DATETIME"
+                        },
+                        {
+                            "Name": "unique_access_player_count",
+                            "Type": "INTEGER"
+                        },
+                        {
+                            "Name": "visitor_count",
+                            "Type": "INTEGER"
+                        }
+                    ]
+                }
+            },
+            "bbb27f4d-e58b-4420-b6d6-5c99ba2a43f2": {
+                "CustomSql": {
+                    "DataSourceArn": "arn:aws:quicksight:ap-northeast-1:572273579432:datasource/05745d42-1c46-432b-b66e-4b5d6d98e02c",
+                    "Name": "Lynx Federated",
+                    "SqlQuery": "select \n    c.uid, \n    case when s.use_detailed_entry_menu = 0 then 'No' else 'Yes' end as use_detailed_entry_menu\nfrom source__aurora_federated__lynx.competition c \ninner join source__aurora_federated__lynx.competition_entry_menu_setting s on c.id = s.competition_id",
+                    "Columns": [
+                        {
+                            "Name": "uid",
+                            "Type": "STRING"
+                        },
+                        {
+                            "Name": "use_detailed_entry_menu",
+                            "Type": "STRING"
+                        }
+                    ]
+                }
+            },
+            "f10ed703-1c45-4a80-a769-aa3403f3c5cb": {
+                "RelationalTable": {
+                    "DataSourceArn": "arn:aws:quicksight:ap-northeast-1:572273579432:datasource/05745d42-1c46-432b-b66e-4b5d6d98e02c",
+                    "Schema": "mart__bi",
+                    "Name": "competition",
+                    "InputColumns": [
+                        {
+                            "Name": "organization_id",
+                            "Type": "STRING"
+                        },
+                        {
+                            "Name": "organization_name",
+                            "Type": "STRING"
+                        },
+                        {
+                            "Name": "competition_id",
+                            "Type": "STRING"
+                        },
+                        {
+                            "Name": "game_id",
+                            "Type": "STRING"
+                        },
+                        {
+                            "Name": "game_genre",
+                            "Type": "STRING"
+                        },
+                        {
+                            "Name": "organization_image_url",
+                            "Type": "STRING"
+                        },
+                        {
+                            "Name": "organization_created_at",
+                            "Type": "DATETIME"
+                        },
+                        {
+                            "Name": "competition_start_at",
+                            "Type": "DATETIME"
+                        },
+                        {
+                            "Name": "name",
+                            "Type": "STRING"
+                        },
+                        {
+                            "Name": "description",
+                            "Type": "STRING"
+                        },
+                        {
+                            "Name": "matchup_screenshot",
+                            "Type": "STRING"
+                        },
+                        {
+                            "Name": "game",
+                            "Type": "STRING"
+                        },
+                        {
+                            "Name": "entry_limit",
+                            "Type": "INTEGER"
+                        },
+                        {
+                            "Name": "current_entry",
+                            "Type": "INTEGER"
+                        },
+                        {
+                            "Name": "is_online",
+                            "Type": "STRING"
+                        },
+                        {
+                            "Name": "tournament_fix_at",
+                            "Type": "DATETIME"
+                        },
+                        {
+                            "Name": "competition_end_at",
+                            "Type": "DATETIME"
+                        },
+                        {
+                            "Name": "entry_start_at",
+                            "Type": "DATETIME"
+                        },
+                        {
+                            "Name": "entry_end_at",
+                            "Type": "DATETIME"
+                        },
+                        {
+                            "Name": "checkin_start_at",
+                            "Type": "DATETIME"
+                        },
+                        {
+                            "Name": "checkin_end_at",
+                            "Type": "DATETIME"
+                        },
+                        {
+                            "Name": "registration_limit",
+                            "Type": "INTEGER"
+                        },
+                        {
+                            "Name": "block_winner_count",
+                            "Type": "INTEGER"
+                        },
+                        {
+                            "Name": "competitors_count",
+                            "Type": "INTEGER"
+                        },
+                        {
+                            "Name": "auto_accept_delay_minutes",
+                            "Type": "INTEGER"
+                        },
+                        {
+                            "Name": "is_checkin_enabled",
+                            "Type": "STRING"
+                        },
+                        {
+                            "Name": "is_result_report_enabled",
+                            "Type": "STRING"
+                        },
+                        {
+                            "Name": "registration_unit_type",
+                            "Type": "STRING"
+                        },
+                        {
+                            "Name": "total_entry_count",
+                            "Type": "INTEGER"
+                        },
+                        {
+                            "Name": "is_pickup_select_confirmed",
+                            "Type": "BIT"
+                        },
+                        {
+                            "Name": "region",
+                            "Type": "STRING"
+                        },
+                        {
+                            "Name": "tournament_type",
+                            "Type": "STRING"
+                        },
+                        {
+                            "Name": "tournament_type_kind",
+                            "Type": "STRING"
+                        },
+                        {
+                            "Name": "competition_has_entry_fee",
+                            "Type": "STRING"
+                        },
+                        {
+                            "Name": "competition_total_entry_fee",
+                            "Type": "DECIMAL"
+                        },
+                        {
+                            "Name": "competition_estimated_total_entry_fee",
+                            "Type": "DECIMAL"
+                        },
+                        {
+                            "Name": "competition_entry_fee_arppu",
+                            "Type": "DECIMAL"
+                        },
+                        {
+                            "Name": "competition_available_advance_payment",
+                            "Type": "STRING"
+                        },
+                        {
+                            "Name": "competition_available_manual_payment",
+                            "Type": "STRING"
+                        },
+                        {
+                            "Name": "tournament_type_code",
+                            "Type": "STRING"
+                        },
+                        {
+                            "Name": "tournament_type_detail",
+                            "Type": "STRING"
+                        },
+                        {
+                            "Name": "sponsor_enable_status",
+                            "Type": "STRING"
+                        },
+                        {
+                            "Name": "total_amount",
+                            "Type": "INTEGER"
+                        },
+                        {
+                            "Name": "total_sponsors_num",
+                            "Type": "INTEGER"
+                        },
+                        {
+                            "Name": "sponsor_first_enabled_at",
+                            "Type": "DATETIME"
+                        },
+                        {
+                            "Name": "status",
+                            "Type": "STRING"
+                        },
+                        {
+                            "Name": "status_name",
+                            "Type": "STRING"
+                        },
+                        {
+                            "Name": "status_name_with_sort_order",
+                            "Type": "STRING"
+                        },
+                        {
+                            "Name": "public_status",
+                            "Type": "STRING"
+                        },
+                        {
+                            "Name": "game_name_ja",
+                            "Type": "STRING"
+                        },
+                        {
+                            "Name": "game_name_en",
+                            "Type": "STRING"
+                        },
+                        {
+                            "Name": "game_name_my",
+                            "Type": "STRING"
+                        },
+                        {
+                            "Name": "game_name_ko",
+                            "Type": "STRING"
+                        },
+                        {
+                            "Name": "_1st_apply_at",
+                            "Type": "DATETIME"
+                        },
+                        {
+                            "Name": "last_apply_at",
+                            "Type": "DATETIME"
+                        },
+                        {
+                            "Name": "is_certified_tournament_approved",
+                            "Type": "STRING"
+                        },
+                        {
+                            "Name": "is_certified_zone_approved",
+                            "Type": "STRING"
+                        },
+                        {
+                            "Name": "is_certified_auger_approved",
+                            "Type": "STRING"
+                        },
+                        {
+                            "Name": "region_name_ja",
+                            "Type": "STRING"
+                        },
+                        {
+                            "Name": "region_name_en",
+                            "Type": "STRING"
+                        },
+                        {
+                            "Name": "region_name_ko",
+                            "Type": "STRING"
+                        },
+                        {
+                            "Name": "player_pickup_type",
+                            "Type": "INTEGER"
+                        },
+                        {
+                            "Name": "status_code",
+                            "Type": "STRING"
+                        },
+                        {
+                            "Name": "reserved_count",
+                            "Type": "INTEGER"
+                        },
+                        {
+                            "Name": "questionnaire_game_code_label",
+                            "Type": "STRING"
+                        },
+                        {
+                            "Name": "questionnaire_game_code_placeholder",
+                            "Type": "STRING"
+                        }
+                    ]
+                }
+            }
+        },
+        "LogicalTableMap": {
+            "7782a5fe-7eee-4d34-ab43-a82f7d76ecaf": {
+                "Alias": "Intermediate Table (2)",
+                "DataTransforms": [
+                    {
+                        "CreateColumnsOperation": {
+                            "Columns": [
+                                {
+                                    "ColumnName": "自動承認までの時間",
+                                    "ColumnId": "97d86be0-c82d-46f3-9e46-b82ff9e274f3",
+                                    "Expression": "nullif({auto_accept_delay_minutes},0)"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "CreateColumnsOperation": {
+                            "Columns": [
+                                {
+                                    "ColumnName": "エントリー上限",
+                                    "ColumnId": "7b7f8332-693c-4494-82a1-230d52436566",
+                                    "Expression": "nullif({entry_limit}, 0 )"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "CreateColumnsOperation": {
+                            "Columns": [
+                                {
+                                    "ColumnName": "スポンサーの有効化状態",
+                                    "ColumnId": "555a2dd0-34f8-4a9a-8321-055926c360e9",
+                                    "Expression": "coalesce( {sponsor_enable_status}, '無効')"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "CreateColumnsOperation": {
+                            "Columns": [
+                                {
+                                    "ColumnName": "オンライン/オフライン形式",
+                                    "ColumnId": "ae19674b-3257-4758-9d32-f7f4b3618fb7",
+                                    "Expression": "ifelse({オンライン大会ですか？}='Yes', 'オンライン','オフライン')"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "CreateColumnsOperation": {
+                            "Columns": [
+                                {
+                                    "ColumnName": "総ページビュー数（試験的）",
+                                    "ColumnId": "7512d803-4aef-4e1d-9c32-fdc5efc3743c",
+                                    "Expression": "coalesce({page_view_count},0)"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "CreateColumnsOperation": {
+                            "Columns": [
+                                {
+                                    "ColumnName": "ユニークログインアカウント数",
+                                    "ColumnId": "e9374022-6d91-4f0e-8c4e-1de106e8d9cc",
+                                    "Expression": "coalesce({unique_access_player_count},0)"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "CreateColumnsOperation": {
+                            "Columns": [
+                                {
+                                    "ColumnName": "訪問者数",
+                                    "ColumnId": "42ac4f26-5a48-4524-9ec8-e9ca48241a4a",
+                                    "Expression": "coalesce({visitor_count},0)"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "TagColumnOperation": {
+                            "ColumnName": "ゲームのID",
+                            "Tags": [
+                                {
+                                    "ColumnDescription": {
+                                        "Text": "URL中に含まれるゲームのID"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "TagColumnOperation": {
+                            "ColumnName": "ゲームジャンル",
+                            "Tags": [
+                                {
+                                    "ColumnDescription": {
+                                        "Text": "Tonamelのゲーム管理に記述されているジャンル"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "TagColumnOperation": {
+                            "ColumnName": "出場枠上限数",
+                            "Tags": [
+                                {
+                                    "ColumnDescription": {
+                                        "Text": "トーナメント表の大きさ"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "TagColumnOperation": {
+                            "ColumnName": "大会出場者数",
+                            "Tags": [
+                                {
+                                    "ColumnDescription": {
+                                        "Text": "トーナメント表に載った人数"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "TagColumnOperation": {
+                            "ColumnName": "エントリーの単位",
+                            "Tags": [
+                                {
+                                    "ColumnDescription": {
+                                        "Text": "チームなのか　人なのか"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "TagColumnOperation": {
+                            "ColumnName": "累計エントリー数",
+                            "Tags": [
+                                {
+                                    "ColumnDescription": {
+                                        "Text": "キャンセルや再エントリーも含む\n再エントリーした場合は、重複してカウントされる"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "TagColumnOperation": {
+                            "ColumnName": "リージョン",
+                            "Tags": [
+                                {
+                                    "ColumnGeographicRole": "COUNTRY"
+                                },
+                                {
+                                    "ColumnDescription": {
+                                        "Text": "この大会が属してる国"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "TagColumnOperation": {
+                            "ColumnName": "事前決済が有効ですか？",
+                            "Tags": [
+                                {
+                                    "ColumnDescription": {
+                                        "Text": "事前決済(コンビニ決済, クレジットカード決済)が有効なエントリー種別が1つでもある場合はYes"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "TagColumnOperation": {
+                            "ColumnName": "当日決済が有効ですか？",
+                            "Tags": [
+                                {
+                                    "ColumnDescription": {
+                                        "Text": "当日決済（内部的には手動決済)が有効なエントリー種別が1つでもアレばYes"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "TagColumnOperation": {
+                            "ColumnName": "最初のスポンサー有効化日時",
+                            "Tags": [
+                                {
+                                    "ColumnDescription": {
+                                        "Text": "UTC"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "TagColumnOperation": {
+                            "ColumnName": "大会の状態",
+                            "Tags": [
+                                {
+                                    "ColumnDescription": {
+                                        "Text": "現在の状態"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "TagColumnOperation": {
+                            "ColumnName": "ゲーム名",
+                            "Tags": [
+                                {
+                                    "ColumnDescription": {
+                                        "Text": "日本語のゲーム名"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "TagColumnOperation": {
+                            "ColumnName": "リージョン名",
+                            "Tags": [
+                                {
+                                    "ColumnGeographicRole": "STATE"
+                                },
+                                {
+                                    "ColumnDescription": {
+                                        "Text": "日本のリージョン名"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "TagColumnOperation": {
+                            "ColumnName": "Region Name",
+                            "Tags": [
+                                {
+                                    "ColumnGeographicRole": "STATE"
+                                },
+                                {
+                                    "ColumnDescription": {
+                                        "Text": "リージョンの英語名"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "TagColumnOperation": {
+                            "ColumnName": "補欠数",
+                            "Tags": [
+                                {
+                                    "ColumnDescription": {
+                                        "Text": "抽選機能が有効時に、補欠の数"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "TagColumnOperation": {
+                            "ColumnName": "初回アクセス日時",
+                            "Tags": [
+                                {
+                                    "ColumnDescription": {
+                                        "Text": "誰かがアクセスしたらその最初の時刻が見れる\n\n（ただし、2020-01-01が最も新しい、ソレより前は遡れない)\n"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "TagColumnOperation": {
+                            "ColumnName": "最終アクセス日時",
+                            "Tags": [
+                                {
+                                    "ColumnDescription": {
+                                        "Text": "誰かが最後にアクセスしたら更新される"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "TagColumnOperation": {
+                            "ColumnName": "複数エントリーを使ってますか？",
+                            "Tags": [
+                                {
+                                    "ColumnDescription": {
+                                        "Text": ""
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "TagColumnOperation": {
+                            "ColumnName": "総ページビュー数（試験的）",
+                            "Tags": [
+                                {
+                                    "ColumnDescription": {
+                                        "Text": "新スタックの一部分のみに導入している仕組みで、\n2021年12月頃からの新スタックのページにアクセスした総ページビュー数を数えている。\n\n試験的に導入されているものなので、値は参考程度に"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "TagColumnOperation": {
+                            "ColumnName": "ユニークログインアカウント数",
+                            "Tags": [
+                                {
+                                    "ColumnDescription": {
+                                        "Text": "ログイン状態でアクセスしたPlayerID（アカウントID）のユニークカウント"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "TagColumnOperation": {
+                            "ColumnName": "訪問者数",
+                            "Tags": [
+                                {
+                                    "ColumnDescription": {
+                                        "Text": "ログイン・非ログイン問わず、ブラウザやアクセス元に紐付いたclient_idを元にアクセス者を識別子、そのアクセス者数を出したもの\n\n（一人で複数ブラウザを使うケースがあるので、厳密に１人が１人としてカウントされてるとは限らない）"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "ProjectOperation": {
+                            "ProjectedColumns": [
+                                "主催団体ID",
+                                "主催団体名",
+                                "大会ID",
+                                "ゲームのID",
+                                "ゲームジャンル",
+                                "主催団体のアイコン画像URL",
+                                "主催団体作成日時",
+                                "大会開始予定日時",
+                                "大会名",
+                                "大会概要",
+                                "エントリー者数",
+                                "オンライン大会ですか？",
+                                "エントリー開始日時",
+                                "エントリー終了日時",
+                                "チェックイン開始日時",
+                                "チェックイン終了日時",
+                                "出場枠上限数",
+                                "ブロック数",
+                                "大会出場者数",
+                                "チェックインは有効ですか？",
+                                "参加者による結果報告は有効ですか？",
+                                "エントリーの単位",
+                                "累計エントリー数",
+                                "抽選は有効ですか？",
+                                "リージョン",
+                                "トーナメント形式",
+                                "有料エントリーが有効ですか？",
+                                "有料エントリーの合計金額",
+                                "有料エントリーに関するARPPU",
+                                "事前決済が有効ですか？",
+                                "当日決済が有効ですか？",
+                                "トーナメント形式（詳細）",
+                                "スポンサー収益額",
+                                "スポンサー人数",
+                                "最初のスポンサー有効化日時",
+                                "大会の状態",
+                                "status_name_with_sort_order",
+                                "公開状態",
+                                "ゲーム名",
+                                "ゲーム名（英語）",
+                                "ゲーム名（ミャンマー）",
+                                "game_name_ko",
+                                "認定大会支援の対象ですか？",
+                                "ZONe支援の対象ですか？",
+                                "AUGER支援の対象ですか？",
+                                "リージョン名",
+                                "Region Name",
+                                "region_name_ko",
+                                "補欠数",
+                                "初回アクセス日時",
+                                "最終アクセス日時",
+                                "複数エントリーを使ってますか？",
+                                "自動承認までの時間",
+                                "エントリー上限",
+                                "スポンサーの有効化状態",
+                                "オンライン/オフライン形式",
+                                "総ページビュー数（試験的）",
+                                "ユニークログインアカウント数",
+                                "訪問者数"
+                            ]
+                        }
+                    }
+                ],
+                "Source": {
+                    "JoinInstruction": {
+                        "LeftOperand": "e118ef24-4f4f-43a5-b267-c4b39896f080",
+                        "RightOperand": "8b1c19a3-5bab-49bd-974d-d0e14e7812b8",
+                        "Type": "LEFT",
+                        "OnClause": "{大会ID} = {uid}"
+                    }
+                }
+            },
+            "8b1c19a3-5bab-49bd-974d-d0e14e7812b8": {
+                "Alias": "Lynx Federated",
+                "DataTransforms": [
+                    {
+                        "RenameColumnOperation": {
+                            "ColumnName": "use_detailed_entry_menu",
+                            "NewColumnName": "複数エントリーを使ってますか？"
+                        }
+                    }
+                ],
+                "Source": {
+                    "PhysicalTableId": "bbb27f4d-e58b-4420-b6d6-5c99ba2a43f2"
+                }
+            },
+            "9c550730-c252-41a6-b77f-714172d063a0": {
+                "Alias": "competition_access_metrics",
+                "DataTransforms": [
+                    {
+                        "RenameColumnOperation": {
+                            "ColumnName": "competition_id",
+                            "NewColumnName": "competition_id[competition_access_metrics]"
+                        }
+                    },
+                    {
+                        "RenameColumnOperation": {
+                            "ColumnName": "first_access_at",
+                            "NewColumnName": "初回アクセス日時"
+                        }
+                    },
+                    {
+                        "RenameColumnOperation": {
+                            "ColumnName": "last_access_at",
+                            "NewColumnName": "最終アクセス日時"
+                        }
+                    }
+                ],
+                "Source": {
+                    "PhysicalTableId": "9c550730-c252-41a6-b77f-714172d063a0"
+                }
+            },
+            "e118ef24-4f4f-43a5-b267-c4b39896f080": {
+                "Alias": "Intermediate Table",
+                "Source": {
+                    "JoinInstruction": {
+                        "LeftOperand": "f10ed703-1c45-4a80-a769-aa3403f3c5cb",
+                        "RightOperand": "9c550730-c252-41a6-b77f-714172d063a0",
+                        "LeftJoinKeyProperties": {
+                            "UniqueKey": true
+                        },
+                        "RightJoinKeyProperties": {
+                            "UniqueKey": true
+                        },
+                        "Type": "LEFT",
+                        "OnClause": "{大会ID} = {competition_id[competition_access_metrics]}"
+                    }
+                }
+            },
+            "f10ed703-1c45-4a80-a769-aa3403f3c5cb": {
+                "Alias": "competition",
+                "DataTransforms": [
+                    {
+                        "RenameColumnOperation": {
+                            "ColumnName": "organization_id",
+                            "NewColumnName": "主催団体ID"
+                        }
+                    },
+                    {
+                        "RenameColumnOperation": {
+                            "ColumnName": "organization_name",
+                            "NewColumnName": "主催団体名"
+                        }
+                    },
+                    {
+                        "RenameColumnOperation": {
+                            "ColumnName": "competition_id",
+                            "NewColumnName": "大会ID"
+                        }
+                    },
+                    {
+                        "RenameColumnOperation": {
+                            "ColumnName": "game_id",
+                            "NewColumnName": "ゲームのID"
+                        }
+                    },
+                    {
+                        "RenameColumnOperation": {
+                            "ColumnName": "game_genre",
+                            "NewColumnName": "ゲームジャンル"
+                        }
+                    },
+                    {
+                        "RenameColumnOperation": {
+                            "ColumnName": "organization_image_url",
+                            "NewColumnName": "主催団体のアイコン画像URL"
+                        }
+                    },
+                    {
+                        "RenameColumnOperation": {
+                            "ColumnName": "organization_created_at",
+                            "NewColumnName": "主催団体作成日時"
+                        }
+                    },
+                    {
+                        "RenameColumnOperation": {
+                            "ColumnName": "competition_start_at",
+                            "NewColumnName": "大会開始予定日時"
+                        }
+                    },
+                    {
+                        "RenameColumnOperation": {
+                            "ColumnName": "name",
+                            "NewColumnName": "大会名"
+                        }
+                    },
+                    {
+                        "RenameColumnOperation": {
+                            "ColumnName": "description",
+                            "NewColumnName": "大会概要"
+                        }
+                    },
+                    {
+                        "RenameColumnOperation": {
+                            "ColumnName": "current_entry",
+                            "NewColumnName": "エントリー者数"
+                        }
+                    },
+                    {
+                        "RenameColumnOperation": {
+                            "ColumnName": "is_online",
+                            "NewColumnName": "オンライン大会ですか？"
+                        }
+                    },
+                    {
+                        "RenameColumnOperation": {
+                            "ColumnName": "entry_start_at",
+                            "NewColumnName": "エントリー開始日時"
+                        }
+                    },
+                    {
+                        "RenameColumnOperation": {
+                            "ColumnName": "entry_end_at",
+                            "NewColumnName": "エントリー終了日時"
+                        }
+                    },
+                    {
+                        "RenameColumnOperation": {
+                            "ColumnName": "checkin_start_at",
+                            "NewColumnName": "チェックイン開始日時"
+                        }
+                    },
+                    {
+                        "RenameColumnOperation": {
+                            "ColumnName": "checkin_end_at",
+                            "NewColumnName": "チェックイン終了日時"
+                        }
+                    },
+                    {
+                        "RenameColumnOperation": {
+                            "ColumnName": "registration_limit",
+                            "NewColumnName": "出場枠上限数"
+                        }
+                    },
+                    {
+                        "RenameColumnOperation": {
+                            "ColumnName": "block_winner_count",
+                            "NewColumnName": "ブロック数"
+                        }
+                    },
+                    {
+                        "RenameColumnOperation": {
+                            "ColumnName": "competitors_count",
+                            "NewColumnName": "大会出場者数"
+                        }
+                    },
+                    {
+                        "RenameColumnOperation": {
+                            "ColumnName": "is_checkin_enabled",
+                            "NewColumnName": "チェックインは有効ですか？"
+                        }
+                    },
+                    {
+                        "RenameColumnOperation": {
+                            "ColumnName": "is_result_report_enabled",
+                            "NewColumnName": "参加者による結果報告は有効ですか？"
+                        }
+                    },
+                    {
+                        "RenameColumnOperation": {
+                            "ColumnName": "registration_unit_type",
+                            "NewColumnName": "エントリーの単位"
+                        }
+                    },
+                    {
+                        "RenameColumnOperation": {
+                            "ColumnName": "total_entry_count",
+                            "NewColumnName": "累計エントリー数"
+                        }
+                    },
+                    {
+                        "RenameColumnOperation": {
+                            "ColumnName": "is_pickup_select_confirmed",
+                            "NewColumnName": "抽選は有効ですか？"
+                        }
+                    },
+                    {
+                        "RenameColumnOperation": {
+                            "ColumnName": "region",
+                            "NewColumnName": "リージョン"
+                        }
+                    },
+                    {
+                        "RenameColumnOperation": {
+                            "ColumnName": "tournament_type_kind",
+                            "NewColumnName": "トーナメント形式"
+                        }
+                    },
+                    {
+                        "RenameColumnOperation": {
+                            "ColumnName": "competition_has_entry_fee",
+                            "NewColumnName": "有料エントリーが有効ですか？"
+                        }
+                    },
+                    {
+                        "RenameColumnOperation": {
+                            "ColumnName": "competition_total_entry_fee",
+                            "NewColumnName": "有料エントリーの合計金額"
+                        }
+                    },
+                    {
+                        "RenameColumnOperation": {
+                            "ColumnName": "competition_entry_fee_arppu",
+                            "NewColumnName": "有料エントリーに関するARPPU"
+                        }
+                    },
+                    {
+                        "RenameColumnOperation": {
+                            "ColumnName": "competition_available_advance_payment",
+                            "NewColumnName": "事前決済が有効ですか？"
+                        }
+                    },
+                    {
+                        "RenameColumnOperation": {
+                            "ColumnName": "competition_available_manual_payment",
+                            "NewColumnName": "当日決済が有効ですか？"
+                        }
+                    },
+                    {
+                        "RenameColumnOperation": {
+                            "ColumnName": "tournament_type_detail",
+                            "NewColumnName": "トーナメント形式（詳細）"
+                        }
+                    },
+                    {
+                        "RenameColumnOperation": {
+                            "ColumnName": "total_amount",
+                            "NewColumnName": "スポンサー収益額"
+                        }
+                    },
+                    {
+                        "RenameColumnOperation": {
+                            "ColumnName": "total_sponsors_num",
+                            "NewColumnName": "スポンサー人数"
+                        }
+                    },
+                    {
+                        "RenameColumnOperation": {
+                            "ColumnName": "sponsor_first_enabled_at",
+                            "NewColumnName": "最初のスポンサー有効化日時"
+                        }
+                    },
+                    {
+                        "RenameColumnOperation": {
+                            "ColumnName": "status_name",
+                            "NewColumnName": "大会の状態"
+                        }
+                    },
+                    {
+                        "RenameColumnOperation": {
+                            "ColumnName": "public_status",
+                            "NewColumnName": "公開状態"
+                        }
+                    },
+                    {
+                        "RenameColumnOperation": {
+                            "ColumnName": "game_name_ja",
+                            "NewColumnName": "ゲーム名"
+                        }
+                    },
+                    {
+                        "RenameColumnOperation": {
+                            "ColumnName": "game_name_en",
+                            "NewColumnName": "ゲーム名（英語）"
+                        }
+                    },
+                    {
+                        "RenameColumnOperation": {
+                            "ColumnName": "game_name_my",
+                            "NewColumnName": "ゲーム名（ミャンマー）"
+                        }
+                    },
+                    {
+                        "RenameColumnOperation": {
+                            "ColumnName": "is_certified_tournament_approved",
+                            "NewColumnName": "認定大会支援の対象ですか？"
+                        }
+                    },
+                    {
+                        "RenameColumnOperation": {
+                            "ColumnName": "is_certified_zone_approved",
+                            "NewColumnName": "ZONe支援の対象ですか？"
+                        }
+                    },
+                    {
+                        "RenameColumnOperation": {
+                            "ColumnName": "is_certified_auger_approved",
+                            "NewColumnName": "AUGER支援の対象ですか？"
+                        }
+                    },
+                    {
+                        "RenameColumnOperation": {
+                            "ColumnName": "region_name_ja",
+                            "NewColumnName": "リージョン名"
+                        }
+                    },
+                    {
+                        "RenameColumnOperation": {
+                            "ColumnName": "region_name_en",
+                            "NewColumnName": "Region Name"
+                        }
+                    },
+                    {
+                        "RenameColumnOperation": {
+                            "ColumnName": "reserved_count",
+                            "NewColumnName": "補欠数"
+                        }
+                    }
+                ],
+                "Source": {
+                    "PhysicalTableId": "f10ed703-1c45-4a80-a769-aa3403f3c5cb"
+                }
+            }
+        },
+        "OutputColumns": [
+            {
+                "Name": "主催団体ID",
+                "Type": "STRING"
+            },
+            {
+                "Name": "主催団体名",
+                "Type": "STRING"
+            },
+            {
+                "Name": "大会ID",
+                "Type": "STRING"
+            },
+            {
+                "Name": "ゲームのID",
+                "Description": "URL中に含まれるゲームのID",
+                "Type": "STRING"
+            },
+            {
+                "Name": "ゲームジャンル",
+                "Description": "Tonamelのゲーム管理に記述されているジャンル",
+                "Type": "STRING"
+            },
+            {
+                "Name": "主催団体のアイコン画像URL",
+                "Type": "STRING"
+            },
+            {
+                "Name": "主催団体作成日時",
+                "Type": "DATETIME"
+            },
+            {
+                "Name": "大会開始予定日時",
+                "Type": "DATETIME"
+            },
+            {
+                "Name": "大会名",
+                "Type": "STRING"
+            },
+            {
+                "Name": "大会概要",
+                "Type": "STRING"
+            },
+            {
+                "Name": "エントリー者数",
+                "Type": "INTEGER"
+            },
+            {
+                "Name": "オンライン大会ですか？",
+                "Type": "STRING"
+            },
+            {
+                "Name": "エントリー開始日時",
+                "Type": "DATETIME"
+            },
+            {
+                "Name": "エントリー終了日時",
+                "Type": "DATETIME"
+            },
+            {
+                "Name": "チェックイン開始日時",
+                "Type": "DATETIME"
+            },
+            {
+                "Name": "チェックイン終了日時",
+                "Type": "DATETIME"
+            },
+            {
+                "Name": "出場枠上限数",
+                "Description": "トーナメント表の大きさ",
+                "Type": "INTEGER"
+            },
+            {
+                "Name": "ブロック数",
+                "Type": "INTEGER"
+            },
+            {
+                "Name": "大会出場者数",
+                "Description": "トーナメント表に載った人数",
+                "Type": "INTEGER"
+            },
+            {
+                "Name": "チェックインは有効ですか？",
+                "Type": "STRING"
+            },
+            {
+                "Name": "参加者による結果報告は有効ですか？",
+                "Type": "STRING"
+            },
+            {
+                "Name": "エントリーの単位",
+                "Description": "チームなのか　人なのか",
+                "Type": "STRING"
+            },
+            {
+                "Name": "累計エントリー数",
+                "Description": "キャンセルや再エントリーも含む\n再エントリーした場合は、重複してカウントされる",
+                "Type": "INTEGER"
+            },
+            {
+                "Name": "抽選は有効ですか？",
+                "Type": "INTEGER"
+            },
+            {
+                "Name": "リージョン",
+                "Description": "この大会が属してる国",
+                "Type": "STRING"
+            },
+            {
+                "Name": "トーナメント形式",
+                "Type": "STRING"
+            },
+            {
+                "Name": "有料エントリーが有効ですか？",
+                "Type": "STRING"
+            },
+            {
+                "Name": "有料エントリーの合計金額",
+                "Type": "DECIMAL"
+            },
+            {
+                "Name": "有料エントリーに関するARPPU",
+                "Type": "DECIMAL"
+            },
+            {
+                "Name": "事前決済が有効ですか？",
+                "Description": "事前決済(コンビニ決済, クレジットカード決済)が有効なエントリー種別が1つでもある場合はYes",
+                "Type": "STRING"
+            },
+            {
+                "Name": "当日決済が有効ですか？",
+                "Description": "当日決済（内部的には手動決済)が有効なエントリー種別が1つでもアレばYes",
+                "Type": "STRING"
+            },
+            {
+                "Name": "トーナメント形式（詳細）",
+                "Type": "STRING"
+            },
+            {
+                "Name": "スポンサー収益額",
+                "Type": "INTEGER"
+            },
+            {
+                "Name": "スポンサー人数",
+                "Type": "INTEGER"
+            },
+            {
+                "Name": "最初のスポンサー有効化日時",
+                "Description": "UTC",
+                "Type": "DATETIME"
+            },
+            {
+                "Name": "大会の状態",
+                "Description": "現在の状態",
+                "Type": "STRING"
+            },
+            {
+                "Name": "status_name_with_sort_order",
+                "Type": "STRING"
+            },
+            {
+                "Name": "公開状態",
+                "Type": "STRING"
+            },
+            {
+                "Name": "ゲーム名",
+                "Description": "日本語のゲーム名",
+                "Type": "STRING"
+            },
+            {
+                "Name": "ゲーム名（英語）",
+                "Type": "STRING"
+            },
+            {
+                "Name": "ゲーム名（ミャンマー）",
+                "Type": "STRING"
+            },
+            {
+                "Name": "game_name_ko",
+                "Type": "STRING"
+            },
+            {
+                "Name": "認定大会支援の対象ですか？",
+                "Type": "STRING"
+            },
+            {
+                "Name": "ZONe支援の対象ですか？",
+                "Type": "STRING"
+            },
+            {
+                "Name": "AUGER支援の対象ですか？",
+                "Type": "STRING"
+            },
+            {
+                "Name": "リージョン名",
+                "Description": "日本のリージョン名",
+                "Type": "STRING"
+            },
+            {
+                "Name": "Region Name",
+                "Description": "リージョンの英語名",
+                "Type": "STRING"
+            },
+            {
+                "Name": "region_name_ko",
+                "Type": "STRING"
+            },
+            {
+                "Name": "補欠数",
+                "Description": "抽選機能が有効時に、補欠の数",
+                "Type": "INTEGER"
+            },
+            {
+                "Name": "初回アクセス日時",
+                "Description": "誰かがアクセスしたらその最初の時刻が見れる\n\n（ただし、2020-01-01が最も新しい、ソレより前は遡れない)\n",
+                "Type": "DATETIME"
+            },
+            {
+                "Name": "最終アクセス日時",
+                "Description": "誰かが最後にアクセスしたら更新される",
+                "Type": "DATETIME"
+            },
+            {
+                "Name": "複数エントリーを使ってますか？",
+                "Description": "",
+                "Type": "STRING"
+            },
+            {
+                "Name": "自動承認までの時間",
+                "Type": "INTEGER"
+            },
+            {
+                "Name": "エントリー上限",
+                "Type": "INTEGER"
+            },
+            {
+                "Name": "スポンサーの有効化状態",
+                "Type": "STRING"
+            },
+            {
+                "Name": "オンライン/オフライン形式",
+                "Type": "STRING"
+            },
+            {
+                "Name": "総ページビュー数（試験的）",
+                "Description": "新スタックの一部分のみに導入している仕組みで、\n2021年12月頃からの新スタックのページにアクセスした総ページビュー数を数えている。\n\n試験的に導入されているものなので、値は参考程度に",
+                "Type": "INTEGER"
+            },
+            {
+                "Name": "ユニークログインアカウント数",
+                "Description": "ログイン状態でアクセスしたPlayerID（アカウントID）のユニークカウント",
+                "Type": "INTEGER"
+            },
+            {
+                "Name": "訪問者数",
+                "Description": "ログイン・非ログイン問わず、ブラウザやアクセス元に紐付いたclient_idを元にアクセス者を識別子、そのアクセス者数を出したもの\n\n（一人で複数ブラウザを使うケースがあるので、厳密に１人が１人としてカウントされてるとは限らない）",
+                "Type": "INTEGER"
+            }
+        ],
+        "ImportMode": "DIRECT_QUERY",
+        "ConsumedSpiceCapacityInBytes": 0,
+        "FieldFolders": {},
+        "DataSetUsageConfiguration": {
+            "DisableUseAsDirectQuerySource": false,
+            "DisableUseAsImportedSource": false
+        }
+    },
+    "RequestId": "5c4521d4-e995-4798-966f-f94a52ec6157"
+}
