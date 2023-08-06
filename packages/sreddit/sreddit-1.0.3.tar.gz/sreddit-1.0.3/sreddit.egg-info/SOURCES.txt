@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+sreddit/__init__.py
+sreddit/srabstract.py
+sreddit/srbodies.py
+sreddit/srtitles.py
+sreddit.egg-info/PKG-INFO
+sreddit.egg-info/SOURCES.txt
+sreddit.egg-info/dependency_links.txt
+sreddit.egg-info/requires.txt
+sreddit.egg-info/top_level.txt
