@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: gajula
+Version: 0.0.20
+Summary: Gajula Package consists of useful utilites and functions
+Author: Jagadeesh Gajula
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pytz
+
+This is a package comes with general utilities and functions
+
+
+timeutils functions:
+
+    ****today**: returns today date object or string**
+
+    **time** : returns time in given timezone in object or string
+
+    **now**: returns local TS in desired format object, string, UNIX
+
+    **utcnow**: same as now but in UTC
+
+    **tznow**: same as above but given timezone
+
+    **str_to_date**: takes string and returns date object
+
+    **str_to_time**: takes string and returns time object
+
+    **to_datetime**: takes string or UNIX and returns TS object
+
+    **to_unix**: takes string or TS object and returns UNIX TS
+
+    **change_tz**: takes string or UNIX or TS object and changes to desired timezone
+                String -> string
+                TS object -> TS object
+                UNIX -> UNIX
+
+    **second_now**: returns current second in the day
+
+    **today_midnight**: returns today midnight TS object
+
+    **time_btw**: takes 2 timestamps returns time gap (secs, minutes, hours, days, weeks)
+
+    **ts_from_now**:(-past and +future ) takes timestamp and gives next timestamp 
+                in given weeks, days, hours, minutes, secs
+
+    **weekdays_btw**: takes 2 dates and returns weekday (monday,sunday,3,4) Monday = 0
+
+    **weekends_btw**: takes 2 dates and returns weekends in between
+
+    **workdays_btw**: takes 2 dates and returns working days between 
+    **ALL THREE above support string or date object.**
+    
+    **random_ts**: returns random timestamp in future or past
