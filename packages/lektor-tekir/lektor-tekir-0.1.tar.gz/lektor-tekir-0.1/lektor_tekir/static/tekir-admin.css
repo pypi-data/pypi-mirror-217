@@ -1,0 +1,255 @@
+:root {
+  --color-bg: hsl(0, 0%, 95%);
+  --color-text: hsl(0, 0%, 0%);
+  --color-link: hsl(240, 100%, 50%);
+  --color: hsl(32, 66%, 37%);
+}
+
+/* BASICS */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  line-height: calc(1em + 0.5rem);
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: system-ui, sans-serif;
+}
+
+code,
+kbd,
+samp,
+pre,
+.code {
+  font-family: ui-monospace, monospace;
+}
+
+a {
+  color: var(--color-link);
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+input,
+button,
+textarea,
+select {
+  background-color: inherit;
+  color: inherit;
+  font: inherit;
+}
+
+/* LAYOUT */
+
+body {
+  display: grid;
+  grid-template-areas:
+    ".   header"
+    "nav content";
+  grid-template-columns: 10em 1fr;
+  grid-template-rows: auto 1fr;
+  min-height: 100vh;
+}
+
+body > header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+
+main {
+  grid-area: content;
+}
+
+/* HEADING */
+
+body > header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: var(--color);
+}
+
+h1 {
+  margin: 0;
+  color: white;
+  font-size: 1.5em;
+}
+
+body > header > ul {
+  display: inline-flex;
+  gap: 1em;
+  margin: 0;
+  padding: 0;
+  font-size: 90%;
+  list-style: none;
+}
+
+/* NAV */
+
+nav {
+  padding: 1rem;
+  font-size: 90%;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+nav li {
+  display: contents;
+}
+
+nav a {
+  padding: 0.5rem;
+  color: inherit;
+}
+
+/* MAIN */
+
+main {
+  padding: 2rem;
+}
+
+section {
+  padding: 1em;
+  border: 1px solid;
+  border-radius: 0.25rem;
+}
+
+section > *:first-child {
+  margin-block-start: 0;
+}
+
+section > *:last-child {
+  margin-block-end: 0;
+}
+
+section h2 {
+  color: var(--color);
+  font-size: 1.1em;
+}
+
+h2 + p {
+  margin-block-start: 0;
+}
+
+td {
+  padding: 0.25rem 0.5em;
+}
+
+details {
+  padding: 0.5rem 1rem;
+}
+
+/* CUSTOM */
+
+.tekir-page-count p {
+  font-size: 2em;
+}
+
+.tekir-contents {
+  display: grid;
+  grid-gap: 2em 1em;
+  grid-template-areas:
+    "summary  summary"
+    "subpages attachments";
+  grid-template-columns: 1fr 1fr;
+}
+
+.tekir-summary {
+  grid-area: summary;
+}
+
+.tekir-breadcrumbs ul {
+  display: inline-flex;
+  gap: 0.5em;
+  margin: 0;
+  padding: 0;
+  font-size: 90%;
+  list-style: none;
+}
+
+.tekir-breadcrumbs li::before {
+  content: "» ";
+}
+
+.tekir-subpages {
+  grid-area: subpages;
+}
+
+.tekir-attachments {
+  grid-area: attachments;
+}
+
+/* FORMS */
+
+.field {
+  margin-block: 1em;
+}
+
+label {
+  display: block;
+  margin-block-end: 0.25rem;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+}
+
+input,
+select,
+textarea {
+  padding: 0.25rem 0.5rem;
+}
+
+/* MEDIA QUERIES */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: hsl(0, 0%, 5%);
+    --color-text: hsl(0, 0%, 100%);
+    --color-link: hsl(240, 100%, 85%);
+  }
+
+  input {
+    color-scheme: dark;
+  }
+
+  select option {
+    background-color: var(--color-bg);
+  }
+}

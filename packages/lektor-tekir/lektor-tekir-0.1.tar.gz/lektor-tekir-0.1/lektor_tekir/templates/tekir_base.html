@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% set lang = get_locale() %}
+<html lang="{{ lang }}">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>{{ g.admin_context.pad.env.project.name }} - {{ _("Admin Panel") }}</title>
+  <link rel="stylesheet" href="{{ url_for('admin_tekir.static', filename='tekir-admin.css') }}">
+  <script src="{{ url_for('admin_tekir.static', filename='htmx.min.js') }}"></script>
+</head>
+<body>
+  <header>
+    <h1>{{ _("Admin Panel") }}</h1>
+    <ul>
+      {% for locale in translations() %}
+      <li><a href="/admin-tekir/{{ locale }}/{{ '/'.join(request.full_path.split('/')[3:]) }}">{{ locale }}</a></li>
+      {% endfor %}
+    </ul>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="/admin-tekir/{{ g.lang_code }}/">{{ _("Summary") }}</a></li>
+      <li><a href="/admin-tekir/{{ g.lang_code }}/contents/?path=/">{{ _("Content") }}</a></li>
+    </ul>
+  </nav>
+  <main>
+    {% block body %}{% endblock %}
+  </main>
+</body>
+</html>

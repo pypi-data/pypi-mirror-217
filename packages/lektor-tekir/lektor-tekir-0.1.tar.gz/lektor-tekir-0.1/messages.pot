@@ -1,0 +1,112 @@
+# Translations template for PROJECT.
+# Copyright (C) 2023 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2023-07-03 23:57+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: lektor_tekir/api.py:115
+msgid "No changes."
+msgstr ""
+
+#: lektor_tekir/api.py:117
+msgid "Content saved."
+msgstr ""
+
+#: lektor_tekir/api.py:129
+msgid "There are unsaved changes. Do you want to continue?"
+msgstr ""
+
+#: lektor_tekir/api.py:130
+msgid "Are you sure?"
+msgstr ""
+
+#: lektor_tekir/api.py:144
+msgid "Deleted."
+msgstr ""
+
+#: lektor_tekir/templates/tekir_base.html:7
+#: lektor_tekir/templates/tekir_base.html:13
+msgid "Admin Panel"
+msgstr ""
+
+#: lektor_tekir/templates/tekir_base.html:22
+msgid "Summary"
+msgstr ""
+
+#: lektor_tekir/templates/tekir_base.html:23
+msgid "Content"
+msgstr ""
+
+#: lektor_tekir/templates/tekir_content_edit.html:38
+#: lektor_tekir/templates/tekir_contents.html:28
+#: lektor_tekir/templates/tekir_contents.html:42
+#: lektor_tekir/templates/tekir_contents.html:54
+msgid "Delete"
+msgstr ""
+
+#: lektor_tekir/templates/tekir_content_edit.html:40
+msgid "Move up"
+msgstr ""
+
+#: lektor_tekir/templates/tekir_content_edit.html:64
+msgid "Save"
+msgstr ""
+
+#: lektor_tekir/templates/tekir_content_edit.html:66
+msgid "Done"
+msgstr ""
+
+#: lektor_tekir/templates/tekir_content_edit.html:71
+msgid "Close"
+msgstr ""
+
+#: lektor_tekir/templates/tekir_content_edit.html:76
+msgid "Continue"
+msgstr ""
+
+#: lektor_tekir/templates/tekir_content_edit.html:77
+#: lektor_tekir/templates/tekir_contents.html:55
+msgid "Cancel"
+msgstr ""
+
+#: lektor_tekir/templates/tekir_contents.html:7
+msgid "home"
+msgstr ""
+
+#: lektor_tekir/templates/tekir_contents.html:18
+msgid "Edit"
+msgstr ""
+
+#: lektor_tekir/templates/tekir_contents.html:22
+msgid "Subpages"
+msgstr ""
+
+#: lektor_tekir/templates/tekir_contents.html:36
+msgid "Attachments"
+msgstr ""
+
+#: lektor_tekir/templates/tekir_contents.html:42
+msgid "attachment"
+msgstr ""
+
+#: lektor_tekir/templates/tekir_contents.html:51
+msgid "Do you really want to delete this content?"
+msgstr ""
+
+#: lektor_tekir/templates/tekir_summary.html:4
+msgid "Number of Pages"
+msgstr ""
+
