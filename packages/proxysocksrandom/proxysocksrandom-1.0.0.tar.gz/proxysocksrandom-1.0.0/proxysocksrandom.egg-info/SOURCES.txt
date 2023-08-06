@@ -1,0 +1,8 @@
+MANIFEST.in
+setup.cfg
+setup.py
+proxysocksrandom/__init__.py
+proxysocksrandom.egg-info/PKG-INFO
+proxysocksrandom.egg-info/SOURCES.txt
+proxysocksrandom.egg-info/dependency_links.txt
+proxysocksrandom.egg-info/top_level.txt
