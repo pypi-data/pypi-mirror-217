@@ -1,0 +1,12 @@
+django_tomselect/__init__.py,sha256=FJL6YJmnH2awJTScp7pOenn5BnskqXCz8F6FQogqakw,122
+django_tomselect/views.py,sha256=mIlqlr3FqPAjNZyN5SWj69zM3IfRd1zLkhA3UzFrbAg,4678
+django_tomselect/widgets.py,sha256=o4JUNUiEUMIxI75ojc6CzhDEtzFgM8O-GuaGrEyx4Jg,6711
+django_tomselect/static/django_tomselect/css/django-tomselect.css,sha256=8qs0-Pm3SNG7rOL9OKIfA-CshXE5xJb5sA1-9aKaea0,430
+django_tomselect/static/django_tomselect/js/django-tomselect.js,sha256=xJsVeqjWHNXejl9HuYA7YVPB3IDp_fKtDxOnEnIEaao,146409
+django_tomselect/static/vendor/tom-select/css/tom-select.bootstrap5.css,sha256=upLV-nxoBO1uYvz61XOK63nlZ8YB4Z3GNQF6qAGL69s,17697
+django_tomselect/static/vendor/tom-select/css/tom-select.bootstrap5.css.map,sha256=YwrJ8Wo6uI5EIBMSygVdxGgGuakHgMXwN2lz49JuG9A,23112
+django_tomselect-0.4.1.dist-info/LICENSE,sha256=VhVtfCI6Mb-W4RDyyhUM5K0cDQS_n2TLZ_kud2HfCgA,1094
+django_tomselect-0.4.1.dist-info/METADATA,sha256=92P8bQTJX4ro5E8wR0f44p-4cJJN_Z--aATF-E-l7CI,14502
+django_tomselect-0.4.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+django_tomselect-0.4.1.dist-info/top_level.txt,sha256=ug6gSEN-f2kCRoVEjGHW7cqJbR-wvnA2KUU_UFTeTQ8,17
+django_tomselect-0.4.1.dist-info/RECORD,,
