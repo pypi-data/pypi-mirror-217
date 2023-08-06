@@ -1,0 +1,7 @@
+pulp_glue/gem/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pulp_glue/gem/context.py,sha256=-3MN4cLvy9CQ6nmv3J-1lXIKsIE4hVkPanXAubg1waA,2870
+pulp_glue/gem/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pulp_glue_gem-0.1.0.dist-info/METADATA,sha256=wtOGod5607eNcr9aiEMrCTwE09mbOnkzTYaE5vaS__4,740
+pulp_glue_gem-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pulp_glue_gem-0.1.0.dist-info/top_level.txt,sha256=TuYCTUAwR94qDO6xD0bKn3SiEIKMW8O3ezSWCcqMImQ,10
+pulp_glue_gem-0.1.0.dist-info/RECORD,,
