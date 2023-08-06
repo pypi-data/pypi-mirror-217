@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: vha-toolbox
+Version: 0.0.1
+Summary: My personal Python toolbox
+Home-page: https://github.com/VictorHachard/my-python-package
+Author: Victor Hachard
+Author-email: 31635811+VictorHachard@users.noreply.github.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/VictorHachard/my-python-package/issues
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# my-python-package
