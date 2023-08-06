@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: network-connector
+Version: 0.0.2
+Summary: A minimalist package to handle connection to a distant host using Web protocol.
+Home-page: https://github.com/Baseline-quebec/network_connector
+Download-URL: https://github.com/Baseline-quebec/network_connector/archive/v0.0.2.zip
+Author: Baseline
+Author-email: info@baseline.quebec
+License: MIT
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Network Connector
+
+A minimalist package to handle connection to a distant host using Web protocol.
+
+Features:
+
+    - The package add a tin layer around `sshtunnel` and `paramiko` to handle more easely SSH connection
