@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+f5mkupy.egg-info/PKG-INFO
+f5mkupy.egg-info/SOURCES.txt
+f5mkupy.egg-info/dependency_links.txt
+f5mkupy.egg-info/top_level.txt
