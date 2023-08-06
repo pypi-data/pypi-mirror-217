@@ -1,0 +1,91 @@
+# Bilibili_up 使用方法
+****
+### 关于 BV 号视频的操作<br><br>
+**导入BV操作**<br>
+获取BV视频评论区（字典）<br>
+```ruby
+from bilibili_up import BV
+```
+```ruby
+#获取BV视频评论区（字典）
+comments = BV_get_comments(BV=123456789, 
+           PageNumber=5, 
+           headers={"User-Agent": "Mozilla/5.0"})
+for username, content in comments.items():
+    print(f"{username}: {content}")
+```
+其中，BV、PageNumber是必选参数，其他为可选参数。<br>
+PageNumber：页数（1~PageNumber）<br>
+BV：视频BV号<br>
+headers（可选）：自定义请求头<br>
+ip（可选）:自定义ip<br>
+返回值是一个字典｛username:content｝<br>
+>自定义ip选项加上了<br>
+
+获取视频信息<br>
+```ruby
+video_info = BV_get_File("BVxxxxxxxx", headers={"User-Agent": "Mozilla/5.0"})
+print(video_info)
+```
+该函数会返回一个字典，包含视频的播放量、发布时间、作者信息和弹幕数量。<br>
+源代码的一部分：
+```ruby
+return {
+                "播放量": play_count,
+                "发布时间": publish_time,
+                "作者": {
+                    "名称": author_name,
+                    "UID": author_uid
+                },
+                "弹幕数量": danmaku_count,
+                "bvid": video_data['bvid'],  # 视频BV号
+                "援助": video_data['aid'],  # 视频援助号
+                "视频tid": video_data['tid'],  # 视频tid
+                "tname": video_data['tname'],  # 视频分类名
+                "版权": video_data['rights'],  # 版权信息
+                "封面图片": video_data['pic'],  # 封面图片链接
+                "title": video_data['title']  # 视频标题
+            }
+```
+想获得作者的uid就需要：
+```
+a = BV_get_File("BVxxxxxxxx")["作者"]["UID"]
+```
+其中，BV是必选参数，其他为可选参数。<br>
+BV：视频BV号<br>
+ip（可选）:自定义ip<br>
+headers（可选）：自定义请求头<br>
+
+获取BV视频弹幕（字典）<br>
+```ruby
+# 调用函数
+BV_get_danmaku(bvid)
+# 传入指定的 BV 号
+bvid = 'BV**********'
+
+# 调用函数获取弹幕数据
+danmaku_data = BV_get_danmaku(bvid)
+```
+弹幕数据格式说明： `danmaku_data` 是一个字典，以弹幕的时间为键，弹幕内容为值：
+```ruby
+{
+    time_1: content_1,
+    time_2: content_2,
+    ...
+}
+```
+>请确保提供的 BV 号是有效的，对应的视频存在并且具有弹幕。
+****
+>在0.2.1.1版本中，获取BV视频评论区中的BV参数是video_bv（已过时）
+****
+### 1.0.0.0 正式版本更新
+
+>支持选择ip<br>
+>增加了BV_get_File函数的多个选项<br>
+****
+### 1.1.0.0 正式版本更新
+>支持获取弹幕<br>
+****
+### 1.2.0.0 正式版本修复
+
+>取消了不必要的错误<br>

@@ -1,0 +1,9 @@
+README.md
+setup.py
+bilibili_up/BV.py
+bilibili_up/__init__.py
+bilibili_up.egg-info/PKG-INFO
+bilibili_up.egg-info/SOURCES.txt
+bilibili_up.egg-info/dependency_links.txt
+bilibili_up.egg-info/requires.txt
+bilibili_up.egg-info/top_level.txt
