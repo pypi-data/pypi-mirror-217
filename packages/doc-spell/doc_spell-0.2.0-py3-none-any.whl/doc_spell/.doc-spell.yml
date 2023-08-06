@@ -1,0 +1,41 @@
+---
+# See documentation at https://github.com/aanatoly/doc-spell
+
+hunspell:
+  # personal dictionaries
+  wordlists: []  # ['.ci/hunspell-coding.txt']
+
+rules:
+  - name: 'common ignore patterns'
+    match:
+      types: ['*']
+    ignore:
+      custom:
+        - '(?m)^\s*>.*$'       # ignore lines starting with '>'
+        - '\bhttps?://\S+'     # ignore urls
+
+  - name: 'c-like comments'
+    match:
+      types: ['c++', 'c', 'javascript', 'c#']
+    ignore:
+      block-marks: ['*', '//']
+
+  - name: 'js'
+    match:
+      types: ['javascript']
+    ignore:
+      linters: ['eslint']
+
+  - name: 'shell'
+    match:
+      types: ['shell']
+    ignore:
+      linters: ['shellcheck']
+
+  - name: 'python'
+    match:
+      types: ['python']
+    ignore:
+      linters: ['noqa', 'pylint']
+    # python only personal dictionaries
+    # wordlists: ['.ci/hunspell-py.txt']

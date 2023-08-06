@@ -1,0 +1,12 @@
+doc_spell/.doc-spell.yml,sha256=lzqF24tSKo8wars2IXq3sWtZ_ZRuBUrwbHldDKfqI6g,856
+doc_spell/__init__.py,sha256=z6wfs6rLKrBxFKviVD4mhopUYd8p9VKRhEIsCmVDZ1I,160
+doc_spell/__main__.py,sha256=y_cBrCcxH5-YWdGMqBsKDIlzFwyYwFDP5rCjr1WuKLs,2050
+doc_spell/conf.py,sha256=eSlHLxXzMnVCrUVnEzpDGI6c5XbMPBqvB2x5p5Lk_R0,1592
+doc_spell/cspell.py,sha256=godZbCllau0P4-fto2F0NAlV90gDk-kuFRZ4yFtrBQM,7316
+doc_spell/formatters.py,sha256=W4nG-7nXx1tz6wtQn9wxBBkfifUy0_fAExpge0pAU8w,5470
+doc_spell/__version__.py,sha256=clN3TnyYyt5T_wUJLVBmutS2kYLLBET4JFB2QXnRm2Q,21
+doc_spell-0.2.0.dist-info/entry_points.txt,sha256=lR1yKMV6utzwatjTlaDOc1oYbKLbV_jwoa03FGhvSTM,53
+doc_spell-0.2.0.dist-info/WHEEL,sha256=B19PGBCYhWaz2p_UjAoRVh767nYQfk14Sn4TpIZ-nfU,87
+doc_spell-0.2.0.dist-info/METADATA,sha256=AU3gLcQeLu68pa6ER400_kSJd939ObrbKNOCG-V3GHU,1223
+doc_spell-0.2.0.dist-info/licenses/LICENSE,sha256=TZ52n6XUyJFPMHXZ2evCCSYnunrYn-7LRPZV8n4FvSw,1103
+doc_spell-0.2.0.dist-info/RECORD,,
