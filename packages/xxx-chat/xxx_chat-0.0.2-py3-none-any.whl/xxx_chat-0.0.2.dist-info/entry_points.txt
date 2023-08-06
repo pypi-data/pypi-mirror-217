@@ -1,0 +1,2 @@
+[console_scripts]
+xxx = command.__main__:main

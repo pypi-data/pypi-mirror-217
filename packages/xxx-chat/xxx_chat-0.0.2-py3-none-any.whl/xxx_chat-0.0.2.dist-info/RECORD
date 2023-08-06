@@ -1,0 +1,17 @@
+command/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+command/__main__.py,sha256=F6PbqztcCXLaWRGADochEtcmv7Lph8bnaWD-1PgNSEE,1107
+commons/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+commons/config.py,sha256=-yliIb6Og4qhbp0PdBUjTUtq2nxB5Cx-yQ26EsVK5hg,2506
+configuration/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+configuration/profile_config.py,sha256=sZFmy2_FdtII4nB1uw3kfcxaPn-bTGOX44AKtlAFAeY,1213
+utils/CommonUtil.py,sha256=EkhgZAqQ5sNCCiQ5dJQjEWJuKR9hHhVDOFRuoklOEuw,772
+utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+utils/logger.py,sha256=4dZxCEiPgP0wPsmIpH1fmWdRR-R0iVDNIjFrqH8Y0wg,1506
+xxx/CommandChat.py,sha256=3jhZPuAsZeP4HWhkUFMel8pNXUcbXDCf-nABkW6_Tro,2527
+xxx/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xxx_chat-0.0.2.dist-info/LICENSE,sha256=jvTs0nM7iEYmWYBk9jJXebAc89sNyNIZ0FeRPSrCEjc,1062
+xxx_chat-0.0.2.dist-info/METADATA,sha256=lQHb9Uf5KQ27u3drvePxvRs9zVPWkmuAemiaVi_vkTQ,1085
+xxx_chat-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+xxx_chat-0.0.2.dist-info/entry_points.txt,sha256=AXHaY3Wuhhz_WqH30G_2B0CGlFOhAnorwshOmSRzyX8,46
+xxx_chat-0.0.2.dist-info/top_level.txt,sha256=6KdPcM1m0ngMNWJw9EvBo4gK4s9aiHd5bBnswlIzEJU,40
+xxx_chat-0.0.2.dist-info/RECORD,,
