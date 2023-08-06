@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+jppdf/__init__.py
+jppdf/pdf2image.py
+jppdf/pdf2text.py
+jppdf.egg-info/PKG-INFO
+jppdf.egg-info/SOURCES.txt
+jppdf.egg-info/dependency_links.txt
+jppdf.egg-info/top_level.txt
