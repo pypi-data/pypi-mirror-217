@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: sport-activities-features-gui
+Version: 0.2.0
+Summary: GUI for sport-activities-features package
+Author: otiv33
+Author-email: vito.abeln@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: PyQt5 (>=5.15.7,<6.0.0)
+Requires-Dist: PyQt6 (>=6.5.1,<7.0.0)
+Requires-Dist: QtAwesome (>=1.2.1,<2.0.0)
+Requires-Dist: sip (>=6.7.9,<7.0.0)
+Requires-Dist: sport-activities-features (>=0.3.7,<0.4.0)
