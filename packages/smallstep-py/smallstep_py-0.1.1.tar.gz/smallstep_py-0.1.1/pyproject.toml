@@ -1,0 +1,46 @@
+[project]
+name = "smallstep-py"
+version = "0.1.1"
+description = "Python library to interact with smallstep private ca"
+authors = [
+    { name = "Clayton Rosenthal", email = "clayrosenthal@gmail.com" },
+]
+dependencies = []
+requires-python = ">=3.11"
+readme = "README.md"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Topic :: Security",
+    "Topic :: Internet :: WWW/HTTP",
+]
+
+[project.license]
+text = "GPLv3+"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "black>=23.3.0",
+    "bandit>=1.7.5",
+    "autoflake>=2.2.0",
+    "isort>=5.12.0",
+    "flake8>=6.0.0",
+    "pylint>=2.17.4",
+    "pyupgrade>=3.8.0",
+    "pydocstringformatter>=0.7.3",
+    "pre-commit-hooks>=4.4.0",
+]
+
+[tool.bandit]
+exclude = [
+    "debug_step_cli.spec",
+]
