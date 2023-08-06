@@ -1,0 +1,14 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+catmapper/README.MD
+catmapper/__init__.py
+catmapper/requirements.txt
+catmapper/thirdparty.json
+catmapper.egg-info/PKG-INFO
+catmapper.egg-info/SOURCES.txt
+catmapper.egg-info/dependency_links.txt
+catmapper.egg-info/requires.txt
+catmapper.egg-info/top_level.txt

@@ -1,0 +1,3 @@
+include catmapper/requirements.txt
+include catmapper/thirdparty.json
+include catmapper/README.MD
