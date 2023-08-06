@@ -1,0 +1,2 @@
+[console_scripts]
+vn = code_var.cli:run
