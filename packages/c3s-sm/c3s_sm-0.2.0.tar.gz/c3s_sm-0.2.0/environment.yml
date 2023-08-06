@@ -1,0 +1,20 @@
+name: c3s_sm
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - pandas
+  - netcdf4
+  - pyresample
+  - ipykernel
+  - pip
+  - pip:
+    - pygeobase
+    - pynetcf>=0.2.2
+    - repurpose>=0.9
+    - parse
+    - cadati
+    - smecv_grid==0.3
+    - more_itertools
+    - pytest
+    - pytest-cov
