@@ -1,0 +1,107 @@
+Metadata-Version: 2.1
+Name: stamina
+Version: 23.1.0
+Summary: Production-grade retries made easy.
+Project-URL: Documentation, https://stamina.hynek.me
+Project-URL: Source, https://github.com/hynek/stamina
+Project-URL: Changelog, https://github.com/hynek/stamina/blob/main/CHANGELOG.md
+Project-URL: Funding, https://github.com/sponsors/hynek
+Author-email: Hynek Schlawack <hs@ox.cx>
+License-Expression: MIT
+License-File: LICENSE
+Keywords: reliability,retries,retry,tenacity
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Typing :: Typed
+Requires-Python: >=3.8
+Requires-Dist: tenacity
+Requires-Dist: typing-extensions; python_version < '3.10'
+Provides-Extra: dev
+Requires-Dist: nox; extra == 'dev'
+Requires-Dist: prometheus-client; extra == 'dev'
+Requires-Dist: stamina[tests,typing]; extra == 'dev'
+Requires-Dist: structlog; extra == 'dev'
+Requires-Dist: tomli; python_version < '3.11' and extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: furo; extra == 'docs'
+Requires-Dist: myst-parser; extra == 'docs'
+Requires-Dist: prometheus-client; extra == 'docs'
+Requires-Dist: sphinx; extra == 'docs'
+Requires-Dist: sphinx-notfound-page; extra == 'docs'
+Requires-Dist: structlog; extra == 'docs'
+Provides-Extra: tests
+Requires-Dist: pytest; extra == 'tests'
+Requires-Dist: pytest-asyncio; extra == 'tests'
+Provides-Extra: typing
+Requires-Dist: mypy>=1.4; extra == 'typing'
+Description-Content-Type: text/markdown
+
+# *stamina*: Production-grade Retries Made Easy
+
+Transient failures are common in distributed systems.
+To make your systems resilient, you need to **retry** failed operations.
+But bad retries can make things *much worse*.
+
+*stamina* is an opinionated wrapper around the *great-but-unopinionated* [Tenacity](https://tenacity.readthedocs.io/) package.
+Its goal is to be as ergonomic as possible, while doing the right thing by default, while minimizing potential for misuse.
+It is the result of years of copy-pasting the same configuration over and over again:
+
+- Retry only on certain exceptions.
+- Exponential backoff with _jitter_ between retries.
+- Limit the number of retries **and** total time.
+- Automatic **async** support.
+- Preserve **type hints** of the decorated callable.
+- Count ([Prometheus](https://github.com/prometheus/client_python)) and log ([*structlog*](https://www.structlog.org/)) retries with basic metadata, if they're installed.
+- Easy _global_ deactivation for testing.
+
+For example:
+
+```python
+import httpx
+
+import stamina
+
+
+@stamina.retry(on=httpx.HTTPError, attempts=3)
+def do_it(code: int) -> httpx.Response:
+    resp = httpx.get(f"https://httpbin.org/status/{code}")
+    resp.raise_for_status()
+
+    return resp
+```
+
+**Async** callables work use the same API and it's possible to retry **arbitrary blocks**, too.
+Please refer to our [tutorial](https://stamina.hynek.me/en/latest/tutorial.html) for more examples.
+
+
+
+## Release Information
+
+### Added
+
+- Official Python 3.12 support.
+  [#9](https://github.com/hynek/stamina/pull/9)
+- Async support.
+  [#10](https://github.com/hynek/stamina/pull/10)
+- Retries of arbitrary blocks using (async) `for` loops and context managers.
+  [#12](https://github.com/hynek/stamina/pull/12)
+- Proper documentation.
+  [#16](https://github.com/hynek/stamina/pull/16)
+- A backwards-compatibility policy.
+
+
+### Changed
+
+- The *timeout*, *wait_initial*, *wait_max*, and *wait_jitter* arguments can now also be of type [`datetime.timedelta`](https://docs.python.org/3/library/datetime.html#datetime.timedelta).
+
+
+---
+
+[→ Full Changelog](https://github.com/hynek/stamina/blob/main/CHANGELOG.md)
+
+
