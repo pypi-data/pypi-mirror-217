@@ -1,0 +1,8 @@
+README.md
+setup.py
+EasyHTML2023/EH.py
+EasyHTML2023/__init__.py
+EasyHTML2023.egg-info/PKG-INFO
+EasyHTML2023.egg-info/SOURCES.txt
+EasyHTML2023.egg-info/dependency_links.txt
+EasyHTML2023.egg-info/top_level.txt
