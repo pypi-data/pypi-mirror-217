@@ -1,0 +1,3 @@
+mkdocs
+pygithub>=1.59.0
+parse
