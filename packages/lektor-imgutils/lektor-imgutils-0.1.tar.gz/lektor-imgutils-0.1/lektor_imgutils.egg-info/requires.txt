@@ -1,0 +1,12 @@
+beautifulsoup4
+pillow
+
+[dev]
+lektor-imgutils[style]
+lektor
+build
+twine
+tox
+
+[style]
+ruff
