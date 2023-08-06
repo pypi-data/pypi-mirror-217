@@ -1,0 +1,13 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+normaltext/README.MD
+normaltext/__init__.py
+normaltext/requirements.txt
+normaltext/thirdparty.json
+normaltext.egg-info/PKG-INFO
+normaltext.egg-info/SOURCES.txt
+normaltext.egg-info/dependency_links.txt
+normaltext.egg-info/top_level.txt

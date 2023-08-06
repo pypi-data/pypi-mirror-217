@@ -1,0 +1,3 @@
+include normaltext/requirements.txt
+include normaltext/thirdparty.json
+include normaltext/README.MD
