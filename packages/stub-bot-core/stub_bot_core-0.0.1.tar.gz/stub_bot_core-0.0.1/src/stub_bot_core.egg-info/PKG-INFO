@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: stub-bot-core
+Version: 0.0.1
+Summary: short package description
+Home-page: https://github.com/LokasWiki/stub_bot_core
+Author: LokasWiki
+Project-URL: Bug Tracker, https://github.com/LokasWiki/stub_bot_core/issues
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# stub_bot_core
+
+نواه بوت تحديد نوع المقال اذا كان بذرة ام لا، تم فصل الكود حتي يمكن استخدمه في موقع البوت وفي نواه كود البوت الذي يعملي علي ويكيبديا وحتي في اكواد البوتات الاخري
